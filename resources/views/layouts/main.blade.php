@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+<head>
+    <title>Apollomotors</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+    @include('blocks.favicon_block')
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/icons/fontawesome/styles.min.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/icons/icomoon/styles.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/icons/fontawesome/styles.min.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.fancybox.min.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/owl.carousel.min.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}" />
+
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{{ asset('js/jquery.maskedinput.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/jquery.fancybox.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/owl.carousel.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/main.js') }}"></script>
+</head>
+
+<body>
+<div id="top-line">
+    <div class="container">
+        @for ($i=0;$i<3;$i++)
+            <span class="contact{{ $i+1 }}"><i class="{{ $contacts[$i]->icon }}"></i>
+                @if ($contacts[$i]->type == 2)
+                    @include('blocks.email_block',['email' => $contacts[$i]->contact])
+                @else
+                    {{ $contacts[$i]->contact }}
+                @endif
+            </span>
+        @endfor
+    </div>
+</div>
+<div id="logo-line">
+    <div class="container">
+        <div class="logo-block">
+            <div class="logo"><a href="{{ route('home') }}"><img class="w-100" src="{{ asset('storage/images/logo.svg') }}" /></a></div>
+            <div class="tagline">{{ trans('content.tagline') }}</div>
+        </div>
+        <div class="search-block">
+            @include('blocks.input_block',[
+                'name' => 'search',
+                'placeholder' => trans('content.search'),
+                'icon' => 'icon-search4'
+            ])
+            <div class="online-consult">
+                <a href="#" id="online-consult"><i class="icon-headset"></i>{{ trans('content.online_consultation') }}</a>
+            </div>
+        </div>
+        <div class="phones-block">
+            @foreach($contacts as $contact)
+                @if ($contact->id == 4 || $contact->id == 5)
+                    <div class="phone">
+                        <i class="{{ $contact->icon }}"></i>
+                        @include('blocks.phone_block',['phone' => $contact->contact])
+                    </div>
+                @endif
+            @endforeach
+            <div class="messengers">
+                @foreach($contacts as $contact)
+                    @if ($contact->id > 5 && $contact->id < 10)
+                        <a href="{{ $contact->contact }}" target="_blank"><i class="{{ $contact->icon }}"></i></a>
+                    @endif
+                @endforeach
+            </div>
+        </div>
+    </div>
+</div>
+
+@include('blocks.main_nav_block', ['id' => 'mainNav', 'useHome' => false])
+
+@yield('content')
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 d-none d-lg-block p-0">
+                <img class="w-100 border border-5 border-white" src="{{ asset('storage/images/apollomotors.jpg') }}" />
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <p class="fs-7 ps-3 mb-4">
+                    @foreach($contacts as $contact)
+                        @if ($contact->id < 5)
+                            <i class="{{ $contact->icon }}"></i>
+                            {{ $contact->contact }}<br>
+                        @else
+                            @break
+                        @endif
+                    @endforeach
+
+                </p>
+                <p class="fs-7 ps-3 mb-4">
+                    {{ trans('content.we_are_in_social_networks') }}<br>
+                    @foreach($contacts as $contact)
+                        @if ($contact->id >= 9)
+                            <a href="{{ $contact->icon }}" target="_blank"><i class="{{ $contact->icon }} fs-5"></i></a>
+                        @endif
+                    @endforeach
+                </p>
+                <p class="fs-7 ps-3">
+                    {{ trans('content.write_to_messenger') }}<br>
+                    @foreach($contacts as $contact)
+                        @if ($contact->id >= 6 && $contact->id <= 8)
+                            <a href="{{ $contact->icon }}" target="_blank"><i class="{{ $contact->icon }} fs-5"></i></a>
+                        @endif
+                    @endforeach
+                </p>
+            </div>
+            <div class="col-md-2 d-none d-lg-block">
+                <ul id="footer-menu">
+                    @foreach($menu as $menuItemKey => $menuItem)
+                        @if ($menuItemKey != 'home')
+                            @include('blocks.nav-item_block',['id' => 'footer-menu'])
+                        @endif
+                    @endforeach
+                    @include('blocks.nav-item_block',[
+                        'id' => 'footer-menu',
+                        'menuItemKey' => 'privacy-policy',
+                        'menuItemKey' => 'privacy_policy'
+                    ])
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <h3>{{ trans('content.record_for_repair') }}</h3>
+                <form action="#">
+                    @include('blocks.input_block',[
+                        'name' => 'user_name',
+                        'icon' => null,
+                        'placeholder' => trans('content.your_name')
+                    ])
+                    @include('blocks.input_block',[
+                        'name' => 'phone',
+                        'icon' => null,
+                        'placeholder' => '+7 (___) ___-__-__'
+                    ])
+                    @include('blocks.checkbox_block',[
+                        'checked' => false,
+                        'name' => 'i_agree',
+                        'label' => trans('content.i_agree'),
+                    ])
+                    @include('blocks.button_block',[
+                        'addClass' => 'mt-5',
+                        'primary' => true,
+                        'buttonText' => trans('content.send')
+                    ])
+                </form>
+            </div>
+            <div class="col-md-2 d-none d-lg-block p-0 text-center">
+                <img class="w-50" src="{{ asset('storage/images/logo_white.svg') }}" />
+                <p class="fs-7 text-center text-uppercase">{{ trans('content.tagline') }}</p>
+            </div>
+            @include('blocks.hr_block')
+            <p class="fs-7 text-center mt-4">{!! trans('content.footer_text',['phone' => view('blocks.phone_block',['phone' => $contacts[3]->contact])->render(), 'email' => view('blocks.email_block',['email' => $contacts[1]->contact])->render()]) !!}</p>
+            <p class="fs-7 text-center mt-1"><a href="{{ route('our_details') }}">{{ trans('content.our_details') }}</a></p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
