@@ -30,6 +30,28 @@
 </head>
 
 <body>
+
+<div id="feedback-plate">
+    <div class="white-plate">
+        @foreach ($contacts as $contact)
+            @if ($contact->id >= 6 && $contact->id <= 8)
+                <a href="{{ $contact->contact }}" target="_blank"><i class="{{ $contact->icon }}"></i></a>
+            @endif
+        @endforeach
+        @include('blocks.phone_block',[
+            'phone' => $contacts[1]->contact,
+            'icon' => $contacts[1]->icon
+        ])
+        @include('blocks.phone_block',[
+            'phone' => $contacts[3]->contact,
+            'icon' => $contacts[3]->icon
+        ])
+    </div>
+    <a href="#"><i class="icon-headset"></i></a>
+    {{ trans('content.online') }}
+    <div>{{ trans('content.consultation') }}</div>
+</div>
+
 <div id="top-line">
     <div class="container">
         @for ($i=0;$i<3;$i++)
@@ -64,7 +86,7 @@
                 @if ($contact->id == 4 || $contact->id == 5)
                     <div class="phone">
                         <i class="{{ $contact->icon }}"></i>
-                        @include('blocks.phone_block',['phone' => $contact->contact])
+                        @include('blocks.phone_block',['phone' => $contact->contact, 'icon' => null])
                     </div>
                 @endif
             @endforeach

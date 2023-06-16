@@ -56,4 +56,15 @@ $(window).on('load', function () {
         $('.more-offers-repair').fadeIn();
         $(this).remove();
     });
+
+    // Move on feedback-plate
+    let feedbackPlate = $('#feedback-plate');
+    feedbackPlate.css('top',-1 * (feedbackPlate.height() + 10));
+    setTimeout(function(){
+        moveOnFeedbackPlate(feedbackPlate);
+    }, 1000);
 });
+
+function moveOnFeedbackPlate(feedbackPlate) {
+    feedbackPlate.animate({'top':'50%'},'slow');
+}
