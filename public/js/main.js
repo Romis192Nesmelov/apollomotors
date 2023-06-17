@@ -61,10 +61,6 @@ $(window).on('load', function () {
     let feedbackPlate = $('#feedback-plate');
     feedbackPlate.css('top',-1 * (feedbackPlate.height() + 10));
     setTimeout(function(){
-        moveOnFeedbackPlate(feedbackPlate);
+        feedbackPlate.animate({'top':'50%'},'slow');
     }, 1000);
 });
-
-function moveOnFeedbackPlate(feedbackPlate) {
-    feedbackPlate.animate({'top':'50%'},'slow');
-}

@@ -6,6 +6,7 @@ use App\Models\Action;
 use App\Models\Brand;
 use App\Models\Client;
 use App\Models\Contact;
+use App\Models\FreeCheck;
 use App\Models\OfferRepair;
 use App\Models\Question;
 use Illuminate\Http\Request;
@@ -44,6 +45,7 @@ class BaseController extends Controller
         $this->data['elected_brands'] = Brand::where('active',1)->where('elected',1)->get();
         $this->data['brands'] = Brand::where('active',1)->get();
         $this->data['offers_repair'] = OfferRepair::where('active',1)->get();
+        $this->data['free_checks'] = FreeCheck::where('active',1)->get();
         $this->data['questions'] = Question::where('active',1)->get();
         $this->data['clients'] = Client::where('active',1)->get();
         return $this->showView('home');

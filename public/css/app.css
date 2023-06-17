@@ -121,11 +121,9 @@ section.gray {
     color: #697c96;
 }
 
-#feedback-plate .white-plate i.icon-paperplane,
-#feedback-plate .white-plate i.icon-phone-wave,
-#feedback-plate .white-plate i.icon-envelop5 {
+#feedback-plate .white-plate i.icon {
     margin-top: 4px;
-    margin-left: -3px;
+    margin-left: -2px;
     font-size: 28px;
 }
 

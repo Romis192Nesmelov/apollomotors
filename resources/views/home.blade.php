@@ -82,9 +82,19 @@
     <x-section class="gray">
         <div class="col-md-6 col-sm-12">
             <h2>{{ trans('content.free_check') }}</h2>
+            <div class="accordion accordion-flush" id="freeCheck">
+                @foreach($free_checks as $k => $check)
+                    @include('blocks.accordion_block',[
+                        'parentId' => 'freeCheck',
+                        'itemId' => 'check'.$k,
+                        'itemHead' => $check->name,
+                        'itemText' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis diam in elit pellentesque vestibulum. Suspendisse turpis ligula, pharetra in pellentesque eu, tempus ac odio. Aliquam tincidunt quis nunc quis sollicitudin. Curabitur ornare ex quis fermentum auctor. Curabitur ut congue libero. Fusce ultricies enim sit amet dui tempor, eget sagittis massa sollicitudin. Sed suscipit urna non turpis tristique mattis. Nunc congue diam mauris, in commodo nunc euismod et. Aenean ultricies turpis lectus, sit amet porttitor velit tincidunt in. Mauris dictum erat urna, ut faucibus dolor efficitur sit amet.'
+                    ])
+                @endforeach
+            </div>
         </div>
-        <div class="col-md-6 d-md-block d-sm-none d-flex align-items-center justify-content-center">
-            <img src="{{ asset('storage/images/logo_3d.png') }}" class="w-75" />
+        <div class="col-md-6 d-md-block d-sm-none text-center">
+            <img src="{{ asset('storage/images/logo_3d.png') }}" class="w-75 mt-5" />
         </div>
     </x-section>
 

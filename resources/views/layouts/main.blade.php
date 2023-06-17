@@ -35,16 +35,18 @@
     <div class="white-plate">
         @foreach ($contacts as $contact)
             @if ($contact->id >= 6 && $contact->id <= 8)
-                <a href="{{ $contact->contact }}" target="_blank"><i class="{{ $contact->icon }}"></i></a>
+                <a href="{{ $contact->contact }}" target="_blank"><i class="{{ $contact->icon.(strpos($contact->icon,'icon-') !== false ? ' icon' : '') }}"></i></a>
             @endif
         @endforeach
-        @include('blocks.phone_block',[
-            'phone' => $contacts[1]->contact,
-            'icon' => $contacts[1]->icon
+        @include('blocks.email_block',[
+            'email' => $contacts[1]->contact,
+            'icon' => $contacts[1]->icon,
+            'addClass' => strpos($contacts[1]->icon,'icon') !== false ? 'icon' : false
         ])
         @include('blocks.phone_block',[
             'phone' => $contacts[3]->contact,
-            'icon' => $contacts[3]->icon
+            'icon' => $contacts[3]->icon,
+            'addClass' => strpos($contacts[3]->icon,'icon') !== false ? 'icon' : false
         ])
     </div>
     <a href="#"><i class="icon-headset"></i></a>
