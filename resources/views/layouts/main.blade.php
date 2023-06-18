@@ -31,6 +31,12 @@
 
 <body>
 
+<x-modal id="request-modal" head="{{ trans('content.online_consultation') }}">
+    <div class="record-repair">
+        @include('blocks.request_form_block',['textarea' => true, 'icon' => null])
+    </div>
+</x-modal>
+
 <div id="feedback-plate">
     <div class="white-plate">
         @foreach ($contacts as $contact)
@@ -49,7 +55,7 @@
             'addClass' => strpos($contacts[3]->icon,'icon') !== false ? 'icon' : false
         ])
     </div>
-    <a href="#"><i class="icon-headset"></i></a>
+    <x-request_modal_href><i class="icon-headset"></i></x-request_modal_href>
     {{ trans('content.online') }}
     <div>{{ trans('content.consultation') }}</div>
 </div>
@@ -80,7 +86,9 @@
                 'icon' => 'icon-search4'
             ])
             <div class="online-consult">
-                <a href="#" id="online-consult"><i class="icon-headset"></i>{{ trans('content.online_consultation') }}</a>
+                <x-request_modal_href id="online-consult">
+                    <i class="icon-headset"></i>{{ trans('content.online_consultation') }}
+                </x-request_modal_href>
             </div>
         </div>
         <div class="phones-block">

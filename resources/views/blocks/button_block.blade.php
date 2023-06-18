@@ -16,6 +16,10 @@
     @elseif (isset($disabled) && $disabled)
         disabled="$disabled"
     @endif
+
+    @if (isset($dataDismiss) && $dataDismiss)
+        data-bs-dismiss="modal"
+    @endif
 >
     {{ $buttonText }}
 </button>

@@ -4,6 +4,27 @@ body {
     background-color: white;
 }
 
+.modal-content {
+    border-radius: 30px;
+    padding: 40px 50px;
+}
+
+.modal-header {
+    padding: 0;
+    margin-bottom: 30px;
+    border: none;
+}
+
+#request-modal .modal-content {
+    border: none;
+    background: url("../storage/images/online_girl.jpg") no-repeat right white;
+    background-size: auto 100%;
+}
+
+#request-modal .modal-content .record-repair {
+    width: 60%;
+}
+
 button.btn {
     height: 46px;
     font-size: 18px;
@@ -274,12 +295,17 @@ section.gray {
 }
 
 div.error {
-    padding-top: 5px;
+    padding-top: 2px;
+    padding-bottom: 5px;
     font-size: 13px;
 }
 
 input.error {
     border-color: red;
+}
+
+textarea {
+    resize: none;
 }
 
 #mainNav {
@@ -472,11 +498,11 @@ input.error {
     margin-right: 15px;
 }
 
-#record-repair {
+section .rounded-block.record-repair {
     background: url("../storage/images/car.png") no-repeat right white;
 }
 
-#record-repair form {
+section .rounded-block.record-repair form {
     width: 60%;
 }
 
@@ -540,6 +566,12 @@ footer hr {
     }
 }
 
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 1200px;
+    }
+}
+
 @media (max-width: 1400px) {
     #mainNav .nav-item {
         margin-left: 30px;
@@ -565,6 +597,10 @@ footer hr {
 }
 
 @media (max-width: 1200px) {
+    #request-modal .modal-content .record-repair {
+        width: 55%;
+    }
+
     #logo-line .logo-block .tagline,
     #logo-line .search-block .online-consult {
         font-size: 18px;
@@ -588,6 +624,14 @@ footer hr {
 
     .brands .brand.type2 {
         width: 18%;
+    }
+
+    section .rounded-block.record-repair {
+        background: white;
+    }
+
+    section .rounded-block.record-repair form {
+        width: 100%;
     }
 }
 
@@ -613,7 +657,21 @@ footer hr {
     }
 }
 
+@media (max-width: 1024px) {
+    #request-modal .modal-content {
+        background: white;
+    }
+
+    #request-modal .modal-content .record-repair {
+        width: 100%;
+    }
+}
+
 @media (max-width: 768px) {
+    .record-repair .form-group {
+        margin-bottom: 10px;
+    }
+
     #logo-line .logo-block {
         width: 45%;
     }

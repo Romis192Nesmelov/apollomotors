@@ -44,6 +44,7 @@ return [
     'record_for_repair' => 'Записаться на ремонт',
     'there_is_a_discount' => 'Только здесь действует персональная скидка 20%<br>Оформляя заявку через сайт, вы получаете существенную скидку!',
     'your_name' => 'Ваше имя',
+    'your_comment' => 'Ваш комментарий',
     'in_the_waiting_room_for_each_client' => 'В зале ожидания для каждого клиента:',
     'for_each_client_icon1' => 'Бесплатный WiFi',
     'for_each_client_icon2' => 'Горячий<br>ароматный кофе',
