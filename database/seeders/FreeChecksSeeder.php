@@ -41,7 +41,7 @@ class FreeChecksSeeder extends Seeder
         ];
 
         foreach ($data as $item) {
-            $freeCheck = FreeCheck::create($item);
+            FreeCheck::create($item);
         }
     }
 }

@@ -92,7 +92,7 @@
             </div>
         </div>
         <div class="phones-block">
-            @foreach($contacts as $contact)
+            @foreach ($contacts as $contact)
                 @if ($contact->id == 4 || $contact->id == 5)
                     <div class="phone">
                         <i class="{{ $contact->icon }}"></i>
@@ -101,7 +101,7 @@
                 @endif
             @endforeach
             <div class="messengers">
-                @foreach($contacts as $contact)
+                @foreach ($contacts as $contact)
                     @if ($contact->id > 5 && $contact->id < 10)
                         <a href="{{ $contact->contact }}" target="_blank"><i class="{{ $contact->icon }}"></i></a>
                     @endif
@@ -123,7 +123,7 @@
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                 <p class="fs-7 ps-3 mb-4">
-                    @foreach($contacts as $contact)
+                    @foreach ($contacts as $contact)
                         @if ($contact->id < 5)
                             <i class="{{ $contact->icon }}"></i>
                             {{ $contact->contact }}<br>
@@ -135,7 +135,7 @@
                 </p>
                 <p class="fs-7 ps-3 mb-4">
                     {{ trans('content.we_are_in_social_networks') }}<br>
-                    @foreach($contacts as $contact)
+                    @foreach ($contacts as $contact)
                         @if ($contact->id >= 9)
                             <a href="{{ $contact->icon }}" target="_blank"><i class="{{ $contact->icon }} fs-5"></i></a>
                         @endif
@@ -143,7 +143,7 @@
                 </p>
                 <p class="fs-7 ps-3">
                     {{ trans('content.write_to_messenger') }}<br>
-                    @foreach($contacts as $contact)
+                    @foreach ($contacts as $contact)
                         @if ($contact->id >= 6 && $contact->id <= 8)
                             <a href="{{ $contact->icon }}" target="_blank"><i class="{{ $contact->icon }} fs-5"></i></a>
                         @endif
@@ -152,7 +152,7 @@
             </div>
             <div class="col-md-2 d-none d-lg-block">
                 <ul id="footer-menu">
-                    @foreach($menu as $menuItemKey => $menuItem)
+                    @foreach ($menu as $menuItemKey => $menuItem)
                         @if ($menuItemKey != 'home')
                             @include('blocks.nav-item_block',['id' => 'footer-menu'])
                         @endif

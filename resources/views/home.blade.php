@@ -3,7 +3,7 @@
 @section('content')
     @if (count($actions))
         <div id="actions-block" class="owl-carousel">
-            @foreach($actions as $action)
+            @foreach ($actions as $action)
                 <div class="action" style="background: url({{ asset($action->image) }}) center;">
                     <table>
                         <tr>
@@ -24,7 +24,7 @@
     @endif
 
     <x-section class="brands">
-        @foreach($brands as $brand)
+        @foreach ($brands as $brand)
             <div class="brand type{{ $brand->type + 1 }}">
                 <a href="#" title="{{ ucfirst($brand->name) }}"><img src="{{ asset($brand->image) }}" /></a>
             </div>
@@ -83,13 +83,14 @@
         <div class="col-md-6 col-sm-12">
             <h2>{{ trans('content.free_check') }}</h2>
             <div class="accordion accordion-flush" id="freeCheck">
-                @foreach($free_checks as $k => $check)
-                    @include('blocks.accordion_block',[
-                        'parentId' => 'freeCheck',
-                        'itemId' => 'check'.$k,
-                        'itemHead' => $check->name,
-                        'itemText' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis diam in elit pellentesque vestibulum. Suspendisse turpis ligula, pharetra in pellentesque eu, tempus ac odio. Aliquam tincidunt quis nunc quis sollicitudin. Curabitur ornare ex quis fermentum auctor. Curabitur ut congue libero. Fusce ultricies enim sit amet dui tempor, eget sagittis massa sollicitudin. Sed suscipit urna non turpis tristique mattis. Nunc congue diam mauris, in commodo nunc euismod et. Aenean ultricies turpis lectus, sit amet porttitor velit tincidunt in. Mauris dictum erat urna, ut faucibus dolor efficitur sit amet.'
-                    ])
+                @foreach ($free_checks as $k => $freeCheck)
+                    <x-accordion itemId="check{{ $k }}" parentId="freeCheck" itemHead="{{ $freeCheck->name }}">
+                        <ul>
+                            @foreach ($freeCheck->checks as $check)
+                                <li>{{ $check->name }}</li>
+                            @endforeach
+                        </ul>
+                    </x-accordion>
                 @endforeach
             </div>
         </div>
@@ -103,7 +104,7 @@
         <div class="rounded-block" id="our-prices">
             <nav>
                 <div class="nav nav-tabs" role="tablist">
-                    @foreach($elected_brands as $k => $brand)
+                    @foreach ($elected_brands as $k => $brand)
                         <a
                             class="nav-link text-center {{ !$k ? 'active' : '' }}"
                             id="{{ $brand->name }}-tab"
@@ -121,7 +122,7 @@
                 </div>
             </nav>
             <div class="tab-content" id="nav-tabContent">
-                @foreach($elected_brands as $k => $brand)
+                @foreach ($elected_brands as $k => $brand)
                     <div class="tab-pane fade {{ !$k ? 'show active' : '' }}" id="{{ $brand->name }}" role="tabpanel" aria-labelledby="{{ $brand->name }}-tab">
                         <ul class="price col-md-6 col-xs-12">
                             <li>
@@ -199,14 +200,8 @@
     <x-section>
         <h2>{{ trans('content.do_you_know_that') }}</h2>
         <div class="accordion accordion-flush" id="faq">
-            @foreach($questions as $k => $item)
-                @include('blocks.accordion_block',[
-                    'parentId' => 'faq',
-                    'icon' => 'fa fa-lightbulb-o',
-                    'itemId' => 'question'.$k,
-                    'itemHead' => $item->question,
-                    'itemText' => $item->answer
-                ])
+            @foreach ($questions as $k => $item)
+                <x-accordion itemId="question{{ $k }}" parentId="faq" icon="fa fa-lightbulb-o" itemHead="{{ $item->question }}">{{ $item->answer }}</x-accordion>
             @endforeach
         </div>
     </x-section>
@@ -220,7 +215,7 @@
 
     <x-section>
         <h2 class="w-100 text-center">{{ trans('content.in_the_waiting_room_for_each_client') }}</h2>
-        @foreach(['fa fa-wifi', 'icon-cup2', 'icon-tv', 'icon-eye'] as $k => $icon)
+        @foreach (['fa fa-wifi', 'icon-cup2', 'icon-tv', 'icon-eye'] as $k => $icon)
             @include('blocks.big_icon_block',[
                 'colMd' => 3,
                 'colSm' => 6,
@@ -234,7 +229,7 @@
 
     <x-section>
         <h2 class="w-100 text-center">{{ trans('content.with_care_for_each_client_with_us') }}</h2>
-        @foreach(['icon-alarm-check','icon-bubbles3','icon-cogs','icon-bookmark','icon-video-camera3',' icon-wallet','icon-trophy3','icon-gift'] as $k => $icon)
+        @foreach (['icon-alarm-check','icon-bubbles3','icon-cogs','icon-bookmark','icon-video-camera3',' icon-wallet','icon-trophy3','icon-gift'] as $k => $icon)
             @include('blocks.big_icon_block',[
                 'colMd' => 3,
                 'colSm' => 6,
@@ -249,7 +244,7 @@
     <x-section>
         <h2 class="w-100 text-center">{{ trans('content.we_are_trusted') }}</h2>
         <div id="clients-block" class="owl-carousel pt-5">
-            @foreach($clients as $client)
+            @foreach ($clients as $client)
                 <img class="w-50 m-auto" title="{{ $client->name }}" src="{{ asset($client->image) }}" />
             @endforeach
         </div>
