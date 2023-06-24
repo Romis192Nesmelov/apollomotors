@@ -13,7 +13,6 @@ $(window).on('load', function () {
         'centerOnScroll': true
     });
 
-
     //Carousel actions
     $('#actions-block').owlCarousel({
         margin: 10,
@@ -52,9 +51,20 @@ $(window).on('load', function () {
     });
 
     // Show more offers repairs
-    $('#show-more-offers-repair').click(function() {
-        $('.more-offers-repair').fadeIn();
-        $(this).remove();
+    let moreOffersRepair = $('.more-offers-repair'),
+        showMoreOffersRepair = $('#show-more-offers-repair'),
+        collapseMoreOffersRepair = $('#collapse-more-offers-repair');
+
+    showMoreOffersRepair.click(function() {
+        moreOffersRepair.fadeIn();
+        $(this).addClass('d-none');
+        collapseMoreOffersRepair.removeClass('d-none');
+    });
+
+    collapseMoreOffersRepair.click(function() {
+        moreOffersRepair.fadeOut();
+        $(this).addClass('d-none');
+        showMoreOffersRepair.removeClass('d-none');
     });
 
     // Move on feedback-plate
@@ -62,5 +72,16 @@ $(window).on('load', function () {
     feedbackPlate.css('top',-1 * (feedbackPlate.height() + 10));
     setTimeout(function(){
         feedbackPlate.animate({'top':'50%'},'slow');
+        fixingMainMenu();
     }, 1000);
+
+    $(window).scroll(function() {
+        fixingMainMenu();
+    });
 });
+
+function fixingMainMenu() {
+    let mainMenuFix = $('#main-nav-fix');
+    if ($(window).scrollTop() > 323 && $(window).width() > 992) mainMenuFix.css('top',0);
+    else mainMenuFix.css('top',-73);
+}

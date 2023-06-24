@@ -39,8 +39,8 @@ class ContactsSeeder extends Seeder
                 'active' => 1
             ],
             [
-                'icon' => 'icon-phone-wave',
-                'contact' => '+7 495 507-52-57',
+                'icon' => 'icon-iphone',
+                'contact' => '+7 925 507-52-57',
                 'type' => 4,
                 'active' => 1
             ],
@@ -57,20 +57,20 @@ class ContactsSeeder extends Seeder
                 'active' => 1
             ],
             [
-                'icon' => 'fa fa-skype',
-                'contact' => 'skype:@apollomotors?call',
-                'type' => 7,
-                'active' => 1
-            ],
-            [
                 'icon' => 'fa fa-vk',
-                'contact' => 'vk.me/apollomotors',
+                'contact' => 'http://vk.com/apollomotors',
                 'type' => 8,
                 'active' => 1
             ],
             [
                 'icon' => 'fa fa-facebook',
-                'contact' => 'https://www.facebook.com/ApolloMotorsRUS',
+                'contact' => 'https://www.facebook.com/ApolloMotorsRUS/',
+                'type' => 8,
+                'active' => 1
+            ],
+            [
+                'icon' => 'fa fa-twitter',
+                'contact' => 'https://twitter.com/#!/ApolloMotors',
                 'type' => 8,
                 'active' => 1
             ],
@@ -81,11 +81,12 @@ class ContactsSeeder extends Seeder
                 'active' => 1
             ],
             [
-                'icon' => 'fa fa-odnoklassniki',
-                'contact' => 'https://www.ok.ru/apolloMotors',
+                'icon' => 'fa fa-instagram',
+                'contact' => 'https://www.instagram.com/apollomotorsrus/',
                 'type' => 8,
                 'active' => 1
             ],
+
         ];
 
         foreach ($data as $item) {

@@ -75,6 +75,12 @@
                     'addClass' => 'float-end',
                     'buttonText' => trans('content.details')
                 ])
+                @include('blocks.button_block',[
+                    'id' => 'collapse-more-offers-repair',
+                    'primary' => false,
+                    'addClass' => 'float-end d-none',
+                    'buttonText' => trans('content.collapse')
+                ])
             </div>
         @endif
     </x-section>

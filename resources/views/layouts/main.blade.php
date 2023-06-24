@@ -31,7 +31,7 @@
 
 <body>
 
-<x-modal id="request-modal" head="{{ trans('content.online_consultation') }}">
+<x-modal id="request-modal" head="{{ trans('content.to_get_a_consultation') }}">
     <div class="record-repair">
         @include('blocks.request_form_block',['textarea' => true, 'icon' => null])
     </div>
@@ -65,7 +65,7 @@
         @for ($i=0;$i<3;$i++)
             <span class="contact{{ $i+1 }}"><i class="{{ $contacts[$i]->icon }}"></i>
                 @if ($contacts[$i]->type == 2)
-                    @include('blocks.email_block',['email' => $contacts[$i]->contact])
+                    @include('blocks.email_block',['email' => $contacts[$i]->contact, 'icon' => null])
                 @else
                     {{ $contacts[$i]->contact }}
                 @endif
@@ -87,7 +87,7 @@
             ])
             <div class="online-consult">
                 <x-request_modal_href id="online-consult">
-                    <i class="icon-headset"></i>{{ trans('content.online_consultation') }}
+                    <i class="icon-headset"></i>{{ trans('content.to_get_a_consultation') }}
                 </x-request_modal_href>
             </div>
         </div>
@@ -111,7 +111,8 @@
     </div>
 </div>
 
-@include('blocks.main_nav_block', ['id' => 'mainNav', 'useHome' => false])
+@include('blocks.main_nav_block', ['id' => 'main-nav', 'useHome' => false])
+@include('blocks.main_nav_block', ['id' => 'main-nav-fix', 'useHome' => false])
 
 @yield('content')
 
@@ -144,7 +145,7 @@
                 <p class="fs-7 ps-3">
                     {{ trans('content.write_to_messenger') }}<br>
                     @foreach ($contacts as $contact)
-                        @if ($contact->id >= 6 && $contact->id <= 8)
+                        @if ($contact->id >= 6 && $contact->id <= 7)
                             <a href="{{ $contact->icon }}" target="_blank"><i class="{{ $contact->icon }} fs-5"></i></a>
                         @endif
                     @endforeach
