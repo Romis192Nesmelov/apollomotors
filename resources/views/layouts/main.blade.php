@@ -120,7 +120,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-2 d-none d-lg-block p-0">
-                <img class="w-100 border border-5 border-white" src="{{ asset('storage/images/apollomotors.jpg') }}" />
+                <a href="#"><img class="w-100 border border-5 border-white" src="{{ asset('storage/images/apollomotors.jpg') }}" /></a>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                 <p class="fs-7 ps-3 mb-4">
@@ -191,7 +191,7 @@
                 </form>
             </div>
             <div class="col-md-2 d-none d-lg-block p-0 text-center">
-                <a href="#"><img class="w-50" src="{{ asset('storage/images/logo_white.svg') }}" /></a>
+                <img class="w-50" src="{{ asset('storage/images/logo_white.svg') }}" />
                 <p class="fs-7 text-center text-uppercase">{{ trans('content.tagline') }}</p>
             </div>
             @include('blocks.hr_block')
