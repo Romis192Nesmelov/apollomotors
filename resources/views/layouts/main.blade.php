@@ -191,7 +191,7 @@
                 </form>
             </div>
             <div class="col-md-2 d-none d-lg-block p-0 text-center">
-                <img class="w-50" src="{{ asset('storage/images/logo_white.svg') }}" />
+                <a href="#"><img class="w-50" src="{{ asset('storage/images/logo_white.svg') }}" /></a>
                 <p class="fs-7 text-center text-uppercase">{{ trans('content.tagline') }}</p>
             </div>
             @include('blocks.hr_block')
