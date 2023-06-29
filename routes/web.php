@@ -22,4 +22,3 @@ Route::get('/aktsii', [BaseController::class, 'actions'])->name('actions');
 Route::get('/article', [BaseController::class, 'articles'])->name('articles');
 Route::get('/kontakty', [BaseController::class, 'contacts'])->name('contacts');
 Route::get('/privacy_policy', [BaseController::class, 'policy'])->name('privacy_policy');
-Route::get('/our_details', [BaseController::class, 'ourDetails'])->name('our_details');

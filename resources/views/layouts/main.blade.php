@@ -122,7 +122,7 @@
             <div class="col-md-2 d-none d-lg-block p-0">
                 <a href="#"><img class="w-100 border border-5 border-white" src="{{ asset('storage/images/apollomotors.jpg') }}" /></a>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div class="image-map-block col-lg-3 col-md-6 col-sm-6 col-xs-12">
                 <p class="fs-7 ps-3 mb-4">
                     @foreach ($contacts as $contact)
                         @if ($contact->id < 5)
@@ -132,7 +132,6 @@
                             @break
                         @endif
                     @endforeach
-
                 </p>
                 <p class="fs-7 ps-3 mb-4">
                     {{ trans('content.we_are_in_social_networks') }}<br>
@@ -190,13 +189,15 @@
                     ])
                 </form>
             </div>
-            <div class="col-md-2 d-none d-lg-block p-0 text-center">
+            <div class="col-lg-2 d-none d-lg-block p-0 text-center">
                 <img class="w-50" src="{{ asset('storage/images/logo_white.svg') }}" />
                 <p class="fs-7 text-center text-uppercase">{{ trans('content.tagline') }}</p>
+                <iframe src="https://yandex.ru/sprav/widget/rating-badge/1634283920" width="150" height="50" frameborder="0"></iframe>
+                <a href="https://search.google.com/local/writereview?placeid=ChIJlU4Dc35OtUYROm3efhYzXxo" target="_blank"><img class="w-50 mb-2" src="https://www.apollomotors.ru/images/google_reviews.jpg"></a>
             </div>
             @include('blocks.hr_block')
             <p class="fs-7 text-center mt-4">{!! trans('content.footer_text',['phone' => view('blocks.phone_block',['phone' => $contacts[3]->contact])->render(), 'email' => view('blocks.email_block',['email' => $contacts[1]->contact])->render()]) !!}</p>
-            <p class="fs-7 text-center mt-1"><a href="{{ route('our_details') }}">{{ trans('content.our_details') }}</a></p>
+            <p class="fs-7 text-center mt-1"><a href="{{ asset('storage/requisites.pdf') }}" target="_blank">{{ trans('content.our_details') }}</a></p>
         </div>
     </div>
 </footer>

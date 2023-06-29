@@ -81,11 +81,6 @@ class BaseController extends Controller
         return $this->showView('home');
     }
 
-    public function ourDetails() :View
-    {
-        return $this->showView('home');
-    }
-
     protected function showView($view) :View
     {
         return view($view, array_merge(

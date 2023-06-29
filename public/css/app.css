@@ -542,6 +542,7 @@ footer ul {
 
 footer .nav-link {
     color: white;
+    font-size: .9rem;
     text-decoration: underline;
     padding: 0 0 5px 0;
 }
@@ -559,6 +560,7 @@ footer .form-group label {
 }
 
 footer button.btn.btn-primary {
+    min-width: 100%;
     margin-top: 0 !important;
     font-size: 12px;
     height: 35px;
