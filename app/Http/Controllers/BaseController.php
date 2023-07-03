@@ -36,7 +36,7 @@ class BaseController extends Controller
             'contacts' =>       ['href' => true]
         ];
 
-        $this->contacts = Contact::where('active',1)->get();
+        $this->contacts = Contact::all();
     }
 
     public function index() :View
@@ -73,12 +73,12 @@ class BaseController extends Controller
 
     public function contacts() :View
     {
-        return $this->showView('home');
+        return $this->showView('contacts');
     }
 
     public function policy() :View
     {
-        return $this->showView('home');
+        return $this->showView('policy');
     }
 
     protected function showView($view) :View

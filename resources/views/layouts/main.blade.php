@@ -18,7 +18,9 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/icons/fontawesome/styles.min.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.fancybox.min.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ asset('css/owl.carousel.min.css') }}" />
+
     <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/contacts.css') }}" />
 
     <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -40,20 +42,26 @@
 <div id="feedback-plate">
     <div class="white-plate">
         @foreach ($contacts as $contact)
-            @if ($contact->id >= 6 && $contact->id <= 8)
+            @if ($contact->id >= 8 && $contact->id <= 10 && $contact->active)
                 <a href="{{ $contact->contact }}" target="_blank"><i class="{{ $contact->icon.(strpos($contact->icon,'icon-') !== false ? ' icon' : '') }}"></i></a>
             @endif
         @endforeach
-        @include('blocks.email_block',[
-            'email' => $contacts[1]->contact,
-            'icon' => $contacts[1]->icon,
-            'addClass' => strpos($contacts[1]->icon,'icon') !== false ? 'icon' : false
-        ])
-        @include('blocks.phone_block',[
-            'phone' => $contacts[3]->contact,
-            'icon' => $contacts[3]->icon,
-            'addClass' => strpos($contacts[3]->icon,'icon') !== false ? 'icon' : false
-        ])
+
+        @if ($contacts[3]->active)
+            @include('blocks.email_block',[
+                'email' => $contacts[3]->contact,
+                'icon' => $contacts[3]->icon,
+                'addClass' => strpos($contacts[3]->icon,'icon') !== false ? 'icon' : false
+            ])
+        @endif
+
+        @if ($contacts[5]->active)
+            @include('blocks.phone_block',[
+                'phone' => $contacts[5]->contact,
+                'icon' => $contacts[5]->icon,
+                'addClass' => strpos($contacts[5]->icon,'icon') !== false ? 'icon' : false
+            ])
+        @endif
     </div>
     <x-request_modal_href><i class="icon-headset"></i></x-request_modal_href>
     {{ trans('content.online') }}
@@ -62,14 +70,16 @@
 
 <div id="top-line">
     <div class="container">
-        @for ($i=0;$i<3;$i++)
-            <span class="contact{{ $i+1 }}"><i class="{{ $contacts[$i]->icon }}"></i>
-                @if ($contacts[$i]->type == 2)
-                    @include('blocks.email_block',['email' => $contacts[$i]->contact, 'icon' => null])
-                @else
-                    {{ $contacts[$i]->contact }}
-                @endif
-            </span>
+        @for ($i=0;$i<5;$i++)
+            @if ($contacts[$i]->active && $contacts[$i]->id != 2 && $contacts[$i]->id != 4)
+                <span class="contact{{ $i+1 }}"><i class="{{ $contacts[$i]->icon }}"></i>
+                    @if ($contacts[$i]->id == 3)
+                        @include('blocks.email_block',['email' => $contacts[$i]->contact, 'icon' => null])
+                    @else
+                        {{ $contacts[$i]->contact }}
+                    @endif
+                </span>
+            @endif
         @endfor
     </div>
 </div>
@@ -93,7 +103,7 @@
         </div>
         <div class="phones-block">
             @foreach ($contacts as $contact)
-                @if ($contact->id == 4 || $contact->id == 5)
+                @if ( ($contact->id == 6 || $contact->id == 7) && $contact->active )
                     <div class="phone">
                         <i class="{{ $contact->icon }}"></i>
                         @include('blocks.phone_block',['phone' => $contact->contact, 'icon' => null])
@@ -102,7 +112,7 @@
             @endforeach
             <div class="messengers">
                 @foreach ($contacts as $contact)
-                    @if ($contact->id > 5 && $contact->id < 10)
+                    @if ($contact->id > 7 && $contact->id < 12 && $contact->active)
                         <a href="{{ $contact->contact }}" target="_blank"><i class="{{ $contact->icon }}"></i></a>
                     @endif
                 @endforeach
@@ -120,37 +130,55 @@
     <div class="container">
         <div class="row">
             <div class="col-md-2 d-none d-lg-block p-0">
-                <a href="#"><img class="w-100 border border-5 border-white" src="{{ asset('storage/images/apollomotors.jpg') }}" /></a>
+                <a href="{{ route('contacts') }}"><img class="w-100 border border-5 border-white" src="{{ asset('storage/images/apollomotors.jpg') }}" /></a>
             </div>
-            <div class="image-map-block col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                <p class="fs-7 ps-3 mb-4">
-                    @foreach ($contacts as $contact)
-                        @if ($contact->id < 5)
-                            <i class="{{ $contact->icon }}"></i>
-                            {{ $contact->contact }}<br>
-                        @else
-                            @break
-                        @endif
-                    @endforeach
-                </p>
-                <p class="fs-7 ps-3 mb-4">
-                    {{ trans('content.we_are_in_social_networks') }}<br>
-                    @foreach ($contacts as $contact)
-                        @if ($contact->id >= 9)
-                            <a href="{{ $contact->icon }}" target="_blank"><i class="{{ $contact->icon }} fs-5"></i></a>
-                        @endif
-                    @endforeach
-                </p>
-                <p class="fs-7 ps-3">
-                    {{ trans('content.write_to_messenger') }}<br>
-                    @foreach ($contacts as $contact)
-                        @if ($contact->id >= 6 && $contact->id <= 7)
-                            <a href="{{ $contact->icon }}" target="_blank"><i class="{{ $contact->icon }} fs-5"></i></a>
-                        @endif
-                    @endforeach
-                </p>
-            </div>
-            <div class="col-md-2 d-none d-lg-block">
+            @php $addressExistFlag = false; $blockContent = ''; ob_start(); @endphp
+            @foreach ($contacts as $contact)
+                @if ($contact->id < 7 && $contact->active && $contact->id != 2 && $contact->id != 4)
+                    @php $addressExistFlag = true; @endphp
+                    <i class="{{ $contact->icon }}"></i>
+                    {{ $contact->contact }}<br>
+                @endif
+            @endforeach
+            @php $content = '<p class="fs-7 ps-3 mb-4">'.ob_get_clean().'</p>'; @endphp
+
+            @if ($addressExistFlag)
+                @php $blockContent .= $content; @endphp
+            @endif
+
+            @php $snExistFlag = false; ob_start(); @endphp
+            @foreach ($contacts as $contact)
+                @if ($contact->id >= 11 && $contact->active)
+                    @php $snExistFlag = true; @endphp
+                    <a href="{{ $contact->icon }}" target="_blank"><i class="{{ $contact->icon }} fs-5"></i></a>
+                @endif
+            @endforeach
+            @php $content = '<p class="fs-7 ps-3 mb-4">'.trans('content.we_are_in_social_networks').'<br>'.ob_get_clean().'</p>'; @endphp
+
+            @if ($snExistFlag)
+                @php $blockContent .= $content; @endphp
+            @endif
+
+            @php $messengersExistFlag = false; ob_start(); @endphp
+            @foreach ($contacts as $contact)
+                @if ($contact->id >= 8 && $contact->id <= 9 && $contact->active)
+                    @php $messengersExistFlag = true; @endphp
+                    <a href="{{ $contact->icon }}" target="_blank"><i class="{{ $contact->icon }} fs-5"></i></a>
+                @endif
+            @endforeach
+            @php $content = '<p class="fs-7 ps-3">'.trans('content.write_to_messenger').'<br>'.ob_get_clean().'</p>'; @endphp
+
+            @if ($messengersExistFlag)
+                @php $blockContent .= $content; @endphp
+            @endif
+
+            @if ($blockContent)
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    {!! $blockContent !!}
+                </div>
+            @endif
+
+            <div class="col-md-{{ $blockContent ? 2 : 3 }} d-none d-lg-block">
                 <ul id="footer-menu">
                     @foreach ($menu as $menuItemKey => $menuItem)
                         @if ($menuItemKey != 'home')
@@ -164,7 +192,7 @@
                     ])
                 </ul>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div class="col-lg-{{ $blockContent ? 3 : 4 }} col-md-{{ $blockContent ? 6 : 12 }} col-sm-{{ $blockContent ? 6 : 12 }} col-xs-12 mb-2">
                 <h3>{{ trans('content.record_for_repair') }}</h3>
                 <form action="#">
                     @include('blocks.input_block',[
@@ -189,14 +217,20 @@
                     ])
                 </form>
             </div>
-            <div class="col-lg-2 d-none d-lg-block p-0 text-center">
+            <div class="col-lg-{{ $blockContent ? 2 : 3 }} d-none d-lg-block p-0 text-center">
                 <img class="w-50" src="{{ asset('storage/images/logo_white.svg') }}" />
                 <p class="fs-7 text-center text-uppercase">{{ trans('content.tagline') }}</p>
-                <iframe src="https://yandex.ru/sprav/widget/rating-badge/1634283920" width="150" height="50" frameborder="0"></iframe>
-                <a href="https://search.google.com/local/writereview?placeid=ChIJlU4Dc35OtUYROm3efhYzXxo" target="_blank"><img class="w-50 mb-2" src="https://www.apollomotors.ru/images/google_reviews.jpg"></a>
+                <div><iframe src="https://yandex.ru/sprav/widget/rating-badge/1634283920" width="150" height="50" frameborder="0"></iframe></div>
+                <div class="w-100 text-center mb-2">
+                    <a href="https://search.google.com/local/writereview?placeid=ChIJlU4Dc35OtUYROm3efhYzXxo" target="_blank">
+                        <img class="w-{{ $blockContent ? 50 : 25 }}" src="https://www.apollomotors.ru/images/google_reviews.jpg">
+                    </a>
+                </div>
             </div>
             @include('blocks.hr_block')
-            <p class="fs-7 text-center mt-4">{!! trans('content.footer_text',['phone' => view('blocks.phone_block',['phone' => $contacts[3]->contact])->render(), 'email' => view('blocks.email_block',['email' => $contacts[1]->contact])->render()]) !!}</p>
+            @if ($contacts[3]->active)
+                <p class="fs-7 text-center mt-4">{!! trans('content.footer_text',['phone' => view('blocks.phone_block',['phone' => $contacts[3]->contact])->render(), 'email' => view('blocks.email_block',['email' => $contacts[1]->contact])->render()]) !!}</p>
+            @endif
             <p class="fs-7 text-center mt-1"><a href="{{ asset('storage/requisites.pdf') }}" target="_blank">{{ trans('content.our_details') }}</a></p>
         </div>
     </div>

@@ -49,15 +49,22 @@ button.btn.btn-secondary {
     filter: drop-shadow(0 3px 10px rgb(0, 0, 0, 0.3));
 }
 
-h2 {
-    font-size: 30px;
+h1, h2, h3 {
     text-transform: uppercase;
-    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 2.1rem;
+    margin-bottom: 2.1rem;
+}
+
+h2 {
+    font-size: 1.9rem;
+    margin-bottom: 1.9rem;
 }
 
 h3 {
-    text-transform: uppercase;
-    font-size: 22px;
+    font-size: 1.4rem;
 }
 
 p {
@@ -69,6 +76,10 @@ hr {
     border-top: 1px solid rgba(0,0,0,.5)
 }
 
+.image {
+    position: relative;
+}
+
 .image img {
     width: 100%;
 }
@@ -76,13 +87,23 @@ hr {
 .image i {
     font-size: 20px;
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 8px;
+    right: 8px;
     color: white;
 }
 
 .image i.black {
     color: black;
+}
+
+.framed-image img {
+    border: 5px solid #c8c8c8;
+}
+
+.image {
+    float: none;
+    display: inline-block;
+    margin-bottom: 20px;
 }
 
 section {

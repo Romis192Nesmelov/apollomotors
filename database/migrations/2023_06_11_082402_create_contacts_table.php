@@ -14,8 +14,7 @@ return new class extends Migration
         Schema::create('contacts', function (Blueprint $table) {
             $table->id();
             $table->string('icon',25);
-            $table->string('contact',100);
-            $table->smallInteger('type');
+            $table->string('contact');
             $table->boolean('active');
         });
     }
