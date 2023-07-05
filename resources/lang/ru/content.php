@@ -22,6 +22,7 @@ return [
     'search' => 'Поиск',
     'to_get_a_consultation' => 'Получить консультацию',
     'online' => 'Онлайн–',
+    'online_record' => 'Онлайн–запись',
     'consultation' => 'консультация',
     'sign_up' => 'Записаться',
 

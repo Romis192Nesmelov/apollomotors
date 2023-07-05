@@ -33,7 +33,7 @@
 
 <body>
 
-<x-modal id="request-modal" head="{{ trans('content.to_get_a_consultation') }}">
+<x-modal id="request-modal" head="???">
     <div class="record-repair">
         @include('blocks.request_form_block',['textarea' => true, 'icon' => null])
     </div>
@@ -74,7 +74,7 @@
             ])
         @endif
     </div>
-    <x-modal_href modal="request-modal"><i class="icon-headset"></i></x-modal_href>
+    <x-modal_href class="get-consult" modal="request-modal"><i class="icon-headset"></i></x-modal_href>
     {{ trans('content.online') }}
     <div>{{ trans('content.consultation') }}</div>
 </div>
@@ -107,7 +107,7 @@
                 'icon' => 'icon-search4'
             ])
             <div class="online-consult">
-                <x-modal_href id="online-consult" modal="request-modal">
+                <x-modal_href class="get-consult" modal="request-modal">
                     <i class="icon-headset"></i>{{ trans('content.to_get_a_consultation') }}
                 </x-modal_href>
             </div>
@@ -246,6 +246,11 @@
         </div>
     </div>
 </footer>
+
+<script>
+    window.getConsultHead = "{{ trans('content.to_get_a_consultation') }}";
+    window.onlineRecordHead = "{{ trans('content.online_record') }}";
+</script>
 
 </body>
 </html>

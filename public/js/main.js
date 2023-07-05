@@ -101,6 +101,21 @@ $(window).on('load', function () {
     $(window).scroll(function() {
         fixingMainMenu();
     });
+
+    // Click to open feedback modal
+    $('a.get-consult, a.action-record').click(function () {
+        let requestModal = $('#request-modal'),
+            discountBlock = requestModal.find('.request-form-discount');
+
+        if ($(this).hasClass('get-consult')) {
+            var newHad = window.getConsultHead;
+            discountBlock.show();
+        } else {
+            newHad = window.onlineRecordHead;
+            discountBlock.hide();
+        }
+        requestModal.find('h2').html(newHad);
+    });
 });
 
 function fixingMainMenu() {

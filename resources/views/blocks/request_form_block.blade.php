@@ -1,4 +1,4 @@
-<table class="w-100 pb-5">
+<table class="w-100 pb-5 request-form-discount">
     <tr>
         <td class="align-top"><i class="fs-1 icon-redo2 text-secondary"></i></td>
         <td class="align-top w-100 p-2"><p class="fs-6 text-uppercase">{!! trans('content.there_is_a_discount') !!}</p></td>

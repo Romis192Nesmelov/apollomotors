@@ -11,10 +11,12 @@
                         </tr>
                         <tr>
                             <td>
-                                @include('blocks.button_block',[
-                                    'primary' => true,
-                                    'buttonText' => trans('content.sign_up')
-                                ])
+                                <x-modal_href class="action-record" modal="request-modal">
+                                    @include('blocks.button_block',[
+                                        'primary' => true,
+                                        'buttonText' => trans('content.sign_up')
+                                    ])
+                                </x-modal_href>
                             </td>
                         </tr>
                     </table>
