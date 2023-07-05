@@ -2,7 +2,9 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h2 class="modal-title fs-5">{{ $attributes->get('head') }}</h2>
+                @if ($attributes->has('head'))
+                    <h2 class="modal-title fs-5">{{ $attributes->get('head') }}</h2>
+                @endif
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="{{ trans('content.close') }}"></button>
             </div>
             {{ $slot }}

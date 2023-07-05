@@ -27,8 +27,11 @@ return [
 
     'tagline' => 'Честно и доступно',
     'certified_car_service' => 'Сертифицированный автосервис «Apollomotors»',
-    'certified_car_service_p1' => 'Quisque elit nunc, tincidunt in mauris nec, dictum egestas nibh. Sed odio enim, bibendum sed vestibulum ac, ullamcorper in quam. Etiam eu tristique magna, et dignissim mauris. Nulla vitae sapien malesuada, fermentum lacus faucibus, cursus lacus. Sed laoreet condimentum dui, quis porta sapien. Duis posuere lacus id eros dapibus, sit amet tempus nunc auctor. Phasellus dignissim interdum velit at lacinia. Nullam molestie tempus turpis vitae ullamcorper. Proin est dolor, rhoncus at leo quis, maximus ornare libero. Duis et pulvinar mi. Sed aliquam efficitur arcu vitae tincidunt. Proin felis tellus, condimentum nec interdum vitae, tempor vitae arcu. Ut a lacus elit. Suspendisse sed magna nec nibh dignissim lacinia eu quis orci. Etiam malesuada volutpat est ut congue. Morbi at diam turpis.',
-    'certified_car_service_p2' => 'Vivamus fringilla congue massa nec hendrerit. Etiam vel leo non mauris hendrerit aliquam vel sed enim. Nam eget eros placerat lectus venenatis eleifend. Nunc vitae euismod neque. Cras ut ullamcorper sem, eget volutpat velit. Pellentesque a mattis magna, sed ornare sem. Vivamus nec pharetra odio. Maecenas fermentum, nisl at efficitur pretium, ligula elit commodo mauris, quis commodo tellus mi eget lacus.',
+    'certified_car_service_p1' => 'Наша команда профессионалов готова предоставить вам высококачественные услуги по ремонту и техническому обслуживанию вашего автомобиля. Мы гарантируем сохранение заводской гарантии на все работы, выполненные нашими специалистами.',
+    'certified_car_service_p2' => 'В отличие от других автосервисов, мы работаем честно и доступно. Мы не навязываем ненужные услуги и не берем лишних денег за ремонт. Мы предоставляем гарантию на все наши работы до 24 месяцев, что гарантирует качество наших услуг на длительный срок.',
+    'certified_car_service_p3' => 'Обращаясь к нам, вы можете быть уверены в том, что ваш автомобиль будет работать как новый. Наши специалисты имеют большой опыт работы с автомобилями различных марок и моделей, поэтому они могут быстро и качественно выполнить любой ремонт.',
+    'certified_car_service_p4' => 'Кроме того, мы предлагаем широкий спектр услуг, включая диагностику и технической обслуживание, замену масла и фильтров, ремонт подвески, тормозов и многое другое. Мы готовы помочь вам в любых вопросах, связанных с вашим автомобилем.',
+    'certified_car_service_p5' => 'Если вы хотите сохранить заводскую гарантию на свой автомобиль и получить высококачественный ремонт, обращайтесь в автосервис Аполло Моторс! Мы всегда готовы помочь вам!',
 
     'icon1' => 'Цены заметно ниже,<br>чем у дилеров',
     'icon2' => 'Озвученная цена<br>не меняется',
@@ -67,6 +70,7 @@ return [
     'footer_text' => 'Вся представленная на сайте информация, касающаяся технических характеристик, наличия на складе, стоимости товаров, носит информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями Статьи 437(2) Гражданского кодекса РФ.<br>Окончательные цены, наличие и условие приобретения услуг и товаров просим уточнять по телефонам:<br>:phone или по электронной почте: :email',
 
     'email_address' => 'Адрес электронной почты:',
+    'another_brand' => 'Другая марка автомобиля',
 
 //    'in_russian' => ' по русски',
 //    'in_english' => ' по по английски',

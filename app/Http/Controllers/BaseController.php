@@ -37,12 +37,12 @@ class BaseController extends Controller
         ];
 
         $this->contacts = Contact::all();
+        $this->data['elected_brands'] = Brand::where('active',1)->where('elected',1)->get();
     }
 
     public function index() :View
     {
         $this->data['actions'] = Action::where('active',1)->get();
-        $this->data['elected_brands'] = Brand::where('active',1)->where('elected',1)->get();
         $this->data['brands'] = Brand::where('active',1)->get();
         $this->data['offers_repair'] = OfferRepair::where('active',1)->get();
         $this->data['free_checks'] = FreeCheck::where('active',1)->get();

@@ -23,12 +23,12 @@
         </div>
     @endif
 
-    <x-section class="brands">
-        @foreach ($brands as $brand)
-            <div class="brand type{{ $brand->type + 1 }}">
-                <a href="#" title="{{ ucfirst($brand->name) }}"><img src="{{ asset($brand->image) }}" /></a>
-            </div>
-        @endforeach
+    <x-section>
+        <div id="brands-block" class="owl-carousel pt-5">
+            @foreach ($brands as $brand)
+                <a href="#"><img class="w-75 m-auto" title="{{ $brand->name }}" src="{{ asset($brand->image) }}" /></a>
+            @endforeach
+        </div>
     </x-section>
 
     <x-section class="gray">
@@ -36,15 +36,16 @@
             @for ($i=1;$i<=5;$i++)
                 @include('blocks.fancybox_block',[
                     'image' => 'storage/images/about/image'.$i.'.jpg',
-                    'addClass' => $i == 1 ? 'col-12 p-1' : 'col-md-6 col-xs-12 p-1',
-                    'iconBlack' => $i == 3
+                    'addClass' => $i == 1 ? 'col-12 p-1' : 'col-lg-6 col-md-12 p-1',
+                    'iconBlack' => false
                 ])
             @endfor
         </div>
         <div class="col-md-9 col-sm-6 col-xs-12 p-4">
             <h2>{{ trans('content.certified_car_service') }}</h2>
-            <p>{{ trans('content.certified_car_service_p1') }}</p>
-            <p>{{ trans('content.certified_car_service_p2') }}</p>
+            @for ($i=1;$i<=5;$i++)
+                <p>{{ trans('content.certified_car_service_p'.$i) }}</p>
+            @endfor
         </div>
     </x-section>
 
@@ -130,70 +131,14 @@
             <div class="tab-content" id="nav-tabContent">
                 @foreach ($elected_brands as $k => $brand)
                     <div class="tab-pane fade {{ !$k ? 'show active' : '' }}" id="{{ $brand->name }}" role="tabpanel" aria-labelledby="{{ $brand->name }}-tab">
-                        <ul class="price col-md-6 col-xs-12">
-                            <li>
-                                <div class="job-name">Замена антифриза</div>
-                                <div class="dots"><div></div></div>
-                                <div class="job-price">1200 р.</div>
-                            </li>
-                            <li>
-                                <div class="job-name">Замена антифриза</div>
-                                <div class="dots"><div></div></div>
-                                <div class="job-price">1200 р.</div>
-                            </li>
-                            <li>
-                                <div class="job-name">Замена антифриза</div>
-                                <div class="dots"><div></div></div>
-                                <div class="job-price">1200 р.</div>
-                            </li>
-                            <li>
-                                <div class="job-name">Замена антифриза</div>
-                                <div class="dots"><div></div></div>
-                                <div class="job-price">1200 р.</div>
-                            </li>
-                            <li>
-                                <div class="job-name">Замена антифриза</div>
-                                <div class="dots"><div></div></div>
-                                <div class="job-price">1200 р.</div>
-                            </li>
-                            <li>
-                                <div class="job-name">Замена антифриза</div>
-                                <div class="dots"><div></div></div>
-                                <div class="job-price">1200 р.</div>
-                            </li>
-                        </ul>
-                        <ul class="price col-md-6 col-xs-12">
-                            <li>
-                                <div class="job-name">Замена антифриза</div>
-                                <div class="dots"><div></div></div>
-                                <div class="job-price">1200 р.</div>
-                            </li>
-                            <li>
-                                <div class="job-name">Замена антифриза</div>
-                                <div class="dots"><div></div></div>
-                                <div class="job-price">1200 р.</div>
-                            </li>
-                            <li>
-                                <div class="job-name">Замена антифриза</div>
-                                <div class="dots"><div></div></div>
-                                <div class="job-price">1200 р.</div>
-                            </li>
-                            <li>
-                                <div class="job-name">Замена антифриза</div>
-                                <div class="dots"><div></div></div>
-                                <div class="job-price">1200 р.</div>
-                            </li>
-                            <li>
-                                <div class="job-name">Замена антифриза</div>
-                                <div class="dots"><div></div></div>
-                                <div class="job-price">1200 р.</div>
-                            </li>
-                            <li>
-                                <div class="job-name">Замена антифриза</div>
-                                <div class="dots"><div></div></div>
-                                <div class="job-price">1200 р.</div>
-                            </li>
-                        </ul>
+                        @include('blocks.home_price_part_block',[
+                            'start' => 0,
+                            'end' => round(count($brand->prices)/2)
+                        ])
+                        @include('blocks.home_price_part_block',[
+                            'start' => count($brand->prices)/2 + 1,
+                            'end' => count($brand->prices)
+                        ])
                     </div>
                 @endforeach
             </div>

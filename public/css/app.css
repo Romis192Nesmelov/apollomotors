@@ -25,6 +25,24 @@ body {
     width: 60%;
 }
 
+#brands-modal p {
+    width: 100%;
+    padding-top: 30px;
+    margin: 0;
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#brands-modal p a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#brands-modal p a:hover {
+    opacity: .5;
+}
+
 button.btn {
     height: 46px;
     font-size: 18px;
@@ -69,7 +87,6 @@ h3 {
 
 p {
     font-size: 14px;
-    margin-bottom: 30px;
 }
 
 hr {
@@ -103,7 +120,6 @@ hr {
 .image {
     float: none;
     display: inline-block;
-    margin-bottom: 20px;
 }
 
 section {
@@ -111,7 +127,7 @@ section {
 }
 
 section.gray {
-    background: url("../storage/images/cropped_logo.svg") no-repeat right #e5e5e5;
+    background: url("../storage/images/cropped_logo.svg") no-repeat top right #e5e5e5;
 }
 
 #feedback-plate,
@@ -368,6 +384,10 @@ textarea {
     font-weight: bold;
 }
 
+.navbar-collapse {
+    background: white;
+}
+
 #actions-block {
     max-width: 1320px;
     margin: 55px auto 0 auto;
@@ -394,7 +414,8 @@ textarea {
     width: 100%;
     height: 20px;
     display: flex;
-    bottom: 60px;
+    top: 50%;
+    transform: translateY(50%);
     position: absolute;
     align-items: center;
     justify-content: space-between;
@@ -426,30 +447,6 @@ textarea {
 
 .owl-carousel .owl-dots button.owl-dot:first-child {
     margin-left: 0;
-}
-
-.brands .row {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.brands .brand {
-    margin: 20px .5% 20px .5%;
-    text-align: center;
-}
-
-.brands .brand.type1 {
-    width: 6%;
-}
-
-.brands .brand.type2 {
-    width: 9%;
-}
-
-.brands .brand img {
-    width: 100%;
 }
 
 .more-offers-repair {
@@ -612,11 +609,11 @@ footer hr {
         width: 90%;
     }
 
-    #record-repair {
+    .record-repair {
         background: white;
     }
 
-    #record-repair form {
+    .record-repair form {
         width: 100%;
     }
 }
@@ -686,6 +683,11 @@ footer hr {
     #logo-line .phones-block {
         display: none;
     }
+
+    .navbar-collapse {
+        padding: 25px;
+        border-radius: 10px;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -699,6 +701,10 @@ footer hr {
 }
 
 @media (max-width: 768px) {
+    #feedback-plate {
+        display: none;
+    }
+
     .record-repair .form-group {
         margin-bottom: 10px;
     }

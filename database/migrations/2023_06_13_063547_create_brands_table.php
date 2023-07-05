@@ -13,9 +13,9 @@ return new class extends Migration
     {
         Schema::create('brands', function (Blueprint $table) {
             $table->id();
-            $table->string('name',20);
-            $table->string('image');
-            $table->boolean('type');
+            $table->string('name',20)->unique();
+            $table->string('slug',20);
+            $table->string('image')->unique();
             $table->boolean('elected');
             $table->boolean('active');
         });

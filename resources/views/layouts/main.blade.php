@@ -39,6 +39,17 @@
     </div>
 </x-modal>
 
+<x-modal id="brands-modal">
+    <div class="row">
+        @foreach ($elected_brands as $brand)
+            <div class="col-md-{{ round(12/count($elected_brands)) }} col-sm-6 col-xs-12 text-center">
+                <a href="#"><img class="w-75" title="{{ $brand->name }}" src="{{ asset($brand->image) }}" /></a>
+            </div>
+        @endforeach
+        <p><a href="#">{{ trans('content.another_brand') }}</a></p>
+    </div>
+</x-modal>
+
 <div id="feedback-plate">
     <div class="white-plate">
         @foreach ($contacts as $contact)
@@ -63,7 +74,7 @@
             ])
         @endif
     </div>
-    <x-request_modal_href><i class="icon-headset"></i></x-request_modal_href>
+    <x-modal_href modal="request-modal"><i class="icon-headset"></i></x-modal_href>
     {{ trans('content.online') }}
     <div>{{ trans('content.consultation') }}</div>
 </div>
@@ -96,9 +107,9 @@
                 'icon' => 'icon-search4'
             ])
             <div class="online-consult">
-                <x-request_modal_href id="online-consult">
+                <x-modal_href id="online-consult" modal="request-modal">
                     <i class="icon-headset"></i>{{ trans('content.to_get_a_consultation') }}
-                </x-request_modal_href>
+                </x-modal_href>
             </div>
         </div>
         <div class="phones-block">

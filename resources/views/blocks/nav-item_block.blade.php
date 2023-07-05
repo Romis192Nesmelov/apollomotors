@@ -6,7 +6,7 @@ if (isset($styles) && is_array($styles) && count($styles)) {
     }
 }
 @endphp
-<li id="{{ $id.ucfirst($menuItemKey) }}" class="nav-item{{ ($activeMenu == $menuItemKey ? ' active' : '').(isset($addClass) && $addClass ? ' '.$addClass : '').(isset($menuItem['sub']) ? '  dropdown' : '') }}" {{ isset($stylesStr) ? 'style='.$stylesStr : '' }}>
+<li id="{{ $id.'-'.$menuItemKey }}" class="nav-item{{ ($activeMenu == $menuItemKey ? ' active' : '').(isset($addClass) && $addClass ? ' '.$addClass : '').(isset($menuItem['sub']) ? '  dropdown' : '') }}" {{ isset($stylesStr) ? 'style='.$stylesStr : '' }}>
     @if (isset($menuItem['sub']))
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">{{ trans('menu.'.$menuItemKey) }}</a>
         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -15,6 +15,12 @@ if (isset($styles) && is_array($styles) && count($styles)) {
             @endforeach
         </ul>
     @else
-        <a class="nav-link" href="{{ $menuItem['href'] ? route($menuItemKey) : '#' }}">{{ trans('menu.'.$menuItemKey) }}</a>
+        @if ($menuItem['href'])
+            <a class="nav-link" href="{{ route($menuItemKey) }}">{{ trans('menu.'.$menuItemKey) }}</a>
+        @else
+            <x-modal_href class="nav-link brand-modal" modal="brands-modal">
+                {{ trans('menu.'.$menuItemKey) }}
+            </x-modal_href>
+        @endif
     @endif
 </li>

@@ -26,9 +26,32 @@ $(window).on('load', function () {
         // navText:[navButtonBlack1,navButtonBlack2]
     });
 
-    //Carousel clients
     let navButtonBlack1 = '<img src="/storage/images/arrow_left.svg" />',
         navButtonBlack2 = '<img src="/storage/images/arrow_right.svg" />';
+
+    //Carousel brands
+    $('#brands-block').owlCarousel({
+        margin: 10,
+        loop: true,
+        nav: true,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        dots: false,
+        responsive: {
+            0: {
+                items: 3
+            },
+            768: {
+                items: 5
+            },
+            1000: {
+                items: 8
+            }
+        },
+        navText:[navButtonBlack1,navButtonBlack2]
+    });
+
+    //Carousel clients
     $('#clients-block').owlCarousel({
         margin: 10,
         loop: true,
@@ -82,6 +105,6 @@ $(window).on('load', function () {
 
 function fixingMainMenu() {
     let mainMenuFix = $('#main-nav-fix');
-    if ($(window).scrollTop() > 323 && $(window).width() > 992) mainMenuFix.css('top',0);
+    if ($(window).scrollTop() > 323) mainMenuFix.css('top',0);
     else mainMenuFix.css('top',-73);
 }
