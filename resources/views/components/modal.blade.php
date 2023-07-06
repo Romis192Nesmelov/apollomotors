@@ -8,13 +8,16 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="{{ trans('content.close') }}"></button>
             </div>
             {{ $slot }}
-{{--            <div class="modal-footer">--}}
-{{--                @include('blocks.button_block',[--}}
-{{--                    'primary' => false,--}}
-{{--                    'dataDismiss' => true,--}}
-{{--                    'buttonText' => trans('content.close')--}}
-{{--                ])--}}
-{{--            </div>--}}
+            @if ($attributes->has('footer') && $attributes->get('footer'))
+                <div class="modal-footer">
+                    @include('blocks.button_block',[
+                        'primary' => true,
+                        'dataDismiss' => true,
+                        'addClass' => 'm-auto mt-3',
+                        'buttonText' => trans('content.close')
+                    ])
+                </div>
+            @endif
         </div>
     </div>
 </div>

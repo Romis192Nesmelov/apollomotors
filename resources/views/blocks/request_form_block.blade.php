@@ -4,10 +4,13 @@
         <td class="align-top w-100 p-2"><p class="fs-6 text-uppercase">{!! trans('content.there_is_a_discount') !!}</p></td>
     </tr>
 </table>
-<form class="row" action="#">
+<form class="row use-ajax" action="{{ route('request') }}" method="post">
+    @csrf
+    <input type="hidden" name="type" value="">
+    <input type="hidden" name="action_id" value="">
     <div class="col-md-6 col-sm-12">
         @include('blocks.input_block',[
-            'name' => 'user_name',
+            'name' => 'name',
             'placeholder' => trans('content.your_name'),
             'ajax' => true
         ])
@@ -36,6 +39,7 @@
         @include('blocks.button_block',[
             'addClass' => 'mt-5',
             'primary' => true,
+            'buttonType' => 'submit',
             'buttonText' => trans('content.send')
         ])
     </div>

@@ -15,12 +15,6 @@ if (isset($styles) && is_array($styles) && count($styles)) {
             @endforeach
         </ul>
     @else
-        @if ($menuItem['href'])
-            <a class="nav-link" href="{{ route($menuItemKey) }}">{{ trans('menu.'.$menuItemKey) }}</a>
-        @else
-            <x-modal_href class="nav-link brand-modal" modal="brands-modal">
-                {{ trans('menu.'.$menuItemKey) }}
-            </x-modal_href>
-        @endif
+        <a class="nav-link" {{ !$menuItem['href'] ? 'id=nav-link-'.$menuItemKey : '' }} href="{{ $menuItem['href'] ? route($menuItemKey) : '#' }}">{{ trans('menu.'.$menuItemKey) }}</a>
     @endif
 </li>

@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 trait HelperTrait
 {
-    public $validationPhone = 'regex:/^((\+)?(\d)(\s)?(\()?[0-9]{3}(\))?(\s)?([0-9]{3})(\-)?([0-9]{2})(\-)?([0-9]{2}))$/';
+    public $validationPhone = 'required|regex:/^((\+)?(\d)(\s)?(\()?[0-9]{3}(\))?(\s)?([0-9]{3})(\-)?([0-9]{2})(\-)?([0-9]{2}))$/';
     public $validationPassword = 'required|confirmed|min:3|max:50';
     public $validationInteger = 'required|integer';
     public $validationString = 'required|min:3|max:255';

@@ -103,23 +103,48 @@ $(window).on('load', function () {
     });
 
     // Click to open feedback modal
-    $('a.get-consult, a.action-record').click(function () {
+    $('a.get-consult, a.action-record').click(function (e) {
+        e.preventDefault();
         let requestModal = $('#request-modal'),
-            discountBlock = requestModal.find('.request-form-discount');
+            discountBlock = requestModal.find('.request-form-discount'),
+            requestTypeInput = requestModal.find('input[name=type]'),
+            actionIdInput = requestModal.find('input[name=action_id]')
 
         if ($(this).hasClass('get-consult')) {
             var newHad = window.getConsultHead;
+            requestTypeInput.val('request_for_consultation');
+            actionIdInput.val('');
             discountBlock.show();
         } else {
             newHad = window.onlineRecordHead;
+            requestTypeInput.val('online_record');
+            actionIdInput.val($(this).attr('action-id'));
             discountBlock.hide();
         }
         requestModal.find('h2').html(newHad);
+        requestModal.modal('show');
+    });
+
+    // Click to open brands modal
+    $('#nav-link-repair, #nav-link-maintenance, #nav-link-spares').click(function (e) {
+        e.preventDefault();
+        // console.log($(this).attr('id').replace('nav-link-',''));
+        let brandsModal = $('#brands-modal');
+        brandsModal.modal('show');
     });
 });
 
 function fixingMainMenu() {
-    let mainMenuFix = $('#main-nav-fix');
-    if ($(window).scrollTop() > 323) mainMenuFix.css('top',0);
-    else mainMenuFix.css('top',-73);
+    let mainMenuFix = $('#main-nav');
+    if ($(window).scrollTop() > 250) {
+        mainMenuFix.css({
+            'position':'fixed',
+            'top':0
+        });
+    } else {
+        mainMenuFix.css({
+            'position':'relative',
+            'top':'auto'
+        });
+    }
 }

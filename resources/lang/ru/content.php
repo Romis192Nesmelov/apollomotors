@@ -7,6 +7,7 @@ return [
     'phone' => 'Телефон',
     'address' => 'Адрес',
     'map' => 'Карта',
+    'message' => 'Сообщение',
 
     'details' => 'Подробнее',
     'collapse' => 'Свернуть',
@@ -21,6 +22,7 @@ return [
     'i_agree' => 'Даю согласие на обработку персональных данных',
     'search' => 'Поиск',
     'to_get_a_consultation' => 'Получить консультацию',
+    'request_for_consultation' => 'Заявка на консультацию',
     'online' => 'Онлайн–',
     'online_record' => 'Онлайн–запись',
     'consultation' => 'консультация',

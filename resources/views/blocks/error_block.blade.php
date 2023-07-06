@@ -1,1 +1,1 @@
-<div class="error {{ $name }}"></div>
+<div class="error {{ $name }}">{{ $errors->first($name) }}</div>

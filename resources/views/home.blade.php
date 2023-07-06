@@ -11,12 +11,12 @@
                         </tr>
                         <tr>
                             <td>
-                                <x-modal_href class="action-record" modal="request-modal">
+                                <a href="#" action-id="{{ $action->id }}" class="action-record">
                                     @include('blocks.button_block',[
                                         'primary' => true,
                                         'buttonText' => trans('content.sign_up')
                                     ])
-                                </x-modal_href>
+                                </a>
                             </td>
                         </tr>
                     </table>

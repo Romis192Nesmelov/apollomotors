@@ -14,7 +14,7 @@
     @if (isset($dataTarget) && $dataTarget)
         data-bs-toggle="modal" data-bs-target="#{{ $dataTarget }}"
     @elseif (isset($disabled) && $disabled)
-        disabled="$disabled"
+        disabled="disabled"
     @endif
 
     @if (isset($dataDismiss) && $dataDismiss)

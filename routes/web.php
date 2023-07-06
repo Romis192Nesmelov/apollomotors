@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BaseController;
+use App\Http\Controllers\FeedbackController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,3 +23,5 @@ Route::get('/aktsii', [BaseController::class, 'actions'])->name('actions');
 Route::get('/article', [BaseController::class, 'articles'])->name('articles');
 Route::get('/kontakty', [BaseController::class, 'contacts'])->name('contacts');
 Route::get('/privacy_policy', [BaseController::class, 'policy'])->name('privacy_policy');
+
+Route::post('/request', [FeedbackController::class, 'sendRequest'])->name('request');

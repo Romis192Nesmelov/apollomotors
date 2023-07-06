@@ -28,10 +28,15 @@
     <script type="text/javascript" src="{{ asset('js/jquery.maskedinput.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/jquery.fancybox.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/owl.carousel.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/feedback.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/main.js') }}"></script>
 </head>
 
 <body>
+
+<x-modal id="message-modal" head="{{ trans('content.message') }}">
+    <h3 class="text-center"></h3>
+</x-modal>
 
 <x-modal id="request-modal" head="???">
     <div class="record-repair">
@@ -74,7 +79,7 @@
             ])
         @endif
     </div>
-    <x-modal_href class="get-consult" modal="request-modal"><i class="icon-headset"></i></x-modal_href>
+    <a href="#" class="get-consult"><i class="icon-headset"></i></a>
     {{ trans('content.online') }}
     <div>{{ trans('content.consultation') }}</div>
 </div>
@@ -107,9 +112,9 @@
                 'icon' => 'icon-search4'
             ])
             <div class="online-consult">
-                <x-modal_href class="get-consult" modal="request-modal">
+                <a href="#" class="get-consult">
                     <i class="icon-headset"></i>{{ trans('content.to_get_a_consultation') }}
-                </x-modal_href>
+                </a>
             </div>
         </div>
         <div class="phones-block">
@@ -133,7 +138,6 @@
 </div>
 
 @include('blocks.main_nav_block', ['id' => 'main-nav', 'useHome' => false])
-@include('blocks.main_nav_block', ['id' => 'main-nav-fix', 'useHome' => false])
 
 @yield('content')
 
@@ -205,15 +209,19 @@
             </div>
             <div class="col-lg-{{ $blockContent ? 3 : 4 }} col-md-{{ $blockContent ? 6 : 12 }} col-sm-{{ $blockContent ? 6 : 12 }} col-xs-12 mb-2">
                 <h3>{{ trans('content.record_for_repair') }}</h3>
-                <form action="#">
+                <form class="use-ajax" action="{{ route('request') }}" method="post">
+                    @csrf
+                    <input type="hidden" name="type" value="request_for_consultation">
                     @include('blocks.input_block',[
-                        'name' => 'user_name',
+                        'name' => 'name',
                         'icon' => null,
+                        'ajax' => true,
                         'placeholder' => trans('content.your_name')
                     ])
                     @include('blocks.input_block',[
                         'name' => 'phone',
                         'icon' => null,
+                        'ajax' => true,
                         'placeholder' => '+7 (___) ___-__-__'
                     ])
                     @include('blocks.checkbox_block',[
@@ -224,6 +232,7 @@
                     @include('blocks.button_block',[
                         'addClass' => 'mt-5',
                         'primary' => true,
+                        'buttonType' => 'submit',
                         'buttonText' => trans('content.send')
                     ])
                 </form>
