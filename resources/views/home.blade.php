@@ -28,7 +28,7 @@
     <x-section>
         <div id="brands-block" class="owl-carousel pt-5">
             @foreach ($brands as $brand)
-                <a href="#"><img class="w-75 m-auto" title="{{ $brand->name }}" src="{{ asset($brand->image) }}" /></a>
+                <a href="#"><img class="w-75 m-auto" title="{{ $brand->ru }}" src="{{ asset($brand->logo) }}" /></a>
             @endforeach
         </div>
     </x-section>
@@ -44,10 +44,8 @@
             @endfor
         </div>
         <div class="col-md-9 col-sm-6 col-xs-12 p-4">
-            <h2>{{ trans('content.certified_car_service') }}</h2>
-            @for ($i=1;$i<=5;$i++)
-                <p>{{ trans('content.certified_car_service_p'.$i) }}</p>
-            @endfor
+            <h2>{{ $content->head }}</h2>
+            {!! $content->text !!}
         </div>
     </x-section>
 
@@ -113,7 +111,7 @@
         <div class="rounded-block" id="our-prices">
             <nav>
                 <div class="nav nav-tabs" role="tablist">
-                    @foreach ($elected_brands as $k => $brand)
+                    @foreach ($electedBrands as $k => $brand)
                         <a
                             class="nav-link text-center {{ !$k ? 'active' : '' }}"
                             id="{{ $brand->name }}-tab"
@@ -123,7 +121,7 @@
                             aria-controls="{{ $brand->name }}"
                             title="{{ $brand->name }}"
                             aria-selected="{{ !$k ? 'true' : 'false' }}"
-                            style="width: {{ 100 / count($elected_brands) }}%"
+                            style="width: {{ 100 / count($electedBrands) }}%"
                         >
                             <img src="{{ asset($brand->image) }}">
                         </a>
@@ -131,7 +129,7 @@
                 </div>
             </nav>
             <div class="tab-content" id="nav-tabContent">
-                @foreach ($elected_brands as $k => $brand)
+                @foreach ($electedBrands as $k => $brand)
                     <div class="tab-pane fade {{ !$k ? 'show active' : '' }}" id="{{ $brand->name }}" role="tabpanel" aria-labelledby="{{ $brand->name }}-tab">
                         @include('blocks.home_price_part_block',[
                             'start' => 0,

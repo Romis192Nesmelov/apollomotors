@@ -11,14 +11,13 @@ $(document).ready(function ($) {
     });
 
     $('button[type=submit]').click(function(e) {
+        e.preventDefault();
+
         let formData = new FormData,
             form = $(this).parents('form.use-ajax');
 
-        if (form.length) {
-            e.preventDefault();
+        if (form.length && agree.is(':checked')) {
             addLoader(body,loader);
-            if (!agree.is(':checked')) return false;
-
             form.find('input, textarea, select').each(function () {
                 let self = $(this);
                 if (self.attr('type') === 'file') formData.append(self.attr('name'),self[0].files[0]);
@@ -34,7 +33,7 @@ $(document).ready(function ($) {
                 data: formData,
                 processData: false,
                 contentType: false,
-                type: 'POST',
+                type: form.attr('method'),
                 success: function (data) {
                     formModal.modal('hide');
                     unlockAll(body,form,agree,loader);
@@ -46,19 +45,8 @@ $(document).ready(function ($) {
                 },
                 error: function (jqXHR, textStatus, errorThrown) {
                     let response = jQuery.parseJSON(jqXHR.responseText);
-                    // replaceErr = {
-                    //     'phone':'«Телефон»',
-                    //     'email':'«E-mail»',
-                    //     'name':'«Имя»'
-                    // };
-
                     $.each(response.errors, function (field, errorMsg) {
-                        let errorBlock = form.find('.error.'+field);
-                        // errorMsg = errorMsg[0];
-                        // $.each(replaceErr, function (src,replace) {
-                        //     errorMsg = errorMsg.replace(src,replace);
-                        // });
-                        errorBlock.css('display','block').html(errorMsg[0]);
+                        form.find('.error.'+field).html(errorMsg[0]);
                     });
                     unlockAll(body,form,agree,loader);
                 }

@@ -1,7 +1,16 @@
 <!doctype html>
 <html>
 <head>
-    <title>Apollomotors</title>
+    <title>{{ isset($title) && $title ? $title : 'Apollomotors' }}</title>
+
+    @if (isset($keywords) && $keywords)
+        <meta name="keywords" content="{{ $keywords }}">
+    @endif
+
+    @if (isset($description) && $description)
+        <meta name="description" content="{{ $description }}">
+    @endif
+
     <meta charset="utf-8">
     <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -45,14 +54,14 @@
 </x-modal>
 
 <x-modal id="brands-modal">
-    <div class="row">
-        @foreach ($elected_brands as $brand)
-            <div class="col-md-{{ round(12/count($elected_brands)) }} col-sm-6 col-xs-12 text-center">
-                <a href="#"><img class="w-75" title="{{ $brand->name }}" src="{{ asset($brand->image) }}" /></a>
+    <div class="brands">
+        @foreach ($electedBrands as $brand)
+            <div class="brand-logo" style="width:{{ round(100/count($electedBrands)) }}%;">
+                <a href="#" class="brand" brand="{{ $brand->slug }}"><img class="w-75" title="{{ $brand->ru }}" src="{{ asset($brand->logo) }}" /></a>
             </div>
         @endforeach
-        <p><a href="#">{{ trans('content.another_brand') }}</a></p>
     </div>
+    <p><a href="#">{{ trans('content.another_brand') }}</a></p>
 </x-modal>
 
 <div id="feedback-plate">

@@ -43,6 +43,17 @@ body {
     opacity: .5;
 }
 
+/*#brands-modal .brands {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*}*/
+
+#brands-modal .brand-logo {
+    float: left;
+    text-align: center;
+}
+
 #loader {
     position: absolute;
     width: 100%;
@@ -617,10 +628,6 @@ footer hr {
         margin-left: 30px;
     }
 
-    .brands .brand img {
-        width: 90%;
-    }
-
     .record-repair {
         background: white;
     }
@@ -656,14 +663,6 @@ footer hr {
 
     .main-nav .nav-item {
         margin-left: 10px;
-    }
-
-    .brands .brand.type1 {
-        width: 12%;
-    }
-
-    .brands .brand.type2 {
-        width: 18%;
     }
 
     section .rounded-block.record-repair {
@@ -748,16 +747,6 @@ footer hr {
 
     #actions-block {
         display: none;
-    }
-
-    .brands {
-        justify-content: center;
-        /*flex-direction: column;*/
-    }
-
-    .brands .brand.type1,
-    .brands .brand.type2 {
-        width: auto;
     }
 
     .owl-nav {

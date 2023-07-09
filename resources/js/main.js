@@ -102,6 +102,11 @@ $(window).on('load', function () {
         fixingMainMenu();
     });
 
+    rescaleBrandsLogos();
+    $(window).resize(function() {
+        rescaleBrandsLogos();
+    });
+
     // Click to open feedback modal
     $('a.get-consult, a.action-record').click(function (e) {
         e.preventDefault();
@@ -126,10 +131,14 @@ $(window).on('load', function () {
     });
 
     // Click to open brands modal
-    $('#nav-link-repair, #nav-link-maintenance, #nav-link-spares').click(function (e) {
+    $('.nav-link.brands').click(function (e) {
         e.preventDefault();
-        // console.log($(this).attr('id').replace('nav-link-',''));
-        let brandsModal = $('#brands-modal');
+        let brandsModal = $('#brands-modal'),
+            route = $(this).attr('route');
+
+        brandsModal.find('a.brand').each(function () {
+            $(this).attr('href', route + '/' + $(this).attr('brand'));
+        });
         brandsModal.modal('show');
     });
 });
@@ -145,6 +154,27 @@ function fixingMainMenu() {
         mainMenuFix.css({
             'position':'relative',
             'top':'auto'
+        });
+    }
+}
+
+function rescaleBrandsLogos() {
+    let logos = $('#brands-modal .brand-logo'),
+        windowWidth = $(window).width();
+    if (windowWidth >= 768) {
+        logos.css({
+            'width':100/logos.length+'%',
+            'margin-top':0
+        });
+    } else if (windowWidth >= 520) {
+        logos.css({
+            'width':'50%',
+            'margin-top':15
+        });
+    } else {
+        logos.css({
+            'width':'100%',
+            'margin-top':15
         });
     }
 }

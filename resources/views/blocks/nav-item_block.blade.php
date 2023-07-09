@@ -15,6 +15,6 @@ if (isset($styles) && is_array($styles) && count($styles)) {
             @endforeach
         </ul>
     @else
-        <a class="nav-link" {{ !$menuItem['href'] ? 'id=nav-link-'.$menuItemKey : '' }} href="{{ $menuItem['href'] ? route($menuItemKey) : '#' }}">{{ trans('menu.'.$menuItemKey) }}</a>
+        <a class="nav-link brands" {{ !$menuItem['href'] ? 'route='.route($menuItemKey) : '' }} href="{{ $menuItem['href'] ? route($menuItemKey) : '#' }}">{{ trans('menu.'.$menuItemKey) }}</a>
     @endif
 </li>

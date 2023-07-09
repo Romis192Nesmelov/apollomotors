@@ -2,7 +2,6 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Cviebrock\EloquentSluggable\Sluggable;
 
@@ -11,9 +10,13 @@ class Brand extends Model
     use Sluggable;
 
     protected $fillable = [
-        'name',
+        'logo',
         'slug',
-        'image',
+        'name_en',
+        'name_ru',
+        'maintenance_part1',
+        'maintenance_part2',
+        'spares',
         'elected',
         'active'
     ];
@@ -22,14 +25,34 @@ class Brand extends Model
     {
         return [
             'slug' => [
-                'source' => 'name'
+                'source' => 'name_en'
             ]
         ];
     }
 
+    public function cars()
+    {
+        return $this->hasMany(Car::class);
+    }
+
     public function prices()
     {
-        return $this->hasMany(HomePrice::class)->where('active',1);
+        return $this->hasMany(HomePrice::class);
+    }
+
+    public function repair()
+    {
+        return $this->hasOne(BrandRepair::class);
+    }
+
+    public function maintenances()
+    {
+        return $this->hasMany(BrandMaintenance::class);
+    }
+
+    public function spare()
+    {
+        return $this->hasOne(BrandSpare::class);
     }
 
     public $timestamps = false;

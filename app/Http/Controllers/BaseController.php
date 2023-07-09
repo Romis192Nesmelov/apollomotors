@@ -9,7 +9,8 @@ use App\Models\Contact;
 use App\Models\FreeCheck;
 use App\Models\OfferRepair;
 use App\Models\Question;
-use Illuminate\Http\Request;
+use App\Models\Content;
+//use Illuminate\Http\Request;
 use Illuminate\View\View;
 
 class BaseController extends Controller
@@ -21,6 +22,7 @@ class BaseController extends Controller
     protected string $activeMenu = '';
     protected string $activeSubMenu = '';
     protected $contacts;
+    protected $electedBrands;
 
     public function __construct()
     {
@@ -36,11 +38,12 @@ class BaseController extends Controller
         ];
 
         $this->contacts = Contact::all();
-        $this->data['elected_brands'] = Brand::where('active',1)->where('elected',1)->get();
+        $this->electedBrands = Brand::where('active',1)->where('elected',1)->get();
     }
 
     public function index() :View
     {
+        $this->data['content'] = Content::find(1);
         $this->data['actions'] = Action::where('active',1)->get();
         $this->data['brands'] = Brand::where('active',1)->get();
         $this->data['offers_repair'] = OfferRepair::where('active',1)->get();
@@ -88,7 +91,8 @@ class BaseController extends Controller
                 'menu' => $this->menu,
                 'activeMenu' => $this->activeMenu,
                 'activeSubMenu' => $this->activeSubMenu,
-                'contacts' => $this->contacts
+                'contacts' => $this->contacts,
+                'electedBrands' => $this->electedBrands
             ]
         ));
     }
