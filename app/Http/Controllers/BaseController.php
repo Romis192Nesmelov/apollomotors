@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Action;
+use App\Models\Article;
 use App\Models\Brand;
 use App\Models\Client;
 use App\Models\Contact;
@@ -58,26 +59,40 @@ class BaseController extends Controller
 
     public function about() :View
     {
+        $this->activeMenu = 'about';
         return $this->showView('home');
     }
 
     public function corporativeClients() :View
     {
+        $this->activeMenu = 'about';
         return $this->showView('home');
     }
 
     public function actions() :View
     {
+        $this->activeMenu = 'actions';
         return $this->showView('home');
     }
 
-    public function articles() :View
+    public function articles($slug=null) :View
     {
-        return $this->showView('home');
+        $this->activeMenu = 'articles';
+        $this->data['articles'] = Article::where('active',1)->get();
+        if ($slug) {
+            $this->data['article'] = Article::where('slug',$slug)->first();
+            $this->setSeo($this->data['article']->seo);
+            return $this->showView('articles.article');
+        } else {
+            $this->setSeo(Seo::find(2));
+            return $this->showView('articles.articles');
+        }
     }
 
     public function contacts() :View
     {
+        $this->activeMenu = 'contacts';
+        $this->setSeo(Seo::find(3));
         return $this->showView('contacts');
     }
 
@@ -86,7 +101,7 @@ class BaseController extends Controller
         return $this->showView('policy');
     }
 
-    protected function setSeo(Seo $seo): void
+    protected function setSeo($seo): void
     {
         if ($seo) {
             foreach (['title', 'keywords', 'description'] as $item) {

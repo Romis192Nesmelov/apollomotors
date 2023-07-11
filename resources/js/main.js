@@ -1,6 +1,28 @@
 $(window).on('load', function () {
     $('input[name=phone]').mask("+7(999)999-99-99");
 
+    setTimeout(function () {
+        windowResize();
+        $('#loader').remove();
+        $('body').css('overflow-y','scroll')
+    },1000);
+
+    $(window).resize(function() {
+        windowResize();
+    });
+
+    // Move on feedback-plate
+    let feedbackPlate = $('#feedback-plate');
+    feedbackPlate.css('top',-1 * (feedbackPlate.height() + 10));
+    setTimeout(function(){
+        feedbackPlate.animate({'top':'50%'},'slow');
+        fixingMainMenu();
+    }, 2000);
+
+    $(window).scroll(function() {
+        fixingMainMenu();
+    });
+
     //fancybox init
     $('.fancybox').fancybox({
         'autoScale': true,
@@ -90,18 +112,6 @@ $(window).on('load', function () {
         showMoreOffersRepair.removeClass('d-none');
     });
 
-    // Move on feedback-plate
-    let feedbackPlate = $('#feedback-plate');
-    feedbackPlate.css('top',-1 * (feedbackPlate.height() + 10));
-    setTimeout(function(){
-        feedbackPlate.animate({'top':'50%'},'slow');
-        fixingMainMenu();
-    }, 1000);
-
-    $(window).scroll(function() {
-        fixingMainMenu();
-    });
-
     rescaleBrandsLogos();
     $(window).resize(function() {
         rescaleBrandsLogos();
@@ -189,4 +199,21 @@ function rescaleBrandsLogos() {
             'margin-top':15
         });
     }
+}
+
+function windowResize() {
+    maxHeight($('.article-announcement'), 50);
+}
+
+function maxHeight(objs, padBottom) {
+    if ($(window).width() > 650) {
+        var maxHeight = 0;
+        objs.each(function() {
+            if (maxHeight < $(this).height()) maxHeight = $(this).height();
+        });
+    } else {
+        maxHeight = 'auto';
+    }
+    if (padBottom) maxHeight += padBottom;
+    objs.css('height',maxHeight);
 }

@@ -69,6 +69,8 @@ return [
     'email_address' => 'Адрес электронной почты:',
     'another_brand' => 'Другая марка автомобиля',
 
+    'another_articles' => 'Другие статьи'
+
 //    'in_russian' => ' по русски',
 //    'in_english' => ' по по английски',
 ];

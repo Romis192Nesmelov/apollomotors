@@ -43,6 +43,8 @@
 
 <body>
 
+<div id="loader"><div></div></div>
+
 <x-modal id="message-modal" head="{{ trans('content.message') }}">
     <h3 class="text-center"></h3>
 </x-modal>
