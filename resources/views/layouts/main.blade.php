@@ -146,7 +146,11 @@
     </div>
 </div>
 
-@include('blocks.main_nav_block', ['id' => 'main-nav', 'useHome' => false])
+@include('blocks.main_nav_block', [
+    'id' => 'main-nav',
+    'useHome' => false,
+    'nlAddClass' => 'brands'
+])
 
 @yield('content')
 
@@ -206,13 +210,16 @@
                 <ul id="footer-menu">
                     @foreach ($menu as $menuItemKey => $menuItem)
                         @if ($menuItemKey != 'home')
-                            @include('blocks.nav-item_block',['id' => 'footer-menu'])
+                            @include('blocks.nav-item_block',[
+                                'id' => 'footer-menu',
+                                'nlAddClass' => 'brands'
+                            ])
                         @endif
                     @endforeach
                     @include('blocks.nav-item_block',[
                         'id' => 'footer-menu',
                         'menuItemKey' => 'privacy-policy',
-                        'menuItemKey' => 'privacy_policy'
+                        'menuItemKey' => 'privacy_policy',
                     ])
                 </ul>
             </div>

@@ -10,7 +10,9 @@ use App\Models\FreeCheck;
 use App\Models\OfferRepair;
 use App\Models\Question;
 use App\Models\Content;
+use App\Models\Seo;
 //use Illuminate\Http\Request;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\View\View;
 
 class BaseController extends Controller
@@ -21,8 +23,8 @@ class BaseController extends Controller
     protected array $menu = [];
     protected string $activeMenu = '';
     protected string $activeSubMenu = '';
-    protected $contacts;
-    protected $electedBrands;
+    protected Collection $contacts;
+    protected Collection $electedBrands;
 
     public function __construct()
     {
@@ -50,6 +52,7 @@ class BaseController extends Controller
         $this->data['free_checks'] = FreeCheck::where('active',1)->get();
         $this->data['questions'] = Question::where('active',1)->get();
         $this->data['clients'] = Client::where('active',1)->get();
+        $this->setSeo(Seo::find(1));
         return $this->showView('home');
     }
 
@@ -81,6 +84,15 @@ class BaseController extends Controller
     public function policy() :View
     {
         return $this->showView('policy');
+    }
+
+    protected function setSeo(Seo $seo): void
+    {
+        if ($seo) {
+            foreach (['title', 'keywords', 'description'] as $item) {
+                $this->data[$item] = $seo[$item];
+            }
+        }
     }
 
     protected function showView($view) :View

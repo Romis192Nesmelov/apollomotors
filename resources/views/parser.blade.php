@@ -1,54 +1,30 @@
-@foreach($cars as $car)
+@foreach($spares as $spare)
     [<br>
-    'slug' => '{{ $car->slug }}',<br>
-    'name_en' => '{{ $car->eng }}',<br>
-    'name_ru' => '{{ $car->rus }}',<br>
-    'image_full' => 'storage{{ $car->full }}',<br>
-    'image_preview' => 'storage{{ $car->preview }}',<br>
-    'image_width' => {{ $car->img_width }},<br>
+    'slug' => '{{ $spare->slug }}',<br>
+    'code' => {{ $spare->code ? '\''.$spare->code.'\'' : 'null' }},<br>
+    'price_original' => {{ $spare->price_original ? $spare->price_original : 0 }},<br>
+    'price_original_from' => {{ $spare->price_original_from }},<br>
+    'price_non_original' => {{ $spare->price_non_original ? $spare->price_non_original : 0 }},<br>
+    'price_non_original_from' => {{ $spare->price_non_original_from }},<br>
+    'head' => '{{ $spare->head }}',<br>
+    'text' => {{ $spare->text ? '\''.$spare->text.'\'' : 'null' }},<br>
+    'active' => 1,<br>
+    'car_id' => {{ $spare->car_id }},<br>
 
-    @if ($car->repair)
-        'repair' => '{{ str_replace("\n",'',$car->repair) }}',<br>
+    @if ($spare->title_spares)
+        'title_spares' => '{{ $spare->title_spares }}',<br>
     @endif
-    @if ($car->maintenance)
-        'maintenance' => '{{ str_replace("\n",'',$car->maintenance) }}',<br>
+    @if ($spare->keywords_spares)
+        'keywords_spares' => '{{ $spare->keywords_spares }}',<br>
     @endif
-    @if ($car->spares)
-        'spares' => '{{ str_replace("\n",'',$car->spares) }}',<br>
+    @if ($spare->description_spares)
+        'description_spares' => '{{ $spare->description_spares }}',<br>
     @endif
-
-    @if ($car->title_repair)
-        'title_repair' => '{{ $car->title_repair }}',<br>
-    @endif
-    @if ($car->title_maintenance)
-        'title_maintenance' => '{{ $car->title_maintenance }}',<br>
-    @endif
-    @if ($car->title_spares)
-        'title_spares' => '{{ $car->title_spares }}',<br>
-    @endif
-
-    @if ($car->keywords_repair)
-        'keywords_repair' => '{{ $car->keywords_repair }}',<br>
-    @endif
-    @if ($car->keywords_maintenance)
-        'keywords_maintenance' => '{{ $car->keywords_maintenance }}',<br>
-    @endif
-    @if ($car->keywords_spares)
-        'keywords_spares' => '{{ $car->keywords_spares }}',<br>
-    @endif
-
-    @if ($car->description_repair)
-        'description_repair' => '{{ $car->description_repair }}',<br>
-    @endif
-    @if ($car->description_maintenance)
-        'description_maintenance' => '{{ $car->description_maintenance }}',<br>
-    @endif
-    @if ($car->description_spares)
-        'description_spares' => '{{ $car->description_spares }}',<br>
-    @endif
-
-    'brand_id' => {{ $car->brand_id }},<br>
-    'active' => {{ $car->active }}<br>
     ],<br>
+
+{{--    [<br>--}}
+{{--    'work_id' => {{ $work->work_id }},<br>--}}
+{{--    'repair_id' => {{ $work->work_id }},<br>--}}
+{{--    ],<br>--}}
 
 @endforeach

@@ -6,6 +6,7 @@ use App\Models\Brand;
 use App\Models\BrandRepair;
 use App\Models\BrandMaintenance;
 use App\Models\BrandSpare;
+use App\Models\Seo;
 //use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -574,7 +575,7 @@ class BrandsSeeder extends Seeder
                         ]);
 
                         if (!$k) {
-                            $this->setSeo($model->id, $keyText, $seo);
+                            $this->setSeo($model->id, $foreignKeyName, $keyText, $seo);
                         }
                     }
                 } else {
@@ -582,19 +583,23 @@ class BrandsSeeder extends Seeder
                         'text' => $texts[$keyText],
                         $foreignKeyName => $id
                     ]);
-                    $this->setSeo($model->id, $keyText, $seo);
+                    $this->setSeo($model->id, $foreignKeyName, $keyText, $seo);
                 }
             }
         }
     }
 
-    protected function setSeo(int $id, string $keyText, array $seo)
+    protected function setSeo(int $id, string $foreignKeyName, string $keyText, array $seo): void
     {
+        $seoItem = [$foreignKeyName => $id];
+        $existsSeoFlag = false;
         foreach ($this->keysSeo as $keySeo) {
-            $fullKeySeo = $keySeo . '_' . $keyText;
+            $fullKeySeo = $keyText ? $keySeo . '_' . $keyText : $keySeo;
             if ($seo[$fullKeySeo]) {
-                // TODO: Filling SEO
+                $existsSeoFlag = true;
+                $seoItem[$keySeo] = $seo[$fullKeySeo];
             }
         }
+        if ($existsSeoFlag) Seo::create($seoItem);
     }
 }

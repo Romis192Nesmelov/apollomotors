@@ -4,6 +4,7 @@ namespace App\Models;
 
 //use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class FreeCheck extends Model
 {
@@ -12,7 +13,7 @@ class FreeCheck extends Model
         'active'
     ];
 
-    public function checks()
+    public function checks(): HasMany
     {
         return $this->hasMany(Check::class)->where('active',1);
     }

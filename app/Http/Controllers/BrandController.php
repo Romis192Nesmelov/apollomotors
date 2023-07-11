@@ -2,8 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Brand;
-use App\Models\OldCar;
+use App\Models\Spare;
 use Illuminate\View\View;
 //use Illuminate\Http\Request;
 
@@ -11,10 +10,10 @@ class BrandController extends BaseController
 {
     use HelperTrait;
 
-    public function parser()
-    {
-        return view('parser', ['cars' => OldCar::all()]);
-    }
+//    public function parser()
+//    {
+//        return view('parser', ['spares' => Spare::all()]);
+//    }
 
     public function __construct()
     {

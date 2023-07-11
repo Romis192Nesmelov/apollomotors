@@ -43,15 +43,26 @@ body {
     opacity: .5;
 }
 
-/*#brands-modal .brands {*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*    justify-content: center;*/
-/*}*/
-
 #brands-modal .brand-logo {
     float: left;
     text-align: center;
+}
+
+#nav-modal ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#nav-modal ul li {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+#nav-modal ul li a {
+    font-weight: bold;
+    color: rgba(0,0,0,.55);
 }
 
 #loader {
@@ -621,6 +632,10 @@ footer hr {
     .modal-dialog {
         max-width: 1200px;
     }
+
+    #nav-modal .modal-dialog {
+        max-width: 600px;
+    }
 }
 
 @media (max-width: 1400px) {
@@ -780,5 +795,11 @@ footer hr {
     #logo-line .logo-block .tagline,
     #logo-line .search-block .online-consult {
         font-size: 22px;
+    }
+
+    #nav-modal ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }

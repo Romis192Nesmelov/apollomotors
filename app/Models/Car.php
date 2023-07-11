@@ -4,6 +4,8 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Cviebrock\EloquentSluggable\Sluggable;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 
 class Car extends Model
 {
@@ -29,25 +31,30 @@ class Car extends Model
         ];
     }
 
-    public function brand()
+    public $timestamps = false;
+
+    public function brand(): BelongsTo
     {
         return $this->belongsTo(Brand::class);
     }
 
-    public function repair()
+    public function repair(): HasOne
     {
         return $this->hasOne(CarRepair::class);
     }
 
-    public function maintenances()
+    public function maintenances(): HasOne
     {
         return $this->hasOne(CarMaintenance::class);
     }
 
-    public function spare()
+    public function spare(): HasOne
     {
         return $this->hasOne(CarSpare::class);
     }
 
-    public $timestamps = false;
+    public function seo(): HasOne
+    {
+        return $this->hasOne(Seo::class);
+    }
 }

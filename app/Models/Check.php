@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Check extends Model
 {
@@ -15,7 +16,7 @@ class Check extends Model
         'free_check_id',
     ];
 
-    public function freeCheck()
+    public function freeCheck(): BelongsTo
     {
         return $this->belongsTo(FreeCheck::class);
     }

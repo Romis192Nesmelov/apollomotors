@@ -1,6 +1,19 @@
 @extends('layouts.main')
 
 @section('content')
+    <x-modal id="nav-modal">
+        <ul class="navbar-nav m-auto">
+            @foreach ($menu as $menuItemKey => $menuItem)
+                @if (isset($menuItem['href']) && !$menuItem['href'])
+                    @include('blocks.nav-item_block', [
+                        'id' => 'modal-nav',
+                        'nlAddClass' => 'menu-nav'
+                    ])
+                @endif
+            @endforeach
+        </ul>
+    </x-modal>
+
     @if (count($actions))
         <div id="actions-block" class="owl-carousel">
             @foreach ($actions as $action)
@@ -28,7 +41,7 @@
     <x-section>
         <div id="brands-block" class="owl-carousel pt-5">
             @foreach ($brands as $brand)
-                <a href="#"><img class="w-75 m-auto" title="{{ $brand->ru }}" src="{{ asset($brand->logo) }}" /></a>
+                <a brand="{{ $brand->slug }}" href="#"><img class="w-75 m-auto" title="{{ $brand->name_ru }}" src="{{ asset($brand->logo) }}" /></a>
             @endforeach
         </div>
     </x-section>

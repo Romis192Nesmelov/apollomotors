@@ -130,7 +130,7 @@ $(window).on('load', function () {
         requestModal.modal('show');
     });
 
-    // Click to open brands modal
+    // Click to nav-link
     $('.nav-link.brands').click(function (e) {
         e.preventDefault();
         let brandsModal = $('#brands-modal'),
@@ -140,6 +140,18 @@ $(window).on('load', function () {
             $(this).attr('href', route + '/' + $(this).attr('brand'));
         });
         brandsModal.modal('show');
+    });
+
+    // Click to brand
+    $('#brands-block a').click(function (e) {
+        e.preventDefault();
+        let navModal = $('#nav-modal'),
+            brand = $(this).attr('brand');
+
+        navModal.find('.menu-nav').each(function () {
+            $(this).attr('href', $(this).attr('route') + '/' + brand);
+        });
+        navModal.modal('show');
     });
 });
 

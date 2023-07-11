@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 
 class Content extends Model
 {
@@ -10,4 +11,9 @@ class Content extends Model
         'head',
         'text'
     ];
+
+    public function seo(): HasOne
+    {
+        return $this->hasOne(Seo::class);
+    }
 }

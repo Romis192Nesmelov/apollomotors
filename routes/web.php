@@ -20,7 +20,7 @@ Route::get('/', [BaseController::class, 'index'])->name('home');
 Route::get('/o-kompanii', [BaseController::class, 'about'])->name('about');
 Route::get('/korporativnym-klientam', [BaseController::class, 'corporativeClients'])->name('cc');
 
-Route::get('/parser', [BrandController::class, 'parser'])->name('parser');
+//Route::get('/parser', [BrandController::class, 'parser'])->name('parser');
 
 Route::get('/remont/{slug?}', [BrandController::class, 'repair'])->name('repair');
 Route::get('/tekhobsluzhivanie/{slug?}', [BrandController::class, 'maintenance'])->name('maintenance');
