@@ -14,13 +14,59 @@ class ActionsSeeder extends Seeder
     public function run(): void
     {
         $data = [
-            'image' => 'storage/images/actions/action1.jpg',
-            'text' => '<b>Замена масла бесплатно –</b><br>при первом посещении',
-            'active' => 1
+            [
+                'image' => 'storage/images/actions/action1.jpg',
+                'image_small' => 'storage/images/actions/action1_small.jpg',
+                'text' => 'Бесплатная замена масла при первом посещении',
+                'limit' => 1690848000,
+                'active' => 1
+            ],
+            [
+                'image' => 'storage/images/actions/action1.jpg',
+                'image_small' => 'storage/images/actions/action1_small.jpg',
+                'text' => 'Бесплатная диагностика подвески при первом посещении',
+                'limit' => 1690848000,
+                'active' => 1
+            ],
+            [
+                'image' => 'storage/images/actions/action1.jpg',
+                'image_small' => 'storage/images/actions/action1_small.jpg',
+                'text' => 'Бесплатная компьюторная диагностика',
+                'limit' => 1690848000,
+                'active' => 1
+            ],
+            [
+                'image' => 'storage/images/actions/action1.jpg',
+                'image_small' => 'storage/images/actions/action1_small.jpg',
+                'text' => 'Беспатная замена щеток стеклоочистителя',
+                'limit' => 1690848000,
+                'active' => 1
+            ],
+            [
+                'image' => 'storage/images/actions/action1.jpg',
+                'image_small' => 'storage/images/actions/action1_small.jpg',
+                'text' => 'Бесплатная электронная проверка натяжения цепи для TFSi 1,8-2,0л.',
+                'limit' => 1690848000,
+                'active' => 1
+            ],
+            [
+                'image' => 'storage/images/actions/action1.jpg',
+                'image_small' => 'storage/images/actions/action1_small.jpg',
+                'text' => 'Полная заправка кондиционера от 1200р.',
+                'limit' => 1690848000,
+                'active' => 1
+            ],
+            [
+                'image' => 'storage/images/actions/action1.jpg',
+                'image_small' => 'storage/images/actions/action1_small.jpg',
+                'text' => 'Шиномонтаж по акции! Экономия до 30%',
+                'limit' => 1690848000,
+                'active' => 1
+            ],
         ];
 
-        for ($i=0;$i<5;$i++) {
-            Action::create($data);
+        foreach ($data as $item) {
+            Action::create($item);
         }
     }
 }

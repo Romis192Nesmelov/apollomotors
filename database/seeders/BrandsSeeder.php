@@ -559,8 +559,21 @@ class BrandsSeeder extends Seeder
                 }
             }
         }
-
         return [$item, $texts, $seo];
+    }
+
+    protected function getSeo($item): array
+    {
+        $seo = [];
+        foreach ($this->keysSeo as $keySeo) {
+            if (isset($item[$keySeo])) {
+                $seo[$keySeo] = $item[$keySeo];
+                unset($item[$keySeo]);
+            } else {
+                $seo[$keySeo] = null;
+            }
+        }
+        return [$item, $seo];
     }
 
     protected function setTextsAndSeo(int $id, string $foreignKeyName, array $texts, array $seo, array $models): void

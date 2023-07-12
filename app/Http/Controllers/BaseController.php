@@ -60,7 +60,9 @@ class BaseController extends Controller
     public function about() :View
     {
         $this->activeMenu = 'about';
-        return $this->showView('home');
+        $this->data['content'] = Content::find(2);
+        $this->setSeo($this->data['content']->seo);
+        return $this->showView('about.about');
     }
 
     public function corporativeClients() :View
@@ -72,7 +74,9 @@ class BaseController extends Controller
     public function actions() :View
     {
         $this->activeMenu = 'actions';
-        return $this->showView('home');
+        $this->data['actions'] = Action::where('active',1)->get();
+        $this->setSeo(Seo::find(3));
+        return $this->showView('actions');
     }
 
     public function articles($slug=null) :View
@@ -92,7 +96,7 @@ class BaseController extends Controller
     public function contacts() :View
     {
         $this->activeMenu = 'contacts';
-        $this->setSeo(Seo::find(3));
+        $this->setSeo(Seo::find(4));
         return $this->showView('contacts');
     }
 

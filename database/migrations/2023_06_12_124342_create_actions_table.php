@@ -14,7 +14,9 @@ return new class extends Migration
         Schema::create('actions', function (Blueprint $table) {
             $table->id();
             $table->string('image');
-            $table->string('text',60);
+            $table->string('image_small');
+            $table->string('text');
+            $table->integer('limit');
             $table->boolean('active');
         });
     }

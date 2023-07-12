@@ -10,7 +10,9 @@ class Action extends Model
 {
     protected $fillable = [
         'image',
+        'image_small',
         'text',
+        'limit',
         'active'
     ];
 

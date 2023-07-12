@@ -17,23 +17,7 @@
     @if (count($actions))
         <div id="actions-block" class="owl-carousel">
             @foreach ($actions as $action)
-                <div class="action" style="background: url({{ asset($action->image) }}) center;">
-                    <table>
-                        <tr>
-                            <td><h1>{!! $action->text !!}</h1></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="#" action-id="{{ $action->id }}" class="action-record">
-                                    @include('blocks.button_block',[
-                                        'primary' => true,
-                                        'buttonText' => trans('content.sign_up')
-                                    ])
-                                </a>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
+                @include('blocks.action_block')
             @endforeach
         </div>
     @endif
@@ -136,7 +120,7 @@
                             aria-selected="{{ !$k ? 'true' : 'false' }}"
                             style="width: {{ 100 / count($electedBrands) }}%"
                         >
-                            <img src="{{ asset($brand->image) }}">
+                            <img src="{{ asset($brand->logo) }}">
                         </a>
                     @endforeach
                 </div>
@@ -177,40 +161,5 @@
         </div>
     </x-section>
 
-    <x-section>
-        <h2 class="w-100 text-center">{{ trans('content.in_the_waiting_room_for_each_client') }}</h2>
-        @foreach (['fa fa-wifi', 'icon-cup2', 'icon-tv', 'icon-eye'] as $k => $icon)
-            @include('blocks.big_icon_block',[
-                'colMd' => 3,
-                'colSm' => 6,
-                'icon' => $icon,
-                'iconText' => trans('content.for_each_client_icon'.($k+1))
-            ])
-        @endforeach
-    </x-section>
-
-    @include('blocks.hr_block')
-
-    <x-section>
-        <h2 class="w-100 text-center">{{ trans('content.with_care_for_each_client_with_us') }}</h2>
-        @foreach (['icon-alarm-check','icon-bubbles3','icon-cogs','icon-bookmark','icon-video-camera3',' icon-wallet','icon-trophy3','icon-gift'] as $k => $icon)
-            @include('blocks.big_icon_block',[
-                'colMd' => 3,
-                'colSm' => 6,
-                'icon' => $icon,
-                'iconText' => trans('content.care_icon'.($k+1))
-            ])
-        @endforeach
-    </x-section>
-
-    @include('blocks.hr_block')
-
-    <x-section>
-        <h2 class="w-100 text-center">{{ trans('content.we_are_trusted') }}</h2>
-        <div id="clients-block" class="owl-carousel pt-5">
-            @foreach ($clients as $client)
-                <img class="w-50 m-auto" title="{{ $client->name }}" src="{{ asset($client->image) }}" />
-            @endforeach
-        </div>
-    </x-section>
+    @include('blocks.for_each_client_block')
 @endsection

@@ -69,7 +69,9 @@ return [
     'email_address' => 'Адрес электронной почты:',
     'another_brand' => 'Другая марка автомобиля',
 
-    'another_articles' => 'Другие статьи'
+    'another_articles' => 'Другие статьи',
+    'the_promotion_is_valid_until' => 'Акция действует до :date',
+    'up_to' => 'до',
 
 //    'in_russian' => ' по русски',
 //    'in_english' => ' по по английски',

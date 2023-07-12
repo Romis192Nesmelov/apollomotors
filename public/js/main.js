@@ -4,7 +4,6 @@ $(window).on('load', function () {
     setTimeout(function () {
         windowResize();
         $('#loader').remove();
-        $('body').css('overflow-y','scroll')
     },1000);
 
     $(window).resize(function() {
@@ -203,6 +202,7 @@ function rescaleBrandsLogos() {
 
 function windowResize() {
     maxHeight($('.article-announcement'), 50);
+    maxHeight($('.action-list .action'), 30);
 }
 
 function maxHeight(objs, padBottom) {
