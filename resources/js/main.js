@@ -3,11 +3,13 @@ $(window).on('load', function () {
 
     setTimeout(function () {
         windowResize();
+        bigTablesScroll();
         $('#loader').remove();
     },1000);
 
     $(window).resize(function() {
         windowResize();
+        bigTablesScroll();
     });
 
     // Move on feedback-plate
@@ -129,11 +131,19 @@ $(window).on('load', function () {
             requestTypeInput.val('request_for_consultation');
             actionIdInput.val('');
             discountBlock.show();
-        } else {
-            newHad = window.onlineRecordHead;
-            requestTypeInput.val('online_record');
+        } else if ($(this).hasClass('action-record')) {
+            newHad = window.onlineRegForPromo;
+            requestTypeInput.val('online_registration_for_the_promotion');
             actionIdInput.val($(this).attr('action-id'));
             discountBlock.hide();
+        } else if ($(this).hasClass('repair-record')) {
+            newHad = window.onlineRegForRepair;
+            requestTypeInput.val('online_appointment_for_repairs');
+            discountBlock.show();
+        } else {
+            newHad = window.onlineRegForMaintenance;
+            requestTypeInput.val('online_appointment_for_maintenance');
+            discountBlock.show();
         }
         requestModal.find('h2').html(newHad);
         requestModal.modal('show');
@@ -216,4 +226,26 @@ function maxHeight(objs, padBottom) {
     }
     if (padBottom) maxHeight += padBottom;
     objs.css('height',maxHeight);
+}
+
+function bigTablesScroll() {
+    window.bigTable = $('.big-table-container');
+    if (window.bigTable.length && $(window).width() <= 1024) {
+        window.bigTable.mCustomScrollbar({
+            axis: 'x',
+            theme: 'light-3',
+            alwaysShowScrollbar: 2,
+            advanced: {
+                autoExpandHorizontalScroll: true
+            }
+        });
+
+        $(window).scroll(function () {
+            var offset = window.pageYOffset-bigTable.offset().top;
+            offset = offset < 0 ? 0 : offset;
+            $('.mCSB_scrollTools.mCSB_scrollTools_horizontal').css('top',offset);
+        });
+    } else if (window.bigTable) {
+        window.bigTable.mCustomScrollbar('destroy');
+    }
 }

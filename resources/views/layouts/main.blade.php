@@ -27,16 +27,18 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/icons/fontawesome/styles.min.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.fancybox.min.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ asset('css/owl.carousel.min.css') }}" />
-
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.mCustomScrollbar.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ asset('css/contacts.css') }}" />
 
     <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://yastatic.net/share2/share.js" defer></script>
     <script type="text/javascript" src="{{ asset('js/jquery.maskedinput.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/jquery.fancybox.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/owl.carousel.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/jquery.mCustomScrollbar.concat.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/feedback.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/main.js') }}"></script>
 </head>
@@ -50,7 +52,7 @@
 </x-modal>
 
 <x-modal id="request-modal" head="???">
-    <div class="record-repair">
+    <div class="online-record">
         @include('blocks.request_form_block',['textarea' => true, 'icon' => null])
     </div>
 </x-modal>
@@ -155,6 +157,9 @@
 ])
 
 @yield('content')
+
+<p class="text-center"><b>{{ trans('content.share_the_page') }}</b></p>
+<div class="ya-share2 text-center mb-4" data-services="vkontakte,facebook,skype,telegram,whatsapp"></div>
 
 <footer>
     <div class="container">
@@ -276,7 +281,9 @@
 
 <script>
     window.getConsultHead = "{{ trans('content.to_get_a_consultation') }}";
-    window.onlineRecordHead = "{{ trans('content.online_record') }}";
+    window.onlineRegForPromo = "{{ trans('content.online_registration_for_the_promotion') }}";
+    window.onlineRegForRepair = "{{ trans('content.online_appointment_for_repair') }}";
+    window.onlineRegForMaintenance = "{{ trans('content.online_appointment_for_maintenance') }}";
 </script>
 
 </body>

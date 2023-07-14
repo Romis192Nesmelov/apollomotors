@@ -4,6 +4,11 @@ body {
     background-color: white;
 }
 
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
 .modal-content {
     border-radius: 30px;
     padding: 40px 50px;
@@ -21,7 +26,7 @@ body {
     background-size: auto 100%;
 }
 
-#request-modal .modal-content .record-repair {
+#request-modal .modal-content .online-record {
     width: 60%;
 }
 
@@ -154,19 +159,139 @@ hr {
     color: black;
 }
 
+.warning {
+    font-weight: bold;
+    color: orangered;
+}
+
+.price {
+    font-size: 17px;
+    font-weight: bold;
+    color: #2c3341;
+}
+
+/*Data tables*/
+table.app-data-table {
+    width: 100%;
+}
+
+table.app-data-table th,
+table.app-data-table td {
+    font-size: .9em;
+    line-height: 1.4em;
+    border: 1px solid grey;
+}
+
+table.app-data-table tr td:first-child,
+table.app-data-table tr th:first-child {
+    width: 30%;
+    text-align: left;
+    padding-left: 5px;
+}
+
+table.app-data-table.simple tr td:first-child,
+table.app-data-table.simple tr th:first-child {
+    width: 70% !important;
+}
+
+table.app-data-table th {
+    background-color: #3a6886;
+    color: white;
+}
+
+table.app-data-table th {
+    text-align: center;
+}
+
+table.app-data-table td.price,
+table.app-data-table td.code {
+    text-align: center;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+table.app-data-table th {
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+table.app-data-table td.code {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+p.subscript {
+    font-size: 10px;
+    font-style: italic;
+    color: grey;
+    margin-top: 15px;
+}
+
+p.car-name {
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.big-table-container {
+    width: 100%;
+    overflow-x: scroll;
+}
+
+.mCSB_scrollTools.mCSB_scrollTools_horizontal {
+    position: absolute;
+    top: 0;
+}
+
+.checkbox-inline span.checkbox-label{
+    padding-left: 10px;
+}
+
+ul.sub-tasks {
+    width: 100%;
+    margin: auto;
+    list-style-type: none;
+    font-style: italic;
+    padding: 30px 80px;
+}
+
+ul.sub-tasks li {
+    width: 100%;
+    display: table;
+    background: url("../images/dot.svg") repeat-x bottom;
+}
+
+ul.sub-tasks li > div {
+    height: 30px;
+    background-color: #f5f5f5;
+}
+
+ul.sub-tasks .name {
+    font-size: 15px;
+    text-align: left;
+    padding-top: 12px;
+    padding-right: 4px;
+    float: left;
+    color: #3a6886;
+}
+
+ul.sub-tasks .price {
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 4px;
+    color: #3a6886;
+    text-align: right;
+    float: right;
+}
+
 .framed-image img {
     width: calc(100% - 10px);
     border: 5px solid #c8c8c8;
 }
 
-.framed-image i {
-    top: 15px;
-    right: 25px;
-}
-
 .image {
-    float: none;
-    display: inline-block;
+    /*float: none;*/
+    /*display: inline-block;*/
 }
 
 section {
@@ -603,11 +728,11 @@ textarea {
     margin-right: 15px;
 }
 
-section .rounded-block.record-repair {
+section .rounded-block.online-record {
     background: url("../storage/images/car.png") no-repeat right white;
 }
 
-section .rounded-block.record-repair form {
+section .rounded-block.online-record form {
     width: 60%;
 }
 
@@ -630,6 +755,15 @@ section .rounded-block.record-repair form {
 .article-announcement h3 {
     margin-bottom: 20px;
     text-transform: none;
+}
+
+.warning-plate {
+    width: 100%;
+    background:#eeeeee;
+    border:1px solid #cccccc;
+    margin-top: 20px;
+    padding:5px 10px;
+    text-align:center;
 }
 
 footer {
@@ -702,11 +836,11 @@ footer hr {
         margin-left: 30px;
     }
 
-    .record-repair {
+    .online-record {
         background: white;
     }
 
-    .record-repair form {
+    .online-record form {
         width: 100%;
     }
 }
@@ -718,7 +852,7 @@ footer hr {
 }
 
 @media (max-width: 1200px) {
-    #request-modal .modal-content .record-repair {
+    #request-modal .modal-content .online-record {
         width: 55%;
     }
 
@@ -739,11 +873,11 @@ footer hr {
         margin-left: 10px;
     }
 
-    section .rounded-block.record-repair {
+    section .rounded-block.online-record {
         background: white;
     }
 
-    section .rounded-block.record-repair form {
+    section .rounded-block.online-record form {
         width: 100%;
     }
 }
@@ -780,7 +914,7 @@ footer hr {
         background: white;
     }
 
-    #request-modal .modal-content .record-repair {
+    #request-modal .modal-content .online-record {
         width: 100%;
     }
 }
@@ -790,7 +924,7 @@ footer hr {
         display: none;
     }
 
-    .record-repair .form-group {
+    .online-record .form-group {
         margin-bottom: 10px;
     }
 

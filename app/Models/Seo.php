@@ -11,12 +11,17 @@ class Seo extends Model
         'title',
         'keywords',
         'description',
-
         'content_id',
-        'action_id',
+//        'action_id',
         'article_id',
-        'brand_id',
-        'car_id',
+
+        'brand_repair_id',
+        'car_repair_id',
+        'brand_maintenance_id',
+        'car_maintenance_id',
+        'brand_spare_id',
+        'car_spare_id',
+
         'repair_id',
         'spare_id',
     ];
@@ -26,24 +31,44 @@ class Seo extends Model
         return $this->belongsTo(Content::class);
     }
 
-    public function action(): BelongsTo
-    {
-        return $this->belongsTo(Action::class);
-    }
+//    public function action(): BelongsTo
+//    {
+//        return $this->belongsTo(Action::class);
+//    }
 
     public function article(): BelongsTo
     {
         return $this->belongsTo(Article::class);
     }
 
-    public function brand(): BelongsTo
+    public function brandRepair(): BelongsTo
     {
-        return $this->belongsTo(Brand::class);
+        return $this->belongsTo(BrandRepair::class);
     }
 
-    public function car(): BelongsTo
+    public function carRepair(): BelongsTo
     {
-        return $this->belongsTo(Car::class);
+        return $this->belongsTo(CarRepair::class);
+    }
+
+    public function brandMaintenance(): BelongsTo
+    {
+        return $this->belongsTo(BrandMaintenance::class);
+    }
+
+    public function carMaintenance(): BelongsTo
+    {
+        return $this->belongsTo(CarMaintenance::class);
+    }
+
+    public function brandSpare(): BelongsTo
+    {
+        return $this->belongsTo(BrandSpare::class);
+    }
+
+    public function carSpare(): BelongsTo
+    {
+        return $this->belongsTo(CarSpare::class);
     }
 
     public function repair(): BelongsTo

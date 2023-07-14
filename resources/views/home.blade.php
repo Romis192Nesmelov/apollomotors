@@ -35,8 +35,7 @@
             @for ($i=1;$i<=5;$i++)
                 @include('blocks.fancybox_block',[
                     'image' => 'storage/images/about/image'.$i.'.jpg',
-                    'addClass' => $i == 1 ? 'col-12 p-1' : 'col-lg-6 col-md-12 p-1',
-                    'iconBlack' => false
+                    'addClass' => $i == 1 ? 'col-12 p-1' : 'col-lg-6 col-md-12 p-1'
                 ])
             @endfor
         </div>
@@ -155,10 +154,7 @@
     </x-section>
 
     <x-section>
-        <div class="rounded-block record-repair">
-            <h2>{{ trans('content.record_for_repair') }}</h2>
-            @include('blocks.request_form_block',['textarea' => false])
-        </div>
+        @include('blocks.online_record_block',['type' => 'online_appointment_for_repair'])
     </x-section>
 
     @include('blocks.for_each_client_block')

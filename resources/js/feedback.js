@@ -89,7 +89,7 @@ function unlockAll(body,form,agree,loader) {
 }
 
 function addLoader(body,loader) {
-    body.prepend(loader.css('top',window.scrollY));
+    body.prepend(loader);
     body.css({
         'overflow':'hidden',
         'padding-right':20

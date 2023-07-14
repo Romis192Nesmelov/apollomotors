@@ -22,9 +22,9 @@ Route::get('/korporativnym-klientam', [BaseController::class, 'corporativeClient
 
 //Route::get('/parser', [BrandController::class, 'parser'])->name('parser');
 
-Route::get('/remont/{slug?}', [BrandController::class, 'repair'])->name('repair');
-Route::get('/tekhobsluzhivanie/{slug?}', [BrandController::class, 'maintenance'])->name('maintenance');
-Route::get('/zapchasti/{slug?}', [BrandController::class, 'spares'])->name('spares');
+Route::get('/remont/{brand?}/{car?}/{job?}', [BrandController::class, 'repair'])->name('repair');
+Route::get('/tekhobsluzhivanie/{brand?}/{car?}', [BrandController::class, 'maintenance'])->name('maintenance');
+Route::get('/zapchasti/{brand?}/{car?}', [BrandController::class, 'spares'])->name('spare');
 
 Route::get('/aktsii', [BaseController::class, 'actions'])->name('actions');
 Route::get('/article/{slug?}', [BaseController::class, 'articles'])->name('articles');

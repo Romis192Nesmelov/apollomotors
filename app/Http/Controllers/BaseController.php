@@ -34,7 +34,7 @@ class BaseController extends Controller
             'about' =>          ['sub' => ['about','cc']],
             'repair' =>         ['href' => false],
             'maintenance' =>    ['href' => false],
-            'spares' =>         ['href' => false],
+            'spare' =>         ['href' => false],
             'actions' =>        ['href' => true],
             'articles' =>       ['href' => true],
             'contacts' =>       ['href' => true]

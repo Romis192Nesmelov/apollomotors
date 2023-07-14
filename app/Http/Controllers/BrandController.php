@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Brand;
+use App\Models\Car;
+use App\Models\Repair;
 use App\Models\Spare;
 use Illuminate\View\View;
 //use Illuminate\Http\Request;
@@ -20,18 +23,49 @@ class BrandController extends BaseController
         parent::__construct();
     }
 
-    public function repair($slug=null) :View
+    public function repair($brand=null, $car=null, $job=null) :View
     {
-        return $this->showView('repair');
+        return $this->getIssues('repair', $brand, $car, $job);
     }
 
-    public function maintenance($slug=null) :View
+    public function maintenance($brand=null, $car=null) :View
     {
-        return $this->showView('maintenance');
+        return $this->getIssues('maintenance', $brand, $car, null);
     }
 
-    public function spares($slug=null) :View
+    public function spares($brand=null, $car=null) :View
     {
-        return $this->showView('spares');
+        return $this->getIssues('spare', $brand, $car, null);
+    }
+
+    private function getIssues(string $issue, string $brand=null, string $car=null, string $job=null): View
+    {
+        $this->activeMenu = $issue;
+        if ($brand) {
+            if ($car) {
+                if ($job) {
+                    if (!$this->data['repair'] = Repair::where('slug',$job)->first()) abort(404, trans('404'));
+                    $this->setSeo($this->data['repair']->seo);
+                    return $this->showView('issues.repair');
+                } else {
+                    if (!$this->data['car'] = Car::where('slug',$car)->first()) abort(404, trans('404'));
+
+                    if ($issue == 'repair') $this->setSeo($this->data['car']->repairs[0]->seo);
+                    else $this->setSeo($this->data['car'][$issue]->seo);
+
+                    return $this->showView('issues.car');
+                }
+            } else {
+                if (!$this->data['brand'] = Brand::where('slug',$brand)->first()) abort(404, trans('404'));
+
+                if ($issue == 'maintenance') $this->setSeo($this->data['brand']->maintenances[0]->seo);
+                else $this->setSeo($this->data['brand'][$issue]->seo);
+
+                return $this->showView('issues.brand');
+            }
+        } else {
+            // TODO: Get general repair page
+            return $this->showView('brand');
+        }
     }
 }

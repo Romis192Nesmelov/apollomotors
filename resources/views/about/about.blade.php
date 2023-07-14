@@ -9,8 +9,7 @@
         @for ($i=1;$i<=6;$i++)
             @include('blocks.fancybox_block',[
                 'image' => 'storage/images/about/image'.$i.'.jpg',
-                'addClass' => 'col-lg-2 col-md-12 p-1 framed-image',
-                'iconBlack' => false
+                'addClass' => 'col-lg-2 col-md-12 p-1 framed-image'
             ])
         @endfor
     </x-section>

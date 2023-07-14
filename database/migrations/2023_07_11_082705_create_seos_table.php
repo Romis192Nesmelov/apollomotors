@@ -1,10 +1,14 @@
 <?php
 
 use App\Models\Content;
-use App\Models\Action;
+//use App\Models\Action;
 use \App\Models\Article;
-use \App\Models\Brand;
-use \App\Models\Car;
+use \App\Models\BrandRepair;
+use \App\Models\CarRepair;
+use \App\Models\BrandMaintenance;
+use \App\Models\CarMaintenance;
+use \App\Models\BrandSpare;
+use \App\Models\CarSpare;
 use \App\Models\Repair;
 use \App\Models\Spare;
 use Illuminate\Database\Migrations\Migration;
@@ -24,10 +28,18 @@ return new class extends Migration
             $table->text('keywords')->nullable();
             $table->text('description')->nullable();
             $table->foreignIdFor(Content::class)->nullable()->constrained()->cascadeOnUpdate()->cascadeOnDelete();
-            $table->foreignIdFor(Action::class)->nullable()->constrained()->cascadeOnUpdate()->cascadeOnDelete();
+//            $table->foreignIdFor(Action::class)->nullable()->constrained()->cascadeOnUpdate()->cascadeOnDelete();
             $table->foreignIdFor(Article::class)->nullable()->constrained()->cascadeOnUpdate()->cascadeOnDelete();
-            $table->foreignIdFor(Brand::class)->nullable()->constrained()->cascadeOnUpdate()->cascadeOnDelete();
-            $table->foreignIdFor(Car::class)->nullable()->constrained()->cascadeOnUpdate()->cascadeOnDelete();
+
+            $table->foreignIdFor(BrandRepair::class)->nullable()->constrained()->cascadeOnUpdate()->cascadeOnDelete();
+            $table->foreignIdFor(CarRepair::class)->nullable()->constrained()->cascadeOnUpdate()->cascadeOnDelete();
+
+            $table->foreignIdFor(BrandMaintenance::class)->nullable()->constrained()->cascadeOnUpdate()->cascadeOnDelete();
+            $table->foreignIdFor(CarMaintenance::class)->nullable()->constrained()->cascadeOnUpdate()->cascadeOnDelete();
+
+            $table->foreignIdFor(BrandSpare::class)->nullable()->constrained()->cascadeOnUpdate()->cascadeOnDelete();
+            $table->foreignIdFor(CarSpare::class)->nullable()->constrained()->cascadeOnUpdate()->cascadeOnDelete();
+
             $table->foreignIdFor(Repair::class)->nullable()->constrained()->cascadeOnUpdate()->cascadeOnDelete();
             $table->foreignIdFor(Spare::class)->nullable()->constrained()->cascadeOnUpdate()->cascadeOnDelete();
             $table->timestamps();

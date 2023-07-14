@@ -58,9 +58,4 @@ class Brand extends Model
     {
         return $this->hasOne(BrandSpare::class);
     }
-
-    public function seo(): HasOne
-    {
-        return $this->hasOne(Seo::class);
-    }
 }
