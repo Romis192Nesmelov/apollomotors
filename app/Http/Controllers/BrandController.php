@@ -63,10 +63,10 @@ class BrandController extends BaseController
                     $this->data['old_price'] = $this->data['repair']->old_price ? $this->data['repair']->old_price : $this->data['price'] * 3;
 
                     $this->data['left_digits'] = [
-                        ['top' => 245, 'indent' => 65],
-                        ['top' => 200, 'indent' => 50],
-                        ['top' => 150, 'indent' => 50],
-                        ['top' => 110, 'indent' => 65],
+                        ['top' => 245, 'indent' => 70],
+                        ['top' => 200, 'indent' => 55],
+                        ['top' => 150, 'indent' => 55],
+                        ['top' => 110, 'indent' => 70],
                         ['top' => 75, 'indent' => (strlen((string)$this->data['price']) >= 4) ? 80 : 95],
                         ['top' => 50, 'indent' => (strlen((string)$this->data['price']) >= 4) ? 125 : 135],
                         ['top' => 42, 'indent' => '50%'],
