@@ -16,7 +16,7 @@
                 @endfor
                 @for($i=count($left_digits)-2;$i>=0;$i--)
                     <?php $count++; ?>
-                    <div class="digits" style="margin-top:{{ $left_digits[$i]['top'] }}px; right:{{ $left_digits[$i]['indent'] }}px; {{ $i<=2 ? 'color:#eb008b;' : '' }}">{{ round($price_step, -2) * $count }}</div>
+                    <div class="digits" style="margin-top:{{ $left_digits[$i]['top'] }}px; right:{{ $left_digits[$i]['indent'] }}px; {{ $i<=2 ? 'color:red;' : '' }}">{{ round($price_step, -2) * $count }}</div>
                 @endfor
                 <div class="arrow" style="transform:rotate(60deg);"></div>
                 <div class="center">

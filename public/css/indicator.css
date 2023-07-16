@@ -8,9 +8,9 @@
 }
 
 .dial {
-    width: 375px;
+    width: 380px;
+    height: 380px;
     border-radius: 50%;
-    height: 375px;
     position: relative;
     z-index: 997;
     background-size: 100%;
@@ -30,7 +30,7 @@
     position: absolute;
     display: table;
     z-index: 998;
-    color: #00abec;
+    color: white;
     font-weight: bold;
 }
 
@@ -167,34 +167,30 @@
 
 .middle-dial > .block.first {
     margin-top: 10px;
-    background: #00588f;
-    background: linear-gradient(to bottom, #0069a3, #00588f);
+    background: #2BAA4A;
 }
 
 .middle-dial > .block.second {
-    background: #00457b;
     line-height: 0.6em;
-    background: linear-gradient(to bottom, #00588f, #00457b);
+    background: #2BAA4A;
 }
 
 .middle-dial > .block.third {
-    background: #003266;
-    background: linear-gradient(to bottom, #00457b, #003266);
+    background: linear-gradient(to bottom, #2BAA4A, #FFF333);
 }
 
 .middle-dial > .block.fourth {
-    background: #001e4f;
-    background: linear-gradient(to bottom, #003266, #001e4f);
+    background: linear-gradient(to bottom, #FFF333, #EE3024);
 }
 
 .middle-dial > .block.fifth {
-    background: #000a39;
-    background: linear-gradient(to bottom, #001e4f, #000a39);
+    background: #EE3024;
+    /*background: linear-gradient(to bottom, #001e4f, #000a39);*/
     padding: 0 20px;
 }
 
 .arrow {
-    width: 6px;
+    width: 8px;
     height: 325px;
     position: absolute;
     top: 25px;
