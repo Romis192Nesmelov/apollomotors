@@ -6,6 +6,7 @@ use Cviebrock\EloquentSluggable\Sluggable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 
 class Repair extends Model
@@ -13,6 +14,7 @@ class Repair extends Model
     use Sluggable;
 
     protected $fillable = [
+        'id',
         'slug',
         'price',
         'old_price',
@@ -43,9 +45,14 @@ class Repair extends Model
         return $this->belongsTo(Car::class);
     }
 
-    public function recommendedWorks(): BelongsToMany
+    public function recommendedWorks(): HasMany
     {
-        return $this->belongsToMany(RecommendedWork::class,'repairs');
+        return $this->hasMany(RecommendedWork::class,'repair_id');
+    }
+
+    public function images(): HasMany
+    {
+        return $this->hasMany(RepairImage::class);
     }
 
     public function seo(): HasOne

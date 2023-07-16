@@ -257,7 +257,6 @@ ul.sub-tasks {
 ul.sub-tasks li {
     width: 100%;
     display: table;
-    background: url("../images/dot.svg") repeat-x bottom;
 }
 
 ul.sub-tasks li > div {

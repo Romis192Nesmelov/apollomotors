@@ -1,0 +1,238 @@
+#indicator {
+    width: 930px;
+    height: 350px;
+    display: table;
+    font-style: italic;
+    font-weight: bold;
+    margin: auto;
+}
+
+.dial {
+    width: 375px;
+    border-radius: 50%;
+    height: 375px;
+    position: relative;
+    z-index: 997;
+    background-size: 100%;
+}
+
+.dial.left {
+    background: url("../storage/images/indicator/dial1.jpg") no-repeat 50% 50% #f5f5f5;
+    float: left;
+}
+
+.dial.right {
+    background: url("../storage/images/indicator/dial2.jpg") no-repeat 50% 50% #f5f5f5;
+    float: right;
+}
+
+.dial .digits {
+    position: absolute;
+    display: table;
+    z-index: 998;
+    color: #00abec;
+    font-weight: bold;
+}
+
+.dial.left .digits {
+    font-size: 13px;
+}
+
+.dial.right .digits {
+    font-size: 30px;
+}
+
+.dial.right .digits > span {
+    font-size: 15px;
+}
+
+.dial .center {
+    width: 195px;
+    height: 195px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background: url("../storage/images/indicator/dial_center.jpg") no-repeat 50% 50% #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: bold;
+    z-index: 999;
+}
+
+.dial .center .descr {
+    text-align: center;
+    font-size: 17px;
+    color: white;
+}
+
+.dial.left .center .descr {
+    text-transform: uppercase;
+}
+
+.dial .center .value {
+    height: 40px;
+    font-size: 40px;
+    color: white;
+    line-height: 1;
+}
+
+.dial.left .center .old-price {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+.dial .center .value > span {
+    font-size: 15px;
+}
+
+.dial.left .center .old-price > span {
+    font-size: 10px;
+}
+
+.dial.left .center .old-price > img {
+    position: absolute;
+    margin-top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dial.left .saving {
+    position: absolute;
+    left: 50%;
+    top: 282px;
+    transform: translateX(-50%);
+    color: #000032;
+    text-align: center;
+    font-size: 30px;
+    line-height: 0.8em;
+}
+
+.dial.left .saving span {
+    font-size: 15px;
+}
+
+.dial.right .center .value {
+    font-size: 50px;
+}
+
+.middle-dial {
+    width: 185px;
+    display: table;
+    padding-top: 30px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    color: #000032;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 996;
+}
+
+.middle-dial > .block {
+    width: 100%;
+    height: 45px;
+    margin-top: 5px;
+    color: white;
+    font-size: 15px;
+    line-height: 1.1em;
+    text-align: center;
+    text-transform: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 80px;
+    font-weight: bold;
+}
+
+.middle-dial > .block > img {
+    height: 25px;
+    margin-right: 5px;
+}
+
+.middle-dial > .block > div {
+    min-width: 80px;
+    text-align: left;
+}
+
+.middle-dial > .block > div > span {
+    font-size: 11px;
+}
+
+.middle-dial > .block.first {
+    margin-top: 10px;
+    background: #00588f;
+    background: linear-gradient(to bottom, #0069a3, #00588f);
+}
+
+.middle-dial > .block.second {
+    background: #00457b;
+    line-height: 0.6em;
+    background: linear-gradient(to bottom, #00588f, #00457b);
+}
+
+.middle-dial > .block.third {
+    background: #003266;
+    background: linear-gradient(to bottom, #00457b, #003266);
+}
+
+.middle-dial > .block.fourth {
+    background: #001e4f;
+    background: linear-gradient(to bottom, #003266, #001e4f);
+}
+
+.middle-dial > .block.fifth {
+    background: #000a39;
+    background: linear-gradient(to bottom, #001e4f, #000a39);
+    padding: 0 20px;
+}
+
+.arrow {
+    width: 6px;
+    height: 325px;
+    position: absolute;
+    top: 25px;
+    left: 184px;
+    z-index: 998;
+    rotation: 90deg;
+    /*transform: rotate(60deg);*/
+    background: url("../storage/images/indicator/arrow.svg") no-repeat;
+}
+
+@media screen and (max-width: 1024px) {
+    #indicator {
+        width: 100%;
+    }
+
+    .dial {
+        float: none !important;
+        margin: auto;
+    }
+
+    .middle-dial {
+        margin: auto;
+        position: relative;
+        left: auto;
+        transform: none;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    #indicator {
+        width: 375px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .middle-dial {
+        width: 100%;
+    }
+}

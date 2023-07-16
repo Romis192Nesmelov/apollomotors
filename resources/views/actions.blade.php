@@ -2,7 +2,7 @@
 
 @section('content')
     <x-section class="action-list">
-        <h1 class="w-100 text-center">{{ trans('menu.actions') }}</h1>
+        <x-head level="1">{{ trans('menu.actions') }}</x-head>
         @foreach ($actions as $action)
             <div class="col-md-4 col-sm-12 action">
                 <table>

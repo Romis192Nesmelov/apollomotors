@@ -1,5 +1,5 @@
 <div class="big-table-container">
-    <table class="app-data-table simple table-striped">
+    <x-table class="simple">
         <tr>
             <th>{{ trans('content.name') }}</th>
             <th>{{ trans('content.part_code') }}</th>
@@ -20,5 +20,5 @@
                 <td class="price">{{ $price->price_non_original_from ? trans('content.from').' '.$price->price_non_original : $price->price_non_original }}₽</td>
             </tr>
         @endforeach
-    </table>
+    </x-table>
 </div>

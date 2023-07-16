@@ -23,7 +23,7 @@
     @endif
 
     <x-section>
-        <div id="brands-block" class="owl-carousel pt-5">
+        <div id="brands-block" class="owl-carousel mt-5">
             @foreach ($brands as $brand)
                 <a brand="{{ $brand->slug }}" href="#"><img class="w-75 m-auto" title="{{ $brand->name_ru }}" src="{{ asset($brand->logo) }}" /></a>
             @endforeach
@@ -57,7 +57,7 @@
     @include('blocks.hr_block')
 
     <x-section>
-        <h2 class="text-center w-100">{{ trans('content.we_offer_repairs') }}</h2>
+        <x-head level="2">{{ trans('content.we_offer_repairs') }}</x-head>
         @foreach ($offers_repair as $k => $repair)
             <div class="col-md-3 col-sm-6 col-xs-12 text-center p-3 image {{ count($offers_repair) > 8 && $k > 7 ? 'more-offers-repair' : '' }}">
                 <img class="mb-2" src="{{ asset($repair->image) }}" />
@@ -103,7 +103,7 @@
     </x-section>
 
     <x-section>
-        <h2 class="text-center w-100">{{ trans('content.our_prices') }}</h2>
+        <x-head level="2">{{ trans('content.our_prices') }}</x-head>
         <div class="rounded-block" id="our-prices">
             <nav>
                 <div class="nav nav-tabs" role="tablist">
@@ -158,4 +158,15 @@
     </x-section>
 
     @include('blocks.for_each_client_block')
+
+    <x-section>
+        <x-head level="2">{{ trans('content.we_are_trusted') }}</x-head>
+        <div id="clients-block" class="owl-carousel">
+            @foreach ($clients as $client)
+                <img class="w-50 m-auto" title="{{ $client->name }}" src="{{ asset($client->image) }}" />
+            @endforeach
+        </div>
+    </x-section>
+
+    @include('blocks.hr_block')
 @endsection

@@ -619,7 +619,7 @@ textarea {
     height: 20px;
     display: flex;
     top: 50%;
-    transform: translateY(50%);
+    transform: translateY(-50%);
     position: absolute;
     align-items: center;
     justify-content: space-between;

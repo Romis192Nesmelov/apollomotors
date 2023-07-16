@@ -1,30 +1,25 @@
-@foreach($spares as $spare)
+@foreach($items as $item)
     [<br>
-    'slug' => '{{ $spare->slug }}',<br>
-    'code' => {{ $spare->code ? '\''.$spare->code.'\'' : 'null' }},<br>
-    'price_original' => {{ $spare->price_original ? $spare->price_original : 0 }},<br>
-    'price_original_from' => {{ $spare->price_original_from }},<br>
-    'price_non_original' => {{ $spare->price_non_original ? $spare->price_non_original : 0 }},<br>
-    'price_non_original_from' => {{ $spare->price_non_original_from }},<br>
-    'head' => '{{ $spare->head }}',<br>
-    'text' => {{ $spare->text ? '\''.$spare->text.'\'' : 'null' }},<br>
-    'active' => 1,<br>
-    'car_id' => {{ $spare->car_id }},<br>
-
-    @if ($spare->title_spares)
-        'title_spares' => '{{ $spare->title_spares }}',<br>
-    @endif
-    @if ($spare->keywords_spares)
-        'keywords_spares' => '{{ $spare->keywords_spares }}',<br>
-    @endif
-    @if ($spare->description_spares)
-        'description_spares' => '{{ $spare->description_spares }}',<br>
-    @endif
+    'repair_id' => {{ $item->repair_id }},<br>
+    'work_id' => {{ $item->work_id }},<br>
     ],<br>
-
 {{--    [<br>--}}
-{{--    'work_id' => {{ $work->work_id }},<br>--}}
-{{--    'repair_id' => {{ $work->work_id }},<br>--}}
+{{--    'id' => {{ $item->id }},<br>--}}
+{{--    'slug' => '{{ $item->slug }}',<br>--}}
+{{--    'price' => {{ $item->price }},<br>--}}
+{{--    'old_price' => {{ $item->old_price ? $item->old_price : 'null' }},<br>--}}
+{{--    'price_from' => {{ $item->price_from }},<br>--}}
+{{--    'work_time' => {{ $item->work_time }},<br>--}}
+{{--    'upon_reaching_years' => {{ $item->upon_reaching_years }},<br>--}}
+{{--    'upon_reaching_mileage' => {{ $item->upon_reaching_mileage }},<br>--}}
+{{--    'upon_reaching_conditions' => {{ $item->upon_reaching_conditions }},<br>--}}
+{{--    'free_diagnostics' => {{ $item->free_diagnostics }},<br>--}}
+{{--    'warranty_years' => {{ $item->warranty_years }},<br>--}}
+{{--    'head' => '{{ $item->head }}',<br>--}}
+{{--    'text' => {{ $item->text ? '\''.$item->text.'\'' : 'null' }},<br>--}}
+{{--    'active' => 1,<br>--}}
+{{--    'car_id' => {{ $item->car_id }},<br>--}}
+{{--    'title_repair' => '{{ $item->title_repair }}',<br>--}}
+{{--    'description_repair' => '{{ $item->description_repair }}'<br>--}}
 {{--    ],<br>--}}
-
 @endforeach

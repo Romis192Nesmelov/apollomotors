@@ -16,11 +16,11 @@ class RecommendedWork extends Model
 
     public function repair(): BelongsTo
     {
-        return $this->belongsTo('App\Repair','repair_id');
+        return $this->belongsTo(Repair::class,'repair_id');
     }
 
     public function work(): BelongsTo
     {
-        return $this->belongsTo('App\Repair','work_id');
+        return $this->belongsTo(Repair::class,'work_id');
     }
 }

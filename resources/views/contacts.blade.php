@@ -2,7 +2,7 @@
 
 @section('content')
     <x-section class="contacts">
-        <h1 class="text-center w-100">{{ trans('menu.contacts') }}</h1>
+        <x-head level="1">{{ trans('menu.contacts') }}</x-head>
         @if ($contacts[0]->active)
             <p class="mb-3">
                 <b>{{ $contacts[0]->contact }}.</b>
@@ -86,7 +86,7 @@
         </div>
 
         <div class="col-12 buses">
-            <h3 class="w-100 text-center mt-4">{{ trans('contacts.by_public_transport') }}</h3>
+            <x-head level="3" class="mt-4">{{ trans('contacts.by_public_transport') }}</x-head>
             <div class="row">
                 <div class="col-md-6 col-sm-12">
                     @for($s=1;$s<=3;$s++)

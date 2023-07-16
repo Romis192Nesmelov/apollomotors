@@ -44,7 +44,7 @@ class Car extends Model
         return $this->hasMany(CarRepair::class);
     }
 
-    public function priceRepair(): HasMany
+    public function priceRepairs(): HasMany
     {
         return $this->hasMany(Repair::class);
     }

@@ -96,6 +96,28 @@ $(window).on('load', function () {
         navText:[navButtonBlack1,navButtonBlack2]
     });
 
+    //Carousel repair images
+    $('#repair-images').owlCarousel({
+        margin: 10,
+        loop: true,
+        nav: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        dots: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            768: {
+                items: 3
+            },
+            1000: {
+                items: 4
+            }
+        },
+        navText:[navButtonBlack1,navButtonBlack2]
+    });
+
     // Show more offers repairs
     let moreOffersRepair = $('.more-offers-repair'),
         showMoreOffersRepair = $('#show-more-offers-repair'),

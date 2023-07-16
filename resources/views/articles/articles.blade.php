@@ -2,7 +2,7 @@
 
 @section('content')
     <x-section>
-        <h1 class="text-center w-100">{{ trans('menu.articles') }}</h1>
+        <x-head level="1">{{ trans('menu.articles') }}</x-head>
         @foreach ($articles as $article)
             <div class="col-md-4 col-sm-6 col-xs-12 article-announcement">
                 <h3 class="text-left"><a href="{{ route('articles',$article->slug) }}">{{ $article->head }}</a></h3>
