@@ -7,7 +7,7 @@
 <form class="row use-ajax" action="{{ route('request') }}" method="post">
     @csrf
     <input type="hidden" name="type" value="{{ isset($type) && $type ? $type : '' }}">
-    <input type="hidden" name="action_id" value="">
+    <input type="hidden" name="action_id" value="{{ isset($actionId) && $actionId ? $actionId : '' }}">
     <div class="col-md-6 col-sm-12">
         @include('blocks.input_block',[
             'name' => 'name',

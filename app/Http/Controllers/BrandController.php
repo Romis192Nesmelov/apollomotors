@@ -6,7 +6,6 @@ use App\Models\Brand;
 use App\Models\Car;
 
 use App\Models\Repair;
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\View\View;
 //use Illuminate\Http\Request;
 
@@ -67,13 +66,26 @@ class BrandController extends BaseController
                         ['top' => 200, 'indent' => 55],
                         ['top' => 150, 'indent' => 55],
                         ['top' => 110, 'indent' => 70],
-                        ['top' => 75, 'indent' => (strlen((string)$this->data['price']) >= 4) ? 80 : 95],
+                        ['top' => 75, 'indent' => (strlen((string)$this->data['price']) >= 4) ? 90 : 100],
                         ['top' => 50, 'indent' => (strlen((string)$this->data['price']) >= 4) ? 125 : 135],
                         ['top' => 42, 'indent' => '50%'],
                     ];
 
-                    $this->data['price_step'] = $this->data['price'] * 2 / count($this->data['left_digits']);
-                    if ($this->data['price_step'] < 1) $this->data['price_step'] = 100;
+                    $this->data['right_digits'] = [
+                        ['margin-top' => 287, 'left' => '50%', 'transform' => 'translate(-50%)'],
+                        ['margin-top' => 270, 'left' => 115],
+                        ['margin-top' => 220, 'left' => 70],
+                        ['margin-top' => 160, 'left' => 50],
+                        ['margin-top' => 95, 'left' => 70],
+                        ['margin-top' => 55, 'left' => 115],
+                        ['margin-top' => 40, 'left' => '50%', 'transform' => 'translate(-50%)'],
+                        ['margin-top' => 55, 'right' => 110],
+                        ['margin-top' => 95, 'right' => 65],
+                        ['margin-top' => 160, 'right' => 45],
+                        ['margin-top' => 210, 'right' => 60],
+                        ['margin-top' => 270, 'right' => 105],
+                    ];
+                    $this->data['price_step'] = round($this->data['price'] * 2 / 12);
                     return $this->showView('issues.repair');
                 } else {
                     $this->getItem('car', ($issue == 'repair' ? 'repairs' : $issue), new Car(), $car);
@@ -91,12 +103,5 @@ class BrandController extends BaseController
             // TODO: Get general repair page
             return $this->showView('brand');
         }
-    }
-
-    private function getItem(string $itemName, $relations, Model $model, $slug)
-    {
-        $this->data[$itemName] = $model->where('slug',$slug)->where('active',1)->first();
-        if (!$this->data[$itemName] || ($relations && !$this->data[$itemName][$relations]))
-            abort(404, trans('404'));
     }
 }

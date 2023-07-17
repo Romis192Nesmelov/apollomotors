@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Action;
 use App\Models\Content;
 //use App\Models\Action;
 use \App\Models\Article;
@@ -28,7 +29,7 @@ return new class extends Migration
             $table->text('keywords')->nullable();
             $table->text('description')->nullable();
             $table->foreignIdFor(Content::class)->nullable()->constrained()->cascadeOnUpdate()->cascadeOnDelete();
-//            $table->foreignIdFor(Action::class)->nullable()->constrained()->cascadeOnUpdate()->cascadeOnDelete();
+            $table->foreignIdFor(Action::class)->nullable()->constrained()->cascadeOnUpdate()->cascadeOnDelete();
             $table->foreignIdFor(Article::class)->nullable()->constrained()->cascadeOnUpdate()->cascadeOnDelete();
 
             $table->foreignIdFor(BrandRepair::class)->nullable()->constrained()->cascadeOnUpdate()->cascadeOnDelete();

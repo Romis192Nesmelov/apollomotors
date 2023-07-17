@@ -5,6 +5,7 @@ $(window).on('load', function () {
         windowResize();
         bigTablesScroll();
         $('#loader').remove();
+        $('body').css('overflow-y','auto');
     },1000);
 
     $(window).resize(function() {
@@ -270,4 +271,23 @@ function bigTablesScroll() {
     } else if (window.bigTable) {
         window.bigTable.mCustomScrollbar('destroy');
     }
+}
+
+function startTimer(actionTime) {
+    setInterval(function() {
+        let t = parseInt(actionTime) - Math.round(Date.now()/1000)-(60*60*3),
+            seconds = Math.floor(t % 60),
+            minutes = Math.floor((t/60) % 60),
+            hours = Math.floor((t/(60*60)) % 24),
+            days = Math.floor(t/(60*60*24));
+
+        if (seconds.toString().length == 1) seconds = '0'+seconds;
+        if (minutes.toString().length == 1) minutes = '0'+minutes;
+        if (hours.toString().length == 1) hours = '0'+hours;
+
+        $('#timer .days .digits').html(days);
+        $('#timer .hours .digits').html(hours);
+        $('#timer .minutes .digits').html(minutes);
+        $('#timer .seconds .digits').html(seconds);
+    }, 1000);
 }

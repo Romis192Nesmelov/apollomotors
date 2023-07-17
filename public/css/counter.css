@@ -1,0 +1,64 @@
+.counter-block {
+	width: 300px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	margin: 10px auto 20px auto;
+	overflow: visible;
+	padding: 10px 20px 5px 20px;
+	border: 1px solid #808080;
+}
+
+.counter-block .counter {
+	display: block;
+	clear: both;
+	overflow: visible;
+	text-align: center;
+	white-space: nowrap;
+}
+
+.counter-block .counter .time, .counter-block .counter .text-mark {
+	margin: 5px 0;
+}
+
+.counter-block .counter .time {
+	width: 60px;
+	display: inline-block;
+	text-align: center;
+}
+
+.counter-block .counter .digits {
+	color: #000;
+	font-weight: 600;
+	font-size: 39px;
+	line-height: 1;
+	display: block;
+	clear: both;
+	width: auto;
+	padding: 7px;
+	border-radius: 3px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+48,e5e5e5+48,ffffff+100 */
+	background: white;
+	/* Old browsers */
+	background: -moz-linear-gradient(top, white 0%, white 48%, #e5e5e5 48%, white 100%);
+	/* FF3.6-15 */
+	background: -webkit-linear-gradient(top, white 0%, white 48%, #e5e5e5 48%, white 100%);
+	/* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, white 0%, white 48%, #e5e5e5 48%, white 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
+	/* IE6-9 */
+}
+
+.counter-block .counter .digits span {
+	background: -webkit-linear-gradient(#828282, #000, #828282);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.text-mark {
+	display: block;
+	clear: both;
+    color: white;
+}

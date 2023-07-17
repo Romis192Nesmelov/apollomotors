@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Action;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -11,15 +12,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('actions', function (Blueprint $table) {
+        Schema::create('action_questions', function (Blueprint $table) {
             $table->id();
-            $table->string('image');
-            $table->string('image_small');
-            $table->string('slug');
-            $table->string('head');
-            $table->longText('text');
-            $table->integer('limit');
+            $table->string('question');
+            $table->text('answer');
             $table->boolean('active');
+            $table->foreignIdFor(Action::class)->constrained()->cascadeOnUpdate()->cascadeOnDelete();
         });
     }
 
@@ -28,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('actions');
+        Schema::dropIfExists('action_questions');
     }
 };

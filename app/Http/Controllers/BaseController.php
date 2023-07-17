@@ -14,6 +14,7 @@ use App\Models\Content;
 use App\Models\Seo;
 //use Illuminate\Http\Request;
 use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\View\View;
 
 class BaseController extends Controller
@@ -71,12 +72,18 @@ class BaseController extends Controller
         return $this->showView('home');
     }
 
-    public function actions() :View
+    public function actions($action=null) :View
     {
         $this->activeMenu = 'actions';
-        $this->data['actions'] = Action::where('active',1)->get();
-        $this->setSeo(Seo::find(3));
-        return $this->showView('actions');
+        if ($action) {
+            $this->getItem('action', null, new Action(), $action);
+            $this->setSeo($this->data['action']->seo);
+            return $this->showView('actions.action');
+        } else {
+            $this->data['actions'] = Action::where('active',1)->get();
+            $this->setSeo(Seo::find(3));
+            return $this->showView('actions.actions');
+        }
     }
 
     public function articles($slug=null) :View
@@ -126,5 +133,12 @@ class BaseController extends Controller
                 'electedBrands' => $this->electedBrands
             ]
         ));
+    }
+
+    protected function getItem(string $itemName, $relations, Model $model, $slug)
+    {
+        $this->data[$itemName] = $model->where('slug',$slug)->where('active',1)->first();
+        if (!$this->data[$itemName] || ($relations && !$this->data[$itemName][$relations]))
+            abort(404, trans('404'));
     }
 }

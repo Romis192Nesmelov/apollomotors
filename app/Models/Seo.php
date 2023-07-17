@@ -12,7 +12,7 @@ class Seo extends Model
         'keywords',
         'description',
         'content_id',
-//        'action_id',
+        'action_id',
         'article_id',
 
         'brand_repair_id',
@@ -31,10 +31,10 @@ class Seo extends Model
         return $this->belongsTo(Content::class);
     }
 
-//    public function action(): BelongsTo
-//    {
-//        return $this->belongsTo(Action::class);
-//    }
+    public function action(): BelongsTo
+    {
+        return $this->belongsTo(Action::class);
+    }
 
     public function article(): BelongsTo
     {

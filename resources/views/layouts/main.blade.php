@@ -29,6 +29,7 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/owl.carousel.min.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.mCustomScrollbar.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ asset('css/indicator.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/counter.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ asset('css/contacts.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}" />
 

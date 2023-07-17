@@ -15,7 +15,7 @@
     </x-modal>
 
     @if (count($actions))
-        <div id="actions-block" class="owl-carousel">
+        <div id="actions-block" class="owl-carousel mt-3">
             @foreach ($actions as $action)
                 @include('blocks.action_block')
             @endforeach
@@ -146,11 +146,7 @@
 
     <x-section>
         <h2>{{ trans('content.do_you_know_that') }}</h2>
-        <div class="accordion accordion-flush" id="faq">
-            @foreach ($questions as $k => $item)
-                <x-accordion itemId="question{{ $k }}" parentId="faq" icon="fa fa-lightbulb-o" itemHead="{{ $item->question }}">{{ $item->answer }}</x-accordion>
-            @endforeach
-        </div>
+        @include('blocks.accordion_block',['id' => 'faq'])
     </x-section>
 
     <x-section>
@@ -167,6 +163,4 @@
             @endforeach
         </div>
     </x-section>
-
-    @include('blocks.hr_block')
 @endsection
