@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [BaseController::class, 'index'])->name('home');
-Route::get('/search', [BaseController::class, 'search']);
+Route::get('/search', [BaseController::class, 'search'])->name('search');
 Route::get('/o-kompanii', [BaseController::class, 'about'])->name('about');
 Route::get('/korporativnym-klientam', [BaseController::class, 'corporativeClients'])->name('cc');
 

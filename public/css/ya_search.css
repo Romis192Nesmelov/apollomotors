@@ -1,0 +1,7 @@
+.ya-page_js_yes .ya-site-form_inited_no {
+    display: none;
+}
+
+#ya-site-form0 .ya-site-form__form .ya-site-form__input-text {
+    padding: 10px;
+}
