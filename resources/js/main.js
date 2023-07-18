@@ -12,7 +12,7 @@ $(window).on('load', function () {
         bigTablesScroll();
     });
 
-    // Move on feedback-plate
+    //Move on feedback-plate
     let feedbackPlate = $('#feedback-plate');
     feedbackPlate.css('top',-1 * (feedbackPlate.height() + 10));
     setTimeout(function(){
@@ -24,7 +24,15 @@ $(window).on('load', function () {
         fixingMainMenu();
     });
 
-    //fancybox init
+    //Submit search
+    let searchForm = $('#search-form');
+    console.log(111111);
+    // searchForm.find('.icon-search4').click(function (e) {
+    //     e.preventDefault();
+    //
+    // });
+
+    //Fancybox init
     $('.fancybox').fancybox({
         'autoScale': true,
         'touch': false,
@@ -57,7 +65,7 @@ $(window).on('load', function () {
         margin: 10,
         loop: true,
         nav: true,
-        autoplay: true,
+        autoplay: false,
         autoplayTimeout: 2000,
         dots: false,
         responsive: {

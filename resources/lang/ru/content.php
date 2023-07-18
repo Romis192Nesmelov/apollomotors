@@ -26,6 +26,7 @@ return [
     'we_will_contact_you' => 'Мы обязательно свяжимся с Вами в ближайшее время!',
     'i_agree' => 'Даю согласие на обработку персональных данных',
     'search' => 'Поиск',
+    'search_result' => 'Результаты поиска «:search» по сайту Apollomotors.',
     'to_get_a_consultation' => 'Получить консультацию',
     'request_for_consultation' => 'Заявка на консультацию',
     'online' => 'Онлайн–',

@@ -25,7 +25,7 @@ $(window).on('load', function () {
         fixingMainMenu();
     });
 
-    //fancybox init
+    //Fancybox init
     $('.fancybox').fancybox({
         'autoScale': true,
         'touch': false,
@@ -58,7 +58,7 @@ $(window).on('load', function () {
         margin: 10,
         loop: true,
         nav: true,
-        autoplay: true,
+        autoplay: false,
         autoplayTimeout: 2000,
         dots: false,
         responsive: {

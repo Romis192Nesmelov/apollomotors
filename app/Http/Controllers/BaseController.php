@@ -12,7 +12,7 @@ use App\Models\OfferRepair;
 use App\Models\Question;
 use App\Models\Content;
 use App\Models\Seo;
-//use Illuminate\Http\Request;
+use Illuminate\Http\Request;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\View\View;
@@ -56,6 +56,12 @@ class BaseController extends Controller
         $this->data['clients'] = Client::where('active',1)->get();
         $this->setSeo(Seo::find(1));
         return $this->showView('home');
+    }
+
+    public function search(Request $request) :View
+    {
+        $this->data['title'] = trans('content.search_result', ['search' => $request->text]);
+        return $this->showView('search');
     }
 
     public function about() :View

@@ -17,10 +17,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [BaseController::class, 'index'])->name('home');
+Route::get('/search', [BaseController::class, 'search']);
 Route::get('/o-kompanii', [BaseController::class, 'about'])->name('about');
 Route::get('/korporativnym-klientam', [BaseController::class, 'corporativeClients'])->name('cc');
 
-Route::get('/parser', [BrandController::class, 'parser'])->name('parser');
+//Route::get('/parser', [BrandController::class, 'parser'])->name('parser');
 
 Route::get('/remont/{brand?}/{car?}/{job?}', [BrandController::class, 'repair'])->name('repair');
 Route::get('/tekhobsluzhivanie/{brand?}/{car?}', [BrandController::class, 'maintenance'])->name('maintenance');
