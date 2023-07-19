@@ -46,7 +46,7 @@
     <script type="text/javascript" src="{{ asset('js/main.js?'.md5(rand(1,1000))) }}"></script>
 </head>
 
-<body>
+<body style="overflow-y: hidden">
 
 <div id="loader"><div></div></div>
 
@@ -121,14 +121,16 @@
             <div class="logo"><a href="{{ route('home') }}"><img class="w-100" src="{{ asset('storage/images/logo.svg') }}" /></a></div>
             <div class="tagline">{{ trans('content.tagline') }}</div>
         </div>
-        <div class="w-100 ya-site-form ya-site-form_inited_no" data-bem="{&quot;action&quot;:&quot;{{ route('search') }}&quot;,&quot;arrow&quot;:false,&quot;bg&quot;:&quot;transparent&quot;,&quot;fontsize&quot;:14,&quot;fg&quot;:&quot;#000000&quot;,&quot;language&quot;:&quot;ru&quot;,&quot;logo&quot;:&quot;rb&quot;,&quot;publicname&quot;:&quot;Apollomotors&quot;,&quot;suggest&quot;:true,&quot;target&quot;:&quot;_self&quot;,&quot;tld&quot;:&quot;ru&quot;,&quot;type&quot;:2,&quot;usebigdictionary&quot;:true,&quot;searchid&quot;:2935064,&quot;input_fg&quot;:&quot;#000000&quot;,&quot;input_bg&quot;:&quot;#ffffff&quot;,&quot;input_fontStyle&quot;:&quot;normal&quot;,&quot;input_fontWeight&quot;:&quot;normal&quot;,&quot;input_placeholder&quot;:&quot;Поиск по сайту&quot;,&quot;input_placeholderColor&quot;:&quot;#000000&quot;,&quot;input_borderColor&quot;:&quot;#7f9db9&quot;}">
-            <form action="https://yandex.ru/search/site/" method="get" target="_self" accept-charset="utf-8">
-                <input type="hidden" name="searchid" value="2935064"/>
-                <input type="hidden" name="l10n" value="ru"/>
-                <input type="hidden" name="reqenc" value=""/>
-                <input type="search" name="text" value="" style="padding: 5px;"/>
-                <input type="submit" value="{{ trans('content.search') }}" style="padding: 5px;"/>
-            </form>
+        <div class="search-block">
+            <div class="w-100 ya-site-form ya-site-form_inited_no" data-bem="{&quot;action&quot;:&quot;{{ route('search') }}&quot;,&quot;arrow&quot;:false,&quot;bg&quot;:&quot;transparent&quot;,&quot;fontsize&quot;:14,&quot;fg&quot;:&quot;#000000&quot;,&quot;language&quot;:&quot;ru&quot;,&quot;logo&quot;:&quot;rb&quot;,&quot;publicname&quot;:&quot;Apollomotors&quot;,&quot;suggest&quot;:true,&quot;target&quot;:&quot;_self&quot;,&quot;tld&quot;:&quot;ru&quot;,&quot;type&quot;:2,&quot;usebigdictionary&quot;:true,&quot;searchid&quot;:2935064,&quot;input_fg&quot;:&quot;#000000&quot;,&quot;input_bg&quot;:&quot;#ffffff&quot;,&quot;input_fontStyle&quot;:&quot;normal&quot;,&quot;input_fontWeight&quot;:&quot;normal&quot;,&quot;input_placeholder&quot;:&quot;Поиск по сайту&quot;,&quot;input_placeholderColor&quot;:&quot;#000000&quot;,&quot;input_borderColor&quot;:&quot;#7f9db9&quot;}">
+                <form action="https://yandex.ru/search/site/" method="get" target="_self" accept-charset="utf-8">
+                    <input type="hidden" name="searchid" value="2935064"/>
+                    <input type="hidden" name="l10n" value="ru"/>
+                    <input type="hidden" name="reqenc" value=""/>
+                    <input type="search" name="text" value="" style="padding: 5px;"/>
+                    <input type="submit" value="{{ trans('content.search') }}" style="padding: 5px;"/>
+                </form>
+            </div>
 {{--                @include('blocks.input_block',[--}}
 {{--                    'type' => 'search',--}}
 {{--                    'name' => 'text',--}}

@@ -5,7 +5,7 @@ $(window).on('load', function () {
         windowResize();
         bigTablesScroll();
         $('#loader').remove();
-        $('body').css('overflow-y','auto');
+        $('body').removeAttr('style');
     },1000);
 
     $(window).resize(function() {
@@ -36,6 +36,12 @@ $(window).on('load', function () {
         'autoDimensions': true,
         'centerOnScroll': true
     });
+	
+	//Adding icon to fancybox block
+    $('.image').each(function() {
+		if ($(this).find('a.fancybox').length) $(this).prepend($('<i></i>').addClass('icon-search4'));
+	});
+
 
     //Carousel actions
     $('#actions-block').owlCarousel(oulSettings(

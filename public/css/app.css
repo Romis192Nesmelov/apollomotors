@@ -1,7 +1,6 @@
 body {
     font-family: 'Open Sans', sans-serif;
     overflow-x: hidden;
-    overflow-y: hidden;
     background-color: white;
 }
 
@@ -153,7 +152,12 @@ hr {
     position: absolute;
     top: 8px;
     right: 8px;
-    color: white;
+    color: lightgray;
+}
+
+.image.framed-image i {
+    top: 11px;
+    right: 20px;
 }
 
 .image i.black {
@@ -469,6 +473,7 @@ table.b-head.b-head_type_search-simple {
     text-align: center;
     text-transform: uppercase;
     font-size: 20px;
+    padding-top: 15px;
 }
 
 #logo-line a {

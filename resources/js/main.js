@@ -24,14 +24,6 @@ $(window).on('load', function () {
         fixingMainMenu();
     });
 
-    //Submit search
-    let searchForm = $('#search-form');
-    console.log(111111);
-    // searchForm.find('.icon-search4').click(function (e) {
-    //     e.preventDefault();
-    //
-    // });
-
     //Fancybox init
     $('.fancybox').fancybox({
         'autoScale': true,
@@ -43,6 +35,9 @@ $(window).on('load', function () {
         'autoDimensions': true,
         'centerOnScroll': true
     });
+
+    //Adding icon to fancybox block
+    $('.image').prepend($('i').addClass('icon-search4'));
 
     //Carousel actions
     $('#actions-block').owlCarousel({
