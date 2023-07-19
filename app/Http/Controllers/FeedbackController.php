@@ -18,21 +18,22 @@ class FeedbackController extends Controller
             'action_id' => 'nullable|exists:actions,id',
             'comment' => 'max:400',
             'i_agree' => 'required|accepted'
-        ]), $request);
+        ]), $request->ajax());
     }
 
-    public function sendMessage($template, array $fields, Request $request)
+    public function sendMessage($template, array $fields, $isAjax, $pathToFile=null)
     {
         if (isset($fields['action_id']) && $fields['action_id']) {
             $fields['action'] = strip_tags(Action::where('id',$fields['action_id'])->pluck('text')->first());
         }
 
-        Mail::send('emails.'.$template, $fields, function($message) {
-            $message->subject('Сообщение с сайта '.env('APP_NAME'));
+        Mail::send('emails.'.$template, $fields, function($message) use ($pathToFile) {
+            $message->subject(trans('content.website_message').env('APP_NAME'));
             $message->to(env('MAIL_TO'));
+            if ($pathToFile) $message->attach($pathToFile);
         });
         $message = trans('content.we_will_contact_you');
-        return $request->ajax()
+        return $isAjax
             ? response()->json(['success' => true, 'message' => $message])
             : redirect()->back()->with('message', $message);
     }
