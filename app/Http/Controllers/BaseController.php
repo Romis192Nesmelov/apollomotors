@@ -143,8 +143,15 @@ class BaseController extends Controller
 
     protected function getItem(string $itemName, $relations, Model $model, $slug)
     {
+        $contentSlugs = Content::where('id','>=',3)->where('id','<=',5)->pluck('slug')->toArray();
         $this->data[$itemName] = $model->where('slug',$slug)->where('active',1)->first();
-        if (!$this->data[$itemName] || ($relations && !$this->data[$itemName][$relations]))
+        if (!$this->data[$itemName]) {
             abort(404, trans('404'));
+        } elseif ($relations && (!$this->data[$itemName][$relations] || !count($this->data[$itemName][$relations]))) {
+            // If brand is default
+            if (in_array($relations, $contentSlugs)) {
+                $this->data['content'] = Content::where('slug',$relations)->first();
+            } else abort(404, trans('404'));
+        }
     }
 }

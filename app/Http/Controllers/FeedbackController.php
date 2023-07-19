@@ -14,7 +14,7 @@ class FeedbackController extends Controller
         return $this->sendMessage('request', $this->validate($request, [
             'name' => 'required|min:3|max:255',
             'phone' => $this->validationPhone,
-            'type' => 'required|in:request_for_consultation,online_registration_for_the_promotion,online_appointment_for_repair,online_appointment_for_maintenance',
+            'type' => 'required|in:request_for_consultation,online_registration_for_the_promotion,online_appointment_for_repair,online_appointment_for_maintenance,online_appointment_for_online_appointment_for_spare',
             'action_id' => 'nullable|exists:actions,id',
             'comment' => 'max:400',
             'i_agree' => 'required|accepted'

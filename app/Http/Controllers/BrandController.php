@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Brand;
 use App\Models\Car;
 
+use App\Models\Content;
 use App\Models\Repair;
 use Illuminate\View\View;
 //use Illuminate\Http\Request;
@@ -95,13 +96,24 @@ class BrandController extends BaseController
                 }
             } else {
                 $this->getItem('brand', ($issue == 'maintenance' ? 'maintenances' : $issue), new Brand(), $brand);
-                if ($issue == 'maintenance') $this->setSeo($this->data['brand']->maintenances[0]->seo);
-                else $this->setSeo($this->data['brand'][$issue]->seo);
-                return $this->showView('issues.brand');
+
+                // If the brand is known
+                if (!isset($this->data['content'])) {
+                    if ($issue == 'maintenance') $this->setSeo($this->data['brand']->maintenances[0]->seo);
+                    else $this->setSeo($this->data['brand'][$issue]->seo);
+                    return $this->showView('issues.brand');
+                } else {
+                    $this->data['brands'] = Brand::where('active',1)->get();
+                    $this->setSeo($this->data['content']->seo);
+                    return $this->showView('issues.def_brand');
+                }
             }
         } else {
-            // TODO: Get general repair page
-            return $this->showView('brand');
+            // Get default brand page
+            $this->data['content'] = Content::where('slug',($issue == 'maintenance' ? 'maintenances' : $issue))->first();
+            $this->data['brands'] = Brand::where('active',1)->get();
+            $this->setSeo($this->data['content']->seo);
+            return $this->showView('issues.def_brand');
         }
     }
 }

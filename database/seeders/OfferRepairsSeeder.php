@@ -32,10 +32,10 @@ class OfferRepairsSeeder extends Seeder
             'Замена амортизаторов'
         ];
         $count = 1;
-        for ($i=0;$i<16;$i++) {
+        foreach ($data as $item) {
             if ($count > 4) $count = 1;
             OfferRepair::create([
-                'name' => $data[$count-1],
+                'name' => $item,
                 'image' => 'storage/images/offer_repairs/repair'.$count.'.jpg',
                 'active' => 1
             ]);

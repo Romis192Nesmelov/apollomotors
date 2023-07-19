@@ -193,7 +193,7 @@ $(window).on('load', function () {
         e.preventDefault();
         let navModal = $('#nav-modal'),
             brand = $(this).attr('brand');
-
+	
         navModal.find('.menu-nav').each(function () {
             $(this).attr('href', $(this).attr('route') + '/' + brand);
         });

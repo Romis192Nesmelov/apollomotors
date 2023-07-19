@@ -17,9 +17,8 @@
                 {!! $brand[$activeMenu]->text !!}
             @endif
         </div>
-        @include('issues.blocks.phone_plate_block')
         @include('blocks.online_record_block',[
-            'type' => 'online_appointment_for_repair',
+            'type' => 'online_appointment_for_'.$activeMenu,
             'addClass' => 'mt-4'
         ])
         <div class="row">
@@ -34,12 +33,13 @@
                 @endif
             @endforeach
         </div>
+        @include('issues.blocks.phone_plate_block')
         @if ($activeMenu == 'maintenance' && count($brand->maintenances) == 2)
             {!! $brand->maintenances[1]->text !!}
         @endif
     </x-section>
 
-    @if ($brand->actions)
+    @if (count($brand->actions))
         <x-section class="gray">
             <x-head level="1">
                 {{ trans('content.promotions_for') }}

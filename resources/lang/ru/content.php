@@ -31,9 +31,11 @@ return [
     'to_get_a_consultation' => 'Получить консультацию',
     'request_for_consultation' => 'Заявка на консультацию',
     'online' => 'Онлайн–',
+
     'online_registration_for_the_promotion' => 'Онлайн–запись по акции',
     'online_appointment_for_repair' => 'Онлайн-запись на ремонт',
     'online_appointment_for_maintenance' => 'Онлайн-запись на техобслуживание',
+    'online_appointment_for_spare' => 'Онлайн-заказ запчастей',
 
     'consultation' => 'консультация',
     'sign_up' => 'Записаться',

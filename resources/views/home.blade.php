@@ -1,18 +1,7 @@
 @extends('layouts.main')
 
 @section('content')
-    <x-modal id="nav-modal">
-        <ul class="navbar-nav m-auto">
-            @foreach ($menu as $menuItemKey => $menuItem)
-                @if (isset($menuItem['href']) && !$menuItem['href'])
-                    @include('blocks.nav-item_block', [
-                        'id' => 'modal-nav',
-                        'nlAddClass' => 'menu-nav'
-                    ])
-                @endif
-            @endforeach
-        </ul>
-    </x-modal>
+    @include('blocks.brands_modal_block')
 
     @if (count($actions))
         <div id="actions-block" class="owl-carousel mt-3">
@@ -22,13 +11,7 @@
         </div>
     @endif
 
-    <x-section>
-        <div id="brands-block" class="owl-carousel mt-5">
-            @foreach ($brands as $brand)
-                <a brand="{{ $brand->slug }}" href="#"><img class="w-75 m-auto" title="{{ $brand->name_ru }}" src="{{ asset($brand->logo) }}" /></a>
-            @endforeach
-        </div>
-    </x-section>
+    @include('blocks.brands_block', ['addClass' => 'mt-5'])
 
     <x-section class="gray">
         <div class="col-md-3 col-sm-6 col-xs-12 row m-0">
@@ -60,8 +43,10 @@
         <x-head level="2">{{ trans('content.we_offer_repairs') }}</x-head>
         @foreach ($offers_repair as $k => $repair)
             <div class="col-md-3 col-sm-6 col-xs-12 text-center p-3 image {{ count($offers_repair) > 8 && $k > 7 ? 'more-offers-repair' : '' }}">
-                <img class="mb-2" src="{{ asset($repair->image) }}" />
-                <p class="fs-4 text-center mb-0"><b>{{ $repair->name }}</b></p>
+                <a href="{{ route('repair') }}">
+                    <img class="mb-2" src="{{ asset($repair->image) }}" />
+                    <p class="fs-6 text-center mb-0"><b>{{ $repair->name }}</b></p>
+                </a>
             </div>
         @endforeach
         @if (count($offers_repair) > 8)
