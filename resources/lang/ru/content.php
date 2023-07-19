@@ -88,6 +88,7 @@ return [
     'up_to' => 'до',
     'from' => 'от',
     'year' => 'Год',
+    'promotions_for' => 'Акции для ',
 
     'share_the_page' => 'Поделиться страницей',
     'did_not_find_your_car_in_the_table' => 'Не нашли свой автомобиль в таблице, остались вопросы &ndash; звоните:',

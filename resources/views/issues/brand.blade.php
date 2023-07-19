@@ -38,4 +38,18 @@
             {!! $brand->maintenances[1]->text !!}
         @endif
     </x-section>
+
+    @if ($brand->actions)
+        <x-section class="gray">
+            <x-head level="1">
+                {{ trans('content.promotions_for') }}
+                @include('issues.blocks.brand_name_block', ['simple' => false])
+            </x-head>
+            <div id="actions-brand-block" class="owl-carousel mt-2">
+                @foreach ($brand->actions as $action)
+                    @include('actions.blocks.action_block')
+                @endforeach
+            </div>
+        </x-section>
+    @endif
 @endsection

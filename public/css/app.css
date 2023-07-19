@@ -589,6 +589,12 @@ textarea {
     margin-bottom: 40px;
 }
 
+#actions-block .owl-dots {
+	margin-top: 0 !important;
+	bottom: 35px;
+	z-index: 999;
+}
+
 .action-list .action {
     position: relative;
     text-align: center;
@@ -606,10 +612,6 @@ textarea {
     width: 100%;
 }
 
-.action-list .action table td.button-cell {
-    vertical-align: bottom;
-}
-
 .action-list .action .action-image {
     width: 100%;
     height: 250px;
@@ -622,6 +624,14 @@ textarea {
     height: 100%;
 }
 
+table.action-announce td.action-image {
+	vertical-align: top;
+}
+
+table.action-announce td.button-cell {
+    vertical-align: bottom;
+}
+
 .owl-stage-outer {
     position: relative;
     z-index: 999;
@@ -632,7 +642,8 @@ textarea {
     height: 20px;
     display: flex;
     top: 50%;
-    transform: translateY(-50%);
+	left: 50%;
+    transform: translate(-50%,-50%);
     position: absolute;
     align-items: center;
     justify-content: space-between;
@@ -647,8 +658,8 @@ textarea {
 .owl-dots {
     width: 100%;
     position: absolute;
-    bottom: 35px;
     text-align: center;
+	margin-top: 10px;
 }
 
 .owl-carousel .owl-dots button.owl-dot {

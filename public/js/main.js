@@ -38,30 +38,19 @@ $(window).on('load', function () {
     });
 
     //Carousel actions
-    $('#actions-block').owlCarousel({
-        margin: 10,
-        loop: true,
-        nav: false,
-        autoplay: true,
-        autoplayTimeout: 5000,
-        dots: true,
-        items: 1,
-        smartSpeed: 1200,
-        // navText:[navButtonBlack1,navButtonBlack2]
-    });
-
-    let navButtonBlack1 = '<img src="/storage/images/arrow_left.svg" />',
-        navButtonBlack2 = '<img src="/storage/images/arrow_right.svg" />';
+    $('#actions-block').owlCarousel(oulSettings(
+        10,
+        false,
+        3000,
+        {0: {items: 1}}
+    ));
 
     //Carousel brands
-    $('#brands-block').owlCarousel({
-        margin: 10,
-        loop: true,
-        nav: true,
-        autoplay: false,
-        autoplayTimeout: 2000,
-        dots: false,
-        responsive: {
+    $('#brands-block').owlCarousel(oulSettings(
+        10,
+        true,
+        3000,
+        {
             0: {
                 items: 3
             },
@@ -71,19 +60,33 @@ $(window).on('load', function () {
             1000: {
                 items: 8
             }
-        },
-        navText:[navButtonBlack1,navButtonBlack2]
-    });
+        }
+    ));
+
+    //Carousel actions brands
+    $('#actions-brand-block').owlCarousel(oulSettings(
+        3,
+        false,
+        3000,
+        {
+            0: {
+                items: 1
+            },
+            768: {
+                items: 3
+            },
+            1000: {
+                items: 4
+            }
+        }
+    ));
 
     //Carousel clients
-    $('#clients-block').owlCarousel({
-        margin: 10,
-        loop: true,
-        nav: true,
-        autoplay: true,
-        autoplayTimeout: 3000,
-        dots: false,
-        responsive: {
+    $('#clients-block').owlCarousel(oulSettings(
+        10,
+        true,
+        3000,
+        {
             0: {
                 items: 1
             },
@@ -93,19 +96,15 @@ $(window).on('load', function () {
             1000: {
                 items: 4
             }
-        },
-        navText:[navButtonBlack1,navButtonBlack2]
-    });
+        }
+    ));
 
     //Carousel repair images
-    $('#repair-images').owlCarousel({
-        margin: 10,
-        loop: true,
-        nav: true,
-        autoplay: true,
-        autoplayTimeout: 3000,
-        dots: false,
-        responsive: {
+    $('#repair-images').owlCarousel(oulSettings(
+        10,
+        true,
+        3000,
+        {
             0: {
                 items: 1
             },
@@ -115,9 +114,8 @@ $(window).on('load', function () {
             1000: {
                 items: 4
             }
-        },
-        navText:[navButtonBlack1,navButtonBlack2]
-    });
+        }
+    ));
 
     // Show more offers repairs
     let moreOffersRepair = $('.more-offers-repair'),
@@ -197,6 +195,22 @@ $(window).on('load', function () {
     });
 });
 
+function oulSettings(margin, nav, timeout, responsive) {
+    let navButtonBlack1 = '<img src="/storage/images/arrow_left.svg" />',
+        navButtonBlack2 = '<img src="/storage/images/arrow_right.svg" />';
+
+    return {
+        margin: margin,
+        loop: true,
+        nav: nav,
+        autoplay: true,
+        autoplayTimeout: timeout,
+        dots: !nav,
+        responsive: responsive,
+        navText: [navButtonBlack1, navButtonBlack2]
+    }
+}
+
 function fixingMainMenu() {
     let mainMenuFix = $('#main-nav');
     if ($(window).scrollTop() > 250) {
@@ -236,6 +250,7 @@ function rescaleBrandsLogos() {
 function windowResize() {
     maxHeight($('.article-announcement'), 50);
     maxHeight($('.action-list .action'), 30);
+    maxHeight($('#actions-brand-block table'), 0);
 }
 
 function maxHeight(objs, padBottom) {

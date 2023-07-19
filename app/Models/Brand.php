@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Cviebrock\EloquentSluggable\Sluggable;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 
@@ -57,5 +58,10 @@ class Brand extends Model
     public function spare(): HasOne
     {
         return $this->hasOne(BrandSpare::class);
+    }
+
+    public function actions(): BelongsToMany
+    {
+        return $this->belongsToMany(Action::class);
     }
 }

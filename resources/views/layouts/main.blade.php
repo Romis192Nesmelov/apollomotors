@@ -169,7 +169,7 @@
 
 @yield('content')
 
-<p class="text-center"><b>{{ trans('content.share_the_page') }}</b></p>
+<p class="text-center mt-3"><b>{{ trans('content.share_the_page') }}</b></p>
 <div class="ya-share2 text-center mb-4" data-services="vkontakte,facebook,skype,telegram,whatsapp"></div>
 
 <footer>
