@@ -145,9 +145,16 @@ class BaseController extends Controller
     {
         $contentSlugs = Content::where('id','>=',3)->where('id','<=',5)->pluck('slug')->toArray();
         $this->data[$itemName] = $model->where('slug',$slug)->where('active',1)->first();
+//        dd($relations == $contentSlugs[1]);
         if (!$this->data[$itemName]) {
             abort(404, trans('404'));
-        } elseif ($relations && !$this->data[$itemName][$relations]) {
+        } elseif (
+            $relations &&
+            (
+                !$this->data[$itemName][$relations] ||
+                ($relations == $contentSlugs[1] && !count($this->data[$itemName][$relations]))
+            )
+        ) {
             // If brand is default
             if (in_array($relations, $contentSlugs)) {
                 $this->data['content'] = Content::where('slug',$relations)->first();
