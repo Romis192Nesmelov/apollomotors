@@ -23,7 +23,7 @@
         ])
         <div class="row">
             @foreach ($brand->cars as $car)
-                @if ($car->active && $car[$activeMenu == 'repair' ? 'repairs' : $activeMenu])
+                @if ($car->active && ($activeMenu == 'repair' ? count($car->repairs) : $car[$activeMenu]) )
                     <div class="col-md-3 col-sm-6 col-xs-12 mt-5 framed-image">
                         <a href="{{ route($activeMenu,[$brand->slug, $car->slug]) }}">
                             <img title="{{ view('issues.blocks.car_name_block', ['car' => $car, 'simple' => true])->render() }}" src="{{ asset($car->image_preview) }}" />

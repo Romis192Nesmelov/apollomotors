@@ -89,23 +89,36 @@ class BrandController extends BaseController
                     $this->data['price_step'] = round($this->data['price'] * 2 / 12);
                     return $this->showView('issues.repair');
                 } else {
-                    $this->getItem('car', ($issue == 'repair' ? 'repairs' : $issue), new Car(), $car);
-                    if ($issue == 'repair') $this->setSeo($this->data['car']->repairs[0]->seo);
-                    else $this->setSeo($this->data['car'][$issue]->seo);
+
+                    if ($issue == 'repair') {
+                        $this->getItem('car', 'repairs', new Car(), $car);
+                        if (!count($this->data['car']->repairs)) abort(404, trans('404'));
+                        $this->setSeo($this->data['car']->repairs[0]->seo);
+                    } else {
+                        $this->getItem('car', $issue, new Car(), $car);
+                        $this->setSeo($this->data['car'][$issue]->seo);
+                    }
                     return $this->showView('issues.car');
                 }
             } else {
-                $this->getItem('brand', ($issue == 'maintenance' ? 'maintenances' : $issue), new Brand(), $brand);
-
-                // If the brand is known
-                if (!isset($this->data['content'])) {
-                    if ($issue == 'maintenance') $this->setSeo($this->data['brand']->maintenances[0]->seo);
-                    else $this->setSeo($this->data['brand'][$issue]->seo);
-                    return $this->showView('issues.brand');
+                if ($issue == 'maintenance') {
+                    $this->getItem('brand', 'maintenances', new Brand(), $brand);
+                    if (!count($this->data['brand']->maintenances)) {
+                        $this->getDefContent('maintenances');
+                        return $this->showView('issues.def_brand');
+                    } else {
+                        $this->setSeo($this->data['brand']->maintenances[0]->seo);
+                        return $this->showView('issues.brand');
+                    }
                 } else {
-                    $this->data['brands'] = Brand::where('active',1)->get();
-                    $this->setSeo($this->data['content']->seo);
-                    return $this->showView('issues.def_brand');
+                    $this->getItem('brand', $issue, new Brand(), $brand);
+                    if (!$this->data['brand'][$issue]) {
+                        $this->getDefContent($issue);
+                        return $this->showView('issues.def_brand');
+                    } else {
+                        $this->setSeo($this->data['brand'][$issue]->seo);
+                        return $this->showView('issues.brand');
+                    }
                 }
             }
         } else {
@@ -115,5 +128,13 @@ class BrandController extends BaseController
             $this->setSeo($this->data['content']->seo);
             return $this->showView('issues.def_brand');
         }
+    }
+
+    private function getDefContent($slug): void
+    {
+        $this->data['content'] = Content::where('slug',$slug)->first();
+        if (!$this->data['content']) abort(404, trans('404'));
+        $this->data['brands'] = Brand::where('active',1)->get();
+        $this->setSeo($this->data['content']->seo);
     }
 }
