@@ -34,5 +34,9 @@
             @include('issues.blocks.maintenance_table.maintenance_table_block',['car' => $car->brand['name_'.app()->getLocale()].' '.$car['name_'.app()->getLocale()]])
             @include('issues.blocks.car_layout_bottom_block')
         @endif
+        @include('blocks.online_record_block',[
+            'type' => 'online_appointment_for_'.$activeMenu,
+            'addClass' => 'mt-4'
+        ])
     </x-section>
 @endsection

@@ -25,7 +25,7 @@ $(window).on('load', function () {
         fixingMainMenu();
     });
 
-    //Fancybox init
+    // Fancybox init
     $('.fancybox').fancybox({
         'autoScale': true,
         'touch': false,
@@ -36,8 +36,8 @@ $(window).on('load', function () {
         'autoDimensions': true,
         'centerOnScroll': true
     });
-	
-	//Adding icon to fancybox block
+
+	// Adding icon to fancybox block
     $('.image').each(function() {
 		if ($(this).find('a.fancybox').length) $(this).prepend($('<i></i>').addClass('icon-search4'));
 	});
@@ -51,7 +51,7 @@ $(window).on('load', function () {
         {0: {items: 1}}
     ));
 
-    //Carousel brands
+    // Carousel brands
     $('#brands-block').owlCarousel(oulSettings(
         10,
         true,
@@ -69,7 +69,7 @@ $(window).on('load', function () {
         }
     ));
 
-    //Carousel actions brands
+    // Carousel actions brands
     $('#actions-brand-block').owlCarousel(oulSettings(
         3,
         false,
@@ -87,7 +87,7 @@ $(window).on('load', function () {
         }
     ));
 
-    //Carousel clients
+    // Carousel clients
     $('#clients-block').owlCarousel(oulSettings(
         10,
         true,
@@ -105,7 +105,7 @@ $(window).on('load', function () {
         }
     ));
 
-    //Carousel repair images
+    // Carousel repair images
     $('#repair-images').owlCarousel(oulSettings(
         10,
         true,
@@ -123,22 +123,11 @@ $(window).on('load', function () {
         }
     ));
 
-    // Show more offers repairs
-    let moreOffersRepair = $('.more-offers-repair'),
-        showMoreOffersRepair = $('#show-more-offers-repair'),
-        collapseMoreOffersRepair = $('#collapse-more-offers-repair');
+    // Show add content
+    showHideContent($('section.add-content'));
 
-    showMoreOffersRepair.click(function() {
-        moreOffersRepair.fadeIn();
-        $(this).addClass('d-none');
-        collapseMoreOffersRepair.removeClass('d-none');
-    });
-
-    collapseMoreOffersRepair.click(function() {
-        moreOffersRepair.fadeOut();
-        $(this).addClass('d-none');
-        showMoreOffersRepair.removeClass('d-none');
-    });
+    // Show parts content
+    showHideContent($('section.parts-content'));
 
     rescaleBrandsLogos();
     $(window).resize(function() {
@@ -193,7 +182,7 @@ $(window).on('load', function () {
         e.preventDefault();
         let navModal = $('#nav-modal'),
             brand = $(this).attr('brand');
-	
+
         navModal.find('.menu-nav').each(function () {
             $(this).attr('href', $(this).attr('route') + '/' + brand);
         });
@@ -311,4 +300,25 @@ function startTimer(actionTime) {
         $('#timer .minutes .digits').html(minutes);
         $('#timer .seconds .digits').html(seconds);
     }, 1000);
+}
+
+function showHideContent(section) {
+    let fullContent = section.find('.full-content'),
+        shortContent = section.find('.short-content'),
+        showMore = section.find('.show-more'),
+        hideMore = section.find('.hide-more');
+
+    showMore.click(function() {
+        fullContent.fadeIn();
+        if (shortContent.length) shortContent.fadeOut();
+        $(this).addClass('d-none');
+        hideMore.removeClass('d-none');
+    });
+
+    hideMore.click(function() {
+        fullContent.fadeOut();
+        if (shortContent.length) shortContent.fadeIn();
+        $(this).addClass('d-none');
+        showMore.removeClass('d-none');
+    });
 }

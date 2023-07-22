@@ -39,10 +39,10 @@
 
     @include('blocks.hr_block')
 
-    <x-section>
+    <x-section class="add-content">
         <x-head level="2">{{ trans('content.we_offer_repairs') }}</x-head>
         @foreach ($offers_repair as $k => $repair)
-            <div class="col-md-3 col-sm-6 col-xs-12 text-center p-3 image {{ count($offers_repair) > 8 && $k > 7 ? 'more-offers-repair' : '' }}">
+            <div class="col-md-3 col-sm-6 col-xs-12 text-center p-3 image {{ count($offers_repair) > 8 && $k > 7 ? 'full-content' : '' }}">
                 <a href="{{ route('repair') }}">
                     <img class="mb-2" src="{{ asset($repair->image) }}" />
                     <p class="fs-6 text-center mb-0"><b>{{ $repair->name }}</b></p>
@@ -52,15 +52,13 @@
         @if (count($offers_repair) > 8)
             <div class="w-100 pt-3 pr-3">
                 @include('blocks.button_block',[
-                    'id' => 'show-more-offers-repair',
                     'primary' => false,
-                    'addClass' => 'float-end',
+                    'addClass' => 'float-end show-more',
                     'buttonText' => trans('content.details')
                 ])
                 @include('blocks.button_block',[
-                    'id' => 'collapse-more-offers-repair',
                     'primary' => false,
-                    'addClass' => 'float-end d-none',
+                    'addClass' => 'float-end d-none hide-more',
                     'buttonText' => trans('content.collapse')
                 ])
             </div>
@@ -95,12 +93,12 @@
                     @foreach ($electedBrands as $k => $brand)
                         <a
                             class="nav-link text-center {{ !$k ? 'active' : '' }}"
-                            id="{{ $brand->name }}-tab"
+                            id="{{ $brand->slug }}-tab"
                             data-bs-toggle="tab"
-                            href="#{{ $brand->name }}"
+                            href="#{{ $brand->slug }}"
                             role="tab"
-                            aria-controls="{{ $brand->name }}"
-                            title="{{ $brand->name }}"
+                            aria-controls="{{ $brand->slug }}"
+                            title="{{ $brand['name_'.app()->getLocale()] }}"
                             aria-selected="{{ !$k ? 'true' : 'false' }}"
                             style="width: {{ 100 / count($electedBrands) }}%"
                         >
@@ -111,7 +109,7 @@
             </nav>
             <div class="tab-content" id="nav-tabContent">
                 @foreach ($electedBrands as $k => $brand)
-                    <div class="tab-pane fade {{ !$k ? 'show active' : '' }}" id="{{ $brand->name }}" role="tabpanel" aria-labelledby="{{ $brand->name }}-tab">
+                    <div class="tab-pane fade {{ !$k ? 'show active' : '' }}" id="{{ $brand->slug }}" role="tabpanel" aria-labelledby="{{ $brand->slug }}-tab">
                         @include('blocks.home_price_part_block',[
                             'start' => 0,
                             'end' => round(count($brand->prices)/2)

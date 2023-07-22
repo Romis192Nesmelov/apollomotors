@@ -37,7 +37,7 @@ class Brand extends Model
 
     public function cars(): HasMany
     {
-        return $this->hasMany(Car::class);
+        return $this->hasMany(Car::class)->orderBy('name_'.app()->getLocale());
     }
 
     public function prices(): HasMany

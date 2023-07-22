@@ -27,7 +27,7 @@
                     <div class="col-md-3 col-sm-6 col-xs-12 mt-5 framed-image">
                         <a href="{{ route($activeMenu,[$brand->slug, $car->slug]) }}">
                             <img title="{{ view('issues.blocks.car_name_block', ['car' => $car, 'simple' => true])->render() }}" src="{{ asset($car->image_preview) }}" />
-                            <p class="w-100 text-center mt-2 fs-6">{{ $brand['name_'.app()->getLocale()].' '.view('issues.blocks.car_name_block', ['car' => $car, 'simple' => true])->render() }}</p>
+                            <p class="w-100 text-center mt-2 fs-6">{{ view('issues.blocks.car_name_block', ['car' => $car, 'simple' => true])->render() }}</p>
                         </a>
                     </div>
                 @endif

@@ -5,6 +5,7 @@ namespace App\Models;
 use Cviebrock\EloquentSluggable\Sluggable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 
 class Spare extends Model
@@ -12,6 +13,7 @@ class Spare extends Model
     use Sluggable;
 
     protected $fillable = [
+        'id',
         'slug',
         'code',
         'price_original',
@@ -41,5 +43,10 @@ class Spare extends Model
     public function seo(): HasOne
     {
         return $this->hasOne(Seo::class);
+    }
+
+    public function repairs(): BelongsToMany
+    {
+        return $this->belongsToMany(Repair::class);
     }
 }

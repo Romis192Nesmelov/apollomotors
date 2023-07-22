@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
-use App\Models\SubRepair;
+use App\Models\RepairSpare;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -23,10 +23,12 @@ class DatabaseSeeder extends Seeder
         $this->call(BrandsSeeder::class);
         $this->call(CarsSeeder::class);
         $this->call(RepairsSeeder::class);
+        $this->call(SubRepairsSeeder::class);
         $this->call(RepairImagesSeeder::class);
         $this->call(RecommendedWorksSeeder::class);
 
         $this->call(SparesSeeder::class);
+        $this->call(RepairsSparesSeeder::class);
 
         $this->call(OfferRepairsSeeder::class);
         $this->call(FreeChecksSeeder::class);

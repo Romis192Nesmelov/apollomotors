@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('content')
-    <x-section>
+    <x-section class="pb-0">
         <x-head level="1">
             {{ $repair->head.' ' }}
             @include('issues.blocks.car_name_block', ['car' => $repair->car, 'simple' => false])
@@ -86,13 +86,22 @@
             </div>
         </div>
         <p class="w-100 mt-3 text-center"><b>{!! trans('indicator.you_can_wait') !!}</b></p>
-        @if (!count($repair->images))
-            @include('blocks.online_record_block',[
-                'type' => 'online_appointment_for_repair',
-                'addClass' => 'mt-4'
-            ])
-        @endif
     </x-section>
+
+    @if (count($repair->subRepairs))
+        <x-section>
+            <div class="rounded-block">
+                <ul class="price w-100">
+                    @foreach ($repair->subRepairs as $subRepair)
+                        @include('blocks.price_item_block',[
+                            'name' => $subRepair->name,
+                            'value' => $subRepair->price
+                        ])
+                    @endforeach
+                </ul>
+            </div>
+        </x-section>
+    @endif
 
     @if (count($repair->images))
         <x-section class="gray">
@@ -104,13 +113,41 @@
                 @endforeach
             </div>
         </x-section>
-        <x-section>
-            @include('blocks.online_record_block',[
-                'type' => 'online_appointment_for_repair',
-                'addClass' => 'mt-4'
-            ])
-        </x-section>
     @endif
+
+    <x-section class="parts-content">
+        @if ($repair->text)
+            <x-head level="1">{{ trans('content.description') }}</x-head>
+            <div class="short-content">
+                <div class="pull-right widget-google ms-2">
+                    @include('blocks.widget_rating_block')
+                </div>
+                @php preg_match('/^(.+?)((<\/div>)|(<\/p>)|(<\/ul>))/i', $repair->text, $matches); @endphp
+                {!! preg_replace('/<div\s.+?<\/div>/i','',$matches[0]) !!}
+{{--                @include('blocks.cropped_content_block',['content' => $repair->text, 'length' => 700])--}}
+            </div>
+            @include('blocks.button_block',[
+                'primary' => false,
+                'addClass' => 'mt-3 show-more',
+                'buttonText' => trans('content.details')
+            ])
+            <div class="full-content">
+                <div class="pull-right widget-google ms-2">
+                    @include('blocks.widget_rating_block')
+                </div>
+                {!! $repair->text !!}
+            </div>
+            @include('blocks.button_block',[
+                'primary' => false,
+                'addClass' => 'float-end d-none hide-more',
+                'buttonText' => trans('content.collapse')
+            ])
+        @else
+            <div class="widget-google">
+                @include('blocks.widget_rating_block')
+            </div>
+        @endif
+    </x-section>
 
     @if (count($repair->recommendedWorks))
         <x-section class="gray">
@@ -126,6 +163,32 @@
             </x-table>
         </x-section>
     @endif
+
+    @if (count($repair->spares))
+        <x-section>
+            <x-head level="2">{{ trans('content.you_can_purchase_the_necessary_spare_parts_from_us') }}</x-head>
+            <div class="w-100 d-flex align-items-center justify-content-center">
+                @if ($repair->spares_image)
+                    <div class="col-md-3 col-sm-4 col-xs-12 framed-image">
+                        <a href="{{ asset($repair->spares_image) }}" class="fancybox">
+                            <img src="{{ asset($repair->spares_image) }}" />
+                        </a>
+                    </div>
+                @endif
+                <ul>
+                    @foreach ($repair->spares as $spare)
+                        <li>{{ $spare->head }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        </x-section>
+    @endif
+
+    <x-section class="pt-0">
+        @include('blocks.online_record_block',[
+            'type' => 'online_appointment_for_repair'
+        ])
+    </x-section>
 
     <script>
         window.timeIndicator = parseInt("{{ $repair->work_time * 30 }}");

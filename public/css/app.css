@@ -20,6 +20,15 @@ table {
     border: none;
 }
 
+.text-subscribe {
+    font-style: italic;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 10px;
+    font-size: .8em;
+    line-height: 1.2em;
+}
+
 #request-modal .modal-content {
     border: none;
     background: url("../storage/images/online_girl.jpg") no-repeat right white;
@@ -106,7 +115,7 @@ button.btn.btn-primary {
 }
 
 button.btn.btn-secondary {
-    min-width: 200px;
+    width: 200px;
     color: #808285;
     background-color: white;
     border: none;
@@ -683,9 +692,15 @@ table.action-announce td.button-cell {
     margin-left: 0;
 }
 
-.more-offers-repair {
+.full-content {
     /*overflow: hidden;*/
     display: none;
+}
+
+.widget-google {
+    width: 150px;
+    padding: 0;
+    margin: auto;
 }
 
 .rounded-block-simple,
@@ -721,34 +736,35 @@ table.action-announce td.button-cell {
     padding-top: 40px;
 }
 
-#our-prices .tab-content ul.price {
+ul.price {
     list-style: none;
     float: left;
     padding: 0 10px;
     margin: 0;
 }
 
-#our-prices .tab-content ul.price li {
+ul.price li {
     width: 100%;
     display: table;
 }
 
-#our-prices .tab-content ul.price li > div {
+ul.price li > div {
     display: table-cell;
 }
 
-#our-prices .tab-content ul.price li .job-name,
-#our-prices .tab-content ul.price li .job-price {
-    width: 10%;
+ul.price li .dots-name,
+ul.price li .dots-price {
+    width: 5%;
+    text-align: right;
     white-space: nowrap;
 }
 
-#our-prices .tab-content ul.price li .dots {
+ul.price li .dots {
     padding: 6px 3px;
     vertical-align: bottom;
 }
 
-#our-prices .tab-content ul.price li .dots > div {
+ul.price li .dots > div {
     width: 100%;
     border-bottom: 1px dashed black;
 }

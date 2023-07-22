@@ -14,21 +14,21 @@ class BrandController extends BaseController
 {
     use HelperTrait;
 
-    public function parser()
-    {
-//        $images = [];
-//        $repairImages = RepairImage::all();
-//        foreach ($repairImages as $repairImage) {
-//            $image = Image::find($repairImage->image_id);
-//            if ($image) {
-//                $images[] = [
-//                    'image' => $image->real,
-//                    'repair_id' => $repairImage->repair_id
-//                ];
-//            }
+//    public function parser()
+//    {
+//        $repairContent = [];
+//        $repair = Repair::all();
+//        foreach ($repair as $item) {
+//            $oldRepair = OldRepair::find($item->id);
+//            $image = Image::find($oldRepair->spares_image_id);
+//            $repairContent[] = [
+//                'repair' => $item,
+//                'image' => $image ? $image->real : null
+//            ];
 //        }
-//        return view('parser', ['items' => RecommendedWork::all()]);
-    }
+//        dd($repairContent[30]['repair']->seo->title);
+//        return view('parser', ['items' => OldSpare::all()]);
+//    }
 
     public function __construct()
     {

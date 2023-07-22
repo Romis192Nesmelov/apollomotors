@@ -46,7 +46,7 @@ class Car extends Model
 
     public function priceRepairs(): HasMany
     {
-        return $this->hasMany(Repair::class);
+        return $this->hasMany(Repair::class)->orderBy('head');
     }
 
     public function maintenance(): HasOne

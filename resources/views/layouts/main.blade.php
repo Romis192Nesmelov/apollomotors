@@ -276,11 +276,12 @@
             <div class="col-lg-{{ $blockContent ? 2 : 3 }} d-none d-lg-block p-0 text-center">
                 <img class="w-50" src="{{ asset('storage/images/logo_white.svg') }}" />
                 <p class="fs-7 text-center text-uppercase">{{ trans('content.tagline') }}</p>
-                <div><iframe src="https://yandex.ru/sprav/widget/rating-badge/1634283920" width="150" height="50" frameborder="0"></iframe></div>
+{{--                <div><iframe src="https://yandex.ru/sprav/widget/rating-badge/1634283920" width="150" height="50" frameborder="0"></iframe></div>--}}
                 <div class="w-100 text-center mb-2">
-                    <a href="https://search.google.com/local/writereview?placeid=ChIJlU4Dc35OtUYROm3efhYzXxo" target="_blank">
-                        <img class="w-{{ $blockContent ? 50 : 25 }}" src="https://www.apollomotors.ru/images/google_reviews.jpg">
-                    </a>
+                    @include('blocks.widget_rating_block',['addClass' => $blockContent ? 'w-50' : 'w-25'])
+{{--                    <a href="https://search.google.com/local/writereview?placeid=ChIJlU4Dc35OtUYROm3efhYzXxo" target="_blank">--}}
+{{--                        <img class="w-{{ $blockContent ? 50 : 25 }}" src="https://www.apollomotors.ru/images/google_reviews.jpg">--}}
+{{--                    </a>--}}
                 </div>
             </div>
             @include('blocks.hr_block')

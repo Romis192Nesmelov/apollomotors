@@ -1568,21 +1568,6 @@ class SubRepairsSeeder extends BrandsSeeder
             ],
             [
                 'name' => 'Замена радиатора печки Фокус 2',
-                'price' => 3500,
-                'repair_id' => 1845,
-            ],
-            [
-                'name' => 'Замена радиатора охлаждения Фокус 2',
-                'price' => 3000,
-                'repair_id' => 1845,
-            ],
-            [
-                'name' => 'Замена радиатора кондиционера Фокус 2',
-                'price' => 3000,
-                'repair_id' => 1845,
-            ],
-            [
-                'name' => 'Замена радиатора печки Фокус 2',
                 'price' => 9600,
                 'repair_id' => 1846,
             ],
@@ -14077,21 +14062,6 @@ class SubRepairsSeeder extends BrandsSeeder
                 'repair_id' => 2464,
             ],
             [
-                'name' => 'Замена генератора Поло',
-                'price' => 2500,
-                'repair_id' => 2465,
-            ],
-            [
-                'name' => 'Замена щеток генератора Поло',
-                'price' => 5500,
-                'repair_id' => 2465,
-            ],
-            [
-                'name' => 'Ремонт генератора Поло цена от',
-                'price' => 5500,
-                'repair_id' => 2465,
-            ],
-            [
                 'name' => 'Ремонт двигателя Поло цена от',
                 'price' => 16800,
                 'repair_id' => 2466,
@@ -15740,16 +15710,6 @@ class SubRepairsSeeder extends BrandsSeeder
                 'name' => 'Замена помпы Гетц цена от',
                 'price' => 3000,
                 'repair_id' => 2564,
-            ],
-            [
-                'name' => 'Замена гофры Гетц цена от',
-                'price' => 4800,
-                'repair_id' => 2565,
-            ],
-            [
-                'name' => 'Замена глушителя Гетц цена от',
-                'price' => 1800,
-                'repair_id' => 2565,
             ],
             [
                 'name' => 'Замена гофры Гетц цена от',

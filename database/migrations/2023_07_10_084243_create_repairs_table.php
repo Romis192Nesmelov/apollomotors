@@ -26,6 +26,7 @@ return new class extends Migration
             $table->decimal('warranty_years',2,1);
             $table->string('head');
             $table->longText('text')->nullable();
+            $table->string('spares_image')->nullable();
             $table->foreignIdFor(Car::class)->constrained()->cascadeOnUpdate()->cascadeOnDelete();
             $table->boolean('active');
             $table->timestamps();

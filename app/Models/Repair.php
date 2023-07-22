@@ -27,6 +27,7 @@ class Repair extends Model
         'warranty_years',
         'head',
         'text',
+        'spares_image',
         'car_id',
         'active'
     ];
@@ -53,6 +54,16 @@ class Repair extends Model
     public function images(): HasMany
     {
         return $this->hasMany(RepairImage::class);
+    }
+
+    public function subRepairs(): HasMany
+    {
+        return $this->hasMany(SubRepair::class);
+    }
+
+    public function spares(): BelongsToMany
+    {
+        return $this->belongsToMany(Spare::class)->orderBy('head');
     }
 
     public function seo(): HasOne
