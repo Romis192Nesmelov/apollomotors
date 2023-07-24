@@ -1,8 +1,15 @@
 <!doctype html>
 <html>
 <head>
-    <title>{{ isset($title) && $title ? $title : 'Apollomotors' }}</title>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-language" content="{{ app()->getLocale() }}" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
 
+    <title>{{ isset($title) && $title ? $title : 'Apollomotors' }}</title>
     @if (isset($keywords) && $keywords)
         <meta name="keywords" content="{{ $keywords }}">
     @endif
@@ -10,11 +17,6 @@
     @if (isset($description) && $description)
         <meta name="description" content="{{ $description }}">
     @endif
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
 
     @include('blocks.favicon_block')
 
@@ -42,12 +44,11 @@
     <script type="text/javascript" src="{{ asset('js/owl.carousel.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/jquery.mCustomScrollbar.concat.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/indicators.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/main.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/feedback.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/main.js?'.md5(rand(1,1000))) }}"></script>
 </head>
 
 <body style="overflow-y: hidden">
-
 <div id="loader"><div></div></div>
 
 <x-modal id="message-modal" head="{{ trans('content.message') }}">

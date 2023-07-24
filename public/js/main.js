@@ -4,8 +4,8 @@ $(window).on('load', function () {
     setTimeout(function () {
         windowResize();
         bigTablesScroll();
-        $('#loader').remove();
         $('body').removeAttr('style');
+        $('#loader').remove();
     },1000);
 
     $(window).resize(function() {
@@ -320,5 +320,14 @@ function showHideContent(section) {
         if (shortContent.length) shortContent.fadeIn();
         $(this).addClass('d-none');
         showMore.removeClass('d-none');
+    });
+}
+
+function addLoader() {
+    $('body').prepend(
+        $('<div></div>').attr('id','loader').append($('<div></div>'))
+    ).css({
+        'overflow':'hidden',
+        'padding-right':20
     });
 }

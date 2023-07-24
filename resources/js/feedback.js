@@ -77,21 +77,3 @@ function processingCheckFields(formData, inputObj) {
     }
     return formData;
 }
-
-function unlockAll(body,form,agree,loader) {
-    form.find('input, select, textarea, button').removeAttr('disabled');
-    agree.prop('checked', false);
-    loader.remove();
-    body.css({
-        'overflow':'auto',
-        'padding-right':0
-    });
-}
-
-function addLoader(body,loader) {
-    body.prepend(loader);
-    body.css({
-        'overflow':'hidden',
-        'padding-right':20
-    });
-}

@@ -1,23 +1,13 @@
 $(document).ready(function ($) {
-    var body = $('body'),
-        formModal = $('#request-modal'),
-        loader = $('<div></div>').attr('id','loader').append($('<div></div>')),
-        agree = $('input[name=i_agree]');
-
-    agree.change(function () {
-        let button = $(this).parents('form.useAjax').find('button[type=submit]');
-        if (agree.is(':checked')) button.removeAttr('disabled');
-        else button.attr('disabled','disabled');
-    });
-
     $('button[type=submit]').click(function(e) {
         e.preventDefault();
 
         let formData = new FormData,
-            form = $(this).parents('form.use-ajax');
+            form = $(this).parents('form.use-ajax'),
+            agree = form.find('input[name=i_agree]');
 
         if (form.length && agree.is(':checked')) {
-            addLoader(body,loader);
+            addLoader();
             form.find('input, textarea, select').each(function () {
                 let self = $(this);
                 if (self.attr('type') === 'file') formData.append(self.attr('name'),self[0].files[0]);
@@ -35,8 +25,8 @@ $(document).ready(function ($) {
                 contentType: false,
                 type: form.attr('method'),
                 success: function (data) {
-                    formModal.modal('hide');
-                    unlockAll(body,form,agree,loader);
+                    $('#request-modal').modal('hide');
+                    unlockAll(form,agree);
                     form.find('input, textarea').val('');
 
                     let messageModal = $('#message-modal');
@@ -48,7 +38,7 @@ $(document).ready(function ($) {
                     $.each(response.errors, function (field, errorMsg) {
                         form.find('.error.'+field).html(errorMsg[0]);
                     });
-                    unlockAll(body,form,agree,loader);
+                    unlockAll(form,agree);
                 }
             });
         }
@@ -78,20 +68,12 @@ function processingCheckFields(formData, inputObj) {
     return formData;
 }
 
-function unlockAll(body,form,agree,loader) {
+function unlockAll(form,agree) {
     form.find('input, select, textarea, button').removeAttr('disabled');
     agree.prop('checked', false);
-    loader.remove();
-    body.css({
+    $('#loader').remove();
+    $('body').css({
         'overflow':'auto',
         'padding-right':0
-    });
-}
-
-function addLoader(body,loader) {
-    body.prepend(loader);
-    body.css({
-        'overflow':'hidden',
-        'padding-right':20
     });
 }
