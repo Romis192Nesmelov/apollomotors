@@ -469,7 +469,7 @@ class BrandsSeeder extends Seeder
             [
                 'name_en' => 'Jac',
                 'name_ru' => 'Джак',
-                'logo' => 'Jac.png',
+                'logo' => 'jac.png',
                 'elected' => false,
                 'active' => 1
             ],
