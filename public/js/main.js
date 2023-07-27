@@ -55,7 +55,7 @@ $(window).on('load', function () {
     $('#brands-block').owlCarousel(oulSettings(
         10,
         true,
-        3000,
+        5000,
         {
             0: {
                 items: 3

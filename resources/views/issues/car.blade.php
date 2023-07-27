@@ -28,7 +28,9 @@
             @include('issues.blocks.repair_table.repair_table_block',['price' => $car->priceRepairs])
             @include('issues.blocks.car_layout_bottom_block')
             @if (count($car->repairs) == 2)
-                {!! $car->repairs[1]->text !!}
+                <div>
+                    {!! $car->repairs[1]->text !!}
+                </div>
             @endif
         @elseif ($activeMenu == 'maintenance')
             @include('issues.blocks.maintenance_table.maintenance_table_block',['car' => $car->brand['name_'.app()->getLocale()].' '.$car['name_'.app()->getLocale()]])

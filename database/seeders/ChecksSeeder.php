@@ -48,7 +48,7 @@ class ChecksSeeder extends Seeder
             ],
 
             [
-                'name' => 'Провркка состояния приводных ременй',
+                'name' => 'Проверка состояния приводных ремней',
                 'active' => 1,
                 'free_check_id' => 2,
             ],
