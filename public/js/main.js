@@ -174,6 +174,7 @@ $(window).on('load', function () {
         brandsModal.find('a.brand').each(function () {
             $(this).attr('href', route + '/' + $(this).attr('brand'));
         });
+        $('#another-brand').attr('href', route);
         brandsModal.modal('show');
     });
 

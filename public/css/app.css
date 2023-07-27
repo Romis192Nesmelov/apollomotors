@@ -752,14 +752,21 @@ ul.price li > div {
     display: table-cell;
 }
 
-ul.price li .dots-name,
+ul.price li .dots-name {
+    width: 10%;
+    text-align: left;
+    white-space: nowrap;
+    vertical-align: bottom;
+}
+
 ul.price li .dots-price {
-    width: 5%;
     text-align: right;
     white-space: nowrap;
+    vertical-align: bottom;
 }
 
 ul.price li .dots {
+    width: 90%;
     padding: 6px 3px;
     vertical-align: bottom;
 }
@@ -974,6 +981,15 @@ footer hr {
 }
 
 @media (max-width: 768px) {
+    ul.price li .dots-name {
+        width: auto;
+        white-space: normal;
+    }
+
+    ul.price li .dots {
+        width: 5%;
+    }
+
     #feedback-plate {
         display: none;
     }

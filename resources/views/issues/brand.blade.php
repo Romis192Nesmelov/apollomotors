@@ -17,13 +17,11 @@
                 {!! $brand[$activeMenu]->text !!}
             @endif
         </div>
-        @include('blocks.online_record_block',[
-            'type' => 'online_appointment_for_'.$activeMenu,
-            'addClass' => 'mt-4'
-        ])
+        @php $existCars = false; @endphp
         <div class="row">
             @foreach ($brand->cars as $car)
                 @if ($car->active && ($activeMenu == 'repair' ? count($car->repairs) : $car[$activeMenu]) )
+                    @php $existCars = true; @endphp
                     <div class="col-md-3 col-sm-6 col-xs-12 mt-5 framed-image">
                         <a href="{{ route($activeMenu,[$brand->slug, $car->slug]) }}">
                             <img title="{{ view('issues.blocks.car_name_block', ['car' => $car, 'simple' => true])->render() }}" src="{{ asset($car->image_preview) }}" />
@@ -33,23 +31,31 @@
                 @endif
             @endforeach
         </div>
-        @include('issues.blocks.phone_plate_block')
-        @if ($activeMenu == 'maintenance' && count($brand->maintenances) == 2)
-            {!! $brand->maintenances[1]->text !!}
+        @if ($existCars)
+            @include('issues.blocks.phone_plate_block')
         @endif
-    </x-section>
-
-    @if (count($brand->actions))
-        <x-section class="gray">
-            <x-head level="1">
-                {{ trans('content.promotions_for') }}
-                @include('issues.blocks.brand_name_block', ['simple' => false])
-            </x-head>
-            <div id="actions-brand-block" class="owl-carousel mt-2">
-                @foreach ($brand->actions as $action)
-                    @include('actions.blocks.action_block')
-                @endforeach
-            </div>
-        </x-section>
+    @if ($activeMenu == 'maintenance' && count($brand->maintenances) == 2)
+        {!! $brand->maintenances[1]->text !!}
     @endif
+</x-section>
+
+@if (count($brand->actions))
+    <x-section class="gray">
+        <x-head level="1">
+            {{ trans('content.promotions_for') }}
+            @include('issues.blocks.brand_name_block', ['simple' => false])
+        </x-head>
+        <div id="actions-brand-block" class="owl-carousel mt-2">
+            @foreach ($brand->actions as $action)
+                @include('actions.blocks.action_block')
+            @endforeach
+        </div>
+    </x-section>
+@endif
+<x-section>
+    @include('blocks.online_record_block',[
+        'type' => 'online_appointment_for_'.$activeMenu,
+        'addClass' => 'mt-4'
+    ])
+</x-section>
 @endsection

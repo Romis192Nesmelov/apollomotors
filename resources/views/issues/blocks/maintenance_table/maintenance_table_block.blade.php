@@ -82,7 +82,7 @@
     </div>
 
     <p class="subscript">{!! trans('maintenance.in_case_of_abnormal_loss_of_working_fluid') !!}</p>
-    <h5>{!! trans('maintenance.maintenance_is') !!}:</h5>
+    <h5>{!! trans('maintenance.maintenance_is') !!}</h5>
     <ul>
         @for ($i=1;$i<=6;$i++)
             <li>{!! trans('maintenance.maintenance_is'.$i, ['car' => $car]) !!}</li>

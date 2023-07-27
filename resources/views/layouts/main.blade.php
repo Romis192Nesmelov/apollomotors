@@ -69,7 +69,7 @@
             </div>
         @endforeach
     </div>
-    <p><a href="#">{{ trans('content.another_brand') }}</a></p>
+    <p><a id="another-brand" href="#">{{ trans('content.another_brand') }}</a></p>
 </x-modal>
 
 <div id="feedback-plate">
@@ -199,7 +199,7 @@
             @foreach ($contacts as $contact)
                 @if ($contact->id >= 11 && $contact->active)
                     @php $snExistFlag = true; @endphp
-                    <a href="{{ $contact->icon }}" target="_blank"><i class="{{ $contact->icon }} fs-5"></i></a>
+                    <a href="{{ $contact->contact }}" target="_blank"><i class="{{ $contact->icon }} fs-5"></i></a>
                 @endif
             @endforeach
             @php $content = '<p class="fs-7 ps-3 mb-4">'.trans('content.we_are_in_social_networks').'<br>'.ob_get_clean().'</p>'; @endphp
@@ -212,7 +212,7 @@
             @foreach ($contacts as $contact)
                 @if ($contact->id >= 8 && $contact->id <= 9 && $contact->active)
                     @php $messengersExistFlag = true; @endphp
-                    <a href="{{ $contact->icon }}" target="_blank"><i class="{{ $contact->icon }} fs-5"></i></a>
+                    <a href="{{ $contact->contact }}" target="_blank"><i class="{{ $contact->icon }} fs-5"></i></a>
                 @endif
             @endforeach
             @php $content = '<p class="fs-7 ps-3">'.trans('content.write_to_messenger').'<br>'.ob_get_clean().'</p>'; @endphp
@@ -287,7 +287,7 @@
             </div>
             @include('blocks.hr_block')
             @if ($contacts[3]->active)
-                <p class="fs-7 text-center mt-4">{!! trans('content.footer_text',['phone' => view('blocks.phone_block',['phone' => $contacts[3]->contact])->render(), 'email' => view('blocks.email_block',['email' => $contacts[1]->contact])->render()]) !!}</p>
+                <p class="fs-7 text-center mt-4">{!! trans('content.footer_text',['phone' => view('blocks.phone_block',['phone' => $contacts[6]->contact])->render(), 'email' => view('blocks.email_block',['email' => $contacts[3]->contact])->render()]) !!}</p>
             @endif
             <p class="fs-7 text-center mt-1"><a href="{{ asset('storage/requisites.pdf') }}" target="_blank">{{ trans('content.our_details') }}</a></p>
         </div>

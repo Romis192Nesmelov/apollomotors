@@ -75,7 +75,7 @@ class BaseController extends Controller
     public function corporativeClients() :View
     {
         $this->activeMenu = 'about';
-        return $this->showView('home');
+        return $this->showView('about.сс');
     }
 
     public function actions($action=null) :View
