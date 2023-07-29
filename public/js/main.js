@@ -43,11 +43,11 @@ $(window).on('load', function () {
 	});
 
 
-    //Carousel actions
+    // Carousel actions
     $('#actions-block').owlCarousel(oulSettings(
         10,
         false,
-        3000,
+        6000,
         {0: {items: 1}}
     ));
 
@@ -73,7 +73,7 @@ $(window).on('load', function () {
     $('#actions-brand-block').owlCarousel(oulSettings(
         3,
         false,
-        3000,
+        5000,
         {
             0: {
                 items: 1
