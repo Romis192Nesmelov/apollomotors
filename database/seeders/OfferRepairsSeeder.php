@@ -33,7 +33,6 @@ class OfferRepairsSeeder extends Seeder
         ];
         $count = 1;
         foreach ($data as $item) {
-            if ($count > 4) $count = 1;
             OfferRepair::create([
                 'name' => $item,
                 'image' => 'storage/images/offer_repairs/repair'.$count.'.jpg',
