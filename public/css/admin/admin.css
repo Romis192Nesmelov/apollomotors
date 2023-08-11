@@ -1,0 +1,158 @@
+.text-warning-700, .text-danger-800 {
+    font-weight: bolder;
+}
+
+.id {
+    width: 20px;
+    text-align: center;
+}
+
+td.image {
+    width: 10%;
+}
+
+td.head {
+    width: 15%;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: left;
+}
+
+td.image {
+    width: 20%;
+    padding: 5px;
+}
+
+td.image img,
+.edit-image-preview img {
+    width: 100%;
+    border: 2px solid grey;
+}
+
+.table-items td.edit,
+.table-items td.delete {
+    width: 60px;
+    text-align: center;
+}
+
+.table-items td.delete > span {
+    cursor: pointer;
+    color: blue;
+}
+
+.form-group {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.form-group.name input,
+.form-group.name select {
+    height: 37px;
+    font-size: 17px;
+}
+
+.form-group input.has-icon {
+    padding-left: 35px;
+}
+
+.form-group i {
+    position: absolute;
+    font-size: 13px;
+    top: 12px;
+    left: 10px;
+    /*transform: translateY(-50%);*/
+    color: grey;
+}
+
+.form-group {
+    border-color: #D84315;
+}
+
+.form-group.error .cke {
+    border: 1px solid red;
+}
+
+.form-group div.error {
+    color: red;
+    margin-top: 2px;
+    font-size: 12px;
+}
+
+label {
+    font-weight: bold;
+    color: grey;
+}
+
+label sup,
+p sup {
+    color: red;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+input[type=number] {
+    height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: #738aa3;
+}
+
+textarea {
+    width: 100% !important;
+    min-height: 100px;
+    resize: vertical;
+}
+
+.modal-body {
+    background-color: #f1f1f1;
+    border: 1px solid #eaeaea;
+    margin-bottom: 20px;
+}
+
+.icon-object {
+    color: #738aa3;
+}
+
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+    background-color: #738aa3;
+    border-color: #2c3341;
+}
+
+.btn-primary,
+.navigation > li.active > a,
+.navigation > li.active > a:hover,
+.navigation > li.active > a:focus {
+    background-color: #738aa3;
+    border-color: #2c3341;
+}
+
+.btn-primary:focus,
+.btn-primary.focus,
+.btn-primary:hover {
+    background-color: #2c3341;
+}
+
+.btn-close {
+    box-sizing: content-box;
+    width: 1em;
+    height: 1em;
+    padding: 0.5rem 0.5rem;
+    float: right;
+    margin: -3.2rem -0.5rem -0.5rem auto;
+    position: relative;
+    color: #000;
+    background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
+    border: 0;
+    border-radius: 0.25rem;
+    opacity: .5;
+}
+
+.dataTables_length > label > span:first-child {
+    margin: 0 15px;
+}

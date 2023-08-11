@@ -1,3 +1,4 @@
+// window.stop();
 $(window).on('load', function () {
     $('input[name=phone]').mask("+7(999)999-99-99");
 
@@ -5,7 +6,7 @@ $(window).on('load', function () {
         windowResize();
         bigTablesScroll();
         $('body').removeAttr('style');
-        $('#loader').remove();
+        removeLoader();
     },1000);
 
     $(window).resize(function() {
@@ -161,7 +162,7 @@ $(window).on('load', function () {
             requestTypeInput.val('online_appointment_for_maintenance');
             discountBlock.show();
         }
-        requestModal.find('h2').html(newHad);
+        requestModal.find('h4').html(newHad);
         requestModal.modal('show');
     });
 
@@ -321,14 +322,5 @@ function showHideContent(section) {
         if (shortContent.length) shortContent.fadeIn();
         $(this).addClass('d-none');
         showMore.removeClass('d-none');
-    });
-}
-
-function addLoader() {
-    $('body').prepend(
-        $('<div></div>').attr('id','loader').append($('<div></div>'))
-    ).css({
-        'overflow':'hidden',
-        'padding-right':20
     });
 }

@@ -66,16 +66,12 @@ class BaseController extends Controller
 
     public function about() :View
     {
-        $this->activeMenu = 'about';
-        $this->data['content'] = Content::find(2);
-        $this->setSeo($this->data['content']->seo);
-        return $this->showView('about.about');
+        return $this->getContent(2,'about');
     }
 
-    public function corporativeClients() :View
+    public function corporateClients() :View
     {
-        $this->activeMenu = 'about';
-        return $this->showView('about.сс');
+        return $this->getContent(3,'about');
     }
 
     public function actions($action=null) :View
@@ -115,7 +111,7 @@ class BaseController extends Controller
 
     public function policy() :View
     {
-        return $this->showView('policy');
+        return $this->getContent(6,'');
     }
 
     protected function setSeo($seo): void
@@ -145,5 +141,13 @@ class BaseController extends Controller
     {
         $this->data[$itemName] = $model->where('slug',$slug)->where('active',1)->first();
         if (!$this->data[$itemName]) abort(404, trans('404'));
+    }
+
+    private function getContent($id, $activeMenu)
+    {
+        $this->activeMenu = $activeMenu;
+        $this->data['content'] = Content::find($id);
+        $this->setSeo($this->data['content']->seo);
+        return $this->showView('content');
     }
 }

@@ -1,9 +1,9 @@
-<div class="col-12 col-lg-10">
-    <div class="form-group mt-3">
-        <div class="form-check pl-0">
-            <input type="checkbox" class="form-check-input" id="{{ $name }}" name="{{ $name }}">
-            <label class="form-check-label d-flex align-items-center txt-sm" for="{{ $name }}">{!! $label !!}</label>
-            @include('blocks.error_block')
-        </div>
-    </div>
+<div class="form-group mt-3">
+    <label class="checkbox-inline">
+        <input class="styled" type="checkbox" name="{{ $name }}" {{ !count($errors) ? (isset($checked) && $checked ? 'checked=checked' : '') : (old($name) == 'on' ? 'checked=checked' : '') }} {{ isset($disabled) && $disabled ? 'disabled=disabled' : '' }}>
+        @if (isset($label) && $label)
+            {!! $label !!}
+        @endif
+    </label>
+    @include('blocks.error_block')
 </div>

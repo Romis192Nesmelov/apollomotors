@@ -13,8 +13,9 @@ class Brand extends Model
     use Sluggable;
 
     protected $fillable = [
-        'logo',
         'slug',
+        'logo',
+        'image',
         'name_en',
         'name_ru',
         'maintenance_part1',

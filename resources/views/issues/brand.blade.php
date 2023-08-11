@@ -8,7 +8,7 @@
                 @include('issues.blocks.brand_name_block', ['simple' => false])
             </x-head>
             @include('blocks.fancybox_block',[
-                'image' => 'storage/images/brands/'.$brand->slug.'_image.jpg',
+                'image' => $brand->image,
                 'addClass' => 'col-md-4 col-sm-12 me-4 pull-left framed-image',
             ])
             @if ($activeMenu == 'maintenance')

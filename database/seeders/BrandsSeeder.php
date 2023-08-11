@@ -9,6 +9,7 @@ use App\Models\BrandSpare;
 use App\Models\Seo;
 //use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Str;
 
 class BrandsSeeder extends Seeder
 {
@@ -519,6 +520,7 @@ class BrandsSeeder extends Seeder
 
         foreach ($brandsData as $item) {
             $item['logo'] = 'storage/images/brands/'.$item['logo'];
+            $item['image'] = 'storage/images/brands/'.Str::slug($item['name_en']).'_image.jpg';
 
             list($item, $texts, $seo) = $this->getTextsAndSeo($item);
             $brand = Brand::create($item);

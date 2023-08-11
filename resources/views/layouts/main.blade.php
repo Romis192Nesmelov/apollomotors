@@ -33,18 +33,20 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/indicator.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ asset('css/counter.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ asset('css/contacts.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/loader.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}" />
 
     <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="https://yastatic.net/share2/share.js" defer></script>
+    <script src="https://yastatic.net/share2/share.js"></script>
     <script type="text/javascript" src="{{ asset('js/jquery.maskedinput.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/jquery.fancybox.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/owl.carousel.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/jquery.mCustomScrollbar.concat.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/indicators.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/main.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/loader.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/feedback.js') }}"></script>
 </head>
 

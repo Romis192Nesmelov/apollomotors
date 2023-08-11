@@ -19,6 +19,11 @@
 
     @if (isset($dataDismiss) && $dataDismiss)
         data-bs-dismiss="modal"
+        data-dismiss="modal"
+    @endif
+
+    @if (isset($icon))
+        <span class="{{ $icon }}"></span>
     @endif
 >
     {{ $buttonText }}

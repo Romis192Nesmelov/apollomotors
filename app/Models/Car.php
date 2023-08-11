@@ -18,7 +18,6 @@ class Car extends Model
         'name_ru',
         'image_full',
         'image_preview',
-        'image_width',
         'brand_id',
         'active',
     ];

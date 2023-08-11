@@ -19,7 +19,6 @@ return new class extends Migration
             $table->string('name_ru',20)->unique();
             $table->string('image_full',60)->unique();
             $table->string('image_preview',60)->unique();
-            $table->smallInteger('image_width');
             $table->foreignIdFor(Brand::class)->constrained()->cascadeOnUpdate()->cascadeOnDelete();
             $table->boolean('active')->nullable();
         });

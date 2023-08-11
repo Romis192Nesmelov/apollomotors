@@ -10,13 +10,19 @@ trait HelperTrait
     public $validationPassword = 'required|confirmed|min:3|max:50';
     public $validationInteger = 'required|integer';
     public $validationString = 'required|min:3|max:255';
-    public $validationText = 'required|min:5|max:1200';
+    public $validationText = 'required|min:5|max:3000';
+    public $validationLongText = 'required|min:5|max:50000';
 //    public $validationColor = 'regex:/^(hsv\((\d+)\,\s(\d+)\%\,\s(\d+)\%\))$/';
 //    public $validationSvg = 'required|mimes:svg|max:10';
     public $validationJpgAndPng = 'mimes:jpg,png|max:2000';
     public $validationJpg = 'mimes:jpg|max:2000';
     public $validationPng = 'mimes:png|max:2000';
     public $validationDate = 'regex:/^(\d{2})\/(\d{2})\/(\d{4})$/';
+
+    public function saveCompleteMessage()
+    {
+        session()->flash('message', trans('admin.save_complete'));
+    }
 
     public function checkVir()
     {
@@ -92,7 +98,7 @@ trait HelperTrait
 
         $actions = Action::all();
         foreach ($actions as $action) {
-            if ($action->limit <= $now + (60 * 60 *7)) {
+            if ($action->limit <= $now + (60 * 60 * 7)) {
                 $action->limit = $nextDeadline;
                 $action->save();
             }

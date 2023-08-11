@@ -71,7 +71,7 @@ function processingCheckFields(formData, inputObj) {
 function unlockAll(form,agree) {
     form.find('input, select, textarea, button').removeAttr('disabled');
     agree.prop('checked', false);
-    $('#loader').remove();
+    removeLoader();
     $('body').css({
         'overflow':'auto',
         'padding-right':0
