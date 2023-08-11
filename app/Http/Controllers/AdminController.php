@@ -45,6 +45,7 @@ class AdminController extends Controller
         $this->getMenuItem('questions', trans('content.do_you_know_that'), trans('admin_menu.home_page_block_editing'), 'icon-question4');
         $this->getMenuItem('clients', trans('content.we_are_trusted'), trans('admin_menu.home_page_block_editing'), 'icon-truck');
         $this->getMenuItem('articles', trans('menu.articles'), trans('admin_menu.articles'), 'icon-magazine');
+        $this->getMenuItem('gallery', trans('admin_menu.gallery'), trans('admin_menu.gallery_description'), 'icon-images3');
         $this->breadcrumbs[] = $this->menu['home'];
     }
 
@@ -337,6 +338,55 @@ class AdminController extends Controller
     public function deleteArticle(Request $request): JsonResponse
     {
         return $this->deleteSomething($request, new Article());
+    }
+
+    public function gallery($folder=null, $subFolder=null): View
+    {
+        $finalPath = '';
+        $this->breadcrumbs[] = $this->menu['gallery'];
+        $this->data['menu_key'] = 'gallery';
+        $this->data['route'] = route('admin.gallery');
+
+        if ($folder) {
+            $finalPath = $folder.'/';
+            $this->data['up_to'] = route('admin.gallery');
+            $this->data['lock'] = in_array($folder, $this->lockingFolders);;
+        }
+        if ($subFolder) {
+            $finalPath = $folder.'/'.$subFolder.'/';
+            $this->data['up_to'] = route('admin.gallery',$folder);
+        }
+        ;
+        $basePath = 'public/storage/images/';
+
+        if (!file_exists(base_path($basePath.$finalPath)) || in_array($folder, $this->skippingFolders)) abort(404);
+
+        $this->data['route'] .= '/'.$finalPath;
+        $finalPath .= '*';
+        $this->data['folder'] = '/'.$finalPath;
+        $this->data['base_folder'] = $folder.($subFolder ? '/'.$subFolder : '');
+        $this->data['objects'] = glob(base_path($basePath.$finalPath));
+        $this->data['skipping_folders'] = $this->skippingFolders;
+
+        return $this->showView('gallery');
+    }
+
+    public function addImage(Request $request): RedirectResponse
+    {
+        $fields = $this->validate($request, ['image' => 'required|'.$this->validationJpgAndPng, 'folder' => $this->validationString]);
+        $imageName = $request->file('image')->getClientOriginalName().'.'.$request->file('image')->getClientOriginalExtension();
+        $request->file('image')->move(base_path('public/storage/images/'.$fields['folder']), $imageName);
+        return redirect(route('admin.gallery',$fields['folder']));
+    }
+
+    public function deleteImage(Request $request): JsonResponse
+    {
+        $this->validate($request, ['id' => 'required']);
+        $pathFile = $request->id;
+        $folder = str_replace([base_path('public'),'/storage/images/'],'',pathinfo($pathFile)['dirname']);
+        if (in_array($folder, $this->lockingFolders) || in_array($folder, $this->skippingFolders)) abort(403);
+        $this->deleteFile($pathFile);
+        return response()->json(['success' => true]);
     }
 
     private function deleteSomething(Request $request, Model $model, string $fileField=null): JsonResponse

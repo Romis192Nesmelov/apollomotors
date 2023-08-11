@@ -10,6 +10,8 @@ return [
     'policy' => 'Политика конфиденциальности',
     'goto' => 'Перейти',
 
+    'path_to_image' => 'Путь до картинки',
+    'copy_to_clipboard' => 'Скопировать',
     'slug' => 'Slug',
     'icon' => 'Иконка',
     'active' => 'Активно',
@@ -33,6 +35,7 @@ return [
     'welcome' => 'Добро пожаловать!',
     'exit' => 'Выход',
     'save' => 'Сохранить',
+    'upload' => 'Загрузить',
     'save_complete' => 'Сохранение произведено',
 
     'do_you_really_want_delete_this_position' => 'Вы действительно хотите удалить эту позицию?',
@@ -112,4 +115,7 @@ return [
     'view_article' => 'Просмотр статьи «:article»',
     'adding_article' => 'Добавление статьи',
     'add_articles' => 'Добавить статью',
+
+    'do_you_really_want_delete_this_image' => 'Вы действительно хотите удалить эту картинку?',
+    'folder' => 'Папка «:folder»',
 ];

@@ -16,7 +16,7 @@
                         @include('admin.blocks.select_block',[
                             'name' => 'free_check_id',
                             'values' => $free_checks,
-                            'selected' => isset($check) ? $check->free_check_id : 1,
+                            'selected' => isset($check) ? $check->free_check_id : request()->parent_id,
                             'option' => 'name'
                         ])
                     </div>

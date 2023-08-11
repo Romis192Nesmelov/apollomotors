@@ -59,12 +59,12 @@ $(document).ready(function () {
 
     // Preview upload image
     $('input[type=file]').change(function () {
-        var input = $(this)[0],
+        let input = $(this)[0],
             parent = $(this).parents('.edit-image-preview'),
             imagePreview = parent.find('img');
 
         if (input.files[0].type.match('image.*')) {
-            var reader = new FileReader();
+            let reader = new FileReader();
             reader.onload = function (e) {
                 imagePreview.attr('src', e.target.result);
                 if (!imagePreview.is(':visible')) imagePreview.fadeIn();
@@ -76,6 +76,15 @@ $(document).ready(function () {
         } else {
             imagePreview.attr('src', '/images/placeholder.jpg');
         }
+    });
+
+    // Copy to clipboard image path
+    $('.table-items td.cb-copy > i').click(function () {
+        let path = $(this).parents('tr').find('td.image-path').html();
+        navigator.clipboard.writeText(path)
+            .then(() => {
+                alert('Путь скопирован!');
+            })
     });
 
     // Click to delete items

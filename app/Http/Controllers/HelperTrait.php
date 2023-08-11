@@ -18,6 +18,18 @@ trait HelperTrait
     public $validationJpg = 'mimes:jpg|max:2000';
     public $validationPng = 'mimes:png|max:2000';
     public $validationDate = 'regex:/^(\d{2})\/(\d{2})\/(\d{4})$/';
+    public $skippingFolders = [
+        'actions',
+        'icons',
+        'indicator',
+        'maps',
+    ];
+
+    public $lockingFolders = [
+        'about',
+        'brands',
+        'cars'
+    ];
 
     public function saveCompleteMessage()
     {

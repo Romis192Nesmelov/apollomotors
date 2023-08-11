@@ -82,5 +82,9 @@ Route::prefix('admin')->middleware(['auth'])->name('admin.')->group(function () 
     Route::get('/articles/{slug?}', [AdminController::class, 'articles'])->name('articles');
     Route::post('/edit-article', [AdminController::class, 'editArticle'])->name('edit_article');
     Route::post('/delete-article', [AdminController::class, 'deleteArticle'])->name('delete_article');
+
+    Route::get('/gallery/{folder?}/{subFolder?}', [AdminController::class, 'gallery'])->name('gallery');
+    Route::post('/add-image', [AdminController::class, 'addImage'])->name('add_image');
+    Route::post('/delete-image', [AdminController::class, 'deleteImage'])->name('delete_image');
 });
 
