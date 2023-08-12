@@ -5,7 +5,7 @@
         <form class="form-horizontal" action="{{ route('admin.edit_price') }}" method="post">
             @csrf
             @if (isset($price))
-                @include('admin.blocks.hidden_id_block',['id' => $price->id])
+                @include('admin.blocks.hidden_id_block',['value' => $price->id])
             @endif
             <div class="panel panel-flat">
                 @include('admin.blocks.title_block')

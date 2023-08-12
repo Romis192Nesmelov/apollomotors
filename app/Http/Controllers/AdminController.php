@@ -116,11 +116,12 @@ class AdminController extends Controller
 
     public function editContent(Request $request): RedirectResponse
     {
-        $this->editSomething(
+        $item = $this->editSomething(
             $request,
             ['head' => $this->validationString, 'text' => $this->validationText],
             new Content()
         );
+        $this->setSeo($request, $item);
         return redirect(route('admin.contents'));
     }
 
@@ -327,11 +328,12 @@ class AdminController extends Controller
 
     public function editArticle(Request $request): RedirectResponse
     {
-        $this->editSomething(
+        $item = $this->editSomething(
             $request,
             ['head' => $this->validationString, 'text' => $this->validationLongText],
             new Article()
         );
+        $this->setSeo($request, $item);
         return redirect(route('admin.articles'));
     }
 
@@ -469,11 +471,6 @@ class AdminController extends Controller
     ): Model
     {
         if (!$this->authorize('edit')) abort(403, trans('content.403'));
-        $seoValidationArr = [
-            'title' => 'nullable|max:255',
-            'keywords' => 'nullable|max:3000',
-            'description' => 'nullable|max:3000',
-        ];
         $validationArr = array_merge($validationArr,$imageValidationArr);
 
         if ($request->has('id')) {
@@ -485,9 +482,6 @@ class AdminController extends Controller
 
             // Getting item
             $item = $model->findOrFail($request->input('id'));
-
-            // Validation SEO
-            $seoFields = $this->validate($request, $seoValidationArr);
 
             // Processing image define images fields
             $fields = $this->processingImages($request, $fields, array_keys($imageValidationArr), $pathToImages, $item);
@@ -510,9 +504,6 @@ class AdminController extends Controller
                 $this->setSpecialFields($request, $this->validate($request, $validationArr))
             );
 
-            // Validation SEO
-            $seoFields = $this->validate($request, $seoValidationArr);
-
             // Processing image define images fields
             if ($pathToImages) {
                 $fields = $this->processingImages($request, $fields, array_keys($imageValidationArr), $pathToImages);
@@ -522,15 +513,18 @@ class AdminController extends Controller
             $item = $model->create($fields);
         }
 
-        // Setting SEO
-        $this->setSeo($item, $seoFields);
-
         $this->saveCompleteMessage();
         return $item;
     }
 
-    private function setSeo(Model $item, array $seoFields): void
+    private function setSeo(Request $request, Model $item): void
     {
+        $seoFields = $this->validate($request, [
+            'title' => 'nullable|max:255',
+            'keywords' => 'nullable|max:3000',
+            'description' => 'nullable|max:3000',
+        ]);
+
         if (count($seoFields)) {
             if (isset($item->seo)) $item->seo->update($seoFields);
             else {

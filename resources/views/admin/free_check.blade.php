@@ -11,7 +11,7 @@
         <form class="form-horizontal" action="{{ route('admin.edit_free_check') }}" method="post">
             @csrf
             @if (isset($free_check))
-                @include('admin.blocks.hidden_id_block',['id' => $free_check->id])
+                @include('admin.blocks.hidden_id_block',['value' => $free_check->id])
             @endif
             <div class="panel panel-flat">
                 @include('admin.blocks.title_block')

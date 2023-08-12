@@ -5,7 +5,7 @@
         <form class="form-horizontal" enctype="multipart/form-data" action="{{ route('admin.edit_client') }}" method="post">
             @csrf
             @if (isset($client))
-                @include('admin.blocks.hidden_id_block',['id' => $client->id])
+                @include('admin.blocks.hidden_id_block',['value' => $client->id])
             @endif
             <div class="row">
                 <div class="col-md-4 col-sm-6 col-sm-12">

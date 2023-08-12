@@ -5,7 +5,7 @@
         <form class="form-horizontal" action="{{ route('admin.edit_question') }}" method="post">
             @csrf
             @if (isset($question))
-                @include('admin.blocks.hidden_id_block',['id' => $question->id])
+                @include('admin.blocks.hidden_id_block',['value' => $question->id])
             @endif
             <div class="panel panel-flat">
                 @include('admin.blocks.title_block')

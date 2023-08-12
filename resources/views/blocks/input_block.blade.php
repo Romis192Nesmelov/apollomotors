@@ -2,7 +2,7 @@
     @if (isset($label) && $label)
         <label for="{{ $name }}">{{ $label }} {!! $required ? '<sup>*</sup>' : '' !!}</label>
     @endif
-    <input type="{{ isset($type) && $type ? $type : 'text' }}" name="{{ $name }}" value="{{ old($name, (isset($value) ? $value : '')) }}" class="form-control {{ isset($icon) && $icon ? 'has-icon' : '' }}@error($name) error @enderror" placeholder="{{ isset($placeholder) && $placeholder ? $placeholder : '' }}">
+    <input type="{{ isset($type) && $type ? $type : 'text' }}" name="{{ $name }}" value="{{ old($name, (isset($value) ? $value : '')) }}" class="form-control {{ isset($addClass) && $addClass ? $addClass : '' }} {{ isset($icon) && $icon ? 'has-icon' : '' }}@error($name) error @enderror" placeholder="{{ isset($placeholder) && $placeholder ? $placeholder : '' }}">
 
     @if (isset($icon) && $icon)
         <i class="{{ $icon }}"></i>

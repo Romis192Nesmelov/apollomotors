@@ -4,7 +4,7 @@
     @can('edit')
         <form class="form-horizontal" action="{{ route('admin.edit_contact') }}" method="post">
             @csrf
-            @include('admin.blocks.hidden_id_block',['id' => $contact->id])
+            @include('admin.blocks.hidden_id_block',['value' => $contact->id])
             <div class="panel panel-flat">
                 @include('admin.blocks.title_block')
                 <div class="panel-body">
@@ -14,7 +14,8 @@
                         'name' => 'contact',
                         'type' => 'text',
                         'max' => 255,
-                        'placeholder' => trans('admin.contact'),
+                        'placeholder' => $contact->id == 6 || $contact->id == 7 ? trans('admin.contact') : '+7(___)___-__-__',
+                        'addClass' => $contact->id == 6 || $contact->id == 7 ? 'phone' : '',
                         'value' => $contact->contact
                     ])
                     @include('blocks.checkbox_block', [

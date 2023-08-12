@@ -5,7 +5,7 @@
         <form class="form-horizontal" enctype="multipart/form-data" action="{{ route('admin.edit_offer_repair') }}" method="post">
             @csrf
             @if (isset($offer_repair))
-                @include('admin.blocks.hidden_id_block',['id' => $offer_repair->id])
+                @include('admin.blocks.hidden_id_block',['value' => $offer_repair->id])
             @endif
             <div class="col-md-4 col-sm-6 col-sm-12">
                 @include('admin.blocks.input_image_block',[

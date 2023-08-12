@@ -12,21 +12,21 @@
                 'type' => 'text',
                 'max' => 255,
                 'placeholder' => 'Title',
-                'value' => $item->seo->title
+                'value' => $item ? $item->seo->title : ''
             ])
             @include('admin.blocks.textarea_block',[
                 'required' => false,
                 'name' => 'keywords',
                 'label' => 'Keywords',
                 'simple' => true,
-                'value' => $item->seo->keywords
+                'value' => $item ? $item->seo->keywords : ''
             ])
             @include('admin.blocks.textarea_block',[
                 'required' => false,
                 'name' => 'description',
                 'label' => 'Description',
                 'simple' => true,
-                'value' => $item->seo->description
+                'value' => $item ? $item->seo->description : ''
             ])
         </div>
     </div>

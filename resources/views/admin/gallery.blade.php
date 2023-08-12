@@ -15,8 +15,8 @@
             <form class="form-horizontal" enctype="multipart/form-data" action="{{ route('admin.add_image') }}" method="post">
                 @csrf
                 @include('admin.blocks.hidden_id_block',[
-                    'idName' => 'folder',
-                    'id' => $base_folder
+                    'hiddenName' => 'folder',
+                    'value' => $base_folder
                 ])
                 @include('admin.blocks.input_image_block',[
                     'name' => 'image',

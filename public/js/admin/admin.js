@@ -1,6 +1,6 @@
 $(document).ready(function () {
     // Phone mask
-    $('input[name=phone]').mask("+7(999)999-99-99");
+    $('input[name=phone], input.phone').mask("+7(999)999-99-99");
 
     CKEDITOR.replaceClass = 'ckeditor';
     $('.styled').uniform();
