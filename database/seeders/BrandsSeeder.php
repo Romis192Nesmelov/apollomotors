@@ -520,7 +520,7 @@ class BrandsSeeder extends Seeder
 
         foreach ($brandsData as $item) {
             $item['logo'] = 'storage/images/brands/'.$item['logo'];
-            $item['image'] = 'storage/images/brands/'.Str::slug($item['name_en']).'_image.jpg';
+            if ($item['elected']) $item['image'] = 'storage/images/brands/'.Str::slug($item['name_en']).'_image.jpg';
 
             list($item, $texts, $seo) = $this->getTextsAndSeo($item);
             $brand = Brand::create($item);

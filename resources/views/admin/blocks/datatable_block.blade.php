@@ -38,8 +38,10 @@
                         <td class="text-center"><i class="{{ $item->icon }}"></i></td>
                     @elseif ($column == 'parent_brand')
                         <td class="text-center w-25"><img class="w-100" src="{{ asset($item->brand->logo) }}" /></td>
+                    @elseif ($column == 'elected')
+                        <td class="text-center w-25">@include('admin.blocks.elected_status_block', ['elected' => $item->elected])</td>
                     @elseif ($column == 'active')
-                        <td class="text-center w-25">@include('admin.blocks.active_status_block', ['active' => $item->active])</td>
+                            <td class="text-center w-25">@include('admin.blocks.active_status_block', ['active' => $item->active])</td>
                     @elseif ($column == 'type')
                         <td class="text-center">@include('admin.blocks.type_block')</td>
                     @elseif ($column == 'text' || $column == 'answer')

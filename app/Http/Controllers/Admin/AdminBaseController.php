@@ -1,51 +1,56 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
-use App\Models\Action;
+use App\Http\Controllers\Controller;
+use App\Http\Controllers\HelperTrait;
+
 use App\Models\Article;
 use App\Models\Brand;
-use App\Models\Car;
 use App\Models\Check;
 use App\Models\Client;
+use App\Models\Contact;
+use App\Models\Content;
 use App\Models\FreeCheck;
 use App\Models\HomePrice;
 use App\Models\OfferRepair;
 use App\Models\Question;
 use App\Models\Seo;
 use App\Models\User;
-use App\Models\Content;
-use App\Models\Contact;
 
-use Illuminate\Http\JsonResponse;
-use Illuminate\Http\Request;
-use Illuminate\Http\RedirectResponse ;
-use Illuminate\View\View;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Http\RedirectResponse;
+use Illuminate\Http\Request;
 use Illuminate\Support\Str;
+use Illuminate\View\View;
 
-class AdminController extends Controller
+class AdminBaseController extends Controller
 {
     use HelperTrait;
 
-    private array $data = [];
-    private array $breadcrumbs = [];
-    private array $menu;
+    protected array $data = [];
+    protected array $breadcrumbs = [];
+    protected array $menu;
 
     public function __construct()
     {
-        $this->getMenuItem('home', trans('admin_menu.home'), '', 'icon-home2');
-        $this->getMenuItem('users', trans('admin_menu.admins'), trans('admin_menu.admins_description'), 'icon-users');
-        $this->getMenuItem('contents', trans('admin_menu.content'), trans('admin_menu.content_description'), 'icon-pencil6');
-        $this->getMenuItem('contacts', trans('menu.contacts'), trans('admin_menu.contacts_description'), 'icon-bookmark');
-        $this->getMenuItem('offer_repairs', trans('content.we_offer_repairs'), trans('admin_menu.home_page_block_editing'), 'icon-hammer-wrench');
-        $this->getMenuItem('free_checks', trans('content.free_check'), trans('admin_menu.home_page_block_editing'), 'icon-shield-check');
-        $this->getMenuItem('checks', trans('admin.checks'), trans('admin_menu.home_page_block_editing'), 'icon-checkmark2', true);
-        $this->getMenuItem('prices', trans('content.our_prices'), trans('admin_menu.home_page_block_editing'), 'icon-price-tags');
-        $this->getMenuItem('questions', trans('content.do_you_know_that'), trans('admin_menu.home_page_block_editing'), 'icon-question4');
-        $this->getMenuItem('clients', trans('content.we_are_trusted'), trans('admin_menu.home_page_block_editing'), 'icon-truck');
-        $this->getMenuItem('articles', trans('menu.articles'), trans('admin_menu.articles'), 'icon-magazine');
-        $this->getMenuItem('gallery', trans('admin_menu.gallery'), trans('admin_menu.gallery_description'), 'icon-images3');
+        $menuData = [
+            ['key' => 'home', 'name' => trans('admin_menu.home'), 'icon' => 'icon-home2'],
+            ['key' => 'users', 'name' => trans('admin_menu.admins'), 'description' => trans('admin_menu.admins_description'), 'icon' => 'icon-users'],
+            ['key' => 'contents', 'name' => trans('admin_menu.content'), 'description' => trans('admin_menu.content_description'), 'icon' => 'icon-pencil6'],
+            ['key' => 'contacts', 'name' => trans('menu.contacts'), 'description' => trans('admin_menu.contacts_description'), 'icon' => 'icon-bookmark'],
+            ['key' => 'offer_repairs', 'name' => trans('content.we_offer_repairs'), 'description' => trans('admin_menu.home_page_block_editing'), 'icon' => 'icon-hammer-wrench'],
+            ['key' => 'free_checks', 'name' => trans('content.free_check'), 'description' => trans('admin_menu.home_page_block_editing'), 'icon' => 'icon-shield-check'],
+            ['key' => 'checks', 'name' => trans('admin.checks'), 'description' => trans('admin_menu.home_page_block_editing'), 'icon' => 'icon-checkmark2', 'hidden' => true],
+            ['key' => 'prices', 'name' => trans('content.our_prices'), 'description' => trans('admin_menu.home_page_block_editing'), 'icon' => 'icon-price-tags'],
+            ['key' => 'questions', 'name' => trans('content.do_you_know_that'), 'description' => trans('admin_menu.home_page_block_editing'), 'icon' => 'icon-question4'],
+            ['key' => 'clients', 'name' => trans('content.we_are_trusted'), 'description' => trans('admin_menu.home_page_block_editing'), 'icon' => 'icon-truck'],
+            ['key' => 'articles', 'name' => trans('menu.articles'), 'description' => trans('admin_menu.articles'), 'icon' => 'icon-magazine'],
+            ['key' => 'gallery', 'name' => trans('admin_menu.gallery'), 'description' => trans('admin_menu.gallery_description'), 'icon' => 'icon-images3'],
+            ['key' => 'brands', 'name' => trans('admin_menu.brands'), 'description' => trans('admin_menu.brands_description'), 'icon' => 'icon-chess-queen'],
+        ];
+        $this->getMenu($menuData);
         $this->breadcrumbs[] = $this->menu['home'];
     }
 
@@ -108,20 +113,18 @@ class AdminController extends Controller
             $request,
             'content',
             'head',
-            new Content(),
-            null,
-            [1,2,3,7]
+            new Content()
         );
     }
 
     public function editContent(Request $request): RedirectResponse
     {
-        $item = $this->editSomething(
+        $content = $this->editSomething(
             $request,
             ['head' => $this->validationString, 'text' => $this->validationText],
             new Content()
         );
-        $this->setSeo($request, $item);
+        $this->setSeo($request, $content);
         return redirect(route('admin.contents'));
     }
 
@@ -212,7 +215,6 @@ class AdminController extends Controller
             'name',
             new Check(),
             $slug,
-            [],
             'free_check',
             'name',
             new FreeCheck()
@@ -328,12 +330,12 @@ class AdminController extends Controller
 
     public function editArticle(Request $request): RedirectResponse
     {
-        $item = $this->editSomething(
+        $article = $this->editSomething(
             $request,
             ['head' => $this->validationString, 'text' => $this->validationLongText],
             new Article()
         );
-        $this->setSeo($request, $item);
+        $this->setSeo($request, $article);
         return redirect(route('admin.articles'));
     }
 
@@ -391,11 +393,11 @@ class AdminController extends Controller
         return response()->json(['success' => true]);
     }
 
-    private function deleteSomething(Request $request, Model $model, string $fileField=null): JsonResponse
+    protected function deleteSomething(Request $request, Model $model, string $fileField=null): JsonResponse
     {
         if (!$this->authorize('delete')) abort(403, trans('content.403'));
-        $this->validate($request, ['id' => 'required|integer|exists:'.$model->getTable().',id']);
-        $itemModel = $model->find($request->input('id'));
+        $fields = $this->validate($request, ['id' => 'required|integer|exists:'.$model->getTable().',id']);
+        $itemModel = $model->find($fields['id']);
         if ($fileField) {
             if (is_array($fileField)) {
                 foreach ($fileField as $field) {
@@ -407,15 +409,13 @@ class AdminController extends Controller
         return response()->json(['success' => true]);
     }
 
-    private function getSomething(
+    protected function getSomething(
         Request $request,
         string $key,
         string $head,
         Model $model,
 
         string $slug=null,
-        array $ids=[],
-
         string $parentKey=null,
         string $parentHead=null,
         Model $parentModel=null,
@@ -456,12 +456,12 @@ class AdminController extends Controller
             ];
             return $this->showView($key);
         } else {
-            $this->data[$key.'s'] = count($ids) ? $model->whereIn('id',$ids)->get() : $model->all();
+            $this->data[$key.'s'] = $model->all();
             return $this->showView($key.'s');
         }
     }
 
-    private function editSomething(
+    protected function editSomething(
         Request $request,
         array $validationArr,
         Model $model,
@@ -473,7 +473,7 @@ class AdminController extends Controller
         if (!$this->authorize('edit')) abort(403, trans('content.403'));
         $validationArr = array_merge($validationArr,$imageValidationArr);
 
-        if ($request->has('id')) {
+        if ($request->has('id') && $request->input('id')) {
             // Base validation, merging fields and setting special fields
             $fields = array_merge(
                 $fields,
@@ -517,7 +517,7 @@ class AdminController extends Controller
         return $item;
     }
 
-    private function setSeo(Request $request, Model $item): void
+    protected function setSeo(Request $request, ?Model $item): void
     {
         $seoFields = $this->validate($request, [
             'title' => 'nullable|max:255',
@@ -525,16 +525,25 @@ class AdminController extends Controller
             'description' => 'nullable|max:3000',
         ]);
 
-        if (count($seoFields)) {
-            if (isset($item->seo)) $item->seo->update($seoFields);
-            else {
-                $seoFields[substr($item->getTable(),0,-1).'_id'] = $item->id;
+        $existSeo = false;
+        foreach ($seoFields as $field) {
+            if ($field) {
+                $existSeo = true;
+                break;
+            }
+        }
+
+        if ($existSeo) {
+            if ($item->seo) {
+                $item->seo->update($seoFields);
+            } else {
+                $seoFields[$this->getRelationIdName($item)] = $item->id;
                 Seo::create($seoFields);
             }
         }
     }
 
-    private function showView($view): View
+    protected function showView($view): View
     {
         return view('admin.'.$view, array_merge
             (
@@ -544,20 +553,20 @@ class AdminController extends Controller
         );
     }
 
-    private function setSpecialFields(Request $request, $fields): array
+    protected function setSpecialFields(Request $request, $fields): array
     {
         if ($request->has('active')) $fields['active'] = $request->active ? 1 : 0;
         if ($request->has('limit')) $fields['limit'] = $this->convertTime($request->limit);
         return $fields;
     }
 
-    private function convertTime($time): int
+    protected function convertTime($time): int
     {
         $time = explode('/', $time);
         return strtotime($time[1].'/'.$time[0].'/'.$time[2]);
     }
 
-    private function processingImages(Request $request, array $fields, array $imagesFields, string $pathToImages, $itemModel=null): array
+    protected function processingImages(Request $request, array $fields, array $imagesFields, string $pathToImages, $itemModel=null): array
     {
         if ($pathToImages) {
             foreach ($imagesFields as $imageField) {
@@ -590,30 +599,41 @@ class AdminController extends Controller
         return $fields;
     }
 
-    private function deleteFile($path): void
+    protected function deleteFile($path): void
     {
         if (file_exists(base_path('public/'.$path))) unlink(base_path('public/'.$path));
     }
 
-    private function getMenuItem(string $key, string $name, string $description, string $icon, bool $hidden=false): void
+    protected function getMenu(array $menuData): void
     {
-        $this->menu[$key] = [
-            'id' => $key,
-            'href' => 'admin.'.$key,
-            'name' => str_replace(':','', $name),
-            'description' => $description,
-            'icon' => $icon,
-            'hidden' => $hidden
+        foreach ($menuData as $data) {
+            $this->menu[$data['key']] = [
+                'id' => $data['key'],
+                'href' => 'admin.'.$data['key'],
+                'name' => str_replace(':','', $data['name']),
+                'description' => isset($data['description']) ? $data['description'] : '',
+                'icon' => $data['icon'],
+                'hidden' => isset($data['hidden']) && $data['hidden']
+            ];
+        }
+    }
+
+    protected function getBreadcrumbs(string $key, string $head, string $paramKey=null): array
+    {
+        return [
+            'href' => $this->menu[$key.'s']['href'],
+            'params' => ['id' => $this->data[$paramKey ?: $key]->id],
+            'name' => trans('admin.'.($this->authorize('edit') ? 'edit_' : 'view_').$key, [$key => $this->data[$paramKey ?: $key][$head]]),
         ];
     }
 
-    private function getBreadcrumbs($key, $head): array
+    protected function getRelationIdName(Model $item) :string
     {
-        return [
-            'id' => $this->menu[$key.'s']['id'],
-            'href' => $this->menu[$key.'s']['href'],
-            'params' => ['id' => $this->data[$key]->id],
-            'name' => trans('admin.'.($this->authorize('edit') ? 'edit_' : 'view_').$key, [$key => $this->data[$key][$head]]),
-        ];
+        return $this->getCutTableName($item).'_id';
+    }
+
+    protected function getCutTableName(Model $item) :string
+    {
+        return substr($item->getTable(),0,-1);
     }
 }

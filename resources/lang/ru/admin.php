@@ -62,6 +62,8 @@ return [
     'image' => 'Картинка',
     'head' => 'Заголовок',
     'name' => 'Наименование',
+    'name_ru' => 'Наименование по русски',
+    'name_en' => 'Наименование по английски',
     'edit_content' => 'Редактирование «:content»',
     'view_content' => 'Просмотр «:content»',
     'content' => 'Контент',
@@ -72,6 +74,10 @@ return [
     'view_contact' => 'Просмотр контакта',
     'contact' => 'Контакт',
     'map' => 'Карта',
+
+    'repair' => 'Универсальная страница Ремонта',
+    'maintenances' => 'Универсальная страница Техобслуживания',
+    'spare' => 'Универсальная страница Запчастей',
 
     'these_fields_are_required' => 'Данные поля обязательны к заполнению',
     'edit_offer_repair' => 'Редактирование «:offer_repair»',
@@ -118,4 +124,24 @@ return [
 
     'do_you_really_want_delete_this_image' => 'Вы действительно хотите удалить эту картинку?',
     'folder' => 'Папка «:folder»',
+
+    'do_you_really_want_delete_this_brand' => 'Вы действительно хотите удалить этот бренд?',
+    'edit_brand' => 'Редактирование бренда «:brand»',
+    'view_brand' => 'Просмотр бренда «:brand»',
+    'adding_brand' => 'Добавление бренда',
+    'add_brand' => 'Добавить бренд',
+    'elected' => 'Избранный',
+    'not_elected' => 'Не избранный',
+
+    'brand_repair' => 'Текст «Ремонт»',
+    'model_repairs' => 'Текста «Ремонт»',
+    'model_maintenance' => 'Текст «Техобслуживания»',
+    'brand_maintenances' => 'Текста «Техобслуживания»',
+    'brand_spare' => 'Текст «Запчастей»',
+
+    'do_you_really_want_delete_this_car' => 'Вы действительно хотите удалить эту модель?',
+    'edit_car' => 'Редактирование модели «:car»',
+    'view_car' => 'Просмотр модели «:car»',
+    'adding_car' => 'Добавление модели',
+    'add_car' => 'Добавить модель',
 ];

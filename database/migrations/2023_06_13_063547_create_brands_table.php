@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('slug',20);
             $table->string('logo')->unique();
-            $table->string('image',60)->unique();
+            $table->string('image',60)->nullable();
             $table->string('name_en',20)->unique();
             $table->string('name_ru',20)->unique();
             $table->boolean('elected')->nullable();
