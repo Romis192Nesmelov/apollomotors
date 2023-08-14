@@ -59,30 +59,30 @@ class AdminBrandsController extends AdminBaseController
             $this->deleteFile($car['image_full']);
             $this->deleteFile($car['image_preview']);
         }
+
         $brand->delete();
         return response()->json(['success' => true]);
     }
 
     public function brandRepair(Request $request): View
     {
-        return $this->getRMS(new Brand(), $request->id, 'repair');
+        return $this->getRMS($request, new Brand(), $request->id, 'repair');
     }
 
     public function brandMaintenances(Request $request): View
     {
-        return $this->getRMS(new Brand(), $request->id, 'maintenances');
+        return $this->getRMS($request, new Brand(), $request->id, 'maintenances');
     }
 
     public function brandSpare(Request $request): View
     {
-        return $this->getRMS(new Brand(), $request->id, 'spare');
+        return $this->getRMS($request, new Brand(), $request->id, 'spare');
     }
 
     public function editBrandRepair(Request $request): RedirectResponse
     {
         $brand = $this->editRMS($request, new Brand(),'repair');
         $this->setSeo($request, $brand->repair);
-        $this->saveCompleteMessage();
         return redirect(route('admin.brands',['id' => $brand->id]));
     }
 
@@ -90,7 +90,6 @@ class AdminBrandsController extends AdminBaseController
     {
         $brand = $this->editRMS($request, new Brand(),'maintenances');
         $this->setSeo($request, $brand->maintenances[0]);
-        $this->saveCompleteMessage();
         return redirect(route('admin.brands',['id' => $brand->id]));
     }
 
@@ -98,11 +97,77 @@ class AdminBrandsController extends AdminBaseController
     {
         $brand = $this->editRMS($request, new Brand(),'spare');
         $this->setSeo($request, $brand->spare);
-        $this->saveCompleteMessage();
         return redirect(route('admin.brands',['id' => $brand->id]));
     }
 
-    private function getRMS(Model $model, int $id, string $relationName): View
+    public function cars(Request $request, $slug=null): View
+    {
+        return $this->getSomething(
+            $request,
+            'action_question',
+            'question',
+            new Car(),
+            $slug,
+            'brand',
+            'name_'.app()->getLocale(),
+            new Brand(),
+        );
+    }
+
+    public function editCar(Request $request): RedirectResponse
+    {
+        $car = $this->editSomething(
+            $request,
+            ['name_ru' => $this->validationString, 'name_en' => $this->validationString, 'brand_id' => $this->validationBrandId],
+            new Car(),
+            ['image_full' => $this->validationPng, 'image_preview' => $this->validationJpg],
+            'storage/images/cars/',
+        );
+        return redirect(route('admin.brands', ['id' => $car->brand->id]));
+    }
+
+    public function deleteCar(Request $request): JsonResponse
+    {
+        $this->deleteSomething($request, new Car(), ['image_full', 'image_preview']);
+    }
+
+    public function carRepairs(Request $request): View
+    {
+        return $this->getRMS($request, new Car(), $request->id, 'repairs');
+    }
+
+    public function carMaintenance(Request $request): View
+    {
+        return $this->getRMS($request, new Car(), $request->id, 'maintenance');
+    }
+
+    public function carSpare(Request $request): View
+    {
+        return $this->getRMS($request, new Car(), $request->id, 'spare');
+    }
+
+    public function editCarRepairs(Request $request): RedirectResponse
+    {
+        $car = $this->editRMS($request, new Car(),'repairs');
+        $this->setSeo($request, $car->repairs[0]);
+        return redirect(route('admin.cars',['id' => $car->id, 'parent_id' => $car->brand->id]));
+    }
+
+    public function editCarMaintenance(Request $request): RedirectResponse
+    {
+        $car = $this->editRMS($request, new Car(),'maintenance');
+        $this->setSeo($request, $car->maintenance);
+        return redirect(route('admin.cars',['id' => $car->id, 'parent_id' => $car->brand->id]));
+    }
+
+    public function editCarSpare(Request $request): RedirectResponse
+    {
+        $car = $this->editRMS($request, new Car(),'spare');
+        $this->setSeo($request, $car->spare);
+        return redirect(route('admin.cars',['id' => $car->id, 'parent_id' => $car->brand->id]));
+    }
+
+    private function getRMS(Request $request, Model $model, int $id, string $relationName): View
     {
         $itemName = $this->getCutTableName($model);
         $this->data['item'] = $model->findOrFail($id);
@@ -118,7 +183,7 @@ class AdminBrandsController extends AdminBaseController
                 'name' => trans('admin.'.($this->authorize('edit') ? 'edit_' : 'view_').'brand', ['brand' => $this->data['item']->brand['name_'.app()->getLocale()]]),
             ];
         }
-        $this->breadcrumbs[] = $this->getBreadcrumbs($itemName, 'name_'.app()->getLocale(), 'item');
+        $this->breadcrumbs[] = $this->getBreadcrumbs($request, 'car','name_'.app()->getLocale(), 'item');
         $this->breadcrumbs[] = [
             'id' => 'rmp_',
             'href' => 'admin.'.$itemName.'_'.$relationName,
@@ -135,23 +200,25 @@ class AdminBrandsController extends AdminBaseController
         $item = $model->findOrFail($request->input('id'));
 
         if ($relationName == 'repairs' || $relationName == 'maintenances') {
-            $fields = $this->validate($request, ['text1' => $this->validationText,'text2' => 'nullable|max:3000']);
+            $fields = $this->validate($request, ['text1' => $this->validationLongText,'text2' => $this->validationLongText]);
             for ($i=0;$i<2;$i++) {
                 $newFields = ['text' => $fields['text'.($i+1)]];
-                if (isset($item->$relationName[$i])) $item->$relationName[$i]->update($newFields);
+                if ( isset($item->$relationName[$i]) ) $item->$relationName[$i]->update($newFields);
                 else {
                     $newFields[$this->getRelationIdName($item)] = $item->id;
                     $item->$relationName()->create($newFields);
                 }
             }
         } else {
-            $fields = $this->validate($request, ['text' => $this->validationText]);
+            $fields = $this->validate($request, ['text' => $this->validationLongText]);
             if ($item->$relationName) $item->$relationName->update($fields);
             else {
                 $fields[$this->getRelationIdName($item)] = $item->id;
                 $item->$relationName()->create($fields);
             }
         }
+
+        $this->saveCompleteMessage();
         return $item->refresh();
     }
 }

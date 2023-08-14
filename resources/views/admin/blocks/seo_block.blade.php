@@ -11,21 +11,21 @@
             'type' => 'text',
             'max' => 255,
             'placeholder' => 'Title',
-            'value' => $pos !== false ? (isset($item[0]) && isset($item[0]->seo) ? $item[0]->seo->title : '') : (isset($item) && isset($item->seo) ? $item->seo->title : '')
+            'value' => $item ? $item->title : ''
         ])
         @include('admin.blocks.textarea_block',[
             'required' => false,
             'name' => 'keywords',
             'label' => 'Keywords',
             'simple' => true,
-            'value' => $pos !== false ? (isset($item[0]) && isset($item[0]->seo) ? $item[0]->seo->keywords : '') : (isset($item) && isset($item->seo) ? $item->seo->keywords : '')
+            'value' => $item ? $item->keywords : ''
         ])
         @include('admin.blocks.textarea_block',[
             'required' => false,
             'name' => 'description',
             'label' => 'Description',
             'simple' => true,
-            'value' => $pos !== false ? (isset($item[0]) && isset($item[0]->seo) ? $item[0]->seo->description : '') : (isset($item) && isset($item->seo) ? $item->seo->description : '')
+            'value' => $item ? $item->description : ''
         ])
     </div>
 </div>

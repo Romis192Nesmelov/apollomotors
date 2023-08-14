@@ -5,7 +5,16 @@
         <form class="form-horizontal" action="{{ $route }}" method="post">
             @csrf
             @include('admin.blocks.hidden_id_block',['value' => $item->id])
-            @include('admin.blocks.seo_block',['item' => $item->$relation, 'pos' => ($relation == 'repairs' || $relation == 'maintenances')])
+
+            @if ( ($relation == 'repairs' || $relation == 'maintenances') && isset($item->$relation[0]) && isset($item->$relation[0]->seo) )
+                @php $seoItem = $item->$relation[0]->seo; @endphp
+            @elseif (isset($item->$relation) && isset($item->$relation->seo))
+                @php $seoItem = $item->$relation->seo; @endphp
+            @else
+                @php $seoItem = null; @endphp
+            @endif
+            @include('admin.blocks.seo_block',['item' => $seoItem])
+
             <div class="panel panel-flat">
                 @include('admin.blocks.title_block')
                 <div class="panel-body">
@@ -27,7 +36,7 @@
                             'required' => true,
                             'name' => 'text',
                             'label' => trans('admin.content'),
-                            'value' => $item->$relation ? $item->$relation->text : ''
+                            'value' => isset($item->$relation) ? $item->$relation->text : ''
                         ])
                     @endif
                     @include('admin.blocks.edit_button_block')

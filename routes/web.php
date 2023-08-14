@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\AdminBaseController;
 use App\Http\Controllers\Admin\AdminBrandsController;
+use App\Http\Controllers\Admin\AdminActionsController;
 use App\Http\Controllers\BaseController;
 use App\Http\Controllers\BrandController;
 use App\Http\Controllers\FeedbackController;
@@ -103,5 +104,21 @@ Route::prefix('admin')->middleware(['auth'])->name('admin.')->group(function () 
     Route::get('/cars/{slug?}', [AdminBrandsController::class, 'cars'])->name('cars');
     Route::post('/edit-car', [AdminBrandsController::class, 'editCar'])->name('edit_car');
     Route::post('/delete-car', [AdminBrandsController::class, 'deleteCar'])->name('delete_car');
+
+    Route::get('/car-repairs', [AdminBrandsController::class, 'carRepairs'])->name('car_repairs');
+    Route::get('/car-maintenance', [AdminBrandsController::class, 'carMaintenance'])->name('car_maintenance');
+    Route::get('/car-spare', [AdminBrandsController::class, 'carSpare'])->name('car_spare');
+
+    Route::post('/edit-car-repairs', [AdminBrandsController::class, 'editCarRepairs'])->name('edit_car_repairs');
+    Route::post('/edit-car-maintenance', [AdminBrandsController::class, 'editCarMaintenance'])->name('edit_car_maintenance');
+    Route::post('/edit-car-spare', [AdminBrandsController::class, 'editCarSpare'])->name('edit_car_spare');
+
+    Route::get('/actions/{slug?}', [AdminActionsController::class, 'actions'])->name('actions');
+    Route::post('/edit-action', [AdminActionsController::class, 'editAction'])->name('edit_action');
+    Route::post('/delete-action', [AdminActionsController::class, 'deleteAction'])->name('delete_action');
+
+    Route::get('/action-questions/{slug?}', [AdminActionsController::class, 'actionQuestions'])->name('action_questions');
+    Route::post('/edit-action-question', [AdminActionsController::class, 'editActionQuestion'])->name('edit_action_question');
+    Route::post('/delete-action-question', [AdminActionsController::class, 'deleteActionQuestion'])->name('delete_action_question');
 });
 

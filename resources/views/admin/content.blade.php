@@ -6,7 +6,7 @@
             @csrf
             @include('admin.blocks.hidden_id_block',['value' => $content->id])
             @if ($content->id != 1)
-                @include('admin.blocks.seo_block',['item' => $content])
+                @include('admin.blocks.seo_block',['item' => $content->seo])
             @endif
             <div class="panel panel-flat">
                 @include('admin.blocks.title_block')

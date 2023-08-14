@@ -7,8 +7,13 @@
             </tr>
             @foreach ($parts as $part)
                 <tr>
-                    <td class="text-left">{{ trans('admin.brand_'.$part) }}</td>
-                    @include('admin.blocks.edit_cell_block', ['href' => route('admin.brand_'.$part, ['id' => $item->id])])
+                    <td class="text-left">{{ trans('admin.'.$part_name.'_'.$part) }}</td>
+                    @include('admin.blocks.edit_cell_block', [
+                        'href' => route('admin.'.$part_name.'_'.$part, [
+                            'id' => $item->id,
+                            'parent_id' => Request::has('parent_id') ? Request::input('parent_id') : null
+                        ])
+                    ])
                 </tr>
             @endforeach
         </table>

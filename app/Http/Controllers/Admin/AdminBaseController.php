@@ -42,15 +42,29 @@ class AdminBaseController extends Controller
             ['key' => 'contacts', 'name' => trans('menu.contacts'), 'description' => trans('admin_menu.contacts_description'), 'icon' => 'icon-bookmark'],
             ['key' => 'offer_repairs', 'name' => trans('content.we_offer_repairs'), 'description' => trans('admin_menu.home_page_block_editing'), 'icon' => 'icon-hammer-wrench'],
             ['key' => 'free_checks', 'name' => trans('content.free_check'), 'description' => trans('admin_menu.home_page_block_editing'), 'icon' => 'icon-shield-check'],
-            ['key' => 'checks', 'name' => trans('admin.checks'), 'description' => trans('admin_menu.home_page_block_editing'), 'icon' => 'icon-checkmark2', 'hidden' => true],
+            ['key' => 'checks', 'hidden' => true],
             ['key' => 'prices', 'name' => trans('content.our_prices'), 'description' => trans('admin_menu.home_page_block_editing'), 'icon' => 'icon-price-tags'],
             ['key' => 'questions', 'name' => trans('content.do_you_know_that'), 'description' => trans('admin_menu.home_page_block_editing'), 'icon' => 'icon-question4'],
             ['key' => 'clients', 'name' => trans('content.we_are_trusted'), 'description' => trans('admin_menu.home_page_block_editing'), 'icon' => 'icon-truck'],
             ['key' => 'articles', 'name' => trans('menu.articles'), 'description' => trans('admin_menu.articles'), 'icon' => 'icon-magazine'],
             ['key' => 'gallery', 'name' => trans('admin_menu.gallery'), 'description' => trans('admin_menu.gallery_description'), 'icon' => 'icon-images3'],
             ['key' => 'brands', 'name' => trans('admin_menu.brands'), 'description' => trans('admin_menu.brands_description'), 'icon' => 'icon-chess-queen'],
+            ['key' => 'cars', 'hidden' => true],
+            ['key' => 'actions', 'name' => trans('admin_menu.actions'), 'description' => trans('admin_menu.actions_description'), 'icon' => 'icon-gift'],
+            ['key' => 'action_questions', 'hidden' => true],
         ];
-        $this->getMenu($menuData);
+        foreach ($menuData as $data) {
+            $this->menu[$data['key']] = [
+                'id' => $data['key'],
+                'href' => 'admin.'.$data['key']
+            ];
+            if (!isset($data['hidden']) || !$data['hidden']) {
+                $this->menu[$data['key']]['name'] = str_replace(':','', $data['name']);
+                $this->menu[$data['key']]['description'] = isset($data['description']) ? $data['description'] : null;
+                $this->menu[$data['key']]['icon'] = $data['icon'];
+                $this->menu[$data['key']]['hidden'] = false;
+            } else $this->menu[$data['key']]['hidden'] = true;
+        }
         $this->breadcrumbs[] = $this->menu['home'];
     }
 
@@ -124,7 +138,7 @@ class AdminBaseController extends Controller
             ['head' => $this->validationString, 'text' => $this->validationText],
             new Content()
         );
-        $this->setSeo($request, $content);
+        if ($content->id != 1) $this->setSeo($request, $content);
         return redirect(route('admin.contents'));
     }
 
@@ -252,7 +266,7 @@ class AdminBaseController extends Controller
     {
         $this->editSomething(
             $request,
-            ['name' => $this->validationString, 'brand_id' => 'required|integer|exists:brands,id'],
+            ['name' => $this->validationString, 'brand_id' => $this->validationBrandId],
             new Check()
         );
         return redirect(route('admin.prices'));
@@ -393,7 +407,7 @@ class AdminBaseController extends Controller
         return response()->json(['success' => true]);
     }
 
-    protected function deleteSomething(Request $request, Model $model, string $fileField=null): JsonResponse
+    protected function deleteSomething(Request $request, Model $model, $fileField=null): JsonResponse
     {
         if (!$this->authorize('delete')) abort(403, trans('content.403'));
         $fields = $this->validate($request, ['id' => 'required|integer|exists:'.$model->getTable().',id']);
@@ -432,11 +446,11 @@ class AdminBaseController extends Controller
             if ($parentParentsKey) {
                 $this->data[$parentParentsKey] = $this->data[$parentKey][$parentParentsKey];
                 $this->breadcrumbs[] = $this->menu[$parentParentsKey.'s'];
-                $this->breadcrumbs[] = $this->getBreadcrumbs($parentParentsKey, $parentParentsHead);
+                $this->breadcrumbs[] = $this->getBreadcrumbs($request, $parentParentsKey, $parentParentsHead);
             }
 
             $this->breadcrumbs[] = $this->menu[$parentKey.'s'];
-            $this->breadcrumbs[] = $this->getBreadcrumbs($parentKey, $parentHead);
+            $this->breadcrumbs[] = $this->getBreadcrumbs($request, $parentKey, $parentHead);
         } else {
             $this->breadcrumbs[] = $this->menu[$key.'s'];
             $this->data['menu_key'] = $key.'s';
@@ -444,7 +458,7 @@ class AdminBaseController extends Controller
 
         if ($request->has('id')) {
             $this->data[$key] = $model->findOrFail($request->input('id'));
-            $this->breadcrumbs[] = $this->getBreadcrumbs($key, $head);
+            $this->breadcrumbs[] = $this->getBreadcrumbs($request, $key, $head);
             return $this->showView($key);
         } else if ($slug && $slug == 'add') {
             if (!$this->authorize('edit')) abort(403, trans('403'));
@@ -514,7 +528,7 @@ class AdminBaseController extends Controller
         }
 
         $this->saveCompleteMessage();
-        return $item;
+        return $item->refresh();
     }
 
     protected function setSeo(Request $request, ?Model $item): void
@@ -604,25 +618,13 @@ class AdminBaseController extends Controller
         if (file_exists(base_path('public/'.$path))) unlink(base_path('public/'.$path));
     }
 
-    protected function getMenu(array $menuData): void
+    protected function getBreadcrumbs(Request $request, string $key, string $head, string $paramKey=null): array
     {
-        foreach ($menuData as $data) {
-            $this->menu[$data['key']] = [
-                'id' => $data['key'],
-                'href' => 'admin.'.$data['key'],
-                'name' => str_replace(':','', $data['name']),
-                'description' => isset($data['description']) ? $data['description'] : '',
-                'icon' => $data['icon'],
-                'hidden' => isset($data['hidden']) && $data['hidden']
-            ];
-        }
-    }
-
-    protected function getBreadcrumbs(string $key, string $head, string $paramKey=null): array
-    {
+        $paramsArr = ['id' => $this->data[$paramKey ?: $key]->id];
+        if ($request->has('parent_id')) $paramsArr['parent_id'] = $request->input('parent_id');
         return [
             'href' => $this->menu[$key.'s']['href'],
-            'params' => ['id' => $this->data[$paramKey ?: $key]->id],
+            'params' => $paramsArr,
             'name' => trans('admin.'.($this->authorize('edit') ? 'edit_' : 'view_').$key, [$key => $this->data[$paramKey ?: $key][$head]]),
         ];
     }

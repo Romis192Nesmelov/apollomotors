@@ -7,7 +7,7 @@
             @if (isset($article))
                 @include('admin.blocks.hidden_id_block',['value' => $article->id])
             @endif
-            @include('admin.blocks.seo_block',['item' => isset($article) ? $article : null])
+            @include('admin.blocks.seo_block',['item' => isset($article) ? $article->seo : null])
             <div class="panel panel-flat">
                 @include('admin.blocks.title_block')
                 <div class="panel-body">

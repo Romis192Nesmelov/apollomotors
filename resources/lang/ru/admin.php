@@ -133,15 +133,38 @@ return [
     'elected' => 'Избранный',
     'not_elected' => 'Не избранный',
 
+    'href' => 'Ссылка',
+
     'brand_repair' => 'Текст «Ремонт»',
-    'model_repairs' => 'Текста «Ремонт»',
-    'model_maintenance' => 'Текст «Техобслуживания»',
-    'brand_maintenances' => 'Текста «Техобслуживания»',
+    'brand_maintenances' => 'Текст «Техобслуживания»',
     'brand_spare' => 'Текст «Запчастей»',
 
+    'car_repairs' => 'Текста «Ремонт»',
+    'car_maintenance' => 'Текста «Техобслуживания»',
+    'car_spare' => 'Текст «Запчастей»',
+
+    'cars' => 'Модели',
+    'edit_car_parent' => 'Наименование бренда',
+    'image_preview' => 'Превью картинки',
+    'image_full' => 'Полная картинка',
     'do_you_really_want_delete_this_car' => 'Вы действительно хотите удалить эту модель?',
     'edit_car' => 'Редактирование модели «:car»',
     'view_car' => 'Просмотр модели «:car»',
     'adding_car' => 'Добавление модели',
     'add_car' => 'Добавить модель',
+
+    'action' => 'Акция',
+    'image_small' => 'Маленькая картинка',
+    'do_you_really_want_delete_this_action' => 'Вы действительно хотите удалить эту акцию?',
+    'edit_action' => 'Редактирование акции «:action»',
+    'view_action' => 'Просмотр акции «:action»',
+    'adding_action' => 'Добавление акции',
+    'add_action' => 'Добавить акцию',
+    'brands_in_action' => 'Бренды учавствующие в акции',
+    'action_faq' => 'FAQ по акции',
+
+    'edit_action_question' => 'Редактирование вопроса по акции «:action_question»',
+    'view_action_question' => 'Просмотр вопроса по акции «:action_question»',
+    'adding_action_question' => 'Добавление вопроса по акции',
+    'add_action_question' => 'Добавить вопрос по акции',
 ];
