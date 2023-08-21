@@ -104,8 +104,8 @@ class AdminBrandsController extends AdminBaseController
     {
         return $this->getSomething(
             $request,
-            'action_question',
-            'question',
+            'car',
+            'name_'.app()->getLocale(),
             new Car(),
             $slug,
             'brand',
