@@ -1,5 +1,6 @@
 <x-modal
-    id="delete-modal"
+    class="delete-modal"
+    id="{{ isset($id) ? $id : 'delete-modal' }}"
     head="{{ trans('admin.warning') }}"
     footer="1"
     yes_button="1"

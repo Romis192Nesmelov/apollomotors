@@ -14,12 +14,14 @@
                 <div class="modal-footer">
                     @if ($attributes->has('yes_button') && $attributes->get('yes_button'))
                         @include('blocks.button_block',[
+                            'id' => null,
                             'buttonType' => 'button',
                             'primary' => true,
                             'addClass' => 'm-auto mt-3 delete-yes',
                             'buttonText' => trans('content.yes')
                         ])
                         @include('blocks.button_block',[
+                            'id' => null,
                             'primary' => true,
                             'dataDismiss' => true,
                             'addClass' => 'm-auto mt-3',
@@ -27,6 +29,7 @@
                         ])
                     @else
                         @include('blocks.button_block',[
+                            'id' => null,
                             'primary' => true,
                             'dataDismiss' => true,
                             'addClass' => 'm-auto mt-3',

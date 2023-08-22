@@ -1,6 +1,18 @@
 @extends('layouts.admin')
 
 @section('content')
+    @can('delete')
+        @include('admin.blocks.modal_delete_block',[
+            'id' => 'delete-modal-repair',
+            'action' => 'delete_repair',
+            'head' => trans('admin.do_you_really_want_delete_this_position')
+        ])
+        @include('admin.blocks.modal_delete_block',[
+            'id' => 'delete-modal-spare',
+            'action' => 'delete_spare',
+            'head' => trans('admin.do_you_really_want_delete_this_spare')
+        ])
+    @endcan
     @can('edit')
         <form class="form-horizontal" enctype="multipart/form-data" action="{{ route('admin.edit_car') }}" method="post">
             @csrf
@@ -78,5 +90,37 @@
             'item' => $car,
             'parts' => ['repairs','maintenance','spare']
         ])
+        <div class="panel panel-flat">
+            <x-atitle>{{ trans('content.repair_prices', ['car' => $car->brand['name_'.app()->getLocale()].' '.$car['name_'.app()->getLocale()] ]) }}</x-atitle>
+            <div class="panel-body">
+            @include('admin.blocks.datatable_block',[
+                'items' => $car->priceRepairs,
+                'route' => 'repairs',
+                'parentId' => $car->id,
+                'columns' => ['head', 'price','active'],
+                'addMode' => Gate::allows('edit'),
+                'editMode' => Gate::allows('edit'),
+                'deleteMode' => Gate::allows('delete'),
+                'modal' => 'delete-modal-repair',
+                'addButtonText' => trans('admin.add_repair')
+            ])
+            </div>
+        </div>
+        <div class="panel panel-flat">
+            <x-atitle>{{ trans('admin.car_spares', ['car' => $car->brand['name_'.app()->getLocale()].' '.$car['name_'.app()->getLocale()] ]) }}</x-atitle>
+            <div class="panel-body">
+                @include('admin.blocks.datatable_block',[
+                    'items' => $car->spares,
+                    'route' => 'spares',
+                    'parentId' => $car->id,
+                    'columns' => ['head', 'text','active'],
+                    'addMode' => Gate::allows('edit'),
+                    'editMode' => Gate::allows('edit'),
+                    'deleteMode' => Gate::allows('delete'),
+                    'modal' => 'delete-modal-spare',
+                    'addButtonText' => trans('admin.add_repair')
+                ])
+            </div>
+        </div>
     @endif
 @endsection

@@ -1,4 +1,4 @@
 <tr>
-    <th>{{ trans('content.name') }}</th>
-    <th>{{ trans('content.price') }} ₽</th>
+    <th class="text-left">{{ trans('content.name') }}</th>
+    <th class="text-center">{{ trans('content.price') }} ₽</th>
 </tr>

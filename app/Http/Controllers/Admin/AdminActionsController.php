@@ -9,11 +9,7 @@ use App\Models\Brand;
 use App\Models\Action;
 use App\Models\ActionBrand;
 
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Http\JsonResponse;
-use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
-//use Illuminate\Support\Str;
 use Illuminate\View\View;
 
 class AdminActionsController extends AdminBaseController
@@ -41,25 +37,6 @@ class AdminActionsController extends AdminBaseController
         );
     }
 
-    public function editAction(Request $request): RedirectResponse
-    {
-        $action = $this->editSomething(
-            $request,
-            ['head' => $this->validationString, 'text' => $this->validationLongText],
-            new Action(),
-            ['image' => $this->validationJpg, 'image_small' => $this->validationJpg],
-            'storage/images/actions/',
-        );
-        $action->brand()->sync($request->input('brands_id'));
-        $this->setSeo($request, $action);
-        return redirect(route('admin.actions'));
-    }
-
-    public function deleteAction(Request $request): JsonResponse
-    {
-        $this->deleteSomething($request, new Action(), ['image', 'image_small']);
-    }
-
     public function actionQuestions(Request $request, $slug=null): View
     {
         return $this->getSomething(
@@ -72,20 +49,5 @@ class AdminActionsController extends AdminBaseController
             'head',
             new Action(),
         );
-    }
-
-    public function editActionQuestion(Request $request): RedirectResponse
-    {
-        $actionQuestion = $this->editSomething(
-            $request,
-            ['question' => $this->validationString, 'answer' => $this->validationText, 'action_id' => 'required|integer|exists:actions,id'],
-            new ActionQuestion()
-        );
-        return redirect(route('admin.actions', ['id' => $actionQuestion->action->id]));
-    }
-
-    public function deleteActionQuestion(Request $request): JsonResponse
-    {
-        $this->deleteSomething($request, new ActionQuestion());
     }
 }

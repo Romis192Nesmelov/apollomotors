@@ -58,8 +58,8 @@ class Car extends Model
         return $this->hasOne(CarSpare::class);
     }
 
-    public function seo(): HasOne
+    public function spares(): HasMany
     {
-        return $this->hasOne(Seo::class);
+        return $this->hasMany(Spare::class);
     }
 }

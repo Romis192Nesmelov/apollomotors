@@ -37,12 +37,17 @@ td.image img,
 
 .table-items td.delete > span {
     cursor: pointer;
-    color: blue;
+    color: #166dba;
 }
 
 .table-items td.cb-copy > i {
     cursor: pointer;
-    color: blue;
+    color: #166dba;
+}
+
+.framed-image img {
+    width: calc(100% - 15px);
+    border: 5px solid #c8c8c8;
 }
 
 .form-group {
@@ -65,17 +70,26 @@ td.image img,
     font-size: 13px;
     top: 12px;
     left: 10px;
-    /*transform: translateY(-50%);*/
+    transform: translateY(-50%);
     color: grey;
 }
 
-.form-group {
-    border-color: #D84315;
+.form-group.number i {
+    font-size: 20px;
+    top: 24px;
 }
 
-.form-group.error .cke {
-    border: 1px solid red;
+.form-group.number.has-label i {
+    top: 50px;
 }
+
+/*.form-group {*/
+/*    border-color: #D84315;*/
+/*}*/
+
+/*.form-group.error .cke {*/
+/*    border: 1px solid red;*/
+/*}*/
 
 .form-group div.error {
     color: red;

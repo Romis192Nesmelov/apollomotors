@@ -3,12 +3,14 @@
 namespace App\Http\Controllers;
 
 use App\Models\Action;
+use Illuminate\Database\Eloquent\Model;
 
 trait HelperTrait
 {
     public $validationPhone = 'required|regex:/^((\+)?(\d)(\s)?(\()?[0-9]{3}(\))?(\s)?([0-9]{3})(\-)?([0-9]{2})(\-)?([0-9]{2}))$/';
     public $validationPassword = 'required|confirmed|min:3|max:50';
     public $validationInteger = 'required|integer';
+    public $validationNumeric = 'required|numeric';
     public $validationString = 'required|min:3|max:255';
     public $validationText = 'required|min:5|max:3000';
     public $validationLongText = 'required|min:5|max:50000';
@@ -19,6 +21,9 @@ trait HelperTrait
     public $validationPng = 'mimes:png|max:2000';
     public $validationDate = 'regex:/^(\d{2})\/(\d{2})\/(\d{4})$/';
     public $validationBrandId = 'required|integer|exists:brands,id';
+    public $validationCarId = 'required|integer|exists:cars,id';
+    public $validationRepairId = 'required|integer|exists:repairs,id';
+    public $validationSpareId = 'required|integer|exists:spares,id';
     public $skippingFolders = [
         'actions',
         'icons',
@@ -31,6 +36,16 @@ trait HelperTrait
         'brands',
         'cars'
     ];
+
+    public function deleteFile($path): void
+    {
+        if (file_exists(base_path('public/'.$path))) unlink(base_path('public/'.$path));
+    }
+
+    public function getCutTableName(Model $item) :string
+    {
+        return substr($item->getTable(),0,-1);
+    }
 
     public function saveCompleteMessage()
     {

@@ -88,21 +88,20 @@ $(document).ready(function () {
     });
 
     // Click to delete items
-    let deleteModal = $('#delete-modal');
     window.deleteId = null;
     window.deleteRow = null;
 
     // Change pagination on data-tables
     $('table.datatable-basic').on('draw.dt', function () {
-        bindDelete(deleteModal);
+        bindDelete();
         bindFancybox();
     });
 
-    bindFancybox();
-    bindDelete(deleteModal);
+    bindDelete();
 
     // Click YES on delete modal
     $('.delete-yes').click(function () {
+        let deleteModal = $(this).parents('.modal');
         deleteModal.modal('hide');
         addLoader();
 
@@ -116,22 +115,38 @@ $(document).ready(function () {
             }
         });
     });
+
+    // Carousel repair images
+    $('#repair-images').owlCarousel(oul_settings(
+        10,
+        true,
+        3000,
+        {
+            0: {
+                items: 1
+            },
+            768: {
+                items: 3
+            },
+            1000: {
+                items: 4
+            }
+        }
+    ));
+
+    bindFancybox();
+
+
 });
 
-function bindDelete(deleteModal) {
+function bindDelete() {
     let deleteIcon = $('.glyphicon-remove-circle');
     deleteIcon.unbind();
     deleteIcon.click(function () {
+        let deleteModal = $(this).attr('modal-data');
         window.deleteId = $(this).attr('del-data');
         window.deleteRow = $(this).parents('tr');
-        deleteModal.modal('show');
-    });
-}
-
-function bindFancybox() {
-    // Fancybox init
-    $('a.fancybox').fancybox({
-        padding: 3
+        $('#' + deleteModal).modal('show');
     });
 }
 
