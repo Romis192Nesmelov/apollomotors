@@ -295,6 +295,10 @@ class AdminEditController extends Controller
         return redirect(route('admin.actions', ['id' => $actionQuestion->action->id]));
     }
 
+    /**
+     * @throws \Illuminate\Auth\Access\AuthorizationException
+     * @throws \Illuminate\Validation\ValidationException
+     */
     public function editRepair(Request $request): RedirectResponse
     {
         $fields = [
@@ -487,6 +491,10 @@ class AdminEditController extends Controller
         return redirect(route('admin.records', ['date' => $record->date]));
     }
 
+    /**
+     * @throws \Illuminate\Auth\Access\AuthorizationException
+     * @throws \Illuminate\Validation\ValidationException
+     */
     private function editSomething(
         Request $request,
         array $validationArr,
@@ -501,10 +509,8 @@ class AdminEditController extends Controller
 
         if ($request->has('id') && $request->input('id')) {
             // Base validation, merging fields and setting special fields
-            $fields = array_merge(
-                $fields,
-                $this->setSpecialFields($request, $this->validate($request, $validationArr))
-            );
+            $fields = array_merge($fields, $this->setSpecialFields($request, $this->validate($request, $validationArr)));
+            $fields = $this->checkSlugField($fields);
 
             // Getting item
             $item = $model->findOrFail($request->input('id'));
@@ -525,15 +531,11 @@ class AdminEditController extends Controller
             }
 
             // Base validation, merging (if exist password fields) and setting special fields
-            $fields = array_merge(
-                $fields,
-                $this->setSpecialFields($request, $this->validate($request, $validationArr))
-            );
+            $fields = array_merge($fields, $this->setSpecialFields($request, $this->validate($request, $validationArr)));
+            $fields = $this->checkSlugField($fields);
 
             // Processing image define images fields
-            if ($pathToImages) {
-                $fields = $this->processingImages($request, $fields, array_keys($imageValidationArr), $pathToImages);
-            }
+            if ($pathToImages) $fields = $this->processingImages($request, $fields, array_keys($imageValidationArr), $pathToImages);
 
             // Creating item
             $item = $model->create($fields);
@@ -711,5 +713,11 @@ class AdminEditController extends Controller
     {
         $parts = explode(':',$time);
         return (double)$parts[0]+($parts[1] == '30' ? 0.5 : 0);
+    }
+
+    private function checkSlugField(array $fields): array
+    {
+        if (isset($fields['slug'])) $fields['slug'] = Str::slug($fields['slug']);
+        return $fields;
     }
 }
