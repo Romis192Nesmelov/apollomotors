@@ -1,13 +1,14 @@
 <div class="panel-body">
-    <table class="table datatable-basic table-items">
+    <table class="table {{ count($columns) < 3 ? 'table-striped' : 'datatable-basic' }} table-items{{ isset($addClass) && $addClass ? ' '.$addClass : '' }}">
         <tr>
-            @if (count($columns) == 3)
+            @if (count($columns) < 4)
                 @include('admin.blocks.th_id_cell_block')
             @endif
+
             @foreach ($columns as $column)
                 @if ($column == 'slug' && $slugMode)
                     <th class="text-center">{{ trans('admin.title') }}</th>
-                @elseif (strpos($column, 'image') !== false)
+                @elseif (strpos($column, 'image') !== false || $column == 'full' || $column == 'preview')
                     <th class="text-center">{{ trans('admin.image') }}</th>
                 @elseif ($column == 'created_at')
                     @include('admin.blocks.th_created_at_cell_block')
@@ -20,44 +21,56 @@
             @include('admin.blocks.th_edit_cell_block')
             @include('admin.blocks.th_delete_cell_block')
         </tr>
-        @foreach ($items as $item)
-            <tr role="row">
-                @if (count($columns) == 3)
-                    <td class="id">{{ $item->id }}</td>
-                @endif
-                @foreach ($columns as $column)
-                    @if ($column == 'slug' && $slugMode)
-                        <td class="text-left">{{ trans('admin.'.$item->slug) }}</td>
-                    @elseif (strpos($column, 'image') !== false)
-                        <td class="text-center image">
-                            <a href="{{ isset($item->image_full) ? asset($item->image_full) : asset($item[$column]) }}" class="fancybox">
-                                <img src="{{ asset($item[$column]) }}" />
-                            </a>
-                        </td>
-                    @elseif ($column == 'icon')
-                        <td class="text-center"><i class="{{ $item->icon }}"></i></td>
-                    @elseif ($column == 'parent_brand')
-                        <td class="text-center w-25"><img class="w-100" src="{{ asset($item->brand->logo) }}" /></td>
-                    @elseif ($column == 'elected')
-                        <td class="text-center w-25">@include('admin.blocks.elected_status_block', ['elected' => $item->elected])</td>
-                    @elseif ($column == 'active')
-                            <td class="text-center w-25">@include('admin.blocks.active_status_block', ['active' => $item->active])</td>
-                    @elseif ($column == 'type')
-                        <td class="text-center">@include('admin.blocks.type_block')</td>
-                    @elseif ($column == 'text' || $column == 'answer')
-                        <td class="text-left">@include('blocks.cropped_content_block',['content' => $item[$column], 'length' => 300])</td>
-                    @else
-                        <td class="text-center {{ ($column == 'email' || $column == 'head' || $column == 'name') ? 'head' : '' }}">{{ $item[$column] }}</td>
+        @if ($items)
+            @foreach ($items as $item)
+                <tr role="row">
+                    @if (count($columns) < 4)
+                        <td class="id">{{ $item->id }}</td>
                     @endif
-                @endforeach
-                @include('admin.blocks.edit_cell_block', ['href' => isset($route) ? route('admin.'.$route, ['id' => $item->id, 'parent_id' => (isset($parentId) && $parentId ? $parentId : '')]) : route($menu[$menu_key]['href'], ['id' => $item->id])])
-                @if ($deleteMode)
-                    @include('admin.blocks.delete_cell_block',['id' => $item->id])
-                @else
-                    <td></td>
-                @endif
-            </tr>
-        @endforeach
+                    @foreach ($columns as $column)
+                        @if ($column == 'slug' && $slugMode)
+                            <td class="text-left">{{ trans('admin.'.$item->slug) }}</td>
+                        @elseif (strpos($column, 'image') !== false || $column == 'full' || $column == 'preview')
+                            @include('admin.blocks.datatable_image_block')
+                        @elseif ($column == 'icon')
+                            <td class="text-center"><i class="{{ $item->icon }}"></i></td>
+                        @elseif ($column == 'parent_brand')
+                            <td class="text-center w-25"><img class="w-100" src="{{ asset($item->brand->logo) }}" /></td>
+                        @elseif ($column == 'elected')
+                            <td class="text-center w-25">@include('admin.blocks.elected_status_block', ['elected' => $item->elected])</td>
+                        @elseif ($column == 'active')
+                                <td class="text-center w-25">@include('admin.blocks.active_status_block', ['active' => (isset($relation) ? $item[$relation]->active : $item->active)])</td>
+                        @elseif ($column == 'type')
+                            <td class="text-center">@include('admin.blocks.type_block')</td>
+                        @elseif ($column == 'text' || $column == 'answer')
+                            <td class="text-left">@include('blocks.cropped_content_block',['content' => $item[$column], 'length' => 300])</td>
+                        @elseif ($column == 'price')
+                            <td class="text-center">
+                                @include('issues.blocks.repair_table.table_list_repair_price_block',['item' => (isset($relation) ? $item[$relation] : $item)])
+                            </td>
+                        @else
+                            <td class="text-center">
+                                @if (isset($relation))
+                                    {{ $item[$relation][$column] }}
+                                @else
+                                    {{ $item[$column] }}
+                                @endif
+                            </td>
+                        @endif
+                    @endforeach
+                    @if ($editMode)
+                        @include('admin.blocks.edit_cell_block', ['href' => isset($route) ? route('admin.'.$route, ['id' => $item->id, 'parent_id' => (isset($parentId) && $parentId ? $parentId : '')]) : route($menu[$menu_key]['href'], ['id' => $item->id])])
+                    @else
+                        <td></td>
+                    @endif
+                    @if ($deleteMode)
+                        @include('admin.blocks.delete_cell_block',['id' => $item->id])
+                    @else
+                        <td></td>
+                    @endif
+                </tr>
+            @endforeach
+        @endif
     </table>
 </div>
 @if ($addMode)

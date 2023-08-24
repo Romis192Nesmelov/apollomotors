@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\MissingMechanic;
 use App\Models\RepairSpare;
 use Illuminate\Database\Seeder;
 
@@ -38,7 +39,10 @@ class DatabaseSeeder extends Seeder
         $this->call(QuestionsSeeder::class);
         $this->call(ClientsSeeder::class);
         $this->call(ArticleSeeder::class);
-
         $this->call(ActionsBrandsSeeder::class);
+
+        $this->call(MechanicsSeeder::class);
+        $this->call(MissingMechanicsSeeder::class);
+        $this->call(RecordsSeeder::class);
     }
 }

@@ -26,18 +26,6 @@ $(window).on('load', function () {
         fixingMainMenu();
     });
 
-    // Fancybox init
-    $('.fancybox').fancybox({
-        'autoScale': true,
-        'touch': false,
-        'transitionIn': 'elastic',
-        'transitionOut': 'elastic',
-        'speedIn': 500,
-        'speedOut': 300,
-        'autoDimensions': true,
-        'centerOnScroll': true
-    });
-
 	// Adding icon to fancybox block
     $('.image').each(function() {
 		if ($(this).find('a.fancybox').length) $(this).prepend($('<i></i>').addClass('icon-search4'));
@@ -45,7 +33,7 @@ $(window).on('load', function () {
 
 
     // Carousel actions
-    $('#actions-block').owlCarousel(oulSettings(
+    $('#actions-block').owlCarousel(oul_settings(
         10,
         false,
         6000,
@@ -53,7 +41,7 @@ $(window).on('load', function () {
     ));
 
     // Carousel brands
-    $('#brands-block').owlCarousel(oulSettings(
+    $('#brands-block').owlCarousel(oul_settings(
         10,
         true,
         5000,
@@ -71,7 +59,7 @@ $(window).on('load', function () {
     ));
 
     // Carousel actions brands
-    $('#actions-brand-block').owlCarousel(oulSettings(
+    $('#actions-brand-block').owlCarousel(oul_settings(
         3,
         false,
         5000,
@@ -89,7 +77,7 @@ $(window).on('load', function () {
     ));
 
     // Carousel clients
-    $('#clients-block').owlCarousel(oulSettings(
+    $('#clients-block').owlCarousel(oul_settings(
         10,
         true,
         3000,
@@ -107,7 +95,7 @@ $(window).on('load', function () {
     ));
 
     // Carousel repair images
-    $('#repair-images').owlCarousel(oulSettings(
+    $('#repair-images').owlCarousel(oul_settings(
         10,
         true,
         3000,
@@ -123,6 +111,9 @@ $(window).on('load', function () {
             }
         }
     ));
+
+    // Fancybox init
+    bindFancybox();
 
     // Show add content
     showHideContent($('section.add-content'));
@@ -192,22 +183,6 @@ $(window).on('load', function () {
     });
 });
 
-function oulSettings(margin, nav, timeout, responsive) {
-    let navButtonBlack1 = '<img src="/storage/images/arrow_left.svg" />',
-        navButtonBlack2 = '<img src="/storage/images/arrow_right.svg" />';
-
-    return {
-        margin: margin,
-        loop: true,
-        nav: nav,
-        autoplay: true,
-        autoplayTimeout: timeout,
-        dots: !nav,
-        responsive: responsive,
-        navText: [navButtonBlack1, navButtonBlack2]
-    }
-}
-
 function fixingMainMenu() {
     let mainMenuFix = $('#main-nav');
     if ($(window).scrollTop() > 250) {
@@ -248,19 +223,6 @@ function windowResize() {
     maxHeight($('.article-announcement'), 50);
     maxHeight($('.action-list .action'), 30);
     maxHeight($('#actions-brand-block table'), 0);
-}
-
-function maxHeight(objs, padBottom) {
-    if ($(window).width() > 650) {
-        var maxHeight = 0;
-        objs.each(function() {
-            if (maxHeight < $(this).height()) maxHeight = $(this).height();
-        });
-    } else {
-        maxHeight = 'auto';
-    }
-    if (padBottom) maxHeight += padBottom;
-    objs.css('height',maxHeight);
 }
 
 function bigTablesScroll() {

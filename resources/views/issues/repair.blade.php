@@ -44,14 +44,7 @@
                 @if ($repair->upon_reaching_years)
                     <div class="block first">
                         <img src="{{ asset('storage/images/indicator/sand_clock_icon.svg') }}" />
-                        <div>
-                            {{ $repair->upon_reaching_years }}
-                            @if (substr($repair->upon_reaching_years, -1) == 1)
-                                {{ trans('indicator.years1') }}
-                            @else
-                                {{ trans('indicator.years2') }}
-                            @endif
-                        </div>
+                        <div>@include('issues.blocks.upon_reaching_years_block')</div>
                     </div>
                 @endif
                 @if ($repair->upon_reaching_mileage)
@@ -64,7 +57,7 @@
                     <div class="block fourth">{{ trans('indicator.free_diagnostics') }}</div>
                 @endif
                 @if ($repair->warranty_years)
-                    <div class="block fifth">{{ trans('indicator.warranty_years'.($repair->warranty_years <= 4 ? '1' : '2'), ['years' => $repair->warranty_years]) }}</div>
+                    <div class="block fifth">@include('issues.blocks.warranty_years_block')</div>
                 @endif
             </div>
             <div class="dial right">
@@ -105,13 +98,7 @@
 
     @if (count($repair->images))
         <x-section class="gray">
-            <div id="repair-images" class="owl-carousel">
-                @foreach ($repair->images as $image)
-                    <div class="framed-image">
-                        <a class="fancybox" href="{{ asset($image->image) }}"><img src="{{ asset($image->preview) }}" /></a>
-                    </div>
-                @endforeach
-            </div>
+            @include('issues.blocks.carousel_repair_images_block')
         </x-section>
     @endif
 
@@ -155,10 +142,12 @@
             <x-table class="simple">
                 @include('issues.blocks.repair_table.table_list_repair_head_block')
                 @foreach($repair->recommendedWorks as $recommendedWork)
-                    @include('issues.blocks.repair_table.table_list_repair_item_block', [
-                        'car' => $recommendedWork->work->car,
-                        'item' => $recommendedWork->work
-                    ])
+                    @if ($recommendedWork->work->active)
+                        @include('issues.blocks.repair_table.table_list_repair_item_block', [
+                            'car' => $recommendedWork->work->car,
+                            'item' => $recommendedWork->work
+                        ])
+                    @endif
                 @endforeach
             </x-table>
         </x-section>

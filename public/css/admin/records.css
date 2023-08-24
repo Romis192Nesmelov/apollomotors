@@ -1,0 +1,238 @@
+.years {
+    width: 100%;
+    display: table;
+    margin-top: 15px;
+}
+
+.years .year {
+    font-size: 22px;
+    font-weight: bold;
+    float: left;
+    margin-right: 10px;
+}
+
+.bigger {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.records-month {
+    display: table;
+}
+
+table.records-calendar {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+table.records-calendar tr {
+    border-bottom: 1px solid grey;
+}
+
+table.records-calendar th,
+table.records-calendar td {
+    font-size: 15px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+table.records-calendar td {
+    color: lightgrey;
+}
+
+table.records-calendar td .counter {
+    width: 15px;
+    height: 15px;
+    color: white;
+    padding-top: 2px;
+    margin-left: 2px;
+    position: absolute;
+    text-align: center;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #0a68b4;
+    font-size: 9px;
+    font-weight: bold;
+    z-index: 999;
+}
+
+table.records-calendar th,
+table.records-calendar tr td:first-child {
+    color: black;
+}
+
+table.records th {
+    height: 20px;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    border: 1px solid white;
+    background-color: #d58512;
+}
+
+.big-table-container {
+    overflow-x: hidden;
+}
+
+table.records td {
+    text-align: center;
+    padding: 20px 5px;
+    vertical-align: middle;
+    font-size: 10px;
+    line-height: 1em;
+    border: 1px solid grey;
+}
+
+table.records td:not(.record) {
+    background-color: lightcyan;
+}
+
+table.records td.record {
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+table.records td.record div {
+    font-size: 12px;
+    font-weight: normal;
+    margin: auto;
+}
+
+table.records td.record .record-title {
+    font-size: 11px;
+    font-weight: bold;
+}
+
+table.records td.record div {
+    margin-bottom: 3px;
+}
+
+table.records td.record,
+table.records td.record a {
+    color: white !important;
+}
+
+table.records td img.brand {
+    height: 25px;
+    float: none;
+}
+
+table.records td img.car {
+    width: 70px;
+}
+
+table.records td a:hover img.car {
+    opacity: 0.5;
+}
+
+table.records td.point {
+    background-color: #b4ecf3;
+    font-weight: bolder;
+    color: grey;
+    font-size: 15px;
+    text-align: left;
+    border-color: white;
+}
+
+table.records td.point.sub-point {
+    background-color: #b3d271;
+}
+
+table.datatable-basic span.label {
+    margin-bottom: 5px;
+}
+
+table.sub-tasks {
+    width: 100%;
+}
+
+table.sub-tasks th {
+    padding-left: 7px;
+}
+
+table.sub-tasks td {
+    padding: 5px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+table.sub-tasks tr td.sub-price {
+    width: 10%;
+}
+
+table.sub-tasks tr td:last-child {
+    width: 20px;
+}
+
+table.sub-tasks i {
+    cursor: pointer;
+}
+
+table.sub-tasks .form-group {
+    margin-bottom: 0;
+}
+
+ul.csv-files {
+    list-style: none;
+}
+
+table.range-input {
+    width: 100%;
+}
+
+table.range-input td.value {
+    width: 180px;
+    padding: 0 5px;
+}
+
+div.mechanic {
+    margin-bottom: 3px;
+    font-size: 15px;
+}
+
+table.idle-mechanics {
+    width: 100%;
+}
+
+table.idle-mechanics th,
+table.idle-mechanics td {
+    width: 20px;
+    text-align: center;
+    border: 1px solid grey;
+}
+
+table.idle-mechanics th:first-child {
+    width: calc(20% - 10px);
+    text-align: left;
+    color: grey;
+    padding: 5px;
+}
+
+table.idle-mechanics td.mechanic-name {
+    /*width: 15%;*/
+    font-size: 12px;
+    text-align: left;
+    font-weight: bold;
+    padding: 5px;
+}
+
+table.idle-mechanics.edit i {
+    cursor: pointer;
+}
+
+table.idle-mechanics.edit i:hover {
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 768px) {
+    .brand {
+        width: 100% !important;
+    }
+
+    .table-cell {
+        width: 100%;
+        display: block;
+    }
+}

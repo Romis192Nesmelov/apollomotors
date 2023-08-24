@@ -55,4 +55,22 @@ $( document ).ready(function () {
         radioClass: 'choice',
         wrapperClass: 'border-indigo-600 text-indigo-800'
     });
+
+    // Single picker
+    $('.daterange-single').daterangepicker({
+        singleDatePicker: true,
+        locale: {
+            format: 'DD/MM/YYYY',
+            monthNames : ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
+            daysOfWeek : ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
+            week: moment.locale('en', {
+                week: { dow: 1 }
+            })
+        }
+    });
+
+    // Disable filtering
+    $('.listbox-filter-disabled').bootstrapDualListbox({
+        showFilterInputs: false
+    });
 });

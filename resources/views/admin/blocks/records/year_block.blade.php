@@ -1,0 +1,1 @@
+<div class="year"><a href="{{ url('admin/records/'.$year) }}">{{ $year }}</a></div>

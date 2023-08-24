@@ -18,6 +18,8 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/admin/components.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/admin/colors.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.fancybox.min.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/owl.carousel.min.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/admin/records.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/admin/admin.css') }}">
     <!-- /global stylesheets -->
 
@@ -26,33 +28,40 @@
     <script type="text/javascript" src="{{ asset('js/admin/core/libraries/bootstrap.min.js') }}"></script>
     <!-- /core JS files -->
 
-{{--    <script type="text/javascript" src="{{ asset('js/plugins/forms/inputs/typeahead/typeahead.bundle.min.js') }}"></script>--}}
-{{--    <script type="text/javascript" src="{{ asset('js/plugins/forms/inputs/typeahead/handlebars.min.js') }}"></script>--}}
-
     <script type="text/javascript" src="{{ asset('js/admin/plugins/tables/datatables/datatables.min.js') }}"></script>
-
     <script type="text/javascript" src="{{ asset('js/admin/plugins/ui/moment/moment.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/admin/plugins/pickers/daterangepicker.js') }}"></script>
 
     <script type="text/javascript" src="{{ asset('js/admin/plugins/pickers/anytime.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/admin/plugins/pickers/pickadate/picker.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/admin/plugins/pickers/pickadate/picker.date.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/admin/plugins/pickers/pickadate/picker.time.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/admin/plugins/pickers/pickadate/legacy.js') }}"></script>
+
+{{--    <script type="text/javascript" src="{{ asset('js/admin/plugins/loaders/blockui.min.js') }}"></script>--}}
+    <script type="text/javascript" src="{{ asset('js/admin/plugins/forms/inputs/duallistbox.min.js') }}"></script>
 
     <script type="text/javascript" src="{{ asset('js/admin/plugins/forms/styling/uniform.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/admin/plugins/forms/styling/switchery.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/admin/plugins/forms/styling/bootstrap-switch.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/admin/plugins/forms/styling/bootstrap-toggle.min.js') }}"></script>
-{{--    <script type="text/javascript" src="{{ asset('js/admin/plugins/forms/selects/select2.min.js') }}"></script>--}}
-{{--    <script type="text/javascript" src="{{ asset('js/admin/plugins/sliders/ion_rangeslider.min.js') }}"></script>--}}
 
     <script type="text/javascript" src="{{ asset('js/jquery.fancybox.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/owl.carousel.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('ckeditor/ckeditor.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/jquery.maskedinput.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/admin/core/main.controls.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/admin/core/app.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/admin/core/main.controls.js') }}"></script>
+
     <script type="text/javascript" src="{{ asset('js/loader.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/fancybox_init.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/oul_settings.js') }}"></script>
+
+    <script type="text/javascript" src="{{ asset('js/admin/plugins/visualization/echarts/echarts.js') }}"></script>
+
+    <script type="text/javascript" src="{{ asset('js/max.height.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/admin/admin.js') }}"></script>
-{{--    <script type="text/javascript" src="{{ asset('js/setbackground.js') }}"></script>--}}
+    <script type="text/javascript" src="{{ asset('js/admin/lines_areas.js') }}"></script>
 </head>
 
 <body>
@@ -157,17 +166,16 @@
                 <h4>
                     @foreach ($breadcrumbs as $breadcrumb)
                         @if ($loop->first)
-                            <a {{ count($breadcrumbs) > 2 ? 'href='.route($breadcrumbs[count($breadcrumbs)-2]['href']) : '' }}><i class="icon-arrow-left52 position-left"></i></a>
                             <span class="text-semibold">
                                   @include('blocks.cropped_content_block',[
-                                    'content' => '- '.$breadcrumb['name'],
-                                    'length' => 30
+                                    'content' => $breadcrumb['name'],
+                                    'length' => 100
                                   ])
                             </span>
-                        @else
+                        @elseif (isset($breadcrumb['name']))
                             @include('blocks.cropped_content_block',[
                                 'content' => '- '.$breadcrumb['name'],
-                                'length' => 30
+                                'length' => 100
                               ])
                         @endif
                     @endforeach
@@ -178,14 +186,16 @@
         <div class="breadcrumb-line">
             <ul class="breadcrumb">
                 @foreach ($breadcrumbs as $breadcrumb)
-                    <li>
-                        <a href="{{ isset($breadcrumb['params']) ? route($breadcrumb['href'],$breadcrumb['params']) : route($breadcrumb['href']) }}{{ isset($breadcrumb['slug']) ? '/'.$breadcrumb['slug'] : '' }}">
-                            @include('blocks.cropped_content_block',[
-                            'content' => $breadcrumb['name'],
-                            'length' => 40
-                        ])
-                        </a>
-                    </li>
+                    @if (isset($breadcrumb['name']))
+                        <li>
+                            <a href="{{ isset($breadcrumb['params']) ? route($breadcrumb['href'], $breadcrumb['params']) : route($breadcrumb['href']) }}">
+                                @include('blocks.cropped_content_block',[
+                                    'content' => $breadcrumb['name'],
+                                    'length' => 100
+                                ])
+                            </a>
+                        </li>
+                    @endif
                 @endforeach
             </ul>
         </div>

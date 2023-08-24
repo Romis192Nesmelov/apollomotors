@@ -61,6 +61,11 @@ class Repair extends Model
         return $this->hasMany(SubRepair::class);
     }
 
+    public function repairSpares(): HasMany
+    {
+        return $this->hasMany(RepairSpare::class);
+    }
+
     public function spares(): BelongsToMany
     {
         return $this->belongsToMany(Spare::class)->orderBy('head');

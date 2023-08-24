@@ -16,7 +16,7 @@ class Kernel extends ConsoleKernel
         //          ->hourly();
         $schedule->call('CronController@hourly')->hourly();
         $schedule->call('CronController@daily')->dailyAt('3:00');
-//        $schedule->call('CronController@weekly')->weekly();
+        $schedule->call('CronController@weekly')->weekly();
         $schedule->call('CronController@monthly')->monthly();
     }
 

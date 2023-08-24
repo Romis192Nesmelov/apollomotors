@@ -1,3 +1,5 @@
+window.allMonths = ['Янв.', 'Фев.', 'Март', 'Апр.', 'Май', 'Июнь', 'Июль', 'Авг.', 'Сент.', 'Окт.', 'Нояб.', 'Декаб.'];
+window.statisticsData = [];
 $(document).ready(function () {
     // Phone mask
     $('input[name=phone], input.phone').mask("+7(999)999-99-99");
@@ -6,6 +8,14 @@ $(document).ready(function () {
     $('.styled').uniform();
 
     if (window.showMessage) $('#message-modal').modal('show');
+
+    setTimeout(function () {
+        windowResize();
+    },1000);
+
+    $(window).resize(function() {
+        windowResize();
+    });
 
     // Single picker
     // $('.daterange-single').daterangepicker({
@@ -88,21 +98,20 @@ $(document).ready(function () {
     });
 
     // Click to delete items
-    let deleteModal = $('#delete-modal');
     window.deleteId = null;
     window.deleteRow = null;
 
     // Change pagination on data-tables
     $('table.datatable-basic').on('draw.dt', function () {
-        bindDelete(deleteModal);
+        bindDelete();
         bindFancybox();
     });
 
-    bindFancybox();
-    bindDelete(deleteModal);
+    bindDelete();
 
     // Click YES on delete modal
     $('.delete-yes').click(function () {
+        let deleteModal = $(this).parents('.modal');
         deleteModal.modal('hide');
         addLoader();
 
@@ -116,23 +125,80 @@ $(document).ready(function () {
             }
         });
     });
+
+    // Carousel repair images
+    $('#repair-images').owlCarousel(oul_settings(
+        10,
+        true,
+        3000,
+        {
+            0: {
+                items: 1
+            },
+            768: {
+                items: 3
+            },
+            1000: {
+                items: 4
+            }
+        }
+    ));
+
+    bindFancybox();
+
+    // Changing button online-record settings
+    if ($('.button-settings').length) {
+        $('.button-settings .units input[type=radio]').on('switchChange.bootstrapSwitch', function (event, state) {
+            let newVal = $(this).val();
+            let container = $(this).parents('.button-settings');
+            container.find('.distance input').attr('max',(newVal === 'percents' ? 50 : 300));
+        });
+    }
+
+    // Click to idle-mechanics icon
+    $('table.idle-mechanics.edit i').click(function () {
+        var icon = $(this),
+            parentCell = icon.parents('td');
+
+        $.post('/admin/change-idle-mechanic', {
+            '_token': $('input[name=_token]').val(),
+            'date': parseInt(parentCell.attr('date')),
+            'id': parseInt(parentCell.attr('id'))
+        }, function (data) {
+            if (data.success) {
+                if (data.mode === 1) {
+                    icon.removeClass('icon-spam text-danger-800');
+                    icon.addClass('icon-checkmark text-success');
+                } else {
+                    icon.removeClass('icon-checkmark text-success');
+                    icon.addClass('icon-spam text-danger-800');
+                }
+            }
+        });
+    });
 });
 
-function bindDelete(deleteModal) {
+function windowResize() {
+    maxHeight($('.records-month'), 20);
+}
+
+function bindDelete() {
     let deleteIcon = $('.glyphicon-remove-circle');
     deleteIcon.unbind();
     deleteIcon.click(function () {
+        let deleteModal = $(this).attr('modal-data');
         window.deleteId = $(this).attr('del-data');
         window.deleteRow = $(this).parents('tr');
-        deleteModal.modal('show');
+        $('#' + deleteModal).modal('show');
     });
 }
 
-function bindFancybox() {
-    // Fancybox init
-    $('a.fancybox').fancybox({
-        padding: 3
+function cloneArrayData(data) {
+    let newData = [];
+    $.each(data, function (k,item) {
+        newData[k] = item;
     });
+    return newData;
 }
 
 // function translit(text, engToRus) {

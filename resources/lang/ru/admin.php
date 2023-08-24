@@ -37,6 +37,7 @@ return [
     'save' => 'Сохранить',
     'upload' => 'Загрузить',
     'save_complete' => 'Сохранение произведено',
+    'delete_complete' => 'Удаление произведено',
 
     'do_you_really_want_delete_this_position' => 'Вы действительно хотите удалить эту позицию?',
     'do_you_really_want_delete_this_user' => 'Вы действительно хотите удалить этого пользователя?',
@@ -62,6 +63,7 @@ return [
     'image' => 'Картинка',
     'head' => 'Заголовок',
     'name' => 'Наименование',
+    'mechanic_name' => 'Имя',
     'name_ru' => 'Наименование по русски',
     'name_en' => 'Наименование по английски',
     'edit_content' => 'Редактирование «:content»',
@@ -75,6 +77,7 @@ return [
     'contact' => 'Контакт',
     'map' => 'Карта',
 
+    'repairs' => 'Ремонты',
     'repair' => 'Универсальная страница Ремонта',
     'maintenances' => 'Универсальная страница Техобслуживания',
     'spare' => 'Универсальная страница Запчастей',
@@ -143,6 +146,7 @@ return [
     'car_maintenance' => 'Текста «Техобслуживания»',
     'car_spare' => 'Текст «Запчастей»',
 
+    'car' => 'Модель',
     'cars' => 'Модели',
     'edit_car_parent' => 'Наименование бренда',
     'image_preview' => 'Превью картинки',
@@ -161,10 +165,60 @@ return [
     'adding_action' => 'Добавление акции',
     'add_action' => 'Добавить акцию',
     'brands_in_action' => 'Бренды учавствующие в акции',
+    'add_brands' => 'Добавить бренд',
     'action_faq' => 'FAQ по акции',
 
     'edit_action_question' => 'Редактирование вопроса по акции «:action_question»',
     'view_action_question' => 'Просмотр вопроса по акции «:action_question»',
     'adding_action_question' => 'Добавление вопроса по акции',
     'add_action_question' => 'Добавить вопрос по акции',
+
+    'price_from' => 'Цена от',
+    'price' => 'Цена',
+    'old_price' => 'Старая цена',
+    'edit_repair' => 'Редактирование работы «:repair»',
+    'view_repair' => 'Просмотр работы «:repair»',
+    'adding_repair' => 'Добавление работы',
+    'add_repair' => 'Добавить работу',
+
+    'adding_sub_repairs' => 'Добавление подработы',
+    'warranty_years' => 'Бесплатная гарантия (лет)',
+
+    'edit_sub_repair' => 'Редактирование работы «:sub_repair»',
+    'sub_repairs' => 'Подработы',
+    'add_sub_repairs' => 'Добавить подработу',
+    'adding_sub_repair' => 'Добавление подработы',
+    'do_you_really_want_delete_this_sub_repair' => 'Вы действительно хотите удалить эту подработу?',
+
+    'recommended_work' => 'Рекомендованные работы',
+    'add_recommended_work' => 'Добавить рекомендацию по работе',
+    'adding_recommended_work' => 'Добавление рекомендации по работе',
+
+    'repair_spares' => 'Запчасти к ремонту',
+    'add_repair_spare' => 'Добавить запчасть к ремонту',
+    'adding_repair_spare' => 'Добавление запчасти к ремонту',
+
+    'repair_images' => 'Фото ремонта',
+    'add_repair_image' => 'Добавить фото к ремонту',
+    'adding_repair_image' => 'Добавление фото к ремонту',
+    'wrong_file' => 'Не верный путь к файлу!',
+
+    'car_spares' => 'Запчасти для :car',
+    'edit_spare' => 'Редактирование запчасти «:spare»',
+    'add_spares' => 'Добавить запчасть',
+    'adding_spare' => 'Добавление запчасти',
+    'do_you_really_want_delete_this_spare' => 'Вы действительно хотите удалить эту запчасть?',
+    'spare_code' => 'Код запчасти',
+    'price_original' => 'Цена оригинала',
+    'price_original_from' => 'Цена оригинала от',
+    'price_non_original' => 'Цена не оригинала',
+    'price_non_original_from' => 'Цена не оригинала от',
+
+    'do_you_really_want_delete_this_mechanic' => 'Вы действительно хотите удалить этого механика?',
+    'edit_mechanic' => 'Редактирование механика',
+    'view_mechanic' => 'Просмотр механика',
+    'add_mechanics' => 'Добавить механика',
+    'adding_mechanic' => 'Добавление механика',
+    'statistics' => 'Статистика',
+    'message_from' => 'Сообщение с сайта Apollomotors',
 ];
