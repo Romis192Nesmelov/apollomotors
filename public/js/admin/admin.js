@@ -186,10 +186,15 @@ function bindDelete() {
     let deleteIcon = $('.glyphicon-remove-circle');
     deleteIcon.unbind();
     deleteIcon.click(function () {
-        let deleteModal = $(this).attr('modal-data');
+        let deleteModal = $('#' + $(this).attr('modal-data')),
+            inputId = deleteModal.find('input[name=id]');
+
         window.deleteId = $(this).attr('del-data');
         window.deleteRow = $(this).parents('tr');
-        $('#' + deleteModal).modal('show');
+
+        if (inputId.length) inputId.val(window.deleteId);
+
+        deleteModal.modal('show');
     });
 }
 

@@ -485,7 +485,7 @@ class AdminEditController extends Controller
         if (!$this->authorize('delete')) abort(403, trans('content.403'));
         $record = Record::findOrFail($request->input('id'));
         $record->status = 5;
-        $record->user_id = auth()->id;
+        $record->user_id = auth()->user()->id;
         $record->save();
         session()->flash('message', trans('admin.delete_complete'));
         return redirect(route('admin.records', ['date' => $record->date]));

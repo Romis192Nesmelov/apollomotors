@@ -2,12 +2,28 @@
 
 @section('content')
     @if (count($records) && Gate::allows('delete'))
-        <x-modal class="delete-modal" id="delete-modal" head="{{ trans('admin.warning') }}" footer="1" yes_button="1" submit_button="1">
+        <x-modal class="delete-modal" id="delete-modal" head="{{ trans('admin.warning') }}">
             <form action="{{ route('admin.delete_record') }}" method="post">
                 @csrf
                 @include('admin.blocks.hidden_id_block',['value' => ''])
                 <div class="modal-body modal-delete">
                     <h3>{{ trans('records.delete_record') }}</h3>
+                </div>
+                <div class="modal-footer">
+                    @include('blocks.button_block',[
+                        'id' => null,
+                        'buttonType' => 'submit',
+                        'primary' => true,
+                        'addClass' => 'm-auto mt-3',
+                        'buttonText' => trans('content.yes')
+                    ])
+                    @include('blocks.button_block',[
+                        'id' => null,
+                        'primary' => true,
+                        'dataDismiss' => true,
+                        'addClass' => 'm-auto mt-3',
+                        'buttonText' => trans('content.no')
+                    ])
                 </div>
             </form>
         </x-modal>
@@ -46,7 +62,7 @@
                                 @if (!$t)
                                     <td class="point {{ $r > 3 ? 'sub-point' : '' }}">{{ trans('records.point'.($r+1)) }}</td>
                                 @else
-                                    <?php
+                                    @php
                                         $currentRecord = null;
                                         if (count($records)) {
                                             foreach ($records as $recordItem) {
@@ -56,7 +72,7 @@
                                                 }
                                             }
                                         }
-                                    ?>
+                                    @endphp
                                     @if (!$currentRecord && !$mergingCells)
                                         <td>
                                             @if (strtotime(date('m').'/'.date('d').'/'.date('Y')) <= $date)
@@ -66,43 +82,14 @@
                                             @endif
                                         </td>
                                     @elseif (!$mergingCells)
-                                        <?php
+                                        @php
                                             $durationParts = explode(':',$currentRecord->duration);
                                             $mergingCells = (int)$durationParts[0] * 2;
                                             $mergingCells += ($durationParts[1] == '30' ? 1 : 0);
-                                            switch ($currentRecord->status) {
-                                                case 0:
-                                                    $label = 'danger';
-                                                    $status = trans('records.record_status_new');
-                                                    break;
-                                                case 1:
-                                                    $label = 'warning';
-                                                    $status = trans('records.record_status_arrived');
-                                                    break;
-                                                case 2:
-                                                    $label = 'primary';
-                                                    $status = trans('records.record_status_in_work');
-                                                    break;
-                                                case 3:
-                                                    $label = 'success';
-                                                    $status = trans('records.record_status_done');
-                                                    break;
-                                                case 4:
-                                                    $label = 'default';
-                                                    $status = trans('records.record_status_leave');
-                                                    break;
-                                                case 5:
-                                                    $label = 'info';
-                                                    $status = trans('records.record_status_cancel');
-                                                    break;
-                                                default:
-                                                    $label = 'danger';
-                                                    $status = trans('records.record_status_new');
-                                                    break;
-                                            }
-                                        ?>
+                                            list($label, $status) = getRecordLabelAndStatus($currentRecord);
+                                        @endphp
                                         <td {{ $mergingCells > 1 ? 'colspan='.$mergingCells : '' }} class="record label-{{ $label }}">
-                                            @if (Auth::user()->is_admin == 1 || $currentRecord->user_id == Auth::id())
+                                            @if (Auth::user()->is_admin == 1 || $currentRecord->user_id == auth()->user()->id)
                                                 <div class="record_{{ $currentRecord->id }}">
                                                     <a title="{{ $currentRecord->title.' '.$currentRecord->email.' '.($currentRecord->phone ? $currentRecord->phone : '').' '.($currentRecord->name ? $currentRecord->name : '') }}" href="{{ route('admin.records', ['id' => $currentRecord->id]) }}#record">
                                                         @include('admin.blocks.records.table_record_cell_block', ['record' => $currentRecord])
@@ -113,7 +100,6 @@
                                             @endif
                                         </td>
                                     @endif
-
                                     @if ($mergingCells)
                                         <?php $mergingCells--; ?>
                                     @endif
@@ -130,13 +116,15 @@
                     <th class="text-center">{{ trans('records.brand_and_car') }}</th>
                     <th class="text-center">{{ trans('records.record_user_creds') }}</th>
                     <th class="text-center">{{ trans('records.status') }}/<br>{{ trans('records.record_made_by') }}</th>
-                    <th class="delete">{{ trans('admin.delete') }}</th>
+                    @include('admin.blocks.th_delete_cell_block')
                 </tr>
                 @foreach($records as $currentRecord)
                 <tr id="record_{{ $currentRecord->id }}">
                     <td class="text-center bigger">
                         @if (Gate::allows('edit') || $currentRecord->user_id == auth()->user()->id)
-                            <a href="{{ route('admin.records', ['id' => $currentRecord->id]) }}">@include('admin.blocks.records.table_record_item_block',['record' => $currentRecord])</a>
+                            <a href="{{ route('admin.records', ['id' => $currentRecord->id]) }}">
+                                @include('admin.blocks.records.table_record_item_block',['record' => $currentRecord])
+                            </a>
                         @else
                             @include('admin.blocks.records.table_record_item_block',['record' => $currentRecord])
                         @endif
@@ -152,21 +140,23 @@
                         {{ $currentRecord->title }}
                     </td>
                     <td class="text-center">
-                        <img width="50" src="{{ $currentRecord->car_id ? $currentRecord->carLink->preview : asset('storage/images/car_placeholder.jpg') }}"><br><b>{{ $currentRecord->car_id ? ucfirst($currentRecord->carLink->brand->eng).' '.$currentRecord->carLink->eng : ucfirst($currentRecord->car) }}</b>
+                        <img width="50" src="{{ $currentRecord->car_id ? asset($currentRecord->carLink->image_preview) : asset('storage/images/car_placeholder.jpg') }}"><br>
+                        <b>{{ $currentRecord->car_id ? ucfirst($currentRecord->carLink->brand['name_'.app()->getLocale()]).' '.$currentRecord['name_'.app()->getLocale()] : ucfirst($currentRecord->car) }}</b>
                     </td>
                     <td class="text-center">{{ $currentRecord->name }}<br>{{ $currentRecord->phone }}<br><a href="mailto:{{ $currentRecord->email }}">{{ $currentRecord->email }}</a></td>
                     <td class="text-center">
+                        @php list($label, $status) = getRecordLabelAndStatus($currentRecord); @endphp
                         <span class="label label-{{ $label }}">{{ $status }}</span><br>
                         @if (isset($currentRecord->user))
                             <a href="{{ route('admin.users', ['id' => $currentRecord->user_id]) }}">{{ $currentRecord->user->email }}</a><br>
                         @endif
                         <div>{{ $currentRecord->created_at ? $currentRecord->created_at : '' }}</div>
                     </td>
-                    <td class="delete">
-                        @can('delete')
-                            <span del-data="{{ $currentRecord->id }}" modal-data="delete-modal" class="glyphicon glyphicon-remove-circle"></span>
-                        @endif
-                    </td>
+                    @can('delete')
+                        @include('admin.blocks.delete_cell_block',['id' => $currentRecord->id])
+                    @else
+                        <td></td>
+                    @endif
                 </tr>
                 @endforeach
             </table>
