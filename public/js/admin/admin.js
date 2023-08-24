@@ -1,3 +1,5 @@
+window.allMonths = ['Янв.', 'Фев.', 'Март', 'Апр.', 'Май', 'Июнь', 'Июль', 'Авг.', 'Сент.', 'Окт.', 'Нояб.', 'Декаб.'];
+window.statisticsData = [];
 $(document).ready(function () {
     // Phone mask
     $('input[name=phone], input.phone').mask("+7(999)999-99-99");
@@ -6,6 +8,14 @@ $(document).ready(function () {
     $('.styled').uniform();
 
     if (window.showMessage) $('#message-modal').modal('show');
+
+    setTimeout(function () {
+        windowResize();
+    },1000);
+
+    $(window).resize(function() {
+        windowResize();
+    });
 
     // Single picker
     // $('.daterange-single').daterangepicker({
@@ -136,8 +146,41 @@ $(document).ready(function () {
 
     bindFancybox();
 
+    // Changing button online-record settings
+    if ($('.button-settings').length) {
+        $('.button-settings .units input[type=radio]').on('switchChange.bootstrapSwitch', function (event, state) {
+            let newVal = $(this).val();
+            let container = $(this).parents('.button-settings');
+            container.find('.distance input').attr('max',(newVal === 'percents' ? 50 : 300));
+        });
+    }
 
+    // Click to idle-mechanics icon
+    $('table.idle-mechanics.edit i').click(function () {
+        var icon = $(this),
+            parentCell = icon.parents('td');
+
+        $.post('/admin/change-idle-mechanic', {
+            '_token': $('input[name=_token]').val(),
+            'date': parseInt(parentCell.attr('date')),
+            'id': parseInt(parentCell.attr('id'))
+        }, function (data) {
+            if (data.success) {
+                if (data.mode === 1) {
+                    icon.removeClass('icon-spam text-danger-800');
+                    icon.addClass('icon-checkmark text-success');
+                } else {
+                    icon.removeClass('icon-checkmark text-success');
+                    icon.addClass('icon-spam text-danger-800');
+                }
+            }
+        });
+    });
 });
+
+function windowResize() {
+    maxHeight($('.records-month'), 20);
+}
 
 function bindDelete() {
     let deleteIcon = $('.glyphicon-remove-circle');
@@ -148,6 +191,14 @@ function bindDelete() {
         window.deleteRow = $(this).parents('tr');
         $('#' + deleteModal).modal('show');
     });
+}
+
+function cloneArrayData(data) {
+    let newData = [];
+    $.each(data, function (k,item) {
+        newData[k] = item;
+    });
+    return newData;
 }
 
 // function translit(text, engToRus) {

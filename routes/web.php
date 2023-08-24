@@ -1,10 +1,12 @@
 <?php
 
+use App\Http\Controllers\Admin\AdminParserController;
 use App\Http\Controllers\Admin\AdminApiController;
 use App\Http\Controllers\Admin\AdminEditController;
 use App\Http\Controllers\Admin\AdminBaseController;
 use App\Http\Controllers\Admin\AdminBrandsController;
 use App\Http\Controllers\Admin\AdminActionsController;
+use App\Http\Controllers\Admin\AdminRecordsController;
 use App\Http\Controllers\BaseController;
 use App\Http\Controllers\BrandController;
 use App\Http\Controllers\FeedbackController;
@@ -47,6 +49,8 @@ Route::post('/login', [LoginController::class, 'login'])->name('enter');
 Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 
 Route::prefix('admin')->middleware(['auth'])->name('admin.')->group(function () {
+    Route::get('/parser', AdminParserController::class);
+
     Route::get('/', [AdminBaseController::class, 'home'])->name('home');
 
     Route::get('/users/{slug?}', [AdminBaseController::class, 'users'])->name('users');
@@ -146,5 +150,15 @@ Route::prefix('admin')->middleware(['auth'])->name('admin.')->group(function () 
     Route::get('/repair-spares/{slug}', [AdminBrandsController::class, 'repairSpares'])->name('repair_spares');
     Route::post('/add-repair-spare', [AdminEditController::class, 'addRepairSpare'])->name('add_repair_spare');
     Route::post('/delete-repair-spare', [AdminApiController::class, 'deleteRepairSpare'])->name('delete_repair_spare');
+
+    Route::get('/mechanics/{slug?}', [AdminRecordsController::class, 'mechanics'])->name('mechanics');
+    Route::post('/edit-mechanic', [AdminEditController::class, 'editMechanic'])->name('edit_mechanic');
+    Route::post('/edit-missing-mechanics', [AdminEditController::class, 'editMissingMechanics'])->name('edit_missing_mechanics');
+    Route::post('/delete-mechanic', [AdminApiController::class, 'deleteMechanic'])->name('delete_mechanic');
+    Route::post('/change-idle-mechanic', [AdminApiController::class, 'changeIdleMechanic'])->name('change_idle_mechanic');
+
+    Route::get('/records/{slug?}', [AdminRecordsController::class, 'records'])->name('records');
+    Route::post('/edit-record', [AdminEditController::class, 'editRecord'])->name('edit_record');
+    Route::post('/delete-record', [AdminEditController::class, 'deleteRecord'])->name('delete_record');
 });
 

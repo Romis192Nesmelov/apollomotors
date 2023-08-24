@@ -15,7 +15,7 @@
                     @if ($attributes->has('yes_button') && $attributes->get('yes_button'))
                         @include('blocks.button_block',[
                             'id' => null,
-                            'buttonType' => 'button',
+                            'buttonType' => $attributes->has('submit_button') ? 'submit' : 'button',
                             'primary' => true,
                             'addClass' => 'm-auto mt-3 delete-yes',
                             'buttonText' => trans('content.yes')

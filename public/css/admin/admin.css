@@ -68,8 +68,8 @@ td.image img,
 .form-group i {
     position: absolute;
     font-size: 13px;
-    top: 12px;
-    left: 10px;
+    top: 16px;
+    left: 7px;
     transform: translateY(-50%);
     color: grey;
 }
@@ -81,6 +81,10 @@ td.image img,
 
 .form-group.number.has-label i {
     top: 50px;
+}
+
+.form-group.has-label i {
+    top: 45px;
 }
 
 /*.form-group {*/

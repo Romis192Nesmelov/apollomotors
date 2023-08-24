@@ -16,9 +16,12 @@ use App\Models\Contact;
 use App\Models\Content;
 use App\Models\FreeCheck;
 use App\Models\HomePrice;
+use App\Models\Mechanic;
+use App\Models\MissingMechanic;
 use App\Models\OfferRepair;
 use App\Models\Question;
 use App\Models\RecommendedWork;
+use App\Models\Record;
 use App\Models\Repair;
 use App\Models\RepairImage;
 use App\Models\RepairSpare;
@@ -352,6 +355,138 @@ class AdminEditController extends Controller
         return $this->editRepairSomething($request, ['repair_id' => $this->validationRepairId, 'spare_id' => $this->validationSpareId], new RepairSpare());
     }
 
+    public function editMechanic(Request $request): RedirectResponse
+    {
+        $this->editSomething(
+            $request,
+            ['name' => $this->validationString],
+            new Mechanic()
+        );
+        return redirect(route('admin.mechanics'));
+    }
+
+    public function editMissingMechanics(Request $request): RedirectResponse
+    {
+        if (!$this->authorize('edit')) abort(403, trans('content.403'));
+        $validateArr = ['date' => 'required|integer|min:'.strtotime(date('m/d/Y'))];
+        $missingMechanics = $request->has('missing_mechanics') && $request->input('missing_mechanics') ? [] : null;
+        if ($missingMechanics) $validateArr['missing_mechanics'] = 'required|array';
+
+        $this->validate($request, $validateArr);
+
+        $this->data['date'] = $request->input('date');
+
+        if (is_array($missingMechanics)) {
+            foreach ($request->input('missing_mechanics') as $id) {
+                $missingMechanics[] = (int)$id;
+            }
+        }
+
+        $this->getMissingMechanics();
+
+        if (is_array($missingMechanics)) {
+            foreach ($missingMechanics as $id) {
+                if (!in_array($id, $this->data['missing_mechanics'])) {
+                    MissingMechanic::create([
+                        'date' => $this->data['date'],
+                        'mechanic_id' => $id
+                    ]);
+                }
+            }
+        }
+        foreach ($this->data['mechanics'] as $mechanic) {
+            if (!$missingMechanics || (in_array($mechanic->id,$this->data['missing_mechanics']) && !in_array($mechanic->id,$missingMechanics))) {
+                MissingMechanic::where('date',$this->data['date'])->where('mechanic_id',$mechanic->id)->delete();
+            }
+        }
+
+        $this->saveCompleteMessage();
+        return redirect(route('admin.records', ['date' => $this->data['date']]));
+    }
+
+    public function editRecord(Request $request): RedirectResponse
+    {
+        if (!$this->authorize('edit')) abort(403, trans('content.403'));
+        $validateArr = [
+            'point' => 'required|integer|min:1|max:7',
+            'title' => $this->validationString,
+            'phone' => $this->validationPhone,
+            'time' => 'regex:/^((\d){2}:(\d){2})$/',
+            'status' => 'nullable|integer|min:0|max:5',
+//            'duration' => 'regex:/^((\d){1,2}:(\d){2})$/'
+        ];
+
+        $fields = [
+            'send_notice' => ($request->input('send_notice') ? 1 : 0),
+            'date' => $this->convertTimestamp($request->input('date')),
+            'duration' => $request->input('duration')
+        ];
+
+        if ($request->input('email')) $validateArr['email'] = 'email';
+        if ($request->input('car')) {
+            $validateArr['car'] = 'min:2|max:255';
+            $fields['car_id'] = null;
+        } else {
+            $validateArr['car_id'] = 'required|integer|exists:cars,id';
+            $fields['car'] = null;
+        }
+
+        $startTime = $this->convertTime($request->input('time'));
+        $endTime = $startTime + $this->convertTime($request->input('duration'));
+        $sendNotice = false;
+        if ($endTime > 21) {
+            $timeParts = explode('.',(21-$startTime));
+            $fields['duration'] = $timeParts[0].':'.(isset($timeParts[1]) ? '30' : '00');
+        }
+
+        if ($request->has('id')) {
+            $fields = array_merge($fields, $this->validate($request, $validateArr));
+            $record = Record::findOrFail($request->input('id'));
+            if (!$this->authorize('edit') && auth()->user()->id != $record->id) abort(403, trans('content.403'));
+
+            if ($this->checkBusyRecord($fields,$record->id) ) {
+                return redirect(route('admin.records',['id' => $record->id]).'#record')->withInput()->withErrors($this->getBusyRecordErrors());
+            }
+
+            if ($record->status != 2 && $fields['status'] == 2) $sendNotice = 1;
+            elseif ($record->status != 3 && $fields['status'] == 3) $sendNotice = 2;
+
+            $record->update($fields);
+        } else {
+            $fields = array_merge($fields, $this->validate($request, $validateArr));
+            if (!$this->authorize('edit') || !$this->checkRecordTime($fields['date'])) abort(403, trans('content.403'));
+            if ($this->checkBusyRecord($fields))
+                return redirect(route('admin.records',['slug' => 'add', 'date' => $fields['date']]).'#record')->withInput()->withErrors($this->getBusyRecordErrors());
+            else $record = Record::create($fields);
+
+            if ($record->status == 2) $sendNotice = 1;
+            elseif ($record->status == 3) $sendNotice = 2;
+        }
+
+        $phone = $record->phone ? str_replace(['+','(',')','-'],'',$record->phone) : null;
+        if ($sendNotice && $sendNotice == 2 && $record->email) {
+            $this->sendMessage($record->email, [], 'work_is_done');
+        }
+
+        if ($sendNotice && $sendNotice == 2 && $phone && $request->input('send_notice_now')) {
+            $this->sendSms($phone, trans('admin_content.work_is_done'));
+        }
+
+        $this->saveCompleteMessage();
+        return redirect(route('admin.records',['date' => $record->date]));
+    }
+
+    public function deleteRecord(Request $request): RedirectResponse
+    {
+        if (!$this->authorize('delete')) abort(403, trans('content.403'));
+        $record = Record::findOrFail($request->input('id'));
+        $record->status = 5;
+        $record->user_id = auth()->id;
+        $record->save();
+        session()->flash('message', trans('admin.delete_complete'));
+        return redirect(route('admin.records', ['date' => $record->date]));
+    }
+
     private function editSomething(
         Request $request,
         array $validationArr,
@@ -474,14 +609,8 @@ class AdminEditController extends Controller
     private function setSpecialFields(Request $request, $fields): array
     {
         if ($request->has('active')) $fields['active'] = $request->active ? 1 : 0;
-        if ($request->has('limit')) $fields['limit'] = $this->convertTime($request->limit);
+        if ($request->has('limit')) $fields['limit'] = $this->convertTimestamp($request->limit);
         return $fields;
-    }
-
-    private function convertTime($time): int
-    {
-        $time = explode('/', $time);
-        return strtotime($time[1].'/'.$time[0].'/'.$time[2]);
     }
 
     private function processingImages(Request $request, array $fields, array $imagesFields, string $pathToImages, $itemModel=null): array
@@ -520,5 +649,67 @@ class AdminEditController extends Controller
     private function getRelationIdName(Model $item) :string
     {
         return $this->getCutTableName($item).'_id';
+    }
+
+    private function getMissingMechanics(): void
+    {
+        $this->data['mechanics'] = Mechanic::where('active',1)->orderBy('name')->get();
+        $this->data['missing_mechanics'] = MissingMechanic::where('date',$this->data['date'])->pluck('mechanic_id')->toArray();
+    }
+
+    private function checkBusyRecord($fields,$id=null): bool
+    {
+        $records = Record::where('date',$fields['date'])->where('point',$fields['point'])->get();
+        $checkingStatTime = $this->convertTime($fields['time']);
+        $checkingEndTime = $checkingStatTime + $this->convertTime($fields['duration']);
+        $matches = false;
+        foreach ($records as $record) {
+            $currentStartTime = $this->convertTime($record->time);
+            $currentEndTime = $currentStartTime + $this->convertTime($record->duration);
+            if (
+                (
+                    ($checkingStatTime >= $currentStartTime && $checkingStatTime < $currentEndTime)
+                    ||
+                    ($checkingStatTime < $currentStartTime && $checkingEndTime > $currentEndTime)
+                    ||
+                    ($checkingEndTime > $currentStartTime && $checkingEndTime <= $currentEndTime)
+                )
+                &&
+                (!$id || $id != $record->id)
+                &&
+                $record->status != 5
+            ) {
+                $matches = true;
+                break;
+            }
+        }
+        return $matches;
+    }
+
+    private function getBusyRecordErrors(): array
+    {
+        return [
+            'date' => trans('records.busy'),
+            'time' => trans('records.busy'),
+            'point' => trans('records.busy'),
+            'duration' => trans('records.busy')
+        ];
+    }
+
+    private function checkRecordTime($date): int
+    {
+        return strtotime(date('m').'/'.date('d').'/'.date('Y')) <= $date;
+    }
+
+    private function convertTimestamp($time): int
+    {
+        $time = explode('/', $time);
+        return strtotime($time[1].'/'.$time[0].'/'.$time[2]);
+    }
+
+    private function convertTime($time): int
+    {
+        $parts = explode(':',$time);
+        return (double)$parts[0]+($parts[1] == '30' ? 0.5 : 0);
     }
 }

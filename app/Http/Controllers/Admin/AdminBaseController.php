@@ -52,7 +52,10 @@ class AdminBaseController extends Controller
             ['key' => 'action_questions', 'hidden' => true],
             ['key' => 'repairs', 'hidden' => true],
             ['key' => 'sub_repairs', 'hidden' => true],
+            ['key' => 'mechanics', 'name' => trans('admin_menu.mechanics'), 'description' => trans('admin_menu.mechanics_description'), 'icon' => 'icon-users4'],
+            ['key' => 'records', 'name' => trans('admin_menu.records'), 'description' => trans('admin_menu.records_description'), 'icon' => 'icon-pencil6'],
         ];
+
         foreach ($menuData as $data) {
             $this->menu[$data['key']] = [
                 'id' => $data['key'],

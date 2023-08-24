@@ -37,6 +37,7 @@ return [
     'save' => 'Сохранить',
     'upload' => 'Загрузить',
     'save_complete' => 'Сохранение произведено',
+    'delete_complete' => 'Удаление произведено',
 
     'do_you_really_want_delete_this_position' => 'Вы действительно хотите удалить эту позицию?',
     'do_you_really_want_delete_this_user' => 'Вы действительно хотите удалить этого пользователя?',
@@ -62,6 +63,7 @@ return [
     'image' => 'Картинка',
     'head' => 'Заголовок',
     'name' => 'Наименование',
+    'mechanic_name' => 'Имя',
     'name_ru' => 'Наименование по русски',
     'name_en' => 'Наименование по английски',
     'edit_content' => 'Редактирование «:content»',
@@ -211,4 +213,12 @@ return [
     'price_original_from' => 'Цена оригинала от',
     'price_non_original' => 'Цена не оригинала',
     'price_non_original_from' => 'Цена не оригинала от',
+
+    'do_you_really_want_delete_this_mechanic' => 'Вы действительно хотите удалить этого механика?',
+    'edit_mechanic' => 'Редактирование механика',
+    'view_mechanic' => 'Просмотр механика',
+    'add_mechanics' => 'Добавить механика',
+    'adding_mechanic' => 'Добавление механика',
+    'statistics' => 'Статистика',
+    'message_from' => 'Сообщение с сайта Apollomotors',
 ];

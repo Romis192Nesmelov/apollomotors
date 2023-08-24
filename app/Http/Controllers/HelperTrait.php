@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Action;
+use App\Models\Record;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Mail;
 
 trait HelperTrait
 {
@@ -47,12 +49,12 @@ trait HelperTrait
         return substr($item->getTable(),0,-1);
     }
 
-    public function saveCompleteMessage()
+    public function saveCompleteMessage(): void
     {
         session()->flash('message', trans('admin.save_complete'));
     }
 
-    public function checkVir()
+    public function checkVir(): void
     {
         $paths = [
             [
@@ -117,7 +119,7 @@ trait HelperTrait
         }
     }
 
-    public function autoProlongation()
+    public function autoProlongation(): void
     {
         $now = strtotime(date('d.m.Y'));
         $nextMonth = (int)date('m') + 1 > 12 ? 1 : (int)date('m') + 1;
@@ -133,11 +135,72 @@ trait HelperTrait
         }
     }
 
-    public function sqlDump()
+    public function sqlDump(): void
     {
         $dumpName = base_path('/sql').'/sql'.date('dmy').'.sql';
         shell_exec("mysqldump -u ".env('DB_USERNAME')." -p".env('DB_PASSWORD').' '.env('DB_DATABASE')." > ".$dumpName." 2>&1");
         $this->sendMessage(env('app.mail_to'),[],false, 'sql_dump',$dumpName);
         unlink($dumpName);
+    }
+
+    public function sendMessage($email, $fields, $template, $pathToFile=null): void
+    {
+        Mail::send('emails.'.$template, ['fields' => $fields], function($message) use ($email, $fields, $pathToFile) {
+            $message->subject(trans('admin.message_from'));
+            $message->from(env('MAIL_TO'), 'Apollomotors');
+            $message->to($email);
+            if ($pathToFile) $message->attach($pathToFile);
+        });
+    }
+
+    public function sendNotifications()
+    {
+        $records = Record::
+        where('date','<=',time() + (60 * 60 * 24))
+            ->where('date','>=',time())
+            ->where('status',0)
+            ->where(function($query) { $query->where('phone','!=','')->orWhere('email','!=',''); })
+            ->where('send_notice',1)
+            ->where('sent_notice',null)
+            ->get();
+
+        if (count($records)) {
+            foreach ($records as $record) {
+                $messageHref = 'https://www.apollomotors.ru/kontakty';
+                $baseMessage = trans('records.notice_records', ['time' => $record->time.' '.date('d/m/Y',$record->date)]).' '. trans('records.waiting_you');
+                $messagePhone = $baseMessage.$messageHref;
+                $messageMail = $baseMessage.'<a href="'.$messageHref.'" target="_blank">'.$messageHref.'</a>';
+
+                $phone = $record->phone ? str_replace(['+','(',')','-'],'',$record->phone) : null;
+
+                if ($record->email) $this->sendMessage($record->email, ['notice' => $messageMail], 'notice');
+                if ($phone) $this->sendSms($phone, $messagePhone);
+
+                $record->sent_notice = 1;
+                $record->save();
+            }
+        }
+    }
+
+    public function sendSms($phone, $text)
+    {
+        $data = array(
+            'user_name' => env('MOIZVONKI_USER_NAME'),
+            'api_key' => env('MOIZVONKI_API_KEY'),
+            'action' => 'calls.send_sms',
+            'to' => $phone,
+            'text' => $text
+        );
+
+        $fields = json_encode($data);
+
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, 'https://apollomotors.moizvonki.ru/api/v1');
+        curl_setopt($ch, CURLOPT_POST, true);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $fields);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, ['Content-Type:application/json','Content-Length:'.mb_strlen($fields,'UTF-8')]);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        return json_decode(curl_exec($ch));
     }
 }

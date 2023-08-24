@@ -62,4 +62,9 @@ class Car extends Model
     {
         return $this->hasMany(Spare::class);
     }
+
+    public function records(): HasMany
+    {
+        return $this->hasMany(Record::class);
+    }
 }

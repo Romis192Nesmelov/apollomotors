@@ -14,6 +14,7 @@ use App\Models\Check;
 use App\Models\Client;
 use App\Models\FreeCheck;
 use App\Models\HomePrice;
+use App\Models\Mechanic;
 use App\Models\OfferRepair;
 use App\Models\Question;
 use App\Models\RecommendedWork;
@@ -23,6 +24,7 @@ use App\Models\RepairSpare;
 use App\Models\Spare;
 use App\Models\SubRepair;
 use App\Models\User;
+use App\Models\MissingMechanic;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\JsonResponse;
@@ -145,6 +147,11 @@ class AdminApiController extends Controller
         return $this->deleteSomething($request, new ActionQuestion());
     }
 
+    public function deleteMechanic(Request $request): JsonResponse
+    {
+        return $this->deleteSomething($request, new Mechanic());
+    }
+
     private function deleteSomething(Request $request, Model $model, $fileField=null): JsonResponse
     {
         if (!$this->authorize('delete')) abort(403, trans('content.403'));
@@ -159,5 +166,28 @@ class AdminApiController extends Controller
         }
         $itemModel->delete();
         return response()->json(['success' => true]);
+    }
+
+    public function changeIdleMechanic(Request $request): JsonResponse
+    {
+        if (!$this->authorize('edit')) abort(403, trans('content.403'));
+        $this->validate($request, [
+            'date' => 'required|integer',
+            'id' => 'required|integer|exists:mechanics,id'
+        ]);
+        $fields = [
+            'date' => $request->input('date'),
+            'mechanic_id' => $request->input('id'),
+        ];
+
+        $missingMechanic = MissingMechanic::where('date',$fields['date'])->where('mechanic_id',$fields['mechanic_id'])->first();
+        if (!$missingMechanic) {
+            MissingMechanic::create($fields);
+            $mode = 2;
+        } else {
+            $missingMechanic->delete();
+            $mode = 1;
+        }
+        return response()->json(['success' => true, 'mode' => $mode]);
     }
 }

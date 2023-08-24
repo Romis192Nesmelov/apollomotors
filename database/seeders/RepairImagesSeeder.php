@@ -2,9 +2,7 @@
 
 namespace Database\Seeders;
 
-use App\Models\Content;
 use App\Models\RepairImage;
-
 //use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 class RepairImagesSeeder extends BrandsSeeder

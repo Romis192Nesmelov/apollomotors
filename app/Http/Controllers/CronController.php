@@ -21,7 +21,7 @@ class CronController extends Controller
     public function daily()
     {
         $this->autoProlongation();
-//        $this->sendNotifications();
+        $this->sendNotifications();
     }
 
     public function monthly()
