@@ -3,7 +3,6 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-use \App\Models\Mechanic;
 
 return new class extends Migration
 {
@@ -15,7 +14,6 @@ return new class extends Migration
         Schema::create('missing_mechanics', function (Blueprint $table) {
             $table->id();
             $table->integer('date');
-            $table->foreignIdFor(Mechanic::class)->nullable()->constrained()->cascadeOnUpdate()->cascadeOnDelete();
             $table->timestamps();
         });
     }

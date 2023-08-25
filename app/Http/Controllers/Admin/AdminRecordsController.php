@@ -117,6 +117,7 @@ class AdminRecordsController extends AdminBaseController
     private function getMissingMechanics()
     {
         $this->data['mechanics'] = Mechanic::where('active',1)->orderBy('name')->get();
-        $this->data['missing_mechanics'] = MissingMechanic::where('date',$this->data['date'])->pluck('mechanic_id')->toArray();
+        $missingMechanics = MissingMechanic::where('date',$this->data['date'])->first();
+        $this->data['missing_mechanics'] = $missingMechanics ? $missingMechanics->mechanics->pluck('id')->toArray() : [];
     }
 }

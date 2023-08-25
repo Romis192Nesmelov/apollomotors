@@ -3,14 +3,14 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 class MissingMechanic extends Model
 {
-    protected $fillable = ['date','mechanic_id'];
+    protected $fillable = ['date'];
 
-    public function mechanic(): BelongsTo
+    public function mechanics(): BelongsToMany
     {
-        return $this->belongsTo(Mechanic::class);
+        return $this->belongsToMany(Mechanic::class);
     }
 }

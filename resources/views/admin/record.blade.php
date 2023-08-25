@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 
 @section('content')
-    @if (count($records) && Gate::allows('delete'))
+    @if (count($records))
         <x-modal class="delete-modal" id="delete-modal" head="{{ trans('admin.warning') }}">
             <form action="{{ route('admin.delete_record') }}" method="post">
                 @csrf
@@ -121,7 +121,7 @@
                 @foreach($records as $currentRecord)
                 <tr id="record_{{ $currentRecord->id }}">
                     <td class="text-center bigger">
-                        @if (Gate::allows('edit') || $currentRecord->user_id == auth()->user()->id)
+                        @can('owner', $currentRecord)
                             <a href="{{ route('admin.records', ['id' => $currentRecord->id]) }}">
                                 @include('admin.blocks.records.table_record_item_block',['record' => $currentRecord])
                             </a>
@@ -152,7 +152,7 @@
                         @endif
                         <div>{{ $currentRecord->created_at ? $currentRecord->created_at : '' }}</div>
                     </td>
-                    @can('delete')
+                    @can('owner', $currentRecord)
                         @include('admin.blocks.delete_cell_block',['id' => $currentRecord->id])
                     @else
                         <td></td>

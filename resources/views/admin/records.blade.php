@@ -152,8 +152,7 @@
                                 <td date="{{ $timestamp }}" id="{{ $mechanics[$mech]->id }}" class="{{ $dayCount > 10 ? 'hidden-sm' : '' }} {{ $dayCount > 5 ? 'hidden-xs' : '' }}" >
                                     <?php
                                     $missingFlag = false;
-                                    foreach($mechanics[$mech]->missing as $missing) {
-
+                                    foreach($mechanics[$mech]->missingMechanics as $missing) {
                                         if ($missing->date == $timestamp) {
                                             $missingFlag = true;
                                             break;

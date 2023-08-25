@@ -3,6 +3,7 @@ namespace Database\Seeders;
 
 //use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use App\Models\MissingMechanic;
+use App\Models\MechanicMissingMechanic;
 use Illuminate\Database\Seeder;
 
 class MissingMechanicsSeeder extends Seeder
@@ -2164,8 +2165,13 @@ class MissingMechanicsSeeder extends Seeder
             ],
         ];
 
+        $lastDate = null;
         foreach ($data as $item) {
-            MissingMechanic::create($item);
+            if ($item['date'] != $lastDate) {
+                $lastDate = $item['date'];
+                $missingMechanic = MissingMechanic::create(['date' => $item['date']]);
+            }
+            MechanicMissingMechanic::create(['mechanic_id' => $item['mechanic_id'], 'missing_mechanic_id' => $missingMechanic->id]);
         }
     }
 }
