@@ -14,22 +14,6 @@ class BrandController extends BaseController
 {
     use HelperTrait;
 
-//    public function parser()
-//    {
-//        $repairContent = [];
-//        $repair = Repair::all();
-//        foreach ($repair as $item) {
-//            $oldRepair = OldRepair::find($item->id);
-//            $image = Image::find($oldRepair->spares_image_id);
-//            $repairContent[] = [
-//                'repair' => $item,
-//                'image' => $image ? $image->real : null
-//            ];
-//        }
-//        dd($repairContent[30]['repair']->seo->title);
-//        return view('parser', ['items' => OldSpare::all()]);
-//    }
-
     public function __construct()
     {
         parent::__construct();
@@ -56,7 +40,7 @@ class BrandController extends BaseController
         if ($brand) {
             if ($car) {
                 if ($job) {
-                    $this->getItem('repair', null, new Repair(), $job);
+                    $this->getItem('repair', new Repair(), $job);
                     $this->setSeo($this->data['repair']->seo);
 
                     $this->data['price'] = $this->data['repair']->price;
@@ -91,7 +75,7 @@ class BrandController extends BaseController
                 } else {
 
                     if ($issue == 'repair') {
-                        $this->getItem('car', 'repairs', new Car(), $car);
+                        $this->getItem('car', new Car(), $car);
                         if (!count($this->data['car']->repairs)) abort(404, trans('404'));
                         $this->setSeo($this->data['car']->repairs[0]->seo);
                     } else {
@@ -102,7 +86,7 @@ class BrandController extends BaseController
                 }
             } else {
                 if ($issue == 'maintenance') {
-                    $this->getItem('brand', 'maintenances', new Brand(), $brand);
+                    $this->getItem('brand', new Brand(), $brand);
                     if (!count($this->data['brand']->maintenances)) {
                         $this->getDefContent('maintenances');
                         return $this->showView('issues.def_brand');

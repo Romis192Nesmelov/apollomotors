@@ -78,7 +78,7 @@ class BaseController extends Controller
     {
         $this->activeMenu = 'actions';
         if ($action) {
-            $this->getItem('action', null, new Action(), $action);
+            $this->getItem('action', new Action(), $action);
             $this->setSeo($this->data['action']->seo);
             return $this->showView('actions.action');
         } else {
@@ -137,7 +137,7 @@ class BaseController extends Controller
         ));
     }
 
-    protected function getItem(string $itemName, $relations, Model $model, $slug)
+    protected function getItem(string $itemName, Model $model, $slug)
     {
         $this->data[$itemName] = $model->where('slug',$slug)->where('active',1)->first();
         if (!$this->data[$itemName]) abort(404, trans('404'));
