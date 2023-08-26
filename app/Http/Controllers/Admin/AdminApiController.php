@@ -261,29 +261,21 @@ class AdminApiController extends Controller
             'date' => 'required|integer',
             'id' => 'required|integer|exists:mechanics,id'
         ]);
-
         $missingMechanic = MissingMechanic::where('date',$fields['date'])->first();
         if (!$missingMechanic) {
             $missingMechanic = MissingMechanic::create(['date' => $fields['date']]);
-            MechanicMissingMechanic::create([
-                'mechanic_id' => $fields['id'],
-                'missing_mechanic_id' => $missingMechanic->id
-            ]);
+            $missingMechanic->mechanics()->attach($fields['id']);
             $mode = 2;
         }  else {
-            $mechanicMissingMechanic = $missingMechanic->mechanics->find($fields['id']);
-            if (!$mechanicMissingMechanic) {
-                MechanicMissingMechanic::create([
-                    'mechanic_id' => $fields['id'],
-                    'missing_mechanic_id' => $missingMechanic->id
-                ]);
+            $missingMechanic->mechanics->find($fields['id']);
+            if (!$missingMechanic->mechanics->find($fields['id'])) {
+                $missingMechanic->mechanics()->attach($fields['id']);
                 $mode = 2;
             } else {
-                $mechanicMissingMechanic->delete();
+                $missingMechanic->mechanics()->detach($fields['id']);
                 $mode = 1;
             }
         }
-
         return response()->json(['success' => true, 'mode' => $mode]);
     }
 }
