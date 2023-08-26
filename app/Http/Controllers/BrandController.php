@@ -79,7 +79,7 @@ class BrandController extends BaseController
                         if (!count($this->data['car']->repairs)) abort(404, trans('404'));
                         $this->setSeo($this->data['car']->repairs[0]->seo);
                     } else {
-                        $this->getItem('car', $issue, new Car(), $car);
+                        $this->getItem('car', new Car(), $car);
                         $this->setSeo($this->data['car'][$issue]->seo);
                     }
                     return $this->showView('issues.car');
@@ -95,7 +95,7 @@ class BrandController extends BaseController
                         return $this->showView('issues.brand');
                     }
                 } else {
-                    $this->getItem('brand', $issue, new Brand(), $brand);
+                    $this->getItem('brand', new Brand(), $brand);
                     if (!$this->data['brand'][$issue]) {
                         $this->getDefContent($issue);
                         return $this->showView('issues.def_brand');
