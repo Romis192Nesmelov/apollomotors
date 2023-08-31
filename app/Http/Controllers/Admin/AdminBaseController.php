@@ -44,11 +44,11 @@ class AdminBaseController extends Controller
             ['key' => 'clients', 'name' => trans('content.we_are_trusted'), 'description' => trans('admin_menu.home_page_block_editing'), 'icon' => 'icon-truck'],
             ['key' => 'articles', 'name' => trans('menu.articles'), 'description' => trans('admin_menu.articles'), 'icon' => 'icon-magazine'],
             ['key' => 'gallery', 'name' => trans('admin_menu.gallery'), 'description' => trans('admin_menu.gallery_description'), 'icon' => 'icon-images3'],
-//            ['key' => 'brands', 'name' => trans('admin_menu.brands'), 'description' => trans('admin_menu.brands_description'), 'icon' => 'icon-chess-queen'],
-//            ['key' => 'cars', 'hidden' => true],
-//            ['key' => 'spares', 'hidden' => true],
-//            ['key' => 'actions', 'name' => trans('admin_menu.actions'), 'description' => trans('admin_menu.actions_description'), 'icon' => 'icon-gift'],
-//            ['key' => 'action_questions', 'hidden' => true],
+            ['key' => 'brands', 'name' => trans('admin_menu.brands'), 'description' => trans('admin_menu.brands_description'), 'icon' => 'icon-chess-queen'],
+            ['key' => 'cars', 'hidden' => true],
+            ['key' => 'spares', 'hidden' => true],
+            ['key' => 'actions', 'name' => trans('admin_menu.actions'), 'description' => trans('admin_menu.actions_description'), 'icon' => 'icon-gift'],
+            ['key' => 'action_questions', 'hidden' => true],
 //            ['key' => 'repairs', 'hidden' => true],
 //            ['key' => 'sub_repairs', 'hidden' => true],
 //            ['key' => 'mechanics', 'name' => trans('admin_menu.mechanics'), 'description' => trans('admin_menu.mechanics_description'), 'icon' => 'icon-users4'],
@@ -295,7 +295,8 @@ class AdminBaseController extends Controller
             ];
             return $this->showView($key);
         } else {
-            $this->data[$key.'s'] = $model->all();
+            if ($model instanceof Content) $this->data[$key.'s'] = $model->whereIn('id',[1,2,3,7])->get();
+            else $this->data[$key.'s'] = $model->all();
             return $this->showView($key.'s');
         }
     }

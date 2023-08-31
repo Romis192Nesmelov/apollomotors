@@ -90,37 +90,37 @@
             'item' => $car,
             'parts' => ['repairs','maintenance','spare']
         ])
-        <div class="panel panel-flat">
-            <x-atitle>{{ trans('content.repair_prices', ['car' => $car->brand['name_'.app()->getLocale()].' '.$car['name_'.app()->getLocale()] ]) }}</x-atitle>
-            <div class="panel-body">
-            @include('admin.blocks.datatable_block',[
-                'items' => $car->priceRepairs,
-                'route' => 'repairs',
-                'parentId' => $car->id,
-                'columns' => ['head', 'price','active'],
-                'addMode' => Gate::allows('edit'),
-                'editMode' => Gate::allows('edit'),
-                'deleteMode' => Gate::allows('delete'),
-                'modal' => 'delete-modal-repair',
-                'addButtonText' => trans('admin.add_repair')
-            ])
-            </div>
-        </div>
-        <div class="panel panel-flat">
-            <x-atitle>{{ trans('admin.car_spares', ['car' => $car->brand['name_'.app()->getLocale()].' '.$car['name_'.app()->getLocale()] ]) }}</x-atitle>
-            <div class="panel-body">
-                @include('admin.blocks.datatable_block',[
-                    'items' => $car->spares,
-                    'route' => 'spares',
-                    'parentId' => $car->id,
-                    'columns' => ['head', 'text','active'],
-                    'addMode' => Gate::allows('edit'),
-                    'editMode' => Gate::allows('edit'),
-                    'deleteMode' => Gate::allows('delete'),
-                    'modal' => 'delete-modal-spare',
-                    'addButtonText' => trans('admin.add_repair')
-                ])
-            </div>
-        </div>
+{{--        <div class="panel panel-flat">--}}
+{{--            <x-atitle>{{ trans('content.repair_prices', ['car' => $car->brand['name_'.app()->getLocale()].' '.$car['name_'.app()->getLocale()] ]) }}</x-atitle>--}}
+{{--            <div class="panel-body">--}}
+{{--            @include('admin.blocks.datatable_block',[--}}
+{{--                'items' => $car->priceRepairs,--}}
+{{--                'route' => 'repairs',--}}
+{{--                'parentId' => $car->id,--}}
+{{--                'columns' => ['head', 'price','active'],--}}
+{{--                'addMode' => Gate::allows('edit'),--}}
+{{--                'editMode' => Gate::allows('edit'),--}}
+{{--                'deleteMode' => Gate::allows('delete'),--}}
+{{--                'modal' => 'delete-modal-repair',--}}
+{{--                'addButtonText' => trans('admin.add_repair')--}}
+{{--            ])--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--        <div class="panel panel-flat">--}}
+{{--            <x-atitle>{{ trans('admin.car_spares', ['car' => $car->brand['name_'.app()->getLocale()].' '.$car['name_'.app()->getLocale()] ]) }}</x-atitle>--}}
+{{--            <div class="panel-body">--}}
+{{--                @include('admin.blocks.datatable_block',[--}}
+{{--                    'items' => $car->spares,--}}
+{{--                    'route' => 'spares',--}}
+{{--                    'parentId' => $car->id,--}}
+{{--                    'columns' => ['head', 'text','active'],--}}
+{{--                    'addMode' => Gate::allows('edit'),--}}
+{{--                    'editMode' => Gate::allows('edit'),--}}
+{{--                    'deleteMode' => Gate::allows('delete'),--}}
+{{--                    'modal' => 'delete-modal-spare',--}}
+{{--                    'addButtonText' => trans('admin.add_repair')--}}
+{{--                ])--}}
+{{--            </div>--}}
+{{--        </div>--}}
     @endif
 @endsection
