@@ -106,7 +106,7 @@ class AdminEditRepairController extends AdminEditController
      */
     private function editRepairSomething(Request $request, array $validationArr, Model $model): RedirectResponse
     {
-        if (!$this->authorize('edit')) abort(403, trans('content.403'));
+        $this->authorize('edit');
         $fields = $this->validate($request, $validationArr);
         $item = $model->create($fields);
         $this->saveCompleteMessage();

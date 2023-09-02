@@ -36,7 +36,8 @@ class AdminRecordsController extends AdminBaseController
         if ($request->has('id')) {
             $this->data['record'] = Record::findOrFail($request->id);
 
-            if (!$this->authorize('edit') && auth()->user()->id != $this->data['record']->id) abort(403, trans('content.403'));
+            $this->authorize('edit');
+            if (auth()->user()->id != $this->data['record']->id) abort(403, trans('content.403'));
 
             $this->data['date'] = $this->data['record']->date;
             $this->breadcrumbs[] = [

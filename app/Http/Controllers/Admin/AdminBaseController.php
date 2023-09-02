@@ -19,6 +19,7 @@ use App\Models\User;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Gate;
 use Illuminate\View\View;
 
 class AdminBaseController extends Controller
@@ -285,7 +286,7 @@ class AdminBaseController extends Controller
             $this->getBreadcrumbs($key, $head, $breadcrumbsParams);
             return $this->showView($key);
         } else if ($slug && $slug == 'add') {
-            if (!$this->authorize('edit')) abort(403, trans('403'));
+            $this->authorize('edit');
             $breadcrumbsParams['slug'] = 'add';
             $this->breadcrumbs[] = [
                 'id' => $this->menu[$key.'s']['id'],
@@ -316,7 +317,7 @@ class AdminBaseController extends Controller
         $this->breadcrumbs[] = [
             'href' => $this->menu[$key.'s']['href'],
             'params' => $params,
-            'name' => trans('admin.'.($this->authorize('edit') ? 'edit_' : 'view_').$key, [$key => $this->data[$paramKey ?: $key][$head]]),
+            'name' => trans('admin.'.(Gate::allows('edit') ? 'edit_' : 'view_').$key, [$key => $this->data[$paramKey ?: $key][$head]]),
         ];
     }
 }

@@ -152,7 +152,7 @@ class AdminEditBrandController extends AdminEditController
      */
     private function editRMS(Request $request, Model $model, string $relationName): Model
     {
-        if (!$this->authorize('edit')) abort(403, trans('content.403'));
+        $this->authorize('edit');
         $item = $model->findOrFail($request->input('id'));
 
         if ($relationName == 'repairs' || $relationName == 'maintenances') {

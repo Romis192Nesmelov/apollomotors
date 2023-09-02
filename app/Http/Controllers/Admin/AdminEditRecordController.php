@@ -34,7 +34,7 @@ class AdminEditRecordController extends AdminEditController
      */
     public function editMissingMechanics(Request $request): RedirectResponse
     {
-        if (!$this->authorize('edit')) abort(403, trans('content.403'));
+        $this->authorize('edit');
         $fields = $this->validate($request, [
             'date' => $this->validationInteger,
             'missing_mechanics' => 'nullable|array'
@@ -98,7 +98,7 @@ class AdminEditRecordController extends AdminEditController
         if ($request->has('id')) {
             $fields = array_merge($fields, $this->validate($request, $validateArr));
             $record = Record::findOrFail($request->input('id'));
-            if (!$this->authorize('owner',$record)) abort(403, trans('content.403'));
+            $this->authorize('owner',$record);
 
             if ($this->checkBusyRecord($fields,$record->id) ) {
                 return redirect(route('admin.records',['id' => $record->id]).'#record')->withInput()->withErrors($this->getBusyRecordErrors());
@@ -138,7 +138,7 @@ class AdminEditRecordController extends AdminEditController
     public function deleteRecord(Request $request): RedirectResponse
     {
         $record = Record::findOrFail($request->input('id'));
-        if (!$this->authorize('owner',$record)) abort(403, trans('content.403'));
+        $this->authorize('owner',$record);
         $record->status = 5;
         $record->user_id = auth()->user()->id;
         $record->save();

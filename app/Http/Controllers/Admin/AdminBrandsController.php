@@ -12,6 +12,7 @@ use App\Models\SubRepair;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Gate;
 use Illuminate\View\View;
 
 class AdminBrandsController extends AdminBaseController
@@ -167,7 +168,7 @@ class AdminBrandsController extends AdminBaseController
             $this->breadcrumbs[] = [
                 'href' => $this->menu['brands']['href'],
                 'params' => ['id' => $this->data['item']->brand->id],
-                'name' => trans('admin.'.($this->authorize('edit') ? 'edit_' : 'view_').'brand', ['brand' => $this->data['item']->brand['name_'.app()->getLocale()]]),
+                'name' => trans('admin.'.(Gate::allows('edit') ? 'edit_' : 'view_').'brand', ['brand' => $this->data['item']->brand['name_'.app()->getLocale()]]),
             ];
             $this->getBreadcrumbs(
                 'car',

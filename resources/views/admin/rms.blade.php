@@ -52,7 +52,7 @@
                         {!! $relation->text !!}
                     @endforeach
                 @else
-                    {!! $content->text !!}
+                    {!! $item[$relation]->text !!}
                 @endif
             </div>
         </div>

@@ -58,11 +58,7 @@
                             </td>
                         @endif
                     @endforeach
-                    @if ($editMode)
-                        @include('admin.blocks.edit_cell_block', ['href' => isset($route) ? route('admin.'.$route, ['id' => $item->id, 'parent_id' => (isset($parentId) && $parentId ? $parentId : '')]) : route($menu[$menu_key]['href'], ['id' => $item->id])])
-                    @else
-                        <td></td>
-                    @endif
+                    @include('admin.blocks.edit_cell_block', ['href' => isset($route) ? route('admin.'.$route, ['id' => $item->id, 'parent_id' => (isset($parentId) && $parentId ? $parentId : '')]) : route($menu[$menu_key]['href'], ['id' => $item->id])])
                     @if ($deleteMode)
                         @include('admin.blocks.delete_cell_block',['id' => $item->id])
                     @else

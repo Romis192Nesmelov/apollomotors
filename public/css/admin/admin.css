@@ -2,6 +2,10 @@
     font-weight: bolder;
 }
 
+.image img {
+    width: 100%;
+}
+
 .id {
     width: 20px;
     text-align: center;

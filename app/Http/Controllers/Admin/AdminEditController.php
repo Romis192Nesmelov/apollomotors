@@ -223,7 +223,7 @@ class AdminEditController extends Controller
         array $fields = []
     ): Model
     {
-        if (!$this->authorize('edit')) abort(403, trans('content.403'));
+        $this->authorize('edit');
         $validationArr = array_merge($validationArr,$imageValidationArr);
 
         if ($request->has('id') && $request->input('id')) {

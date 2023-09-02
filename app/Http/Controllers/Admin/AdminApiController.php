@@ -125,7 +125,7 @@ class AdminApiController extends Controller
      */
     public function deleteBrand(Request $request): JsonResponse
     {
-        if (!$this->authorize('delete')) abort(403, trans('content.403'));
+        $this->authorize('delete');
         $fields = $this->validate($request, ['id' => 'required|integer|exists:brands,id']);
 
         $brand = Brand::find($fields['id']);
@@ -237,7 +237,7 @@ class AdminApiController extends Controller
      */
     private function deleteSomething(Request $request, Model $model, $fileField=null): JsonResponse
     {
-        if (!$this->authorize('delete')) abort(403, trans('content.403'));
+        $this->authorize('delete');
         $fields = $this->validate($request, ['id' => 'required|integer|exists:'.$model->getTable().',id']);
         $itemModel = $model->find($fields['id']);
         if ($fileField) {
@@ -256,7 +256,7 @@ class AdminApiController extends Controller
      */
     public function changeIdleMechanic(Request $request): JsonResponse
     {
-        if (!$this->authorize('edit')) abort(403, trans('content.403'));
+        $this->authorize('edit');
         $fields = $this->validate($request, [
             'date' => 'required|integer',
             'id' => 'required|integer|exists:mechanics,id'
