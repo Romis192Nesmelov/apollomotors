@@ -7,7 +7,7 @@
         <div id="action-block" class="mb-4">
             @include('blocks.action_block', ['useCounter' => true])
         </div>
-        <div>
+        <div class="action-content">
             {!! $action->text !!}
         </div>
     </x-section>

@@ -26,7 +26,6 @@
                 {{ ' '.trans('content.prices') }}
             </x-head>
             @include('issues.blocks.repair_table.repair_table_block',['price' => $car->priceRepairs])
-            @include('issues.blocks.car_layout_bottom_block')
             @if (count($car->repairs) == 2)
                 <div>
                     {!! $car->repairs[1]->text !!}
@@ -34,8 +33,11 @@
             @endif
         @elseif ($activeMenu == 'maintenance')
             @include('issues.blocks.maintenance_table.maintenance_table_block',['car' => $car->brand['name_'.app()->getLocale()].' '.$car['name_'.app()->getLocale()]])
-            @include('issues.blocks.car_layout_bottom_block')
+        @else
+            @include('issues.blocks.spares_table.spares_table_block',['spares' => $car->spares])
         @endif
+        @include('issues.blocks.car_layout_bottom_block')
+
         @include('blocks.online_record_block',[
             'type' => 'online_appointment_for_'.$activeMenu,
             'addClass' => 'mt-4'

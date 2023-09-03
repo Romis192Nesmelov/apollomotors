@@ -341,9 +341,9 @@
                                     @foreach($repair->recommendedWorks as $recommendedWork)
                                         @if ($recommendedWork->work->active)
                                             <tr>
-                                                <td>@include('issues.blocks.repair_table.table_list_repair_name_block',['item' => $recommendedWork->work])                                                    </td>
+                                                <td>@include('issues.blocks.table_list_name_block',['item' => $recommendedWork->work])                                                    </td>
                                                 <td class="text-center">
-                                                    @include('issues.blocks.repair_table.table_list_repair_price_block', [
+                                                    @include('issues.blocks.table_list_price_block', [
                                                         'car' => $recommendedWork->work->car,
                                                         'item' => $recommendedWork->work
                                                     ])

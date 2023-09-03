@@ -1,8 +1,8 @@
 <tr>
     <td>
         <a href="{{ route('repair',[$car->brand->slug, $car->slug, $item->slug]) }}">
-            @include('issues.blocks.repair_table.table_list_repair_name_block')
+            @include('issues.blocks.table_list_name_block')
         </a>
     </td>
-    <td class="price">@include('issues.blocks.repair_table.table_list_repair_price_block')</td>
+    <td class="price">@include('issues.blocks.table_list_price_block', ['price_from' => $item->price_from, 'price' => $item->price])</td>
 </tr>

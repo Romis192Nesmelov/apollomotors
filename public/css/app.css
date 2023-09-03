@@ -151,8 +151,12 @@ hr {
 }
 
 .image.framed-image i {
-    top: 11px;
-    right: 20px;
+    top: 6%;
+    right: 8%;
+}
+
+.gallery .image.framed-image {
+    margin-bottom: 25px;
 }
 
 .image i.black {
@@ -218,6 +222,16 @@ table.app-data-table th {
 table.app-data-table td.code {
     font-weight: bold;
     font-size: 15px;
+}
+
+.price {
+    font-size: 17px;
+    font-weight: bold;
+    color: orangered;
+}
+
+.head-price {
+    color: orangered;
 }
 
 p.subscript {
@@ -727,6 +741,7 @@ ul.price {
     float: left;
     padding: 0 10px;
     margin: 0;
+    color: #212529;
 }
 
 ul.price li {
@@ -947,7 +962,8 @@ footer hr {
     }
 
     #logo-line .phones-block {
-        display: none;
+        width: 100%;
+        margin-top: 10px;
     }
 
     .navbar-collapse {
@@ -1015,6 +1031,24 @@ footer hr {
 
     .owl-nav {
         display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    #action-block .action {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+    }
+
+    .action-content {
+        padding: 0 20px;
+    }
+
+    .action-content .rounded-block-simple {
+        width: 100%;
+        margin-bottom: 30px;
     }
 }
 

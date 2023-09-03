@@ -7,6 +7,7 @@ use App\Models\Car;
 
 use App\Models\Content;
 use App\Models\Repair;
+use App\Models\Spare;
 use Illuminate\View\View;
 //use Illuminate\Http\Request;
 
@@ -29,12 +30,12 @@ class BrandController extends BaseController
         return $this->getIssues('maintenance', $brand, $car, null);
     }
 
-    public function spares($brand=null, $car=null) :View
+    public function spares($brand=null, $car=null, $spare=null) :View
     {
-        return $this->getIssues('spare', $brand, $car, null);
+        return $this->getIssues('spare', $brand, $car, null, $spare);
     }
 
-    private function getIssues(string $issue, string $brand=null, string $car=null, string $job=null): View
+    private function getIssues(string $issue, string $brand=null, string $car=null, string $job=null, string $spare=null): View
     {
         $this->activeMenu = $issue;
         if ($brand) {
@@ -72,8 +73,11 @@ class BrandController extends BaseController
                     ];
                     $this->data['price_step'] = round($this->data['price'] * 2 / 12);
                     return $this->showView('issues.repair');
+                } elseif ($spare) {
+                    $this->getItem('spare', new Spare(), $spare);
+                    $this->setSeo($this->data['spare']->seo);
+                    return $this->showView('issues.spare');
                 } else {
-
                     if ($issue == 'repair') {
                         $this->getItem('car', new Car(), $car);
                         if (!count($this->data['car']->repairs)) abort(404, trans('404'));

@@ -187,13 +187,18 @@
             </div>
             @php $addressExistFlag = false; $blockContent = ''; ob_start(); @endphp
             @foreach ($contacts as $contact)
-                @if ($contact->id < 7 && $contact->active && $contact->id != 2 && $contact->id != 4)
+                @if ($contact->id < 8 && $contact->active && $contact->id != 2 && $contact->id != 4)
                     @php $addressExistFlag = true; @endphp
                     <i class="{{ $contact->icon }}"></i>
-                    {{ $contact->contact }}<br>
+                    @if ($contact->id == 6 || $contact->id == 7)
+                        @include('blocks.phone_block',['phone' => $contact->contact])
+                    @else
+                        {{ $contact->contact }}
+                    @endif
+                    <br>
                 @endif
             @endforeach
-            @php $content = '<p class="fs-7 ps-3 mb-4">'.ob_get_clean().'</p>'; @endphp
+            @php $content = '<p class="fs-7 ps-3 mb-3">'.ob_get_clean().'</p>'; @endphp
 
             @if ($addressExistFlag)
                 @php $blockContent .= $content; @endphp
@@ -206,7 +211,7 @@
                     <a href="{{ $contact->contact }}" target="_blank"><i class="{{ $contact->icon }} fs-5"></i></a>
                 @endif
             @endforeach
-            @php $content = '<p class="fs-7 ps-3 mb-4">'.trans('content.we_are_in_social_networks').'<br>'.ob_get_clean().'</p>'; @endphp
+            @php $content = '<p class="fs-7 ps-3 mb-3">'.trans('content.we_are_in_social_networks').'<br>'.ob_get_clean().'</p>'; @endphp
 
             @if ($snExistFlag)
                 @php $blockContent .= $content; @endphp
@@ -278,8 +283,8 @@
                     ])
                 </form>
             </div>
-            <div class="col-lg-{{ $blockContent ? 2 : 3 }} d-none d-lg-block p-0 text-center">
-                <img class="w-50" src="{{ asset('storage/images/logo_white.svg') }}" />
+            <div class="col-lg-{{ $blockContent ? 2 : 3 }} col-xs-12 d-lg-block p-0 text-center">
+                <img class="w-50 d-lg-inline-flex d-none" src="{{ asset('storage/images/logo_white.svg') }}" />
                 <p class="fs-7 text-center text-uppercase">{{ trans('content.tagline') }}</p>
 {{--                <div><iframe src="https://yandex.ru/sprav/widget/rating-badge/1634283920" width="150" height="50" frameborder="0"></iframe></div>--}}
                 <div class="w-100 text-center mb-2">

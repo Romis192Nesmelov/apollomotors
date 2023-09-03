@@ -85,7 +85,7 @@
         </div>
     </x-section>
 
-    <x-section>
+    <x-section class="hidden-xs">
         <x-head level="2">{{ trans('content.our_prices') }}</x-head>
         <div class="rounded-block" id="our-prices">
             <nav>

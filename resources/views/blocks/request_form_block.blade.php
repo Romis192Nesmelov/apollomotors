@@ -1,9 +1,9 @@
-<table class="w-100 pb-5 request-form-discount">
-    <tr>
-        <td class="align-top"><i class="fs-1 icon-redo2 text-secondary"></i></td>
-        <td class="align-top w-100 p-2"><p class="fs-6 text-uppercase">{!! trans('content.there_is_a_discount') !!}</p></td>
-    </tr>
-</table>
+{{--<table class="w-100 pb-5 request-form-discount">--}}
+{{--    <tr>--}}
+{{--        <td class="align-top"><i class="fs-1 icon-redo2 text-secondary"></i></td>--}}
+{{--        <td class="align-top w-100 p-2"><p class="fs-6 text-uppercase">{!! trans('content.there_is_a_discount') !!}</p></td>--}}
+{{--    </tr>--}}
+{{--</table>--}}
 <form class="row use-ajax" action="{{ route('request') }}" method="post">
     @csrf
     <input type="hidden" name="type" value="{{ isset($type) && $type ? $type : '' }}">

@@ -46,7 +46,7 @@
                             <td class="text-left">@include('blocks.cropped_content_block',['content' => $item[$column], 'length' => 300])</td>
                         @elseif ($column == 'price')
                             <td class="text-center">
-                                @include('issues.blocks.repair_table.table_list_repair_price_block',['item' => (isset($relation) ? $item[$relation] : $item)])
+                                @include('issues.blocks.table_list_price_block',['item' => (isset($relation) ? $item[$relation] : $item)])
                             </td>
                         @else
                             <td class="text-center">
