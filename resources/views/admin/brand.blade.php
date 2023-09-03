@@ -52,18 +52,20 @@
             </div>
         </form>
     @else
-        <div class="col-md-4 col-sm-6 col-sm-12">
-            <div class="panel panel-flat">
-                @include('admin.blocks.image_block',[
-                    'preview' => $brand->image
-                ])
+        <div class="row">
+            <div class="col-md-4 col-sm-6 col-sm-12">
+                <div class="panel panel-flat">
+                    @include('admin.blocks.image_block',[
+                        'preview' => $brand->image
+                    ])
+                </div>
             </div>
-        </div>
-        <div class="col-md-8 col-sm-6 col-sm-12">
-            <div class="panel panel-flat">
-                @include('admin.blocks.title_block')
-                <div class="panel-body">
-                    @include('admin.blocks.active_status_block',['active' => $brand->active])
+            <div class="col-md-8 col-sm-6 col-sm-12">
+                <div class="panel panel-flat">
+                    @include('admin.blocks.title_block')
+                    <div class="panel-body">
+                        @include('admin.blocks.active_status_block',['active' => $brand->active])
+                    </div>
                 </div>
             </div>
         </div>

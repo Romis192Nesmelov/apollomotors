@@ -22,7 +22,7 @@ class UsersSeeder extends Seeder
             [
                 'email' => 'taran@apollomotors.ru',
                 'password' => '$2y$10$3dx6ThiJaU/OL2KIf0OZj.eWb45M1lvI0cwhIqBMFt91gZ/BEHNI2',
-                'type' => 2
+                'type' => 3
             ],
             [
                 'email' => 'apollomo@yandex.ru',
