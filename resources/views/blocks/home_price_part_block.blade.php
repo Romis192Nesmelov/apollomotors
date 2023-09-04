@@ -1,4 +1,4 @@
-<ul class="price col-6">
+<ul class="price col-xs-12 col-lg-6">
     @for ($i=$start;$i<$end;$i++)
         @if ($brand->prices[$i]->active)
             @include('blocks.price_item_block',[

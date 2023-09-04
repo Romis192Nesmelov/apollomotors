@@ -85,7 +85,7 @@
         </div>
     </x-section>
 
-    <x-section class="hidden-xs">
+    <x-section class="d-none d-md-block d-lg-block">
         <x-head level="2">{{ trans('content.our_prices') }}</x-head>
         <div class="rounded-block" id="our-prices">
             <nav>
@@ -109,7 +109,7 @@
             </nav>
             <div class="tab-content" id="nav-tabContent">
                 @foreach ($electedBrands as $k => $brand)
-                    <div class="tab-pane fade {{ !$k ? 'show active' : '' }}" id="{{ $brand->slug }}" role="tabpanel" aria-labelledby="{{ $brand->slug }}-tab">
+                    <div class="tab-pane row fade {{ !$k ? 'show active' : '' }}" id="{{ $brand->slug }}" role="tabpanel" aria-labelledby="{{ $brand->slug }}-tab">
                         @include('blocks.home_price_part_block',[
                             'start' => 0,
                             'end' => round(count($brand->prices)/2)
