@@ -35,7 +35,10 @@
                         @elseif ($column == 'icon')
                             <td class="text-center"><i class="{{ $item->icon }}"></i></td>
                         @elseif ($column == 'parent_brand')
-                            <td class="text-center w-25"><img class="w-100" src="{{ asset($item->brand->logo) }}" /></td>
+                            <td class="text-center w-25">
+{{--                                <img class="w-100" src="{{ asset($item->brand->logo) }}" />--}}
+                                {{ $item->brand['name_'.app()->getLocale()] }}
+                            </td>
                         @elseif ($column == 'elected')
                             <td class="text-center w-25">@include('admin.blocks.elected_status_block', ['elected' => $item->elected])</td>
                         @elseif ($column == 'active')

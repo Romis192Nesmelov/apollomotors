@@ -297,7 +297,10 @@ class AdminBaseController extends Controller
             return $this->showView($key);
         } else {
             if ($model instanceof Content) $this->data[$key.'s'] = $model->whereIn('id',[1,2,3,7])->get();
+            elseif ($model instanceof HomePrice) $this->data[$key.'s'] = $model->orderBy('brand_id')->get();
             else $this->data[$key.'s'] = $model->all();
+
+
             return $this->showView($key.'s');
         }
     }
