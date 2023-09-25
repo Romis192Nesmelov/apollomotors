@@ -21,6 +21,7 @@ use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
 use Illuminate\Validation\ValidationException;
 
@@ -44,11 +45,11 @@ class AdminEditController extends Controller
             $validationArr['email'] .= ','.$request->input('id');
             if ($request->input('password')) {
                 $validationArr['password'] = $this->validationPassword;
-                $fields['password'] = bcrypt($request->input('password'));
+                $fields['password'] = Hash::make($request->input('password'));
             }
         } else {
             $validationArr['password'] = $this->validationPassword;
-            $fields['password'] = bcrypt($request->input('password'));
+            $fields['password'] = Hash::make($request->input('password'));
         }
 
         $this->editSomething(

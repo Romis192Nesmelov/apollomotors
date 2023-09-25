@@ -69,7 +69,7 @@ td.image img,
     padding-left: 35px;
 }
 
-.form-group i {
+.form-group i:not(.icon-file-plus) {
     position: absolute;
     font-size: 13px;
     top: 16px;

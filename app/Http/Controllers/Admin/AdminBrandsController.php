@@ -161,7 +161,7 @@ class AdminBrandsController extends AdminBaseController
         $this->data['item'] = $model->findOrFail($id);
         $this->data['relation'] = $relationName;
         $this->data['route'] = route('admin.edit_'.$itemName.'_'.$relationName);
-        $this->data['menu_key'] = $model->getTable();
+        $this->data['menu_key'] = 'brands';
 
         $this->breadcrumbs[] = $this->menu['brands'];
         if ($model instanceof Car) {
