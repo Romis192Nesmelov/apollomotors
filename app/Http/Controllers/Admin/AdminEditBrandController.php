@@ -25,7 +25,10 @@ class AdminEditBrandController extends AdminEditController
     {
         $this->editSomething(
             $request,
-            ['name_ru' => $this->validationString, 'name_en' => $this->validationString, 'elected' => 'nullable|integer'],
+            [
+                'name_ru' => $this->validationString,
+                'name_en' => $this->validationString
+            ],
             new Brand(),
             ['logo' => $this->validationPng, 'image' => $this->validationJpg],
             'storage/images/brands/',

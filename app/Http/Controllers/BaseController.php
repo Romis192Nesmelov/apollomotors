@@ -48,7 +48,6 @@ class BaseController extends Controller
     public function index() :View
     {
         $this->data['content'] = Content::find(1);
-        $this->data['actions'] = Action::where('active',1)->get();
         $this->data['brands'] = Brand::where('active',1)->get();
         $this->data['offers_repair'] = OfferRepair::where('active',1)->get();
         $this->data['free_checks'] = FreeCheck::where('active',1)->get();
@@ -82,7 +81,6 @@ class BaseController extends Controller
             $this->setSeo($this->data['action']->seo);
             return $this->showView('actions.action');
         } else {
-            $this->data['actions'] = Action::where('active',1)->get();
             $this->setSeo(Seo::find(3));
             return $this->showView('actions.actions');
         }
@@ -131,6 +129,7 @@ class BaseController extends Controller
                 'menu' => $this->menu,
                 'activeMenu' => $this->activeMenu,
                 'activeSubMenu' => $this->activeSubMenu,
+                'actions' => Action::where('active',1)->get(),
                 'contacts' => $this->contacts,
                 'electedBrands' => $this->electedBrands
             ]

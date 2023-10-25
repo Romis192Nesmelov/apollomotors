@@ -149,7 +149,11 @@ class AdminEditController extends Controller
     {
         $this->editSomething(
             $request,
-            ['name' => $this->validationString, 'brand_id' => $this->validationBrandId],
+            [
+                'name' => $this->validationString,
+                'value' => $this->validationInteger,
+                'brand_id' => $this->validationBrandId
+            ],
             new HomePrice()
         );
         return redirect(route('admin.prices'));
@@ -243,11 +247,11 @@ class AdminEditController extends Controller
         } else {
             // Define images validation rules
             if (count($imageValidationArr)) {
-                $newImageValidationArr = [];
-                foreach ($imageValidationArr as $field => $rule) {
-                    $newImageValidationArr[$field] = 'required|'.$rule;
-                }
-                $validationArr = array_merge($validationArr, $newImageValidationArr);
+//                $newImageValidationArr = [];
+//                foreach ($imageValidationArr as $field => $rule) {
+//                    $newImageValidationArr[$field] = 'required|'.$rule;
+//                }
+                $validationArr = array_merge($validationArr, $imageValidationArr);
             }
 
             // Base validation, merging (if exist password fields) and setting special fields
@@ -303,6 +307,7 @@ class AdminEditController extends Controller
     private function setSpecialFields(Request $request, $fields): array
     {
         if ($request->has('active')) $fields['active'] = $request->active ? 1 : 0;
+        if ($request->has('elected')) $fields['elected'] = $request->active ? 1 : 0;
         if ($request->has('limit')) $fields['limit'] = $this->convertTimestamp($request->limit);
         return $fields;
     }

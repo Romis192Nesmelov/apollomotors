@@ -47,8 +47,9 @@
                         <a href="{{ $up_to }}"><i class="icon-folder-upload" style="font-size: 2em;"></i></a>
                     </div>
                 @endif
-                <table class="table table-striped table-items">
+                <table class="table datatable-basic table-items">
                     <tr>
+                        <th class="hidden"></th>
                         <th class="text-center">{{ trans('admin.type') }}</th>
                         <th class="text-center">{{ trans('admin.image') }}</th>
                         <th class="text-center">{{ trans('admin.path_to_image') }}</th>

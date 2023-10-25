@@ -2,7 +2,6 @@
 
 @section('content')
     @include('blocks.brands_modal_block')
-
     <x-section>
         @include('blocks.brands_block')
         <div class="col-12">

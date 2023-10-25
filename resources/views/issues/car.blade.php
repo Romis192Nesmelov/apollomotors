@@ -16,6 +16,7 @@
                 {!! $car->repairs[0]->text !!}
             @else
                 {!! $car[$activeMenu]->text !!}
+
             @endif
         </div>
 

@@ -174,6 +174,14 @@
     'nlAddClass' => 'brands'
 ])
 
+@if (count($actions))
+    <div id="actions-block" class="owl-carousel mt-3">
+        @foreach ($actions as $action)
+            @include('blocks.action_block')
+        @endforeach
+    </div>
+@endif
+
 @yield('content')
 
 <p class="text-center mt-3"><b>{{ trans('content.share_the_page') }}</b></p>

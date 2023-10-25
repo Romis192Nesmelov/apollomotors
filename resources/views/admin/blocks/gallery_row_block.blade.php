@@ -1,4 +1,5 @@
 <tr>
+    <td class="hidden"></td>
     <td class="id"><i class="{{ $isFile ? 'icon-file-empty' : 'icon-folder'}}"></i></td>
     <td class="image {{ !$isFile ? 'text-uppercase' : '' }}">
         @if (!$isFile)

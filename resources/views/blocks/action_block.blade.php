@@ -11,7 +11,7 @@
             </td>
         </tr>
         <tr>
-            <td>@include('blocks.action_button_block')</td>
+            <td class="action-button-cell">@include('blocks.action_button_block')</td>
         </tr>
     </table>
 </div>

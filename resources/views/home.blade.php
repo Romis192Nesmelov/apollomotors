@@ -3,14 +3,6 @@
 @section('content')
     @include('blocks.brands_modal_block')
 
-    @if (count($actions))
-        <div id="actions-block" class="owl-carousel mt-3">
-            @foreach ($actions as $action)
-                @include('blocks.action_block')
-            @endforeach
-        </div>
-    @endif
-
     @include('blocks.brands_block', ['addClass' => 'mt-5'])
 
     <x-section class="gray">

@@ -221,7 +221,7 @@ function rescaleBrandsLogos() {
 
 function windowResize() {
     maxHeight($('.article-announcement'), 50);
-    maxHeight($('.action-list .action'), 30);
+    // maxHeight($('.action-list .action'), 30);
     maxHeight($('#actions-brand-block table'), 0);
 }
 
