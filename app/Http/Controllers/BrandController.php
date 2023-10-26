@@ -101,6 +101,7 @@ class BrandController extends BaseController
                 } else {
                     $this->getItem('brand', new Brand(), $brand);
                     if (!$this->data['brand'][$issue]) {
+//                        if ($issue == 'repair') $this->data['price_table'] = Car::find(7)->priceRepairs;
                         $this->getDefContent($issue);
                         return $this->showView('issues.def_brand');
                     } else {
