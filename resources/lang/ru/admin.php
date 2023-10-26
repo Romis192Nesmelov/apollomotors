@@ -9,6 +9,8 @@ return [
     'corporate_clients' => 'Корпоративным клиентам',
     'policy' => 'Политика конфиденциальности',
     'goto' => 'Перейти',
+    'for' => 'Для ',
+    'send' => 'Отправить',
 
     'path_to_image' => 'Путь до картинки',
     'copy_to_clipboard' => 'Скопировать',
@@ -37,6 +39,7 @@ return [
     'save' => 'Сохранить',
     'upload' => 'Загрузить',
     'save_complete' => 'Сохранение произведено',
+    'generating_complete' => 'Генерация завершена',
     'delete_complete' => 'Удаление произведено',
 
     'do_you_really_want_delete_this_position' => 'Вы действительно хотите удалить эту позицию?',
@@ -221,4 +224,15 @@ return [
     'adding_mechanic' => 'Добавление механика',
     'statistics' => 'Статистика',
     'message_from' => 'Сообщение с сайта Apollomotors',
+
+    'check_all' => 'Выделить все',
+    'files_of_works' => 'файлы работ',
+    'file_of_works' => 'файл работ',
+    'file_of_sub_works' => 'файл подработ',
+    'files_of_sub_works' => 'файлы подработ',
+    'delete_checked' => 'Удалить выделенные',
+    'generate' => 'Сформировать',
+
+    'deleting_complete' => 'Удаление произведено',
+    'deleting_not_complete' => 'Удаление не произведено',
 ];

@@ -5,6 +5,9 @@ use App\Http\Controllers\Admin\AdminParserController;
 use App\Http\Controllers\Admin\AdminBaseController;
 use App\Http\Controllers\Admin\AdminEditController;
 
+use App\Http\Controllers\Admin\AdminCsvController;
+use App\Http\Controllers\Admin\AdminEditCsvController;
+
 use App\Http\Controllers\Admin\AdminBrandsController;
 use App\Http\Controllers\Admin\AdminEditBrandController;
 use App\Http\Controllers\Admin\AdminEditRepairController;
@@ -76,6 +79,14 @@ Route::prefix('admin')->middleware(['auth'])->name('admin.')->group(function () 
     Route::get('/offer-repairs/{slug?}', [AdminBaseController::class, 'offerRepairs'])->name('offer_repairs');
     Route::post('/edit-offer-repair', [AdminEditController::class, 'editOfferRepair'])->name('edit_offer_repair');
     Route::post('/delete-offer-repair', [AdminApiController::class, 'deleteOfferRepair'])->name('delete_offer_repair');
+
+    Route::get('/csv-files', [AdminCsvController::class, 'csvFiles'])->name('csv_files');
+    Route::post('/generate-csv-works', [AdminEditCsvController::class, 'generateCsvWorks'])->name('generate_csv_works');
+    Route::post('/generate-csv-sub-works', [AdminEditCsvController::class, 'generateCsvSubWorks'])->name('generate_csv_sub_works');
+    Route::post('/repair-parser-works', [AdminEditCsvController::class, 'repairParserWorks'])->name('repair_parser_works');
+    Route::post('/repair-parser-sub_works', [AdminEditCsvController::class, 'repairParserSubWorks'])->name('repair_parser_sub_works');
+    Route::post('/delete-csv-works', [AdminEditCsvController::class, 'deleteCsvWorks'])->name('delete_csv_works');
+    Route::post('/delete-csv-sub-works', [AdminEditCsvController::class, 'deleteCsvSubWorks'])->name('delete_csv_sub_works');
 
     Route::get('/free-checks/{slug?}', [AdminBaseController::class, 'freeChecks'])->name('free_checks');
     Route::post('/edit-free-check', [AdminEditController::class, 'editFreeCheck'])->name('edit_free_check');

@@ -38,6 +38,9 @@ class AdminBaseController extends Controller
             ['key' => 'contents', 'name' => trans('admin_menu.content'), 'description' => trans('admin_menu.content_description'), 'icon' => 'icon-pencil6'],
             ['key' => 'contacts', 'name' => trans('menu.contacts'), 'description' => trans('admin_menu.contacts_description'), 'icon' => 'icon-bookmark'],
             ['key' => 'offer_repairs', 'name' => trans('content.we_offer_repairs'), 'description' => trans('admin_menu.home_page_block_editing'), 'icon' => 'icon-hammer-wrench'],
+
+            ['key' => 'csv_files', 'name' => trans('content.csv_files'), 'description' => trans('admin_menu.csv_files_description'), 'icon' => 'icon-table2'],
+
             ['key' => 'free_checks', 'name' => trans('content.free_check'), 'description' => trans('admin_menu.home_page_block_editing'), 'icon' => 'icon-shield-check'],
             ['key' => 'checks', 'hidden' => true],
             ['key' => 'prices', 'name' => trans('content.our_prices'), 'description' => trans('admin_menu.home_page_block_editing'), 'icon' => 'icon-price-tags'],

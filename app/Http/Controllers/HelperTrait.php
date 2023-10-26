@@ -26,6 +26,7 @@ trait HelperTrait
     public $validationCarId = 'required|integer|exists:cars,id';
     public $validationRepairId = 'required|integer|exists:repairs,id';
     public $validationSpareId = 'required|integer|exists:spares,id';
+    public $validationCsv = 'required|mimes:csv,txt';
     public $skippingFolders = [
         'actions',
         'icons',

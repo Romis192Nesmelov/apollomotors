@@ -57,7 +57,7 @@ $(document).ready(function () {
     });;
 
     // Basic datatable
-    $('.datatable-basic').DataTable();
+    const dTable = $('.datatable-basic').DataTable();
 
     // Alternative pagination
     // $('.datatable-pagination').DataTable({
@@ -120,7 +120,10 @@ $(document).ready(function () {
             'id': window.deleteId,
         }, function (data) {
             if (data.success) {
-                window.deleteRow.remove();
+                dTable.row(window.deleteRow).remove();
+                dTable.draw();
+                bindDelete();
+                // window.deleteRow.remove();
                 removeLoader();
             }
         });
@@ -176,6 +179,14 @@ $(document).ready(function () {
             }
         });
     });
+
+    // Select-deselect all
+    $('input[name=check_all]').change(function () {
+        var form = $(this).parents('form');
+        if ($(this).is(':checked')) form.find('input').prop('checked',true).uniform('refresh');
+        else form.find('input').prop('checked',false).uniform('refresh');
+    });
+
 });
 
 function windowResize() {
