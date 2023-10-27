@@ -120,6 +120,10 @@ Route::prefix('admin')->middleware(['auth'])->name('admin.')->group(function () 
     Route::post('/edit-brand', [AdminEditBrandController::class, 'editBrand'])->name('edit_brand');
     Route::post('/delete-brand', [AdminApiController::class, 'deleteBrand'])->name('delete_brand');
 
+    Route::get('/def-cars/{slug?}', [AdminBrandsController::class, 'defCars'])->name('def_cars');
+    Route::get('/def-repairs/{slug?}', [AdminBrandsController::class, 'defRepairs'])->name('def_repairs');
+    Route::post('/edit-def-car', [AdminEditBrandController::class, 'editDefCar'])->name('edit_def_car');
+
     Route::get('/brand-repair', [AdminBrandsController::class, 'brandRepair'])->name('brand_repair');
     Route::get('/brand-maintenances', [AdminBrandsController::class, 'brandMaintenances'])->name('brand_maintenances');
     Route::get('/brand-spare', [AdminBrandsController::class, 'brandSpare'])->name('brand_spare');
@@ -157,18 +161,22 @@ Route::prefix('admin')->middleware(['auth'])->name('admin.')->group(function () 
     Route::post('/delete-repair', [AdminApiController::class, 'deleteRepair'])->name('delete_repair');
 
     Route::get('/sub-repairs/{slug?}', [AdminBrandsController::class, 'subRepairs'])->name('sub_repairs');
+    Route::get('/def-sub-repairs/{slug?}', [AdminBrandsController::class, 'defSubRepairs'])->name('def_sub_repairs');
     Route::post('/edit-sub-repair', [AdminEditRepairController::class, 'editSubRepair'])->name('edit_sub_repair');
     Route::post('/delete-sub-repair', [AdminApiController::class, 'deleteSubRepair'])->name('delete_sub_repair');
 
     Route::get('/recommended-works/{slug}', [AdminBrandsController::class, 'recommendedWorks'])->name('recommended_works');
+    Route::get('/def-recommended-works/{slug}', [AdminBrandsController::class, 'defRecommendedWorks'])->name('def_recommended_works');
     Route::post('/add-recommended-work', [AdminEditRepairController::class, 'addRecommendedWork'])->name('add_recommended_work');
     Route::post('/delete-recommended-work', [AdminApiController::class, 'deleteRecommendedWork'])->name('delete_recommended_work');
 
     Route::get('/repair-images/{slug}', [AdminBrandsController::class, 'repairImages'])->name('repair_images');
+    Route::get('/def-repair-images/{slug}', [AdminBrandsController::class, 'defRepairImages'])->name('def_repair_images');
     Route::post('/add-repair-image', [AdminEditRepairController::class, 'addRepairImage'])->name('add_repair_image');
     Route::post('/delete-repair-image', [AdminApiController::class, 'deleteRepairImage'])->name('delete_repair_image');
 
     Route::get('/repair-spares/{slug}', [AdminBrandsController::class, 'repairSpares'])->name('repair_spares');
+    Route::get('/def-repair-spares/{slug}', [AdminBrandsController::class, 'defRepairSpares'])->name('def_repair_spares');
     Route::post('/add-repair-spare', [AdminEditRepairController::class, 'addRepairSpare'])->name('add_repair_spare');
     Route::post('/delete-repair-spare', [AdminApiController::class, 'deleteRepairSpare'])->name('delete_repair_spare');
 

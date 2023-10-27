@@ -25,7 +25,7 @@
                 @include('issues.blocks.car_name_block',['simple' => true])
                 {{ ' '.trans('content.prices') }}
             </x-head>
-            @include('issues.blocks.repair_table.repair_table_block',['price' => $car->priceRepairs])
+            @include('issues.blocks.repair_table.repair_table_block',['price' => $car->priceRepairsActive])
             @if (count($car->repairs) == 2)
                 <div>
                     {!! $car->repairs[1]->text !!}

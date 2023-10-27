@@ -18,6 +18,7 @@ class DatabaseSeeder extends Seeder
         $this->call(SeoSeeder::class);
 
         $this->call(ContentsSeeder::class);
+        $this->call(DefCarsSeeder::class);
         $this->call(ContactsSeeder::class);
         $this->call(ActionsSeeder::class);
         $this->call(ActionsQuestionsSeeder::class);
@@ -26,6 +27,7 @@ class DatabaseSeeder extends Seeder
         $this->call(CarsSeeder::class);
         $this->call(RepairsSeeder::class);
         $this->call(SubRepairsSeeder::class);
+        $this->call(DefRepairsSeeder::class);
         $this->call(RepairImagesSeeder::class);
         $this->call(RecommendedWorksSeeder::class);
 

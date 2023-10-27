@@ -136,13 +136,13 @@ class BaseController extends Controller
         ));
     }
 
-    protected function getItem(string $itemName, Model $model, $slug)
+    protected function getItem(string $itemName, Model $model, $slug): void
     {
         $this->data[$itemName] = $model->where('slug',$slug)->where('active',1)->first();
         if (!$this->data[$itemName]) abort(404, trans('404'));
     }
 
-    private function getContent($id, $activeMenu)
+    private function getContent($id, $activeMenu): View
     {
         $this->activeMenu = $activeMenu;
         $this->data['content'] = Content::find($id);

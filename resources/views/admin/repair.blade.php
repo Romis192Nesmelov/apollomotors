@@ -35,18 +35,20 @@
                 @include('admin.blocks.title_block')
                 <div class="panel-body">
                     <div class="col-md-3 col-sm-4 col-sm-12">
-                        <div class="panel panel-flat">
-                            <x-atitle>{{ trans('admin.cars') }}</x-atitle>
-                            <div class="panel-body">
-                                @include('admin.blocks.select_block',[
-                                    'label' => trans('admin.car'),
-                                    'name' => 'car_id',
-                                    'values' => $cars,
-                                    'selected' => isset($repair) ? $repair->car_id : request()->parent_id,
-                                    'option' => 'name_'.app()->getLocale()
-                                ])
+                        @if (isset($cars))
+                            <div class="panel panel-flat">
+                                <x-atitle>{{ trans('admin.cars') }}</x-atitle>
+                                <div class="panel-body">
+                                    @include('admin.blocks.select_block',[
+                                        'label' => trans('admin.car'),
+                                        'name' => 'car_id',
+                                        'values' => $cars,
+                                        'selected' => isset($repair) ? $repair->car_id : request()->parent_id,
+                                        'option' => 'name_'.app()->getLocale()
+                                    ])
+                                </div>
                             </div>
-                        </div>
+                        @endif
                         <div class="panel panel-flat">
                             <div class="panel-body">
                                 @include('blocks.checkbox_block', [
@@ -137,7 +139,6 @@
                     </div>
                     <div class="col-md-9 col-sm-8 col-sm-12">
                         <div class="panel panel-flat">
-                            <x-atitle>{{ trans('admin.sub_repairs') }}</x-atitle>
                             <div class="panel-body">
                                 @include('blocks.input_block', [
                                     'label' => trans('admin.slug'),
@@ -158,20 +159,26 @@
                                     'value' => isset($repair) ? $repair->head : ''
                                 ])
                             </div>
-                            @if (isset($repair))
-                                @include('admin.blocks.datatable_block',[
-                                    'items' => $repair->subRepairs,
-                                    'columns' => ['name','price'],
-                                    'addMode' => true,
-                                    'editMode' => true,
-                                    'deleteMode' => Gate::allows('delete'),
-                                    'route' => 'sub_repairs',
-                                    'modal' => 'delete-modal-sub-repair',
-                                    'addButtonText' => trans('admin.add_sub_repairs'),
-                                    'parentId' => $repair->id
-                                ])
-                            @endif
                         </div>
+
+                        @if (isset($repair))
+                            <div class="panel panel-flat">
+                                <div class="panel-body">
+                                    <x-atitle>{{ trans('admin.sub_repairs') }}</x-atitle>
+                                    @include('admin.blocks.datatable_block',[
+                                        'items' => $repair->subRepairs,
+                                        'columns' => ['name','price'],
+                                        'addMode' => true,
+                                        'editMode' => true,
+                                        'deleteMode' => Gate::allows('delete'),
+                                        'route' => isset($def_mode) && $def_mode ? 'def_sub_repairs' : 'sub_repairs',
+                                        'modal' => 'delete-modal-sub-repair',
+                                        'addButtonText' => trans('admin.add_sub_repairs'),
+                                        'parentId' => $repair->id
+                                    ])
+                                </div>
+                            </div>
+                        @endif
 
                         @if (isset($repair))
                             <div class="panel panel-flat">
@@ -181,9 +188,10 @@
                                         'items' => $repair->images,
                                         'columns' => ['image','preview'],
                                         'addMode' => true,
+                                        'forbiddenEdit' => true,
                                         'editMode' => false,
                                         'deleteMode' => Gate::allows('delete'),
-                                        'route' => 'repair_images',
+                                        'route' => isset($def_mode) && $def_mode ? 'def_repair_images' : 'repair_images',
                                         'modal' => 'delete-modal-repair-image',
                                         'addButtonText' => trans('admin.add_repair_image'),
                                         'parentId' => $repair->id
@@ -211,9 +219,10 @@
                                         'relation' => 'work',
                                         'columns' => ['head','price'],
                                         'addMode' => $free_works_count,
+                                        'forbiddenEdit' => true,
                                         'editMode' => false,
                                         'deleteMode' => Gate::allows('delete'),
-                                        'route' => 'recommended_works',
+                                        'route' => isset($def_mode) && $def_mode ? 'def_recommended_works' : 'recommended_works',
                                         'modal' => 'delete-modal-recommended-work',
                                         'addButtonText' => trans('admin.add_sub_repairs'),
                                         'parentId' => $repair->id
@@ -238,9 +247,10 @@
                                             'relation' => 'spare',
                                             'columns' => ['head','active'],
                                             'addMode' => $free_spares_count,
+                                            'forbiddenEdit' => true,
                                             'editMode' => false,
                                             'deleteMode' => Gate::allows('delete'),
-                                            'route' => 'repair_spares',
+                                            'route' => isset($def_mode) && $def_mode ? 'def_repair_spares' : 'repair_spares',
                                             'modal' => 'delete-modal-repair-spare',
                                             'addButtonText' => trans('admin.add_repair_spare'),
                                             'parentId' => $repair->id

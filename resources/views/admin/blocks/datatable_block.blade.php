@@ -64,11 +64,22 @@
                             </td>
                         @endif
                     @endforeach
-                    @if ($editMode)
-                        @include('admin.blocks.edit_cell_block', ['href' => isset($route) ? route('admin.'.$route, ['id' => $item->id, 'parent_id' => (isset($parentId) && $parentId ? $parentId : '')]) : route($menu[$menu_key]['href'], ['id' => $item->id])])
-                    @else
+
+                    @if (isset($forbiddenEdit) && $forbiddenEdit)
                         <td></td>
+                    @else
+                        @if (isset($editSlugMode) && $editSlugMode)
+                            @include('admin.blocks.edit_cell_block', ['href' => route($menu[$menu_key]['href'], ['slug' => $item->slug])])
+                        @else
+                            @include('admin.blocks.edit_cell_block', [
+                                'href' =>
+                                    isset($route) ?
+                                    route('admin.'.$route, ['id' => $item->id, 'parent_id' => (isset($parentId) && $parentId ? $parentId : '')]) :
+                                    route($menu[$menu_key]['href'], ['id' => $item->id])
+                            ])
+                        @endif
                     @endif
+
                     @if ($deleteMode)
                         @include('admin.blocks.delete_cell_block',['id' => $item->id])
                     @else

@@ -29,6 +29,7 @@ class Repair extends Model
         'text',
         'spares_image',
         'car_id',
+        'def_car_id',
         'active'
     ];
 
@@ -44,6 +45,11 @@ class Repair extends Model
     public function car(): BelongsTo
     {
         return $this->belongsTo(Car::class);
+    }
+
+    public function defCar(): BelongsTo
+    {
+        return $this->belongsTo(DefCar::class);
     }
 
     public function recommendedWorks(): HasMany

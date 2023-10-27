@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\HelperTrait;
 use App\Models\Brand;
 use App\Models\Car;
+use App\Models\DefCar;
 use App\Models\Repair;
 
 use App\Models\Spare;
@@ -64,6 +65,25 @@ class AdminBrandsController extends AdminBaseController
         );
     }
 
+    public function defCars(Request $request, $slug=null): View
+    {
+        $this->data['menu_key'] = 'def_cars';
+        $this->breadcrumbs[] = $this->menu['def_cars'];
+
+        if ($slug) {
+            $this->data['content'] = DefCar::where('slug',$slug)->get();
+            $this->breadcrumbs[] = [
+                'href' => $this->menu['def_cars']['href'],
+                'params' => ['slug' => $this->data['content'][0]->slug],
+                'name' => trans('admin.'.(Gate::allows('edit') ? 'edit_def_car' : 'view_def_car'), ['def_car' => $this->data['content'][0]->head]),
+            ];
+            return $this->showView('def_car_content');
+        } else {
+            $this->data['contents'] = DefCar::all()->unique('slug');
+            return $this->showView('def_car_contents');
+        }
+    }
+
     public function carRepairs(Request $request): View
     {
         return $this->getRMS($request, new Car(), $request->id, 'repairs');
@@ -97,12 +117,7 @@ class AdminBrandsController extends AdminBaseController
 
     public function repairs(Request $request, $slug=null): View
     {
-        if ($request->has('id')) {
-            $this->data['repair'] = Repair::findOrFail($request->input('id'));
-            $this->data['free_works_count'] = count($this->getRepairRelationsFree(new Repair(), 'recommendedWorks', 'work_id'));
-            $this->data['free_spares_count'] = count($this->getRepairRelationsFree(new Repair(), 'recommendedWorks', 'spare_id'));
-        }
-
+        if ($request->has('id')) $this->getFreeWorksCountForRepair($request->id);
         return $this->getSomething(
             $request,
             'repair',
@@ -135,6 +150,12 @@ class AdminBrandsController extends AdminBaseController
         );
     }
 
+    public function repairImages(Request $request): View
+    {
+        $this->getRepairSomething($request->input('parent_id'),'repair_image');
+        return $this->showView('repair_image');
+    }
+
     public function recommendedWorks(Request $request): View
     {
         $this->getRepairSomething($request->input('parent_id'),'recommended_work');
@@ -142,16 +163,104 @@ class AdminBrandsController extends AdminBaseController
         return $this->showView('recommended_work');
     }
 
-    public function repairImages(Request $request): View
-    {
-        $this->getRepairSomething($request->input('parent_id'),'repair_image');
-        return $this->showView('repair_image');
-    }
-
     public function repairSpares(Request $request): View
     {
         $this->getRepairSomething($request->input('parent_id'),'repair_spare');
         $this->data['free_spares'] = $this->getRepairRelationsFree(new Spare(), 'repairSpares', 'spare_id');
+        return $this->showView('repair_spare');
+    }
+
+    /**
+     * @throws \Illuminate\Auth\Access\AuthorizationException
+     */
+    public function defRepairs(Request $request, $slug=null): View
+    {
+        if ($request->has('id')) $this->getFreeWorksCountForRepair($request->id);
+        $this->data['def_mode'] = true;
+        $this->getFirstBreadcrumbDefCar();
+        if ($request->has('id')) {
+            $this->getSecondBreadcrumbDefCar();
+        } else if ($slug && $slug == 'add') {
+            $this->authorize('edit');
+            $this->breadcrumbs[] = [
+                'href' => 'admin.def_repairs',
+                'params' => ['slug' => 'add'],
+                'name' => trans('admin.adding_repair'),
+            ];
+        }
+        return $this->showView('repair');
+    }
+
+    /**
+     * @throws \Illuminate\Auth\Access\AuthorizationException
+     */
+    public function defSubRepairs(Request $request, $slug=null): View
+    {
+        $this->getRepair($request->input('parent_id'));
+        $this->getFirstBreadcrumbDefCar();
+        $this->getSecondBreadcrumbDefCar();
+        $this->data['repairs'] = Repair::where('active',1)->get();;
+
+        if ($request->has('id')) {
+            $this->data['sub_repair'] = SubRepair::findOrFail($request->input('id'));
+            $this->breadcrumbs[] = [
+                'href' => 'admin.def_sub_repairs',
+                'params' => ['id' => $this->data['sub_repair']->id, 'parent_id' => $this->data['repair']->id],
+                'name' => trans('admin.edit_sub_repair', ['sub_repair' => $this->data['sub_repair']->name]),
+            ];
+        } else if ($slug && $slug == 'add') {
+            $this->authorize('edit');
+            $this->breadcrumbs[] = [
+                'href' => 'admin.def_sub_repairs',
+                'params' => ['slug' => 'add', 'parent_id' => $this->data['repair']->id],
+                'name' => trans('admin.add_sub_repairs'),
+            ];
+        }
+        return $this->showView('sub_repair');
+    }
+
+    public function defRepairImages(Request $request): View
+    {
+        $this->getRepair($request->input('parent_id'));
+        $this->getFirstBreadcrumbDefCar();
+        $this->getSecondBreadcrumbDefCar();
+
+        $this->breadcrumbs[] = [
+            'href' => 'admin.def_repair_images',
+            'params' => ['slug' => 'add', 'parent_id' => $this->data['repair']->id],
+            'name' => trans('admin.adding_repair_image'),
+        ];
+        return $this->showView('repair_image');
+    }
+
+    public function defRecommendedWorks(Request $request): View
+    {
+        $this->getRepair($request->input('parent_id'));
+        $this->data['free_works'] = $this->getRepairRelationsFree(new Repair(), 'recommendedWorks', 'work_id');
+
+        $this->getFirstBreadcrumbDefCar();
+        $this->getSecondBreadcrumbDefCar();
+
+        $this->breadcrumbs[] = [
+            'href' => 'admin.def_recommended_works',
+            'params' => ['slug' => 'add', 'parent_id' => $this->data['repair']->id],
+            'name' => trans('admin.adding_recommended_work'),
+        ];
+        return $this->showView('recommended_work');
+    }
+
+    public function defRepairSpares(Request $request): View
+    {
+        $this->getRepair($request->input('parent_id'));
+        $this->data['free_spares'] = $this->getRepairRelationsFree(new Spare(), 'repairSpares', 'spare_id');
+        $this->getFirstBreadcrumbDefCar();
+        $this->getSecondBreadcrumbDefCar();
+
+        $this->breadcrumbs[] = [
+            'href' => 'admin.def_repair_spares',
+            'params' => ['slug' => 'add', 'parent_id' => $this->data['repair']->id],
+            'name' => trans('admin.adding_spare'),
+        ];
         return $this->showView('repair_spare');
     }
 
@@ -198,7 +307,7 @@ class AdminBrandsController extends AdminBaseController
     private function getRepairSomething(int $parentId, string $key): void
     {
         $this->data['menu_key'] = 'brands';
-        $this->data['repair'] = Repair::findOrFail($parentId);
+        $this->getRepair($parentId);
 
         $this->breadcrumbs[] = [
             'id' => 'brands',
@@ -228,7 +337,7 @@ class AdminBrandsController extends AdminBaseController
         ];
 
         $this->breadcrumbs[] = [
-            'id' => 'add_recommended_work',
+            'id' => 'add_something',
             'href' => 'admin.'.$key.'s',
             'params' => ['slug' => 'add', 'parent_id' => $this->data['repair']->id],
             'name' => trans('admin.adding_'.$key),
@@ -238,5 +347,36 @@ class AdminBrandsController extends AdminBaseController
     private function getRepairRelationsFree(Model $model, string $repairRelation, string $field): Collection
     {
         return $model->where('car_id',$this->data['repair']->car_id)->whereNotIn('id',$this->data['repair'][$repairRelation]->pluck($field)->toArray())->get();
+    }
+
+    private function getFreeWorksCountForRepair(int $id): void
+    {
+        $this->getRepair($id);
+        $this->data['free_works_count'] = $this->getRepairRelationsFree(new Repair(), 'recommendedWorks', 'work_id')->count();
+        $this->data['free_spares_count'] = $this->getRepairRelationsFree(new Repair(), 'recommendedWorks', 'spare_id')->count();
+    }
+
+    private function getFirstBreadcrumbDefCar(): void
+    {
+        $this->data['menu_key'] = 'def_cars';
+        $this->breadcrumbs[] = [
+            'href' => 'admin.def_cars',
+            'params' => ['slug' => 'repair'],
+            'name' => trans('admin.'.(Gate::allows('edit') ? 'edit_' : 'view_').'def_car', ['def_car' => DefCar::where('slug','repair')->pluck('head')->first()]),
+        ];
+    }
+
+    private function getRepair(int $id): void
+    {
+        $this->data['repair'] = Repair::findOrFail($id);
+    }
+
+    private function getSecondBreadcrumbDefCar(): void
+    {
+        $this->breadcrumbs[] = [
+            'href' => 'admin.def_repairs',
+            'params' => ['id' => $this->data['repair']->id],
+            'name' => trans('admin.'.(Gate::allows('edit') ? 'edit_' : 'view_').'repair', ['repair' => $this->data['repair']->head]),
+        ];
     }
 }

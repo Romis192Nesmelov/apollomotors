@@ -44,7 +44,7 @@ class AdminEditRepairController extends AdminEditController
                 'warranty_years' => $this->validationNumeric,
                 'head' => $this->validationString,
                 'text' => 'nullable|max:5000',
-                'car_id' => $this->validationCarId
+                'car_id' => 'nullable|integer|exists:cars,id'
             ],
             new Repair(),
             ['spares_image' => $this->validationJpg],
@@ -52,7 +52,19 @@ class AdminEditRepairController extends AdminEditController
             $fields
         );
         $this->setSeo($request, $repair);
-        return redirect(route('admin.cars', ['id' => $repair->car_id, 'parent_id' => $repair->car->brand_id]));
+
+        if ($repair->car_id) {
+            $route = 'admin.cars';
+            $params = ['id' => $repair->car_id, 'parent_id' => $repair->car->brand_id];
+        } else {
+            if (!$repair->def_car_id) {
+                $repair->def_car_id = 1;
+                $repair->save();
+            }
+            $route = 'admin.def_cars';
+            $params = ['slug' => 'repair'];
+        }
+        return redirect(route($route, $params));
     }
 
     /**
@@ -66,7 +78,16 @@ class AdminEditRepairController extends AdminEditController
             ['name' => $this->validationString, 'price' => $this->validationInteger, 'repair_id' => $this->validationRepairId],
             new SubRepair()
         );
-        return redirect(route('admin.repairs', ['id' => $subRepair->repair_id, 'parent_id' => $subRepair->repair->car_id]));
+
+        $params = ['id' => $subRepair->repair_id];
+        if ($subRepair->repair->car_id) {
+            $route = 'admin.repairs';
+            $params['parent_id'] = $subRepair->repair->car_id;
+        } else {
+            $route = 'admin.def_repairs';
+            $params['parent_id'] = $subRepair->repair->def_car_id;
+        }
+        redirect(route($route, $params));
     }
 
     /**
@@ -110,6 +131,15 @@ class AdminEditRepairController extends AdminEditController
         $fields = $this->validate($request, $validationArr);
         $item = $model->create($fields);
         $this->saveCompleteMessage();
-        return redirect(route('admin.repairs', ['id' => $item->repair_id, 'parent_id' => $item->repair->car_id]));
+
+        $params = ['id' => $item->repair_id];
+        if ($item->repair->car_id) {
+            $route = 'admin.repairs';
+            $params['parent_id'] = $item->repair->car_id;
+        } else {
+            $route = 'admin.def_repairs';
+            $params['parent_id'] = $item->repair->def_car_id;
+        }
+        return redirect(route($route, $params));
     }
 }

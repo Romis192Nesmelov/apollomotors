@@ -6,6 +6,7 @@ use App\Models\Brand;
 use App\Models\Car;
 
 use App\Models\Content;
+use App\Models\DefCar;
 use App\Models\Repair;
 use App\Models\Spare;
 use Illuminate\View\View;
@@ -42,7 +43,11 @@ class BrandController extends BaseController
             if ($car) {
                 if ($job) {
                     $this->getItem('repair', new Repair(), $job);
+                    $this->getItem('brand', new Brand(), $brand);
                     $this->setSeo($this->data['repair']->seo);
+
+                    if ($car != 'def') $this->getItem('car', new Car(), $car);
+                    else $this->data['car'] = null;
 
                     $this->data['price'] = $this->data['repair']->price;
                     $this->data['old_price'] = $this->data['repair']->old_price ? $this->data['repair']->old_price : $this->data['price'] * 3;
@@ -121,9 +126,9 @@ class BrandController extends BaseController
 
     private function getDefContent($slug): void
     {
-        $this->data['content'] = Content::where('slug',$slug)->first();
-        if (!$this->data['content']) abort(404, trans('404'));
+        $this->data['contents'] = DefCar::where('slug',$slug)->get();
+        if (!$this->data['contents']) abort(404, trans('404'));
         $this->data['brands'] = Brand::where('active',1)->get();
-        $this->setSeo($this->data['content']->seo);
+        $this->setSeo($this->data['contents'][0]->seo);
     }
 }

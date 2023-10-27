@@ -120,10 +120,10 @@ $(document).ready(function () {
             'id': window.deleteId,
         }, function (data) {
             if (data.success) {
-                dTable.row(window.deleteRow).remove();
-                dTable.draw();
+                // dTable.row(window.deleteRow).remove();
+                window.deleteRow.remove();
+                // dTable.draw();
                 bindDelete();
-                // window.deleteRow.remove();
                 removeLoader();
             }
         });

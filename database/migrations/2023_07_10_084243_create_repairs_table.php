@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\DefCar;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -27,7 +28,8 @@ return new class extends Migration
             $table->string('head');
             $table->longText('text')->nullable();
             $table->string('spares_image')->nullable();
-            $table->foreignIdFor(Car::class)->constrained()->cascadeOnUpdate()->cascadeOnDelete();
+            $table->foreignIdFor(Car::class)->nullable()->constrained()->cascadeOnUpdate()->cascadeOnDelete();
+            $table->foreignIdFor(DefCar::class)->nullable()->constrained()->cascadeOnUpdate()->cascadeOnDelete();
             $table->boolean('active');
             $table->timestamps();
         });

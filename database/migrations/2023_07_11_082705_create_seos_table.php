@@ -2,7 +2,7 @@
 
 use App\Models\Action;
 use App\Models\Content;
-//use App\Models\Action;
+use App\Models\DefCar;
 use \App\Models\Article;
 use \App\Models\BrandRepair;
 use \App\Models\CarRepair;
@@ -31,6 +31,7 @@ return new class extends Migration
             $table->foreignIdFor(Content::class)->nullable()->constrained()->cascadeOnUpdate()->cascadeOnDelete();
             $table->foreignIdFor(Action::class)->nullable()->constrained()->cascadeOnUpdate()->cascadeOnDelete();
             $table->foreignIdFor(Article::class)->nullable()->constrained()->cascadeOnUpdate()->cascadeOnDelete();
+            $table->foreignIdFor(DefCar::class)->nullable()->constrained()->cascadeOnUpdate()->cascadeOnDelete();
 
             $table->foreignIdFor(BrandRepair::class)->nullable()->constrained()->cascadeOnUpdate()->cascadeOnDelete();
             $table->foreignIdFor(CarRepair::class)->nullable()->constrained()->cascadeOnUpdate()->cascadeOnDelete();
@@ -43,6 +44,7 @@ return new class extends Migration
 
             $table->foreignIdFor(Repair::class)->nullable()->constrained()->cascadeOnUpdate()->cascadeOnDelete();
             $table->foreignIdFor(Spare::class)->nullable()->constrained()->cascadeOnUpdate()->cascadeOnDelete();
+
             $table->timestamps();
         });
     }

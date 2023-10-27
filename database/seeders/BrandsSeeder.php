@@ -615,4 +615,9 @@ class BrandsSeeder extends Seeder
         }
         if ($existsSeoFlag) Seo::create($seoItem);
     }
+
+    protected function replaceCompanyName($text): string
+    {
+        return str_replace('Аполло-Моторс', '<a href="'.url('/').'" title="Техцентр">Аполло-Моторс</a>', $text);
+    }
 }

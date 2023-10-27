@@ -38,9 +38,6 @@ class AdminBaseController extends Controller
             ['key' => 'contents', 'name' => trans('admin_menu.content'), 'description' => trans('admin_menu.content_description'), 'icon' => 'icon-pencil6'],
             ['key' => 'contacts', 'name' => trans('menu.contacts'), 'description' => trans('admin_menu.contacts_description'), 'icon' => 'icon-bookmark'],
             ['key' => 'offer_repairs', 'name' => trans('content.we_offer_repairs'), 'description' => trans('admin_menu.home_page_block_editing'), 'icon' => 'icon-hammer-wrench'],
-
-            ['key' => 'csv_files', 'name' => trans('content.csv_files'), 'description' => trans('admin_menu.csv_files_description'), 'icon' => 'icon-table2'],
-
             ['key' => 'free_checks', 'name' => trans('content.free_check'), 'description' => trans('admin_menu.home_page_block_editing'), 'icon' => 'icon-shield-check'],
             ['key' => 'checks', 'hidden' => true],
             ['key' => 'prices', 'name' => trans('content.our_prices'), 'description' => trans('admin_menu.home_page_block_editing'), 'icon' => 'icon-price-tags'],
@@ -48,9 +45,11 @@ class AdminBaseController extends Controller
             ['key' => 'clients', 'name' => trans('content.we_are_trusted'), 'description' => trans('admin_menu.home_page_block_editing'), 'icon' => 'icon-truck'],
             ['key' => 'articles', 'name' => trans('menu.articles'), 'description' => trans('admin_menu.articles'), 'icon' => 'icon-magazine'],
             ['key' => 'gallery', 'name' => trans('admin_menu.gallery'), 'description' => trans('admin_menu.gallery_description'), 'icon' => 'icon-images3'],
+            ['key' => 'csv_files', 'name' => trans('admin_menu.csv_files'), 'description' => trans('admin_menu.csv_files_description'), 'icon' => 'icon-table2'],
             ['key' => 'brands', 'name' => trans('admin_menu.brands'), 'description' => trans('admin_menu.brands_description'), 'icon' => 'icon-chess-queen'],
             ['key' => 'cars', 'hidden' => true],
             ['key' => 'spares', 'hidden' => true],
+            ['key' => 'def_cars', 'name' => trans('admin_menu.def_cars'), 'description' => trans('admin_menu.def_cars_description'), 'icon' => 'icon-info22'],
             ['key' => 'actions', 'name' => trans('admin_menu.actions'), 'description' => trans('admin_menu.actions_description'), 'icon' => 'icon-gift'],
             ['key' => 'action_questions', 'hidden' => true],
             ['key' => 'repairs', 'hidden' => true],
@@ -254,20 +253,17 @@ class AdminBaseController extends Controller
                         $thirdParentsHead,
                         ['id' => $this->data[$thirdParentsKey]->id]
                     );
-                } else {
-                    $this->data['menu_key'] = $secondParentsKey.'s';
-                }
+                } else $this->data['menu_key'] = $secondParentsKey.'s';
 
                 $this->data[$secondParentsKey] = $this->data[$parentKey][$secondParentsKey];
                 $this->breadcrumbs[] = $this->menu[$secondParentsKey.'s'];
+                $breadcrumbsParams = isset($this->data['def_mode']) ? ['slug' => $this->data[$secondParentsKey]->slug] : ['id' => $this->data[$secondParentsKey]->id, 'parent_id' => ($thirdParentsKey ? $this->data[$thirdParentsKey]->id : '')];
                 $this->getBreadcrumbs(
                     $secondParentsKey,
                     $secondParentsHead,
-                    ['id' => $this->data[$secondParentsKey]->id, 'parent_id' => ($thirdParentsKey ? $this->data[$thirdParentsKey]->id : '')]
+                    $breadcrumbsParams
                 );
-            } else {
-                $this->data['menu_key'] = $parentKey.'s';
-            }
+            } else $this->data['menu_key'] = $parentKey.'s';
 
             $this->breadcrumbs[] = $this->menu[$parentKey.'s'];
             $this->getBreadcrumbs(
@@ -286,11 +282,10 @@ class AdminBaseController extends Controller
         if ($request->has('id')) {
             if (!isset($this->data[$key])) $this->data[$key] = $model->findOrFail($request->input('id'));
             $breadcrumbsParams['id'] = $this->data[$key]->id;
-            $this->getBreadcrumbs($key, $head, $breadcrumbsParams);
+             $this->getBreadcrumbs($key, $head, $breadcrumbsParams);
             return $this->showView($key);
         } else if ($slug && $slug == 'add') {
             $this->authorize('edit');
-            $breadcrumbsParams['slug'] = 'add';
             $this->breadcrumbs[] = [
                 'id' => $this->menu[$key.'s']['id'],
                 'href' => $this->menu[$key.'s']['href'],
@@ -301,8 +296,6 @@ class AdminBaseController extends Controller
         } else {
             if ($model instanceof HomePrice) $this->data[$key.'s'] = $model->orderBy('brand_id')->get();
             else $this->data[$key.'s'] = $model->all();
-
-
             return $this->showView($key.'s');
         }
     }

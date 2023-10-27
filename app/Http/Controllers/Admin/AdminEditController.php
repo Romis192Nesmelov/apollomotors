@@ -264,7 +264,6 @@ class AdminEditController extends Controller
             // Creating item
             $item = $model->create($fields);
         }
-
         $this->saveCompleteMessage();
         return $item->refresh();
     }

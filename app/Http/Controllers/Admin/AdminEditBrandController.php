@@ -6,6 +6,7 @@ use App\Http\Controllers\HelperTrait;
 use App\Models\Brand;
 use App\Models\Car;
 
+use App\Models\DefCar;
 use App\Models\Spare;
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Database\Eloquent\Model;
@@ -34,6 +35,36 @@ class AdminEditBrandController extends AdminEditController
             'storage/images/brands/',
         );
         return redirect(route('admin.brands'));
+    }
+
+    /**
+     * @throws AuthorizationException
+     */
+    public function editDefCar(Request $request): RedirectResponse
+    {
+        $this->authorize('edit');
+        if (!$request->has('slug')) abort(403);
+        $validationArr = ['head' => $this->validationString];
+
+        if ($request->slug == 'repair') {
+            $validationArr['text1'] = $this->validationText;
+            $validationArr['text2'] = $this->validationText;
+            $fields = $this->validate($request, $validationArr);
+            $content = DefCar::where('slug',$request->slug)->get();
+
+            $content[0]->update([
+                'head' => $fields['head'],
+                'text' => $fields['text1']
+            ]);
+            $content[1]->update(['text' => $fields['text2']]);
+        } else {
+            $validationArr['text'] = $this->validationText;
+            $fields = $this->validate($request, $validationArr);
+            $content = DefCar::where('slug',$request->slug)->first();
+            $content->update($fields);
+        }
+        $this->saveCompleteMessage();
+        return redirect(route('admin.def_cars'));
     }
 
     /**

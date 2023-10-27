@@ -48,6 +48,11 @@ class Car extends Model
         return $this->hasMany(Repair::class)->orderBy('head');
     }
 
+    public function priceRepairsActive(): HasMany
+    {
+        return $this->hasMany(Repair::class)->where('active',1)->orderBy('head');
+    }
+
     public function maintenance(): HasOne
     {
         return $this->hasOne(CarMaintenance::class);

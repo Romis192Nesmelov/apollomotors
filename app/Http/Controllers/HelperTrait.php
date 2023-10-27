@@ -14,7 +14,7 @@ trait HelperTrait
     public $validationInteger = 'required|integer';
     public $validationNumeric = 'required|numeric';
     public $validationString = 'required|min:3|max:255';
-    public $validationText = 'required|min:5|max:3000';
+    public $validationText = 'required|min:5';
     public $validationLongText = 'required|min:5|max:50000';
 //    public $validationColor = 'regex:/^(hsv\((\d+)\,\s(\d+)\%\,\s(\d+)\%\))$/';
 //    public $validationSvg = 'required|mimes:svg|max:10';
