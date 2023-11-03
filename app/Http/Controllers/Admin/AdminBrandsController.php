@@ -311,19 +311,19 @@ class AdminBrandsController extends AdminBaseController
             $this->breadcrumbs[] = [
                 'href' => $this->menu['brands']['href'],
                 'params' => ['id' => $this->data['item']->brand->id],
-                'name' => trans('admin.'.(Gate::allows('edit') ? 'edit_' : 'view_').'brand', ['brand' => $this->data['item']->brand['name_'.app()->getLocale()]]),
+                'name' => trans($this->getEditOrView().'brand', ['brand' => $this->data['item']->brand['name_'.app()->getLocale()]]),
             ];
             $this->data['menu_key'] = 'clients';
             $this->breadcrumbs[] = [
                 'href' => 'admin.cars',
                 'params' => ['parent_id' => $this->data['item']->brand->id, 'id' => $this->data['item']->id],
-                'name' => trans('admin.'.(Gate::allows('edit') ? 'edit_' : 'view_').'car', ['car' => $this->data['item']['name_'.app()->getLocale()]]),
+                'name' => trans($this->getEditOrView().'car', ['car' => $this->data['item']['name_'.app()->getLocale()]]),
             ];
         } else {
             $this->breadcrumbs[] = [
                 'href' => 'admin.brands',
                 'params' => ['id' => $this->data['item']->id],
-                'name' => trans('admin.'.(Gate::allows('edit') ? 'edit_' : 'view_').'car', ['car' => $this->data['item']['name_'.app()->getLocale()]]),
+                'name' => trans($this->getEditOrView().'car', ['car' => $this->data['item']['name_'.app()->getLocale()]]),
             ];
         }
 
@@ -409,7 +409,7 @@ class AdminBrandsController extends AdminBaseController
         $this->breadcrumbs[] = [
             'href' => 'admin.brands',
             'params' => ['id' => $brand->id],
-            'name' => trans('admin.'.(Gate::allows('edit') ? 'edit_' : 'view_').'brand', ['brand' => $brand['name_'.app()->getLocale()]])
+            'name' => trans($this->getEditOrView().'brand', ['brand' => $brand['name_'.app()->getLocale()]])
         ];
     }
 
@@ -418,7 +418,7 @@ class AdminBrandsController extends AdminBaseController
         $this->breadcrumbs[] = [
             'href' => 'admin.cars',
             'params' => ['id' => $car->id, 'parent_id' => $car->brand->id],
-            'name' => trans('admin.'.(Gate::allows('edit') ? 'edit_' : 'view_').'car', ['car' => $car['name_'.app()->getLocale()]]),
+            'name' => trans($this->getEditOrView().'car', ['car' => $car['name_'.app()->getLocale()]]),
         ];
     }
 
@@ -427,7 +427,7 @@ class AdminBrandsController extends AdminBaseController
         $this->breadcrumbs[] = [
             'href' => 'admin.repairs',
             'params' => ['id' => $repair->id, 'parent_id' => $repair->car->id],
-            'name' => trans('admin.'.(Gate::allows('edit') ? 'edit_' : 'view_').'repair', ['repair' => $repair->head]),
+            'name' => trans($this->getEditOrView().'repair', ['repair' => $repair->head]),
         ];
     }
 
@@ -437,7 +437,7 @@ class AdminBrandsController extends AdminBaseController
         $this->breadcrumbs[] = [
             'href' => 'admin.def_cars',
             'params' => ['slug' => 'repair'],
-            'name' => trans('admin.'.(Gate::allows('edit') ? 'edit_' : 'view_').'def_car', ['def_car' => DefCar::where('slug','repair')->pluck('head')->first()])
+            'name' => trans($this->getEditOrView().'def_car', ['def_car' => DefCar::where('slug','repair')->pluck('head')->first()])
         ];
     }
 
@@ -446,7 +446,7 @@ class AdminBrandsController extends AdminBaseController
         $this->breadcrumbs[] = [
             'href' => 'admin.def_repairs',
             'params' => ['id' => $this->data['repair']->id],
-            'name' => trans('admin.'.(Gate::allows('edit') ? 'edit_' : 'view_').'repair', ['repair' => $this->data['repair']->head])
+            'name' => trans($this->getEditOrView().'repair', ['repair' => $this->data['repair']->head])
         ];
     }
 }

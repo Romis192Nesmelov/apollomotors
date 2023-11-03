@@ -180,7 +180,7 @@ class AdminBaseController extends Controller
         $this->breadcrumbs[] = [
             'href' => 'admin.free_checks',
             'params' => ['id' => $this->data['free_check']->id],
-            'name' => trans('admin.'.(Gate::allows('edit') ? 'edit_' : 'view_').'free_check', ['free_check' => $this->data['free_check']->name]),
+            'name' => trans($this->getEditOrView().'free_check', ['free_check' => $this->data['free_check']->name]),
         ];
         $this->data['free_checks'] = FreeCheck::all();
 
@@ -329,7 +329,7 @@ class AdminBaseController extends Controller
             $this->breadcrumbs[] = [
                 'href' => $this->menu[$key.'s']['href'],
                 'params' => $breadcrumbsParams,
-                'name' => trans('admin.'.(Gate::allows('edit') ? 'edit_' : 'view_').$key, [$key => $this->data[$key][$head]]),
+                'name' => trans($this->getEditOrView().$key, [$key => $this->data[$key][$head]]),
             ];
             return $this->showView($key);
         } else if ($slug && $slug == 'add') {
@@ -356,5 +356,10 @@ class AdminBaseController extends Controller
                 $this->data
             )
         );
+    }
+
+    protected function getEditOrView(): string
+    {
+        return 'admin.'.(Gate::allows('edit') ? 'edit_' : 'view_');
     }
 }

@@ -13,6 +13,9 @@ use Illuminate\View\View;
 
 class AdminRecordsController extends AdminBaseController
 {
+    /**
+     * @throws \Illuminate\Auth\Access\AuthorizationException
+     */
     public function mechanics(Request $request, $slug=null): View
     {
         $this->data['menu_key'] = 'mechanics';

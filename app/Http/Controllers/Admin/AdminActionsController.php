@@ -80,7 +80,7 @@ class AdminActionsController extends AdminBaseController
         $this->breadcrumbs[] = [
             'href' => 'admin.actions',
             'params' => ['id' => $action->id],
-            'name' => trans('admin.'.(Gate::allows('edit') ? 'edit_' : 'view_').'action', ['action' => $action->head]),
+            'name' => trans($this->getEditOrView().'action', ['action' => $action->head]),
         ];
     }
 }
