@@ -118,7 +118,7 @@
                     'editMode' => Gate::allows('edit'),
                     'deleteMode' => Gate::allows('delete'),
                     'modal' => 'delete-modal-spare',
-                    'addButtonText' => trans('admin.add_repair')
+                    'addButtonText' => trans('admin.add_spares')
                 ])
             </div>
         </div>

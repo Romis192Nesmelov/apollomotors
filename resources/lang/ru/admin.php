@@ -170,7 +170,7 @@ return [
     'edit_action' => 'Редактирование акции «:action»',
     'view_action' => 'Просмотр акции «:action»',
     'adding_action' => 'Добавление акции',
-    'add_action' => 'Добавить акцию',
+    'add_actions' => 'Добавить акцию',
     'brands_in_action' => 'Бренды учавствующие в акции',
     'add_brands' => 'Добавить бренд',
     'action_faq' => 'FAQ по акции',

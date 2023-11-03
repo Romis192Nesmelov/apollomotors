@@ -25,8 +25,12 @@ class AdminBrandsController extends AdminBaseController
         parent::__construct();
     }
 
+    /**
+     * @throws \Illuminate\Auth\Access\AuthorizationException
+     */
     public function brands(Request $request, $slug=null): View
     {
+        $this->getFirstBreadcrumbBrand();
         return $this->getSomething(
             $request,
             'brand',
@@ -51,17 +55,26 @@ class AdminBrandsController extends AdminBaseController
         return $this->getRMS($request, new Brand(), $request->id, 'spare');
     }
 
+    /**
+     * @throws \Illuminate\Auth\Access\AuthorizationException
+     */
     public function cars(Request $request, $slug=null): View
     {
+        $this->getFirstBreadcrumbBrand();
+        if ($request->has('id')) {
+            $this->data['car'] = Car::findOrFail($request->input('id'));
+            $this->getSecondBreadcrumbBrand($this->data['car']->brand);
+        } else {
+            $this->getSecondBreadcrumbBrand(Brand::findOrFail($request->input('parent_id')));
+        }
+        $this->data['brands'] = Brand::all();
+
         return $this->getSomething(
             $request,
             'car',
             'name_'.app()->getLocale(),
             new Car(),
-            $slug,
-            'brand',
-            'name_'.app()->getLocale(),
-            new Brand(),
+            $slug
         );
     }
 
@@ -101,52 +114,73 @@ class AdminBrandsController extends AdminBaseController
 
     public function spares(Request $request, $slug=null): View
     {
+        $this->getFirstBreadcrumbBrand();
+        if ($request->has('id')) {
+            $this->data['spare'] = Spare::findOrFail($request->input('id'));
+            $this->getSecondBreadcrumbBrand($this->data['spare']->car->brand);
+            $this->getFirstBreadcrumbCar($this->data['spare']->car);
+        } else {
+            $car = Car::findOrFail($request->input('parent_id'));
+            $this->getSecondBreadcrumbBrand($car->brand);
+            $this->getFirstBreadcrumbCar($car);
+        }
+        $this->data['cars'] = Car::all();
+
         return $this->getSomething(
             $request,
             'spare',
             'head',
             new Spare(),
-            $slug,
-            'car',
-            'name_'.app()->getLocale(),
-            new Car(),
-            'brand',
-            'name_'.app()->getLocale(),
+            $slug
         );
     }
 
     public function repairs(Request $request, $slug=null): View
     {
-        if ($request->has('id')) $this->getFreeWorksCountForRepair($request->id);
+        $this->getFirstBreadcrumbBrand();
+        if ($request->has('id')) {
+            $this->getFreeWorksCountForRepair($request->id);
+            $this->data['repair'] = Repair::findOrFail($request->input('id'));
+            $this->getSecondBreadcrumbBrand($this->data['repair']->car->brand);
+            $this->getFirstBreadcrumbCar($this->data['repair']->car);
+        } else {
+            $car = Car::findOrFail($request->input('parent_id'));
+            $this->getSecondBreadcrumbBrand($car->brand);
+            $this->getFirstBreadcrumbCar($car);
+        }
+        $this->data['cars'] = Car::all();
+
         return $this->getSomething(
             $request,
             'repair',
             'head',
             new Repair(),
-            $slug,
-            'car',
-            'name_'.app()->getLocale(),
-            new Car(),
-            'brand',
-            'name_'.app()->getLocale(),
+            $slug
         );
     }
 
     public function subRepairs(Request $request, $slug=null): View
     {
+        $this->getFirstBreadcrumbBrand();
+        if ($request->has('id')) {
+            $this->data['sub_repair'] = SubRepair::findOrFail($request->input('id'));
+            $this->getSecondBreadcrumbBrand($this->data['sub_repair']->repair->car->brand);
+            $this->getFirstBreadcrumbCar($this->data['sub_repair']->repair->car);
+            $this->getFirstBreadcrumbRepair($this->data['sub_repair']->repair);
+        } else {
+            $repair = Repair::findOrFail($request->input('parent_id'));
+            $this->getSecondBreadcrumbBrand($repair->car->brand);
+            $this->getFirstBreadcrumbCar($repair->car);
+            $this->getFirstBreadcrumbRepair($repair);
+        }
+        $this->data['repairs'] = Repair::all();
+
         return $this->getSomething(
             $request,
             'sub_repair',
             'name',
             new SubRepair(),
-            $slug,
-            'repair',
-            'head',
-            new Repair(),
-            'car',
-            'name_'.app()->getLocale(),
-            'brand',
-            'name_'.app()->getLocale(),
+            $slug
         );
     }
 
@@ -279,19 +313,18 @@ class AdminBrandsController extends AdminBaseController
                 'params' => ['id' => $this->data['item']->brand->id],
                 'name' => trans('admin.'.(Gate::allows('edit') ? 'edit_' : 'view_').'brand', ['brand' => $this->data['item']->brand['name_'.app()->getLocale()]]),
             ];
-            $this->getBreadcrumbs(
-                'car',
-                'name_'.app()->getLocale(),
-                ['parent_id' => $this->data['item']->brand->id, 'id' => $this->data['item']->id],
-                'item'
-            );
+            $this->data['menu_key'] = 'clients';
+            $this->breadcrumbs[] = [
+                'href' => 'admin.cars',
+                'params' => ['parent_id' => $this->data['item']->brand->id, 'id' => $this->data['item']->id],
+                'name' => trans('admin.'.(Gate::allows('edit') ? 'edit_' : 'view_').'car', ['car' => $this->data['item']['name_'.app()->getLocale()]]),
+            ];
         } else {
-            $this->getBreadcrumbs(
-                'brand',
-                'name_'.app()->getLocale(),
-                ['id' => $this->data['item']->id],
-                'item'
-            );
+            $this->breadcrumbs[] = [
+                'href' => 'admin.brands',
+                'params' => ['id' => $this->data['item']->id],
+                'name' => trans('admin.'.(Gate::allows('edit') ? 'edit_' : 'view_').'car', ['car' => $this->data['item']['name_'.app()->getLocale()]]),
+            ];
         }
 
         $this->breadcrumbs[] = [
@@ -356,19 +389,56 @@ class AdminBrandsController extends AdminBaseController
         $this->data['free_spares_count'] = $this->getRepairRelationsFree(new Repair(), 'recommendedWorks', 'spare_id')->count();
     }
 
+    private function getRepair(int $id): void
+    {
+        $this->data['repair'] = Repair::findOrFail($id);
+    }
+
+    private function getFirstBreadcrumbBrand(): void
+    {
+        $this->data['menu_key'] = 'brands';
+        $this->breadcrumbs[] = [
+            'href' => 'admin.brands',
+            'params' => [],
+            'name' => str_replace(':','',trans('admin_menu.brands'))
+        ];
+    }
+
+    private function getSecondBreadcrumbBrand(Brand $brand): void
+    {
+        $this->breadcrumbs[] = [
+            'href' => 'admin.brands',
+            'params' => ['id' => $brand->id],
+            'name' => trans('admin.'.(Gate::allows('edit') ? 'edit_' : 'view_').'brand', ['brand' => $brand['name_'.app()->getLocale()]])
+        ];
+    }
+
+    private function getFirstBreadcrumbCar(Car $car): void
+    {
+        $this->breadcrumbs[] = [
+            'href' => 'admin.cars',
+            'params' => ['id' => $car->id, 'parent_id' => $car->brand->id],
+            'name' => trans('admin.'.(Gate::allows('edit') ? 'edit_' : 'view_').'car', ['car' => $car['name_'.app()->getLocale()]]),
+        ];
+    }
+
+    private function getFirstBreadcrumbRepair(Repair $repair): void
+    {
+        $this->breadcrumbs[] = [
+            'href' => 'admin.repairs',
+            'params' => ['id' => $repair->id, 'parent_id' => $repair->car->id],
+            'name' => trans('admin.'.(Gate::allows('edit') ? 'edit_' : 'view_').'repair', ['repair' => $repair->head]),
+        ];
+    }
+
     private function getFirstBreadcrumbDefCar(): void
     {
         $this->data['menu_key'] = 'def_cars';
         $this->breadcrumbs[] = [
             'href' => 'admin.def_cars',
             'params' => ['slug' => 'repair'],
-            'name' => trans('admin.'.(Gate::allows('edit') ? 'edit_' : 'view_').'def_car', ['def_car' => DefCar::where('slug','repair')->pluck('head')->first()]),
+            'name' => trans('admin.'.(Gate::allows('edit') ? 'edit_' : 'view_').'def_car', ['def_car' => DefCar::where('slug','repair')->pluck('head')->first()])
         ];
-    }
-
-    private function getRepair(int $id): void
-    {
-        $this->data['repair'] = Repair::findOrFail($id);
     }
 
     private function getSecondBreadcrumbDefCar(): void
@@ -376,7 +446,7 @@ class AdminBrandsController extends AdminBaseController
         $this->breadcrumbs[] = [
             'href' => 'admin.def_repairs',
             'params' => ['id' => $this->data['repair']->id],
-            'name' => trans('admin.'.(Gate::allows('edit') ? 'edit_' : 'view_').'repair', ['repair' => $this->data['repair']->head]),
+            'name' => trans('admin.'.(Gate::allows('edit') ? 'edit_' : 'view_').'repair', ['repair' => $this->data['repair']->head])
         ];
     }
 }

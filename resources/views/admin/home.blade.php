@@ -2,7 +2,7 @@
 
 @section('content')
     @foreach($menu as $item)
-        @if (!$loop->first && !$item['hidden'])
+        @if (!$loop->first && !isset($item['hidden']))
             <div class="col-md-3 col-sm-6 col-xs-12">
                 <div class="panel panel-flat">
                     <div class="panel-body text-center">

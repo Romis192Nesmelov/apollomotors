@@ -15,6 +15,12 @@ class AdminRecordsController extends AdminBaseController
 {
     public function mechanics(Request $request, $slug=null): View
     {
+        $this->data['menu_key'] = 'mechanics';
+        $this->breadcrumbs[] = [
+            'href' => 'admin.mechanics',
+            'params' => [],
+            'name' => trans('admin_menu.mechanics'),
+        ];
         return $this->getSomething(
             $request,
             'mechanic',
