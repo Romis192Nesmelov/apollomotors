@@ -53,6 +53,12 @@ class BaseController extends Controller
         $this->data['free_checks'] = FreeCheck::where('active',1)->get();
         $this->data['questions'] = Question::where('active',1)->get();
         $this->data['clients'] = Client::where('active',1)->get();
+
+        $this->data['home_prices'] = [];
+        foreach ($this->data['brands'] as $brand) {
+            if ($brand->prices->count()) $this->data['home_prices'][] = $brand;
+        }
+
         $this->setSeo(Seo::find(1));
         return $this->showView('home');
     }

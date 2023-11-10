@@ -82,7 +82,7 @@
         <div class="rounded-block" id="our-prices">
             <nav>
                 <div class="nav nav-tabs" role="tablist">
-                    @foreach ($electedBrands as $k => $brand)
+                    @foreach ($home_prices as $k => $brand)
                         <a
                             class="nav-link text-center {{ !$k ? 'active' : '' }}"
                             id="{{ $brand->slug }}-tab"
@@ -100,14 +100,14 @@
                 </div>
             </nav>
             <div class="tab-content" id="nav-tabContent">
-                @foreach ($electedBrands as $k => $brand)
+                @foreach ($home_prices as $k => $brand)
                     <div class="tab-pane row fade {{ !$k ? 'show active' : '' }}" id="{{ $brand->slug }}" role="tabpanel" aria-labelledby="{{ $brand->slug }}-tab">
                         @include('blocks.home_price_part_block',[
                             'start' => 0,
                             'end' => round(count($brand->prices)/2)
                         ])
                         @include('blocks.home_price_part_block',[
-                            'start' => count($brand->prices)/2 + 1,
+                            'start' => count($brand->prices)/2 + (count($brand->prices) % 2 ? 1 : 0),
                             'end' => count($brand->prices)
                         ])
                     </div>

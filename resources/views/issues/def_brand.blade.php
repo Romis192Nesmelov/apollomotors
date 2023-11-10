@@ -20,12 +20,14 @@
             @if ($activeMenu == 'repair')
                 <x-head level="2" class="mt-4">
                     {{ trans('menu.'.$activeMenu).' ' }}
-                    @include('issues.blocks.brand_name_block', ['simple' => false])
+                    @if (isset($brand))
+                        @include('issues.blocks.brand_name_block', ['simple' => false])
+                    @endif
                     {{ ' '.trans('content.prices') }}
                 </x-head>
                 @include('issues.blocks.repair_table.repair_table_block',[
                     'price' => $contents[0]->priceRepairsActive,
-                    'brand' => $brand
+                    'brand' => $brand ?? null
                 ])
                 {!! $contents[1]->text !!}
             @endif

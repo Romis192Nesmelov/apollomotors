@@ -1,6 +1,6 @@
 <tr>
     <td>
-        <a href="{{ route('repair',[isset($car) ? $car->brand->slug : $brand->slug, isset($car) ? $car->slug : 'def', $item->slug]) }}">
+        <a href="{{ route('repair',[(isset($car) && $car) ? $car->brand->slug : ( (isset($brand) && $brand) ? $brand->slug : 'def' ), (isset($car) && $car) ? $car->slug : 'def', $item->slug]) }}">
             @include('issues.blocks.table_list_name_block')
         </a>
     </td>

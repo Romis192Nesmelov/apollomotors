@@ -1,1 +1,1 @@
-{{ isset($car) && in_array($car->id, ['55', '56', '25']) ? $item->head : $item->head  .' '.view('issues.blocks.car_name_block', ['car' => $car ?? null, 'simple' => false, 'brand' => isset($car) ? $car->brand : $brand])->render() }}
+{{ isset($car) && in_array($car->id, ['55', '56', '25']) ? $item->head : $item->head  .' '.((isset($car) && $car) || (isset($brand) && $brand) ? view('issues.blocks.car_name_block', ['car' => $car ?? null, 'simple' => false, 'brand' => isset($car) ? $car->brand : $brand])->render() : '') }}

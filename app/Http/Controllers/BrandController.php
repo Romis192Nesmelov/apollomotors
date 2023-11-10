@@ -43,8 +43,10 @@ class BrandController extends BaseController
             if ($car) {
                 if ($job) {
                     $this->getItem('repair', new Repair(), $job);
-                    $this->getItem('brand', new Brand(), $brand);
                     $this->setSeo($this->data['repair']->seo);
+
+                    if ($brand != 'def') $this->getItem('brand', new Brand(), $brand);
+                    else $this->data['brand'] = null;
 
                     if ($car != 'def') $this->getItem('car', new Car(), $car);
                     else $this->data['car'] = null;
@@ -117,9 +119,9 @@ class BrandController extends BaseController
             }
         } else {
             // Get default brand page
-            $this->data['content'] = Content::where('slug',($issue == 'maintenance' ? 'maintenances' : $issue))->first();
+            $this->data['contents'] = DefCar::where('slug',($issue == 'maintenance' ? 'maintenances' : $issue))->get();
             $this->data['brands'] = Brand::where('active',1)->get();
-            $this->setSeo($this->data['content']->seo);
+            $this->setSeo($this->data['contents'][0]->seo);
             return $this->showView('issues.def_brand');
         }
     }

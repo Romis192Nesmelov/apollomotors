@@ -4,7 +4,9 @@
     <x-section class="pb-0">
         <x-head level="1">
             {{ $repair->head.' ' }}
-            @include('issues.blocks.car_name_block', ['simple' => false])
+            @if (isset($brand))
+                @include('issues.blocks.car_name_block', ['simple' => false])
+            @endif
         </x-head>
 
         <?php $count = 0; ?>
