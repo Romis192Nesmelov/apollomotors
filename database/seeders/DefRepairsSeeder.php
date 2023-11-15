@@ -14,7 +14,6 @@ class DefRepairsSeeder extends BrandsSeeder
     {
         $data = [
             [
-                'slug' => 'zamena-masla-dvs',
                 'price' => 600,
                 'old_price' => 960,
                 'price_from' => 0,
@@ -33,7 +32,6 @@ class DefRepairsSeeder extends BrandsSeeder
                 'description_repair' => 'Сертифицированный сервис. Замена масла в двигателе в день обращения от 500р, запчасти в наличии. Гарантия на работы 2 года! Рейтинг – 4.9 ★★★★★'
             ],
             [
-                'slug' => 'zamena-vozdushnogo-filtra',
                 'price' => 360,
                 'old_price' => 600,
                 'price_from' => 0,
@@ -52,7 +50,6 @@ class DefRepairsSeeder extends BrandsSeeder
                 'description_repair' => 'Сертифицированный сервис. Замена воздушного фильтра в день обращения от 300р, запчасти в наличии. Гарантия на работы 2 года! Рейтинг – 4.9'
             ],
             [
-                'slug' => 'zamena-salonnogo-filtra',
                 'price' => 480,
                 'old_price' => 960,
                 'price_from' => 0,
@@ -71,7 +68,6 @@ class DefRepairsSeeder extends BrandsSeeder
                 'description_repair' => 'Сертифицированный сервис. Замена салонного фильтра в день обращения от 400р, запчасти в наличии. Гарантия на работы 2 года! Рейтинг – 4.9'
             ],
             [
-                'slug' => 'zamena-toplivnyh-filtrov',
                 'price' => 600,
                 'old_price' => 1200,
                 'price_from' => 1,
@@ -90,7 +86,6 @@ class DefRepairsSeeder extends BrandsSeeder
                 'description_repair' => 'Сертифицированный сервис. Замена топливного фильтра в день обращения от 500р, запчасти в наличии. Гарантия на работы 2 года! Рейтинг – 4.9 ★★★★★'
             ],
             [
-                'slug' => 'zamena-svechey',
                 'price' => 720,
                 'old_price' => 1200,
                 'price_from' => 1,
@@ -109,7 +104,6 @@ class DefRepairsSeeder extends BrandsSeeder
                 'description_repair' => 'Сертифицированный сервис. Замена свечей в день обращения от 600р, запчасти в наличии. Гарантия на работы 2 года! Рейтинг – 4.9 ★★★★★'
             ],
             [
-                'slug' => 'zamena-remnya-grm',
                 'price' => 5400,
                 'old_price' => 7800,
                 'price_from' => 1,
@@ -128,7 +122,6 @@ class DefRepairsSeeder extends BrandsSeeder
                 'description_repair' => 'Сертифицированный сервис. Замена ремня ГРМ в день обращения от 4500р, запчасти в наличии. Гарантия на работы 2 года! Рейтинг – 4.9 ★★★★★'
             ],
             [
-                'slug' => 'zamena-scepleniya',
                 'price' => 6000,
                 'old_price' => 10800,
                 'price_from' => 0,
@@ -147,7 +140,6 @@ class DefRepairsSeeder extends BrandsSeeder
                 'description_repair' => 'Сертифицированный сервис. Замена сцепления в день обращения от 5000р, запчасти в наличии. Гарантия на работы 2 года! Рейтинг – 4.9 ★★★★★'
             ],
             [
-                'slug' => 'zamena-tormoznyh-kolodok',
                 'price' => 840,
                 'old_price' => 1320,
                 'price_from' => 1,
@@ -166,7 +158,6 @@ class DefRepairsSeeder extends BrandsSeeder
                 'description_repair' => 'Сертифицированный сервис. Замена тормозных колодок в день обращения от 700р, запчасти в наличии. Гарантия на работы 2 года! Рейтинг – 4.9 ★★★★★'
             ],
             [
-                'slug' => 'zamena-tormoznyh-diskov',
                 'price' => 1440,
                 'old_price' => 2160,
                 'price_from' => 1,
@@ -185,7 +176,6 @@ class DefRepairsSeeder extends BrandsSeeder
                 'description_repair' => 'Сертифицированный сервис. Замена тормозных дисков в день обращения от 1200р, запчасти в наличии. Гарантия на работы 2 года! Рейтинг – 4.9 ★★★★★'
             ],
             [
-                'slug' => 'zamena-tormoznoy-zhidkosti',
                 'price' => 1200,
                 'old_price' => 2160,
                 'price_from' => 0,
@@ -204,7 +194,6 @@ class DefRepairsSeeder extends BrandsSeeder
                 'description_repair' => 'Сертифицированный сервис. Замена тормозной жидкости в день обращения от 1000р, запчасти в наличии. Гарантия на работы 2 года! Рейтинг – 4.9'
             ],
             [
-                'slug' => 'zamena-antifriza',
                 'price' => 1200,
                 'old_price' => 2160,
                 'price_from' => 1,
@@ -223,7 +212,6 @@ class DefRepairsSeeder extends BrandsSeeder
                 'description_repair' => 'Сертифицированный сервис. Замена антифриза в день обращения от 1000р, запчасти в наличии. Гарантия на работы 2 года! Рейтинг – 4.9 ★★★★★'
             ],
             [
-                'slug' => 'zamena-masla-gur',
                 'price' => 1200,
                 'old_price' => 1920,
                 'price_from' => 0,
@@ -242,7 +230,6 @@ class DefRepairsSeeder extends BrandsSeeder
                 'description_repair' => 'Сертифицированный сервис. Замена масла ГУР в день обращения от 1000р, запчасти в наличии. Гарантия на работы 2 года! Рейтинг – 4.9 ★★★★★'
             ],
             [
-                'slug' => 'zamena-podshipnika-stupicy',
                 'price' => 2160,
                 'old_price' => 3000,
                 'price_from' => 0,
@@ -261,7 +248,6 @@ class DefRepairsSeeder extends BrandsSeeder
                 'description_repair' => 'Сертифицированный сервис. Замена подшипника ступицы в день обращения от 1800р, запчасти в наличии. Гарантия на работы 2 года! Рейтинг – 4.9 ★★★★★'
             ],
             [
-                'slug' => 'zamena-rychaga',
                 'price' => 1800,
                 'old_price' => 2760,
                 'price_from' => 1,
@@ -280,7 +266,6 @@ class DefRepairsSeeder extends BrandsSeeder
                 'description_repair' => 'Сертифицированный сервис. Замена рычага в день обращения от 1500р, запчасти в наличии. Гарантия на работы 2 года! Рейтинг – 4.9 ★★★★★'
             ],
             [
-                'slug' => 'zamena-sharovoy',
                 'price' => 1200,
                 'old_price' => 2640,
                 'price_from' => 1,
@@ -299,7 +284,6 @@ class DefRepairsSeeder extends BrandsSeeder
                 'description_repair' => 'Сертифицированный сервис. Замена шаровой опоры в день обращения от 1000р, запчасти в наличии. Гарантия на работы 2 года! Рейтинг – 4.9 ★★★★★'
             ],
             [
-                'slug' => 'zapravka-kondicionera',
                 'price' => 1200,
                 'old_price' => 2160,
                 'price_from' => 0,
@@ -318,7 +302,6 @@ class DefRepairsSeeder extends BrandsSeeder
                 'description_repair' => 'Сертифицированный сервис. Заправка кондиционера в день обращения от 1000р, запчасти в наличии. Гарантия на работы 2 года! Рейтинг – 4.9 ★★★★★'
             ],
             [
-                'slug' => 'shod-razval',
                 'price' => 3000,
                 'old_price' => 3960,
                 'price_from' => 0,

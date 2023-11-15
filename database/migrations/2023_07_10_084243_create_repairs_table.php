@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('repairs', function (Blueprint $table) {
             $table->id();
-            $table->string('slug');
+            $table->string('slug')->unique();
             $table->integer('price');
             $table->integer('old_price')->nullable();
             $table->boolean('price_from');

@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('image');
             $table->string('image_small');
-            $table->string('slug');
+            $table->string('slug')->unique();
             $table->string('head');
             $table->longText('text');
             $table->integer('limit');

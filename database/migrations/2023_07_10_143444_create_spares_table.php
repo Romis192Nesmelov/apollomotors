@@ -14,7 +14,7 @@ return new class extends Migration
     {
         Schema::create('spares', function (Blueprint $table) {
             $table->id();
-            $table->string('slug');
+            $table->string('slug')->unique();
             $table->string('code',20)->nullable();
             $table->integer('price_original')->nullable();
             $table->boolean('price_original_from');

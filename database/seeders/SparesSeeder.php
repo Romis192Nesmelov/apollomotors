@@ -15,7 +15,6 @@ class SparesSeeder extends BrandsSeeder
         $data = [
             [
                 'id' => 1,
-                'slug' => 'akkumulyator-akb',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28,7 +27,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2,
-                'slug' => 'amortizator-zadniy',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -41,7 +39,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 3,
-                'slug' => 'amortizator-peredniy',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -54,7 +51,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 4,
-                'slug' => 'bamper-zadniy',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -67,7 +63,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 5,
-                'slug' => 'bamper-peredniy',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -80,7 +75,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 6,
-                'slug' => 'baraban-tormoznoy',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -93,7 +87,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 7,
-                'slug' => 'benzobak',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -106,7 +99,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 8,
-                'slug' => 'benzonasos-toplivnyy-nasos-v-sbore',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -119,7 +111,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 9,
-                'slug' => 'blok-predohraniteley',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -132,7 +123,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 10,
-                'slug' => 'ventilyator-pechki',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -145,7 +135,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 11,
-                'slug' => 'generator',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -158,7 +147,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 12,
-                'slug' => 'datchik-temperatury',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -171,7 +159,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 13,
-                'slug' => 'dver-zadnyaya',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -184,7 +171,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 14,
-                'slug' => 'dver-perednyaya',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -197,7 +183,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 15,
-                'slug' => 'dvigatel',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -210,7 +195,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 16,
-                'slug' => 'dvorniki-shchetki-s-o-komplekt',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -223,7 +207,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 17,
-                'slug' => 'disk-kolesnyy-litoy',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -236,7 +219,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 18,
-                'slug' => 'diski-tormoznye-zadnie',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -249,7 +231,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 19,
-                'slug' => 'diski-tormoznye-perednie',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -262,7 +243,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 20,
-                'slug' => 'zhidkost-tormoznaya-ford-dot-4-1l',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -275,7 +255,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 21,
-                'slug' => 'zamok-dveri',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -288,7 +267,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 22,
-                'slug' => 'zamok-kapota',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -301,7 +279,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 23,
-                'slug' => 'zerkalo-levoe',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -314,7 +291,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 24,
-                'slug' => 'kapot',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -327,7 +303,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 25,
-                'slug' => 'katalizator',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -340,7 +315,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 26,
-                'slug' => 'klyuch-zazhiganiya',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -353,7 +327,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 27,
-                'slug' => 'knopka-steklopodemnika',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -366,7 +339,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 28,
-                'slug' => 'kolodki-tormoznye-zadnie-barabannye',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -379,7 +351,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 29,
-                'slug' => 'kolodki-tormoznye-zadnie-diskovye',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -392,7 +363,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 30,
-                'slug' => 'kolodki-tormoznye-perednie',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -405,7 +375,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 31,
-                'slug' => 'korobka-avtomat-akpp',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -418,7 +387,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 32,
-                'slug' => 'korobka-mehanicheskaya-mkpp',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -431,7 +399,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 33,
-                'slug' => 'korpus-termostata',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -444,7 +411,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 34,
-                'slug' => 'krylo-perednee-pravoe',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -457,7 +423,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 35,
-                'slug' => 'kryshka-bagazhnika',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -470,7 +435,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 36,
-                'slug' => 'lampochka-blizhnego-sveta',
                 'code' => '1013711',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -483,7 +447,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 37,
-                'slug' => 'magnitola',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -496,7 +459,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 38,
-                'slug' => 'maslo-gur',
                 'code' => '1781003',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -509,7 +471,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 39,
-                'slug' => 'maslo-motornoe-ford-5w30-1l',
                 'code' => '14E8B9',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -522,7 +483,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 40,
-                'slug' => 'maslo-motornoe-ford-5w30-5l',
                 'code' => '14E8BA',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -535,7 +495,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 41,
-                'slug' => 'maslo-motornoe-ford-castrol-magnatec-5w20-1l',
                 'code' => '151A94',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -548,7 +507,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 42,
-                'slug' => 'maslo-motornoe-ford-castrol-magnatec-5w20-5l',
                 'code' => '151A95',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -561,7 +519,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 43,
-                'slug' => 'maslo-transmissionnoe-akpp',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -574,7 +531,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 44,
-                'slug' => 'maslo-transmissionnoe-mkpp',
                 'code' => '1790199',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -587,7 +543,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 45,
-                'slug' => 'nakonechnik-rulevoy',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -600,7 +555,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 46,
-                'slug' => 'nasos-gidrousilitelya-rulya',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -613,7 +567,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 47,
-                'slug' => 'vodyanoy-nasos',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -626,7 +579,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 48,
-                'slug' => 'panel-perednyaya',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -639,7 +591,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 49,
-                'slug' => 'panel-priborov',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -652,7 +603,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 50,
-                'slug' => 'podshipnik-stupicy-zadney-stupica',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -665,7 +615,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 51,
-                'slug' => 'podshipnik-stupicy-peredney',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -678,7 +627,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 52,
-                'slug' => 'predohraniteli',
                 'code' => '6191811',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -691,7 +639,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 53,
-                'slug' => 'prikurivatel',
                 'code' => '1135280',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -704,7 +651,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 54,
-                'slug' => 'protivotumannaya-fara',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -717,7 +663,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 55,
-                'slug' => 'pruzhina-podveski-zadnyaya',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -730,7 +675,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 56,
-                'slug' => 'pruzhina-podveski-perednyaya',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -743,7 +687,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 57,
-                'slug' => 'radiator-kondicionera',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -756,7 +699,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 58,
-                'slug' => 'radiator-ohlazhdeniya-dvigatelya',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -769,7 +711,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 59,
-                'slug' => 'reyka-rulevaya',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -782,7 +723,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 60,
-                'slug' => 'remen-grm',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -795,7 +735,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 61,
-                'slug' => 'remen-privodnoy',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -808,7 +747,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 62,
-                'slug' => 'reshetka-radiatora',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -821,7 +759,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 63,
-                'slug' => 'rul',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -834,7 +771,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 64,
-                'slug' => 'rychag-zadniy-poperechnyy-malyy',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -847,7 +783,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 65,
-                'slug' => 'rychag-podveski-peredniy-levyy',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -860,7 +795,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 66,
-                'slug' => 'svecha-zazhiganiya',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -873,7 +807,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 67,
-                'slug' => 'signal-zvukovoy',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -886,7 +819,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 68,
-                'slug' => 'starter',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -899,7 +831,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 69,
-                'slug' => 'steklo-dveri-peredney',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -912,7 +843,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 70,
-                'slug' => 'steklo-lobovoe-s-obogrevom',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -925,7 +855,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 71,
-                'slug' => 'steklo-lobovoe',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -938,7 +867,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 72,
-                'slug' => 'stoyka-stabilizatora-perednyaya',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -951,7 +879,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 73,
-                'slug' => 'sceplenie',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -964,7 +891,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 74,
-                'slug' => 'termostat',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -977,7 +903,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 75,
-                'slug' => 'trubka-gur',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -990,7 +915,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 76,
-                'slug' => 'trubka-kondicionera',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1003,7 +927,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 77,
-                'slug' => 'patrubok-radiatora',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1016,7 +939,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 78,
-                'slug' => 'tyaga-rulevaya',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1029,7 +951,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 79,
-                'slug' => 'fara-perednyaya-levaya',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1042,7 +963,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 80,
-                'slug' => 'filtr-vozdushnyy',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1055,7 +975,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 81,
-                'slug' => 'filtr-maslyanyy-benzinovyy-dvigatel',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1068,7 +987,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 82,
-                'slug' => 'filtr-maslyanyy-dizelnyy-dvigatel',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1081,7 +999,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 83,
-                'slug' => 'filtr-salonnyy-ugolnyy',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1094,7 +1011,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 84,
-                'slug' => 'filtr-toplivnyy-dizelnyy-dvigatel',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1107,7 +1023,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 85,
-                'slug' => 'fonar-zadniy',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1120,7 +1035,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 86,
-                'slug' => 'shchetka-stekloochistitelya-zadnyaya',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1133,7 +1047,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 87,
-                'slug' => 'akkumulyator-akb-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1146,7 +1059,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 88,
-                'slug' => 'amortizator-zadniy-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1159,7 +1071,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 89,
-                'slug' => 'amortizator-peredniy-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1172,7 +1083,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 90,
-                'slug' => 'bamper-zadniy-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1185,7 +1095,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 91,
-                'slug' => 'bamper-peredniy-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1198,7 +1107,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 92,
-                'slug' => 'baraban-tormoznoy-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1211,7 +1119,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 93,
-                'slug' => 'benzobak-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1224,7 +1131,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 94,
-                'slug' => 'benzonasos-toplivnyy-nasos-v-sbore-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1237,7 +1143,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 95,
-                'slug' => 'blok-predohraniteley-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1250,7 +1155,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 96,
-                'slug' => 'ventilyator-pechki-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1263,7 +1167,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 97,
-                'slug' => 'generator-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1276,7 +1179,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 98,
-                'slug' => 'datchik-temperatury-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1289,7 +1191,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 99,
-                'slug' => 'dver-zadnyaya-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1302,7 +1203,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 100,
-                'slug' => 'dver-perednyaya-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1315,7 +1215,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 101,
-                'slug' => 'dvigatel-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1328,7 +1227,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 102,
-                'slug' => 'dvorniki-shchetki-s-o-komplekt-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1341,7 +1239,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 103,
-                'slug' => 'disk-kolesnyy-litoy-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1354,7 +1251,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 104,
-                'slug' => 'diski-tormoznye-zadnie-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1367,7 +1263,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 105,
-                'slug' => 'diski-tormoznye-perednie-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1380,7 +1275,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 106,
-                'slug' => 'zhidkost-tormoznaya-ford-dot-4-1l-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1393,7 +1287,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 107,
-                'slug' => 'zamok-dveri-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1406,7 +1299,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 108,
-                'slug' => 'zamok-kapota-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1419,7 +1311,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 109,
-                'slug' => 'zerkalo-levoe-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1432,7 +1323,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 110,
-                'slug' => 'kapot-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1445,7 +1335,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 111,
-                'slug' => 'katalizator-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1458,7 +1347,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 112,
-                'slug' => 'klyuch-zazhiganiya-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1471,7 +1359,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 113,
-                'slug' => 'knopka-steklopodemnika-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1484,7 +1371,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 114,
-                'slug' => 'kolodki-tormoznye-zadnie-barabannye-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1497,7 +1383,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 115,
-                'slug' => 'kolodki-tormoznye-zadnie-diskovye-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1510,7 +1395,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 116,
-                'slug' => 'kolodki-tormoznye-perednie-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1523,7 +1407,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 117,
-                'slug' => 'korobka-avtomat-akpp-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1536,7 +1419,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 118,
-                'slug' => 'korobka-mehanicheskaya-mkpp-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1549,7 +1431,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 119,
-                'slug' => 'korpus-termostata-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1562,7 +1443,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 120,
-                'slug' => 'krylo-perednee-pravoe-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1575,7 +1455,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 121,
-                'slug' => 'kryshka-bagazhnika-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1588,7 +1467,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 122,
-                'slug' => 'lampochka-blizhnego-sveta-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1601,7 +1479,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 123,
-                'slug' => 'magnitola-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1614,7 +1491,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 124,
-                'slug' => 'maslo-gur-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1627,7 +1503,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 125,
-                'slug' => 'maslo-motornoe-ford-5w30-1l-1',
                 'code' => '14E8B9',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1640,7 +1515,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 126,
-                'slug' => 'maslo-motornoe-ford-5w30-5l-1',
                 'code' => '14E8BA',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1653,7 +1527,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 127,
-                'slug' => 'maslo-motornoe-ford-castrol-magnatec-5w20-1l-1',
                 'code' => '151A94',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1666,7 +1539,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 128,
-                'slug' => 'maslo-transmissionnoe-akpp-1',
                 'code' => '151A95',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1679,7 +1551,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 129,
-                'slug' => 'maslo-transmissionnoe-mkpp-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1692,7 +1563,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 130,
-                'slug' => 'nakonechnik-rulevoy-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1705,7 +1575,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 131,
-                'slug' => 'nasos-gidrousilitelya-rulya-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1718,7 +1587,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 132,
-                'slug' => 'vodyanoy-nasos-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1731,7 +1599,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 133,
-                'slug' => 'panel-perednyaya-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1744,7 +1611,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 134,
-                'slug' => 'panel-priborov-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1757,7 +1623,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 135,
-                'slug' => 'podshipnik-stupicy-zadney-stupica-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1770,7 +1635,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 136,
-                'slug' => 'podshipnik-stupicy-peredney-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1783,7 +1647,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 137,
-                'slug' => 'predohraniteli-1',
                 'code' => '6191811',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1796,7 +1659,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 138,
-                'slug' => 'protivotumannaya-fara-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1809,7 +1671,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 139,
-                'slug' => 'pruzhina-podveski-zadnyaya-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1822,7 +1683,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 140,
-                'slug' => 'pruzhina-podveski-perednyaya-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1835,7 +1695,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 141,
-                'slug' => 'radiator-kondicionera-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1848,7 +1707,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 142,
-                'slug' => 'radiator-ohlazhdeniya-dvigatelya-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1861,7 +1719,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 143,
-                'slug' => 'reyka-rulevaya-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1874,7 +1731,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 144,
-                'slug' => 'remen-grm-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1887,7 +1743,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 145,
-                'slug' => 'remen-privodnoy-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1900,7 +1755,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 146,
-                'slug' => 'reshetka-radiatora-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1913,7 +1767,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 147,
-                'slug' => 'rul-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1926,7 +1779,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 148,
-                'slug' => 'rychag-zadniy-poperechnyy-malyy-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1939,7 +1791,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 149,
-                'slug' => 'rychag-podveski-peredniy-levyy-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1952,7 +1803,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 150,
-                'slug' => 'svecha-zazhiganiya-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1965,7 +1815,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 151,
-                'slug' => 'signal-zvukovoy-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1978,7 +1827,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 152,
-                'slug' => 'starter-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -1991,7 +1839,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 153,
-                'slug' => 'steklo-dveri-peredney-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2004,7 +1851,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 154,
-                'slug' => 'steklo-lobovoe-s-obogrevom-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2017,7 +1863,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 155,
-                'slug' => 'steklo-lobovoe-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2030,7 +1875,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 156,
-                'slug' => 'stoyka-stabilizatora-perednyaya-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2043,7 +1887,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 157,
-                'slug' => 'sceplenie-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2056,7 +1899,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 158,
-                'slug' => 'termostat-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2069,7 +1911,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 159,
-                'slug' => 'trubka-gur-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2082,7 +1923,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 160,
-                'slug' => 'trubka-kondicionera-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2095,7 +1935,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 161,
-                'slug' => 'patrubok-radiatora-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2108,7 +1947,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 162,
-                'slug' => 'tyaga-rulevaya-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2121,7 +1959,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 163,
-                'slug' => 'fara-perednyaya-levaya-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2134,7 +1971,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 164,
-                'slug' => 'filtr-vozdushnyy-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2147,7 +1983,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 165,
-                'slug' => 'filtr-maslyanyy-benzinovyy-dvigatel-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2160,7 +1995,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 166,
-                'slug' => 'filtr-maslyanyy-dizelnyy-dvigatel-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2173,7 +2007,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 167,
-                'slug' => 'filtr-salonnyy-ugolnyy-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2186,7 +2019,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 168,
-                'slug' => 'filtr-toplivnyy-dizelnyy-dvigatel-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2199,7 +2031,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 169,
-                'slug' => 'fonar-zadniy-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2212,7 +2043,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 170,
-                'slug' => 'shchetka-stekloochistitelya-zadnyaya-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2225,7 +2055,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 171,
-                'slug' => 'akkumulyator-akb-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2238,7 +2067,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 172,
-                'slug' => 'amortizator-zadniy-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2251,7 +2079,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 173,
-                'slug' => 'amortizator-peredniy-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2264,7 +2091,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 174,
-                'slug' => 'bamper-zadniy-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2277,7 +2103,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 175,
-                'slug' => 'bamper-peredniy-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2290,7 +2115,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 176,
-                'slug' => 'baraban-tormoznoy-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2303,7 +2127,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 177,
-                'slug' => 'benzobak-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2316,7 +2139,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 178,
-                'slug' => 'benzonasos-toplivnyy-nasos-v-sbore-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2329,7 +2151,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 179,
-                'slug' => 'blok-predohraniteley-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2342,7 +2163,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 180,
-                'slug' => 'ventilyator-pechki-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2355,7 +2175,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 181,
-                'slug' => 'generator-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2368,7 +2187,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 182,
-                'slug' => 'datchik-temperatury-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2381,7 +2199,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 183,
-                'slug' => 'dver-zadnyaya-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2394,7 +2211,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 184,
-                'slug' => 'dver-perednyaya-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2407,7 +2223,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 185,
-                'slug' => 'dvigatel-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2420,7 +2235,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 186,
-                'slug' => 'dvorniki-shchetki-s-o-komplekt-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2433,7 +2247,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 187,
-                'slug' => 'disk-kolesnyy-litoy-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2446,7 +2259,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 188,
-                'slug' => 'diski-tormoznye-zadnie-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2459,7 +2271,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 189,
-                'slug' => 'diski-tormoznye-perednie-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2472,7 +2283,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 190,
-                'slug' => 'zhidkost-tormoznaya-ford-dot-4-1l-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2485,7 +2295,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 191,
-                'slug' => 'zamok-dveri-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2498,7 +2307,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 192,
-                'slug' => 'zamok-kapota-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2511,7 +2319,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 193,
-                'slug' => 'zerkalo-levoe-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2524,7 +2331,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 194,
-                'slug' => 'kapot-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2537,7 +2343,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 195,
-                'slug' => 'katalizator-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2550,7 +2355,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 196,
-                'slug' => 'klyuch-zazhiganiya-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2563,7 +2367,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 197,
-                'slug' => 'knopka-steklopodemnika-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2576,7 +2379,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 198,
-                'slug' => 'kolodki-tormoznye-zadnie-barabannye-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2589,7 +2391,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 199,
-                'slug' => 'kolodki-tormoznye-zadnie-diskovye-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2602,7 +2403,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 200,
-                'slug' => 'kolodki-tormoznye-perednie-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2615,7 +2415,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 201,
-                'slug' => 'korobka-avtomat-akpp-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2628,7 +2427,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 202,
-                'slug' => 'korobka-mehanicheskaya-mkpp-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2641,7 +2439,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 203,
-                'slug' => 'korpus-termostata-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2654,7 +2451,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 204,
-                'slug' => 'krylo-perednee-pravoe-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2667,7 +2463,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 205,
-                'slug' => 'kryshka-bagazhnika-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2680,7 +2475,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 206,
-                'slug' => 'lampochka-blizhnego-sveta-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2693,7 +2487,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 207,
-                'slug' => 'magnitola-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2706,7 +2499,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 208,
-                'slug' => 'maslo-gur-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2719,7 +2511,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 209,
-                'slug' => 'maslo-motornoe-ford-5w30-1l-2',
                 'code' => '14E8B9',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2732,7 +2523,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 210,
-                'slug' => 'maslo-motornoe-ford-5w30-5l-2',
                 'code' => '14E8BA',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2745,7 +2535,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 211,
-                'slug' => 'maslo-motornoe-ford-castrol-magnatec-5w20-1l-2',
                 'code' => '151A94',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2758,7 +2547,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 212,
-                'slug' => 'maslo-transmissionnoe-akpp-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2771,7 +2559,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 213,
-                'slug' => 'maslo-transmissionnoe-mkpp-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2784,7 +2571,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 214,
-                'slug' => 'nakonechnik-rulevoy-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2797,7 +2583,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 215,
-                'slug' => 'nasos-gidrousilitelya-rulya-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2810,7 +2595,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 216,
-                'slug' => 'vodyanoy-nasos-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2823,7 +2607,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 217,
-                'slug' => 'panel-perednyaya-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2836,7 +2619,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 218,
-                'slug' => 'panel-priborov-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2849,7 +2631,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 219,
-                'slug' => 'podshipnik-stupicy-zadney-ctupica',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2862,7 +2643,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 220,
-                'slug' => 'podshipnik-stupicy-peredney-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2875,7 +2655,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 221,
-                'slug' => 'predohraniteli-2',
                 'code' => '6191811',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2888,7 +2667,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 222,
-                'slug' => 'prikurivatel-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2901,7 +2679,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 223,
-                'slug' => 'protivotumannaya-fara-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2914,7 +2691,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 224,
-                'slug' => 'pruzhina-podveski-zadnyaya-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2927,7 +2703,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 225,
-                'slug' => 'pruzhina-podveski-perednyaya-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2940,7 +2715,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 226,
-                'slug' => 'radiator-kondicionera-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2953,7 +2727,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 227,
-                'slug' => 'radiator-ohlazhdeniya-dvigatelya-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2966,7 +2739,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 228,
-                'slug' => 'reyka-rulevaya-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2979,7 +2751,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 229,
-                'slug' => 'remen-grm-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -2992,7 +2763,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 230,
-                'slug' => 'remen-privodnoy-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3005,7 +2775,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 231,
-                'slug' => 'reshetka-radiatora-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3018,7 +2787,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 232,
-                'slug' => 'rul-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3031,7 +2799,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 233,
-                'slug' => 'rychag-zadniy-poperechnyy-malyy-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3044,7 +2811,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 234,
-                'slug' => 'rychag-podveski-peredniy-levyy-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3057,7 +2823,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 235,
-                'slug' => 'svecha-zazhiganiya-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3070,7 +2835,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 236,
-                'slug' => 'signal-zvukovoy-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3083,7 +2847,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 237,
-                'slug' => 'starter-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3096,7 +2859,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 238,
-                'slug' => 'steklo-dveri-peredney-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3109,7 +2871,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 239,
-                'slug' => 'steklo-lobovoe-s-obogrevom-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3122,7 +2883,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 240,
-                'slug' => 'steklo-lobovoe-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3135,7 +2895,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 241,
-                'slug' => 'stoyka-stabilizatora-perednyaya-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3148,7 +2907,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 242,
-                'slug' => 'sceplenie-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3161,7 +2919,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 243,
-                'slug' => 'termostat-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3174,7 +2931,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 244,
-                'slug' => 'trubka-gur-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3187,7 +2943,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 245,
-                'slug' => 'trubka-kondicionera-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3200,7 +2955,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 246,
-                'slug' => 'patrubok-radiatora-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3213,7 +2967,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 247,
-                'slug' => 'tyaga-rulevaya-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3226,7 +2979,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 248,
-                'slug' => 'fara-perednyaya-levaya-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3239,7 +2991,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 249,
-                'slug' => 'filtr-vozdushnyy-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3252,7 +3003,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 250,
-                'slug' => 'filtr-maslyanyy-benzinovyy-dvigatel-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3265,7 +3015,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 251,
-                'slug' => 'filtr-maslyanyy-dizelnyy-dvigatel-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3278,7 +3027,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 252,
-                'slug' => 'filtr-salonnyy-ugolnyy-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3291,7 +3039,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 253,
-                'slug' => 'filtr-toplivnyy-dizelnyy-dvigatel-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3304,7 +3051,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 254,
-                'slug' => 'fonar-zadniy-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3317,7 +3063,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 255,
-                'slug' => 'shchetka-stekloochistitelya-zadnyaya-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3330,7 +3075,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 256,
-                'slug' => 'akkumulyator-akb-3',
                 'code' => '1517094',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3343,7 +3087,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 257,
-                'slug' => 'amortizator-zadniy-3',
                 'code' => '1305638',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3356,7 +3099,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 258,
-                'slug' => 'amortizator-peredniy-3',
                 'code' => '1309693',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3369,7 +3111,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 259,
-                'slug' => 'bamper-zadniy-3',
                 'code' => '1375905',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3382,7 +3123,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 260,
-                'slug' => 'bamper-peredniy-3',
                 'code' => '1386201',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3395,7 +3135,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 261,
-                'slug' => 'baraban-tormoznoy-3',
                 'code' => '1507055',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3408,7 +3147,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 262,
-                'slug' => 'benzobak-3',
                 'code' => '1404702',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3421,7 +3159,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 263,
-                'slug' => 'benzonasos-toplivnyy-nasos-v-sbore-3',
                 'code' => '1491778',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3434,7 +3171,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 264,
-                'slug' => 'blok-predohraniteley-3',
                 'code' => '1142883',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3447,7 +3183,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 265,
-                'slug' => 'ventilyator-pechki-3',
                 'code' => '1252926',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3460,7 +3195,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 266,
-                'slug' => 'generator-3',
                 'code' => '1757317',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3473,7 +3207,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 267,
-                'slug' => 'datchik-temperatury-3',
                 'code' => '1484876',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3486,7 +3219,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 268,
-                'slug' => 'dver-zadnyaya-3',
                 'code' => '1692525',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3499,7 +3231,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 269,
-                'slug' => 'dver-perednyaya-3',
                 'code' => '1692524',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3512,7 +3243,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 270,
-                'slug' => 'dvigatel-3',
                 'code' => '1705060',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3525,7 +3255,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 271,
-                'slug' => 'dvorniki-shchetki-s-o-komplekt-3',
                 'code' => '1712815',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3538,7 +3267,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 272,
-                'slug' => 'disk-kolesnyy-litoy-3',
                 'code' => '1058646',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3551,7 +3279,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 273,
-                'slug' => 'diski-tormoznye-zadnie-3',
                 'code' => '1756882',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3564,7 +3291,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 274,
-                'slug' => 'diski-tormoznye-perednie-3',
                 'code' => '1522230',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3577,7 +3303,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 275,
-                'slug' => 'zhidkost-tormoznaya-ford-dot-4-1l-3',
                 'code' => '1776311',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3590,7 +3315,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 276,
-                'slug' => 'zamok-dveri-3',
                 'code' => '1372480',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3603,7 +3327,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 277,
-                'slug' => 'zamok-kapota-3',
                 'code' => '1478991',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3616,7 +3339,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 278,
-                'slug' => 'zerkalo-levoe-3',
                 'code' => '1452854',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3629,7 +3351,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 279,
-                'slug' => 'kapot-3',
                 'code' => '1346646',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3642,7 +3363,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 280,
-                'slug' => 'katalizator-3',
                 'code' => '1684816',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3655,7 +3375,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 281,
-                'slug' => 'klyuch-zazhiganiya-3',
                 'code' => '4355661',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3668,7 +3387,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 282,
-                'slug' => 'knopka-steklopodemnika-3',
                 'code' => '1107243',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3681,7 +3399,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 283,
-                'slug' => 'kolodki-tormoznye-zadnie-barabannye-3',
                 'code' => '1236882',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3694,7 +3411,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 284,
-                'slug' => 'kolodki-tormoznye-zadnie-diskovye-3',
                 'code' => '1075565',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3707,7 +3423,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 285,
-                'slug' => 'kolodki-tormoznye-perednie-3',
                 'code' => '1783839',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3720,7 +3435,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 286,
-                'slug' => 'korobka-peredach-avtomat-akpp',
                 'code' => '1765826',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3733,7 +3447,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 287,
-                'slug' => 'korobka-peredach-mehanicheskaya-mkpp',
                 'code' => '1478005',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3746,7 +3459,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 288,
-                'slug' => 'korobka-peredach-robot-robotizirovannaya',
                 'code' => '1478002',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3759,7 +3471,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 289,
-                'slug' => 'korpus-termostata-3',
                 'code' => '1707050',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3772,7 +3483,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 290,
-                'slug' => 'krylo-perednee-levoe',
                 'code' => '1405185',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3785,7 +3495,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 291,
-                'slug' => 'kryshka-bagazhnika-3',
                 'code' => '1541627',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3798,7 +3507,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 292,
-                'slug' => 'lampochka-blizhnego-sveta-3',
                 'code' => '1013818',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3811,7 +3519,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 293,
-                'slug' => 'magnitola-3',
                 'code' => '1503915',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3824,7 +3531,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 294,
-                'slug' => 'maslo-gur-3',
                 'code' => '1496116',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3837,7 +3543,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 295,
-                'slug' => 'maslo-motornoe-ford-5w30-1l-3',
                 'code' => '14E8B9',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3850,7 +3555,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 296,
-                'slug' => 'maslo-motornoe-ford-5w30-5l-3',
                 'code' => '14E8BA',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3863,7 +3567,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 297,
-                'slug' => 'nakonechnik-rulevoy-3',
                 'code' => '1202548',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3876,7 +3579,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 298,
-                'slug' => 'nasos-gidrousilitelya-rulya-3',
                 'code' => '1357617',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3889,7 +3591,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 299,
-                'slug' => 'panel-perednyaya-3',
                 'code' => '1518176',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3902,7 +3603,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 300,
-                'slug' => 'panel-priborov-3',
                 'code' => '1376474',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3915,7 +3615,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 301,
-                'slug' => 'podshipnik-stupicy-zadney-s-abs',
                 'code' => '1201568',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3928,7 +3627,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 302,
-                'slug' => 'podshipnik-stupicy-peredney-s-abs',
                 'code' => '1201569',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3941,7 +3639,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 303,
-                'slug' => 'predohraniteli-3',
                 'code' => '6191811',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3954,7 +3651,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 304,
-                'slug' => 'prikurivatel-2',
                 'code' => '1073958',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3967,7 +3663,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 305,
-                'slug' => 'protivotumannaya-fara-3',
                 'code' => '1209177',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3980,7 +3675,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 306,
-                'slug' => 'pruzhina-podveski-zadnyaya-3',
                 'code' => '1343500',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -3993,7 +3687,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 307,
-                'slug' => 'pruzhina-podveski-perednyaya-3',
                 'code' => '1371954',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4006,7 +3699,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 308,
-                'slug' => 'radiator-kondicionera-3',
                 'code' => '1467421',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4019,7 +3711,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 309,
-                'slug' => 'radiator-ohlazhdeniya-dvigatelya-3',
                 'code' => '1325831',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4032,7 +3723,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 310,
-                'slug' => 'reyka-rulevaya-3',
                 'code' => '1760701',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4045,7 +3735,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 311,
-                'slug' => 'remen-grm-3',
                 'code' => '1004299',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4058,7 +3747,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 312,
-                'slug' => 'remen-privodnoy-3',
                 'code' => '1365336',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4071,7 +3759,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 313,
-                'slug' => 'reshetka-radiatora-3',
                 'code' => '1373755',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4084,7 +3771,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 314,
-                'slug' => 'rul-3',
                 'code' => '1358833',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4097,7 +3783,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 315,
-                'slug' => 'rychag-podveski-peredniy',
                 'code' => '1212808',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4110,7 +3795,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 316,
-                'slug' => 'svecha-zazhiganiya-3',
                 'code' => '1493001',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4123,7 +3807,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 317,
-                'slug' => 'signal-zvukovoy-3',
                 'code' => '1346292',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4136,7 +3819,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 318,
-                'slug' => 'starter-3',
                 'code' => '1824489',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4149,7 +3831,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 319,
-                'slug' => 'steklo-dveri-peredney-3',
                 'code' => '1336302',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4162,7 +3843,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 320,
-                'slug' => 'steklo-lobovoe-s-obogrevom-3',
                 'code' => '1536963',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4175,7 +3855,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 321,
-                'slug' => 'steklo-lobovoe-3',
                 'code' => '1522682',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4188,7 +3867,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 322,
-                'slug' => 'stoyka-stabilizatora-perednyaya-3',
                 'code' => '1761200',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4201,7 +3879,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 323,
-                'slug' => 'stupica',
                 'code' => '1333147',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4214,7 +3891,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 324,
-                'slug' => 'sceplenie-3',
                 'code' => '1772135',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4227,7 +3903,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 325,
-                'slug' => 'termostat-3',
                 'code' => '1712228',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4240,7 +3915,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 326,
-                'slug' => 'trubka-gur-3',
                 'code' => '1469217',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4253,7 +3927,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 327,
-                'slug' => 'trubka-kondicionera-3',
                 'code' => '1334180',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4266,7 +3939,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 328,
-                'slug' => 'patrubok-radiatora-3',
                 'code' => '1546445',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4279,7 +3951,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 329,
-                'slug' => 'tyaga-rulevaya-3',
                 'code' => '4472940',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4292,7 +3963,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 330,
-                'slug' => 'fara-perednyaya-levaya-3',
                 'code' => '1526776',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4305,7 +3975,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 331,
-                'slug' => 'filtr-vozdushnyy-3',
                 'code' => '1729854',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4318,7 +3987,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 332,
-                'slug' => 'filtr-maslyanyy-benzinovyy-dvigatel-3',
                 'code' => '1714387',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4331,7 +3999,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 333,
-                'slug' => 'filtr-maslyanyy-dizelnyy-dvigatel-3',
                 'code' => '1359941',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4344,7 +4011,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 334,
-                'slug' => 'filtr-salonnyy-ugolnyy-3',
                 'code' => '1353269',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4357,7 +4023,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 335,
-                'slug' => 'filtr-toplivnyy-benzinovyy-dvigatel',
                 'code' => '1140129',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4370,7 +4035,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 336,
-                'slug' => 'filtr-toplivnyy-dizelnyy-dvigatel-3',
                 'code' => '1458065',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4383,7 +4047,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 337,
-                'slug' => 'fonar-zadniy-3',
                 'code' => '1437626',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4396,7 +4059,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 338,
-                'slug' => 'shchetka-stekloochistitelya-zadnyaya-3',
                 'code' => '1713250',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4409,7 +4071,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 339,
-                'slug' => 'akkumulyator-akb-4',
                 'code' => '1517093',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4422,7 +4083,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 340,
-                'slug' => 'amortizator-zadniy-4',
                 'code' => '1087966',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4435,7 +4095,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 341,
-                'slug' => 'amortizator-peredniy-4',
                 'code' => '1111005',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4448,7 +4107,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 342,
-                'slug' => 'bamper-zadniy-4',
                 'code' => '1201839',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4461,7 +4119,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 343,
-                'slug' => 'bamper-peredniy-4',
                 'code' => '1201837',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4474,7 +4131,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 344,
-                'slug' => 'baraban-tormoznoy-4',
                 'code' => '4886779',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4487,7 +4143,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 345,
-                'slug' => 'benzobak-4',
                 'code' => '1071510',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4500,7 +4155,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 346,
-                'slug' => 'benzonasos-toplivnyy-nasos-v-sbore-4',
                 'code' => '1388671',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4513,7 +4167,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 347,
-                'slug' => 'blok-predohraniteley-4',
                 'code' => '1209434',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4526,7 +4179,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 348,
-                'slug' => 'ventilyator-pechki-4',
                 'code' => '1111936',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4539,7 +4191,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 349,
-                'slug' => 'generator-4',
                 'code' => '1301530',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4552,7 +4203,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 350,
-                'slug' => 'datchik-temperatury-4',
                 'code' => '1089854',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4565,7 +4215,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 351,
-                'slug' => 'dver-zadnyaya-4',
                 'code' => '1430139',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4578,7 +4227,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 352,
-                'slug' => 'dver-perednyaya-4',
                 'code' => '1430135',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4591,7 +4239,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 353,
-                'slug' => 'dvigatel-4',
                 'code' => '1215878',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4604,7 +4251,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 354,
-                'slug' => 'dvorniki-shchetki-s-o-komplekt-4',
                 'code' => '1714325',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4617,7 +4263,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 355,
-                'slug' => 'disk-kolesnyy-litoy-4',
                 'code' => '1058646',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4630,7 +4275,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 356,
-                'slug' => 'diski-tormoznye-zadnie-4',
                 'code' => '1756882',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4643,7 +4287,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 357,
-                'slug' => 'diski-tormoznye-perednie-4',
                 'code' => '1522230',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4656,7 +4299,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 358,
-                'slug' => 'zhidkost-tormoznaya-ford-dot-4-1l-4',
                 'code' => '1776311',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4669,7 +4311,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 359,
-                'slug' => 'zamok-dveri-4',
                 'code' => '4057980',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4682,7 +4323,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 360,
-                'slug' => 'zamok-kapota-4',
                 'code' => '4555047',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4695,7 +4335,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 361,
-                'slug' => 'zerkalo-levoe-4',
                 'code' => '1135965',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4708,7 +4347,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 362,
-                'slug' => 'kapot-4',
                 'code' => '1430131',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4721,7 +4359,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 363,
-                'slug' => 'katalizator-4',
                 'code' => '1689923',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4734,7 +4371,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 364,
-                'slug' => 'klyuch-zazhiganiya-4',
                 'code' => '4007023',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4747,7 +4383,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 365,
-                'slug' => 'knopka-steklopodemnika-4',
                 'code' => '1091485',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4760,7 +4395,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 366,
-                'slug' => 'kolodki-tormoznye-zadnie-barabannye-4',
                 'code' => '1473058',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4773,7 +4407,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 367,
-                'slug' => 'kolodki-tormoznye-zadnie-diskovye-4',
                 'code' => '1425407',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4786,7 +4419,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 368,
-                'slug' => 'kolodki-tormoznye-perednie-4',
                 'code' => '1682498',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4799,7 +4431,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 369,
-                'slug' => 'korobka-avtomat-akpp-3',
                 'code' => '4188741',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4812,7 +4443,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 370,
-                'slug' => 'korobka-mehanicheskaya-mkpp-3',
                 'code' => '1124159',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4825,7 +4455,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 371,
-                'slug' => 'korpus-termostata-4',
                 'code' => '1319480',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4838,7 +4467,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 372,
-                'slug' => 'krylo-perednee-pravoe-3',
                 'code' => '1350731',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4851,7 +4479,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 373,
-                'slug' => 'kryshka-bagazhnika-4',
                 'code' => '1372684',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4864,7 +4491,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 374,
-                'slug' => 'lampochka-blizhnego-sveta-4',
                 'code' => '1013711',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4877,7 +4503,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 375,
-                'slug' => 'magnitola-4',
                 'code' => '1139975',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4890,7 +4515,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 376,
-                'slug' => 'maslo-gur-4',
                 'code' => '1496116',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4903,7 +4527,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 377,
-                'slug' => 'maslo-motornoe-ford-5w30-1l-4',
                 'code' => '14E8B9',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4916,7 +4539,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 378,
-                'slug' => 'maslo-motornoe-ford-5w30-5l-4',
                 'code' => '14E8BA',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4929,7 +4551,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 379,
-                'slug' => 'nakonechnik-rulevoy-4',
                 'code' => '1107013',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4942,7 +4563,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 380,
-                'slug' => 'nasos-gidrousilitelya-rulya-4',
                 'code' => '1358536',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4955,7 +4575,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 381,
-                'slug' => 'panel-perednyaya-4',
                 'code' => '1215920',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4968,7 +4587,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 382,
-                'slug' => 'panel-priborov-4',
                 'code' => '1328358',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4981,7 +4599,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 383,
-                'slug' => 'podshipnik-stupicy-zadney-s-abs-1',
                 'code' => '1201568',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -4994,7 +4611,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 384,
-                'slug' => 'podshipnik-stupicy-peredney-s-abs-1',
                 'code' => '1112547',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5007,7 +4623,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 385,
-                'slug' => 'predohraniteli-4',
                 'code' => '6191811',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5020,7 +4635,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 386,
-                'slug' => 'prikurivatel-3',
                 'code' => '1135280',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5033,7 +4647,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 387,
-                'slug' => 'protivotumannaya-fara-4',
                 'code' => '1346660',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5046,7 +4659,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 388,
-                'slug' => 'pruzhina-podveski-zadnyaya-4',
                 'code' => '1064134',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5059,7 +4671,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 389,
-                'slug' => 'pruzhina-podveski-perednyaya-4',
                 'code' => '1152040',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5072,7 +4683,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 390,
-                'slug' => 'radiator-kondicionera-4',
                 'code' => '1671708',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5085,7 +4695,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 391,
-                'slug' => 'radiator-ohlazhdeniya-dvigatelya-4',
                 'code' => '1671967',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5098,7 +4707,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 392,
-                'slug' => 'reyka-rulevaya-4',
                 'code' => '4873461',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5111,7 +4719,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 393,
-                'slug' => 'remen-grm-4',
                 'code' => '1053837',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5124,7 +4731,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 394,
-                'slug' => 'remen-privodnoy-4',
                 'code' => '1049613',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5137,7 +4743,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 395,
-                'slug' => 'reshetka-radiatora-4',
                 'code' => '1744364',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5150,7 +4755,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 396,
-                'slug' => 'rul-4',
                 'code' => '1149604',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5163,7 +4767,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 397,
-                'slug' => 'rychag-zadniy-poperechnyy-malyy-3',
                 'code' => '1061668',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5176,7 +4779,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 398,
-                'slug' => 'rychag-podveski-peredniy-pravyy',
                 'code' => '1207973',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5189,7 +4791,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 399,
-                'slug' => 'svecha-zazhiganiya-4',
                 'code' => '1493001',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5202,7 +4803,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 400,
-                'slug' => 'signal-zvukovoy-4',
                 'code' => '4524142',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5215,7 +4815,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 401,
-                'slug' => 'starter-4',
                 'code' => '1762874',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5228,7 +4827,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 402,
-                'slug' => 'steklo-dveri-peredney-4',
                 'code' => '1088904',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5241,7 +4839,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 403,
-                'slug' => 'steklo-lobovoe-s-obogrevom-4',
                 'code' => '1212023',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5254,7 +4851,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 404,
-                'slug' => 'steklo-lobovoe-4',
                 'code' => '1203081',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5267,7 +4863,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 405,
-                'slug' => 'stoyka-stabilizatora-perednyaya-4',
                 'code' => '1471446',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5280,7 +4875,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 406,
-                'slug' => 'stupica-1',
                 'code' => '1333147',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5293,7 +4887,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 407,
-                'slug' => 'sceplenie-4',
                 'code' => '1354396',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5306,7 +4899,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 408,
-                'slug' => 'termostat-4',
                 'code' => '1001993',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5319,7 +4911,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 409,
-                'slug' => 'trubka-gur-4',
                 'code' => '1132672',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5332,7 +4923,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 410,
-                'slug' => 'trubka-kondicionera-4',
                 'code' => '1331562',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5345,7 +4935,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 411,
-                'slug' => 'trubka-pechki',
                 'code' => '1108264',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5358,7 +4947,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 412,
-                'slug' => 'tyaga-rulevaya-4',
                 'code' => '1085520',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5371,7 +4959,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 413,
-                'slug' => 'fara-perednyaya-pravaya',
                 'code' => '1343653',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5384,7 +4971,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 414,
-                'slug' => 'filtr-vozdushnyy-4',
                 'code' => '1072246',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5397,7 +4983,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 415,
-                'slug' => 'filtr-maslyanyy-benzinovyy-dvigatel-4',
                 'code' => '1119421',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5410,7 +4995,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 416,
-                'slug' => 'filtr-maslyanyy-dizelnyy-dvigatel-4',
                 'code' => '1322152',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5423,7 +5007,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 417,
-                'slug' => 'filtr-salonnyy-ugolnyy-4',
                 'code' => '1121106',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5436,7 +5019,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 418,
-                'slug' => 'filtr-toplivnyy-benzinovyy-dvigatel-1',
                 'code' => '1465018',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5449,7 +5031,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 419,
-                'slug' => 'filtr-toplivnyy-dizelnyy-dvigatel-4',
                 'code' => '1230621',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5462,7 +5043,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 420,
-                'slug' => 'fonar-zadniy-4',
                 'code' => '1150021',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5475,7 +5055,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 421,
-                'slug' => 'shchetka-stekloochistitelya-zadnyaya-4',
                 'code' => '1714322',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5488,7 +5067,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 422,
-                'slug' => 'akkumulyator-akb-5',
                 'code' => '1863092',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5501,7 +5079,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 423,
-                'slug' => 'amortizator-zadniy-k-t-2sht',
                 'code' => '1769120',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5514,7 +5091,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 424,
-                'slug' => 'amortizator-peredniy-k-t-2sht',
                 'code' => '1769144',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5527,7 +5103,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 425,
-                'slug' => 'bamper-zadniy-5',
                 'code' => '1336747',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5540,7 +5115,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 426,
-                'slug' => 'bamper-peredniy-5',
                 'code' => '1336763',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5553,7 +5127,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 427,
-                'slug' => 'baraban-tormoznoy-5',
                 'code' => '1743443',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5566,7 +5139,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 428,
-                'slug' => 'benzobak-5',
                 'code' => '1308373',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5579,7 +5151,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 429,
-                'slug' => 'benzonasos-toplivnyy-nasos-v-sbore-5',
                 'code' => '1602781',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5592,7 +5163,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 430,
-                'slug' => 'blok-predohraniteley-5',
                 'code' => '1712211',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5605,7 +5175,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 431,
-                'slug' => 'ventilyator-pechki-5',
                 'code' => '1362640',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5618,7 +5187,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 432,
-                'slug' => 'generator-5',
                 'code' => '1748637',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5632,7 +5200,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 433,
-                'slug' => 'datchik-temperatury-5',
                 'code' => '1484876',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5645,7 +5212,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 434,
-                'slug' => 'dver-zadnyaya-5',
                 'code' => '1702408',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5658,7 +5224,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 435,
-                'slug' => 'dver-perednyaya-5',
                 'code' => '1530170',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5671,7 +5236,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 436,
-                'slug' => 'dvigatel-5',
                 'code' => '1705065',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5684,7 +5248,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 437,
-                'slug' => 'dvorniki-shchetki-s-o-komplekt-5',
                 'code' => '1738870',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5697,7 +5260,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 438,
-                'slug' => 'disk-kolesnyy-litoy-5',
                 'code' => '1354831',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5710,7 +5272,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 439,
-                'slug' => 'diski-tormoznye-zadnie-5',
                 'code' => '1748745',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5723,7 +5284,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 440,
-                'slug' => 'diski-tormoznye-perednie-5',
                 'code' => '1790221',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5736,7 +5296,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 441,
-                'slug' => 'zhidkost-tormoznaya-ford-dot-41l',
                 'code' => '1776311',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5749,7 +5308,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 442,
-                'slug' => 'zamok-dveri-5',
                 'code' => '4892384',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5762,7 +5320,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 443,
-                'slug' => 'zamok-kapota-5',
                 'code' => '4895286',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5775,7 +5332,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 444,
-                'slug' => 'zerkalo-levoe-5',
                 'code' => '1376304',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5788,7 +5344,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 445,
-                'slug' => 'kapot-5',
                 'code' => '1505771',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5801,7 +5356,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 446,
-                'slug' => 'katalizator-5',
                 'code' => '1542440',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5814,7 +5368,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 447,
-                'slug' => 'klyuch-zazhiganiya-5',
                 'code' => '5127857',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5827,7 +5380,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 448,
-                'slug' => 'knopka-steklopodemnika-5',
                 'code' => '1379197',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5840,7 +5392,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 449,
-                'slug' => 'kolodki-tormoznye-zadnie-barabannye-5',
                 'code' => '1689600',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5853,7 +5404,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 450,
-                'slug' => 'kolodki-tormoznye-zadnie-diskovye-5',
                 'code' => '1753844',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5866,7 +5416,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 451,
-                'slug' => 'kolodki-tormoznye-perednie-5',
                 'code' => '1809259',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5879,7 +5428,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 452,
-                'slug' => 'korobka-avtomat-akpp-4',
                 'code' => '1734731',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5892,7 +5440,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 453,
-                'slug' => 'korobka-mehanicheskaya-mkpp-4',
                 'code' => '1819941',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5905,7 +5452,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 454,
-                'slug' => 'korpus-termostata-5',
                 'code' => '1707050',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5918,7 +5464,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 455,
-                'slug' => 'krylo-perednee-pravoe-4',
                 'code' => '1521596',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5931,7 +5476,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 456,
-                'slug' => 'kryshka-bagazhnika-5',
                 'code' => '1353382',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5944,7 +5488,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 457,
-                'slug' => 'lampochka-blizhnego-sveta-5',
                 'code' => '1013711',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5957,7 +5500,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 458,
-                'slug' => 'magnitola-5',
                 'code' => '1503915',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5970,7 +5512,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 459,
-                'slug' => 'maslo-gur-5',
                 'code' => '1781003',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5983,7 +5524,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 460,
-                'slug' => 'maslo-motornoe-ford-5w301l',
                 'code' => '14E8B9',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -5996,7 +5536,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 461,
-                'slug' => 'maslo-motornoe-ford-5w305l',
                 'code' => '14E8BA',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6009,7 +5548,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 462,
-                'slug' => 'maslo-motornoe-ford-castrol-magnatec-5w201l',
                 'code' => '151A94',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6022,7 +5560,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 463,
-                'slug' => 'maslo-motornoe-ford-castrol-magnatec-5w205l',
                 'code' => '151A95',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6035,7 +5572,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 464,
-                'slug' => 'maslo-transmissionnoe-akpp-3',
                 'code' => '1565889',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6048,7 +5584,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 465,
-                'slug' => 'maslo-transmissionnoe-mkpp-3',
                 'code' => '1790199',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6061,7 +5596,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 466,
-                'slug' => 'nakonechnik-rulevoy-5',
                 'code' => '1730933',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6074,7 +5608,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 467,
-                'slug' => 'nasos-gidrousilitelya-rulya-5',
                 'code' => '1484948',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6087,7 +5620,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 468,
-                'slug' => 'vodyanoy-nasos-3',
                 'code' => '5207379',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6100,7 +5632,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 469,
-                'slug' => 'panel-perednyaya-5',
                 'code' => '1675180',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6113,7 +5644,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 470,
-                'slug' => 'panel-priborov-5',
                 'code' => '1377295',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6126,7 +5656,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 471,
-                'slug' => 'podshipnik-stupicy-zadney',
                 'code' => '1471854',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6139,7 +5668,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 472,
-                'slug' => 'podshipnik-stupicy-peredney-3',
                 'code' => '1506577',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6152,7 +5680,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 473,
-                'slug' => 'predohraniteli-5',
                 'code' => '6191811',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6165,7 +5692,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 474,
-                'slug' => 'prikurivatel-4',
                 'code' => '1135280',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6178,7 +5704,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 475,
-                'slug' => 'protivotumannaya-fara-5',
                 'code' => '1209177',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6191,7 +5716,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 476,
-                'slug' => 'pruzhina-podveski-zadnyaya-5',
                 'code' => '1340717',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6204,7 +5728,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 477,
-                'slug' => 'pruzhina-podveski-perednyaya-5',
                 'code' => '1335387',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6217,7 +5740,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 478,
-                'slug' => 'radiator-kondicionera-5',
                 'code' => '1516838',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6230,7 +5752,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 479,
-                'slug' => 'radiator-ohlazhdeniya-dvigatelya-5',
                 'code' => '1354176',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6243,7 +5764,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 480,
-                'slug' => 'reyka-rulevaya-5',
                 'code' => '1710769',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6256,7 +5776,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 481,
-                'slug' => 'remen-grm-5',
                 'code' => '1004299',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6269,7 +5788,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 482,
-                'slug' => 'remen-privodnoy-5',
                 'code' => '1731697',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6282,7 +5800,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 483,
-                'slug' => 'reshetka-radiatora-5',
                 'code' => '1480547',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6295,7 +5812,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 484,
-                'slug' => 'rul-5',
                 'code' => '1435223',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6308,7 +5824,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 485,
-                'slug' => 'rychag-zadniy-poperechnyy-malyy-4',
                 'code' => '1061668',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6321,7 +5836,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 486,
-                'slug' => 'rychag-podveski-peredniy-levyy-3',
                 'code' => '1477860',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6334,7 +5848,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 487,
-                'slug' => 'svecha-zazhiganiya-5',
                 'code' => '1493001',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6347,7 +5860,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 488,
-                'slug' => 'signal-zvukovoy-5',
                 'code' => '1347121',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6360,7 +5872,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 489,
-                'slug' => 'starte',
                 'code' => '1762875',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -6373,7 +5884,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 490,
-                'slug' => 'steklo-dveri-peredney-5',
                 'code' => '1342622',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6386,7 +5896,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 491,
-                'slug' => 'steklo-lobovoe-s-obogrevom-5',
                 'code' => '1710218',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6399,7 +5908,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 492,
-                'slug' => 'steklo-lobovoe-5',
                 'code' => '1468630',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6412,7 +5920,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 493,
-                'slug' => 'stoyka-stabilizatora-perednyaya-5',
                 'code' => '1686594',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6425,7 +5932,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 494,
-                'slug' => 'sceplenie-5',
                 'code' => '1524556',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6438,7 +5944,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 495,
-                'slug' => 'termostat-5',
                 'code' => '1712228',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6451,7 +5956,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 496,
-                'slug' => 'trubka-gur-5',
                 'code' => '1743276',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6464,7 +5968,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 497,
-                'slug' => 'trubka-kondicionera-5',
                 'code' => '1741890',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6477,7 +5980,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 498,
-                'slug' => 'patrubok-radiatora-4',
                 'code' => '1384149',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6490,7 +5992,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 499,
-                'slug' => 'tyaga-rulevaya-5',
                 'code' => '1510270',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6503,7 +6004,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 500,
-                'slug' => 'fara-perednyaya-levaya-4',
                 'code' => '1480990',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6516,7 +6016,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 501,
-                'slug' => 'filtr-vozdushnyy-5',
                 'code' => '1232496',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6529,7 +6028,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 502,
-                'slug' => 'filtr-maslyanyy-benzinovyy-dvigatel-5',
                 'code' => '1714387',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6542,7 +6040,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 503,
-                'slug' => 'filtr-maslyanyy-dizelnyy-dvigatel-5',
                 'code' => '1717510',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6555,7 +6052,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 504,
-                'slug' => 'filtr-salonnyy-ugolnyy-5',
                 'code' => '1354953',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6568,7 +6064,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 505,
-                'slug' => 'filtr-toplivnyy-dizelnyy-dvigatel-5',
                 'code' => '1318563',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6581,7 +6076,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 506,
-                'slug' => 'fonar-zadniy-5',
                 'code' => '1333834',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6594,7 +6088,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 507,
-                'slug' => 'shchetka-stekloochistitelya-zadnyaya-5',
                 'code' => '1476921',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6607,7 +6100,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 508,
-                'slug' => 'akkumulyator-akb-6',
                 'code' => '1863092',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6620,7 +6112,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 509,
-                'slug' => 'amortizator-zadniy-5',
                 'code' => '1881214',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6633,7 +6124,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 510,
-                'slug' => 'amortizator-peredniy-5',
                 'code' => '1709762',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6646,7 +6136,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 511,
-                'slug' => 'bamper-zadniy-6',
                 'code' => '1731174',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6659,7 +6148,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 512,
-                'slug' => 'bamper-peredniy-6',
                 'code' => '1719342',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6672,7 +6160,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 513,
-                'slug' => 'baraban-tormoznoy-6',
                 'code' => '1781451',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6685,7 +6172,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 514,
-                'slug' => 'benzobak-6',
                 'code' => '1713805',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6698,7 +6184,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 515,
-                'slug' => 'benzonasos-toplivnyy-nasos-v-sbore-6',
                 'code' => '1851739',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6711,7 +6196,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 516,
-                'slug' => 'blok-predohraniteley-6',
                 'code' => '1793284',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6724,7 +6208,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 517,
-                'slug' => 'ventilyator-pechki-6',
                 'code' => '1696010',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6737,7 +6220,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 518,
-                'slug' => 'generator-6',
                 'code' => '1685794',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6750,7 +6232,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 519,
-                'slug' => 'datchik-temperatury-6',
                 'code' => '1702985',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6763,7 +6244,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 520,
-                'slug' => 'dver-zadnyaya-6',
                 'code' => '1885271',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6776,7 +6256,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 521,
-                'slug' => 'dver-perednyaya-6',
                 'code' => '1810218',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6789,7 +6268,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 522,
-                'slug' => 'dvigatel-6',
                 'code' => '1727626',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6802,7 +6280,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 523,
-                'slug' => 'dvorniki-shchetki-s-o-komplekt-6',
                 'code' => '1731996',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6815,7 +6292,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 524,
-                'slug' => 'disk-kolesnyy-litoy-6',
                 'code' => '1811425',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6828,7 +6304,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 525,
-                'slug' => 'diski-tormoznye-zadnie-6',
                 'code' => '1704765',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6841,7 +6316,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 526,
-                'slug' => 'diski-tormoznye-perednie-6',
                 'code' => '1790221',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6854,7 +6328,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 527,
-                'slug' => 'zhidkost-tormoznaya-ford-dot-4-lv-1l',
                 'code' => '1847942',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6867,7 +6340,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 528,
-                'slug' => 'zamok-dveri-6',
                 'code' => '5275263',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6880,7 +6352,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 529,
-                'slug' => 'zamok-kapota-6',
                 'code' => '1808504',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6893,7 +6364,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 530,
-                'slug' => 'zerkalo-levoe-6',
                 'code' => '1766654',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6906,7 +6376,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 531,
-                'slug' => 'kapot-6',
                 'code' => '1797477',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6919,7 +6388,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 532,
-                'slug' => 'katalizator-6',
                 'code' => '1719502',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6932,7 +6400,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 533,
-                'slug' => 'klyuch-zazhiganiya-6',
                 'code' => '5127857',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6945,7 +6412,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 534,
-                'slug' => 'knopka-steklopodemnika-6',
                 'code' => '1861098',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6958,7 +6424,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 535,
-                'slug' => 'kolodki-tormoznye-zadnie-barabannye-6',
                 'code' => '1755477',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6971,7 +6436,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 536,
-                'slug' => 'kolodki-tormoznye-zadnie-diskovye-6',
                 'code' => '1820122',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6984,7 +6448,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 537,
-                'slug' => 'kolodki-tormoznye-perednie-6',
                 'code' => '1809256',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -6997,7 +6460,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 538,
-                'slug' => 'korobka-avtomat-akpp-5',
                 'code' => '1909325',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7010,7 +6472,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 539,
-                'slug' => 'korobka-mehanicheskaya-mkpp-5',
                 'code' => '1868464',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7023,7 +6484,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 540,
-                'slug' => 'korpus-termostata-6',
                 'code' => '1707050',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7036,7 +6496,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 541,
-                'slug' => 'krylo-perednee-pravoe-5',
                 'code' => '1847624',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7049,7 +6508,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 542,
-                'slug' => 'kryshka-bagazhnika-6',
                 'code' => '1796141',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7062,7 +6520,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 543,
-                'slug' => 'lampochka-blizhnego-sveta-6',
                 'code' => '1013711',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7075,7 +6532,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 544,
-                'slug' => 'magnitola-6',
                 'code' => '1856570',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7088,7 +6544,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 545,
-                'slug' => 'maslo-gur-6',
                 'code' => '1781003',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7101,7 +6556,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 546,
-                'slug' => 'maslo-motornoe-ford-5w30-1l-5',
                 'code' => '14E8B9',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7114,7 +6568,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 547,
-                'slug' => 'maslo-motornoe-ford-5w30-5l-5',
                 'code' => '14E8BA',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7127,7 +6580,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 548,
-                'slug' => 'maslo-motornoe-ford-castrol-magnatec-5w20-1l-3',
                 'code' => '151A94',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7140,7 +6592,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 549,
-                'slug' => 'maslo-motornoe-ford-castrol-magnatec-5w20-5l-1',
                 'code' => '151A95',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7153,7 +6604,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 550,
-                'slug' => 'maslo-transmissionnoe-akpp-4',
                 'code' => '1490763',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7166,7 +6616,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 551,
-                'slug' => 'maslo-transmissionnoe-mkpp-4',
                 'code' => '1790199',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7179,7 +6628,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 552,
-                'slug' => 'nakonechnik-rulevoy-6',
                 'code' => '1826501',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7192,7 +6640,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 553,
-                'slug' => 'nasos-gidrousilitelya-rulya-6',
                 'code' => '1758113',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7205,7 +6652,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 554,
-                'slug' => 'vodyanoy-nasos-4',
                 'code' => '1778516',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7218,7 +6664,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 555,
-                'slug' => 'panel-perednyaya-6',
                 'code' => '1926039',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7231,7 +6676,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 556,
-                'slug' => 'pribornaya-panel',
                 'code' => '1879748',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7244,7 +6688,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 557,
-                'slug' => 'podshipnik-stupicy-zadney-stupica-2',
                 'code' => '1851452',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7257,7 +6700,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 558,
-                'slug' => 'podshipnik-stupicy-peredney-4',
                 'code' => '1668557',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7270,7 +6712,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 559,
-                'slug' => 'predohraniteli-6',
                 'code' => '6191811',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7283,7 +6724,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 560,
-                'slug' => 'prikurivatel-5',
                 'code' => '1135280',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7296,7 +6736,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 561,
-                'slug' => 'protivotumannaya-fara-6',
                 'code' => '1209177',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7309,7 +6748,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 562,
-                'slug' => 'pruzhina-podveski-zadnyaya-6',
                 'code' => '1741784',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7322,7 +6760,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 563,
-                'slug' => 'pruzhina-podveski-perednyaya-6',
                 'code' => '1851892',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7335,7 +6772,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 564,
-                'slug' => 'radiator-kondicionera-6',
                 'code' => '1769313',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7348,7 +6784,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 565,
-                'slug' => 'radiator-ohlazhdeniya-dvigatelya-6',
                 'code' => '1890758',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7361,7 +6796,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 566,
-                'slug' => 'reyka-rulevaya-6',
                 'code' => '1897251',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7374,7 +6808,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 567,
-                'slug' => 'remen-grm-6',
                 'code' => '1823388',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7387,7 +6820,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 568,
-                'slug' => 'remen-privodnoy-6',
                 'code' => '1692105',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7400,7 +6832,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 569,
-                'slug' => 'reshetka-radiatora-6',
                 'code' => '1718747',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7413,7 +6844,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 570,
-                'slug' => 'rul-6',
                 'code' => '1769642',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7426,7 +6856,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 571,
-                'slug' => 'rychag-zadniy-poperechnyy-malyy-5',
                 'code' => '1703145',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7439,7 +6868,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 572,
-                'slug' => 'rychag-podveski-peredniy-levyy-4',
                 'code' => '1866073',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7452,7 +6880,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 573,
-                'slug' => 'svecha-zazhiganiya-6',
                 'code' => '1787829',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7465,7 +6892,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 574,
-                'slug' => 'signal-zvukovoy-6',
                 'code' => '1806687',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7478,7 +6904,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 575,
-                'slug' => 'starter-5',
                 'code' => '1824489',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7491,7 +6916,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 576,
-                'slug' => 'steklo-dveri-peredney-6',
                 'code' => '1742302',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7504,7 +6928,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 577,
-                'slug' => 'steklo-lobovoe-s-obogrevom-6',
                 'code' => '1767171',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7517,7 +6940,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 578,
-                'slug' => 'steklo-lobovoe-6',
                 'code' => '1935083',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7530,7 +6952,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 579,
-                'slug' => 'stoyka-stabilizatora-perednyaya-6',
                 'code' => '1686594',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7543,7 +6964,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 580,
-                'slug' => 'sceplenie-6',
                 'code' => '1810823',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7556,7 +6976,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 581,
-                'slug' => 'termostat-6',
                 'code' => '1712228',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7569,7 +6988,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 582,
-                'slug' => 'trubka-gur-6',
                 'code' => '1802163',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7582,7 +7000,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 583,
-                'slug' => 'trubka-kondicionera-6',
                 'code' => '1702751',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7595,7 +7012,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 584,
-                'slug' => 'patrubok-radiatora-5',
                 'code' => '1684922',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7608,7 +7024,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 585,
-                'slug' => 'tyaga-rulevaya-6',
                 'code' => '1780104',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7621,7 +7036,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 586,
-                'slug' => 'fara-perednyaya-levaya-5',
                 'code' => '1873929',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7634,7 +7048,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 587,
-                'slug' => 'filtr-vozdushnyy-6',
                 'code' => '1848220',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7647,7 +7060,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 588,
-                'slug' => 'filtr-maslyanyy-benzinovyy-dvigatel-6',
                 'code' => '1883037',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7660,7 +7072,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 589,
-                'slug' => 'filtr-maslyanyy-dizelnyy-dvigatel-6',
                 'code' => '1717510',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7673,7 +7084,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 590,
-                'slug' => 'filtr-salonnyy-ugolnyy-6',
                 'code' => '1709013',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7686,7 +7096,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 591,
-                'slug' => 'filtr-toplivnyy-dizelnyy-dvigatel-6',
                 'code' => '1682001',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7699,7 +7108,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 592,
-                'slug' => 'fonar-zadniy-6',
                 'code' => '1863056',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7712,7 +7120,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 593,
-                'slug' => 'shchetka-stekloochistitelya-zadnyaya-6',
                 'code' => '1462914',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7725,7 +7132,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 594,
-                'slug' => 'akkumulyator-akb-7',
                 'code' => '1517094',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7738,7 +7144,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 595,
-                'slug' => 'amortizator-zadniy-6',
                 'code' => '1305638',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7751,7 +7156,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 596,
-                'slug' => 'amortizator-peredniy-6',
                 'code' => '1309693',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7764,7 +7168,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 597,
-                'slug' => 'bamper-zadniy-7',
                 'code' => '1508972',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7777,7 +7180,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 598,
-                'slug' => 'bamper-peredniy-7',
                 'code' => '1429355',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7790,7 +7192,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 599,
-                'slug' => 'baraban-tormoznoy-7',
                 'code' => '1507055',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7803,7 +7204,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 600,
-                'slug' => 'benzobak-7',
                 'code' => '1404702',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7816,7 +7216,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 601,
-                'slug' => 'benzonasos-toplivnyy-nasos-v-sbore-7',
                 'code' => '1491778',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7829,7 +7228,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 602,
-                'slug' => 'blok-predohraniteley-7',
                 'code' => '1142883',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7842,7 +7240,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 603,
-                'slug' => 'ventilyator-pechki-7',
                 'code' => '1252926',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7855,7 +7252,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 604,
-                'slug' => 'generator-7',
                 'code' => '1757317',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7868,7 +7264,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 605,
-                'slug' => 'datchik-temperatury-7',
                 'code' => '1484876',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7881,7 +7276,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 606,
-                'slug' => 'dver-zadnyaya-7',
                 'code' => '1692555',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7894,7 +7288,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 607,
-                'slug' => 'dver-perednyaya-7',
                 'code' => '1692551',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7907,7 +7300,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 608,
-                'slug' => 'dvigatel-7',
                 'code' => '1705060',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7920,7 +7312,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 609,
-                'slug' => 'dvorniki-shchetki-s-o-komplekt-7',
                 'code' => '1712815',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7933,7 +7324,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 610,
-                'slug' => 'disk-kolesnyy-litoy-7',
                 'code' => '1058646',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7946,7 +7336,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 611,
-                'slug' => 'diski-tormoznye-perednie-7',
                 'code' => '1522230',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7959,7 +7348,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 612,
-                'slug' => 'zhidkost-tormoznaya-ford-dot-41l-1',
                 'code' => '1776311',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7972,7 +7360,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 613,
-                'slug' => 'zamok-dveri-7',
                 'code' => '1372480',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7985,7 +7372,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 614,
-                'slug' => 'zamok-kapota-7',
                 'code' => '1300444',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -7998,7 +7384,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 615,
-                'slug' => 'zerkalo-levoe-7',
                 'code' => '1567125',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8011,7 +7396,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 616,
-                'slug' => 'kapot-7',
                 'code' => '1346687',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8024,7 +7408,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 617,
-                'slug' => 'katalizator-7',
                 'code' => '1684816',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8037,7 +7420,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 618,
-                'slug' => 'klyuch-zazhiganiya-7',
                 'code' => '4355661',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8050,7 +7432,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 619,
-                'slug' => 'knopka-steklopodemnika-7',
                 'code' => '1107243',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8063,7 +7444,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 620,
-                'slug' => 'kolodki-tormoznye-zadnie-barabannye-7',
                 'code' => '1236882',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8076,7 +7456,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 621,
-                'slug' => 'kolodki-tormoznye-perednie-7',
                 'code' => '1783839',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8089,7 +7468,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 622,
-                'slug' => 'korobka-peredach-avtomat-akpp-1',
                 'code' => '1765826',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8102,7 +7480,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 623,
-                'slug' => 'korobka-peredach-mehanicheskaya-mkpp-1',
                 'code' => '1478005',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8115,7 +7492,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 624,
-                'slug' => 'korobka-peredach-robot-robotizirovannaya-1',
                 'code' => '1478002',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8128,7 +7504,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 625,
-                'slug' => 'korpus-termostata-7',
                 'code' => '1707050',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8141,7 +7516,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 626,
-                'slug' => 'krylo-perednee-levoe-1',
                 'code' => '1420115',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8154,7 +7528,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 627,
-                'slug' => 'kryshka-bagazhnika-7',
                 'code' => '1756576',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8167,7 +7540,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 628,
-                'slug' => 'lampochka-blizhnego-sveta-7',
                 'code' => '1013818',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8180,7 +7552,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 629,
-                'slug' => 'magnitola-7',
                 'code' => '1503915',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8193,7 +7564,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 630,
-                'slug' => 'maslo-gur-7',
                 'code' => '1496116',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8206,7 +7576,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 631,
-                'slug' => 'maslo-motornoe-ford-5w301l-1',
                 'code' => '14E8B9',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8219,7 +7588,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 632,
-                'slug' => 'maslo-motornoe-ford-5w305l-1',
                 'code' => '14E8BA',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8232,7 +7600,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 633,
-                'slug' => 'nakonechnik-rulevoy-7',
                 'code' => '1202548',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8245,7 +7612,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 634,
-                'slug' => 'nasos-gidrousilitelya-rulya-7',
                 'code' => '1357617',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8258,7 +7624,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 635,
-                'slug' => 'panel-perednyaya-7',
                 'code' => '1518178',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8271,7 +7636,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 636,
-                'slug' => 'panel-priborov-6',
                 'code' => '1376474',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8284,7 +7648,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 637,
-                'slug' => 'podshipnik-stupicy-zadney-s-abs-2',
                 'code' => '1201568',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8297,7 +7660,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 638,
-                'slug' => 'podshipnik-stupicy-peredney-s-abs-2',
                 'code' => '1201569',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8310,7 +7672,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 639,
-                'slug' => 'predohraniteli-7',
                 'code' => '6191811',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8323,7 +7684,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 640,
-                'slug' => 'prikurivatel-6',
                 'code' => '1073958',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8336,7 +7696,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 641,
-                'slug' => 'protivotumannaya-fara-7',
                 'code' => '1209177',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8349,7 +7708,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 642,
-                'slug' => 'pruzhina-podveski-zadnyaya-7',
                 'code' => '1343500',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8362,7 +7720,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 643,
-                'slug' => 'pruzhina-podveski-perednyaya-7',
                 'code' => '1371954',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8375,7 +7732,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 644,
-                'slug' => 'radiator-kondicionera-7',
                 'code' => '1467421',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8388,7 +7744,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 645,
-                'slug' => 'radiator-ohlazhdeniya-dvigatelya-7',
                 'code' => '1325831',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8401,7 +7756,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 646,
-                'slug' => 'reyka-rulevaya-7',
                 'code' => '1760691',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8414,7 +7768,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 647,
-                'slug' => 'remen-grm-7',
                 'code' => '1004299',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8427,7 +7780,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 648,
-                'slug' => 'remen-privodnoy-7',
                 'code' => '1365336',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8440,7 +7792,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 649,
-                'slug' => 'reshetka-radiatora-7',
                 'code' => '1530207',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8453,7 +7804,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 650,
-                'slug' => 'rul-7',
                 'code' => '1358833',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8466,7 +7816,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 651,
-                'slug' => 'rychag-podveski-peredniy-1',
                 'code' => '1212808',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8479,7 +7828,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 652,
-                'slug' => 'svecha-zazhiganiya-7',
                 'code' => '1493001',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8492,7 +7840,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 653,
-                'slug' => 'signal-zvukovoy-7',
                 'code' => '1346292',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8505,7 +7852,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 654,
-                'slug' => 'starter-6',
                 'code' => '1824489',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8518,7 +7864,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 655,
-                'slug' => 'steklo-dveri-peredney-7',
                 'code' => '1336305',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8531,7 +7876,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 656,
-                'slug' => 'steklo-lobovoe-s-obogrevom-7',
                 'code' => '1549176',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8544,7 +7888,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 657,
-                'slug' => 'steklo-lobovoe-7',
                 'code' => '1554208',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8557,7 +7900,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 658,
-                'slug' => 'stoyka-stabilizatora-perednyaya-7',
                 'code' => '1761200',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8570,7 +7912,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 659,
-                'slug' => 'stupica-2',
                 'code' => '1333147',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8583,7 +7924,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 660,
-                'slug' => 'sceplenie-7',
                 'code' => '1772135',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8596,7 +7936,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 661,
-                'slug' => 'termostat-7',
                 'code' => '1712228',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8609,7 +7948,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 662,
-                'slug' => 'trubka-gur-7',
                 'code' => '1469217',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8622,7 +7960,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 663,
-                'slug' => 'trubka-kondicionera-7',
                 'code' => '1334180',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8635,7 +7972,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 664,
-                'slug' => 'patrubok-radiatora-6',
                 'code' => '1546445',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8648,7 +7984,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 665,
-                'slug' => 'tyaga-rulevaya-7',
                 'code' => '4472940',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8661,7 +7996,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 666,
-                'slug' => 'fara-perednyaya-levaya-6',
                 'code' => '1547725',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8674,7 +8008,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 667,
-                'slug' => 'filtr-vozdushnyy-7',
                 'code' => '1729854',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8687,7 +8020,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 668,
-                'slug' => 'filtr-maslyanyy-benzinovyy-dvigatel-7',
                 'code' => '1714387',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8700,7 +8032,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 669,
-                'slug' => 'filtr-maslyanyy-dizelnyy-dvigatel-7',
                 'code' => '1359941',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8713,7 +8044,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 670,
-                'slug' => 'filtr-salonnyy-ugolnyy-7',
                 'code' => '1353269',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8726,7 +8056,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 671,
-                'slug' => 'filtr-toplivnyy-benzinovyy-dvigatel-2',
                 'code' => '1140129',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8739,7 +8068,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 672,
-                'slug' => 'filtr-toplivnyy-dizelnyy-dvigatel-7',
                 'code' => '1458065',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8752,7 +8080,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 673,
-                'slug' => 'fonar-zadniy-7',
                 'code' => '1383638',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8765,7 +8092,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 674,
-                'slug' => 'shchetka-stekloochistitelya-zadnyaya-7',
                 'code' => '1713250',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8778,7 +8104,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 675,
-                'slug' => 'akkumulyator-akb-8',
                 'code' => '1712277',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8791,7 +8116,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 676,
-                'slug' => 'amortizator-zadniy-7',
                 'code' => '1881214',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8804,7 +8128,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 677,
-                'slug' => 'amortizator-peredniy-7',
                 'code' => '1709762',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8817,7 +8140,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 678,
-                'slug' => 'bamper-zadniy-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8830,7 +8152,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 679,
-                'slug' => 'bamper-peredniy-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8843,7 +8164,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 680,
-                'slug' => 'baraban-tormoznoy-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8856,7 +8176,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 681,
-                'slug' => 'benzobak-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8869,7 +8188,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 682,
-                'slug' => 'benzonasos-toplivnyy-nasos-v-sbore-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8882,7 +8200,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 683,
-                'slug' => 'blok-predohraniteley-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8895,7 +8212,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 684,
-                'slug' => 'ventilyator-pechki-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8908,7 +8224,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 685,
-                'slug' => 'generator-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8921,7 +8236,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 686,
-                'slug' => 'datchik-temperatury-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8934,7 +8248,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 687,
-                'slug' => 'dver-zadnyaya-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8947,7 +8260,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 688,
-                'slug' => 'dver-perednyaya-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8960,7 +8272,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 689,
-                'slug' => 'dvigatel-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8973,7 +8284,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 690,
-                'slug' => 'dvorniki-shchetki-s-o-komplekt-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8986,7 +8296,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 691,
-                'slug' => 'disk-kolesnyy-litoy-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -8999,7 +8308,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 692,
-                'slug' => 'diski-tormoznye-zadnie-7',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9012,7 +8320,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 693,
-                'slug' => 'diski-tormoznye-perednie-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9025,7 +8332,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 694,
-                'slug' => 'zhidkost-tormoznaya-ford-dot-41l-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9038,7 +8344,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 695,
-                'slug' => 'zamok-dveri-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9051,7 +8356,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 696,
-                'slug' => 'zamok-kapota-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9064,7 +8368,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 697,
-                'slug' => 'zerkalo-levoe-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9077,7 +8380,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 698,
-                'slug' => 'kapot-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9090,7 +8392,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 699,
-                'slug' => 'katalizator-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9103,7 +8404,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 700,
-                'slug' => 'klyuch-zazhiganiya-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9116,7 +8416,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 701,
-                'slug' => 'knopka-steklopodemnika-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9129,7 +8428,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 702,
-                'slug' => 'kolodki-tormoznye-zadnie-barabannye-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9142,7 +8440,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 703,
-                'slug' => 'kolodki-tormoznye-zadnie-diskovye-7',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9155,7 +8452,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 704,
-                'slug' => 'kolodki-tormoznye-perednie-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9168,7 +8464,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 705,
-                'slug' => 'korobka-avtomat-akpp-6',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9181,7 +8476,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 706,
-                'slug' => 'korobka-mehanicheskaya-mkpp-6',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9194,7 +8488,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 707,
-                'slug' => 'korpus-termostata-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9207,7 +8500,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 708,
-                'slug' => 'krylo-perednee-pravoe-6',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9220,7 +8512,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 709,
-                'slug' => 'kryshka-bagazhnika-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9233,7 +8524,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 710,
-                'slug' => 'lampochka-blizhnego-sveta-8',
                 'code' => '1013711',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9246,7 +8536,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 711,
-                'slug' => 'magnitola-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9259,7 +8548,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 712,
-                'slug' => 'maslo-gur-8',
                 'code' => '1781003',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9272,7 +8560,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 713,
-                'slug' => 'maslo-motornoe-ford-5w301l-2',
                 'code' => '14E8B9',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9285,7 +8572,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 714,
-                'slug' => 'maslo-motornoe-ford-5w305l-2',
                 'code' => '14E8BA',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9298,7 +8584,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 715,
-                'slug' => 'maslo-motornoe-ford-castrol-magnatec-5w201l-1',
                 'code' => '151A94',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9311,7 +8596,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 716,
-                'slug' => 'maslo-motornoe-ford-castrol-magnatec-5w205l-1',
                 'code' => '151A95',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9324,7 +8608,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 717,
-                'slug' => 'maslo-transmissionnoe-akpp-5',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9337,7 +8620,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 718,
-                'slug' => 'maslo-transmissionnoe-mkpp-5',
                 'code' => '1790199',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9350,7 +8632,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 719,
-                'slug' => 'nakonechnik-rulevoy-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9363,7 +8644,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 720,
-                'slug' => 'nasos-gidrousilitelya-rulya-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9376,7 +8656,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 721,
-                'slug' => 'vodyanoy-nasos-5',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9389,7 +8668,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 722,
-                'slug' => 'panel-perednyaya-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9402,7 +8680,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 723,
-                'slug' => 'panel-priborov-7',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9415,7 +8692,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 724,
-                'slug' => 'podshipnik-stupicy-zadney-stupica-3',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9428,7 +8704,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 725,
-                'slug' => 'podshipnik-stupicy-peredney-5',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9441,7 +8716,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 726,
-                'slug' => 'predohraniteli-8',
                 'code' => '6191811',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9454,7 +8728,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 727,
-                'slug' => 'prikurivatel-7',
                 'code' => '1135280',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9467,7 +8740,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 728,
-                'slug' => 'protivotumannaya-fara-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9480,7 +8752,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 729,
-                'slug' => 'pruzhina-podveski-zadnyaya-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9493,7 +8764,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 730,
-                'slug' => 'pruzhina-podveski-perednyaya-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9506,7 +8776,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 731,
-                'slug' => 'radiator-kondicionera-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9519,7 +8788,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 732,
-                'slug' => 'radiator-ohlazhdeniya-dvigatelya-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9532,7 +8800,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 733,
-                'slug' => 'reyka-rulevaya-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9545,7 +8812,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 734,
-                'slug' => 'remen-grm-8',
                 'code' => '1004299',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9558,7 +8824,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 735,
-                'slug' => 'remen-privodnoy-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9571,7 +8836,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 736,
-                'slug' => 'reshetka-radiatora-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9584,7 +8848,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 737,
-                'slug' => 'rul-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9597,7 +8860,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 738,
-                'slug' => 'rychag-zadniy-poperechnyy-malyy-6',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9610,7 +8872,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 739,
-                'slug' => 'rychag-podveski-peredniy-levyy-5',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9623,7 +8884,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 740,
-                'slug' => 'svecha-zazhiganiya-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9636,7 +8896,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 741,
-                'slug' => 'signal-zvukovoy-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9649,7 +8908,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 742,
-                'slug' => 'starter-7',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9662,7 +8920,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 743,
-                'slug' => 'steklo-dveri-peredney-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9675,7 +8932,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 744,
-                'slug' => 'steklo-lobovoe-s-obogrevom-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9688,7 +8944,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 745,
-                'slug' => 'steklo-lobovoe-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9701,7 +8956,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 746,
-                'slug' => 'stoyka-stabilizatora-perednyaya-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9714,7 +8968,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 747,
-                'slug' => 'sceplenie-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9727,7 +8980,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 748,
-                'slug' => 'termostat-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9740,7 +8992,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 749,
-                'slug' => 'trubka-gur-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9753,7 +9004,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 750,
-                'slug' => 'trubka-kondicionera-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9766,7 +9016,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 751,
-                'slug' => 'patrubok-radiatora-7',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9779,7 +9028,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 752,
-                'slug' => 'tyaga-rulevaya-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9792,7 +9040,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 753,
-                'slug' => 'fara-perednyaya-levaya-7',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9805,7 +9052,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 754,
-                'slug' => 'filtr-vozdushnyy-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9818,7 +9064,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 755,
-                'slug' => 'filtr-maslyanyy-benzinovyy-dvigatel-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9831,7 +9076,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 756,
-                'slug' => 'filtr-maslyanyy-dizelnyy-dvigatel-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9844,7 +9088,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 757,
-                'slug' => 'filtr-salonnyy-ugolnyy-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9857,7 +9100,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 758,
-                'slug' => 'filtr-toplivnyy-dizelnyy-dvigatel-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9870,7 +9112,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 759,
-                'slug' => 'fonar-zadniy-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9883,7 +9124,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 760,
-                'slug' => 'shchetka-stekloochistitelya-zadnyaya-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9896,7 +9136,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 761,
-                'slug' => 'akkumulyator-akb-9',
                 'code' => '1712277',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9909,7 +9148,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 762,
-                'slug' => 'amortizator-zadniy-8',
                 'code' => '1881214',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9922,7 +9160,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 763,
-                'slug' => 'amortizator-peredniy-8',
                 'code' => '1709762',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9935,7 +9172,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 764,
-                'slug' => 'bamper-zadniy-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9948,7 +9184,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 765,
-                'slug' => 'bamper-peredniy-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9961,7 +9196,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 766,
-                'slug' => 'baraban-tormoznoy-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9974,7 +9208,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 767,
-                'slug' => 'benzobak-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -9987,7 +9220,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 768,
-                'slug' => 'benzonasos-toplivnyy-nasos-v-sbore-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10000,7 +9232,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 769,
-                'slug' => 'blok-predohraniteley-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10013,7 +9244,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 770,
-                'slug' => 'ventilyator-pechki-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10026,7 +9256,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 771,
-                'slug' => 'generator-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10039,7 +9268,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 772,
-                'slug' => 'datchik-temperatury-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10052,7 +9280,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 773,
-                'slug' => 'dver-zadnyaya-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10065,7 +9292,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 774,
-                'slug' => 'dver-perednyaya-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10078,7 +9304,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 775,
-                'slug' => 'dvigatel-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10091,7 +9316,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 776,
-                'slug' => 'dvorniki-shchetki-s-o-komplekt-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10104,7 +9328,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 777,
-                'slug' => 'disk-kolesnyy-litoy-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10117,7 +9340,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 778,
-                'slug' => 'diski-tormoznye-zadnie-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10130,7 +9352,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 779,
-                'slug' => 'diski-tormoznye-perednie-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10143,7 +9364,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 780,
-                'slug' => 'zhidkost-tormoznaya-ford-dot-41l-3',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10156,7 +9376,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 781,
-                'slug' => 'zamok-dveri-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10169,7 +9388,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 782,
-                'slug' => 'zamok-kapota-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10182,7 +9400,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 783,
-                'slug' => 'zerkalo-levoe-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10195,7 +9412,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 784,
-                'slug' => 'kapot-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10208,7 +9424,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 785,
-                'slug' => 'katalizator-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10221,7 +9436,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 786,
-                'slug' => 'klyuch-zazhiganiya-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10234,7 +9448,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 787,
-                'slug' => 'knopka-steklopodemnika-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10247,7 +9460,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 788,
-                'slug' => 'kolodki-tormoznye-zadnie-barabannye-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10260,7 +9472,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 789,
-                'slug' => 'kolodki-tormoznye-zadnie-diskovye-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10273,7 +9484,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 790,
-                'slug' => 'kolodki-tormoznye-perednie-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10286,7 +9496,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 791,
-                'slug' => 'korobka-avtomat-akpp-7',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10299,7 +9508,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 792,
-                'slug' => 'korobka-mehanicheskaya-mkpp-7',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10312,7 +9520,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 793,
-                'slug' => 'korpus-termostata-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10325,7 +9532,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 794,
-                'slug' => 'krylo-perednee-pravoe-7',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10338,7 +9544,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 795,
-                'slug' => 'kryshka-bagazhnika-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10351,7 +9556,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 796,
-                'slug' => 'lampochka-blizhnego-sveta-9',
                 'code' => '1013711',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10364,7 +9568,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 797,
-                'slug' => 'magnitola-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10377,7 +9580,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 798,
-                'slug' => 'maslo-gur-9',
                 'code' => '1781003',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10390,7 +9592,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 799,
-                'slug' => 'maslo-motornoe-ford-5w301l-3',
                 'code' => '14E8B9',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10403,7 +9604,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 800,
-                'slug' => 'maslo-motornoe-ford-5w305l-3',
                 'code' => '14E8BA',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10416,7 +9616,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 801,
-                'slug' => 'maslo-motornoe-ford-castrol-magnatec-5w201l-2',
                 'code' => '151A94',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10429,7 +9628,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 802,
-                'slug' => 'maslo-motornoe-ford-castrol-magnatec-5w205l-2',
                 'code' => '151A95',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10442,7 +9640,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 803,
-                'slug' => 'maslo-transmissionnoe-akpp-6',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10455,7 +9652,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 804,
-                'slug' => 'maslo-transmissionnoe-mkpp-6',
                 'code' => '1790199',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10468,7 +9664,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 805,
-                'slug' => 'nakonechnik-rulevoy-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10481,7 +9676,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 806,
-                'slug' => 'nasos-gidrousilitelya-rulya-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10494,7 +9688,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 807,
-                'slug' => 'vodyanoy-nasos-6',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10507,7 +9700,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 808,
-                'slug' => 'panel-perednyaya-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10520,7 +9712,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 809,
-                'slug' => 'panel-priborov-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10533,7 +9724,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 810,
-                'slug' => 'podshipnik-stupicy-zadney-stupica-4',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10546,7 +9736,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 811,
-                'slug' => 'podshipnik-stupicy-peredney-6',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10559,7 +9748,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 812,
-                'slug' => 'predohraniteli-9',
                 'code' => '6191811',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10572,7 +9760,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 813,
-                'slug' => 'prikurivatel-8',
                 'code' => '1135280',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10585,7 +9772,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 814,
-                'slug' => 'protivotumannaya-fara-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10598,7 +9784,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 815,
-                'slug' => 'pruzhina-podveski-zadnyaya-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10611,7 +9796,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 816,
-                'slug' => 'pruzhina-podveski-perednyaya-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10624,7 +9808,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 817,
-                'slug' => 'radiator-kondicionera-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10637,7 +9820,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 818,
-                'slug' => 'radiator-ohlazhdeniya-dvigatelya-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10650,7 +9832,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 819,
-                'slug' => 'reyka-rulevaya-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10663,7 +9844,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 820,
-                'slug' => 'remen-grm-9',
                 'code' => '1004299',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10676,7 +9856,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 821,
-                'slug' => 'remen-privodnoy-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10689,7 +9868,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 822,
-                'slug' => 'reshetka-radiatora-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10702,7 +9880,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 823,
-                'slug' => 'rul-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10715,7 +9892,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 824,
-                'slug' => 'rychag-zadniy-poperechnyy-malyy-7',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10728,7 +9904,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 825,
-                'slug' => 'rychag-podveski-peredniy-levyy-6',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10741,7 +9916,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 826,
-                'slug' => 'svecha-zazhiganiya-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10754,7 +9928,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 827,
-                'slug' => 'signal-zvukovoy-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10767,7 +9940,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 828,
-                'slug' => 'starter-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10780,7 +9952,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 829,
-                'slug' => 'steklo-dveri-peredney-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10793,7 +9964,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 830,
-                'slug' => 'steklo-lobovoe-s-obogrevom-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10806,7 +9976,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 831,
-                'slug' => 'steklo-lobovoe-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10819,7 +9988,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 832,
-                'slug' => 'stoyka-stabilizatora-perednyaya-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10832,7 +10000,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 833,
-                'slug' => 'sceplenie-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10845,7 +10012,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 834,
-                'slug' => 'termostat-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10858,7 +10024,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 835,
-                'slug' => 'trubka-gur-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10871,7 +10036,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 836,
-                'slug' => 'trubka-kondicionera-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10884,7 +10048,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 837,
-                'slug' => 'patrubok-radiatora-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10897,7 +10060,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 838,
-                'slug' => 'tyaga-rulevaya-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10910,7 +10072,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 839,
-                'slug' => 'fara-perednyaya-levaya-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10923,7 +10084,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 840,
-                'slug' => 'filtr-vozdushnyy-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10936,7 +10096,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 841,
-                'slug' => 'filtr-maslyanyy-benzinovyy-dvigatel-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10949,7 +10108,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 842,
-                'slug' => 'filtr-maslyanyy-dizelnyy-dvigatel-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10962,7 +10120,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 843,
-                'slug' => 'filtr-salonnyy-ugolnyy-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10975,7 +10132,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 844,
-                'slug' => 'filtr-toplivnyy-dizelnyy-dvigatel-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -10988,7 +10144,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 845,
-                'slug' => 'fonar-zadniy-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11001,7 +10156,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 846,
-                'slug' => 'shchetka-stekloochistitelya-zadnyaya-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11014,7 +10168,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 847,
-                'slug' => 'akkumulyator-akb-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11027,7 +10180,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 848,
-                'slug' => 'amortizator-zadniy-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11040,7 +10192,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 849,
-                'slug' => 'amortizator-peredniy-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11053,7 +10204,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 850,
-                'slug' => 'bamper-zadniy-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11066,7 +10216,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 851,
-                'slug' => 'bamper-peredniy-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11079,7 +10228,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 852,
-                'slug' => 'baraban-tormoznoy-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11092,7 +10240,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 853,
-                'slug' => 'benzobak-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11105,7 +10252,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 854,
-                'slug' => 'benzonasos-toplivnyy-nasos-v-sbore-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11118,7 +10264,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 855,
-                'slug' => 'blok-predohraniteley-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11131,7 +10276,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 856,
-                'slug' => 'ventilyator-pechki-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11144,7 +10288,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 857,
-                'slug' => 'generator-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11157,7 +10300,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 858,
-                'slug' => 'datchik-temperatury-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11170,7 +10312,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 859,
-                'slug' => 'dver-zadnyaya-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11183,7 +10324,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 860,
-                'slug' => 'dver-perednyaya-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11196,7 +10336,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 861,
-                'slug' => 'dvigatel-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11209,7 +10348,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 862,
-                'slug' => 'dvorniki-shchetki-s-o-komplekt-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11222,7 +10360,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 863,
-                'slug' => 'disk-kolesnyy-litoy-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11235,7 +10372,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 864,
-                'slug' => 'diski-tormoznye-zadnie-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11248,7 +10384,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 865,
-                'slug' => 'diski-tormoznye-perednie-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11261,7 +10396,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 866,
-                'slug' => 'zhidkost-tormoznaya-ford-dot-41l-4',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11274,7 +10408,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 867,
-                'slug' => 'zamok-dveri-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11287,7 +10420,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 868,
-                'slug' => 'zamok-kapota-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11300,7 +10432,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 869,
-                'slug' => 'zerkalo-levoe-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11313,7 +10444,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 870,
-                'slug' => 'kapot-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11326,7 +10456,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 871,
-                'slug' => 'katalizator-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11339,7 +10468,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 872,
-                'slug' => 'klyuch-zazhiganiya-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11352,7 +10480,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 873,
-                'slug' => 'knopka-steklopodemnika-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11365,7 +10492,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 874,
-                'slug' => 'kolodki-tormoznye-zadnie-barabannye-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11378,7 +10504,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 875,
-                'slug' => 'kolodki-tormoznye-zadnie-diskovye-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11391,7 +10516,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 876,
-                'slug' => 'kolodki-tormoznye-perednie-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11404,7 +10528,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 877,
-                'slug' => 'korobka-avtomat-akpp-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11417,7 +10540,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 878,
-                'slug' => 'korobka-mehanicheskaya-mkpp-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11430,7 +10552,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 879,
-                'slug' => 'korpus-termostata-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11443,7 +10564,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 880,
-                'slug' => 'krylo-perednee-pravoe-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11456,7 +10576,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 881,
-                'slug' => 'kryshka-bagazhnika-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11469,7 +10588,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 882,
-                'slug' => 'lampochka-blizhnego-sveta-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11482,7 +10600,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 883,
-                'slug' => 'magnitola-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11495,7 +10612,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 884,
-                'slug' => 'maslo-gur-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11508,7 +10624,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 885,
-                'slug' => 'maslo-motornoe-ford-5w301l-4',
                 'code' => '14E8B9',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11521,7 +10636,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 886,
-                'slug' => 'maslo-motornoe-ford-5w305l-4',
                 'code' => '14E8BA',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11534,7 +10648,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 887,
-                'slug' => 'maslo-motornoe-ford-castrol-magnatec-5w201l-3',
                 'code' => '151A94',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11547,7 +10660,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 888,
-                'slug' => 'maslo-motornoe-ford-castrol-magnatec-5w205l-3',
                 'code' => '151A95',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11560,7 +10672,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 889,
-                'slug' => 'maslo-transmissionnoe-akpp-7',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11573,7 +10684,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 890,
-                'slug' => 'maslo-transmissionnoe-mkpp-7',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11586,7 +10696,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 891,
-                'slug' => 'nakonechnik-rulevoy-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11599,7 +10708,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 892,
-                'slug' => 'nasos-gidrousilitelya-rulya-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11612,7 +10720,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 893,
-                'slug' => 'vodyanoy-nasos-7',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11625,7 +10732,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 894,
-                'slug' => 'panel-perednyaya-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11638,7 +10744,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 895,
-                'slug' => 'panel-priborov-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11651,7 +10756,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 896,
-                'slug' => 'podshipnik-stupicy-zadney-stupica-5',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11664,7 +10768,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 897,
-                'slug' => 'podshipnik-stupicy-peredney-7',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11677,7 +10780,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 898,
-                'slug' => 'predohraniteli-10',
                 'code' => '6191811',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11690,7 +10792,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 899,
-                'slug' => 'prikurivatel-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11703,7 +10804,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 900,
-                'slug' => 'protivotumannaya-fara-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11716,7 +10816,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 901,
-                'slug' => 'pruzhina-podveski-zadnyaya-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11729,7 +10828,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 902,
-                'slug' => 'pruzhina-podveski-perednyaya-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11742,7 +10840,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 903,
-                'slug' => 'radiator-kondicionera-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11755,7 +10852,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 904,
-                'slug' => 'radiator-ohlazhdeniya-dvigatelya-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11768,7 +10864,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 905,
-                'slug' => 'reyka-rulevaya-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11781,7 +10876,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 906,
-                'slug' => 'remen-grm-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11794,7 +10888,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 907,
-                'slug' => 'remen-privodnoy-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11807,7 +10900,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 908,
-                'slug' => 'reshetka-radiatora-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11820,7 +10912,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 909,
-                'slug' => 'rul-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11833,7 +10924,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 910,
-                'slug' => 'rychag-zadniy-poperechnyy-malyy-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11846,7 +10936,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 911,
-                'slug' => 'rychag-podveski-peredniy-levyy-7',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11859,7 +10948,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 912,
-                'slug' => 'svecha-zazhiganiya-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11872,7 +10960,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 913,
-                'slug' => 'signal-zvukovoy-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11885,7 +10972,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 914,
-                'slug' => 'starter-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11898,7 +10984,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 915,
-                'slug' => 'steklo-dveri-peredney-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11911,7 +10996,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 916,
-                'slug' => 'steklo-lobovoe-s-obogrevom-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11924,7 +11008,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 917,
-                'slug' => 'steklo-lobovoe-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11937,7 +11020,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 918,
-                'slug' => 'stoyka-stabilizatora-perednyaya-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11950,7 +11032,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 919,
-                'slug' => 'sceplenie-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11963,7 +11044,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 920,
-                'slug' => 'termostat-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11976,7 +11056,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 921,
-                'slug' => 'trubka-gur-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -11989,7 +11068,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 922,
-                'slug' => 'trubka-kondicionera-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12002,7 +11080,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 923,
-                'slug' => 'patrubok-radiatora-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12015,7 +11092,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 924,
-                'slug' => 'tyaga-rulevaya-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12028,7 +11104,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 925,
-                'slug' => 'fara-perednyaya-levaya-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12041,7 +11116,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 926,
-                'slug' => 'filtr-vozdushnyy-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12054,7 +11128,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 927,
-                'slug' => 'filtr-maslyanyy-benzinovyy-dvigatel-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12067,7 +11140,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 928,
-                'slug' => 'filtr-maslyanyy-dizelnyy-dvigatel-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12080,7 +11152,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 929,
-                'slug' => 'filtr-salonnyy-ugolnyy-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12093,7 +11164,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 930,
-                'slug' => 'filtr-toplivnyy-dizelnyy-dvigatel-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12106,7 +11176,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 931,
-                'slug' => 'fonar-zadniy-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12119,7 +11188,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 932,
-                'slug' => 'shchetka-stekloochistitelya-zadnyaya-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12132,7 +11200,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 933,
-                'slug' => 'akkumulyator-akb-11',
                 'code' => '1712276',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12145,7 +11212,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 934,
-                'slug' => 'amortizator-zadniy-10',
                 'code' => '1445087',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12158,7 +11224,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 935,
-                'slug' => 'amortizator-peredniy-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12171,7 +11236,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 936,
-                'slug' => 'bamper-zadniy-11',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12184,7 +11248,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 937,
-                'slug' => 'bamper-peredniy-11',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12197,7 +11260,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 938,
-                'slug' => 'klapan-egr',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12210,7 +11272,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 939,
-                'slug' => 'toplivnyy-bak',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12223,7 +11284,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 940,
-                'slug' => 'tnvd-toplivnyy-nasos-v-sbore',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12236,7 +11296,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 941,
-                'slug' => 'blok-predohraniteley-11',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12249,7 +11308,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 942,
-                'slug' => 'ventilyator-pechki-11',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12262,7 +11320,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 943,
-                'slug' => 'generator-11',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12275,7 +11332,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 944,
-                'slug' => 'datchik-temperatury-11',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12288,7 +11344,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 945,
-                'slug' => 'dver-zadnyaya-11',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12301,7 +11356,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 946,
-                'slug' => 'dver-perednyaya-11',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12314,7 +11368,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 947,
-                'slug' => 'dvigatel-11',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12327,7 +11380,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 948,
-                'slug' => 'dvorniki-shchetki-s-o-komplekt-11',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12340,7 +11392,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 949,
-                'slug' => 'disk-kolesnyy-litoy-11',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12353,7 +11404,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 950,
-                'slug' => 'diski-tormoznye-zadnie-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12366,7 +11416,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 951,
-                'slug' => 'diski-tormoznye-perednie-11',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12379,7 +11428,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 952,
-                'slug' => 'zhidkost-tormoznaya-ford-dot-41l-5',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12392,7 +11440,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 953,
-                'slug' => 'zamok-dveri-11',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12405,7 +11452,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 954,
-                'slug' => 'zamok-kapota-11',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12418,7 +11464,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 955,
-                'slug' => 'zerkalo-levoe-11',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12431,7 +11476,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 956,
-                'slug' => 'kapot-11',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12444,7 +11488,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 957,
-                'slug' => 'turbokompressor-turbina',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12457,7 +11500,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 958,
-                'slug' => 'klyuch-zazhiganiya-11',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12470,7 +11512,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 959,
-                'slug' => 'knopka-steklopodemnika-11',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12483,7 +11524,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 960,
-                'slug' => 'support-tormoznoy',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12496,7 +11536,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 961,
-                'slug' => 'kolodki-tormoznye-zadnie-diskovye-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12509,7 +11548,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 962,
-                'slug' => 'kolodki-tormoznye-perednie-11',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12522,7 +11560,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 963,
-                'slug' => 'most-zadniy',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12535,7 +11572,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 964,
-                'slug' => 'korobka-mehanicheskaya-mkpp-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12548,7 +11584,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 965,
-                'slug' => 'korpus-termostata-11',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12561,7 +11596,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 966,
-                'slug' => 'krylo-perednee-levoe-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12574,7 +11608,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 967,
-                'slug' => 'kardannyy-val',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12587,7 +11620,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 968,
-                'slug' => 'lampochka-blizhnego-sveta-11',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12600,7 +11632,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 969,
-                'slug' => 'magnitola-11',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12613,7 +11644,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 970,
-                'slug' => 'maslo-gur-11',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12626,7 +11656,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 971,
-                'slug' => 'maslo-motornoe-ford-5w301l-5',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12639,7 +11668,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 972,
-                'slug' => 'maslo-motornoe-ford-5w305l-5',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12652,7 +11680,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 973,
-                'slug' => 'maslo-motornoe-ford-castrol-magnatec-5w201l-4',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12665,7 +11692,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 974,
-                'slug' => 'maslo-motornoe-ford-castrol-magnatec-5w205l-4',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12678,7 +11704,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 975,
-                'slug' => 'maslo-transmissionnoe-v-most',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12691,7 +11716,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 976,
-                'slug' => 'maslo-transmissionnoe-mkpp-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12704,7 +11728,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 977,
-                'slug' => 'nakonechnik-rulevoy-11',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12717,7 +11740,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 978,
-                'slug' => 'nasos-gidrousilitelya-rulya-11',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12730,7 +11752,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 979,
-                'slug' => 'vodyanoy-nasos-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12743,7 +11764,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 980,
-                'slug' => 'panel-perednyaya-11',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12756,7 +11776,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 981,
-                'slug' => 'panel-priborov-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12769,7 +11788,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 982,
-                'slug' => 'podshipnik-stupicy-zadney-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12782,7 +11800,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 983,
-                'slug' => 'podshipnik-stupicy-peredney-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12795,7 +11812,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 984,
-                'slug' => 'predohraniteli-11',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12808,7 +11824,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 985,
-                'slug' => 'prikurivatel-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12821,7 +11836,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 986,
-                'slug' => 'vakuumnyy-nasos',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12834,7 +11848,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 987,
-                'slug' => 'ressora-zadnyaya-3-h-listovaya',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12847,7 +11860,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 988,
-                'slug' => 'pruzhina-podveski-perednyaya-11',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12860,7 +11872,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 989,
-                'slug' => 'shkiv-kolenvala',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12873,7 +11884,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 990,
-                'slug' => 'radiator-ohlazhdeniya-dvigatelya-11',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12886,7 +11896,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 991,
-                'slug' => 'reyka-rulevaya-11',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12899,7 +11908,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 992,
-                'slug' => 'cep-grm',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12912,7 +11920,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 993,
-                'slug' => 'remen-privodnoy-11',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12925,7 +11932,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 994,
-                'slug' => 'reshetka-radiatora-11',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12938,7 +11944,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 995,
-                'slug' => 'rul-11',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12951,7 +11956,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 996,
-                'slug' => 'forsunka-toplivnaya',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12964,7 +11968,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 997,
-                'slug' => 'rychag-podveski-peredniy-levyy-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12977,7 +11980,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 998,
-                'slug' => 'svecha-nakala',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -12990,7 +11992,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 999,
-                'slug' => 'signal-zvukovoy-11',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13003,7 +12004,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1000,
-                'slug' => 'starter-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13016,7 +12016,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1001,
-                'slug' => 'steklo-dveri-peredney-11',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13029,7 +12028,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1002,
-                'slug' => 'steklo-bokovoe',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13042,7 +12040,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1003,
-                'slug' => 'steklo-lobovoe-11',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13055,7 +12052,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1004,
-                'slug' => 'stoyka-stabilizatora-perednyaya-11',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13068,7 +12064,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1005,
-                'slug' => 'sceplenie-11',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13081,7 +12076,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1006,
-                'slug' => 'termostat-11',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13094,7 +12088,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1007,
-                'slug' => 'trubka-gidrousilitelya-rulya-gur',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13107,7 +12100,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1008,
-                'slug' => 'trubka-tormoznaya',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13120,7 +12112,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1009,
-                'slug' => 'patrubok-radiatora-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13133,7 +12124,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1010,
-                'slug' => 'tyaga-rulevaya-11',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13146,7 +12136,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1011,
-                'slug' => 'fara-perednyaya-levaya-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13159,7 +12148,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1012,
-                'slug' => 'filtr-vozdushnyy-11',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13172,7 +12160,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1013,
-                'slug' => 'filtr-maslyanyy-benzinovyy-dvigatel-11',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13185,7 +12172,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1014,
-                'slug' => 'filtr-maslyanyy-dizelnyy-dvigatel-11',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13198,7 +12184,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1015,
-                'slug' => 'filtr-salonnyy-ugolnyy-11',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13211,7 +12196,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1016,
-                'slug' => 'filtr-toplivnyy-dizelnyy-dvigatel-11',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13224,7 +12208,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1017,
-                'slug' => 'fonar-zadniy-11',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13237,7 +12220,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1018,
-                'slug' => 'shchetka-stekloochistitelya-zadnyaya-11',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13250,7 +12232,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1019,
-                'slug' => 'akkumulyator-akb-12',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13263,7 +12244,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1020,
-                'slug' => 'signal-zvukovoy-12',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13276,7 +12256,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1021,
-                'slug' => 'starter-11',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13289,7 +12268,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1022,
-                'slug' => 'steklo-dveri-peredney-12',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13302,7 +12280,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1023,
-                'slug' => 'steklo-lobovoe-12',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13315,7 +12292,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1024,
-                'slug' => 'stoyka-stabilizatora-perednyaya-12',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13328,7 +12304,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1025,
-                'slug' => 'stupica-3',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13341,7 +12316,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1026,
-                'slug' => 'sceplenie-disk-s-korzinoy',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13354,7 +12328,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1027,
-                'slug' => 'termostat-12',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13367,7 +12340,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1028,
-                'slug' => 'trubka-kondicionera-11',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13380,7 +12352,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1029,
-                'slug' => 'trubka-pechki-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13393,7 +12364,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1030,
-                'slug' => 'tyaga-rulevaya-12',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13406,7 +12376,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1031,
-                'slug' => 'fara-perednyaya-pravaya-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13419,7 +12388,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1032,
-                'slug' => 'filtr-vozdushnyy-12',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13432,7 +12400,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1033,
-                'slug' => 'filtr-maslyanyy-benzinovyy-dvigatel-12',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13445,7 +12412,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1034,
-                'slug' => 'filtr-salona-ugolnyy',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13458,7 +12424,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1035,
-                'slug' => 'filtr-toplivnyy',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13471,7 +12436,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1036,
-                'slug' => 'fonar-zadniy-12',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13484,7 +12448,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1037,
-                'slug' => 'shchetka-stekloochistitelya-zadnyaya-12',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13497,7 +12460,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1038,
-                'slug' => 'akkumulyator-akb-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13510,7 +12472,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1039,
-                'slug' => 'signal-zvukovoy-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13523,7 +12484,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1040,
-                'slug' => 'starter-12',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13536,7 +12496,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1041,
-                'slug' => 'steklo-dveri-peredney-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13549,7 +12508,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1042,
-                'slug' => 'steklo-lobovoe-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13562,7 +12520,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1043,
-                'slug' => 'stoyka-stabilizatora-perednyaya-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13575,7 +12532,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1044,
-                'slug' => 'stupica-4',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13588,7 +12544,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1045,
-                'slug' => 'sceplenie-disk-s-korzinoy-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13601,7 +12556,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1046,
-                'slug' => 'termostat-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13614,7 +12568,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1047,
-                'slug' => 'trubka-kondicionera-12',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13627,7 +12580,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1048,
-                'slug' => 'trubka-pechki-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13640,7 +12592,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1049,
-                'slug' => 'tyaga-rulevaya-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13653,7 +12604,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1050,
-                'slug' => 'fara-perednyaya-pravaya-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13666,7 +12616,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1051,
-                'slug' => 'filtr-vozdushnyy-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13679,7 +12628,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1052,
-                'slug' => 'filtr-maslyanyy-benzinovyy-dvigatel-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13692,7 +12640,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1053,
-                'slug' => 'filtr-salona-ugolnyy-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13705,7 +12652,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1054,
-                'slug' => 'filtr-toplivnyy-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13718,7 +12664,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1055,
-                'slug' => 'fonar-zadniy-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13731,7 +12676,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1056,
-                'slug' => 'shchetka-stekloochistitelya-zadnyaya-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13744,7 +12688,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1057,
-                'slug' => 'akkumulyator-akb-14',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13757,7 +12700,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1058,
-                'slug' => 'signal-zvukovoy-14',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13770,7 +12712,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1059,
-                'slug' => 'starter-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13783,7 +12724,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1060,
-                'slug' => 'steklo-dveri-peredney-14',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13796,7 +12736,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1061,
-                'slug' => 'steklo-lobovoe-14',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13809,7 +12748,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1062,
-                'slug' => 'stoyka-stabilizatora-perednyaya-14',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13822,7 +12760,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1063,
-                'slug' => 'stupica-5',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13835,7 +12772,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1064,
-                'slug' => 'sceplenie-disk-s-korzinoy-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13848,7 +12784,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1065,
-                'slug' => 'termostat-14',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13861,7 +12796,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1066,
-                'slug' => 'trubka-kondicionera-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13874,7 +12808,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1067,
-                'slug' => 'trubka-pechki-3',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13887,7 +12820,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1068,
-                'slug' => 'tyaga-rulevaya-14',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13900,7 +12832,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1069,
-                'slug' => 'fara-perednyaya-pravaya-3',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13913,7 +12844,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1070,
-                'slug' => 'filtr-vozdushnyy-14',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13926,7 +12856,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1071,
-                'slug' => 'filtr-maslyanyy-benzinovyy-dvigatel-14',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13939,7 +12868,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1072,
-                'slug' => 'filtr-salona-ugolnyy-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13952,7 +12880,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1073,
-                'slug' => 'filtr-toplivnyy-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13965,7 +12892,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1074,
-                'slug' => 'fonar-zadniy-14',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13978,7 +12904,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1075,
-                'slug' => 'shchetka-stekloochistitelya-zadnyaya-14',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -13991,7 +12916,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1076,
-                'slug' => 'akkumulyator-akb-15',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -14004,7 +12928,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1077,
-                'slug' => 'signal-zvukovoy-15',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -14017,7 +12940,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1078,
-                'slug' => 'starter-14',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -14030,7 +12952,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1079,
-                'slug' => 'steklo-dveri-peredney-15',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -14043,7 +12964,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1080,
-                'slug' => 'steklo-lobovoe-15',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -14056,7 +12976,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1081,
-                'slug' => 'stoyka-stabilizatora-perednyaya-15',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -14069,7 +12988,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1082,
-                'slug' => 'stupica-6',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -14082,7 +13000,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1083,
-                'slug' => 'sceplenie-disk-s-korzinoy-3',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -14095,7 +13012,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1084,
-                'slug' => 'termostat-15',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -14108,7 +13024,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1085,
-                'slug' => 'trubka-kondicionera-14',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -14121,7 +13036,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1086,
-                'slug' => 'trubka-pechki-4',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -14134,7 +13048,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1087,
-                'slug' => 'tyaga-rulevaya-15',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -14147,7 +13060,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1088,
-                'slug' => 'fara-perednyaya-pravaya-4',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -14160,7 +13072,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1089,
-                'slug' => 'filtr-vozdushnyy-15',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -14173,7 +13084,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1090,
-                'slug' => 'filtr-maslyanyy-benzinovyy-dvigatel-15',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -14186,7 +13096,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1091,
-                'slug' => 'filtr-salona-ugolnyy-3',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -14199,7 +13108,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1092,
-                'slug' => 'filtr-toplivnyy-3',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -14212,7 +13120,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1093,
-                'slug' => 'fonar-zadniy-15',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -14225,7 +13132,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1094,
-                'slug' => 'shchetka-stekloochistitelya-zadnyaya-15',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -14238,7 +13144,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1095,
-                'slug' => 'akkumulyator-akb-16',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -14251,7 +13156,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1096,
-                'slug' => 'signal-zvukovoy-16',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -14264,7 +13168,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1097,
-                'slug' => 'starter-15',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -14277,7 +13180,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1098,
-                'slug' => 'steklo-dveri-peredney-16',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -14290,7 +13192,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1099,
-                'slug' => 'steklo-lobovoe-16',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -14303,7 +13204,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1100,
-                'slug' => 'stoyka-stabilizatora-perednyaya-16',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -14316,7 +13216,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1101,
-                'slug' => 'stupica-7',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -14329,7 +13228,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1102,
-                'slug' => 'sceplenie-disk-s-korzinoy-4',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -14342,7 +13240,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1103,
-                'slug' => 'termostat-16',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -14355,7 +13252,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1104,
-                'slug' => 'trubka-kondicionera-15',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -14368,7 +13264,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1105,
-                'slug' => 'trubka-pechki-5',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -14381,7 +13276,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1106,
-                'slug' => 'tyaga-rulevaya-16',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -14394,7 +13288,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1107,
-                'slug' => 'fara-perednyaya-pravaya-5',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -14407,7 +13300,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1108,
-                'slug' => 'filtr-vozdushnyy-16',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -14420,7 +13312,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1109,
-                'slug' => 'filtr-maslyanyy-benzinovyy-dvigatel-16',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -14433,7 +13324,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1110,
-                'slug' => 'filtr-salona-ugolnyy-4',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -14446,7 +13336,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1111,
-                'slug' => 'filtr-toplivnyy-4',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -14459,7 +13348,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1112,
-                'slug' => 'fonar-zadniy-16',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -14472,7 +13360,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1113,
-                'slug' => 'shchetka-stekloochistitelya-zadnyaya-16',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -14485,7 +13372,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1114,
-                'slug' => 'akkumulyator-akb-17',
                 'code' => '000915105DC',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -14498,7 +13384,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1115,
-                'slug' => 'amortizator-zadniy-11',
                 'code' => '3C0513049CN',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -14511,7 +13396,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1116,
-                'slug' => 'amortizator-peredniy-11',
                 'code' => 'JZW413031A',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -14524,7 +13408,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1117,
-                'slug' => 'bamper-zadniy-12',
                 'code' => '3AE807417GRU',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -14537,7 +13420,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1118,
-                'slug' => 'bamper-peredniy-12',
                 'code' => '3AA807217FGRU',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -14550,7 +13432,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1119,
-                'slug' => 'benzobak-11',
                 'code' => '3C0201055AG',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -14563,7 +13444,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1120,
-                'slug' => 'benzonasos-toplivnyy-nasos-v-sbore-11',
                 'code' => '3C0919679A',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -14576,7 +13456,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1121,
-                'slug' => 'blok-predohraniteley-12',
                 'code' => '3C1941823',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -14589,7 +13468,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1122,
-                'slug' => 'ventilyator-pechki-12',
                 'code' => '1K1819015E',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -14602,7 +13480,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1123,
-                'slug' => 'generator-12',
                 'code' => '03C903023A',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -14615,7 +13492,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1124,
-                'slug' => 'datchik-temperatury-12',
                 'code' => '06A919501A',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -14628,7 +13504,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1125,
-                'slug' => 'dver-zadnyaya-12',
                 'code' => '3AE833055',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -14641,7 +13516,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1126,
-                'slug' => 'dver-perednyaya-12',
                 'code' => '3AA831055',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -14654,7 +13528,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1127,
-                'slug' => 'dvigatel-12',
                 'code' => '03C100038P',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -14667,7 +13540,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1128,
-                'slug' => 'dvorniki-shchetki-s-o-komplekt-12',
                 'code' => '3C1998002',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -14680,7 +13552,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1129,
-                'slug' => 'disk-kolesnyy-litoy-12',
                 'code' => '3AA601025AF8Z8',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -14693,7 +13564,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1130,
-                'slug' => 'diski-tormoznye-zadnie-11',
                 'code' => 'JZW615301H',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -14706,7 +13576,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1131,
-                'slug' => 'diski-tormoznye-perednie-12',
                 'code' => 'JZW615301H',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -14719,7 +13588,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1132,
-                'slug' => 'zhidkost-tormoznaya-dot-4-1l',
                 'code' => 'B000750M3',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -14732,7 +13600,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1133,
-                'slug' => 'zamok-dveri-12',
                 'code' => '3C1837015A',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -14745,7 +13612,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1134,
-                'slug' => 'zamok-kapota-12',
                 'code' => '3AB823509A',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -14758,7 +13624,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1135,
-                'slug' => 'zerkalo-levoe-12',
                 'code' => '3AA8575079B9',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -14771,7 +13636,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1136,
-                'slug' => 'kapot-12',
                 'code' => '3AA823031',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -14784,7 +13648,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1137,
-                'slug' => 'katalizator-11',
                 'code' => '1K0254201HX',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -14797,7 +13660,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1138,
-                'slug' => 'klyuch-zazhiganiya-12',
                 'code' => '3C0959752BFZQG',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -14810,7 +13672,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1139,
-                'slug' => 'knopka-steklopodemnika-12',
                 'code' => '7L6959855BREH',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -14823,7 +13684,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1140,
-                'slug' => 'kolodki-tormoznye-zadnie-diskovye-11',
                 'code' => '3C0698451C',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -14836,7 +13696,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1141,
-                'slug' => 'kolodki-tormoznye-perednie-12',
                 'code' => '3C0698151C',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -14849,7 +13708,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1142,
-                'slug' => 'korobka-avtomat-akpp-9',
                 'code' => '02E300054M00U',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -14862,7 +13720,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1143,
-                'slug' => 'korobka-mehanicheskaya-mkpp-10',
                 'code' => '02Q300048J',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -14875,7 +13732,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1144,
-                'slug' => 'korpus-termostata-12',
                 'code' => '03C121111T',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -14888,7 +13744,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1145,
-                'slug' => 'krylo-perednee',
                 'code' => '3AA821022A',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -14901,7 +13756,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1146,
-                'slug' => 'kryshka-bagazhnika-11',
                 'code' => '3AE827025',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -14914,7 +13768,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1147,
-                'slug' => 'lampochka-blizhnego-sveta-12',
                 'code' => 'N10320102',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -14927,7 +13780,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1148,
-                'slug' => 'magnitola-12',
                 'code' => '1K0057156B',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -14940,7 +13792,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1149,
-                'slug' => 'maslo-mehanicheskoy-korobki-peredach-mkpp',
                 'code' => 'G052171A2',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -14953,7 +13804,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1150,
-                'slug' => 'maslo-motornoe-castrol-long-life-iii-vw-5w30-1l',
                 'code' => '3750CL',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -14966,7 +13816,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1151,
-                'slug' => 'maslo-motornoe-long-life-iii-vw-5w30-1l',
                 'code' => 'G052195M2',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -14979,7 +13828,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1152,
-                'slug' => 'maslo-motornoe-long-life-iii-vw-5w30-5l',
                 'code' => 'G052195M4',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -14992,7 +13840,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1153,
-                'slug' => 'nakonechnik-rulevoy-12',
                 'code' => '1K0423812K',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -15005,7 +13852,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1154,
-                'slug' => 'panel-perednyaya-12',
                 'code' => '3AA805588E',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -15018,7 +13864,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1155,
-                'slug' => 'panel-priborov-11',
                 'code' => '3AA920870HX',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -15031,7 +13876,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1156,
-                'slug' => 'podshipnik-stupicy-zadney-stupica-s-abs',
                 'code' => '1T0598611B',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -15044,7 +13888,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1157,
-                'slug' => 'podshipnik-stupicy-peredney-stupica-s-abs',
                 'code' => '5K0498621',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -15057,7 +13900,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1158,
-                'slug' => 'predohraniteli-12',
                 'code' => 'N01713111',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -15070,7 +13912,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1159,
-                'slug' => 'prikurivatel-11',
                 'code' => '1J09193079B9',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -15083,7 +13924,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1160,
-                'slug' => 'protivotumannaya-fara-11',
                 'code' => '3AA941661E',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -15096,7 +13936,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1161,
-                'slug' => 'pruzhina-podveski-zadnyaya-11',
                 'code' => '1K0511115BF',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -15109,7 +13948,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1162,
-                'slug' => 'pruzhina-podveski-perednyaya-12',
                 'code' => '3C0411105A',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -15122,7 +13960,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1163,
-                'slug' => 'radiator-kondicionera-11',
                 'code' => '3C0820411F',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -15135,7 +13972,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1164,
-                'slug' => 'radiator-ohlazhdeniya-dvigatelya-12',
                 'code' => '1K0121253AA',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -15148,7 +13984,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1165,
-                'slug' => 'reyka-rulevaya-12',
                 'code' => '3AB423061F',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -15161,7 +13996,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1166,
-                'slug' => 'remen-grm-k-t-s-rolikami',
                 'code' => '03L198119C',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -15174,7 +14008,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1167,
-                'slug' => 'remen-privodnoy-12',
                 'code' => '06J260849D',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -15187,7 +14020,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1168,
-                'slug' => 'reshetka-radiatora-12',
                 'code' => '3AA853651OQE',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -15200,7 +14032,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1169,
-                'slug' => 'rul-12',
                 'code' => '7N041909181U',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -15213,7 +14044,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1170,
-                'slug' => 'rychag-zadniy-poperechnyy-malyy-9',
                 'code' => '1K0501529F',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -15226,7 +14056,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1171,
-                'slug' => 'rychag-podveski-peredniy-pravyy-1',
                 'code' => '5N0407152',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -15239,7 +14068,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1172,
-                'slug' => 'svecha-zazhiganiya-11',
                 'code' => '000915105DC',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -15252,7 +14080,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1173,
-                'slug' => 'signal-zvukovoy-17',
                 'code' => '7N0951221A',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -15265,7 +14092,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1174,
-                'slug' => 'starter-16',
                 'code' => '02Z911024P',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -15278,7 +14104,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1175,
-                'slug' => 'steklo-dveri-peredney-17',
                 'code' => '3C4845201B',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -15291,7 +14116,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1176,
-                'slug' => 'steklo-lobovoe-17',
                 'code' => '3C0845011AT',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -15304,7 +14128,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1177,
-                'slug' => 'stoyka-stabilizatora-perednyaya-17',
                 'code' => '1K0411315R',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -15317,7 +14140,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1178,
-                'slug' => 'stupica-8',
                 'code' => '5K0498621',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -15330,7 +14152,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1179,
-                'slug' => 'sceplenie-disk-s-korzinoy-5',
                 'code' => '06J141015H',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -15343,7 +14164,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1180,
-                'slug' => 'termostat-17',
                 'code' => '03C121110Q',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -15356,7 +14176,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1181,
-                'slug' => 'trubka-kondicionera-16',
                 'code' => '3C0820721P',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -15369,7 +14188,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1182,
-                'slug' => 'trubka-pechki-6',
                 'code' => '1K0121157DQ',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -15382,7 +14200,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1183,
-                'slug' => 'tyaga-rulevaya-17',
                 'code' => '1K0423810A',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -15395,7 +14212,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1184,
-                'slug' => 'fara-perednyaya-pravaya-6',
                 'code' => '3AB941005',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -15408,7 +14224,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1185,
-                'slug' => 'filtr-vozdushnyy-17',
                 'code' => '1K0129620D',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -15421,7 +14236,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1186,
-                'slug' => 'filtr-maslyanyy-benzinovyy-dvigatel-17',
                 'code' => '06J115403Q',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -15434,7 +14248,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1187,
-                'slug' => 'filtr-salona-ugolnyy-5',
                 'code' => 'JZW819653B',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -15447,7 +14260,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1188,
-                'slug' => 'filtr-toplivnyy-5',
                 'code' => '1K0201051K',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -15460,7 +14272,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1189,
-                'slug' => 'fonar-zadniy-17',
                 'code' => '3AE945095F',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -15473,7 +14284,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1190,
-                'slug' => 'shchetka-stekloochistitelya-zadnyaya-17',
                 'code' => '7E0955425',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -15486,7 +14296,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1191,
-                'slug' => 'akkumulyator-akb-18',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -15499,7 +14308,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1192,
-                'slug' => 'signal-zvukovoy-18',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -15512,7 +14320,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1193,
-                'slug' => 'starter-17',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -15525,7 +14332,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1194,
-                'slug' => 'steklo-dveri-peredney-18',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -15538,7 +14344,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1195,
-                'slug' => 'steklo-lobovoe-18',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -15551,7 +14356,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1196,
-                'slug' => 'stoyka-stabilizatora-perednyaya-18',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -15564,7 +14368,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1197,
-                'slug' => 'stupica-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -15577,7 +14380,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1198,
-                'slug' => 'sceplenie-disk-s-korzinoy-6',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -15590,7 +14392,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1199,
-                'slug' => 'termostat-18',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -15603,7 +14404,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1200,
-                'slug' => 'trubka-kondicionera-17',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -15616,7 +14416,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1201,
-                'slug' => 'trubka-pechki-7',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -15629,7 +14428,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1202,
-                'slug' => 'tyaga-rulevaya-18',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -15642,7 +14440,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1203,
-                'slug' => 'fara-perednyaya-pravaya-7',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -15655,7 +14452,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1204,
-                'slug' => 'filtr-vozdushnyy-18',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -15668,7 +14464,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1205,
-                'slug' => 'filtr-maslyanyy-benzinovyy-dvigatel-18',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -15681,7 +14476,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1206,
-                'slug' => 'filtr-salona-ugolnyy-6',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -15694,7 +14488,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1207,
-                'slug' => 'filtr-toplivnyy-6',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -15707,7 +14500,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1208,
-                'slug' => 'fonar-zadniy-18',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -15720,7 +14512,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1209,
-                'slug' => 'shchetka-stekloochistitelya-zadnyaya-18',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -15733,7 +14524,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1210,
-                'slug' => 'akkumulyator-akb-19',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -15746,7 +14536,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1211,
-                'slug' => 'amortizator-zadniy-12',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -15759,7 +14548,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1212,
-                'slug' => 'amortizator-peredniy-12',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -15772,7 +14560,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1213,
-                'slug' => 'bamper-zadniy-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -15785,7 +14572,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1214,
-                'slug' => 'bamper-peredniy-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -15798,7 +14584,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1215,
-                'slug' => 'benzobak-12',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -15811,7 +14596,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1216,
-                'slug' => 'benzonasos-toplivnyy-nasos-v-sbore-12',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -15824,7 +14608,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1217,
-                'slug' => 'blok-predohraniteley-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -15837,7 +14620,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1218,
-                'slug' => 'ventilyator-pechki-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -15850,7 +14632,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1219,
-                'slug' => 'generator-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -15863,7 +14644,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1220,
-                'slug' => 'datchik-temperatury-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -15876,7 +14656,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1221,
-                'slug' => 'dver-zadnyaya-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -15889,7 +14668,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1222,
-                'slug' => 'dver-perednyaya-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -15902,7 +14680,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1223,
-                'slug' => 'dvigatel-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -15915,7 +14692,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1224,
-                'slug' => 'dvorniki-shchetki-s-o-komplekt-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -15928,7 +14704,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1225,
-                'slug' => 'disk-kolesnyy-litoy-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -15941,7 +14716,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1226,
-                'slug' => 'diski-tormoznye-zadnie-12',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -15954,7 +14728,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1227,
-                'slug' => 'diski-tormoznye-perednie-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -15967,7 +14740,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1228,
-                'slug' => 'zhidkost-tormoznaya-dot-4-1l-1',
                 'code' => 'B000750M3',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -15980,7 +14752,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1229,
-                'slug' => 'zamok-dveri-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -15993,7 +14764,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1230,
-                'slug' => 'zamok-kapota-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16006,7 +14776,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1231,
-                'slug' => 'zerkalo-levoe-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16019,7 +14788,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1232,
-                'slug' => 'kapot-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16032,7 +14800,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1233,
-                'slug' => 'katalizator-12',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16045,7 +14812,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1234,
-                'slug' => 'klyuch-zazhiganiya-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16058,7 +14824,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1235,
-                'slug' => 'knopka-steklopodemnika-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16071,7 +14836,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1236,
-                'slug' => 'kolodki-tormoznye-zadnie-diskovye-12',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16084,7 +14848,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1237,
-                'slug' => 'kolodki-tormoznye-perednie-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16097,7 +14860,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1238,
-                'slug' => 'korobka-avtomat-akpp-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16110,7 +14872,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1239,
-                'slug' => 'korobka-mehanicheskaya-mkpp-11',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16123,7 +14884,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1240,
-                'slug' => 'korpus-termostata-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16136,7 +14896,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1241,
-                'slug' => 'krylo-perednee-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16149,7 +14908,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1242,
-                'slug' => 'kryshka-bagazhnika-12',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16162,7 +14920,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1243,
-                'slug' => 'lampochka-blizhnego-sveta-13',
                 'code' => 'N10320102',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16175,7 +14932,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1244,
-                'slug' => 'magnitola-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16188,7 +14944,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1245,
-                'slug' => 'maslo-mehanicheskoy-korobki-peredach-mkpp-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16201,7 +14956,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1246,
-                'slug' => 'maslo-motornoe-castrol-long-life-iii-vw-5w30-1l-1',
                 'code' => '3750CL',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16214,7 +14968,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1247,
-                'slug' => 'maslo-motornoe-long-life-iii-vw-5w30-1l-1',
                 'code' => 'G052195M2',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16227,7 +14980,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1248,
-                'slug' => 'maslo-motornoe-long-life-iii-vw-5w30-5l-1',
                 'code' => 'G052195M4',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -16240,7 +14992,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1249,
-                'slug' => 'nakonechnik-rulevoy-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16253,7 +15004,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1250,
-                'slug' => 'panel-perednyaya-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16266,7 +15016,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1251,
-                'slug' => 'panel-priborov-12',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16279,7 +15028,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1252,
-                'slug' => 'podshipnik-stupicy-zadney-stupica-s-abs-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16292,7 +15040,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1253,
-                'slug' => 'podshipnik-stupicy-peredney-stupica-s-abs-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16305,7 +15052,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1254,
-                'slug' => 'predohraniteli-13',
                 'code' => 'N01713111',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16318,7 +15064,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1255,
-                'slug' => 'prikurivatel-12',
                 'code' => '1J09193079B9',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -16331,7 +15076,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1256,
-                'slug' => 'protivotumannaya-fara-12',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16344,7 +15088,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1257,
-                'slug' => 'pruzhina-podveski-zadnyaya-12',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16357,7 +15100,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1258,
-                'slug' => 'pruzhina-podveski-perednyaya-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16370,7 +15112,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1259,
-                'slug' => 'radiator-kondicionera-12',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16383,7 +15124,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1260,
-                'slug' => 'radiator-ohlazhdeniya-dvigatelya-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16396,7 +15136,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1261,
-                'slug' => 'reyka-rulevaya-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16409,7 +15148,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1262,
-                'slug' => 'remen-grm-k-t-s-rolikami-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16422,7 +15160,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1263,
-                'slug' => 'remen-privodnoy-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16435,7 +15172,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1264,
-                'slug' => 'reshetka-radiatora-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16448,7 +15184,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1265,
-                'slug' => 'rul-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16461,7 +15196,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1266,
-                'slug' => 'rychag-zadniy-poperechnyy-malyy-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16474,7 +15208,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1267,
-                'slug' => 'rychag-podveski-peredniy-pravyy-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16487,7 +15220,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1268,
-                'slug' => 'svecha-zazhiganiya-12',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16500,7 +15232,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1269,
-                'slug' => 'amortizator-zadniy-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16513,7 +15244,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1270,
-                'slug' => 'amortizator-peredniy-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16526,7 +15256,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1271,
-                'slug' => 'bamper-zadniy-14',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16539,7 +15268,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1272,
-                'slug' => 'bamper-peredniy-14',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16552,7 +15280,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1273,
-                'slug' => 'benzobak-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16565,7 +15292,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1274,
-                'slug' => 'benzonasos-toplivnyy-nasos-v-sbore-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16578,7 +15304,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1275,
-                'slug' => 'blok-predohraniteley-14',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16591,7 +15316,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1276,
-                'slug' => 'ventilyator-pechki-14',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16604,7 +15328,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1277,
-                'slug' => 'generator-14',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16617,7 +15340,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1278,
-                'slug' => 'datchik-temperatury-14',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16630,7 +15352,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1279,
-                'slug' => 'dver-zadnyaya-14',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16643,7 +15364,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1280,
-                'slug' => 'dver-perednyaya-14',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16656,7 +15376,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1281,
-                'slug' => 'dvigatel-14',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16669,7 +15388,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1282,
-                'slug' => 'dvorniki-shchetki-s-o-komplekt-14',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16682,7 +15400,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1283,
-                'slug' => 'disk-kolesnyy-litoy-14',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16695,7 +15412,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1284,
-                'slug' => 'diski-tormoznye-zadnie-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16708,7 +15424,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1285,
-                'slug' => 'diski-tormoznye-perednie-14',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16721,7 +15436,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1286,
-                'slug' => 'zhidkost-tormoznaya-dot-4-1l-2',
                 'code' => 'B000750M3',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16734,7 +15448,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1287,
-                'slug' => 'zamok-dveri-14',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16747,7 +15460,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1288,
-                'slug' => 'zamok-kapota-14',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16760,7 +15472,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1289,
-                'slug' => 'zerkalo-levoe-14',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16773,7 +15484,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1290,
-                'slug' => 'kapot-14',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16786,7 +15496,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1291,
-                'slug' => 'katalizator-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16799,7 +15508,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1292,
-                'slug' => 'klyuch-zazhiganiya-14',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16812,7 +15520,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1293,
-                'slug' => 'knopka-steklopodemnika-14',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16825,7 +15532,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1294,
-                'slug' => 'kolodki-tormoznye-zadnie-diskovye-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16838,7 +15544,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1295,
-                'slug' => 'kolodki-tormoznye-perednie-14',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16851,7 +15556,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1296,
-                'slug' => 'korobka-avtomat-akpp-11',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16864,7 +15568,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1297,
-                'slug' => 'korobka-mehanicheskaya-mkpp-12',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16877,7 +15580,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1298,
-                'slug' => 'korpus-termostata-14',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16890,7 +15592,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1299,
-                'slug' => 'krylo-perednee-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16903,7 +15604,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1300,
-                'slug' => 'kryshka-bagazhnika-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16916,7 +15616,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1301,
-                'slug' => 'lampochka-blizhnego-sveta-14',
                 'code' => 'N10320102',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16929,7 +15628,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1302,
-                'slug' => 'magnitola-14',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16942,7 +15640,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1303,
-                'slug' => 'maslo-mehanicheskoy-korobki-peredach-mkpp-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16955,7 +15652,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1304,
-                'slug' => 'maslo-motornoe-castrol-long-life-iii-vw-5w30-1l-2',
                 'code' => '3750CL',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16968,7 +15664,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1305,
-                'slug' => 'maslo-motornoe-long-life-iii-vw-5w30-1l-2',
                 'code' => 'G052195M2',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -16981,7 +15676,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1306,
-                'slug' => 'maslo-motornoe-long-life-iii-vw-5w30-5l-2',
                 'code' => 'G052195M4',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -16994,7 +15688,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1307,
-                'slug' => 'nakonechnik-rulevoy-14',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17007,7 +15700,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1308,
-                'slug' => 'panel-perednyaya-14',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17020,7 +15712,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1309,
-                'slug' => 'panel-priborov-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17033,7 +15724,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1310,
-                'slug' => 'podshipnik-stupicy-zadney-stupica-s-abs-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17046,7 +15736,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1311,
-                'slug' => 'podshipnik-stupicy-peredney-stupica-s-abs-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17059,7 +15748,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1312,
-                'slug' => 'predohraniteli-14',
                 'code' => 'N01713111',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17072,7 +15760,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1313,
-                'slug' => 'prikurivatel-13',
                 'code' => '1J09193079B9',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -17085,7 +15772,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1314,
-                'slug' => 'protivotumannaya-fara-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17098,7 +15784,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1315,
-                'slug' => 'pruzhina-podveski-zadnyaya-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17111,7 +15796,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1316,
-                'slug' => 'pruzhina-podveski-perednyaya-14',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17124,7 +15808,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1317,
-                'slug' => 'radiator-kondicionera-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17137,7 +15820,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1318,
-                'slug' => 'radiator-ohlazhdeniya-dvigatelya-14',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17150,7 +15832,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1319,
-                'slug' => 'reyka-rulevaya-14',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17163,7 +15844,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1320,
-                'slug' => 'remen-grm-k-t-s-rolikami-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17176,7 +15856,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1321,
-                'slug' => 'remen-privodnoy-14',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17189,7 +15868,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1322,
-                'slug' => 'reshetka-radiatora-14',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17202,7 +15880,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1323,
-                'slug' => 'rul-14',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17215,7 +15892,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1324,
-                'slug' => 'rychag-zadniy-poperechnyy-malyy-11',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17228,7 +15904,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1325,
-                'slug' => 'rychag-podveski-peredniy-pravyy-3',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17241,7 +15916,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1326,
-                'slug' => 'svecha-zazhiganiya-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17254,7 +15928,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1327,
-                'slug' => 'starter-18',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17267,7 +15940,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1328,
-                'slug' => 'steklo-dveri-peredney-19',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17280,7 +15952,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1329,
-                'slug' => 'steklo-lobovoe-19',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17293,7 +15964,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1330,
-                'slug' => 'stoyka-stabilizatora-perednyaya-19',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17306,7 +15976,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1331,
-                'slug' => 'stupica-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17319,7 +15988,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1332,
-                'slug' => 'sceplenie-disk-s-korzinoy-7',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17332,7 +16000,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1333,
-                'slug' => 'termostat-19',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17345,7 +16012,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1334,
-                'slug' => 'trubka-kondicionera-18',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17358,7 +16024,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1335,
-                'slug' => 'trubka-pechki-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17371,7 +16036,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1336,
-                'slug' => 'tyaga-rulevaya-19',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17384,7 +16048,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1337,
-                'slug' => 'fara-perednyaya-pravaya-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17397,7 +16060,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1338,
-                'slug' => 'filtr-vozdushnyy-19',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17410,7 +16072,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1339,
-                'slug' => 'filtr-maslyanyy-benzinovyy-dvigatel-19',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17423,7 +16084,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1340,
-                'slug' => 'filtr-salona-ugolnyy-7',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17436,7 +16096,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1341,
-                'slug' => 'filtr-toplivnyy-7',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17449,7 +16108,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1342,
-                'slug' => 'fonar-zadniy-19',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17462,7 +16120,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1343,
-                'slug' => 'pompa-vodyanaya-vodyanoy-nasos-polo-sedan',
                 'code' => '03C121008J',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17475,7 +16132,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1344,
-                'slug' => 'akkumulyator-akb-tiguan',
                 'code' => 'JZW915105C',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -17490,7 +16146,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1345,
-                'slug' => 'amortizator-zadniy-tiguan',
                 'code' => '5N0513049AP',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17505,7 +16160,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1346,
-                'slug' => 'amortizator-peredniy-tiguan',
                 'code' => '5N0413031AK',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17520,7 +16174,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1347,
-                'slug' => 'bamper-zadniy-tiguan',
                 'code' => '5NU807421GRU',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17535,7 +16188,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1348,
-                'slug' => 'bamper-peredniy-tiguan',
                 'code' => '5NU807217AGRU',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17550,7 +16202,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1349,
-                'slug' => 'benzobak-tiguan',
                 'code' => '5N0201060BM',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17565,7 +16216,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1350,
-                'slug' => 'benzonasos-tiguan',
                 'code' => '5N0919087H',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17580,7 +16230,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1351,
-                'slug' => 'blok-predohraniteley-tiguan',
                 'code' => '1K0937125D',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17595,7 +16244,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1352,
-                'slug' => 'ventilyator-pechki-tiguan',
                 'code' => '1K1819015C',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17610,7 +16258,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1353,
-                'slug' => 'generator-tiguan',
                 'code' => '03C903024J',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -17625,7 +16272,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1354,
-                'slug' => 'datchik-temperatury-tiguan',
                 'code' => '06A919501A',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17640,7 +16286,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1357,
-                'slug' => 'dvigatel-tiguan',
                 'code' => '03C100040',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17655,7 +16300,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1358,
-                'slug' => 'dvorniki-shchetki-tiguan',
                 'code' => '5N1998002',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17670,7 +16314,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1359,
-                'slug' => 'disk-kolesnyy-litoy-tiguan',
                 'code' => '5N06010258Z8',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17685,7 +16328,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1360,
-                'slug' => 'diski-tormoznye-zadnie-tiguan',
                 'code' => '5Q0615601G',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17700,7 +16342,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1361,
-                'slug' => 'diski-tormoznye-perednie-tiguan',
                 'code' => '5Q0615301F',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17715,7 +16356,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1362,
-                'slug' => 'zhidkost-tormoznaya-tiguan',
                 'code' => 'B000750M3',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17730,7 +16370,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1363,
-                'slug' => 'zamok-dveri-tiguan',
                 'code' => '5N0839015R',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17745,7 +16384,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1365,
-                'slug' => 'zerkalo-tiguan',
                 'code' => '5N1857507P9B9',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17760,7 +16398,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1366,
-                'slug' => 'kapot-tiguan',
                 'code' => '5N0823031D',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17775,7 +16412,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1367,
-                'slug' => 'katalizator-14',
                 'code' => '1K0254200RX',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -17788,7 +16424,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1368,
-                'slug' => 'klyuch-zazhiganiya-15',
                 'code' => '5K0837202BINF',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17801,7 +16436,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1369,
-                'slug' => 'knopka-steklopodemnika-15',
                 'code' => '7L6959855BREH',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -17814,7 +16448,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1370,
-                'slug' => 'kolodki-tormoznye-zadnie-diskovye-14',
                 'code' => '3AA698451',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17827,7 +16460,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1371,
-                'slug' => 'kolodki-tormoznye-perednie-15',
                 'code' => '5N0698151',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -17840,7 +16472,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1372,
-                'slug' => 'korobka-avtomat-akpp-12',
                 'code' => '09M300036B',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -17853,7 +16484,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1373,
-                'slug' => 'korobka-mehanicheskaya-mkpp-13',
                 'code' => '0BB300043AX',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17866,7 +16496,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1374,
-                'slug' => 'korpus-termostata-15',
                 'code' => '03C121111T',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17879,7 +16508,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1375,
-                'slug' => 'krylo-perednee-pravoe-9',
                 'code' => '5N0821105A',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17892,7 +16520,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1376,
-                'slug' => 'kryshka-bagazhnika-14',
                 'code' => '5N0827025D',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -17905,7 +16532,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1377,
-                'slug' => 'lampochka-blizhnego-sveta-15',
                 'code' => 'N10320102',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17918,7 +16544,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1378,
-                'slug' => 'magnitola-15',
                 'code' => '5M0057156D',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -17931,7 +16556,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1379,
-                'slug' => 'maslo-mufty-haldeks',
                 'code' => 'G055175A2',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -17944,7 +16568,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1380,
-                'slug' => 'maslo-motornoe-castrol-long-life-iii-vw-5w30-1l-3',
                 'code' => '3750CL',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17957,7 +16580,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1381,
-                'slug' => 'maslo-motornoe-long-life-iii-vw-5w30-1l-3',
                 'code' => 'G052195M2',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17970,7 +16592,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1382,
-                'slug' => 'maslo-motornoe-long-life-iii-vw-5w30-5l-3',
                 'code' => 'G052195M4',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -17983,7 +16604,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1383,
-                'slug' => 'nakonechnik-rulevoy-15',
                 'code' => '1K0423811K',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -17996,7 +16616,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1384,
-                'slug' => 'panel-perednyaya-15',
                 'code' => '5N0805588F',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -18009,7 +16628,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1385,
-                'slug' => 'panel-priborov-14',
                 'code' => '5N0920870CXZ01',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -18022,7 +16640,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1386,
-                'slug' => 'podshipnik-stupicy-zadney-stupica-s-abs-3',
                 'code' => '5K0498621',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -18035,7 +16652,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1387,
-                'slug' => 'podshipnik-stupicy-peredney-stupica-s-abs-3',
                 'code' => '5K0498621',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -18048,7 +16664,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1388,
-                'slug' => 'predohraniteli-15',
                 'code' => 'N01713111',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -18061,7 +16676,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1389,
-                'slug' => 'prikurivatel-14',
                 'code' => '1J09193079B9',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -18074,7 +16688,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1390,
-                'slug' => 'protivotumannaya-fara-14',
                 'code' => '1T0941699C',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -18087,7 +16700,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1391,
-                'slug' => 'pruzhina-podveski-zadnyaya-14',
                 'code' => '3C0511115AC',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -18100,7 +16712,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1392,
-                'slug' => 'pruzhina-podveski-perednyaya-15',
                 'code' => '5N0411105T',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -18113,7 +16724,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1393,
-                'slug' => 'radiator-kondicionera-14',
                 'code' => '5N0820411E',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -18126,7 +16736,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1394,
-                'slug' => 'radiator-ohlazhdeniya-dvigatelya-15',
                 'code' => '5N0121253L',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -18139,7 +16748,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1395,
-                'slug' => 'reyka-rulevaya-15',
                 'code' => '5N1423062M',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -18152,7 +16760,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1396,
-                'slug' => 'remen-grm-k-t-s-rolikami-3',
                 'code' => '03L198119',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -18165,7 +16772,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1397,
-                'slug' => 'remen-privodnoy-15',
                 'code' => '06J260849D',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -18178,7 +16784,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1398,
-                'slug' => 'reshetka-radiatora-15',
                 'code' => '5N08536512ZZ',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -18191,7 +16796,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1399,
-                'slug' => 'rul-15',
                 'code' => '5K0419091H81U',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -18204,7 +16808,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1400,
-                'slug' => 'rychag-zadniy-poperechnyy-malyy-12',
                 'code' => '1K0501529F',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -18217,7 +16820,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1401,
-                'slug' => 'rychag-podveski-peredniy-pravyy-4',
                 'code' => '5N0407152',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -18230,7 +16832,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1402,
-                'slug' => 'svecha-zazhiganiya-14',
                 'code' => '06H905621',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -18243,7 +16844,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1403,
-                'slug' => 'signal-zvukovoy-19',
                 'code' => '5N0951221B',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -18256,7 +16856,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1404,
-                'slug' => 'starter-19',
                 'code' => '02M911023GX',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -18269,7 +16868,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1405,
-                'slug' => 'steklo-dveri-peredney-20',
                 'code' => '5N0845202',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -18282,7 +16880,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1406,
-                'slug' => 'steklo-lobovoe-s-datchikom-dozhdya',
                 'code' => '5N0845011FNVB',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -18295,7 +16892,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1407,
-                'slug' => 'steklo-lobovoe-20',
                 'code' => '5N0845011ENVB',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -18308,7 +16904,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1408,
-                'slug' => 'stoyka-stabilizatora-perednyaya-20',
                 'code' => '1K0411315R',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -18321,7 +16916,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1409,
-                'slug' => 'stupica-11',
                 'code' => '5K0498621',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -18334,7 +16928,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1410,
-                'slug' => 'sceplenie-12',
                 'code' => '06F141015A',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -18347,7 +16940,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1411,
-                'slug' => 'termostat-20',
                 'code' => '03C121110Q',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -18360,7 +16952,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1412,
-                'slug' => 'trubka-kondicionera-19',
                 'code' => '5N0820721L',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -18373,7 +16964,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1413,
-                'slug' => 'trubka-pechki-9',
                 'code' => '3C1819857',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -18386,7 +16976,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1414,
-                'slug' => 'tyaga-rulevaya-20',
                 'code' => '1K0423810A',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -18399,7 +16988,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1415,
-                'slug' => 'fara-perednyaya-pravaya-9',
                 'code' => '5N1941032AB',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -18412,7 +17000,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1416,
-                'slug' => 'filtr-vozdushnyy-20',
                 'code' => '1K0129620D',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -18425,7 +17012,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1417,
-                'slug' => 'filtr-maslyanyy-benzinovyy-dvigatel-20',
                 'code' => '03C115561H',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -18438,7 +17024,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1418,
-                'slug' => 'filtr-maslyanyy-dizelnyy-dvigatel-12',
                 'code' => '071115562C',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -18451,7 +17036,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1419,
-                'slug' => 'filtr-salona-ugolnyy-8',
                 'code' => '1K1819653B',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -18464,7 +17048,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1420,
-                'slug' => 'filtr-toplivnyy-dizelnyy-dvigatel-12',
                 'code' => '3C0127434',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -18477,7 +17060,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1421,
-                'slug' => 'fonar-zadniy-20',
                 'code' => '5N0945095H',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -18490,7 +17072,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1422,
-                'slug' => 'shchetka-stekloochistitelya-zadnyaya-19',
                 'code' => '6Q6955425A',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -18503,7 +17084,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1423,
-                'slug' => 'akkumulyator-akb-21',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -18516,7 +17096,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1424,
-                'slug' => 'signal-zvukovoy-20',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -18529,7 +17108,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1425,
-                'slug' => 'starter-20',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -18542,7 +17120,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1426,
-                'slug' => 'steklo-dveri-peredney-21',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -18555,7 +17132,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1427,
-                'slug' => 'steklo-lobovoe-21',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -18568,7 +17144,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1428,
-                'slug' => 'stoyka-stabilizatora-perednyaya-21',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -18581,7 +17156,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1429,
-                'slug' => 'stupica-12',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -18594,7 +17168,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1430,
-                'slug' => 'sceplenie-disk-s-korzinoy-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -18607,7 +17180,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1431,
-                'slug' => 'termostat-21',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -18620,7 +17192,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1432,
-                'slug' => 'trubka-kondicionera-20',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -18633,7 +17204,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1433,
-                'slug' => 'trubka-pechki-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -18646,7 +17216,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1434,
-                'slug' => 'tyaga-rulevaya-21',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -18659,7 +17228,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1435,
-                'slug' => 'fara-perednyaya-pravaya-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -18672,7 +17240,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1436,
-                'slug' => 'filtr-vozdushnyy-21',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -18685,7 +17252,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1437,
-                'slug' => 'filtr-maslyanyy-benzinovyy-dvigatel-21',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -18698,7 +17264,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1438,
-                'slug' => 'filtr-salona-ugolnyy-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -18711,7 +17276,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1439,
-                'slug' => 'filtr-toplivnyy-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -18724,7 +17288,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1440,
-                'slug' => 'fonar-zadniy-21',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -18737,7 +17300,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1441,
-                'slug' => 'shchetka-stekloochistitelya-zadnyaya-20',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -18750,7 +17312,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1442,
-                'slug' => 'akkumulyator-akb-22',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -18763,7 +17324,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1443,
-                'slug' => 'signal-zvukovoy-21',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -18776,7 +17336,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1444,
-                'slug' => 'starter-21',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -18789,7 +17348,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1445,
-                'slug' => 'steklo-dveri-peredney-22',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -18802,7 +17360,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1446,
-                'slug' => 'steklo-lobovoe-22',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -18815,7 +17372,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1447,
-                'slug' => 'stoyka-stabilizatora-perednyaya-22',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -18828,7 +17384,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1448,
-                'slug' => 'stupica-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -18841,7 +17396,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1449,
-                'slug' => 'sceplenie-disk-s-korzinoy-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -18854,7 +17408,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1450,
-                'slug' => 'termostat-22',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -18867,7 +17420,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1451,
-                'slug' => 'trubka-kondicionera-21',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -18880,7 +17432,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1452,
-                'slug' => 'trubka-pechki-11',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -18893,7 +17444,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1453,
-                'slug' => 'tyaga-rulevaya-22',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -18906,7 +17456,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1454,
-                'slug' => 'fara-perednyaya-pravaya-11',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -18919,7 +17468,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1455,
-                'slug' => 'filtr-vozdushnyy-22',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -18932,7 +17480,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1456,
-                'slug' => 'filtr-maslyanyy-benzinovyy-dvigatel-22',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -18945,7 +17492,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1457,
-                'slug' => 'filtr-salona-ugolnyy-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -18958,7 +17504,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1458,
-                'slug' => 'filtr-toplivnyy-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -18971,7 +17516,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1459,
-                'slug' => 'fonar-zadniy-22',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -18984,7 +17528,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1460,
-                'slug' => 'shchetka-stekloochistitelya-zadnyaya-21',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -18997,7 +17540,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1461,
-                'slug' => 'akkumulyator-akb-23',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19010,7 +17552,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1462,
-                'slug' => 'signal-zvukovoy-22',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19023,7 +17564,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1463,
-                'slug' => 'starter-22',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19036,7 +17576,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1464,
-                'slug' => 'steklo-dveri-peredney-23',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19049,7 +17588,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1465,
-                'slug' => 'steklo-lobovoe-23',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19062,7 +17600,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1466,
-                'slug' => 'stoyka-stabilizatora-perednyaya-23',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19075,7 +17612,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1467,
-                'slug' => 'stupica-14',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19088,7 +17624,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1468,
-                'slug' => 'sceplenie-disk-s-korzinoy-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19101,7 +17636,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1469,
-                'slug' => 'termostat-23',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19114,7 +17648,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1470,
-                'slug' => 'trubka-kondicionera-22',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19127,7 +17660,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1471,
-                'slug' => 'trubka-pechki-12',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19140,7 +17672,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1472,
-                'slug' => 'tyaga-rulevaya-23',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19153,7 +17684,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1473,
-                'slug' => 'fara-perednyaya-pravaya-12',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19166,7 +17696,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1474,
-                'slug' => 'filtr-vozdushnyy-23',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19179,7 +17708,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1475,
-                'slug' => 'filtr-maslyanyy-benzinovyy-dvigatel-23',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19192,7 +17720,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1476,
-                'slug' => 'filtr-salona-ugolnyy-11',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19205,7 +17732,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1477,
-                'slug' => 'filtr-toplivnyy-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19218,7 +17744,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1478,
-                'slug' => 'fonar-zadniy-23',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19231,7 +17756,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1479,
-                'slug' => 'shchetka-stekloochistitelya-zadnyaya-22',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19244,7 +17768,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1480,
-                'slug' => 'akkumulyator-akb-24',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19257,7 +17780,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1481,
-                'slug' => 'amortizator-zadniy-15',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19270,7 +17792,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1482,
-                'slug' => 'amortizator-peredniy-15',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19283,7 +17804,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1483,
-                'slug' => 'bamper-zadniy-16',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19296,7 +17816,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1484,
-                'slug' => 'bamper-peredniy-16',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19309,7 +17828,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1485,
-                'slug' => 'benzobak-15',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19322,7 +17840,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1486,
-                'slug' => 'benzonasos-toplivnyy-nasos-v-sbore-15',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19335,7 +17852,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1487,
-                'slug' => 'blok-predohraniteley-16',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19348,7 +17864,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1488,
-                'slug' => 'ventilyator-pechki-16',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19361,7 +17876,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1489,
-                'slug' => 'generator-16',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19374,7 +17888,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1490,
-                'slug' => 'datchik-temperatury-16',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19387,7 +17900,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1491,
-                'slug' => 'dver-zadnyaya-16',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19400,7 +17912,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1492,
-                'slug' => 'dver-perednyaya-16',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19413,7 +17924,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1493,
-                'slug' => 'dvigatel-16',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19426,7 +17936,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1494,
-                'slug' => 'dvorniki-shchetki-s-o-komplekt-16',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19439,7 +17948,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1495,
-                'slug' => 'disk-kolesnyy-litoy-16',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19452,7 +17960,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1496,
-                'slug' => 'diski-tormoznye-zadnie-15',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19465,7 +17972,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1497,
-                'slug' => 'diski-tormoznye-perednie-16',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19478,7 +17984,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1498,
-                'slug' => 'zhidkost-tormoznaya-dot-4-1l-4',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19491,7 +17996,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1499,
-                'slug' => 'zamok-dveri-16',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19504,7 +18008,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1500,
-                'slug' => 'zamok-kapota-16',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19517,7 +18020,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1501,
-                'slug' => 'zerkalo-levoe-16',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19530,7 +18032,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1502,
-                'slug' => 'kapot-16',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19543,7 +18044,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1503,
-                'slug' => 'katalizator-15',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19556,7 +18056,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1504,
-                'slug' => 'klyuch-zazhiganiya-16',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19569,7 +18068,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1505,
-                'slug' => 'knopka-steklopodemnika-16',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19582,7 +18080,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1506,
-                'slug' => 'kolodki-tormoznye-zadnie-diskovye-15',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19595,7 +18092,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1507,
-                'slug' => 'kolodki-tormoznye-perednie-16',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19608,7 +18104,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1508,
-                'slug' => 'korobka-avtomat-akpp-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19621,7 +18116,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1509,
-                'slug' => 'korobka-mehanicheskaya-mkpp-14',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19634,7 +18128,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1510,
-                'slug' => 'korpus-termostata-16',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19647,7 +18140,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1511,
-                'slug' => 'krylo-perednee-pravoe-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19660,7 +18152,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1512,
-                'slug' => 'kryshka-bagazhnika-15',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19673,7 +18164,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1513,
-                'slug' => 'lampochka-blizhnego-sveta-16',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19686,7 +18176,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1514,
-                'slug' => 'magnitola-16',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19699,7 +18188,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1515,
-                'slug' => 'maslo-mehanicheskoy-korobki-peredach-mkpp-3',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19712,7 +18200,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1516,
-                'slug' => 'maslo-motornoe-mazda-ultra-5w30-5l',
                 'code' => '830077280',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19725,7 +18212,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1517,
-                'slug' => 'maslo-motornoe-mazda-ultra-5w30-1l',
                 'code' => '830077279',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19738,7 +18224,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1518,
-                'slug' => 'nakonechnik-rulevoy-16',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19751,7 +18236,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1519,
-                'slug' => 'panel-perednyaya-16',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19764,7 +18248,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1520,
-                'slug' => 'panel-priborov-15',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19777,7 +18260,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1521,
-                'slug' => 'podshipnik-stupicy-zadney-stupica-s-abs-4',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19790,7 +18272,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1522,
-                'slug' => 'podshipnik-stupicy-peredney-s-abs-3',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19803,7 +18284,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1523,
-                'slug' => 'predohraniteli-16',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19816,7 +18296,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1524,
-                'slug' => 'prikurivatel-15',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19829,7 +18308,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1525,
-                'slug' => 'protivotumannaya-fara-15',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19842,7 +18320,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1526,
-                'slug' => 'pruzhina-podveski-zadnyaya-15',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19855,7 +18332,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1527,
-                'slug' => 'pruzhina-podveski-perednyaya-16',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19868,7 +18344,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1528,
-                'slug' => 'radiator-kondicionera-15',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19881,7 +18356,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1529,
-                'slug' => 'radiator-ohlazhdeniya-dvigatelya-16',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19894,7 +18368,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1530,
-                'slug' => 'reyka-rulevaya-16',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19907,7 +18380,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1531,
-                'slug' => 'cep-grm-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19920,7 +18392,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1532,
-                'slug' => 'remen-privodnoy-16',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19933,7 +18404,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1533,
-                'slug' => 'reshetka-radiatora-v-bamper',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19946,7 +18416,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1534,
-                'slug' => 'rul-16',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19959,7 +18428,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1535,
-                'slug' => 'rychag-zadniy-poperechnyy-malyy-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19972,7 +18440,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1536,
-                'slug' => 'rychag-podveski-peredniy-pravyy-5',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19985,7 +18452,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1537,
-                'slug' => 'svecha-zazhiganiya-15',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -19998,7 +18464,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1538,
-                'slug' => 'signal-zvukovoy-23',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -20011,7 +18476,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1539,
-                'slug' => 'starter-23',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -20024,7 +18488,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1540,
-                'slug' => 'steklo-dveri-peredney-24',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -20037,7 +18500,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1541,
-                'slug' => 'steklo-lobovoe-s-datchikom-dozhdya-1',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -20050,7 +18512,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1542,
-                'slug' => 'steklo-lobovoe-24',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -20063,7 +18524,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1543,
-                'slug' => 'stoyka-stabilizatora-perednyaya-24',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -20076,7 +18536,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1544,
-                'slug' => 'stupica-15',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -20089,7 +18548,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1545,
-                'slug' => 'sceplenie-disk',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -20102,7 +18560,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1546,
-                'slug' => 'termostat-24',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -20115,7 +18572,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1547,
-                'slug' => 'trubka-kondicionera-23',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -20128,7 +18584,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1548,
-                'slug' => 'trubka-pechki-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -20141,7 +18596,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1549,
-                'slug' => 'tyaga-rulevaya-24',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -20154,7 +18608,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1550,
-                'slug' => 'fara-perednyaya',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -20167,7 +18620,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1551,
-                'slug' => 'filtr-vozdushnyy-24',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -20180,7 +18632,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1552,
-                'slug' => 'filtr-maslyanyy-benzinovyy-dvigatel-24',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -20193,7 +18644,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1553,
-                'slug' => 'filtr-salona',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -20206,7 +18656,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1554,
-                'slug' => 'fonar-zadniy-24',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -20219,7 +18668,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1555,
-                'slug' => 'shchetka-stekloochistitelya-zadnyaya-23',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -20232,7 +18680,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1556,
-                'slug' => 'akkumulyator-akb-25',
                 'code' => '55D23L',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -20245,7 +18692,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1557,
-                'slug' => 'amortizator-zadniy-16',
                 'code' => 'BGV428910',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -20258,7 +18704,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1558,
-                'slug' => 'amortizator-peredniy-16',
                 'code' => 'BBM234700C',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -20271,7 +18716,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1559,
-                'slug' => 'bamper-zadniy-17',
                 'code' => 'BBM450221M8N',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -20284,7 +18728,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1560,
-                'slug' => 'bamper-peredniy-17',
                 'code' => 'BBN250031KBB',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -20297,7 +18740,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1561,
-                'slug' => 'benzobak-16',
                 'code' => 'BCD642110E',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -20310,7 +18752,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1562,
-                'slug' => 'benzonasos-toplivnyy-nasos-v-sbore-16',
                 'code' => 'LF6X1335XD',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -20323,7 +18764,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1563,
-                'slug' => 'blok-predohraniteley-17',
                 'code' => 'BBM666760',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -20336,7 +18776,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1564,
-                'slug' => 'ventilyator-pechki-17',
                 'code' => 'BBP261B10',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -20349,7 +18788,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1565,
-                'slug' => 'generator-17',
                 'code' => 'ZJ3818300',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -20362,7 +18800,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1566,
-                'slug' => 'datchik-temperatury-17',
                 'code' => 'B59318840A',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -20375,7 +18812,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1567,
-                'slug' => 'dver-zadnyaya-17',
                 'code' => 'BBY27202XK',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -20388,7 +18824,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1568,
-                'slug' => 'dver-perednyaya-17',
                 'code' => 'BBY95902XF',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -20401,7 +18836,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1569,
-                'slug' => 'dvigatel-17',
                 'code' => 'Z68202300E',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -20414,7 +18848,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1570,
-                'slug' => 'dvorniki-shchetki-s-o-komplekt-17',
                 'code' => 'BPFB673309K',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -20427,7 +18860,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1571,
-                'slug' => 'disk-kolesnyy-litoy-17',
                 'code' => '9965R66050CN',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -20440,7 +18872,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1572,
-                'slug' => 'diski-tormoznye-zadnie-16',
                 'code' => 'C24Y26251C9A',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -20453,7 +18884,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1573,
-                'slug' => 'diski-tormoznye-perednie-17',
                 'code' => 'C24Y3325XC9A',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -20466,7 +18896,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1574,
-                'slug' => 'zhidkost-tormoznaya-dot-4-1l-5',
                 'code' => 'K001W0001B',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -20479,7 +18908,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1575,
-                'slug' => 'zamok-dveri-17',
                 'code' => 'BBM473310A',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -20492,7 +18920,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1576,
-                'slug' => 'zamok-kapota-17',
                 'code' => 'BBM656620',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -20505,7 +18932,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1577,
-                'slug' => 'zerkalo-levoe-17',
                 'code' => 'BBW16918ZJ',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -20518,7 +18944,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1578,
-                'slug' => 'kapot-17',
                 'code' => 'BBY45231XC',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -20531,7 +18956,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1579,
-                'slug' => 'katalizator-16',
                 'code' => 'Z6702050X',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -20544,7 +18968,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1580,
-                'slug' => 'klyuch-zazhiganiya-17',
                 'code' => 'G28A582GXB',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -20557,7 +18980,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1581,
-                'slug' => 'knopka-steklopodemnika-17',
                 'code' => 'BBM266370',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -20570,7 +18992,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1582,
-                'slug' => 'kolodki-tormoznye-zadnie-diskovye-16',
                 'code' => 'C2Y32648ZA9A',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -20583,7 +19004,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1583,
-                'slug' => 'kolodki-tormoznye-perednie-17',
                 'code' => 'BPYK3323ZC9C',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -20596,7 +19016,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1584,
-                'slug' => 'korobka-avtomat-akpp-14',
                 'code' => 'FNK803000',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -20609,7 +19028,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1585,
-                'slug' => 'korobka-mehanicheskaya-mkpp-15',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -20622,7 +19040,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1586,
-                'slug' => 'korpus-termostata-17',
                 'code' => 'ZJ0115172A',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -20635,7 +19052,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1587,
-                'slug' => 'krylo-perednee-pravoe-11',
                 'code' => 'BBP852111B',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -20648,7 +19064,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1588,
-                'slug' => 'kryshka-bagazhnika-16',
                 'code' => 'BBY45261XD',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -20661,7 +19076,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1589,
-                'slug' => 'lampochka-blizhnego-sveta-17',
                 'code' => '9970LLH11',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -20674,7 +19088,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1590,
-                'slug' => 'magnitola-17',
                 'code' => 'BDA766AH0',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -20687,7 +19100,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1591,
-                'slug' => 'maslo-mehanicheskoy-korobki-peredach-mkpp-4',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -20700,7 +19112,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1592,
-                'slug' => 'maslo-motornoe-mazda-ultra-5w30-5l-1',
                 'code' => '830077280',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -20713,7 +19124,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1593,
-                'slug' => 'nakonechnik-rulevoy-17',
                 'code' => 'BP4L32290',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -20726,7 +19136,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1594,
-                'slug' => 'panel-perednyaya-17',
                 'code' => 'BBM453110H',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -20739,7 +19148,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1595,
-                'slug' => 'panel-priborov-16',
                 'code' => 'BBP355471G',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -20752,7 +19160,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1596,
-                'slug' => 'podshipnik-stupicy-zadney-stupica-s-abs-5',
                 'code' => 'BBM22615XB',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -20765,7 +19172,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1597,
-                'slug' => 'podshipnik-stupicy-peredney-s-abs-4',
                 'code' => 'BBM233047',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -20778,7 +19184,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1598,
-                'slug' => 'predohraniteli-17',
                 'code' => '14E8B8',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -20791,7 +19196,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1599,
-                'slug' => 'prikurivatel-16',
                 'code' => 'BBP366250',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -20804,7 +19208,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1600,
-                'slug' => 'protivotumannaya-fara-16',
                 'code' => 'GDK551690A',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -20817,7 +19220,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1601,
-                'slug' => 'pruzhina-podveski-zadnyaya-16',
                 'code' => 'GAB128011B',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -20830,7 +19232,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1602,
-                'slug' => 'pruzhina-podveski-perednyaya-17',
                 'code' => 'GS1R34011',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -20843,7 +19244,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1603,
-                'slug' => 'radiator-kondicionera-16',
                 'code' => 'BBP261480C',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -20856,7 +19256,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1604,
-                'slug' => 'radiator-ohlazhdeniya-dvigatelya-17',
                 'code' => 'LF4K15200B',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -20869,7 +19268,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1605,
-                'slug' => 'reyka-rulevaya-17',
                 'code' => 'BBM432110C',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -20882,7 +19280,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1606,
-                'slug' => 'cep-grm-2',
                 'code' => 'ZJ0112201',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -20895,7 +19292,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1607,
-                'slug' => 'remen-privodnoy-17',
                 'code' => 'Z60115909A',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -20908,7 +19304,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1608,
-                'slug' => 'reshetka-radiatora-v-bamper-1',
                 'code' => 'BCW8501T1C',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -20921,7 +19316,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1609,
-                'slug' => 'rul-17',
                 'code' => 'BBM23298202',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -20934,7 +19328,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1610,
-                'slug' => 'rychag-zadniy-poperechnyy-malyy-14',
                 'code' => 'BBP328500A',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -20947,7 +19340,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1611,
-                'slug' => 'rychag-podveski-peredniy-pravyy-6',
                 'code' => 'BBM234300A',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -20960,7 +19352,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1612,
-                'slug' => 'svecha-zazhiganiya-16',
                 'code' => 'BPY218110',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -20973,7 +19364,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1613,
-                'slug' => 'signal-zvukovoy-24',
                 'code' => 'BCD16679YA',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -20986,7 +19376,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1614,
-                'slug' => 'starter-24',
                 'code' => 'Z66818400',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -20999,7 +19388,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1615,
-                'slug' => 'steklo-dveri-peredney-25',
                 'code' => 'BP4K59511B',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -21012,7 +19400,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1616,
-                'slug' => 'steklo-lobovoe-s-datchikom-dozhdya-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -21025,7 +19412,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1617,
-                'slug' => 'steklo-lobovoe-25',
                 'code' => 'BBR363900E',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -21038,7 +19424,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1618,
-                'slug' => 'stoyka-stabilizatora-perednyaya-25',
                 'code' => 'BBM234170A',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -21051,7 +19436,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1619,
-                'slug' => 'stupica-16',
                 'code' => 'C23633060A',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -21064,7 +19448,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1620,
-                'slug' => 'sceplenie-disk-1',
                 'code' => 'Z60416460',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -21077,7 +19460,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1621,
-                'slug' => 'termostat-25',
                 'code' => 'KL0115171A',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -21090,7 +19472,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1622,
-                'slug' => 'trubka-kondicionera-24',
                 'code' => 'BBP261461',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -21103,7 +19484,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1623,
-                'slug' => 'trubka-pechki-14',
                 'code' => 'BCD161213',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -21116,7 +19496,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1624,
-                'slug' => 'tyaga-rulevaya-25',
                 'code' => 'BP4L32240',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -21129,7 +19508,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1625,
-                'slug' => 'fara-perednyaya-1',
                 'code' => 'BBP2510L0L',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -21142,7 +19520,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1626,
-                'slug' => 'filtr-vozdushnyy-25',
                 'code' => 'ZJ0113Z409A',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -21155,7 +19532,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1627,
-                'slug' => 'filtr-maslyanyy-benzinovyy-dvigatel-25',
                 'code' => 'B6Y1143029A',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -21168,7 +19544,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1628,
-                'slug' => 'filtr-salona-1',
                 'code' => 'BBP261J6X9A',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -21181,7 +19556,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1629,
-                'slug' => 'fonar-zadniy-25',
                 'code' => 'BBP251160E',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -21194,7 +19568,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1630,
-                'slug' => 'shchetka-stekloochistitelya-zadnyaya-24',
                 'code' => 'GS2A67330',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -21207,7 +19580,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1631,
-                'slug' => 'akkumulyator-akb-26',
                 'code' => 'FE05185209D',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -21220,7 +19592,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1632,
-                'slug' => 'amortizator-zadniy-17',
                 'code' => 'GS1D28700J',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -21233,7 +19604,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1633,
-                'slug' => 'amortizator-peredniy-17',
                 'code' => 'GS1D34700G',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -21246,7 +19616,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1634,
-                'slug' => 'bamper-zadniy-18',
                 'code' => 'GS1D50221C8N',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -21259,7 +19628,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1635,
-                'slug' => 'bamper-peredniy-18',
                 'code' => 'GS1D50031FBB',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -21272,7 +19640,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1636,
-                'slug' => 'benzobak-17',
                 'code' => 'GS1D42110D',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -21285,7 +19652,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1637,
-                'slug' => 'benzonasos-toplivnyy-nasos-v-sbore-17',
                 'code' => 'L5091335Z',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -21298,7 +19664,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1638,
-                'slug' => 'blok-predohraniteley-18',
                 'code' => 'GS1D66760',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -21311,7 +19676,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1639,
-                'slug' => 'ventilyator-pechki-18',
                 'code' => 'GS1D61B10',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -21324,7 +19688,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1640,
-                'slug' => 'generator-18',
                 'code' => 'L3P918300D',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -21337,7 +19700,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1641,
-                'slug' => 'datchik-temperatury-18',
                 'code' => 'L35G18840',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -21350,7 +19712,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1642,
-                'slug' => 'dver-zadnyaya-18',
                 'code' => 'GSYD7302XG',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -21363,7 +19724,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1643,
-                'slug' => 'dver-perednyaya-18',
                 'code' => 'GSYD5902XF',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -21376,7 +19736,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1644,
-                'slug' => 'blok-cilindrov',
                 'code' => 'LF9510300C',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -21389,7 +19748,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1645,
-                'slug' => 'dvornik-shchetka-s-o-voditelya',
                 'code' => 'GS1D67330',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -21402,7 +19760,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1646,
-                'slug' => 'disk-kolesnyy-litoy-18',
                 'code' => '9965E06560CN',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -21415,7 +19772,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1647,
-                'slug' => 'diski-tormoznye-zadnie-17',
                 'code' => 'N12326251A',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -21428,7 +19784,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1648,
-                'slug' => 'diski-tormoznye-perednie-18',
                 'code' => 'G33Y3325XA',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -21441,7 +19796,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1649,
-                'slug' => 'zhidkost-tormoznaya-dot-4-1l-6',
                 'code' => 'K001W0001B',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -21454,7 +19808,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1650,
-                'slug' => 'zamok-dveri-18',
                 'code' => 'GS1D59310B',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -21467,7 +19820,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1651,
-                'slug' => 'zamok-kapota-18',
                 'code' => 'GS1F56620A',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -21480,7 +19832,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1652,
-                'slug' => 'zerkalo-levoe-18',
                 'code' => 'GS2J6918ZA',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -21493,7 +19844,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1653,
-                'slug' => 'kapot-18',
                 'code' => 'GSYD5231XB',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -21506,7 +19856,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1654,
-                'slug' => 'katalizator-17',
                 'code' => 'LFE82055XB',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -21519,7 +19868,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1655,
-                'slug' => 'klyuch-zazhiganiya-18',
                 'code' => 'G28A582GXB',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -21532,7 +19880,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1656,
-                'slug' => 'knopka-steklopodemnika-18',
                 'code' => 'G33C66370',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -21545,7 +19892,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1657,
-                'slug' => 'kolodki-tormoznye-zadnie-diskovye-17',
                 'code' => 'GJYB2648Z9C',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -21558,7 +19904,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1658,
-                'slug' => 'kolodki-tormoznye-perednie-18',
                 'code' => 'GSYD3328Z9C',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -21571,7 +19916,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1659,
-                'slug' => 'korobka-avtomat-akpp-15',
                 'code' => 'FSE219090H',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -21584,7 +19928,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1660,
-                'slug' => 'korobka-mehanicheskaya-mkpp-16',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -21597,7 +19940,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1661,
-                'slug' => 'korpus-termostata-18',
                 'code' => 'L33615170',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -21610,7 +19952,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1662,
-                'slug' => 'krylo-perednee-pravoe-12',
                 'code' => 'GS1D52110D',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -21623,7 +19964,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1663,
-                'slug' => 'kryshka-bagazhnika-17',
                 'code' => 'GSYD5261XB',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -21636,7 +19976,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1664,
-                'slug' => 'lampochka-blizhnego-sveta-18',
                 'code' => '9970LLH11',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -21649,7 +19988,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1665,
-                'slug' => 'magnitola-18',
                 'code' => 'GS1D669R0C',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -21662,7 +20000,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1666,
-                'slug' => 'maslo-mehanicheskoy-korobki-peredach-mkpp-5',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -21675,7 +20012,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1667,
-                'slug' => 'maslo-motornoe-mazda-ultra-5w30-5l-2',
                 'code' => '830077280',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -21688,7 +20024,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1668,
-                'slug' => 'maslo-motornoe-mazda-ultra-5w30-1l-1',
                 'code' => '830077279',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -21701,7 +20036,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1669,
-                'slug' => 'maslo-motornoe-ford-formula-f-5w30-1l',
                 'code' => '14E8B8',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -21714,7 +20048,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1670,
-                'slug' => 'nakonechnik-rulevoy-18',
                 'code' => 'GS1D32290',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -21727,7 +20060,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1671,
-                'slug' => 'panel-perednyaya-18',
                 'code' => 'GS1D53110A',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -21740,7 +20072,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1672,
-                'slug' => 'panel-priborov-17',
                 'code' => 'GAA955471G',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -21753,7 +20084,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1673,
-                'slug' => 'podshipnik-stupicy-zadney-stupica-s-abs-6',
                 'code' => 'GS1D2615XB',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -21766,7 +20096,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1674,
-                'slug' => 'podshipnik-stupicy-peredney-s-abs-5',
                 'code' => 'C23626151D',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -21779,7 +20108,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1675,
-                'slug' => 'predohraniteli-18',
                 'code' => '997051315',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -21792,7 +20120,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1676,
-                'slug' => 'prikurivatel-17',
                 'code' => 'BBP366250',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -21805,7 +20132,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1677,
-                'slug' => 'protivotumannaya-fara-17',
                 'code' => 'GS1D51690B',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -21818,7 +20144,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1678,
-                'slug' => 'pruzhina-podveski-zadnyaya-17',
                 'code' => 'GAA928011A',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -21831,7 +20156,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1679,
-                'slug' => 'pruzhina-podveski-perednyaya-18',
                 'code' => 'GS1R34011',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -21844,7 +20168,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1680,
-                'slug' => 'radiator-kondicionera-17',
                 'code' => 'GSYF6148ZA',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -21857,7 +20180,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1681,
-                'slug' => 'radiator-ohlazhdeniya-dvigatelya-18',
                 'code' => 'LFY515SB0',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -21870,7 +20192,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1682,
-                'slug' => 'reyka-rulevaya-18',
                 'code' => 'GS1E32110B',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -21883,7 +20204,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1683,
-                'slug' => 'cep-grm-3',
                 'code' => 'LF0112201',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -21896,7 +20216,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1684,
-                'slug' => 'remen-privodnoy-18',
                 'code' => 'LF4J15909C',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -21909,7 +20228,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1685,
-                'slug' => 'reshetka-radiatora-16',
                 'code' => 'GS1D50710G',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -21922,7 +20240,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1686,
-                'slug' => 'rul-18',
                 'code' => 'GS1E32982D',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -21935,7 +20252,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1687,
-                'slug' => 'rychag-zadniy-poperechnyy-malyy-15',
                 'code' => 'GS1D28500A',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -21948,7 +20264,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1688,
-                'slug' => 'rychag-podveski-peredniy-pravyy-7',
                 'code' => 'GS1D34300L',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -21961,7 +20276,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1689,
-                'slug' => 'svecha-zazhiganiya-17',
                 'code' => 'LFY318110',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -21974,7 +20288,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1690,
-                'slug' => 'signal-zvukovoy-25',
                 'code' => 'GS1D6679YA',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -21987,7 +20300,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1691,
-                'slug' => 'starter-25',
                 'code' => 'LF4J18400',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22000,7 +20312,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1692,
-                'slug' => 'steklo-dveri-peredney-26',
                 'code' => 'GS1D595119D',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22013,7 +20324,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1693,
-                'slug' => 'steklo-lobovoe-s-datchikom-dozhdya-3',
                 'code' => 'GS1E63900A9D',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -22026,7 +20336,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1694,
-                'slug' => 'steklo-lobovoe-26',
                 'code' => 'GS1D63900B9D',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22039,7 +20348,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1695,
-                'slug' => 'stoyka-stabilizatora-perednyaya-26',
                 'code' => 'GS1D34170',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -22052,7 +20360,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1696,
-                'slug' => 'stupica-17',
                 'code' => 'GJ6A33061D',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -22065,7 +20372,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1697,
-                'slug' => 'sceplenie-disk-2',
                 'code' => 'LF0316460A',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -22078,7 +20384,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1698,
-                'slug' => 'termostat-26',
                 'code' => 'L33615170',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -22091,7 +20396,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1699,
-                'slug' => 'trubka-kondicionera-25',
                 'code' => 'GS1D61461B',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -22104,7 +20408,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1700,
-                'slug' => 'trubka-pechki-15',
                 'code' => 'GS1D6124XB',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22117,7 +20420,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1701,
-                'slug' => 'tyaga-rulevaya-26',
                 'code' => 'GS1D32240',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22130,7 +20432,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1702,
-                'slug' => 'fara-perednyaya-2',
                 'code' => 'GS1F510L0N',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -22143,7 +20444,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1703,
-                'slug' => 'filtr-vozdushnyy-26',
                 'code' => 'RF4F13Z409A',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -22156,7 +20456,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1704,
-                'slug' => 'filtr-maslyanyy-benzinovyy-dvigatel-26',
                 'code' => 'SHY114302',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -22169,7 +20468,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1705,
-                'slug' => 'filtr-salona-2',
                 'code' => 'GJ6A61P11A9B',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -22182,7 +20480,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1706,
-                'slug' => 'fonar-zadniy-26',
                 'code' => 'GS1F51160K',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -22195,7 +20492,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1707,
-                'slug' => 'shchetka-stekloochistitelya-zadnyaya-25',
                 'code' => 'GS1M67330',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -22208,7 +20504,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1708,
-                'slug' => 'akkumulyator-akb-27',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22221,7 +20516,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1709,
-                'slug' => 'maslo-motornoe-mazda-ultra-5w30-1l',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22234,7 +20528,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1710,
-                'slug' => 'maslo-motornoe-ford-formula-f-5w30-1l-1',
                 'code' => '14E8B8',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22247,7 +20540,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1711,
-                'slug' => 'nakonechnik-rulevoy-19',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22260,7 +20552,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1712,
-                'slug' => 'panel-perednyaya-19',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22273,7 +20564,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1713,
-                'slug' => 'panel-priborov-18',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22286,7 +20576,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1714,
-                'slug' => 'podshipnik-stupicy-zadney-stupica-s-abs-7',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22299,7 +20588,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1715,
-                'slug' => 'podshipnik-stupicy-peredney-s-abs-6',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22312,7 +20600,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1716,
-                'slug' => 'predohraniteli-19',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22325,7 +20612,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1717,
-                'slug' => 'prikurivatel-18',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22338,7 +20624,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1718,
-                'slug' => 'protivotumannaya-fara-18',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22351,7 +20636,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1719,
-                'slug' => 'pruzhina-podveski-zadnyaya-18',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22364,7 +20648,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1720,
-                'slug' => 'pruzhina-podveski-perednyaya-19',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22377,7 +20660,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1721,
-                'slug' => 'radiator-kondicionera-18',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22390,7 +20672,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1722,
-                'slug' => 'radiator-ohlazhdeniya-dvigatelya-19',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22403,7 +20684,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1723,
-                'slug' => 'reyka-rulevaya-19',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22416,7 +20696,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1724,
-                'slug' => 'cep-grm-4',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22429,7 +20708,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1725,
-                'slug' => 'remen-privodnoy-19',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22442,7 +20720,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1726,
-                'slug' => 'reshetka-radiatora-v-bamper-2',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22455,7 +20732,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1727,
-                'slug' => 'rul-19',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22468,7 +20744,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1728,
-                'slug' => 'rychag-zadniy-poperechnyy-malyy-16',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22481,7 +20756,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1729,
-                'slug' => 'rychag-podveski-peredniy-pravyy-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22494,7 +20768,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1730,
-                'slug' => 'svecha-zazhiganiya-18',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22507,7 +20780,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1731,
-                'slug' => 'signal-zvukovoy-26',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22520,7 +20792,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1732,
-                'slug' => 'starter-26',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22533,7 +20804,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1733,
-                'slug' => 'steklo-dveri-peredney-27',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22546,7 +20816,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1734,
-                'slug' => 'steklo-lobovoe-s-datchikom-dozhdya-4',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22559,7 +20828,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1735,
-                'slug' => 'steklo-lobovoe-27',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22572,7 +20840,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1736,
-                'slug' => 'stoyka-stabilizatora-perednyaya-27',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22585,7 +20852,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1737,
-                'slug' => 'stupica-18',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22598,7 +20864,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1738,
-                'slug' => 'sceplenie-disk-3',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22611,7 +20876,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1739,
-                'slug' => 'termostat-27',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22624,7 +20888,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1740,
-                'slug' => 'trubka-kondicionera-26',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22637,7 +20900,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1741,
-                'slug' => 'trubka-pechki-16',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22650,7 +20912,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1742,
-                'slug' => 'tyaga-rulevaya-27',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22663,7 +20924,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1743,
-                'slug' => 'fara-perednyaya-3',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22676,7 +20936,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1744,
-                'slug' => 'filtr-vozdushnyy-27',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22689,7 +20948,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1745,
-                'slug' => 'filtr-maslyanyy-benzinovyy-dvigatel-27',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22702,7 +20960,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1746,
-                'slug' => 'filtr-salona-3',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22715,7 +20972,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1747,
-                'slug' => 'fonar-zadniy-27',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22728,7 +20984,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1748,
-                'slug' => 'shchetka-stekloochistitelya-zadnyaya-26',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22741,7 +20996,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1749,
-                'slug' => 'akkumulyator-akb-28',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22754,7 +21008,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1750,
-                'slug' => 'amortizator-zadniy-18',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22767,7 +21020,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1751,
-                'slug' => 'amortizator-peredniy-18',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22780,7 +21032,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1752,
-                'slug' => 'bamper-zadniy-19',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22793,7 +21044,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1753,
-                'slug' => 'bamper-peredniy-19',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22806,7 +21056,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1754,
-                'slug' => 'benzobak-18',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22819,7 +21068,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1755,
-                'slug' => 'benzonasos-toplivnyy-nasos-v-sbore-18',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22832,7 +21080,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1756,
-                'slug' => 'blok-predohraniteley-19',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22845,7 +21092,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1757,
-                'slug' => 'ventilyator-pechki-19',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22858,7 +21104,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1758,
-                'slug' => 'generator-19',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22871,7 +21116,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1759,
-                'slug' => 'datchik-temperatury-19',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22884,7 +21128,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1760,
-                'slug' => 'dver-zadnyaya-19',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22897,7 +21140,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1761,
-                'slug' => 'dver-perednyaya-19',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22910,7 +21152,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1762,
-                'slug' => 'dvigatel-18',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22923,7 +21164,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1763,
-                'slug' => 'dvorniki-shchetki-s-o-komplekt-18',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22936,7 +21176,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1764,
-                'slug' => 'disk-kolesnyy-litoy-19',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22949,7 +21188,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1765,
-                'slug' => 'diski-tormoznye-zadnie-18',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22962,7 +21200,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1766,
-                'slug' => 'diski-tormoznye-perednie-19',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22975,7 +21212,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1767,
-                'slug' => 'zhidkost-tormoznaya-dot-4-1l-7',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -22988,7 +21224,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1768,
-                'slug' => 'zamok-dveri-19',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23001,7 +21236,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1769,
-                'slug' => 'zamok-kapota-19',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23014,7 +21248,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1770,
-                'slug' => 'zerkalo-levoe-19',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23027,7 +21260,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1771,
-                'slug' => 'kapot-19',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23040,7 +21272,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1772,
-                'slug' => 'katalizator-18',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23053,7 +21284,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1773,
-                'slug' => 'klyuch-zazhiganiya-19',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23066,7 +21296,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1774,
-                'slug' => 'knopka-steklopodemnika-19',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23079,7 +21308,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1775,
-                'slug' => 'kolodki-tormoznye-zadnie-diskovye-18',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23092,7 +21320,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1776,
-                'slug' => 'kolodki-tormoznye-perednie-19',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23105,7 +21332,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1777,
-                'slug' => 'korobka-avtomat-akpp-16',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23118,7 +21344,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1778,
-                'slug' => 'korobka-mehanicheskaya-mkpp-17',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23131,7 +21356,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1779,
-                'slug' => 'korpus-termostata-19',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23144,7 +21368,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1780,
-                'slug' => 'krylo-perednee-pravoe-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23157,7 +21380,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1781,
-                'slug' => 'kryshka-bagazhnika-18',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23170,7 +21392,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1782,
-                'slug' => 'lampochka-blizhnego-sveta-19',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23183,7 +21404,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1783,
-                'slug' => 'magnitola-19',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23196,7 +21416,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1784,
-                'slug' => 'maslo-mehanicheskoy-korobki-peredach-mkpp-6',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23209,7 +21428,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1785,
-                'slug' => 'maslo-motornoe-mazda-ultra-5w30-5l-3',
                 'code' => '830077280',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23222,7 +21440,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1786,
-                'slug' => 'maslo-motornoe-mazda-ultra-5w30-1l-3',
                 'code' => '830077279',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23235,7 +21452,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1787,
-                'slug' => 'maslo-motornoe-ford-formula-f-5w30-1l-2',
                 'code' => '14E8B8',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23248,7 +21464,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1788,
-                'slug' => 'nakonechnik-rulevoy-20',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23261,7 +21476,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1789,
-                'slug' => 'panel-perednyaya-20',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23274,7 +21488,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1790,
-                'slug' => 'panel-priborov-19',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23287,7 +21500,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1791,
-                'slug' => 'podshipnik-stupicy-zadney-stupica-s-abs-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23300,7 +21512,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1792,
-                'slug' => 'podshipnik-stupicy-peredney-s-abs-7',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23313,7 +21524,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1793,
-                'slug' => 'predohraniteli-20',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23326,7 +21536,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1794,
-                'slug' => 'prikurivatel-19',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23339,7 +21548,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1795,
-                'slug' => 'protivotumannaya-fara-19',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23352,7 +21560,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1796,
-                'slug' => 'pruzhina-podveski-zadnyaya-19',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23365,7 +21572,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1797,
-                'slug' => 'pruzhina-podveski-perednyaya-20',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23378,7 +21584,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1798,
-                'slug' => 'radiator-kondicionera-19',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23391,7 +21596,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1799,
-                'slug' => 'radiator-ohlazhdeniya-dvigatelya-20',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23404,7 +21608,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1800,
-                'slug' => 'reyka-rulevaya-20',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23417,7 +21620,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1801,
-                'slug' => 'cep-grm-5',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23430,7 +21632,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1802,
-                'slug' => 'remen-privodnoy-20',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23443,7 +21644,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1803,
-                'slug' => 'reshetka-radiatora-v-bamper-3',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23456,7 +21656,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1804,
-                'slug' => 'rul-20',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23469,7 +21668,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1805,
-                'slug' => 'rychag-zadniy-poperechnyy-malyy-17',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23482,7 +21680,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1806,
-                'slug' => 'rychag-podveski-peredniy-pravyy-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23495,7 +21692,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1807,
-                'slug' => 'svecha-zazhiganiya-19',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23508,7 +21704,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1808,
-                'slug' => 'signal-zvukovoy-27',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23521,7 +21716,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1809,
-                'slug' => 'starter-27',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23534,7 +21728,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1810,
-                'slug' => 'steklo-dveri-peredney-28',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23547,7 +21740,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1811,
-                'slug' => 'steklo-lobovoe-s-datchikom-dozhdya-5',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23560,7 +21752,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1812,
-                'slug' => 'steklo-lobovoe-28',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23573,7 +21764,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1813,
-                'slug' => 'stoyka-stabilizatora-perednyaya-28',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23586,7 +21776,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1814,
-                'slug' => 'stupica-19',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23599,7 +21788,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1815,
-                'slug' => 'sceplenie-disk-4',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23612,7 +21800,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1816,
-                'slug' => 'termostat-28',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23625,7 +21812,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1817,
-                'slug' => 'trubka-kondicionera-27',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23638,7 +21824,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1818,
-                'slug' => 'trubka-pechki-17',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23651,7 +21836,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1819,
-                'slug' => 'tyaga-rulevaya-28',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23664,7 +21848,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1820,
-                'slug' => 'fara-perednyaya-4',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23677,7 +21860,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1821,
-                'slug' => 'filtr-vozdushnyy-28',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23690,7 +21872,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1822,
-                'slug' => 'filtr-maslyanyy-benzinovyy-dvigatel-28',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23703,7 +21884,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1823,
-                'slug' => 'filtr-salona-4',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23716,7 +21896,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1824,
-                'slug' => 'fonar-zadniy-28',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23729,7 +21908,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1825,
-                'slug' => 'shchetka-stekloochistitelya-zadnyaya-27',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23742,7 +21920,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1826,
-                'slug' => 'akkumulyator-akb-29',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23755,7 +21932,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1827,
-                'slug' => 'amortizator-zadniy-19',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23768,7 +21944,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1828,
-                'slug' => 'amortizator-peredniy-19',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23781,7 +21956,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1829,
-                'slug' => 'bamper-zadniy-20',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23794,7 +21968,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1830,
-                'slug' => 'bamper-peredniy-20',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23807,7 +21980,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1831,
-                'slug' => 'benzobak-19',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23820,7 +21992,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1832,
-                'slug' => 'benzonasos-toplivnyy-nasos-v-sbore-19',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23833,7 +22004,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1833,
-                'slug' => 'blok-predohraniteley-20',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23846,7 +22016,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1834,
-                'slug' => 'ventilyator-pechki-20',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23859,7 +22028,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1835,
-                'slug' => 'generator-20',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23872,7 +22040,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1836,
-                'slug' => 'datchik-temperatury-20',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23885,7 +22052,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1837,
-                'slug' => 'dver-zadnyaya-20',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23898,7 +22064,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1838,
-                'slug' => 'dver-perednyaya-20',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23911,7 +22076,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1839,
-                'slug' => 'dvigatel-19',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23924,7 +22088,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1840,
-                'slug' => 'dvorniki-shchetki-s-o-komplekt-19',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23937,7 +22100,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1841,
-                'slug' => 'disk-kolesnyy-litoy-20',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23950,7 +22112,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1842,
-                'slug' => 'diski-tormoznye-zadnie-19',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23963,7 +22124,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1843,
-                'slug' => 'diski-tormoznye-perednie-20',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23976,7 +22136,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1844,
-                'slug' => 'zhidkost-tormoznaya-dot-4-1l-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -23989,7 +22148,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1845,
-                'slug' => 'zamok-dveri-20',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24002,7 +22160,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1846,
-                'slug' => 'zamok-kapota-20',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24015,7 +22172,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1847,
-                'slug' => 'zerkalo-levoe-20',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24028,7 +22184,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1848,
-                'slug' => 'kapot-20',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24041,7 +22196,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1849,
-                'slug' => 'katalizator-19',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24054,7 +22208,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1850,
-                'slug' => 'klyuch-zazhiganiya-20',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24067,7 +22220,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1851,
-                'slug' => 'knopka-steklopodemnika-20',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24080,7 +22232,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1852,
-                'slug' => 'kolodki-tormoznye-zadnie-diskovye-19',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24093,7 +22244,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1853,
-                'slug' => 'kolodki-tormoznye-perednie-20',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24106,7 +22256,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1854,
-                'slug' => 'korobka-avtomat-akpp-17',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24119,7 +22268,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1855,
-                'slug' => 'korobka-mehanicheskaya-mkpp-18',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24132,7 +22280,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1856,
-                'slug' => 'korpus-termostata-20',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24145,7 +22292,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1857,
-                'slug' => 'krylo-perednee-pravoe-14',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24158,7 +22304,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1858,
-                'slug' => 'kryshka-bagazhnika-19',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24171,7 +22316,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1859,
-                'slug' => 'lampochka-blizhnego-sveta-20',
                 'code' => 'N10320102',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24184,7 +22328,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1860,
-                'slug' => 'magnitola-20',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24197,7 +22340,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1861,
-                'slug' => 'maslo-mehanicheskoy-korobki-peredach-mkpp-7',
                 'code' => 'G052512A2',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24210,7 +22352,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1862,
-                'slug' => 'maslo-motornoe-castrol-long-life-iii-vw-5w30-1l-4',
                 'code' => '3750CL',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -24223,7 +22364,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1863,
-                'slug' => 'maslo-motornoe-long-life-iii-vw-5w30-1l-4',
                 'code' => 'G052195M2',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24236,7 +22376,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1864,
-                'slug' => 'maslo-motornoe-long-life-iii-vw-5w30-5l-4',
                 'code' => 'G052195M4',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24249,7 +22388,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1865,
-                'slug' => 'nakonechnik-rulevoy-21',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24262,7 +22400,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1866,
-                'slug' => 'panel-perednyaya-21',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24275,7 +22412,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1867,
-                'slug' => 'panel-priborov-20',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24288,7 +22424,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1868,
-                'slug' => 'podshipnik-stupicy-zadney-stupica-s-abs-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24301,7 +22436,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1869,
-                'slug' => 'podshipnik-stupicy-peredney-stupica-s-abs-4',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24314,7 +22448,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1870,
-                'slug' => 'predohraniteli-21',
                 'code' => 'N01713111',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24327,7 +22460,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1871,
-                'slug' => 'prikurivatel-20',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24340,7 +22472,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1872,
-                'slug' => 'protivotumannaya-fara-20',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24353,7 +22484,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1873,
-                'slug' => 'pruzhina-podveski-zadnyaya-20',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24366,7 +22496,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1874,
-                'slug' => 'pruzhina-podveski-perednyaya-21',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24379,7 +22508,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1875,
-                'slug' => 'radiator-kondicionera-20',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24392,7 +22520,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1876,
-                'slug' => 'radiator-ohlazhdeniya-dvigatelya-21',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24405,7 +22532,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1877,
-                'slug' => 'reyka-rulevaya-21',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24418,7 +22544,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1878,
-                'slug' => 'remen-grm-k-t-s-rolikami-4',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24431,7 +22556,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1879,
-                'slug' => 'remen-privodnoy-21',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24444,7 +22568,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1880,
-                'slug' => 'reshetka-radiatora-17',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24457,7 +22580,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1881,
-                'slug' => 'rul-21',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24470,7 +22592,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1882,
-                'slug' => 'rychag-zadniy-poperechnyy-malyy-18',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24483,7 +22604,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1883,
-                'slug' => 'rychag-podveski-peredniy-pravyy-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24496,7 +22616,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1884,
-                'slug' => 'svecha-zazhiganiya-20',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24509,7 +22628,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1885,
-                'slug' => 'signal-zvukovoy-28',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24522,7 +22640,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1886,
-                'slug' => 'starter-28',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24535,7 +22652,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1887,
-                'slug' => 'steklo-dveri-peredney-29',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24548,7 +22664,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1888,
-                'slug' => 'steklo-lobovoe-s-datchikom-dozhdya-6',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24561,7 +22676,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1889,
-                'slug' => 'steklo-lobovoe-29',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24574,7 +22688,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1890,
-                'slug' => 'stoyka-stabilizatora-perednyaya-29',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24587,7 +22700,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1891,
-                'slug' => 'stupica-20',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24600,7 +22712,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1892,
-                'slug' => 'sceplenie-disk-s-korzinoy-11',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24613,7 +22724,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1893,
-                'slug' => 'termostat-29',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24626,7 +22736,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1894,
-                'slug' => 'trubka-kondicionera-28',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24639,7 +22748,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1895,
-                'slug' => 'trubka-pechki-18',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24652,7 +22760,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1896,
-                'slug' => 'tyaga-rulevaya-29',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24665,7 +22772,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1897,
-                'slug' => 'fara-perednyaya-pravaya-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24678,7 +22784,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1898,
-                'slug' => 'filtr-vozdushnyy-29',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24691,7 +22796,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1899,
-                'slug' => 'filtr-maslyanyy-benzinovyy-dvigatel-29',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24704,7 +22808,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1900,
-                'slug' => 'filtr-salona-ugolnyy-12',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24717,7 +22820,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1901,
-                'slug' => 'filtr-toplivnyy-11',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24730,7 +22832,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1902,
-                'slug' => 'fonar-zadniy-29',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24743,7 +22844,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1903,
-                'slug' => 'shchetka-stekloochistitelya-zadnyaya-28',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24756,7 +22856,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1904,
-                'slug' => 'akkumulyator-akb-30',
                 'code' => '000915105DC',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24769,7 +22868,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1905,
-                'slug' => 'amortizator-zadniy-20',
                 'code' => '1K0513029EN',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24782,7 +22880,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1906,
-                'slug' => 'amortizator-peredniy-20',
                 'code' => '1K0413031BF',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -24795,7 +22892,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1907,
-                'slug' => 'bamper-zadniy-21',
                 'code' => '1Z5807417',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -24808,7 +22904,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1908,
-                'slug' => 'bamper-peredniy-21',
                 'code' => '1Z0807221M',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -24821,7 +22916,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1909,
-                'slug' => 'benzobak-20',
                 'code' => '1K0201060GL',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -24834,7 +22928,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1910,
-                'slug' => 'benzonasos-toplivnyy-nasos-v-sbore-20',
                 'code' => '1K0919051DB',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24847,7 +22940,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1911,
-                'slug' => 'blok-predohraniteley-21',
                 'code' => '1K1941824',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24860,7 +22952,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1912,
-                'slug' => 'ventilyator-pechki-21',
                 'code' => '1K1819015C',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24873,7 +22964,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1913,
-                'slug' => 'generator-21',
                 'code' => '06F903023E',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -24886,7 +22976,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1914,
-                'slug' => 'datchik-temperatury-21',
                 'code' => '06A919501A',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -24899,7 +22988,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1915,
-                'slug' => 'dver-zadnyaya-21',
                 'code' => '1Z5833051',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -24912,7 +23000,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1916,
-                'slug' => 'dver-perednyaya-21',
                 'code' => '1Z0831051',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24925,7 +23012,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1917,
-                'slug' => 'dvigatel-20',
                 'code' => '03F100031F',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -24938,7 +23024,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1918,
-                'slug' => 'dvorniki-shchetki-s-o-komplekt-20',
                 'code' => '1Z1998001',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -24951,7 +23036,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1919,
-                'slug' => 'disk-kolesnyy-litoy-21',
                 'code' => '1Z0601025R7ZS',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -24964,7 +23048,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1920,
-                'slug' => 'diski-tormoznye-zadnie-20',
                 'code' => '1K0615601AB',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -24977,7 +23060,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1921,
-                'slug' => 'diski-tormoznye-perednie-21',
                 'code' => '1K0615301T',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -24990,7 +23072,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1922,
-                'slug' => 'zhidkost-tormoznaya-dot-4-1l-9',
                 'code' => 'B000750M3',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -25003,7 +23084,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1923,
-                'slug' => 'zamok-dveri-21',
                 'code' => '3D1837015AP',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -25016,7 +23096,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1924,
-                'slug' => 'zamok-kapota-21',
                 'code' => '2H0823509A',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -25029,7 +23108,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1925,
-                'slug' => 'zerkalo-levoe-21',
                 'code' => '1Z1857507M',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -25042,7 +23120,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1926,
-                'slug' => 'kapot-21',
                 'code' => '1Z0823031B',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -25055,7 +23132,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1927,
-                'slug' => 'katalizator-20',
                 'code' => '1K0254201AX',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -25068,7 +23144,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1928,
-                'slug' => 'klyuch-zazhiganiya-21',
                 'code' => '3T0837202HINB',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -25081,7 +23156,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1929,
-                'slug' => 'knopka-steklopodemnika-21',
                 'code' => '7L6959855BREH',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -25094,7 +23168,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1930,
-                'slug' => 'kolodki-tormoznye-zadnie-diskovye-20',
                 'code' => '1K0698451J',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -25107,7 +23180,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1931,
-                'slug' => 'kolodki-tormoznye-perednie-21',
                 'code' => '5K0698151',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -25120,7 +23192,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1932,
-                'slug' => 'korobka-avtomat-akpp-18',
                 'code' => '02E300053B00U',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -25133,7 +23204,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1933,
-                'slug' => 'korobka-mehanicheskaya-mkpp-19',
                 'code' => '0AF300040P',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -25146,7 +23216,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1934,
-                'slug' => 'korpus-termostata-21',
                 'code' => '03L121121A',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -25159,7 +23228,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1935,
-                'slug' => 'krylo-perednee-pravoe-15',
                 'code' => '1Z0821106C',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -25172,7 +23240,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1936,
-                'slug' => 'kryshka-bagazhnika-20',
                 'code' => '1Z5827023E',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -25185,7 +23252,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1937,
-                'slug' => 'lampochka-blizhnego-sveta-21',
                 'code' => 'N10320102',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -25198,7 +23264,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1938,
-                'slug' => 'magnitola-21',
                 'code' => '1Z0035152E',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -25211,7 +23276,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1939,
-                'slug' => 'maslo-mehanicheskoy-korobki-peredach-mkpp-8',
                 'code' => 'G 052512A2',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -25224,7 +23288,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1940,
-                'slug' => 'maslo-motornoe-castrol-long-life-iii-vw-5w30-1l-m',
                 'code' => '3750CL',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -25237,7 +23300,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1941,
-                'slug' => 'maslo-motornoe-long-life-iii-vw-5w30-1l-5',
                 'code' => 'GR52195M2',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -25250,7 +23312,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1942,
-                'slug' => 'maslo-motornoe-long-life-iii-vw-5w30-5l-5',
                 'code' => 'G052195M4',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -25263,7 +23324,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1943,
-                'slug' => 'nakonechnik-rulevoy-22',
                 'code' => '1K0423812K',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -25276,7 +23336,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1944,
-                'slug' => 'panel-perednyaya-22',
                 'code' => '1Z0805591J',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -25289,7 +23348,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1945,
-                'slug' => 'panel-priborov-21',
                 'code' => '1Z0920803DKD0',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -25302,7 +23360,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1946,
-                'slug' => 'podshipnik-stupicy-zadney-stupica-s-abs-10',
                 'code' => '1T0598611B',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -25315,7 +23372,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1947,
-                'slug' => 'podshipnik-stupicy-peredney-stupica-s-abs-5',
                 'code' => '5K0498621',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -25328,7 +23384,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1948,
-                'slug' => 'predohraniteli-22',
                 'code' => 'N01713111',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -25341,7 +23396,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1949,
-                'slug' => 'prikurivatel-21',
                 'code' => '1J09193079B9',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -25354,7 +23408,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1950,
-                'slug' => 'protivotumannaya-fara-21',
                 'code' => '1Z0941701D',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -25367,7 +23420,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1951,
-                'slug' => 'pruzhina-podveski-zadnyaya-21',
                 'code' => '1K0511115BC',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -25380,7 +23432,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1952,
-                'slug' => 'pruzhina-podveski-perednyaya-22',
                 'code' => '1K0411105BC',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -25393,7 +23444,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1953,
-                'slug' => 'radiator-kondicionera-21',
                 'code' => '1K0820411Q',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -25406,7 +23456,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1954,
-                'slug' => 'radiator-ohlazhdeniya-dvigatelya-22',
                 'code' => '1K0121251CL',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -25419,7 +23468,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1955,
-                'slug' => 'reyka-rulevaya-22',
                 'code' => '1K1423055MX',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -25432,7 +23480,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1956,
-                'slug' => 'remen-grm-k-t-s-rolikami-5',
                 'code' => '038198119A',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -25445,7 +23492,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1957,
-                'slug' => 'remen-privodnoy-22',
                 'code' => '03G903137B',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -25458,7 +23504,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1958,
-                'slug' => 'reshetka-radiatora-18',
                 'code' => '1Z0853668 B41',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -25471,7 +23516,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1959,
-                'slug' => 'rul-22',
                 'code' => '3T04190911QB',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -25484,7 +23528,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1960,
-                'slug' => 'rychag-zadniy-poperechnyy-malyy-19',
                 'code' => '1K0501529J',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -25497,7 +23540,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1961,
-                'slug' => 'rychag-podveski-peredniy-pravyy-11',
                 'code' => '1K0407152BC',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -25510,7 +23552,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1962,
-                'slug' => 'svecha-zazhiganiya-21',
                 'code' => '06H905621',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -25523,7 +23564,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1963,
-                'slug' => 'signal-zvukovoy-29',
                 'code' => '5C0951223C',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -25536,7 +23576,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1964,
-                'slug' => 'starter-29',
                 'code' => '02Z911023F',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -25549,7 +23588,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1965,
-                'slug' => 'steklo-dveri-peredney-30',
                 'code' => '1Z0845201',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -25562,7 +23600,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1966,
-                'slug' => 'steklo-lobovoe-s-datchikom-dozhdya-7',
                 'code' => '1Z0845011BK',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -25575,7 +23612,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1967,
-                'slug' => 'steklo-lobovoe-30',
                 'code' => '1Z0845011BH',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -25588,7 +23624,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1968,
-                'slug' => 'stoyka-stabilizatora-perednyaya-30',
                 'code' => '1K0411315R',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -25601,7 +23636,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1969,
-                'slug' => 'stupica-21',
                 'code' => '5K0498621',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -25614,7 +23648,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1970,
-                'slug' => 'sceplenie-disk-s-korzinoy-12',
                 'code' => '06J141015H',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -25627,7 +23660,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1971,
-                'slug' => 'termostat-30',
                 'code' => '44121113',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -25640,7 +23672,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1972,
-                'slug' => 'trubka-kondicionera-29',
                 'code' => '1K0820721BQ',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -25653,7 +23684,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1973,
-                'slug' => 'trubka-pechki-19',
                 'code' => '1K0122157HJ',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -25666,7 +23696,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1974,
-                'slug' => 'tyaga-rulevaya-30',
                 'code' => '1K0423810A',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -25679,7 +23708,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1975,
-                'slug' => 'fara-perednyaya-pravaya-14',
                 'code' => '1Z1941017P',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -25692,7 +23720,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1976,
-                'slug' => 'filtr-vozdushnyy-30',
                 'code' => '036129620J',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -25705,7 +23732,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1977,
-                'slug' => 'filtr-maslyanyy-benzinovyy-dvigatel-30',
                 'code' => '03C115561H',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -25718,7 +23744,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1978,
-                'slug' => 'filtr-salona-ugolnyy-13',
                 'code' => '1K1819653B',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -25731,7 +23756,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1979,
-                'slug' => 'filtr-toplivnyy-12',
                 'code' => '6Q0201051C',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -25744,7 +23768,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1980,
-                'slug' => 'fonar-zadniy-30',
                 'code' => '1Z5945111B',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -25757,7 +23780,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1981,
-                'slug' => 'shchetka-stekloochistitelya-zadnyaya-29',
                 'code' => '7E0955425',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -25770,7 +23792,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1982,
-                'slug' => 'akkumulyator-akb-31',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -25783,7 +23804,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1983,
-                'slug' => 'amortizator-zadniy-21',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -25796,7 +23816,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1984,
-                'slug' => 'amortizator-peredniy-21',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -25809,7 +23828,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1985,
-                'slug' => 'bamper-zadniy-22',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -25822,7 +23840,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1986,
-                'slug' => 'bamper-peredniy-22',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -25835,7 +23852,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1987,
-                'slug' => 'benzobak-21',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -25848,7 +23864,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1988,
-                'slug' => 'benzonasos-toplivnyy-nasos-v-sbore-21',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -25861,7 +23876,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1989,
-                'slug' => 'blok-predohraniteley-22',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -25874,7 +23888,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1990,
-                'slug' => 'ventilyator-pechki-22',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -25887,7 +23900,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1991,
-                'slug' => 'generator-22',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -25900,7 +23912,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1992,
-                'slug' => 'datchik-temperatury-22',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -25913,7 +23924,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1993,
-                'slug' => 'dver-zadnyaya-22',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -25926,7 +23936,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1994,
-                'slug' => 'dver-perednyaya-22',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -25939,7 +23948,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1995,
-                'slug' => 'dvigatel-21',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -25952,7 +23960,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1996,
-                'slug' => 'dvorniki-shchetki-s-o-komplekt-21',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -25965,7 +23972,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1997,
-                'slug' => 'disk-kolesnyy-litoy-22',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -25978,7 +23984,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1998,
-                'slug' => 'diski-tormoznye-zadnie-21',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -25991,7 +23996,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 1999,
-                'slug' => 'diski-tormoznye-perednie-22',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26004,7 +24008,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2000,
-                'slug' => 'zhidkost-tormoznaya-dot-4-1l-10',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26017,7 +24020,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2001,
-                'slug' => 'zamok-dveri-22',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26030,7 +24032,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2002,
-                'slug' => 'zamok-kapota-22',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26043,7 +24044,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2003,
-                'slug' => 'zerkalo-levoe-22',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26056,7 +24056,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2004,
-                'slug' => 'kapot-22',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26069,7 +24068,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2005,
-                'slug' => 'katalizator-21',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26082,7 +24080,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2006,
-                'slug' => 'klyuch-zazhiganiya-22',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26095,7 +24092,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2007,
-                'slug' => 'knopka-steklopodemnika-22',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26108,7 +24104,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2008,
-                'slug' => 'kolodki-tormoznye-zadnie-diskovye-21',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26121,7 +24116,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2009,
-                'slug' => 'kolodki-tormoznye-perednie-22',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26134,7 +24128,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2010,
-                'slug' => 'korobka-avtomat-akpp-19',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26147,7 +24140,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2011,
-                'slug' => 'korobka-mehanicheskaya-mkpp-20',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26160,7 +24152,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2012,
-                'slug' => 'korpus-termostata-22',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26173,7 +24164,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2013,
-                'slug' => 'krylo-perednee-pravoe-16',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26186,7 +24176,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2014,
-                'slug' => 'kryshka-bagazhnika-21',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26199,7 +24188,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2015,
-                'slug' => 'lampochka-blizhnego-sveta-22',
                 'code' => 'N10320102',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26212,7 +24200,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2016,
-                'slug' => 'magnitola-22',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26225,7 +24212,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2017,
-                'slug' => 'maslo-mehanicheskoy-korobki-peredach-mkpp-9',
                 'code' => 'G 052512A2',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26238,7 +24224,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2018,
-                'slug' => 'maslo-motornoe-castrol-long-life-iii-vw-5w30-1l-5',
                 'code' => '3750CL',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -26251,7 +24236,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2019,
-                'slug' => 'maslo-motornoe-long-life-iii-vw-5w30-1l-6',
                 'code' => 'G052195M2',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26264,7 +24248,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2020,
-                'slug' => 'maslo-motornoe-long-life-iii-vw-5w30-5l-6',
                 'code' => 'G052195M4',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26277,7 +24260,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2021,
-                'slug' => 'nakonechnik-rulevoy-23',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26290,7 +24272,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2022,
-                'slug' => 'panel-perednyaya-23',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26303,7 +24284,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2023,
-                'slug' => 'panel-priborov-22',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26316,7 +24296,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2024,
-                'slug' => 'podshipnik-stupicy-zadney-stupica-s-abs-11',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26329,7 +24308,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2025,
-                'slug' => 'podshipnik-stupicy-peredney-stupica-s-abs-6',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26342,7 +24320,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2026,
-                'slug' => 'predohraniteli-23',
                 'code' => 'N01713111',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26355,7 +24332,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2027,
-                'slug' => 'prikurivatel-22',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26368,7 +24344,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2028,
-                'slug' => 'protivotumannaya-fara-22',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26381,7 +24356,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2029,
-                'slug' => 'pruzhina-podveski-zadnyaya-22',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26394,7 +24368,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2030,
-                'slug' => 'pruzhina-podveski-perednyaya-23',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26407,7 +24380,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2031,
-                'slug' => 'radiator-kondicionera-22',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26420,7 +24392,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2032,
-                'slug' => 'radiator-ohlazhdeniya-dvigatelya-23',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26433,7 +24404,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2033,
-                'slug' => 'reyka-rulevaya-23',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26446,7 +24416,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2034,
-                'slug' => 'remen-grm-k-t-s-rolikami-6',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26459,7 +24428,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2035,
-                'slug' => 'remen-privodnoy-23',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26472,7 +24440,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2036,
-                'slug' => 'reshetka-radiatora-19',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26485,7 +24452,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2037,
-                'slug' => 'rul-23',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26498,7 +24464,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2038,
-                'slug' => 'rychag-zadniy-poperechnyy-malyy-20',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26511,7 +24476,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2039,
-                'slug' => 'rychag-podveski-peredniy-pravyy-12',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26524,7 +24488,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2040,
-                'slug' => 'svecha-zazhiganiya-22',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26537,7 +24500,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2041,
-                'slug' => 'signal-zvukovoy-30',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26550,7 +24512,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2042,
-                'slug' => 'starter-30',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26563,7 +24524,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2043,
-                'slug' => 'steklo-dveri-peredney-31',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26576,7 +24536,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2044,
-                'slug' => 'steklo-lobovoe-s-datchikom-dozhdya-8',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26589,7 +24548,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2045,
-                'slug' => 'steklo-lobovoe-31',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26602,7 +24560,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2046,
-                'slug' => 'stoyka-stabilizatora-perednyaya-31',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26615,7 +24572,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2047,
-                'slug' => 'stupica-22',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26628,7 +24584,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2048,
-                'slug' => 'sceplenie-disk-s-korzinoy-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26641,7 +24596,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2049,
-                'slug' => 'termostat-31',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26654,7 +24608,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2050,
-                'slug' => 'trubka-kondicionera-30',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26667,7 +24620,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2051,
-                'slug' => 'trubka-pechki-20',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26680,7 +24632,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2052,
-                'slug' => 'tyaga-rulevaya-31',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26693,7 +24644,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2053,
-                'slug' => 'fara-perednyaya-pravaya-15',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26706,7 +24656,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2054,
-                'slug' => 'filtr-vozdushnyy-31',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26719,7 +24668,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2055,
-                'slug' => 'filtr-maslyanyy-benzinovyy-dvigatel-31',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26732,7 +24680,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2056,
-                'slug' => 'filtr-salona-ugolnyy-14',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26745,7 +24692,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2057,
-                'slug' => 'filtr-toplivnyy-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26758,7 +24704,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2058,
-                'slug' => 'fonar-zadniy-31',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26771,7 +24716,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2059,
-                'slug' => 'shchetka-stekloochistitelya-zadnyaya-30',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26784,7 +24728,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2060,
-                'slug' => 'akkumulyator-akb-32',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26797,7 +24740,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2061,
-                'slug' => 'amortizator-zadniy-22',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26810,7 +24752,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2062,
-                'slug' => 'amortizator-peredniy-22',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26823,7 +24764,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2063,
-                'slug' => 'bamper-zadniy-23',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26836,7 +24776,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2064,
-                'slug' => 'bamper-peredniy-23',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26849,7 +24788,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2065,
-                'slug' => 'benzobak-22',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26862,7 +24800,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2066,
-                'slug' => 'benzonasos-toplivnyy-nasos-v-sbore-22',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26875,7 +24812,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2067,
-                'slug' => 'blok-predohraniteley-23',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26888,7 +24824,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2068,
-                'slug' => 'ventilyator-pechki-23',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26901,7 +24836,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2069,
-                'slug' => 'generator-23',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26914,7 +24848,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2070,
-                'slug' => 'datchik-temperatury-23',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26927,7 +24860,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2071,
-                'slug' => 'dver-zadnyaya-23',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26940,7 +24872,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2072,
-                'slug' => 'dver-perednyaya-23',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26953,7 +24884,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2073,
-                'slug' => 'dvigatel-22',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26966,7 +24896,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2074,
-                'slug' => 'dvorniki-shchetki-s-o-komplekt-22',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26979,7 +24908,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2075,
-                'slug' => 'disk-kolesnyy-litoy-23',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -26992,7 +24920,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2076,
-                'slug' => 'diski-tormoznye-zadnie-22',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27005,7 +24932,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2077,
-                'slug' => 'diski-tormoznye-perednie-23',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27018,7 +24944,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2078,
-                'slug' => 'zhidkost-tormoznaya-dot-4-1l-11',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27031,7 +24956,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2079,
-                'slug' => 'zamok-dveri-23',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27044,7 +24968,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2080,
-                'slug' => 'zamok-kapota-23',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27057,7 +24980,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2081,
-                'slug' => 'zerkalo-levoe-23',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27070,7 +24992,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2082,
-                'slug' => 'kapot-23',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27083,7 +25004,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2083,
-                'slug' => 'katalizator-22',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27096,7 +25016,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2084,
-                'slug' => 'klyuch-zazhiganiya-23',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27109,7 +25028,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2085,
-                'slug' => 'knopka-steklopodemnika-23',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27122,7 +25040,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2086,
-                'slug' => 'kolodki-tormoznye-zadnie-diskovye-22',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27135,7 +25052,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2087,
-                'slug' => 'kolodki-tormoznye-perednie-23',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27148,7 +25064,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2088,
-                'slug' => 'korobka-avtomat-akpp-20',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27161,7 +25076,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2089,
-                'slug' => 'korobka-mehanicheskaya-mkpp-21',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27174,7 +25088,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2090,
-                'slug' => 'korpus-termostata-23',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27187,7 +25100,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2091,
-                'slug' => 'krylo-perednee-pravoe-17',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27200,7 +25112,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2092,
-                'slug' => 'kryshka-bagazhnika-22',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27213,7 +25124,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2093,
-                'slug' => 'lampochka-blizhnego-sveta-23',
                 'code' => 'N10320102',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27226,7 +25136,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2094,
-                'slug' => 'magnitola-23',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27239,7 +25148,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2095,
-                'slug' => 'maslo-mehanicheskoy-korobki-peredach-mkpp-10',
                 'code' => 'G052512A2',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27252,7 +25160,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2096,
-                'slug' => 'maslo-motornoe-castrol-long-life-iii-vw-5w30-1l-6',
                 'code' => '3750CL',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -27265,7 +25172,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2097,
-                'slug' => 'maslo-motornoe-long-life-iii-vw-5w30-1l-7',
                 'code' => 'G052195M2',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27278,7 +25184,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2098,
-                'slug' => 'maslo-motornoe-long-life-iii-vw-5w30-5l-7',
                 'code' => 'G052195M4',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27291,7 +25196,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2099,
-                'slug' => 'nakonechnik-rulevoy-24',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27304,7 +25208,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2100,
-                'slug' => 'panel-perednyaya-24',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27317,7 +25220,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2101,
-                'slug' => 'panel-priborov-23',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27330,7 +25232,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2102,
-                'slug' => 'podshipnik-stupicy-zadney-stupica-s-abs-12',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27343,7 +25244,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2103,
-                'slug' => 'podshipnik-stupicy-peredney-stupica-s-abs-7',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27356,7 +25256,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2104,
-                'slug' => 'predohraniteli-24',
                 'code' => 'N01713111',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27369,7 +25268,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2105,
-                'slug' => 'prikurivatel-23',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27382,7 +25280,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2106,
-                'slug' => 'protivotumannaya-fara-23',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27395,7 +25292,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2107,
-                'slug' => 'pruzhina-podveski-zadnyaya-23',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27408,7 +25304,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2108,
-                'slug' => 'pruzhina-podveski-perednyaya-24',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27421,7 +25316,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2109,
-                'slug' => 'radiator-kondicionera-23',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27434,7 +25328,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2110,
-                'slug' => 'radiator-ohlazhdeniya-dvigatelya-24',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27447,7 +25340,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2111,
-                'slug' => 'reyka-rulevaya-24',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27460,7 +25352,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2112,
-                'slug' => 'remen-grm-k-t-s-rolikami-7',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27473,7 +25364,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2113,
-                'slug' => 'remen-privodnoy-24',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27486,7 +25376,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2114,
-                'slug' => 'reshetka-radiatora-20',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27499,7 +25388,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2115,
-                'slug' => 'rul-24',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27512,7 +25400,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2116,
-                'slug' => 'rychag-zadniy-poperechnyy-malyy-21',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27525,7 +25412,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2117,
-                'slug' => 'rychag-podveski-peredniy-pravyy-13',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27538,7 +25424,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2118,
-                'slug' => 'svecha-zazhiganiya-23',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27551,7 +25436,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2119,
-                'slug' => 'signal-zvukovoy-31',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27564,7 +25448,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2120,
-                'slug' => 'starter-31',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27577,7 +25460,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2121,
-                'slug' => 'steklo-dveri-peredney-32',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27590,7 +25472,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2122,
-                'slug' => 'steklo-lobovoe-s-datchikom-dozhdya-9',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27603,7 +25484,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2123,
-                'slug' => 'steklo-lobovoe-32',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27616,7 +25496,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2124,
-                'slug' => 'stoyka-stabilizatora-perednyaya-32',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27629,7 +25508,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2125,
-                'slug' => 'stupica-23',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27642,7 +25520,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2126,
-                'slug' => 'sceplenie-disk-s-korzinoy-14',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27655,7 +25532,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2127,
-                'slug' => 'termostat-32',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27668,7 +25544,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2128,
-                'slug' => 'trubka-kondicionera-31',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27681,7 +25556,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2129,
-                'slug' => 'trubka-pechki-21',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27694,7 +25568,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2130,
-                'slug' => 'tyaga-rulevaya-32',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27707,7 +25580,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2131,
-                'slug' => 'fara-perednyaya-pravaya-16',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27720,7 +25592,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2132,
-                'slug' => 'filtr-vozdushnyy-32',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27733,7 +25604,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2133,
-                'slug' => 'filtr-maslyanyy-benzinovyy-dvigatel-32',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27746,7 +25616,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2134,
-                'slug' => 'filtr-salona-ugolnyy-15',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27759,7 +25628,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2135,
-                'slug' => 'filtr-toplivnyy-14',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27772,7 +25640,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2136,
-                'slug' => 'fonar-zadniy-32',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27785,7 +25652,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2137,
-                'slug' => 'shchetka-stekloochistitelya-zadnyaya-31',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27798,7 +25664,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2138,
-                'slug' => 'akkumulyator-akb-33',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27811,7 +25676,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2139,
-                'slug' => 'amortizator-zadniy-23',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27824,7 +25688,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2140,
-                'slug' => 'amortizator-peredniy-23',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27837,7 +25700,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2141,
-                'slug' => 'bamper-zadniy-24',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27850,7 +25712,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2142,
-                'slug' => 'bamper-peredniy-24',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27863,7 +25724,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2143,
-                'slug' => 'benzobak-23',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27876,7 +25736,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2144,
-                'slug' => 'benzonasos-toplivnyy-nasos-v-sbore-23',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27889,7 +25748,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2145,
-                'slug' => 'blok-predohraniteley-24',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27902,7 +25760,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2146,
-                'slug' => 'ventilyator-pechki-24',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27915,7 +25772,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2147,
-                'slug' => 'generator-24',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27928,7 +25784,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2148,
-                'slug' => 'datchik-temperatury-24',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27941,7 +25796,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2149,
-                'slug' => 'dver-zadnyaya-24',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27954,7 +25808,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2150,
-                'slug' => 'dver-perednyaya-24',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27967,7 +25820,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2151,
-                'slug' => 'dvigatel-23',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27980,7 +25832,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2152,
-                'slug' => 'dvorniki-shchetki-s-o-komplekt-23',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -27993,7 +25844,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2153,
-                'slug' => 'disk-kolesnyy-litoy-24',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28006,7 +25856,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2154,
-                'slug' => 'diski-tormoznye-zadnie-23',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28019,7 +25868,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2155,
-                'slug' => 'diski-tormoznye-perednie-24',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28032,7 +25880,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2156,
-                'slug' => 'zhidkost-tormoznaya-dot-4-1l-12',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28045,7 +25892,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2157,
-                'slug' => 'zamok-dveri-24',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28058,7 +25904,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2158,
-                'slug' => 'zamok-kapota-24',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28071,7 +25916,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2159,
-                'slug' => 'zerkalo-levoe-24',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28084,7 +25928,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2160,
-                'slug' => 'kapot-24',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28097,7 +25940,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2161,
-                'slug' => 'katalizator-23',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28110,7 +25952,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2162,
-                'slug' => 'klyuch-zazhiganiya-24',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28123,7 +25964,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2163,
-                'slug' => 'knopka-steklopodemnika-24',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28136,7 +25976,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2164,
-                'slug' => 'kolodki-tormoznye-zadnie-diskovye-23',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28149,7 +25988,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2165,
-                'slug' => 'kolodki-tormoznye-perednie-24',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28162,7 +26000,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2166,
-                'slug' => 'korobka-avtomat-akpp-21',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28175,7 +26012,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2167,
-                'slug' => 'korobka-mehanicheskaya-mkpp-22',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28188,7 +26024,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2168,
-                'slug' => 'korpus-termostata-24',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28201,7 +26036,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2169,
-                'slug' => 'krylo-perednee-pravoe-18',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28214,7 +26048,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2170,
-                'slug' => 'kryshka-bagazhnika-23',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28227,7 +26060,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2171,
-                'slug' => 'lampochka-blizhnego-sveta-shkoda-fabiya',
                 'code' => 'N10320102',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28240,7 +26072,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2172,
-                'slug' => 'magnitola-shkoda-fabiya',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28253,7 +26084,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2173,
-                'slug' => 'maslo-mehanicheskoy-korobki-peredach-mkpp-shkoda-fabiya',
                 'code' => 'G052512A2',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28266,7 +26096,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2174,
-                'slug' => 'maslo-motornoe-castrol-long-life-iii-vw-5w30-1l-shkoda-fabiya',
                 'code' => '3750CL',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -28279,7 +26108,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2175,
-                'slug' => 'maslo-motornoe-long-life-iii-vw-5w30-1l-shkoda-fabiya',
                 'code' => 'G052195M2',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28292,7 +26120,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2176,
-                'slug' => 'maslo-motornoe-long-life-iii-vw-5w30-5l-shkoda-fabiya',
                 'code' => 'G052195M4',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28305,7 +26132,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2177,
-                'slug' => 'nakonechnik-rulevoy-shkoda-fabiya',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28318,7 +26144,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2178,
-                'slug' => 'panel-perednyaya-shkoda-fabiya',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28331,7 +26156,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2179,
-                'slug' => 'panel-priborov-shkoda-fabiya',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28344,7 +26168,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2180,
-                'slug' => 'podshipnik-stupicy-zadney-stupica-s-abs-shkoda-fabiya',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28357,7 +26180,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2181,
-                'slug' => 'podshipnik-stupicy-peredney-stupica-s-abs-shkoda-fabiya',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28370,7 +26192,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2182,
-                'slug' => 'predohraniteli-shkoda-fabiya',
                 'code' => 'N01713111',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28383,7 +26204,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2183,
-                'slug' => 'prikurivatel-shkoda-fabiya',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28396,7 +26216,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2184,
-                'slug' => 'protivotumannaya-fara-shkoda-fabiya',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28409,7 +26228,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2185,
-                'slug' => 'pruzhina-podveski-zadnyaya-shkoda-fabiya',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28422,7 +26240,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2186,
-                'slug' => 'pruzhina-podveski-perednyaya-shkoda-fabiya',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28435,7 +26252,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2187,
-                'slug' => 'radiator-kondicionera-shkoda-fabiya',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28448,7 +26264,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2188,
-                'slug' => 'radiator-ohlazhdeniya-dvigatelya-shkoda-fabiya',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28461,7 +26276,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2189,
-                'slug' => 'reyka-rulevaya-shkoda-fabiya',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28474,7 +26288,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2190,
-                'slug' => 'remen-grm-k-t-s-rolikami-shkoda-fabiya',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28487,7 +26300,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2191,
-                'slug' => 'remen-privodnoy-shkoda-fabiya',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28500,7 +26312,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2192,
-                'slug' => 'reshetka-radiatora-shkoda-fabiya',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28513,7 +26324,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2193,
-                'slug' => 'rul-shkoda-fabiya',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28526,7 +26336,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2194,
-                'slug' => 'rychag-zadniy-poperechnyy-malyy-shkoda-fabiya',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28539,7 +26348,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2195,
-                'slug' => 'rychag-podveski-peredniy-pravyy-shkoda-fabiya',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28552,7 +26360,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2196,
-                'slug' => 'svecha-zazhiganiya-shkoda-fabiya',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28565,7 +26372,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2197,
-                'slug' => 'signal-zvukovoy-shkoda-fabiya',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28578,7 +26384,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2198,
-                'slug' => 'starter-shkoda-fabiya',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28591,7 +26396,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2199,
-                'slug' => 'steklo-dveri-peredney-shkoda-fabiya',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28604,7 +26408,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2200,
-                'slug' => 'steklo-lobovoe-s-datchikom-dozhdya-shkoda-fabiya',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28617,7 +26420,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2201,
-                'slug' => 'steklo-lobovoe-shkoda-fabiya',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28630,7 +26432,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2202,
-                'slug' => 'stoyka-stabilizatora-perednyaya-shkoda-fabiya',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28643,7 +26444,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2203,
-                'slug' => 'stupica-shkoda-fabiya',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28656,7 +26456,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2204,
-                'slug' => 'sceplenie-disk-s-korzinoy-shkoda-fabiya',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28669,7 +26468,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2205,
-                'slug' => 'termostat-shkoda-fabiya',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28682,7 +26480,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2206,
-                'slug' => 'trubka-kondicionera-shkoda-fabiya',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28695,7 +26492,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2207,
-                'slug' => 'trubka-pechki-shkoda-fabiya',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28708,7 +26504,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2208,
-                'slug' => 'tyaga-rulevaya-shkoda-fabiya',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28721,7 +26516,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2209,
-                'slug' => 'fara-perednyaya-pravaya-shkoda-fabiya',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28734,7 +26528,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2210,
-                'slug' => 'filtr-vozdushnyy-shkoda-fabiya',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28747,7 +26540,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2211,
-                'slug' => 'filtr-maslyanyy-benzinovyy-dvigatel-shkoda-fabiya',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28760,7 +26552,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2212,
-                'slug' => 'filtr-salona-ugolnyy-shkoda-fabiya',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28773,7 +26564,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2213,
-                'slug' => 'filtr-toplivnyy-shkoda-fabiya',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28786,7 +26576,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2214,
-                'slug' => 'fonar-zadniy-shkoda-fabiya',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28799,7 +26588,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2215,
-                'slug' => 'shchetka-stekloochistitelya-zadnyaya-shkoda-fabiya',
                 'code' => null,
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28812,7 +26600,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2216,
-                'slug' => 'akkumulyator-akb-34',
                 'code' => '000915105DC',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28825,7 +26612,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2217,
-                'slug' => 'amortizator-zadniy-24',
                 'code' => '1K0513029MQ',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28838,7 +26624,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2218,
-                'slug' => 'amortizator-peredniy-24',
                 'code' => 'JZW413031H',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -28851,7 +26636,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2219,
-                'slug' => 'bamper-zadniy-25',
                 'code' => '5L68074219B9',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -28864,7 +26648,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2220,
-                'slug' => 'bamper-peredniy-25',
                 'code' => '5L0807221',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28877,7 +26660,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2221,
-                'slug' => 'benzobak-24',
                 'code' => '1K0201060GL',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28890,7 +26672,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2222,
-                'slug' => 'benzonasos-toplivnyy-nasos-v-sbore-24',
                 'code' => '1K0919051DB',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28903,7 +26684,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2223,
-                'slug' => 'blok-predohraniteley-25',
                 'code' => '1K0937125D',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28916,7 +26696,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2224,
-                'slug' => 'ventilyator-pechki-25',
                 'code' => '1K1819015C',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28929,7 +26708,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2225,
-                'slug' => 'generator-25',
                 'code' => '06F903023E',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -28942,7 +26720,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2226,
-                'slug' => 'datchik-temperatury-25',
                 'code' => '06A919501A',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -28955,7 +26732,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2227,
-                'slug' => 'dver-zadnyaya-25',
                 'code' => '5L0833051',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -28968,7 +26744,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2228,
-                'slug' => 'dver-perednyaya-25',
                 'code' => '5L0831051A',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28981,7 +26756,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2229,
-                'slug' => 'dvigatel-24',
                 'code' => '03F100031F',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -28994,7 +26768,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2230,
-                'slug' => 'dvorniki-shchetki-s-o-komplekt-24',
                 'code' => '5L1998001',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -29007,7 +26780,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2231,
-                'slug' => 'disk-kolesnyy-litoy-25',
                 'code' => '3T00714967ZS',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -29020,7 +26792,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2232,
-                'slug' => 'diski-tormoznye-zadnie-24',
                 'code' => '1K0615601AB',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -29033,7 +26804,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2233,
-                'slug' => 'diski-tormoznye-perednie-25',
                 'code' => '1K0615301AK',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -29046,7 +26816,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2234,
-                'slug' => 'zhidkost-tormoznaya-dot-4-1l-13',
                 'code' => 'B000750M3',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -29059,7 +26828,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2235,
-                'slug' => 'zamok-dveri-25',
                 'code' => '5K1837016C',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -29072,7 +26840,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2236,
-                'slug' => 'zamok-kapota-25',
                 'code' => '5L0823509A',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -29085,7 +26852,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2237,
-                'slug' => 'zerkalo-levoe-25',
                 'code' => '5L1857507AD9B9',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -29098,7 +26864,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2238,
-                'slug' => 'kapot-25',
                 'code' => '5L0823031',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -29111,7 +26876,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2239,
-                'slug' => 'katalizator-24',
                 'code' => '1K0254201AX',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -29124,7 +26888,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2240,
-                'slug' => 'klyuch-zazhiganiya-25',
                 'code' => '3T0837202HINB',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -29137,7 +26900,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2241,
-                'slug' => 'knopka-steklopodemnika-25',
                 'code' => '1Z0959856REH',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -29150,7 +26912,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2242,
-                'slug' => 'kolodki-tormoznye-zadnie-diskovye-24',
                 'code' => '1K0698451J',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -29163,7 +26924,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2243,
-                'slug' => 'kolodki-tormoznye-perednie-25',
                 'code' => '5K0698151',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -29176,7 +26936,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2244,
-                'slug' => 'korobka-avtomat-dsg7-akpp',
                 'code' => '0AM300049E00F',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -29189,7 +26948,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2245,
-                'slug' => 'korobka-mehanicheskaya-mkpp-23',
                 'code' => '02Q300049CX',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -29202,7 +26960,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2246,
-                'slug' => 'korpus-termostata-25',
                 'code' => '03C121111T',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -29215,7 +26972,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2247,
-                'slug' => 'krylo-perednee-levoe-3',
                 'code' => '1Z0821106C',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -29228,7 +26984,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2248,
-                'slug' => 'kryshka-bagazhnika-24',
                 'code' => '5L6827025D',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -29241,7 +26996,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2249,
-                'slug' => 'lampochka-blizhnego-sveta-24',
                 'code' => 'N10320102',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -29254,7 +27008,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2250,
-                'slug' => 'magnitola-24',
                 'code' => '1Z0035152E',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -29267,7 +27020,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2251,
-                'slug' => 'maslo-mehanicheskoy-korobki-peredach-mkpp-11',
                 'code' => 'G052512A2',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -29280,7 +27032,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2252,
-                'slug' => 'maslo-motornoe-castrol-long-life-iii-vw-5w30-1l-7',
                 'code' => '3750CL',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -29293,7 +27044,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2253,
-                'slug' => 'maslo-motornoe-long-life-iii-vw-5w30-1l-8',
                 'code' => 'G052195M2',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -29306,7 +27056,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2254,
-                'slug' => 'maslo-motornoe-long-life-iii-vw-5w30-5l-8',
                 'code' => 'G052195M4',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -29319,7 +27068,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2255,
-                'slug' => 'nakonechnik-rulevoy-25',
                 'code' => '1K0423812K',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -29332,7 +27080,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2256,
-                'slug' => 'panel-perednyaya-25',
                 'code' => '5L0805591B',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -29345,7 +27092,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2257,
-                'slug' => 'panel-priborov-24',
                 'code' => '5L0920800BKD0',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -29358,7 +27104,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2258,
-                'slug' => 'podshipnik-stupicy-zadney-stupica-s-abs-13',
                 'code' => '1T0598611B',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -29371,7 +27116,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2259,
-                'slug' => 'podshipnik-stupicy-peredney-stupica-s-abs-8',
                 'code' => '1T0498621',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -29384,7 +27128,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2260,
-                'slug' => 'predohraniteli-25',
                 'code' => 'N01713111',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -29397,7 +27140,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2261,
-                'slug' => 'prikurivatel-24',
                 'code' => '1J09193079B9',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -29410,7 +27152,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2262,
-                'slug' => 'pruzhina-podveski-zadnyaya-24',
                 'code' => '1K0511115CM',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -29423,7 +27164,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2263,
-                'slug' => 'pruzhina-podveski-perednyaya-25',
                 'code' => '1K0411105BC',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -29436,7 +27176,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2264,
-                'slug' => 'radiator-kondicionera-24',
                 'code' => '1K0820411Q',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -29449,7 +27188,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2265,
-                'slug' => 'radiator-ohlazhdeniya-dvigatelya-25',
                 'code' => '1K0121253BB',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -29462,7 +27200,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2266,
-                'slug' => 'reyka-rulevaya-25',
                 'code' => '1K1423055M',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -29475,7 +27212,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2267,
-                'slug' => 'remen-grm-k-t-s-rolikami-8',
                 'code' => '03L198119D',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -29488,7 +27224,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2268,
-                'slug' => 'remen-privodnoy-25',
                 'code' => '6Q0903137A',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -29501,7 +27236,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2269,
-                'slug' => 'reshetka-radiatora-21',
                 'code' => '5L08536689B9',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -29514,7 +27248,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2270,
-                'slug' => 'rul-25',
                 'code' => '3T04190911QB',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -29527,7 +27260,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2271,
-                'slug' => 'rychag-zadniy-poperechnyy-malyy-22',
                 'code' => '1K0501529J',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -29540,7 +27272,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2272,
-                'slug' => 'rychag-podveski-peredniy-pravyy-14',
                 'code' => '1K0407152BC',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -29553,7 +27284,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2273,
-                'slug' => 'svecha-zazhiganiya-24',
                 'code' => '06H905621',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -29566,7 +27296,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2274,
-                'slug' => 'signal-zvukovoy-32',
                 'code' => '1K0951221B',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -29579,7 +27308,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2275,
-                'slug' => 'starter-32',
                 'code' => '02Z911024K',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -29592,7 +27320,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2276,
-                'slug' => 'steklo-dveri-peredney-33',
                 'code' => '5L0845021E',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -29605,7 +27332,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2277,
-                'slug' => 'steklo-lobovoe-s-datchikom-dozhdya-10',
                 'code' => '5L0845011LNVB',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -29618,7 +27344,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2278,
-                'slug' => 'steklo-lobovoe-33',
                 'code' => '1Z0845011BH',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -29631,7 +27356,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2279,
-                'slug' => 'stoyka-stabilizatora-perednyaya-33',
                 'code' => '1K0411315R',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -29644,7 +27368,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2280,
-                'slug' => 'stupica-24',
                 'code' => '5K0498621',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -29657,7 +27380,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2281,
-                'slug' => 'sceplenie-disk-s-korzinoy-15',
                 'code' => '06J141015J',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -29670,7 +27392,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2282,
-                'slug' => 'termostat-33',
                 'code' => '03C121110Q',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -29683,7 +27404,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2283,
-                'slug' => 'trubka-kondicionera-32',
                 'code' => '1K0820721BL',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -29696,7 +27416,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2284,
-                'slug' => 'trubka-pechki-22',
                 'code' => '1K0122073FR',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -29709,7 +27428,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2285,
-                'slug' => 'tyaga-rulevaya-33',
                 'code' => '1K0423810A',
                 'price_original' => 0,
                 'price_original_from' => 0,
@@ -29722,7 +27440,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2286,
-                'slug' => 'fara-perednyaya-pravaya-17',
                 'code' => '5L1941018',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -29735,7 +27452,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2287,
-                'slug' => 'filtr-vozdushnyy-33',
                 'code' => '1K0129620D',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -29748,7 +27464,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2288,
-                'slug' => 'filtr-maslyanyy-benzinovyy-dvigatel-33',
                 'code' => '03C115561H',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -29761,7 +27476,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2289,
-                'slug' => 'filtr-salona-ugolnyy-16',
                 'code' => '1K1819653B',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -29774,7 +27488,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2290,
-                'slug' => 'filtr-toplivnyy-15',
                 'code' => '1K0201051K',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -29787,7 +27500,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2291,
-                'slug' => 'fonar-zadniy-33',
                 'code' => '5L0945111',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -29800,7 +27512,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2292,
-                'slug' => 'shchetka-stekloochistitelya-zadnyaya-32',
                 'code' => '5L6955425',
                 'price_original' => 0,
                 'price_original_from' => 1,
@@ -29813,7 +27524,6 @@ class SparesSeeder extends BrandsSeeder
             ],
             [
                 'id' => 2293,
-                'slug' => 'prokladka-klapannoy-kryshki',
                 'code' => '1141575',
                 'price_original' => 0,
                 'price_original_from' => 0,
