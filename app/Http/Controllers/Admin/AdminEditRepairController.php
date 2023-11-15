@@ -87,7 +87,7 @@ class AdminEditRepairController extends AdminEditController
             $route = 'admin.def_repairs';
             $params['parent_id'] = $subRepair->repair->def_car_id;
         }
-        redirect(route($route, $params));
+        return redirect(route($route, $params));
     }
 
     /**
