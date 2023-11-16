@@ -1,6 +1,16 @@
 <tr>
     <td>
-        <a href="{{ route('repair',[(isset($car) && $car) ? $car->brand->slug : ( (isset($brand) && $brand) ? $brand->slug : 'def' ), (isset($car) && $car) ? $car->slug : 'def', $item->slug]) }}">
+        @php
+        $routeAttr = [];
+
+        if (isset($car) && $car) $routeAttr[] = $car->brand->slug;
+        elseif (isset($brand) && $brand) $routeAttr[] = $brand->slug;
+
+        if (isset($car) && $car) $routeAttr[] = $car->slug;
+
+        $routeAttr[] = $item->slug;
+        @endphp
+        <a href="{{ route('repair',$routeAttr) }}">
             @include('issues.blocks.table_list_name_block')
         </a>
     </td>

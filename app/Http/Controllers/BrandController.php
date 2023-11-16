@@ -40,45 +40,20 @@ class BrandController extends BaseController
     {
         $this->activeMenu = $issue;
         if ($brand) {
+            $this->getItem('brand', new Brand(), $brand);
             if ($car) {
-                if ($job) {
-                    $this->getItem('repair', new Repair(), $job);
+                if (!$this->data['brand']->elected) {
+                    // if brand isn't elected and using car-slug as job-slug
+                    $job = $car;
+                    $this->getItem('repair', new Repair(), $job, 'def_car_id', 1);
                     $this->setSeo($this->data['repair']->seo);
-
-                    if ($brand != 'def') $this->getItem('brand', new Brand(), $brand);
-                    else $this->data['brand'] = null;
-
-                    if ($car != 'def') $this->getItem('car', new Car(), $car);
-                    else $this->data['car'] = null;
-
-                    $this->data['price'] = $this->data['repair']->price;
-                    $this->data['old_price'] = $this->data['repair']->old_price ? $this->data['repair']->old_price : $this->data['price'] * 3;
-
-                    $this->data['left_digits'] = [
-                        ['top' => 245, 'indent' => 70],
-                        ['top' => 200, 'indent' => 55],
-                        ['top' => 150, 'indent' => 55],
-                        ['top' => 110, 'indent' => 70],
-                        ['top' => 75, 'indent' => (strlen((string)$this->data['price']) >= 4) ? 90 : 100],
-                        ['top' => 50, 'indent' => (strlen((string)$this->data['price']) >= 4) ? 125 : 135],
-                        ['top' => 42, 'indent' => '50%'],
-                    ];
-
-                    $this->data['right_digits'] = [
-                        ['margin-top' => 287, 'left' => '50%', 'transform' => 'translate(-50%)'],
-                        ['margin-top' => 270, 'left' => 115],
-                        ['margin-top' => 220, 'left' => 70],
-                        ['margin-top' => 160, 'left' => 50],
-                        ['margin-top' => 95, 'left' => 70],
-                        ['margin-top' => 55, 'left' => 115],
-                        ['margin-top' => 40, 'left' => '50%', 'transform' => 'translate(-50%)'],
-                        ['margin-top' => 55, 'right' => 110],
-                        ['margin-top' => 95, 'right' => 65],
-                        ['margin-top' => 160, 'right' => 45],
-                        ['margin-top' => 210, 'right' => 60],
-                        ['margin-top' => 270, 'right' => 105],
-                    ];
-                    $this->data['price_step'] = round($this->data['price'] * 2 / 12);
+                    $this->getIndicatorData();
+                    return $this->showView('issues.repair');
+                } elseif ($job) {
+                    $this->getItem('car', new Car(), $car);
+                    $this->getItem('repair', new Repair(), $job, 'car_id', $this->data['car']->id);
+                    $this->setSeo($this->data['repair']->seo);
+                    $this->getIndicatorData();
                     return $this->showView('issues.repair');
                 } elseif ($spare) {
                     $this->getItem('spare', new Spare(), $spare);
@@ -97,7 +72,6 @@ class BrandController extends BaseController
                 }
             } else {
                 if ($issue == 'maintenance') {
-                    $this->getItem('brand', new Brand(), $brand);
                     if (!count($this->data['brand']->maintenances)) {
                         $this->getDefContent('maintenances');
                         return $this->showView('issues.def_brand');
@@ -106,7 +80,6 @@ class BrandController extends BaseController
                         return $this->showView('issues.brand');
                     }
                 } else {
-                    $this->getItem('brand', new Brand(), $brand);
                     if (!$this->data['brand'][$issue]) {
 //                        if ($issue == 'repair') $this->data['price_table'] = Car::find(7)->priceRepairs;
                         $this->getDefContent($issue);
@@ -132,5 +105,37 @@ class BrandController extends BaseController
         if (!$this->data['contents']) abort(404, trans('404'));
         $this->data['brands'] = Brand::where('active',1)->get();
         $this->setSeo($this->data['contents'][0]->seo);
+    }
+
+    private function getIndicatorData(): void
+    {
+        $this->data['price'] = $this->data['repair']->price;
+        $this->data['old_price'] = $this->data['repair']->old_price ? $this->data['repair']->old_price : $this->data['price'] * 3;
+
+        $this->data['left_digits'] = [
+            ['top' => 245, 'indent' => 70],
+            ['top' => 200, 'indent' => 55],
+            ['top' => 150, 'indent' => 55],
+            ['top' => 110, 'indent' => 70],
+            ['top' => 75, 'indent' => (strlen((string)$this->data['price']) >= 4) ? 90 : 100],
+            ['top' => 50, 'indent' => (strlen((string)$this->data['price']) >= 4) ? 125 : 135],
+            ['top' => 42, 'indent' => '50%'],
+        ];
+
+        $this->data['right_digits'] = [
+            ['margin-top' => 287, 'left' => '50%', 'transform' => 'translate(-50%)'],
+            ['margin-top' => 270, 'left' => 115],
+            ['margin-top' => 220, 'left' => 70],
+            ['margin-top' => 160, 'left' => 50],
+            ['margin-top' => 95, 'left' => 70],
+            ['margin-top' => 55, 'left' => 115],
+            ['margin-top' => 40, 'left' => '50%', 'transform' => 'translate(-50%)'],
+            ['margin-top' => 55, 'right' => 110],
+            ['margin-top' => 95, 'right' => 65],
+            ['margin-top' => 160, 'right' => 45],
+            ['margin-top' => 210, 'right' => 60],
+            ['margin-top' => 270, 'right' => 105],
+        ];
+        $this->data['price_step'] = round($this->data['price'] * 2 / 12);
     }
 }

@@ -142,9 +142,11 @@ class BaseController extends Controller
         ));
     }
 
-    protected function getItem(string $itemName, Model $model, $slug): void
+    protected function getItem(string $itemName, Model $model, $slug, string $relationField='', int $relationId=0): void
     {
-        $this->data[$itemName] = $model->where('slug',$slug)->where('active',1)->first();
+        $model = $model->where('slug',$slug)->where('active',1);
+        if ($relationField && $relationId) $model = $model->where($relationField,$relationId);
+        $this->data[$itemName] = $model->first();
         if (!$this->data[$itemName]) abort(404, trans('404'));
     }
 
