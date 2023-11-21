@@ -21,9 +21,9 @@ class BrandController extends BaseController
         parent::__construct();
     }
 
-    public function repair($brand=null, $car=null, $job=null) :View
+    public function repair($brandOrJob=null, $carOrJob=null, $job=null) :View
     {
-        return $this->getIssues('repair', $brand, $car, $job);
+        return $this->getIssues('repair', $brandOrJob, $carOrJob, $job);
     }
 
     public function maintenance($brand=null, $car=null) :View
@@ -36,21 +36,27 @@ class BrandController extends BaseController
         return $this->getIssues('spare', $brand, $car, null, $spare);
     }
 
-    private function getIssues(string $issue, string $brand=null, string $car=null, string $job=null, string $spare=null): View
+    private function getIssues(string $issue, string $brandOrJob=null, string $carOrJob=null, string $job=null, string $spare=null): View
     {
         $this->activeMenu = $issue;
-        if ($brand) {
-            $this->getItem('brand', new Brand(), $brand);
-            if ($car) {
+        if ($brandOrJob) {
+            // Checkup isn't it work not brand
+            if (!$this->data['brand'] = Brand::where('slug',$brandOrJob)->where('active',1)->first()) {
+                $this->getItem('repair', new Repair(), $brandOrJob, 'def_car_id', 1);
+                $this->setSeo($this->data['repair']->seo);
+                $this->getIndicatorData();
+                return $this->showView('issues.repair');
+            }
+
+            if ($carOrJob) {
                 if (!$this->data['brand']->elected) {
                     // if brand isn't elected and using car-slug as job-slug
-                    $job = $car;
-                    $this->getItem('repair', new Repair(), $job, 'def_car_id', 1);
+                    $this->getItem('repair', new Repair(), $carOrJob, 'def_car_id', 1);
                     $this->setSeo($this->data['repair']->seo);
                     $this->getIndicatorData();
                     return $this->showView('issues.repair');
                 } elseif ($job) {
-                    $this->getItem('car', new Car(), $car);
+                    $this->getItem('car', new Car(), $carOrJob);
                     $this->getItem('repair', new Repair(), $job, 'car_id', $this->data['car']->id);
                     $this->setSeo($this->data['repair']->seo);
                     $this->getIndicatorData();
@@ -61,11 +67,11 @@ class BrandController extends BaseController
                     return $this->showView('issues.spare');
                 } else {
                     if ($issue == 'repair') {
-                        $this->getItem('car', new Car(), $car);
+                        $this->getItem('car', new Car(), $carOrJob);
                         if (!count($this->data['car']->repairs)) abort(404, trans('404'));
                         $this->setSeo($this->data['car']->repairs[0]->seo);
                     } else {
-                        $this->getItem('car', new Car(), $car);
+                        $this->getItem('car', new Car(), $carOrJob);
                         $this->setSeo($this->data['car'][$issue]->seo);
                     }
                     return $this->showView('issues.car');
