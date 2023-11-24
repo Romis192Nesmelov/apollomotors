@@ -603,6 +603,10 @@ textarea {
     margin-bottom: 40px;
 }
 
+#actions-block .action a {
+    text-decoration: none;
+}
+
 #actions-block .owl-dots {
 	margin-top: 0 !important;
 	bottom: 35px;

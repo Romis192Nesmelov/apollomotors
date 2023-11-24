@@ -31,7 +31,7 @@ class AdminEditBrandController extends AdminEditController
                 'name_en' => $this->validationString
             ],
             new Brand(),
-            ['logo' => $this->validationPng, 'image' => $this->validationJpg],
+            ['logo' => $this->validationJpgAndPng, 'image' => $this->validationJpgAndPng],
             'storage/images/brands/',
         );
         return redirect(route('admin.brands'));
@@ -110,7 +110,7 @@ class AdminEditBrandController extends AdminEditController
             $request,
             ['name_ru' => $this->validationString, 'name_en' => $this->validationString, 'brand_id' => $this->validationBrandId],
             new Car(),
-            ['image_full' => $this->validationPng, 'image_preview' => $this->validationJpg],
+            ['image_full' => $this->validationJpgAndPng, 'image_preview' => $this->validationJpgAndPng],
             'storage/images/cars/',
         );
         return redirect(route('admin.brands', ['id' => $car->brand->id]));

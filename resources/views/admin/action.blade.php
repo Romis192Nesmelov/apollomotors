@@ -67,6 +67,12 @@
                                 'placeholder' => trans('admin.name'),
                                 'value' => isset($action) ? $action->head : ''
                             ])
+                            @include('admin.blocks.date_block',[
+                                'label' => trans('admin.action_limit'),
+                                'name' => 'limit',
+                                'value' => isset($action) ? $action->limit : time() + (60 * 60 * 24 * 30)
+                            ])
+
                             @include('admin.blocks.textarea_block',[
                                 'required' => true,
                                 'name' => 'text',

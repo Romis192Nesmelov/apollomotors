@@ -233,7 +233,7 @@ class AdminEditController extends Controller
 
         if ($request->has('id') && $request->input('id')) {
             // Base validation, merging fields and setting special fields
-            $fields = array_merge($fields, $this->setSpecialFields($request, $this->validate($request, $validationArr)));
+            $fields = array_merge($fields, $this->setSpecialFields($request, $model, $this->validate($request, $validationArr)));
             $fields = $this->checkSlugField($fields);
 
             // Getting item
@@ -241,7 +241,6 @@ class AdminEditController extends Controller
 
             // Processing image define images fields
             $fields = $this->processingImages($request, $fields, array_keys($imageValidationArr), $pathToImages, $item);
-
             // Updating item
             $item->update($fields);
         } else {
@@ -255,7 +254,7 @@ class AdminEditController extends Controller
             }
 
             // Base validation, merging (if exist password fields) and setting special fields
-            $fields = array_merge($fields, $this->setSpecialFields($request, $this->validate($request, $validationArr)));
+            $fields = array_merge($fields, $this->setSpecialFields($request, $model, $this->validate($request, $validationArr)));
             $fields = $this->checkSlugField($fields);
 
             // Processing image define images fields
@@ -303,10 +302,11 @@ class AdminEditController extends Controller
         }
     }
 
-    private function setSpecialFields(Request $request, $fields): array
+    private function setSpecialFields(Request $request, Model $model, $fields): array
     {
-        if ($request->has('active')) $fields['active'] = $request->active ? 1 : 0;
-        if ($request->has('elected')) $fields['elected'] = $request->active ? 1 : 0;
+        $fillable = $model->getFillable();
+        if (in_array('active',$fillable)) $fields['active'] = $request->has('active') ? 1 : 0;
+        if (in_array('elected',$fillable)) $fields['elected'] = $request->has('elected') ? 1 : 0;
         if ($request->has('limit')) $fields['limit'] = $this->convertTimestamp($request->limit);
         return $fields;
     }

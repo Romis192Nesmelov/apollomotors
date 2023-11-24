@@ -174,6 +174,7 @@ return [
     'brands_in_action' => 'Бренды учавствующие в акции',
     'add_brands' => 'Добавить бренд',
     'action_faq' => 'FAQ по акции',
+    'action_limit' => 'Время акции',
 
     'edit_action_question' => 'Редактирование вопроса по акции «:action_question»',
     'view_action_question' => 'Просмотр вопроса по акции «:action_question»',

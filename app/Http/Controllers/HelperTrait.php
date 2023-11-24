@@ -42,7 +42,7 @@ trait HelperTrait
 
     public function deleteFile($path): void
     {
-        if (file_exists(base_path('public/'.$path))) unlink(base_path('public/'.$path));
+        if ($path && file_exists(base_path('public/'.$path))) unlink(base_path('public/'.$path));
     }
 
     public function getCutTableName(Model $item) :string
