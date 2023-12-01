@@ -36,7 +36,7 @@
         @else
             @include('issues.blocks.spares_table.spares_table_block',['spares' => $car->spares])
         @endif
-        @include('issues.blocks.car_layout_bottom_block')
+{{--        @include('issues.blocks.car_layout_bottom_block')--}}
 
         @include('blocks.online_record_block',[
             'type' => 'online_appointment_for_'.$activeMenu,
