@@ -2163,6 +2163,754 @@ class MissingMechanicsSeeder extends Seeder
                 'date' => 1694304000,
                 'mechanic_id' => 14
             ],
+            [
+                'date' => 1693612800,
+                'mechanic_id' => 13
+            ],
+            [
+                'date' => 1693699200,
+                'mechanic_id' => 13
+            ],
+            [
+                'date' => 1693958400,
+                'mechanic_id' => 10
+            ],
+            [
+                'date' => 1694044800,
+                'mechanic_id' => 10
+            ],
+            [
+                'date' => 1694390400,
+                'mechanic_id' => 12
+            ],
+            [
+                'date' => 1694476800,
+                'mechanic_id' => 12
+            ],
+            [
+                'date' => 1694563200,
+                'mechanic_id' => 12
+            ],
+            [
+                'date' => 1694649600,
+                'mechanic_id' => 12
+            ],
+            [
+                'date' => 1694736000,
+                'mechanic_id' => 12
+            ],
+            [
+                'date' => 1694822400,
+                'mechanic_id' => 12
+            ],
+            [
+                'date' => 1694908800,
+                'mechanic_id' => 12
+            ],
+            [
+                'date' => 1694563200,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1694649600,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1694995200,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1695081600,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1695340800,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1694563200,
+                'mechanic_id' => 10
+            ],
+            [
+                'date' => 1694649600,
+                'mechanic_id' => 10
+            ],
+            [
+                'date' => 1695168000,
+                'mechanic_id' => 10
+            ],
+            [
+                'date' => 1694217600,
+                'mechanic_id' => 13
+            ],
+            [
+                'date' => 1694304000,
+                'mechanic_id' => 13
+            ],
+            [
+                'date' => 1694822400,
+                'mechanic_id' => 13
+            ],
+            [
+                'date' => 1694908800,
+                'mechanic_id' => 13
+            ],
+            [
+                'date' => 1694390400,
+                'mechanic_id' => 10
+            ],
+            [
+                'date' => 1694476800,
+                'mechanic_id' => 10
+            ],
+            [
+                'date' => 1694736000,
+                'mechanic_id' => 10
+            ],
+            [
+                'date' => 1694822400,
+                'mechanic_id' => 10
+            ],
+            [
+                'date' => 1694908800,
+                'mechanic_id' => 10
+            ],
+            [
+                'date' => 1696032000,
+                'mechanic_id' => 12
+            ],
+            [
+                'date' => 1696032000,
+                'mechanic_id' => 11
+            ],
+            [
+                'date' => 1695427200,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1695513600,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1695772800,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1695859200,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1696204800,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1696291200,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1695427200,
+                'mechanic_id' => 13
+            ],
+            [
+                'date' => 1695513600,
+                'mechanic_id' => 13
+            ],
+            [
+                'date' => 1696032000,
+                'mechanic_id' => 13
+            ],
+            [
+                'date' => 1696118400,
+                'mechanic_id' => 13
+            ],
+            [
+                'date' => 1696636800,
+                'mechanic_id' => 13
+            ],
+            [
+                'date' => 1696723200,
+                'mechanic_id' => 13
+            ],
+            [
+                'date' => 1696550400,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1696636800,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1696723200,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1696118400,
+                'mechanic_id' => 11
+            ],
+            [
+                'date' => 1696204800,
+                'mechanic_id' => 11
+            ],
+            [
+                'date' => 1696291200,
+                'mechanic_id' => 11
+            ],
+            [
+                'date' => 1696377600,
+                'mechanic_id' => 11
+            ],
+            [
+                'date' => 1696464000,
+                'mechanic_id' => 11
+            ],
+            [
+                'date' => 1696550400,
+                'mechanic_id' => 11
+            ],
+            [
+                'date' => 1696636800,
+                'mechanic_id' => 11
+            ],
+            [
+                'date' => 1696723200,
+                'mechanic_id' => 11
+            ],
+            [
+                'date' => 1695772800,
+                'mechanic_id' => 10
+            ],
+            [
+                'date' => 1695859200,
+                'mechanic_id' => 10
+            ],
+            [
+                'date' => 1696291200,
+                'mechanic_id' => 10
+            ],
+            [
+                'date' => 1696377600,
+                'mechanic_id' => 10
+            ],
+            [
+                'date' => 1696809600,
+                'mechanic_id' => 11
+            ],
+            [
+                'date' => 1696896000,
+                'mechanic_id' => 11
+            ],
+            [
+                'date' => 1696982400,
+                'mechanic_id' => 11
+            ],
+            [
+                'date' => 1697068800,
+                'mechanic_id' => 11
+            ],
+            [
+                'date' => 1697155200,
+                'mechanic_id' => 11
+            ],
+            [
+                'date' => 1697241600,
+                'mechanic_id' => 11
+            ],
+            [
+                'date' => 1697241600,
+                'mechanic_id' => 13
+            ],
+            [
+                'date' => 1697328000,
+                'mechanic_id' => 13
+            ],
+            [
+                'date' => 1696982400,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1697068800,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1696032000,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1696896000,
+                'mechanic_id' => 10
+            ],
+            [
+                'date' => 1696982400,
+                'mechanic_id' => 10
+            ],
+            [
+                'date' => 1697500800,
+                'mechanic_id' => 12
+            ],
+            [
+                'date' => 1697587200,
+                'mechanic_id' => 12
+            ],
+            [
+                'date' => 1697673600,
+                'mechanic_id' => 12
+            ],
+            [
+                'date' => 1697760000,
+                'mechanic_id' => 12
+            ],
+            [
+                'date' => 1697846400,
+                'mechanic_id' => 12
+            ],
+            [
+                'date' => 1697932800,
+                'mechanic_id' => 12
+            ],
+            [
+                'date' => 1698019200,
+                'mechanic_id' => 12
+            ],
+            [
+                'date' => 1698105600,
+                'mechanic_id' => 12
+            ],
+            [
+                'date' => 1698192000,
+                'mechanic_id' => 12
+            ],
+            [
+                'date' => 1698278400,
+                'mechanic_id' => 12
+            ],
+            [
+                'date' => 1698364800,
+                'mechanic_id' => 12
+            ],
+            [
+                'date' => 1698451200,
+                'mechanic_id' => 12
+            ],
+            [
+                'date' => 1698537600,
+                'mechanic_id' => 12
+            ],
+            [
+                'date' => 1698624000,
+                'mechanic_id' => 12
+            ],
+            [
+                'date' => 1698710400,
+                'mechanic_id' => 12
+            ],
+            [
+                'date' => 1698796800,
+                'mechanic_id' => 12
+            ],
+            [
+                'date' => 1698883200,
+                'mechanic_id' => 12
+            ],
+            [
+                'date' => 1698969600,
+                'mechanic_id' => 12
+            ],
+            [
+                'date' => 1697587200,
+                'mechanic_id' => 10
+            ],
+            [
+                'date' => 1697673600,
+                'mechanic_id' => 10
+            ],
+            [
+                'date' => 1697846400,
+                'mechanic_id' => 13
+            ],
+            [
+                'date' => 1697932800,
+                'mechanic_id' => 13
+            ],
+            [
+                'date' => 1697500800,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1697414400,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1698019200,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1698105600,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1698364800,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1698451200,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1698537600,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1698451200,
+                'mechanic_id' => 13
+            ],
+            [
+                'date' => 1698537600,
+                'mechanic_id' => 13
+            ],
+            [
+                'date' => 1698796800,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1698883200,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1698105600,
+                'mechanic_id' => 10
+            ],
+            [
+                'date' => 1698192000,
+                'mechanic_id' => 10
+            ],
+            [
+                'date' => 1698710400,
+                'mechanic_id' => 10
+            ],
+            [
+                'date' => 1698796800,
+                'mechanic_id' => 10
+            ],
+            [
+                'date' => 1699315200,
+                'mechanic_id' => 10
+            ],
+            [
+                'date' => 1699401600,
+                'mechanic_id' => 10
+            ],
+            [
+                'date' => 1699920000,
+                'mechanic_id' => 10
+            ],
+            [
+                'date' => 1700006400,
+                'mechanic_id' => 10
+            ],
+            [
+                'date' => 1700524800,
+                'mechanic_id' => 10
+            ],
+            [
+                'date' => 1700611200,
+                'mechanic_id' => 10
+            ],
+            [
+                'date' => 1700438400,
+                'mechanic_id' => 11
+            ],
+            [
+                'date' => 1700524800,
+                'mechanic_id' => 11
+            ],
+            [
+                'date' => 1700611200,
+                'mechanic_id' => 11
+            ],
+            [
+                'date' => 1700697600,
+                'mechanic_id' => 11
+            ],
+            [
+                'date' => 1700870400,
+                'mechanic_id' => 11
+            ],
+            [
+                'date' => 1700784000,
+                'mechanic_id' => 11
+            ],
+            [
+                'date' => 1699142400,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1699228800,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1699315200,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1699401600,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1699488000,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1699142400,
+                'mechanic_id' => 13
+            ],
+            [
+                'date' => 1699574400,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1699660800,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1699747200,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1699833600,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1699920000,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1700006400,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1700092800,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1700179200,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1700265600,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1700352000,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1700870400,
+                'mechanic_id' => 13
+            ],
+            [
+                'date' => 1700956800,
+                'mechanic_id' => 13
+            ],
+            [
+                'date' => 1701043200,
+                'mechanic_id' => 10
+            ],
+            [
+                'date' => 1701129600,
+                'mechanic_id' => 10
+            ],
+            [
+                'date' => 1701216000,
+                'mechanic_id' => 10
+            ],
+            [
+                'date' => 1701302400,
+                'mechanic_id' => 10
+            ],
+            [
+                'date' => 1701475200,
+                'mechanic_id' => 13
+            ],
+            [
+                'date' => 1701561600,
+                'mechanic_id' => 13
+            ],
+            [
+                'date' => 1702080000,
+                'mechanic_id' => 13
+            ],
+            [
+                'date' => 1702166400,
+                'mechanic_id' => 13
+            ],
+            [
+                'date' => 1701043200,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1701129600,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1701388800,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1701475200,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1701561600,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1701820800,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1701907200,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1702252800,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1702339200,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1702598400,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1702944000,
+                'mechanic_id' => 12
+            ],
+            [
+                'date' => 1703030400,
+                'mechanic_id' => 12
+            ],
+            [
+                'date' => 1703116800,
+                'mechanic_id' => 12
+            ],
+            [
+                'date' => 1703030400,
+                'mechanic_id' => 11
+            ],
+            [
+                'date' => 1703116800,
+                'mechanic_id' => 11
+            ],
+            [
+                'date' => 1702684800,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1702771200,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1702425600,
+                'mechanic_id' => 10
+            ],
+            [
+                'date' => 1702512000,
+                'mechanic_id' => 10
+            ],
+            [
+                'date' => 1702684800,
+                'mechanic_id' => 13
+            ],
+            [
+                'date' => 1702771200,
+                'mechanic_id' => 13
+            ],
+            [
+                'date' => 1702252800,
+                'mechanic_id' => 10
+            ],
+            [
+                'date' => 1702339200,
+                'mechanic_id' => 10
+            ],
+            [
+                'date' => 1701820800,
+                'mechanic_id' => 10
+            ],
+            [
+                'date' => 1701907200,
+                'mechanic_id' => 10
+            ],
+            [
+                'date' => 1703203200,
+                'mechanic_id' => 12
+            ],
+            [
+                'date' => 1703289600,
+                'mechanic_id' => 12
+            ],
+            [
+                'date' => 1703376000,
+                'mechanic_id' => 12
+            ],
+            [
+                'date' => 1703203200,
+                'mechanic_id' => 11
+            ],
+            [
+                'date' => 1703289600,
+                'mechanic_id' => 11
+            ],
+            [
+                'date' => 1703376000,
+                'mechanic_id' => 11
+            ],
+            [
+                'date' => 1703289600,
+                'mechanic_id' => 13
+            ],
+            [
+                'date' => 1703376000,
+                'mechanic_id' => 13
+            ],
+            [
+                'date' => 1702857600,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1702944000,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1703030400,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1703116800,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1703203200,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1703289600,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1703376000,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1702425600,
+                'mechanic_id' => 14
+            ],
+            [
+                'date' => 1702512000,
+                'mechanic_id' => 14
+            ],
         ];
 
         $lastDate = null;

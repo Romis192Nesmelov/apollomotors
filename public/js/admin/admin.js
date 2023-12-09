@@ -130,7 +130,7 @@ $(document).ready(function () {
     });
 
     // Carousel repair images
-    $('#repair-images').owlCarousel(oul_settings(
+    $('#repair-images').owlCarousel(owl_settings(
         10,
         true,
         3000,

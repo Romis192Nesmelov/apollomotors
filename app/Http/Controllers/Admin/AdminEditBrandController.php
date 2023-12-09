@@ -163,7 +163,7 @@ class AdminEditBrandController extends AdminEditController
         $spare = $this->editSomething(
             $request,
             [
-                'slug' => 'nullable|min:3|max:255',
+                'slug' => 'nullable|min:3|max:191',
                 'code' => $this->validationString,
                 'price_original' => $this->validationInteger,
                 'price_non_original' => $this->validationInteger,

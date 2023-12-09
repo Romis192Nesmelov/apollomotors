@@ -1,4 +1,4 @@
-function oul_settings(margin, nav, timeout, responsive) {
+function owl_settings(margin, nav, timeout, responsive) {
     let navButtonBlack1 = '<img src="/storage/images/arrow_left.svg" />',
         navButtonBlack2 = '<img src="/storage/images/arrow_right.svg" />';
 

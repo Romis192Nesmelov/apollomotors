@@ -33,7 +33,7 @@ $(window).on('load', function () {
 
 
     // Carousel actions
-    $('#actions-block').owlCarousel(oul_settings(
+    $('#actions-block').owlCarousel(owl_settings(
         10,
         false,
         6000,
@@ -41,7 +41,7 @@ $(window).on('load', function () {
     ));
 
     // Carousel brands
-    $('#brands-block').owlCarousel(oul_settings(
+    $('#brands-block').owlCarousel(owl_settings(
         10,
         true,
         5000,
@@ -59,7 +59,7 @@ $(window).on('load', function () {
     ));
 
     // Carousel actions brands
-    $('#actions-brand-block').owlCarousel(oul_settings(
+    $('#actions-brand-block').owlCarousel(owl_settings(
         3,
         false,
         5000,
@@ -77,7 +77,7 @@ $(window).on('load', function () {
     ));
 
     // Carousel clients
-    $('#clients-block').owlCarousel(oul_settings(
+    $('#clients-block').owlCarousel(owl_settings(
         10,
         true,
         3000,
@@ -95,7 +95,7 @@ $(window).on('load', function () {
     ));
 
     // Carousel repair images
-    $('#repair-images').owlCarousel(oul_settings(
+    $('#repair-images').owlCarousel(owl_settings(
         10,
         true,
         3000,

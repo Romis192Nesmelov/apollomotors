@@ -55,7 +55,7 @@
 
     <script type="text/javascript" src="{{ asset('js/loader.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/fancybox_init.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/oul_settings.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/owl_settings.js') }}"></script>
 
     <script type="text/javascript" src="{{ asset('js/admin/plugins/visualization/echarts/echarts.js') }}"></script>
 

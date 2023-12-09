@@ -35,7 +35,7 @@ class AdminEditRepairController extends AdminEditController
         $repair = $this->editSomething(
             $request,
             [
-                'slug' => 'nullable|min:3|max:255',
+                'slug' => 'nullable|min:3|max:191',
                 'price' => $this->validationInteger,
                 'old_price' => $this->validationInteger,
                 'work_time' => $this->validationNumeric,

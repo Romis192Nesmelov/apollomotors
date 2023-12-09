@@ -45,7 +45,7 @@
     <script type="text/javascript" src="{{ asset('js/jquery.mCustomScrollbar.concat.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/indicators.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/fancybox_init.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/oul_settings.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/owl_settings.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/max.height.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/main.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/loader.js') }}"></script>

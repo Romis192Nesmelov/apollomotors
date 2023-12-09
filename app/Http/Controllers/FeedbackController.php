@@ -12,7 +12,7 @@ class FeedbackController extends Controller
     public function sendRequest(Request $request)
     {
         return $this->sendMessage('request', $this->validate($request, [
-            'name' => 'required|min:3|max:255',
+            'name' => 'required|min:3|max:191',
             'phone' => $this->validationPhone,
             'type' => 'required|in:request_for_consultation,online_registration_for_the_promotion,online_appointment_for_repair,online_appointment_for_maintenance,online_appointment_for_online_appointment_for_spare',
             'action_id' => 'nullable|exists:actions,id',

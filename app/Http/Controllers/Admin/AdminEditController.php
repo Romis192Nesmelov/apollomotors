@@ -279,7 +279,7 @@ class AdminEditController extends Controller
     protected function setSeo(Request $request, ?Model $item): void
     {
         $seoFields = $this->validate($request, [
-            'title' => 'nullable|max:255',
+            'title' => 'nullable|max:191',
             'keywords' => 'nullable|max:3000',
             'description' => 'nullable|max:3000',
         ]);

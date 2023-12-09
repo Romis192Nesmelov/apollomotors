@@ -80,7 +80,7 @@ class AdminEditRecordController extends AdminEditController
 
         if ($request->input('email')) $validateArr['email'] = 'email';
         if ($request->input('car')) {
-            $validateArr['car'] = 'min:2|max:255';
+            $validateArr['car'] = 'min:2|max:191';
             $fields['car_id'] = null;
         } else {
             $validateArr['car_id'] = 'required|integer|exists:cars,id';
