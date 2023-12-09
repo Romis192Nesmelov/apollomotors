@@ -89,7 +89,7 @@
                                             list($label, $status) = getRecordLabelAndStatus($currentRecord);
                                         @endphp
                                         <td {{ $mergingCells > 1 ? 'colspan='.$mergingCells : '' }} class="record label-{{ $label }}">
-                                            @if (Auth::user()->is_admin == 1 || $currentRecord->user_id == auth()->user()->id)
+                                            @can('edit')
                                                 <div class="record_{{ $currentRecord->id }}">
                                                     <a title="{{ $currentRecord->title.' '.$currentRecord->email.' '.($currentRecord->phone ? $currentRecord->phone : '').' '.($currentRecord->name ? $currentRecord->name : '') }}" href="{{ route('admin.records', ['id' => $currentRecord->id]) }}#record">
                                                         @include('admin.blocks.records.table_record_cell_block', ['record' => $currentRecord])
@@ -97,7 +97,7 @@
                                                 </div>
                                             @else
                                                 @include('admin.blocks.records.table_record_cell_block', ['record' => $currentRecord])
-                                            @endif
+                                            @endcan
                                         </td>
                                     @endif
                                     @if ($mergingCells)
@@ -119,45 +119,45 @@
                     @include('admin.blocks.th_delete_cell_block')
                 </tr>
                 @foreach($records as $currentRecord)
-                <tr id="record_{{ $currentRecord->id }}">
-                    <td class="text-center bigger">
-                        @can('owner', $currentRecord)
-                            <a href="{{ route('admin.records', ['id' => $currentRecord->id]) }}">
-                                @include('admin.blocks.records.table_record_item_block',['record' => $currentRecord])
-                            </a>
-                        @else
-                            @include('admin.blocks.records.table_record_item_block',['record' => $currentRecord])
-                        @endif
-                    </td>
-                    <td class="text-center">
-                        <div class="bigger">
-                            @if (!$currentRecord->point)
-                                @include('admin.blocks.records.not_defined_label_block')
+                    <tr id="record_{{ $currentRecord->id }}">
+                        <td class="text-center bigger">
+                            @can('owner', $currentRecord)
+                                <a href="{{ route('admin.records', ['id' => $currentRecord->id]) }}">
+                                    @include('admin.blocks.records.table_record_item_block',['record' => $currentRecord])
+                                </a>
                             @else
-                                {{ trans('records.point'.$currentRecord->point) }}
+                                @include('admin.blocks.records.table_record_item_block',['record' => $currentRecord])
                             @endif
-                        </div>
-                        {{ $currentRecord->title }}
-                    </td>
-                    <td class="text-center">
-                        <img width="50" src="{{ $currentRecord->car_id ? asset($currentRecord->carLink->image_preview) : asset('storage/images/car_placeholder.jpg') }}"><br>
-                        <b>{{ $currentRecord->car_id ? ucfirst($currentRecord->carLink->brand['name_'.app()->getLocale()]).' '.$currentRecord['name_'.app()->getLocale()] : ucfirst($currentRecord->car) }}</b>
-                    </td>
-                    <td class="text-center">{{ $currentRecord->name }}<br>{{ $currentRecord->phone }}<br><a href="mailto:{{ $currentRecord->email }}">{{ $currentRecord->email }}</a></td>
-                    <td class="text-center">
-                        @php list($label, $status) = getRecordLabelAndStatus($currentRecord); @endphp
-                        <span class="label label-{{ $label }}">{{ $status }}</span><br>
-                        @if (isset($currentRecord->user))
-                            <a href="{{ route('admin.users', ['id' => $currentRecord->user_id]) }}">{{ $currentRecord->user->email }}</a><br>
+                        </td>
+                        <td class="text-center">
+                            <div class="bigger">
+                                @if (!$currentRecord->point)
+                                    @include('admin.blocks.records.not_defined_label_block')
+                                @else
+                                    {{ trans('records.point'.$currentRecord->point) }}
+                                @endif
+                            </div>
+                            {{ $currentRecord->title }}
+                        </td>
+                        <td class="text-center">
+                            <img width="50" src="{{ $currentRecord->car_id ? asset($currentRecord->carLink->image_preview) : asset('storage/images/car_placeholder.jpg') }}"><br>
+                            <b>{{ $currentRecord->car_id ? ucfirst($currentRecord->carLink->brand['name_'.app()->getLocale()]).' '.$currentRecord['name_'.app()->getLocale()] : ucfirst($currentRecord->car) }}</b>
+                        </td>
+                        <td class="text-center">{{ $currentRecord->name }}<br>{{ $currentRecord->phone }}<br><a href="mailto:{{ $currentRecord->email }}">{{ $currentRecord->email }}</a></td>
+                        <td class="text-center">
+                            @php list($label, $status) = getRecordLabelAndStatus($currentRecord); @endphp
+                            <span class="label label-{{ $label }}">{{ $status }}</span><br>
+                            @if (isset($currentRecord->user))
+                                <a href="{{ route('admin.users', ['id' => $currentRecord->user_id]) }}">{{ $currentRecord->user->email }}</a><br>
+                            @endif
+                            <div>{{ $currentRecord->created_at ? $currentRecord->created_at : '' }}</div>
+                        </td>
+                        @can('owner', $currentRecord)
+                            @include('admin.blocks.delete_cell_block',['id' => $currentRecord->id])
+                        @else
+                            <td></td>
                         @endif
-                        <div>{{ $currentRecord->created_at ? $currentRecord->created_at : '' }}</div>
-                    </td>
-                    @can('owner', $currentRecord)
-                        @include('admin.blocks.delete_cell_block',['id' => $currentRecord->id])
-                    @else
-                        <td></td>
-                    @endif
-                </tr>
+                    </tr>
                 @endforeach
             </table>
         </div>

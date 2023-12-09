@@ -33,6 +33,9 @@ class AdminRecordsController extends AdminBaseController
         );
     }
 
+    /**
+     * @throws \Illuminate\Auth\Access\AuthorizationException
+     */
     public function records(Request $request, $slug=null): View
     {
         $this->data['menu_key'] = 'records';
@@ -46,7 +49,6 @@ class AdminRecordsController extends AdminBaseController
             $this->data['record'] = Record::findOrFail($request->id);
 
             $this->authorize('edit');
-            if (auth()->user()->id != $this->data['record']->id) abort(403, trans('content.403'));
 
             $this->data['date'] = $this->data['record']->date;
             $this->breadcrumbs[] = [
