@@ -2,7 +2,6 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <meta http-equiv="Content-language" content="{{ app()->getLocale() }}" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -25,32 +24,32 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/icons/fontawesome/styles.min.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/icons/icomoon/styles.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/icons/fontawesome/styles.min.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.fancybox.min.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/owl.carousel.min.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.mCustomScrollbar.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/indicator.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/counter.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/contacts.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/loader.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}" />
+    <link rel="stylesheet" type="text/css" href="/css/icons/fontawesome/styles.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/icons/icomoon/styles.css" />
+    <link rel="stylesheet" type="text/css" href="/css/icons/fontawesome/styles.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/owl.carousel.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/jquery.mCustomScrollbar.css" />
+    <link rel="stylesheet" type="text/css" href="/css/indicator.css" />
+    <link rel="stylesheet" type="text/css" href="/css/counter.css" />
+    <link rel="stylesheet" type="text/css" href="/css/contacts.css" />
+    <link rel="stylesheet" type="text/css" href="/css/loader.css">
+    <link rel="stylesheet" type="text/css" href="/css/app.css" />
 
     <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://yastatic.net/share2/share.js"></script>
-    <script type="text/javascript" src="{{ asset('js/jquery.maskedinput.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/jquery.fancybox.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/owl.carousel.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/jquery.mCustomScrollbar.concat.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/indicators.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/fancybox_init.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/owl_settings.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/max.height.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/main.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/loader.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/feedback.js') }}"></script>
+    <script type="text/javascript" src="/js/jquery.maskedinput.js"></script>
+    <script type="text/javascript" src="/js/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="/js/indicators.js"></script>
+    <script type="text/javascript" src="/js/fancybox_init.js"></script>
+    <script type="text/javascript" src="/js/owl_settings.js"></script>
+    <script type="text/javascript" src="/js/max.height.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+    <script type="text/javascript" src="/js/loader.js"></script>
+    <script type="text/javascript" src="/js/feedback.js"></script>
 </head>
 
 <body style="overflow-y: hidden">
@@ -312,7 +311,7 @@
     </div>
 </footer>
 
-<script type="text/javascript">(function(w,d,c){var s=d.createElement('script'),h=d.getElementsByTagName('script')[0],e=d.documentElement;if((' '+e.className+' ').indexOf(' ya-page_js_yes ')===-1){e.className+=' ya-page_js_yes';}s.type='text/javascript';s.async=true;s.charset='utf-8';s.src=(d.location.protocol==='https:'?'https:':'https:')+'//site.yandex.net/v2.0/js/all.js';h.parentNode.insertBefore(s,h);(w[c]||(w[c]=[])).push(function(){Ya.Site.Form.init()})})(window,document,'yandex_site_callbacks');</script>
+<script type="text/javascript">(function(w,d,c){var s=d.createElement('script'),h=d.getElementsByTagName('script')[0],e=d.documentElement;if((' '+e.className+' ').indexOf(' ya-page_js_yes ')===-1){e.className+=' ya-page_js_yes';}s.type='text/javascript';s.async=true;s.charset='utf-8';s.src=(d.location.protocol==='https:'?'https:':'http:')+'//site.yandex.net/v2.0/js/all.js';h.parentNode.insertBefore(s,h);(w[c]||(w[c]=[])).push(function(){Ya.Site.Form.init()})})(window,document,'yandex_site_callbacks');</script>
 <script>
     window.getConsultHead = "{{ trans('content.to_get_a_consultation') }}";
     window.onlineRegForPromo = "{{ trans('content.online_registration_for_the_promotion') }}";
