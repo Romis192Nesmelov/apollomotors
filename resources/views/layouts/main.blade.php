@@ -24,32 +24,32 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="{{ url('/css/icons/fontawesome/styles.min.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ url('/css/icons/icomoon/styles.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ url('/css/icons/fontawesome/styles.min.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ url('/css/jquery.fancybox.min.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ url('/css/owl.carousel.min.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ url('/css/jquery.mCustomScrollbar.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ url('/css/indicator.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ url('/css/counter.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ url('/css/contacts.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ url('/css/loader.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ url('/css/app.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/icons/fontawesome/styles.min.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/icons/icomoon/styles.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/icons/fontawesome/styles.min.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.fancybox.min.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/owl.carousel.min.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.mCustomScrollbar.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/indicator.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/counter.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/contacts.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/loader.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}" />
 
     <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://yastatic.net/share2/share.js"></script>
-    <script type="text/javascript" src="{{ url('/js/jquery.maskedinput.js') }}"></script>
-    <script type="text/javascript" src="{{ url('/js/jquery.fancybox.min.js') }}"></script>
-    <script type="text/javascript" src="{{ url('/js/owl.carousel.min.js') }}"></script>
-    <script type="text/javascript" src="{{ url('/js/jquery.mCustomScrollbar.concat.min.js') }}"></script>
-    <script type="text/javascript" src="{{ url('/js/indicators.js') }}"></script>
-    <script type="text/javascript" src="{{ url('/js/fancybox_init.js') }}"></script>
-    <script type="text/javascript" src="{{ url('/js/owl_settings.js') }}"></script>
-    <script type="text/javascript" src="{{ url('/js/max.height.js') }}"></script>
-    <script type="text/javascript" src="{{ url('/js/main.js') }}"></script>
-    <script type="text/javascript" src="{{ url('/js/loader.js') }}"></script>
-    <script type="text/javascript" src="{{ url('/js/feedback.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/jquery.maskedinput.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/jquery.fancybox.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/owl.carousel.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/jquery.mCustomScrollbar.concat.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/indicators.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/fancybox_init.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/owl_settings.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/max.height.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/main.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/loader.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/feedback.js') }}"></script>
 </head>
 
 <body style="overflow-y: hidden">
@@ -69,7 +69,7 @@
     <div class="brands">
         @foreach ($electedBrands as $brand)
             <div class="brand-logo" style="width:{{ round(100/count($electedBrands)) }}%;">
-                <a href="#" class="brand" brand="{{ $brand->slug }}"><img class="w-75" title="{{ $brand->ru }}" src="{{ url('/'.$brand->logo) }}" /></a>
+                <a href="#" class="brand" brand="{{ $brand->slug }}"><img class="w-75" title="{{ $brand->ru }}" src="{{ asset($brand->logo) }}" /></a>
             </div>
         @endforeach
     </div>
@@ -123,7 +123,7 @@
 <div id="logo-line">
     <div class="container">
         <div class="logo-block">
-            <div class="logo"><a href="{{ route('home') }}"><img class="w-100" src="{{ url('/storage/images/logo.svg') }}" /></a></div>
+            <div class="logo"><a href="{{ route('home') }}"><img class="w-100" src="{{ asset('storage/images/logo.svg') }}" /></a></div>
             <div class="tagline">{{ trans('content.tagline') }}</div>
         </div>
         <div class="search-block">
@@ -191,7 +191,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-2 d-none d-lg-block p-0">
-                <a href="{{ route('contacts') }}"><img class="w-100 border border-5 border-white" src="{{ url('/storage/images/apollomotors.jpg') }}" /></a>
+                <a href="{{ route('contacts') }}"><img class="w-100 border border-5 border-white" src="{{ asset('storage/images/apollomotors.jpg') }}" /></a>
             </div>
             @php $addressExistFlag = false; $blockContent = ''; ob_start(); @endphp
             @foreach ($contacts as $contact)
@@ -292,7 +292,7 @@
                 </form>
             </div>
             <div class="col-lg-{{ $blockContent ? 2 : 3 }} col-xs-12 d-lg-block p-0 text-center">
-                <img class="w-50 d-lg-inline-flex d-none" src="{{ url('/storage/images/logo_white.svg') }}" />
+                <img class="w-50 d-lg-inline-flex d-none" src="{{ asset('storage/images/logo_white.svg') }}" />
                 <p class="fs-7 text-center text-uppercase">{{ trans('content.tagline') }}</p>
 {{--                <div><iframe src="https://yandex.ru/sprav/widget/rating-badge/1634283920" width="150" height="50" frameborder="0"></iframe></div>--}}
                 <div class="w-100 text-center mb-2">
@@ -306,7 +306,7 @@
             @if ($contacts[3]->active)
                 <p class="fs-7 text-center mt-4">{!! trans('content.footer_text',['phone' => view('blocks.phone_block',['phone' => $contacts[6]->contact])->render(), 'email' => view('blocks.email_block',['email' => $contacts[3]->contact])->render()]) !!}</p>
             @endif
-            <p class="fs-7 text-center mt-1"><a href="{{ url('/storage/requisites.pdf') }}" target="_blank">{{ trans('content.our_details') }}</a></p>
+            <p class="fs-7 text-center mt-1"><a href="{{ asset('storage/requisites.pdf') }}" target="_blank">{{ trans('content.our_details') }}</a></p>
         </div>
     </div>
 </footer>
