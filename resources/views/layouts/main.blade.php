@@ -53,6 +53,17 @@
 </head>
 
 <body style="overflow-y: hidden">
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P8K2DXW" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    var yaParams = {ip_adress: "{{ $_SERVER['REMOTE_ADDR'] }}"};
+    //объявляем параметр ip_adress и записываем в него IP посетителя
+</script>
+
 <div id="loader"><div></div></div>
 
 <x-modal id="message-modal" head="{{ trans('content.message') }}">
