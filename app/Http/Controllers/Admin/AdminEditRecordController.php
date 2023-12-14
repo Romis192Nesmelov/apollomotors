@@ -40,8 +40,8 @@ class AdminEditRecordController extends AdminEditController
             'missing_mechanics' => 'nullable|array'
         ]);
 
+        $missingMechanic = MissingMechanic::where('date',$fields['date'])->first();
         if (isset($fields['missing_mechanics']) && count($fields['missing_mechanics'])) {
-            $missingMechanic = MissingMechanic::where('date',$fields['date'])->first();
             if ($missingMechanic) $missingMechanic->mechanics()->sync($fields['missing_mechanics']);
             else {
                 $insertArr = [];
@@ -51,7 +51,7 @@ class AdminEditRecordController extends AdminEditController
                 }
                 MechanicMissingMechanic::insert($insertArr);
             }
-        }
+        } else $missingMechanic->delete();
 
         $this->saveCompleteMessage();
         return redirect(route('admin.records', ['date' => $fields['date']]));
