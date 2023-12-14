@@ -115,7 +115,7 @@ class BaseController extends Controller
 
     public function policy() :View
     {
-        return $this->getContent(6,'');
+        return $this->getContent(4,'');
     }
 
     protected function setSeo($seo): void
