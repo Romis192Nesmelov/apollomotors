@@ -56,6 +56,7 @@ class AdminBaseController extends Controller
             'sub_repairs'       => ['hidden' => true, 'href' => 'admin.sub_repairs'],
             'mechanics'         => ['name' => trans('admin_menu.mechanics'), 'href' => 'admin.mechanics', 'description' => trans('admin_menu.mechanics_description'), 'icon' => 'icon-users4'],
             'records'           => ['name' => trans('admin_menu.records'), 'href' => 'admin.records', 'description' => trans('admin_menu.records_description'), 'icon' => 'icon-pencil6'],
+            'site_map'          => ['name' => trans('admin_menu.site_map'), 'href' => 'admin.site_map', 'description' => trans('admin_menu.site_map_description'), 'icon' => 'icon-map4'],
         ];
         $this->breadcrumbs[] = $this->menu['home'];
     }

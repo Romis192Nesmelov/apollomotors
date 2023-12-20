@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\AdminEditSiteMapController;
 use App\Http\Controllers\Admin\AdminParserController;
 
 use App\Http\Controllers\Admin\AdminBaseController;
@@ -19,6 +20,8 @@ use App\Http\Controllers\Admin\AdminRecordsController;
 use App\Http\Controllers\Admin\AdminEditRecordController;
 
 use App\Http\Controllers\Admin\AdminApiController;
+
+use App\Http\Controllers\Admin\AdminSiteMapController;
 
 use App\Http\Controllers\BaseController;
 use App\Http\Controllers\BrandController;
@@ -189,5 +192,8 @@ Route::prefix('admin')->middleware(['auth'])->name('admin.')->group(function () 
     Route::get('/records/{slug?}', [AdminRecordsController::class, 'records'])->name('records');
     Route::post('/edit-record', [AdminEditRecordController::class, 'editRecord'])->name('edit_record');
     Route::post('/delete-record', [AdminEditRecordController::class, 'deleteRecord'])->name('delete_record');
+
+    Route::get('/site-map', AdminSiteMapController::class)->name('site_map');
+    Route::post('/edit-site-map', [AdminEditSiteMapController::class, 'editSiteMap'])->name('edit_site_map');
 });
 

@@ -240,4 +240,8 @@ return [
 
     'deleting_complete' => 'Удаление произведено',
     'deleting_not_complete' => 'Удаление не произведено',
+
+    'create_sitemap_xml' => 'Сгенерировать sitemap.xml',
+    'find_urls' => 'Найдено :urls',
+    'pages' => 'страниц|страницы|страниц',
 ];
