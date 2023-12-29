@@ -43,7 +43,7 @@ class AdminEditRepairController extends AdminEditController
                 'upon_reaching_mileage' => $this->validationInteger,
                 'warranty_years' => $this->validationNumeric,
                 'head' => $this->validationString,
-                'text' => 'nullable|max:5000',
+                'text' => 'nullable|max:50000',
                 'car_id' => 'nullable|integer|exists:cars,id'
             ],
             new Repair(),

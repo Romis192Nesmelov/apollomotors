@@ -168,7 +168,7 @@ class AdminEditBrandController extends AdminEditController
                 'price_original' => $this->validationInteger,
                 'price_non_original' => $this->validationInteger,
                 'head' => $this->validationString,
-                'text' => 'nullable|max:5000',
+                'text' => 'nullable|max:50000',
                 'car_id' => $this->validationCarId
             ],
             new Spare(),
