@@ -60,6 +60,16 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P8K2DXW" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EPQKX93R99"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-EPQKX93R99');
+</script>
+
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript">
     var yaParams = {ip_adress: "{{ $_SERVER['REMOTE_ADDR'] }}"};
