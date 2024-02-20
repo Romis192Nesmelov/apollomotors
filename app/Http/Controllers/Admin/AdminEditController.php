@@ -344,7 +344,7 @@ class AdminEditController extends Controller
         return $fields;
     }
 
-    private function getRelationIdName(Model $item) :string
+    protected function getRelationIdName(Model $item) :string
     {
         return $this->getCutTableName($item).'_id';
     }
