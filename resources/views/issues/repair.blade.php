@@ -111,8 +111,8 @@
                 <div class="pull-right widget-google ms-2">
                     @include('blocks.widget_rating_block')
                 </div>
-                @php preg_match('/^(.+?)((<\/div>)|(<\/p>)|(<\/ul>)|(<\/details>))/i', str_replace(["\n","\r"],'',$repair->text), $matches); @endphp
-                {!! preg_replace('/<div\s.+?<\/div>/i','',$matches[0]) !!}
+                @php preg_match('/^(.+?)((<\/div>)|(<\/ul>)|(<\/details>))/i', str_replace(["\n","\r"],'',$repair->text), $matches); @endphp
+                {!! $matches[0] !!}
 {{--                @include('blocks.cropped_content_block',['content' => $repair->text, 'length' => 700])--}}
             </div>
             @include('blocks.button_block',[
