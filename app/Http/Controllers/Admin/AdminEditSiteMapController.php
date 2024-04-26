@@ -39,7 +39,7 @@ class AdminEditSiteMapController extends AdminEditController
                 $this->addChildUrl($urlMenu, time(), 0.5);
 
                 foreach ($brand->cars as $car) {
-                    $urlCar = $urlMenu . '/' . $car->slug;
+                    $urlCar = $urlMenu . $car->slug;
                     $this->addChildUrl($urlCar, time(), 0.3);
 
                     if ($k == 0 && count($car->repairs)) {
