@@ -23,7 +23,7 @@ class AuthServiceProvider extends ServiceProvider
         $this->registerPolicies();
 
         Gate::define('edit', function ($user) {
-            return $user->type > 2;
+            return $user->type >= 2;
         });
 
         Gate::define('delete', function ($user) {
