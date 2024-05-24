@@ -45,11 +45,9 @@ class AdminEditController extends Controller
             $validationArr['email'] .= ','.$request->input('id');
             if ($request->input('password')) {
                 $validationArr['password'] = $this->validationPassword;
-                $fields['password'] = Hash::make($request->input('password'));
             }
         } else {
             $validationArr['password'] = $this->validationPassword;
-            $fields['password'] = Hash::make($request->input('password'));
         }
 
         $this->editSomething(
@@ -235,6 +233,7 @@ class AdminEditController extends Controller
             // Base validation, merging fields and setting special fields
             $fields = array_merge($fields, $this->setSpecialFields($request, $model, $this->validate($request, $validationArr)));
             $fields = $this->checkSlugField($fields);
+            $fields = $this->checkPasswordField($fields);
 
             // Getting item
             $item = $model->findOrFail($request->input('id'));
@@ -256,6 +255,7 @@ class AdminEditController extends Controller
             // Base validation, merging (if exist password fields) and setting special fields
             $fields = array_merge($fields, $this->setSpecialFields($request, $model, $this->validate($request, $validationArr)));
             $fields = $this->checkSlugField($fields);
+            $fields = $this->checkPasswordField($fields);
 
             // Processing image define images fields
             if ($pathToImages) $fields = $this->processingImages($request, $fields, array_keys($imageValidationArr), $pathToImages);
@@ -352,6 +352,12 @@ class AdminEditController extends Controller
     private function checkSlugField(array $fields): array
     {
         if (isset($fields['slug'])) $fields['slug'] = Str::slug($fields['slug']);
+        return $fields;
+    }
+
+    private function checkPasswordField(array $fields): array
+    {
+        if (isset($fields['password'])) $fields['password'] = Hash::make($fields['password']);
         return $fields;
     }
 }
