@@ -18,6 +18,7 @@ use App\Models\Seo;
 use App\Models\User;
 
 use Illuminate\Auth\Access\AuthorizationException;
+use Illuminate\Support\Facades\Gate;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
@@ -37,8 +38,9 @@ class AdminEditController extends Controller
     {
         $validationArr = [
             'email' => 'required|email|unique:users,email',
-            'type' => 'required|integer|min:1|max:3'
+            'type' => 'required|integer|min:1|max:'.(Gate::allows('records') ? '4' : '3')
         ];
+
         $fields = [];
 
         if ($request->has('id')) {

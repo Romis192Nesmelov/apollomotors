@@ -12,11 +12,7 @@
                     <x-atitle>{{ trans('admin.user_rights') }}</x-atitle>
                     <div class="panel-body">
                         @include('admin.blocks.radio_button_block',[
-                            'values' => [
-                                    ['val' => 1, 'descript' => trans('admin.users1')],
-                                    ['val' => 2, 'descript' => trans('admin.users2')],
-                                    ['val' => 3, 'descript' => trans('admin.users3')],
-                                ],
+                            'values' => $user_types,
                             'name' => 'type',
                             'activeValue' => isset($user) ? $user->type : 3
                         ])

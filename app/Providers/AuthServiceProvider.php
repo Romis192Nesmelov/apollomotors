@@ -27,11 +27,15 @@ class AuthServiceProvider extends ServiceProvider
         });
 
         Gate::define('delete', function ($user) {
-            return $user->type == 3;
+            return $user->type >= 3;
         });
 
         Gate::define('owner', function ($user, $record) {
             return $user->type > 2 || $user->id == $record->user_id;
+        });
+
+        Gate::define('records', function ($user) {
+            return $user->type == 4;
         });
     }
 }

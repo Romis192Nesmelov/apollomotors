@@ -55,7 +55,7 @@ class AdminBaseController extends Controller
             'repairs'           => ['hidden' => true, 'href' => 'admin.repairs'],
             'sub_repairs'       => ['hidden' => true, 'href' => 'admin.sub_repairs'],
             'mechanics'         => ['name' => trans('admin_menu.mechanics'), 'href' => 'admin.mechanics', 'description' => trans('admin_menu.mechanics_description'), 'icon' => 'icon-users4'],
-            'records'           => ['name' => trans('admin_menu.records'), 'href' => 'admin.records', 'description' => trans('admin_menu.records_description'), 'icon' => 'icon-pencil6'],
+            'records'           => ['hidden' => true, 'name' => trans('admin_menu.records'), 'href' => 'admin.records', 'description' => trans('admin_menu.records_description'), 'icon' => 'icon-pencil6'],
             'site_map'          => ['name' => trans('admin_menu.site_map'), 'href' => 'admin.site_map', 'description' => trans('admin_menu.site_map_description'), 'icon' => 'icon-map4'],
         ];
         $this->breadcrumbs[] = $this->menu['home'];
@@ -78,6 +78,13 @@ class AdminBaseController extends Controller
             'params' => [],
             'name' => trans('admin_menu.admins'),
         ];
+        $this->data['user_types'] = [
+            ['val' => 1, 'descript' => trans('admin.users1')],
+            ['val' => 2, 'descript' => trans('admin.users2')],
+            ['val' => 3, 'descript' => trans('admin.users3')],
+        ];
+        if (Gate::allows('records')) $this->data['user_types'][] = ['val' => 4, 'descript' => trans('admin.users4')];
+
         return $this->getSomething(
             $request,
             'user',
@@ -351,6 +358,7 @@ class AdminBaseController extends Controller
 
     protected function showView($view): View
     {
+        if (Gate::allows('records')) $this->menu['records']['hidden'] = false;
         return view('admin.'.$view, array_merge
             (
                 ['breadcrumbs' => $this->breadcrumbs, 'menu' => $this->menu],

@@ -134,7 +134,7 @@
                 <ul class="navigation navigation-main navigation-accordion">
                     <!-- Main -->
                     @foreach ($menu as $k => $item)
-                        @if (!isset($item['hidden']))
+                        @if (!isset($item['hidden']) || !$item['hidden'])
                             <li {{ $k == $menu_key ? 'class=active' : '' }}>
                                 <a href="{{ route($item['href']) }}"><i class="{{ $item['icon'] }}"></i> <span>{{ $item['name'] }}</span></a>
                                 @if (isset($menu['submenu']) && count($menu['submenu']))

@@ -268,15 +268,6 @@
                         <div class="col-md-4 col-sm-12 col-xs-12">
                             <div class="panel panel-flat union-height">
                                 <div class="panel-body">
-                                    @include('admin.blocks.select_block',[
-                                        'label' => trans('records.made_record'),
-                                        'name' => 'user_id',
-                                        'option' => 'email',
-                                        'values' => $users,
-                                        'icon' => 'icon-user',
-                                        'selected' => $record ? $record->user_id : auth()->user()->id
-                                    ])
-
                                     @include('blocks.input_block', [
                                         'label' => trans('records.brand_and_car'),
                                         'name' => 'car',

@@ -18,8 +18,13 @@ class AdminEditRecordController extends AdminEditController
 {
     use HelperTrait;
 
+    /**
+     * @throws AuthorizationException
+     * @throws ValidationException
+     */
     public function editMechanic(Request $request): RedirectResponse
     {
+        $this->authorize('records');
         $this->editSomething(
             $request,
             ['name' => $this->validationString],
@@ -34,7 +39,7 @@ class AdminEditRecordController extends AdminEditController
      */
     public function editMissingMechanics(Request $request): RedirectResponse
     {
-        $this->authorize('edit');
+        $this->authorize('records');
         $fields = $this->validate($request, [
             'date' => $this->validationInteger,
             'missing_mechanics' => 'nullable|array'
@@ -51,7 +56,7 @@ class AdminEditRecordController extends AdminEditController
                 }
                 MechanicMissingMechanic::insert($insertArr);
             }
-        } else $missingMechanic->delete();
+        } elseif ($missingMechanic) $missingMechanic->delete();
 
         $this->saveCompleteMessage();
         return redirect(route('admin.records', ['date' => $fields['date']]));
@@ -63,6 +68,7 @@ class AdminEditRecordController extends AdminEditController
      */
     public function editRecord(Request $request): RedirectResponse
     {
+        $this->authorize('records');
         $validateArr = [
             'point' => 'required|integer|min:1|max:7',
             'title' => $this->validationString,
@@ -75,7 +81,8 @@ class AdminEditRecordController extends AdminEditController
         $fields = [
             'send_notice' => ($request->input('send_notice') ? 1 : 0),
             'date' => $this->convertTimestamp($request->input('date')),
-            'duration' => $request->input('duration')
+            'duration' => $request->input('duration'),
+            'user_id' => auth()->id()
         ];
 
         if ($request->input('email')) $validateArr['email'] = 'email';
@@ -86,7 +93,7 @@ class AdminEditRecordController extends AdminEditController
             $validateArr['car_id'] = 'required|integer|exists:cars,id';
             $fields['car'] = null;
         }
-
+        
         $startTime = $this->convertTime($request->input('time'));
         $endTime = $startTime + $this->convertTime($request->input('duration'));
         $sendNotice = false;
@@ -137,6 +144,7 @@ class AdminEditRecordController extends AdminEditController
      */
     public function deleteRecord(Request $request): RedirectResponse
     {
+        $this->authorize('records');
         $record = Record::findOrFail($request->input('id'));
         $this->authorize('owner',$record);
         $record->status = 5;
