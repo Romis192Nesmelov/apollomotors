@@ -81,12 +81,12 @@ class AdminBaseController extends Controller
 
         if ($request->has('id')) {
             $this->data['user_types'] = [
-                ['val' => 0, 'descript' => trans('admin.users0')],
                 ['val' => 1, 'descript' => trans('admin.users1')],
                 ['val' => 2, 'descript' => trans('admin.users2')],
                 ['val' => 3, 'descript' => trans('admin.users3')],
             ];
             if (Gate::allows('all')) {
+                array_unshift($this->data['user_types'],['val' => 0, 'descript' => trans('admin.users0')]);
                 $this->data['user_types'][] = ['val' => 4, 'descript' => trans('admin.users4')];
             }
         }
