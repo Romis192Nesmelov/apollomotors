@@ -239,7 +239,7 @@ class AdminEditController extends Controller
 
             // Getting item
             $item = $model->findOrFail($request->input('id'));
-            if ($model instanceof User && $item->type == 4 && auth()->user()->type != 4) abort(403);
+            if ($model instanceof User && auth()->user()->type != 4 && ($item->type == 4 || $item->type === 0)) abort(403);
 
             // Processing image define images fields
             $fields = $this->processingImages($request, $fields, array_keys($imageValidationArr), $pathToImages, $item);

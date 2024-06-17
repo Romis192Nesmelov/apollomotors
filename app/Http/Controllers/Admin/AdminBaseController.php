@@ -358,7 +358,7 @@ class AdminBaseController extends Controller
             return $this->showView($key);
         } else {
             if ($model instanceof HomePrice) $this->data[$key.'s'] = $model->orderBy('brand_id')->get();
-            elseif ($model instanceof User && Gate::denies('all')) $this->data[$key.'s'] =  $model->where('type','<=',3)->get();
+            elseif ($model instanceof User && Gate::denies('all')) $this->data[$key.'s'] =  $model->whereIn('type',[1,2,3])->get();
             else $this->data[$key.'s'] = $model->all();
             return $this->showView($key.'s');
         }
