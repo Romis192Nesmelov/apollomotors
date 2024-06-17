@@ -22,6 +22,10 @@ class AuthServiceProvider extends ServiceProvider
     {
         $this->registerPolicies();
 
+        Gate::define('view', function ($user) {
+            return $user->type > 0;
+        });
+
         Gate::define('edit', function ($user) {
             return $user->type >= 2;
         });
@@ -34,8 +38,12 @@ class AuthServiceProvider extends ServiceProvider
             return $user->type > 2 || $user->id == $record->user_id;
         });
 
-        Gate::define('records', function ($user) {
+        Gate::define('all', function ($user) {
             return $user->type == 4;
+        });
+
+        Gate::define('records', function ($user) {
+            return $user->type == 4 || $user->type === 0;
         });
     }
 }

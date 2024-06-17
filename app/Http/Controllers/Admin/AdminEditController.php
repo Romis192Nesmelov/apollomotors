@@ -38,7 +38,7 @@ class AdminEditController extends Controller
     {
         $validationArr = [
             'email' => 'required|email|unique:users,email',
-            'type' => 'required|integer|min:1|max:'.(Gate::allows('records') ? '4' : '3')
+            'type' => 'required|integer|min:0|max:'.(Gate::allows('all') ? '4' : '3')
         ];
 
         $fields = [];
@@ -239,6 +239,7 @@ class AdminEditController extends Controller
 
             // Getting item
             $item = $model->findOrFail($request->input('id'));
+            if ($model instanceof User && $item->type == 4 && auth()->user()->type != 4) abort(403);
 
             // Processing image define images fields
             $fields = $this->processingImages($request, $fields, array_keys($imageValidationArr), $pathToImages, $item);

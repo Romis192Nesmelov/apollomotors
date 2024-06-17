@@ -1,4 +1,7 @@
 @switch($item->type)
+    @case(0)
+    <div class="label label-default">
+        @break
     @case(1)
         <div class="label label-warning">
         @break

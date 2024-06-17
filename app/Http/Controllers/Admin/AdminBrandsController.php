@@ -20,11 +20,6 @@ class AdminBrandsController extends AdminBaseController
 {
     use HelperTrait;
 
-    public function __construct()
-    {
-        parent::__construct();
-    }
-
     /**
      * @throws \Illuminate\Auth\Access\AuthorizationException
      */

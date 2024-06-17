@@ -10,11 +10,6 @@ class AdminCsvController extends AdminBaseController
 {
     use HelperTrait;
 
-    public function __construct()
-    {
-        parent::__construct();
-    }
-
     public function csvFiles(): View
     {
         $this->data['menu_key'] = 'csv_files';

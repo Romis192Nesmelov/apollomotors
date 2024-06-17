@@ -33,30 +33,30 @@ class AdminBaseController extends Controller
     public function __construct()
     {
         $this->menu = [
-            'home'              => ['name' => trans('admin_menu.home'), 'href' => 'admin.home', 'icon' => 'icon-home2'],
-            'users'             => ['name' => trans('admin_menu.admins'), 'href' => 'admin.users', 'description' => trans('admin_menu.admins_description'), 'icon' => 'icon-users'],
-            'contents'          => ['name' => trans('admin_menu.content'), 'href' => 'admin.contents', 'description' => trans('admin_menu.content_description'), 'icon' => 'icon-pencil6'],
-            'contacts'          => ['name' => trans('menu.contacts'), 'href' => 'admin.contacts', 'description' => trans('admin_menu.contacts_description'), 'icon' => 'icon-bookmark'],
-            'offer_repairs'     => ['name' => trans('content.we_offer_repairs'), 'href' => 'admin.offer_repairs', 'description' => trans('admin_menu.home_page_block_editing'), 'icon' => 'icon-hammer-wrench'],
-            'free_checks'       => ['name' => str_replace(':','',trans('content.free_check')), 'href' => 'admin.free_checks', 'description' => trans('admin_menu.home_page_block_editing'), 'icon' => 'icon-shield-check'],
+            'home'              => ['hidden' => true, 'name' => trans('admin_menu.home'), 'href' => 'admin.home', 'icon' => 'icon-home2'],
+            'users'             => ['hidden' => true, 'name' => trans('admin_menu.admins'), 'href' => 'admin.users', 'description' => trans('admin_menu.admins_description'), 'icon' => 'icon-users'],
+            'contents'          => ['hidden' => true, 'name' => trans('admin_menu.content'), 'href' => 'admin.contents', 'description' => trans('admin_menu.content_description'), 'icon' => 'icon-pencil6'],
+            'contacts'          => ['hidden' => true, 'name' => trans('menu.contacts'), 'href' => 'admin.contacts', 'description' => trans('admin_menu.contacts_description'), 'icon' => 'icon-bookmark'],
+            'offer_repairs'     => ['hidden' => true, 'name' => trans('content.we_offer_repairs'), 'href' => 'admin.offer_repairs', 'description' => trans('admin_menu.home_page_block_editing'), 'icon' => 'icon-hammer-wrench'],
+            'free_checks'       => ['hidden' => true, 'name' => str_replace(':','',trans('content.free_check')), 'href' => 'admin.free_checks', 'description' => trans('admin_menu.home_page_block_editing'), 'icon' => 'icon-shield-check'],
             'checks'            => ['hidden' => true, 'href' => 'admin.checks'],
-            'prices'            => ['name' => str_replace(':','',trans('content.our_prices')), 'href' => 'admin.prices', 'description' => trans('admin_menu.home_page_block_editing'), 'icon' => 'icon-price-tags'],
-            'questions'         => ['name' => trans('content.do_you_know_that'), 'href' => 'admin.questions', 'description' => trans('admin_menu.home_page_block_editing'), 'icon' => 'icon-question4'],
-            'clients'           => ['name' => trans('content.we_are_trusted'), 'href' => 'admin.clients', 'description' => trans('admin_menu.home_page_block_editing'), 'icon' => 'icon-truck'],
-            'articles'          => ['name' => trans('menu.articles'), 'href' => 'admin.articles', 'description' => trans('admin_menu.articles'), 'icon' => 'icon-magazine'],
-            'gallery'           => ['name' => trans('admin_menu.gallery'), 'href' => 'admin.gallery', 'description' => trans('admin_menu.gallery_description'), 'icon' => 'icon-images3'],
-            'csv_files'         => ['name' => trans('admin_menu.csv_files'), 'href' => 'admin.csv_files', 'description' => trans('admin_menu.csv_files_description'), 'icon' => 'icon-table2'],
-            'brands'            => ['name' => trans('admin_menu.brands'), 'href' => 'admin.brands', 'description' => trans('admin_menu.brands_description'), 'icon' => 'icon-chess-queen'],
+            'prices'            => ['hidden' => true, 'name' => str_replace(':','',trans('content.our_prices')), 'href' => 'admin.prices', 'description' => trans('admin_menu.home_page_block_editing'), 'icon' => 'icon-price-tags'],
+            'questions'         => ['hidden' => true, 'name' => trans('content.do_you_know_that'), 'href' => 'admin.questions', 'description' => trans('admin_menu.home_page_block_editing'), 'icon' => 'icon-question4'],
+            'clients'           => ['hidden' => true, 'name' => trans('content.we_are_trusted'), 'href' => 'admin.clients', 'description' => trans('admin_menu.home_page_block_editing'), 'icon' => 'icon-truck'],
+            'articles'          => ['hidden' => true, 'name' => trans('menu.articles'), 'href' => 'admin.articles', 'description' => trans('admin_menu.articles'), 'icon' => 'icon-magazine'],
+            'gallery'           => ['hidden' => true, 'name' => trans('admin_menu.gallery'), 'href' => 'admin.gallery', 'description' => trans('admin_menu.gallery_description'), 'icon' => 'icon-images3'],
+            'csv_files'         => ['hidden' => true, 'name' => trans('admin_menu.csv_files'), 'href' => 'admin.csv_files', 'description' => trans('admin_menu.csv_files_description'), 'icon' => 'icon-table2'],
+            'brands'            => ['hidden' => true, 'name' => trans('admin_menu.brands'), 'href' => 'admin.brands', 'description' => trans('admin_menu.brands_description'), 'icon' => 'icon-chess-queen'],
             'cars'              => ['hidden' => true, 'href' => 'admin.cars'],
             'spares'            => ['hidden' => true, 'href' => 'admin.spares'],
-            'def_cars'          => ['name' => trans('admin_menu.def_cars'), 'href' => 'admin.def_cars', 'description' => trans('admin_menu.def_cars_description'), 'icon' => 'icon-info22'],
-            'actions'           => ['name' => trans('admin_menu.actions'), 'href' => 'admin.actions', 'description' => trans('admin_menu.actions_description'), 'icon' => 'icon-gift'],
+            'def_cars'          => ['hidden' => true, 'name' => trans('admin_menu.def_cars'), 'href' => 'admin.def_cars', 'description' => trans('admin_menu.def_cars_description'), 'icon' => 'icon-info22'],
+            'actions'           => ['hidden' => true, 'name' => trans('admin_menu.actions'), 'href' => 'admin.actions', 'description' => trans('admin_menu.actions_description'), 'icon' => 'icon-gift'],
             'action_questions'  => ['hidden' => true, 'href' => 'admin.action_questions'],
             'repairs'           => ['hidden' => true, 'href' => 'admin.repairs'],
             'sub_repairs'       => ['hidden' => true, 'href' => 'admin.sub_repairs'],
-            'mechanics'         => ['name' => trans('admin_menu.mechanics'), 'href' => 'admin.mechanics', 'description' => trans('admin_menu.mechanics_description'), 'icon' => 'icon-users4'],
+            'mechanics'         => ['hidden' => true, 'name' => trans('admin_menu.mechanics'), 'href' => 'admin.mechanics', 'description' => trans('admin_menu.mechanics_description'), 'icon' => 'icon-users4'],
             'records'           => ['hidden' => true, 'name' => trans('admin_menu.records'), 'href' => 'admin.records', 'description' => trans('admin_menu.records_description'), 'icon' => 'icon-pencil6'],
-            'site_map'          => ['name' => trans('admin_menu.site_map'), 'href' => 'admin.site_map', 'description' => trans('admin_menu.site_map_description'), 'icon' => 'icon-map4'],
+            'site_map'          => ['hidden' => true, 'name' => trans('admin_menu.site_map'), 'href' => 'admin.site_map', 'description' => trans('admin_menu.site_map_description'), 'icon' => 'icon-map4'],
         ];
         $this->breadcrumbs[] = $this->menu['home'];
     }
@@ -78,12 +78,18 @@ class AdminBaseController extends Controller
             'params' => [],
             'name' => trans('admin_menu.admins'),
         ];
-        $this->data['user_types'] = [
-            ['val' => 1, 'descript' => trans('admin.users1')],
-            ['val' => 2, 'descript' => trans('admin.users2')],
-            ['val' => 3, 'descript' => trans('admin.users3')],
-        ];
-        if (Gate::allows('records')) $this->data['user_types'][] = ['val' => 4, 'descript' => trans('admin.users4')];
+
+        if ($request->has('id')) {
+            $this->data['user_types'] = [
+                ['val' => 0, 'descript' => trans('admin.users0')],
+                ['val' => 1, 'descript' => trans('admin.users1')],
+                ['val' => 2, 'descript' => trans('admin.users2')],
+                ['val' => 3, 'descript' => trans('admin.users3')],
+            ];
+            if (Gate::allows('all')) {
+                $this->data['user_types'][] = ['val' => 4, 'descript' => trans('admin.users4')];
+            }
+        }
 
         return $this->getSomething(
             $request,
@@ -328,6 +334,7 @@ class AdminBaseController extends Controller
         string $slug=null
     ): View
     {
+        $this->authorize('view');
         $breadcrumbsParams = [];
         if ($request->has('parent_id')) $breadcrumbsParams['parent_id'] = $request->input('parent_id');
 
@@ -351,6 +358,7 @@ class AdminBaseController extends Controller
             return $this->showView($key);
         } else {
             if ($model instanceof HomePrice) $this->data[$key.'s'] = $model->orderBy('brand_id')->get();
+            elseif ($model instanceof User && Gate::denies('all')) $this->data[$key.'s'] =  $model->where('type','<=',3)->get();
             else $this->data[$key.'s'] = $model->all();
             return $this->showView($key.'s');
         }
@@ -358,7 +366,29 @@ class AdminBaseController extends Controller
 
     protected function showView($view): View
     {
-        if (Gate::allows('records')) $this->menu['records']['hidden'] = false;
+        if (Gate::allows('all')) {
+            foreach (
+                [
+                    'users',
+                    'contents',
+                    'offer_repairs',
+                    'free_checks',
+                    'prices',
+                    'questions',
+                    'clients',
+                    'articles',
+                    'gallery',
+                    'csv_files',
+                    'brands',
+                    'def_cars',
+                    'actions',
+                    'site_map',
+                    'records'
+                ] as $menu) {
+                    $this->menu[$menu]['hidden'] = false;
+                }
+        } else if (Gate::allows('records')) $this->menu['records']['hidden'] = false;
+
         return view('admin.'.$view, array_merge
             (
                 ['breadcrumbs' => $this->breadcrumbs, 'menu' => $this->menu],

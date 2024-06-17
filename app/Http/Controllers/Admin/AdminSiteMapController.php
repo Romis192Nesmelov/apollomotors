@@ -6,11 +6,6 @@ use Illuminate\View\View;
 
 class AdminSiteMapController extends AdminBaseController
 {
-    public function __construct()
-    {
-        parent::__construct();
-    }
-
     public function __invoke() :View
     {
         $this->data['menu_key'] = 'site_map';
