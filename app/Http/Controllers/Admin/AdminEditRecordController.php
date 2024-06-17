@@ -93,7 +93,7 @@ class AdminEditRecordController extends AdminEditController
             $validateArr['car_id'] = 'required|integer|exists:cars,id';
             $fields['car'] = null;
         }
-        
+
         $startTime = $this->convertTime($request->input('time'));
         $endTime = $startTime + $this->convertTime($request->input('duration'));
         $sendNotice = false;
