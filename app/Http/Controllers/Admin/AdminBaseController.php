@@ -366,7 +366,7 @@ class AdminBaseController extends Controller
 
     protected function showView($view): View
     {
-        if (Gate::allows('all')) {
+        if (Gate::allows('view')) {
             foreach (
                 [
                     'users',
@@ -382,12 +382,12 @@ class AdminBaseController extends Controller
                     'brands',
                     'def_cars',
                     'actions',
-                    'site_map',
-                    'records'
+                    'site_map'
                 ] as $menu) {
                     $this->menu[$menu]['hidden'] = false;
                 }
-        } else if (Gate::allows('records')) $this->menu['records']['hidden'] = false;
+        }
+        if (Gate::allows('records')) $this->menu['records']['hidden'] = false;
 
         return view('admin.'.$view, array_merge
             (
