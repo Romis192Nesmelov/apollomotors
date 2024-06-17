@@ -81,7 +81,7 @@
                                                             @endif
                                                         @endforeach
                                                     @endif
-                                                    @can('edit')
+                                                    @can('records')
                                                         <a href="{{ url('admin/records?date='.strtotime($month.'/'.$day.'/'.$year)) }}">
                                                             @include('admin.blocks.records.day_records_counter_block')
                                                         </a>
