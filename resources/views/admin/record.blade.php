@@ -89,7 +89,7 @@
                                             list($label, $status) = getRecordLabelAndStatus($currentRecord);
                                         @endphp
                                         <td {{ $mergingCells > 1 ? 'colspan='.$mergingCells : '' }} class="record label-{{ $label }}">
-                                            @can('record')
+                                            @can('records')
                                                 <div class="record_{{ $currentRecord->id }}">
                                                     <a title="{{ $currentRecord->title.' '.$currentRecord->email.' '.($currentRecord->phone ? $currentRecord->phone : '').' '.($currentRecord->name ? $currentRecord->name : '') }}" href="{{ route('admin.records', ['id' => $currentRecord->id]) }}#record">
                                                         @include('admin.blocks.records.table_record_cell_block', ['record' => $currentRecord])
@@ -122,7 +122,7 @@
                     <tr id="record_{{ $currentRecord->id }}">
                         <td class="text-center bigger">
                             @can('owner', $currentRecord)
-                                <a href="{{ route('admin.records', ['id' => $currentRecord->id]) }}">
+                                <a href="{{ route('admin.records', ['id' => $currentRecord->id]) }}#record">
                                     @include('admin.blocks.records.table_record_item_block',['record' => $currentRecord])
                                 </a>
                             @else
