@@ -49,7 +49,7 @@ class AdminRecordsController extends AdminBaseController
         if ($request->has('id')) {
             $this->data['record'] = Record::findOrFail($request->id);
 
-            $this->authorize('edit');
+            $this->authorize('records');
 
             $this->data['date'] = $this->data['record']->date;
             $this->breadcrumbs[] = [
