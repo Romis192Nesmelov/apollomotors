@@ -77,12 +77,13 @@ class BrandController extends BaseController
                     return $this->showView('issues.car');
                 }
             } else {
-                if ($issue == 'maintenance') {
-                    if (!count($this->data['brand']->maintenances)) {
-                        $this->getDefContent('maintenances');
+                if ($issue == 'repair' || $issue == 'maintenance') {
+                    $issue = $issue.'s';
+                    if (!count($this->data['brand'][$issue])) {
+                        $this->getDefContent([$issue]);
                         return $this->showView('issues.def_brand');
                     } else {
-                        $this->setSeo($this->data['brand']->maintenances[0]->seo);
+                        $this->setSeo($this->data['brand'][$issue][0]->seo);
                         return $this->showView('issues.brand');
                     }
                 } else {

@@ -11,8 +11,8 @@
             'image' => $brand->image,
             'addClass' => 'col-md-4 col-sm-12 me-4 pull-left framed-image',
         ])
-        @if ($activeMenu == 'maintenance')
-            {!! $brand->maintenances[0]->text !!}
+        @if ($activeMenu == 'repair' || $activeMenu == 'maintenance')
+            {!! $brand[$activeMenu.'s'][0]->text !!}
         @else
             {!! $brand[$activeMenu]->text !!}
         @endif
@@ -34,8 +34,8 @@
     @if ($existCars)
         @include('issues.blocks.phone_plate_block')
     @endif
-    @if ($activeMenu == 'maintenance' && count($brand->maintenances) == 2)
-        {!! $brand->maintenances[1]->text !!}
+    @if ( ($activeMenu == 'maintenance' || $activeMenu == 'repair') && count($brand[$activeMenu.'s']) == 2 )
+        {!! $brand[$activeMenu.'s'][1]->text !!}
     @endif
 </x-section>
 @if (count($brand->actions))

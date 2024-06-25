@@ -35,9 +35,9 @@ class AdminBrandsController extends AdminBaseController
         );
     }
 
-    public function brandRepair(Request $request): View
+    public function brandRepairs(Request $request): View
     {
-        return $this->getRMS($request, new Brand(), $request->id, 'repair');
+        return $this->getRMS($request, new Brand(), $request->id, 'repairs');
     }
 
     public function brandMaintenances(Request $request): View

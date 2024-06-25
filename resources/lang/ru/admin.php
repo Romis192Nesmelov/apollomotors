@@ -143,7 +143,7 @@ return [
 
     'href' => 'Ссылка',
 
-    'brand_repair' => 'Текст «Ремонт»',
+    'brand_repairs' => 'Текст «Ремонт»',
     'brand_maintenances' => 'Текст «Техобслуживания»',
     'brand_spare' => 'Текст «Запчастей»',
 

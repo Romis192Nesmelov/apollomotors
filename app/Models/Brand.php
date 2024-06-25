@@ -46,9 +46,9 @@ class Brand extends Model
         return $this->hasMany(HomePrice::class);
     }
 
-    public function repair(): HasOne
+    public function repairs(): HasMany
     {
-        return $this->hasOne(BrandRepair::class);
+        return $this->hasMany(BrandRepair::class);
     }
 
     public function maintenances(): HasMany

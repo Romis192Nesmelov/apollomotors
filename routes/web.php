@@ -127,11 +127,11 @@ Route::prefix('admin')->middleware(['auth'])->name('admin.')->group(function () 
     Route::get('/def-repairs/{slug?}', [AdminBrandsController::class, 'defRepairs'])->name('def_repairs');
     Route::post('/edit-def-car', [AdminEditBrandController::class, 'editDefCar'])->name('edit_def_car');
 
-    Route::get('/brand-repair', [AdminBrandsController::class, 'brandRepair'])->name('brand_repair');
+    Route::get('/brand-repairs', [AdminBrandsController::class, 'brandRepairs'])->name('brand_repairs');
     Route::get('/brand-maintenances', [AdminBrandsController::class, 'brandMaintenances'])->name('brand_maintenances');
     Route::get('/brand-spare', [AdminBrandsController::class, 'brandSpare'])->name('brand_spare');
 
-    Route::post('/edit-brand-repair', [AdminEditBrandController::class, 'editBrandRepair'])->name('edit_brand_repair');
+    Route::post('/edit-brand-repairs', [AdminEditBrandController::class, 'editBrandRepairs'])->name('edit_brand_repairs');
     Route::post('/edit-brand-maintenances', [AdminEditBrandController::class, 'editBrandMaintenances'])->name('edit_brand_maintenances');
     Route::post('/edit-brand-spare', [AdminEditBrandController::class, 'editBrandSpare'])->name('edit_brand_spare');
 

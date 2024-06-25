@@ -71,10 +71,10 @@ class AdminEditBrandController extends AdminEditController
      * @throws AuthorizationException
      * @throws ValidationException
      */
-    public function editBrandRepair(Request $request): RedirectResponse
+    public function editBrandRepairs(Request $request): RedirectResponse
     {
-        $brand = $this->editRMS($request, new Brand(),'repair');
-        $this->setSeo($request, $brand->repair);
+        $brand = $this->editRMS($request, new Brand(),'repairs');
+        $this->setSeo($request, $brand->repairs[0]);
         return redirect(route('admin.brands',['id' => $brand->id]));
     }
 

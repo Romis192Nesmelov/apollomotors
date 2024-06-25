@@ -74,7 +74,7 @@
         @include('admin.blocks.rms_content_block', [
             'part_name' => 'brand',
             'item' => $brand,
-            'parts' => ['repair','maintenances','spare']
+            'parts' => ['repairs','maintenances','spare']
         ])
         <div class="panel panel-flat">
             <x-atitle>{{ trans('admin.cars') }}</x-atitle>
