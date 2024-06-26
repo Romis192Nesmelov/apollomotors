@@ -190,7 +190,7 @@ class AdminEditBrandController extends AdminEditController
         $item = $model->findOrFail($request->input('id'));
 
         if ($relationName == 'repairs' || $relationName == 'maintenances') {
-            $fields = $this->validate($request, ['text1' => $this->validationLongText,'text2' => $this->validationLongText]);
+            $fields = $this->validate($request, ['text1' => $this->validationLongText,'text2' => 'nullable|min:5|max:50000']);
             for ($i=0;$i<2;$i++) {
                 $newFields = ['text' => $fields['text'.($i+1)]];
                 if ( isset($item->$relationName[$i]) ) $item->$relationName[$i]->update($newFields);
