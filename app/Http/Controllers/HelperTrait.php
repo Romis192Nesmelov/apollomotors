@@ -79,8 +79,7 @@ trait HelperTrait
                     'package-lock.json',
                     'phpunit.xml',
                     'README.md',
-                    'vite.config.js',
-                    'sitemap.xml'
+                    'vite.config.js'
                 ]
             ],
             [
@@ -92,6 +91,7 @@ trait HelperTrait
                     'favicon.ico',
                     'index.php',
                     'robots.txt',
+                    'sitemap.xml'
                 ]
             ]
         ];
