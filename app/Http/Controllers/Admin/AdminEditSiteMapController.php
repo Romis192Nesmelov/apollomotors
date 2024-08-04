@@ -33,9 +33,9 @@ class AdminEditSiteMapController extends AdminEditController
 //        }
 
         $brands = Brand::where('active',1)->get();
-        foreach (['ремонт', 'техобслуживание', 'запчасти'] as $k => $menu) {
+        foreach (['remont', 'tekhobsluzhivanie', 'zapchasti'] as $k => $menu) {
             foreach ($brands as $brand) {
-                $urlMenu = $loc . '/' . str()->slug($menu) . '/' . strtolower($brand->name_en) . '/';
+                $urlMenu = $loc . '/' . $menu . '/' . strtolower($brand->name_en) . '/';
                 $this->addChildUrl($urlMenu, time(), 0.5);
 
                 foreach ($brand->cars as $car) {
