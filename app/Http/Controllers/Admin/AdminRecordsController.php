@@ -108,7 +108,7 @@ class AdminRecordsController extends AdminBaseController
             for($y=2010;$y<=(int)date('Y');$y++) {
                 if (Record::where('date','>=',strtotime($baseDate.$y))->where('date','<',strtotime($baseDate.($y+1)))->count()) $this->data['years'][] = $y;
             }
-            if (date('m') == 10) $this->data['years'][] = (int)date('Y') + 1;
+            if (date('m') >= 10) $this->data['years'][] = (int)date('Y') + 1;
             return $this->showView('records');
         }
     }
